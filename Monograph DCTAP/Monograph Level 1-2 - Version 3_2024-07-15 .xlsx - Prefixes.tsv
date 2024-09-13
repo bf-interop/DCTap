@@ -1,0 +1,5 @@
+Vocabulary	Prefix	Namespace
+BIBFRAME	bf:	http://id.loc.gov/ontologies/bibframe/
+BIBFRAME LC Extension Ontology	bflc:	http://id.loc.gov/ontologies/bflc/
+Resource Description Framework Schema	rdfs:	http://www.w3.org/2000/01/rdf-schema#
+BIBFRAME Interoperbility Group Shapes	big:	https://example.org/
