@@ -24,5 +24,6 @@ The tab delimited files available here conform to the DCTAP specification with m
 DCTAP has been created for Monographs and Serials, we will iterate on these, and eventually DCTAP for other resource types will gradually be added.
 
 ## DCTAP Files
-Coming soon!
+* [Monograph DCTAP](https://github.com/bf-interop/DCTap/tree/main/Monograph%20DCTAP)
+* [Serial DCTAP](https://github.com/bf-interop/DCTap/tree/main/Serials%20DCTAP)
 
