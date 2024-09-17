@@ -19,7 +19,8 @@ big:Agent		bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction 
 big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simpleAgent	Agent Simple Label		true	Warning	literal	true	prefer use of bf:agent (above) in Provision Activity but if no bf:agent exists, then use bflc:simpleAgent
 big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:date	Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
 big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simpleDate	Simple Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
-big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:place	Place	big:Place	true	Warning	IRI; bnode	true	Pull both bf:place and bf:simplePlace LC uses bf:place to indicate the country of publication
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:place	Place	big:Place	true	Warning	IRI; bnode	true	Pull both bf:place and bf:simplePlace
+ LC uses bf:place to indicate the country of publication
 big:Place		bf:Place	rdfs:label	Place Label		true	Warning	lteral	true	
 big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simplePlace	Place Simple Label		true	Warning	literal	true	
 big:SerialIdentifier	Identifier	bf:Issn, bf:IssnL	rdf:value	Serial Identifier		true	Warning	literal	true	
