@@ -1,0 +1,28 @@
+shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:instanceOf	Instance of	big:Serial:Work	true	Violation	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:title	Instance Title	big:Title	true	Violation	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:editionStatement	Edition Statement		true	Warning	literal	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:provisionActivity	Provision Activity--Publication Information	big:ProvisionActivity	true	Violation	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:firstIssue	Serial Numbering First Issue		true	Warning	literal	false	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:frequency	Frequency	big:FrequencyShape	true	Warning	IRI; bnode	true	bf:frequency may appear on its own or included within bf:pubFrequency, below
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:pubFrequency	Publication Frequency	big:PubFrequencyShape	true	Warning	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:seriesStatement	Series Statement		true	Warning	literal	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:identifiedBy	Identifiers	big:SerialIdentifier	true	Warning	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:issuance	Mode of Issuance		true	Violation	IRI; bnode	false	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:media	Media type		true	Violation	IRI; bnode	true	 
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:carrier	Carrier type		true	Violation	IRI; bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:pubfrequency	Publication frequency	big:PubFrequency	true	Warning	IRI, bnode	true	
+big:Serial:Instance:Print	Instance (Serial) Print	bf:Print	bf:adminMetadata	Administrative metadata	big:AdminMetadata	true	Violation	IRI; bnode	true	*adminMetadata should be at the Work and Instance levels but the requirements are the same for both
+big:Title	Title	bf:Title	bf:mainTitle	Main Title		true	Violation	literal	false	Move to Title Sheet and add other title types
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:agent	Agent	big:Agent	true	Warning	IRI; bnode	true	prefer use of bf:agent in Provision Activity but if no bf:agent exists, then use bflc:simpleAgent (below)
+big:Agent		bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label	Agent Label		true	Warning	literal	true	
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simpleAgent	Agent Simple Label		true	Warning	literal	true	prefer use of bf:agent (above) in Provision Activity but if no bf:agent exists, then use bflc:simpleAgent
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:date	Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simpleDate	Simple Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bf:place	Place	big:Place	true	Warning	IRI; bnode	true	Pull both bf:place and bf:simplePlace
+ LC uses bf:place to indicate the country of publication
+big:Place		bf:Place	rdfs:label	Place Label		true	Warning	lteral	true	
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simplePlace	Place Simple Label		true	Warning	literal	true	
+big:SerialIdentifier	Identifier	bf:Issn, bf:IssnL	rdf:value	Serial Identifier		true	Warning	literal	true	
+big:FrequencyShape	Frequency	bf:Frequency	rdfs:label	Frequency		true	Warning	literal	true	
+big:PubFrequencyShape	Frequency	bf:PubFrequency	bf:frequency	Publication Frequency		true	Warning	IRI; bnode	true	
