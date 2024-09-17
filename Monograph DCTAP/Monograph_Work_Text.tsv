@@ -1,0 +1,20 @@
+shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:title	Work Title	big:Title	true	Violation 	IRI ; bnode	true	Change to 'SeeTitle Sheet' per AdminMetadata
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:contribution	Contribution	big:Contribution	true	Warning 	IRI ; bnode	true	required if applicable.  Should be included if it is there
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:genreForm	Form/Genre of Work		true	Warning 	IRI ; bnode	true	From discussion - consider Work subclasses as sufficient
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:originDate	Date of Work		true	Warning	literal	true	
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:originPlace	Place of Origin of the Work		true	Warning	IRI ; bnode	false	
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:language	Language		true	Violation	IRI	true	
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:subject	Subject of the Work		true	Warning	IRI ; bnode	true	
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:classification	Classification numbers		true	Warning	IRI ; bnode	true	
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:content 	Content Type		true	Violation	IRI ; bnode	true	*Thought to make this false, leveraging the subclass information for the same - will this fulfill this need?  If not, how to address missing data here?  uncontrolled labels .  Essential for differentiation/identification.
+big:Monograph:Work	Work (Monograph) Text	bf:Text ; bf:Monograph	bf:adminMetadata	Administrative metadata		true	Violation	IRI ; bnode	true	See AdminMetadata Sheet
+big:Title	Monograph Title	bf:Title	bf:mainTitle	Main Title		true	Violation	literal	false	Move to Title Sheet and add other title types
+big:Contribution	Contribution	bf:Contribution; bf:PrimaryContribution	bf:agent	Agent	big:Agent	true	Warning	IRI ; bnode	true	
+big:Contribution	Contribution	bf:Contribution; bf:PrimaryContribution	bf:role	Role	big:Role	true	Warning	IRI ; bnode	true	
+big:Agent	Agent	bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label	Agent Label		true	Warning	literal	true	
+big:Role	Role	bf:Role	rdfs:label	Role Label		true	Warning	literal	true	
+										
+										
+										
+ 										

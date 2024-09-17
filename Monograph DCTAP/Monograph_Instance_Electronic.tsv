@@ -1,0 +1,24 @@
+shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:instanceOf	Instance of	big:Monograph:Work	true	Violation	IRI; bnode	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:title	Instance Title	big:Title	true	Violation	IRI; bnode	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:editionStatement	Edition Statement		true	Warning	literal	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:provisionActivity	Provision Activity--Publication Information	big:ProvisionActivity	true	Violation	IRI; bnode	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:seriesStatement	Series Statement		true	Warning 	literal	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:identifiedBy	Identifiers		true	Warning 	IRI; bnode	true	e.g., ISBN
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:issuance	Mode of Issuance		true	Violation	IRI; bnode	false	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:media	Media type		true	Violation	IRI; bnode	true	 
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:carrier	Carrier type		true	Violation	IRI; bnode	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:electronicLocator	Uniform Resource Locator for resource		true	Warning	IRI; bnode	true	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:digitalCharacteristic	Digital Characteristic	big:DigitalCharacteristic	true	Warning	IRI; bnode	false	
+big:Monograph:Instance:Electronic	Instance (Monograph) Electronic	bf:Electronic	bf:adminMetadata	Administrative metadata		true	Violation	IRI; bnode	true	*adminMetadata should be at the Work and Instance levels but the requirements are the same for both
+big:Title	Instance Title	bf:Title	bf:mainTitle	Main Title		true	Violation	literal	false	Move to Title Sheet and add other title types
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bf:agent	Agent	AgentShape	true	Warning	IRI; bnode	true	prefer use of bf:agent in Provision Activity but if no bf:agent exists, then use bf:simpleAgent (below)
+big:Agent		bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label	Agent Label		true	Warning	literal	true	
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bflc:simpleAgent	Agent Simple Label	big:Agent	true	Warning	literal	true	prefer use of bf:agent (above) in Provision Activity but if no bf:agent exists, then use bf:simpleAgent
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bf:date	Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bflc:simpleDate	Simple Date		true	Warning	literal	true	Pull both types of dates if they exist as the formatting may differ
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bf:place 	Place	big:Place	true	Warning	IRI; bnode	true	Pull both bf:place and bf:simplePlace LC uses bf:place to indicate the country of publication
+big:Place		bf:Place	rdfs:label	Place Label		true	Warning	literal	true	
+big:ProvisionActivity	Provision Activity	bf:ProvisionActivity, bf:Distribution, bf:Manufacture, bf:Production, bf:Publication, bf:Modification	bflc:simplePlace	Place Simple Label		true	Warning	literal	true	
+big:DigitalCharacteristic	Digital Characteristic	bf:FileType	bf:digitalCharacteristic	File Type		true	Warning	literal	true	
+big:DigitalCharacteristic	Digital Characteristic	bf:EncodingFormat	bf:digitalCharacteristic	Encoding Format		true	Warning	literal	true	
