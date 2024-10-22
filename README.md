@@ -24,7 +24,7 @@ The tab delimited files available here conform to the DCTAP specification with m
 DCTAP has been created for Monographs and Serials, we will iterate on these, and DCTAP for other resource types will gradually be added.
 
 ## Versioning
-Versioning of the DCTAP AND SHACL will be managed globally at the repository level using GitHub versioning tags and release features. For each version, reports are available to describe exactly what was changed between versions, e.g. https://github.com/bf-interop/DCTap/releases/tag/v0.1.0. Semantic versioning will be supported with version numbering; any major changes, especially breaking changes, will trigger a new version number. 
+Versioning of the DCTAP and SHACL will be managed globally at the repository level using GitHub versioning tags and release features. For each version, reports are available to describe exactly what was changed between versions, e.g. https://github.com/bf-interop/DCTap/releases/tag/v0.1.0. Semantic versioning will be supported with version numbering; any major changes, especially breaking changes, will trigger a new version number. 
 
 The SHACL published by BIG to the web will reflect the most current official version. Users of BIG outputs are encouraged to create their own branch of this repository and accept later official versions when ready to implement these changes. Alternatively, for each tagged version of the repository (e.g. https://github.com/bf-interop/DCTap/tags), one can download the zip or tar files with the version embedded in the folder name.
 
