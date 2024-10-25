@@ -1,0 +1,27 @@
+# github action workflow for generating static web-site of DCTap TSV files and converted SHACL
+name: Generate Website
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+      - name: Install dependencies
+        run: pip install pandas
+      - name: Generate Website
+        run: python src/generate_website.py
