@@ -14,7 +14,3 @@ big:Contribution	Contribution	bf:Contribution; bf:PrimaryContribution	bf:agent	A
 big:Contribution	Contribution	bf:Contribution; bf:PrimaryContribution	bf:role	Role	big:Role	true	Warning	IRI ; bnode	true	
 big:Agent	Agent	bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label	Agent Label		true	Warning	literal	true	
 big:Role	Role	bf:Role	rdfs:label	Role Label		true	Warning	literal	true	
-										
-										
-										
- 										
