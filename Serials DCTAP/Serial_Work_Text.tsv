@@ -1,4 +1,4 @@
-shapeID	shapeLabel	target	propertyID 	propertyLabel	valueShape	mandatory 	severity	valueNodeType	repeatable	note
+shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note
 big:Serial:Work	Work (Serial) Text	bf:Text ; bf:Serial	bf:title	Work Title	big:Title	true	Violation 	IRI; bnode	true	Change to 'SeeTitle Sheet' per AdminMetadata
 big:Serial:Work	Work (Serial) Text	bf:Text ; bf:Serial	bf:contribution	Contribution	big:Contribution	true	Warning 	IRI; bnode	true	required if applicable.  Should be included if it is there
 big:Serial:Work	Work (Serial) Text	bf:Text ; bf:Serial	bf:originDate	Date of Work		true	Warning	literal	true	
@@ -15,6 +15,3 @@ big:Contribution		bf:Contribution; bf:PrimaryContribution	bf:role	Role	big:Role	
 big:Agent		bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label	Agent Label		true	Warning	literal	true	
 big:Role		bf:Role	rdfs:label	Role		true	Warning	literal	true	
 big:SerialIdentifier		bf:Issn; bf:IssnL	rdf:value	Serial Identifier		true	Warning	literal	true	
-										
-										
- 										

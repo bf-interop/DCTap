@@ -23,6 +23,6 @@ big:Place		bf:Place	rdfs:label	Place Label		true	Warning	literal	true
 big:ProvisionActivity	Provision Activity	bf:ProvisionActivity; bf:Distribution; bf:Manufacture; bf:Production; bf:Publication; bf:Modification	bflc:simplePlace	Place Simple Label		true	Warning	literal	true	
 big:DigitalCharacteristic	Digital Characteristic	bf:FileType	bf:digitalCharacteristic	File Type		true	Warning	IRI, bnode	true	
 big:DigitalCharacteristic	Digital Characteristic	bf:EncodingFormat	bf:digitalCharacteristic	Encoding Format		true	Warning	IRI, bnode	true	
-big:SerialIdentifier	Identifier	bf:Issn, bf:IssnL	rdf:value	Serial Identifier		true	Warning	literal	true	
+big:SerialIdentifier	Identifier	bf:Issn ; bf:IssnL	rdf:value	Serial Identifier		true	Warning	literal	true	
 big:FrequencyShape	Frequency	bf:Frequency	rdfs:label	Frequency		true	Warning	literal	true	
 big:PubFrequencyShape	Frequency	bf:PubFrequency	bf:frequency	Publication Frequency		true	Warning	IRI; bnode	true	
