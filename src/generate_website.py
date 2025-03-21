@@ -1,26 +1,15 @@
 import pathlib
 import subprocess
 
-from string import Template
-
 import pandas as pd
 
-HTML_TEMPLATE = Template(
-    """<html>
-  <head>
-     <title>$title</title>
-     <description>PCC Bibframe Interoperability Group (BIG) DCTap-to-SHACL</description>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="container">
-    <h1>$title</h1>
-    $body
-    <footer>
-     Version $version.  
-     Github Repository <a href="https://github.com/bf-interop/DCTap/">https://github.com/bf-interop/DCTap/</a>
-    </footer>
-  </body>
-</html>"""
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+env = Environment(
+    loader=FileSystemLoader("src/templates"),
+    autoescape=select_autoescape(
+        default_for_string=False,
+    ),
 )
 
 
@@ -51,18 +40,17 @@ def dctap_folder_to_html(folder_path: pathlib.Path, parent: pathlib.Path, versio
             continue
         html_filename = f"{dctap.stem}.html"
         dctap_title = f"""{dctap.stem.replace("_", " ")} DCTap"""
-        dctap_html_files.append((html_filename, dctap_title))
+        dctap_html_files.append({"url": html_filename, "name": dctap_title})
         html_path = parent / html_filename
         dctap_to_html(dctap, dctap_title, html_path, version)
     index_html_path = parent / "index.html"
-    index_html_body = "<ul>\n"
-    for dctap in sorted(dctap_html_files):
-        index_html_body += f"""<li><a href="{dctap[0]}">{dctap[1]}</a></li>\n"""
-    index_html_body += "</ul>\n"
+    dctap_index_template = env.get_template("dctap_index.html")
+    index_html = dctap_index_template.render(
+        title=folder_path.stem,
+        dctap_dirs=sorted(dctap_html_files, key=lambda x: x["name"]),
+        version=version,
+    )
     with index_html_path.open("w+") as fo:
-        index_html = HTML_TEMPLATE.substitute(
-            title=folder_path.stem, body=index_html_body, version=version
-        )
         fo.write(index_html)
 
 
@@ -76,7 +64,10 @@ def dctap_to_html(
     dctap_df = pd.read_csv(dctap, sep="\t")
     table_html = dctap_df.to_html(justify="center", na_rep="", index=False)
     table_html = table_html.replace('class="dataframe"', 'class="table table-bordered"')
-    dctap_html = HTML_TEMPLATE.substitute(title=title, body=table_html, version=version)
+    dctap_template = env.get_template("dctap.html")
+    dctap_html = dctap_template.render(
+        title=title, dctap_table=table_html, version=version
+    )
     with html_path.open("w+") as fo:
         fo.write(dctap_html)
 
@@ -89,18 +80,16 @@ def main(repo_home: pathlib.Path):
             row_html_filename = row.name.replace(" ", "_")
             html_parent = repo_home / "docs" / row_html_filename
             html_parent.mkdir(parents=True, exist_ok=True)
-            all_dctap_dirs.append((row_html_filename, row.name))
+            all_dctap_dirs.append({"url": row_html_filename, "name": row.name})
             dctap_folder_to_html(row, html_parent, version)
     # Creates Website index.html Page
+    index_template = env.get_template("index.html")
+    home_html = index_template.render(
+        title="Bibframe Interoperability Group (BIG) DCTap",
+        dctap_dirs=all_dctap_dirs,
+        version=version,
+    )
     with (repo_home / "docs/index.html").open("w+") as fo:
-        title = "Bibframe Interoperability Group (BIG) DCTap"
-        home_html_body = "<ul>\n"
-        for row in sorted(all_dctap_dirs):
-            home_html_body += f"""<li><a href="{row[0]}">{row[1]}</a></li>\n"""
-        home_html_body += "</ul>\n"
-        home_html = HTML_TEMPLATE.substitute(
-            title=title, body=home_html_body, version=version
-        )
         fo.write(home_html)
 
 

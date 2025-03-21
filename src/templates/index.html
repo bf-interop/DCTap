@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<ul>
+{% for file in dctap_dirs %}
+  <li><a href="{{ file.url }}">{{ file.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

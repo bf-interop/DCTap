@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
-        run: pip install pandas
+        run: pip install pandas jinja2
       - name: Generate html pages
         run: python src/generate_website.py
       - name: Upload artifact
