@@ -2,9 +2,24 @@
 
 
 {% block body %}
+<p>
+  The international <a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=249135298" target="_blank">BIBFRAME Interoperability Group (BIG)</a> supports efficient and interoperable use of the <a href="https://www.loc.gov/bibframe/" target="_blank">BIBFRAME</a> 
+  standard by establishing and sharing best practices between participants. Toward that goal, BIG’s SHACL/DCTAP subgroup implements machine actionable application profiles developed by the BIG Interlingua Subgroup. These profiles provide BIBFRAME adopters the ability 
+  to easily produce and make use of shareable BIBFRAME according to common data practices by entity type. 
+</p>
+<p>
+  BIG BIBFRAME data guidelines (listed below) are recorded using <a href="https://www.dublincore.org/specifications/dctap/primer/" target="_blank">Dublin Core Tabular Application Profiles (DCTAP)</a> which can be converted to
+  <a href="https://www.w3.org/TR/shacl/" target="_blank">Shapes Constraint Language (SHACL)</a> for data validation. Currently, BIG has produced shapes for BIBFRAME for the following:
+</p>
 <ul>
 {% for file in dctap_dirs %}
   <li><a href="{{ file.url }}">{{ file.name }}</a></li>
 {% endfor %}
 </ul>
+<p>
+BIG plans to produce shapes for additional bibliographic formats in the future.
+</p>
+<p>
+Want to explore more? BIG shapes can be tested using the <a href="https://bf-interop.github.io/bf-demo-validation-tool/" target="_blank">Sinopia BIBFRAME Validation Tool</a>, using these <a href="https://docs.google.com/document/d/1_-eb246WHtmap_kufJmBb2o0mxL6M-BxVWIcm5anpU8/edit?usp=sharing" target="_blank">instructions</a>.
+</p>
 {% endblock %}
