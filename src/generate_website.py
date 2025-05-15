@@ -85,7 +85,7 @@ def main(repo_home: pathlib.Path):
     # Creates Website index.html Page
     index_template = env.get_template("index.html")
     home_html = index_template.render(
-        title="Bibframe Interoperability Group (BIG) DCTap",
+        title="Bibframe Interoperability Group (BIG) DCTAP",
         dctap_dirs=all_dctap_dirs,
         version=version,
     )
