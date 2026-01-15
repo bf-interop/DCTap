@@ -1,0 +1,635 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/24001620">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+	<rdfs:label>single unit</rdfs:label>
+	<bf:code>mono</bf:code>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:soundCharacteristic>
+      <bf:PlayingSpeed rdf:about="http://id.loc.gov/vocabulary/mplayspeed/f">
+	<rdfs:label>1.4 m/s</rdfs:label>
+	<bf:code>f</bf:code>
+      </bf:PlayingSpeed>
+    </bf:soundCharacteristic>
+    <bf:baseMaterial>
+      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+	<rdfs:label>plastic</rdfs:label>
+	<bf:code>pla</bf:code>
+      </bf:BaseMaterial>
+    </bf:baseMaterial>
+    <bf:baseMaterial>
+      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+	<rdfs:label>metal</rdfs:label>
+	<bf:code>mtl</bf:code>
+      </bf:BaseMaterial>
+    </bf:baseMaterial>
+    <bf:soundCharacteristic>
+      <bf:CaptureStorage rdf:about="http://id.loc.gov/vocabulary/mcapturestorage/dist">
+	<rdfs:label>electrical capture, digital storage</rdfs:label>
+	<bf:code>dist</bf:code>
+      </bf:CaptureStorage>
+    </bf:soundCharacteristic>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1995</bf:date>
+	<bf:place>
+	  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nju">
+	    <rdfs:label xml:lang="en">New Jersey</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nju</bf:code>
+	  </bf:Place>
+	</bf:place>
+	<bflc:simplePlace>Westfield, NJ</bflc:simplePlace>
+	<bflc:simpleAgent>Sharp Nine Records</bflc:simpleAgent>
+	<bflc:simpleDate>[1995]</bflc:simpleDate>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:publicationStatement>Westfield, NJ: Sharp Nine Records, [1995]</bf:publicationStatement>
+    <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">1995</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Lccn>
+	<rdf:value>  2025142771</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Upc>
+	<rdf:value>601917100229</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:AudioIssueNumber>
+	<rdf:value>CD 1002-2</rdf:value>
+	<bf:assigner>
+	  <bf:Organization>
+	    <rdfs:label>Sharp Nine Records</rdfs:label>
+	  </bf:Organization>
+	</bf:assigner>
+      </bf:AudioIssueNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OclcNumber>
+	<rdf:value>ocm40386128</rdf:value>
+      </bf:OclcNumber>
+    </bf:identifiedBy>
+    <bf:responsibilityStatement>The David Hazeltine Quartet featuring Slide Hampton</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>4 flights up</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:extent>
+      <bf:Extent>
+	<rdfs:label>1 audio disc</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>4 3/4 in</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+	<rdfs:label>audio</rdfs:label>
+	<bf:code>s</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:code>sd</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:soundCharacteristic>
+      <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+	<rdfs:label>digital</rdfs:label>
+	<bf:code>digital</bf:code>
+      </bf:RecordingMethod>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+	<rdfs:label>optical</rdfs:label>
+	<bf:code>opt</bf:code>
+      </bf:RecordingMedium>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlayingSpeed>
+	<rdfs:label>1.4 m/s</rdfs:label>
+      </bf:PlayingSpeed>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+	<rdfs:label>stereo</rdfs:label>
+	<bf:code>ste</bf:code>
+      </bf:PlaybackChannels>
+    </bf:soundCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/audio">
+	<rdfs:label>audio file</rdfs:label>
+	<bf:code>audio</bf:code>
+      </bf:FileType>
+    </bf:digitalCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:EncodingFormat rdf:about="http://id.loc.gov/vocabulary/mencformat/cda">
+	<rdfs:label>CD audio</rdfs:label>
+	<bf:code>cda</bf:code>
+      </bf:EncodingFormat>
+    </bf:digitalCharacteristic>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Title from disc label.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Liner notes by Marc Edelman (1 folded sheet : portraits) inserted in container.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/24001620"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-23</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>GZQ</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-23T06:56:50</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T17:01:11.848005-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>24001620</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr06 2025-01-23 z-client$iqr06 2025-01-23</bflc:marcKey>
+	<lclocal:d955>=955     $a qr06 2025-01-23 z-client $i qr06 2025-01-23</lclocal:d955>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aGZQ$beng$erda$cGZQ$dOCLCQ$dOCLCG$dOCLCA$dOCLCF$dOCLCO$dOCL$dOCLCQ$dCNCGM$dOCLCO$dOCLCQ$dUX0$dOCLCL$dTJC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/24001620">
+    <bflc:aap>4 flights up</bflc:aap>
+    <bflc:aap-normalized>4flightsup</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/zxx">
+	<rdfs:label xml:lang="en">No linguistic content</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zxx</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/performerhistory">
+	<rdfs:label>history of performer or ensemble</rdfs:label>
+	<bf:code>performerhistory</bf:code>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/techmusic">
+	<rdfs:label>technical information on music</rdfs:label>
+	<bf:code>techmusic</bf:code>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:capture>
+      <bf:Capture>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>capture</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1995-07-27</bf:date>
+	<bf:place>
+	  <bf:Place rdf:about="http://id.loc.gov/authorities/classification/G3814.E62">
+	    <rdfs:label>Geography. Anthropology. Recreation--Maps--By region or country--America. Western Hemisphere--North America--United States--Eastern United States, 1870 and later--Northeastern States--Northeast Atlantic States--Middle Atlantic States. Middle States--New Jersey--Cities and towns, etc., A-Z--Englewood Cliffs</rdfs:label>
+	    <madsrdf:componentList rdf:parseType="Collection" xmlns:streams="info:lc/streams#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	      <madsrdf:Collection>
+		<rdfs:label>Geography. Anthropology. Recreation</rdfs:label>
+	      </madsrdf:Collection>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Maps</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>By region or country</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>America. Western Hemisphere</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>North America</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Eastern United States, 1870 and later</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Northeastern States</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Northeast Atlantic States</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Middle Atlantic States. Middle States</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>New Jersey</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+		<madsrdf:authoritativeLabel>Cities and towns, etc., A-Z</madsrdf:authoritativeLabel>
+	      </lcc:ClassNumber>
+	      <madsrdf:ClassNumber>
+		<madsrdf:authoritativeLabel>Englewood Cliffs</madsrdf:authoritativeLabel>
+	      </madsrdf:ClassNumber>
+	    </madsrdf:componentList>
+	    <bf:code>G3814.E62</bf:code>
+	  </bf:Place>
+	</bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:accompaniedBy>
+      <bf:Work>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/amt"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Work>
+    </bf:accompaniedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>SDD 84438</bf:classificationPortion>
+	<bf:assigner>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:assigner>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+	    <rdfs:label>used by assigner</rdfs:label>
+	    <bf:code>uba</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationDdc>
+	<bf:classificationPortion>781.65 HAZ Dav</bf:classificationPortion>
+	<bf:edition>abridged</bf:edition>
+      </bf:ClassificationDdc>
+    </bf:classification>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>4 flights up</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+	<bf:mainTitle>Four flights up</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+	<rdfs:label>performed music</rdfs:label>
+	<bf:code>prm</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+	<rdfs:label>I should care / S. Cahn ; P. Weston ; A. Stordahl (5:09) -- Betcha by golly wow / L. Creed ; T. Bell (8:35) -- You stepped out of a dream / N. Brown ; G. Kahn (5:51) -- Ann's mood / D. Hazeltine (5:35) -- Pentimento / D. Hazeltine (6:25) -- Four flights up / D. Hazeltine (6:49) -- Every time we say goodbye / C. Porter (9:28) -- Air conditioning / C. Parker (5:43) -- Confluence / D. Hazeltine (6:43).</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
+	<rdfs:label>David Hazeltine Quartet (David Hazeltine, piano ; Locksley Wellington "Slide" Hampton, trombone ; Peter Washington, bass ; "Killer" Ray Appleton, drums).</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:capture>
+      <bf:Capture>
+	<bf:date>1995 July 27</bf:date>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Recorded at</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:place>
+	  <bf:Place>
+	    <rdfs:label>Van Gelder Recording Studio, Englewood Cliffs, NJ</rdfs:label>
+	  </bf:Place>
+	</bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh91004675">
+	<rdfs:label xml:lang="en">Jazz--1991-2000</rdfs:label>
+	<bflc:marcKey>150 0$aJazz$y1991-2000</bflc:marcKey>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">Jazz</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Jazz</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:Temporal>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">1991-2000</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TemporalElement>
+		<madsrdf:elementValue xml:lang="en">1991-2000</madsrdf:elementValue>
+	      </madsrdf:TemporalElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Temporal>
+	</madsrdf:componentList>
+      </bf:Topic>
+    </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026879">
+	<rdfs:label xml:lang="en">Jazz</rdfs:label>
+	<bflc:marcKey>155  $aJazz</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no00046070">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Hazeltine, David, 1958-</rdfs:label>
+	    <bflc:marcKey>1001 $aHazeltine, David,$d1958-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
+	    <rdfs:label>performer</rdfs:label>
+	    <bf:code>prf</bf:code>
+	  </bf:Role>
+	</bf:role>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+	    <rdfs:label>composer</rdfs:label>
+	    <bf:code>cmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n78017705">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Hampton, Slide</rdfs:label>
+	    <bflc:marcKey>1001 $aHampton, Slide</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
+	    <rdfs:label>performer</rdfs:label>
+	    <bf:code>prf</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2002077049">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>David Hazeltine Quartet</rdfs:label>
+	    <bflc:marcKey>1102 $aDavid Hazeltine Quartet</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
+	    <rdfs:label>performer</rdfs:label>
+	    <bf:code>prf</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship rdf:resource="https://id.oclc.org/worldcat/ontology/hasWork"/>
+	<bf:associatedResource rdf:resource="https://id.oclc.org/worldcat/entity/E39PCH8HpJbxVyXFVG8mp7qqQq"/>
+      </bf:Relation>
+    </bf:relation>
+    <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/24001620"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-23</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>GZQ</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-23T06:56:50</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T17:01:11.848005-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>24001620</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr06 2025-01-23 z-client$iqr06 2025-01-23</bflc:marcKey>
+	<lclocal:d955>=955     $a qr06 2025-01-23 z-client $i qr06 2025-01-23</lclocal:d955>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aGZQ$beng$erda$cGZQ$dOCLCQ$dOCLCG$dOCLCA$dOCLCF$dOCLCO$dOCL$dOCLCQ$dCNCGM$dOCLCO$dOCLCQ$dUX0$dOCLCL$dTJC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+</rdf:RDF>
