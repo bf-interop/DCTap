@@ -1,0 +1,1368 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16648989">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+	<rdfs:label>single unit</rdfs:label>
+	<bf:code>mono</bf:code>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:colorContent>
+      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
+	<rdfs:label>color</rdfs:label>
+	<bf:code>mul</bf:code>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:soundContent>
+      <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+	<rdfs:label>sound</rdfs:label>
+	<bf:code>sound</bf:code>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2002</bf:date>
+	<bf:place>
+	  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xxu">
+	    <rdfs:label xml:lang="en">United States</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xxu</bf:code>
+	  </bf:Place>
+	</bf:place>
+	<bflc:simplePlace>Beverly Hills, California</bflc:simplePlace>
+	<bflc:simpleAgent>Twentieth Century Fox Home Entertainment, Inc</bflc:simpleAgent>
+	<bflc:simpleDate>[2002]</bflc:simpleDate>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:publicationStatement>Beverly Hills, California: Twentieth Century Fox Home Entertainment, Inc, [2002]</bf:publicationStatement>
+    <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2002</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Lccn>
+	<rdf:value>  2011602419</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:CopyrightNumber>
+	<rdf:value>PA0001601537</rdf:value>
+	<bf:assigner>
+	  <bf:Organization>
+	    <rdfs:label>U.S. Copyright Office</rdfs:label>
+	  </bf:Organization>
+	</bf:assigner>
+      </bf:CopyrightNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Upc>
+	<rdf:value>024543051442</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Upc>
+	<rdf:value>024543051447</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Upc>
+	<rdf:value>2454305160</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Upc>
+	<rdf:value>024543051503</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:VideoRecordingNumber>
+	<rdf:value>2005144</rdf:value>
+	<bf:assigner>
+	  <bf:Organization>
+	    <rdfs:label>20th Century Fox Home Entertainment</rdfs:label>
+	  </bf:Organization>
+	</bf:assigner>
+      </bf:VideoRecordingNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OclcNumber>
+	<rdf:value>ocm50443604</rdf:value>
+      </bf:OclcNumber>
+    </bf:identifiedBy>
+    <bf:acquisitionSource>
+      <bf:AcquisitionSource>
+	<bf:identifiedBy>
+	  <bf:StockNumber>
+	    <rdf:value>2005144</rdf:value>
+	  </bf:StockNumber>
+	</bf:identifiedBy>
+	<rdfs:label>Twentieth Century Fox</rdfs:label>
+      </bf:AcquisitionSource>
+    </bf:acquisitionSource>
+    <bf:responsibilityStatement>Twentieth Century Fox and Regency Enterprises present a New Regency/Manifest Film Company/Monarch Pictures production, a Carl Franklin film in association with Epsilon Motion Pictures ; producers, Arnon Milchan, Janet Yang, Jesse B'Franklin ; screenplay writers, Yuri Zeltser, Cary Bickley ; director, Carl Franklin</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>High crimes</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:extent>
+      <bf:Extent>
+	<rdfs:label>1 videodisc (115 min.)</rdfs:label>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>viewing copy</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sound, color</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>4 3/4 in</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+	<rdfs:label>video</rdfs:label>
+	<bf:code>v</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+	<rdfs:label>videodisc</rdfs:label>
+	<bf:code>vd</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:dimensions>4 3/4 in</bf:dimensions>
+    <bf:soundCharacteristic>
+      <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+	<rdfs:label>digital</rdfs:label>
+	<bf:code>digital</bf:code>
+      </bf:RecordingMethod>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+	<rdfs:label>optical</rdfs:label>
+	<bf:code>opt</bf:code>
+      </bf:RecordingMedium>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/mul">
+	<rdfs:label>surround</rdfs:label>
+	<bf:code>mul</bf:code>
+      </bf:PlaybackChannels>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlaybackCharacteristic rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolbydig51">
+	<rdfs:label>Dolby Digital 5.1</rdfs:label>
+	<bf:code>dolbydig51</bf:code>
+      </bf:PlaybackCharacteristic>
+    </bf:soundCharacteristic>
+    <bf:videoCharacteristic>
+      <bf:BroadcastStandard rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+	<rdfs:label>NTSC</rdfs:label>
+	<bf:code>ntsc</bf:code>
+      </bf:BroadcastStandard>
+    </bf:videoCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+	<rdfs:label>video file</rdfs:label>
+	<bf:code>video</bf:code>
+      </bf:FileType>
+    </bf:digitalCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:RegionalEncoding rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+	<rdfs:label>region 1</rdfs:label>
+	<bf:code>region1</bf:code>
+      </bf:RegionalEncoding>
+    </bf:digitalCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:EncodingFormat rdf:about="http://id.loc.gov/vocabulary/mencformat/dvdv">
+	<rdfs:label>DVD video</rdfs:label>
+	<bf:code>dvdv</bf:code>
+      </bf:EncodingFormat>
+    </bf:digitalCharacteristic>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Widescreen (2.35:1).</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Based on the novel by Joseph Finder.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Originally released as a motion picture in 2002.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Bonus features: full-length audio commentary by the director; 6 never-before-seen featurettes, including "Liar liar" (how to beat a polygraph) and "A different kind of justice" (military vs. civilian law); original theatrical trailer.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Sources used: videodisc container; Copyright catalog online; Internet movie database WWW site, viewed February 4, 2025.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:contentAccessibility>
+      <bf:ContentAccessibility>
+	<rdfs:label>Closed captioning in English.</rdfs:label>
+      </bf:ContentAccessibility>
+    </bf:contentAccessibility>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/16648989"/>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/16648989"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-11</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>GEC</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-04T13:42:47</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T18:48:40.050444-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+	    <rdfs:label>minimal</rdfs:label>
+	    <bf:code>7</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>16648989</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$du$encip$f20$gy-gencatlg</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d u $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b* shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b * shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bqm11 2011-02-11 z-processor$aqm19 2025-02-04</bflc:marcKey>
+	<lclocal:d955>=955     $b qm11 2011-02-11 z-processor $a qm19 2025-02-04</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aGEC$erda$cGEC$dTEF$dOCLCQ$dBTCTA$dOCLCG$dSINLB$dNED$dOCLCQ$dCO2$dCKL$dCRU$dRNC$dTDS$dTXQ$dACN$dOCLCA$dEGM$dSYB$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/16648989">
+    <bflc:aap>High crimes</bflc:aap>
+    <bflc:aap-normalized>highcrimes</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	<rdfs:label xml:lang="en">English</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bf:intendedAudience>
+      <bf:IntendedAudience rdf:about="http://id.loc.gov/vocabulary/maudience/gen">
+	<rdfs:label>general</rdfs:label>
+	<bf:code>gen</bf:code>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bflc:movingImageTechnique>
+      <bflc:MovingImageTechnique rdf:about="http://id.loc.gov/vocabulary/mtechnique/live">
+	<rdfs:label>live action</rdfs:label>
+	<bf:code>live</bf:code>
+      </bflc:MovingImageTechnique>
+    </bflc:movingImageTechnique>
+    <bf:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT115M</bf:duration>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre">
+	<rdfs:label xml:lang="en">French</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fre</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa">
+	<rdfs:label xml:lang="en">Spanish</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spa</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/sub"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa">
+	    <rdfs:label xml:lang="en">Spanish</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spa</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/sub"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/cap"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/otx"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Note>
+    </bf:note>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/n-us">
+	<rdfs:label xml:lang="en">United States</rdfs:label>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:originDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2002</bf:originDate>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>DVE 9291 (viewing copy)</bf:classificationPortion>
+	<bf:assigner>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:assigner>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+	    <rdfs:label>used by assigner</rdfs:label>
+	    <bf:code>uba</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:expressionOf>
+      <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/a9eeeafe-454e-b6a1-ddcb-557906a8ee9c">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
+	<rdfs:label>High crimes (Motion picture : 2002)</rdfs:label>
+	<bflc:marcKey>1300 $aHigh crimes (Motion picture : 2002)</bflc:marcKey>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n93107156">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Franklin, Carl, 1949-</rdfs:label>
+		<bflc:marcKey>1001 $aFranklin, Carl,$d1949-</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034947">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Yang, Janet</rdfs:label>
+		<bflc:marcKey>1001 $aYang, Janet</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+		<rdfs:label>film producer</rdfs:label>
+		<bf:code>fmp</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n96024551">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Milchan, Arnon, 1944-</rdfs:label>
+		<bflc:marcKey>1001 $aMilchan, Arnon,$d1944-</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+		<rdfs:label>film producer</rdfs:label>
+		<bf:code>fmp</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/nr99023441">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Beaton, Jesse</rdfs:label>
+		<bflc:marcKey>1001 $aBeaton, Jesse</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+		<rdfs:label>film producer</rdfs:label>
+		<bf:code>fmp</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>High crimes (Motion picture : 2002)</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+      </bf:Hub>
+    </bf:expressionOf>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>High crimes</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
+	<rdfs:label>two-dimensional moving image</rdfs:label>
+	<bf:code>tdi</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
+	<rdfs:label xml:lang="en">Motion pictures</rdfs:label>
+	<bflc:marcKey>155  $aMotion pictures</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/credits"/>
+	<rdfs:label>Director of photography, Theo van de Sande ; editor, Carole Kravetz-Aykanian ; music, Graeme Revell ; costume designer, Sharen Davis ; production designer, Paul Peters.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
+	<rdfs:label>Cast: Ashley Judd, Morgan Freeman, Jim Caviezel, Amanda Peet, Adam Scott, Bruce Davison, Tom Bower, Michael Gaston, Jude Ciccolella.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:summary>
+      <bf:Summary>
+	<rdfs:label>Claire is a high-powered attorney whose perfect life comes crashing down around her when her husband is chardged with high crimes of murder. Enlisting the aid of a shrewd military attorney, Claire will risk her career and even her life to find out the truth.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:intendedAudience>
+      <bf:IntendedAudience>
+	<rdfs:label>MPAA rating: PG-13; for violence, sexual content and language.</rdfs:label>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/lang"/>
+	<rdfs:label>In English; optional dubbed French or Spanish dialogue; English, Spanish subtitles.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Courts-martial and courts of inquiry--Drama</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Courts-martial and courts of inquiry--Drama</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85033588">
+	    <rdfs:label xml:lang="en">Courts-martial and courts of inquiry</rdfs:label>
+	    <bflc:marcKey>150  $aCourts-martial and courts of inquiry</bflc:marcKey>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>courtsmartialandcourtsofinquirydrama</bflc:aap-normalized>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026353">
+	<rdfs:label xml:lang="en">Legal films</rdfs:label>
+	<bflc:marcKey>155  $aLegal films</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026692">
+	<rdfs:label xml:lang="en">Thrillers (Motion pictures)</rdfs:label>
+	<bflc:marcKey>155  $aThrillers (Motion pictures)</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026247">
+	<rdfs:label xml:lang="en">Feature films</rdfs:label>
+	<bflc:marcKey>155  $aFeature films</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026250">
+	<rdfs:label xml:lang="en">Fiction films</rdfs:label>
+	<bflc:marcKey>155  $aFiction films</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725">
+	<rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+	<bflc:marcKey>155  $aVideo recordings for the hearing impaired</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026297"/>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n96024551">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Milchan, Arnon, 1944-</rdfs:label>
+	    <bflc:marcKey>1001 $aMilchan, Arnon,$d1944-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+	    <rdfs:label>film producer</rdfs:label>
+	    <bf:code>fmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034947">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Yang, Janet</rdfs:label>
+	    <bflc:marcKey>1001 $aYang, Janet</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+	    <rdfs:label>film producer</rdfs:label>
+	    <bf:code>fmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/nr99023441">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Beaton, Jesse</rdfs:label>
+	    <bflc:marcKey>1001 $aBeaton, Jesse</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+	    <rdfs:label>film producer</rdfs:label>
+	    <bf:code>fmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034949">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Zeltser, Yuri, 1962-</rdfs:label>
+	    <bflc:marcKey>1001 $aZeltser, Yuri,$d1962-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+	    <rdfs:label>screenwriter</rdfs:label>
+	    <bf:code>aus</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034950">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Bickley, Cary</rdfs:label>
+	    <bflc:marcKey>1001 $aBickley, Cary</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+	    <rdfs:label>screenwriter</rdfs:label>
+	    <bf:code>aus</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n93107156">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Franklin, Carl, 1949-</rdfs:label>
+	    <bflc:marcKey>1001 $aFranklin, Carl,$d1949-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+	    <rdfs:label>film director</rdfs:label>
+	    <bf:code>fmd</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no98050910">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Judd, Ashley</rdfs:label>
+	    <bflc:marcKey>1001 $aJudd, Ashley</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no89021635">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Freeman, Morgan</rdfs:label>
+	    <bflc:marcKey>1001 $aFreeman, Morgan</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no00012380">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Caviezel, Jim, 1968-</rdfs:label>
+	    <bflc:marcKey>1001 $aCaviezel, Jim,$d1968-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2003027741">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Peet, Amanda, 1972-</rdfs:label>
+	    <bflc:marcKey>1001 $aPeet, Amanda,$d1972-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034951">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Scott, Adam, 1973-</rdfs:label>
+	    <bflc:marcKey>1001 $aScott, Adam,$d1973-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no96018894">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Davison, Bruce, 1946-</rdfs:label>
+	    <bflc:marcKey>1001 $aDavison, Bruce,$d1946-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no98099068">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Bower, Tom, 1938-</rdfs:label>
+	    <bflc:marcKey>1001 $aBower, Tom,$d1938-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no00100564">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Gaston, Michael</rdfs:label>
+	    <bflc:marcKey>1001 $aGaston, Michael</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2003036398">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Ciccolella, Jude</rdfs:label>
+	    <bflc:marcKey>1001 $aCiccolella, Jude</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+	    <rdfs:label>actor</rdfs:label>
+	    <bf:code>act</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034952">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Van de Sande, Theo, 1947-</rdfs:label>
+	    <bflc:marcKey>1001 $aVan de Sande, Theo,$d1947-</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cng">
+	    <rdfs:label>cinematographer</rdfs:label>
+	    <bf:code>cng</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2003105299">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Kravetz-Aykanian, Carole</rdfs:label>
+	    <bflc:marcKey>1001 $aKravetz-Aykanian, Carole</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edm">
+	    <rdfs:label>editor of moving image work</rdfs:label>
+	    <bf:code>edm</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94038414">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Revell, Graeme</rdfs:label>
+	    <bflc:marcKey>1001 $aRevell, Graeme</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+	    <rdfs:label>composer</rdfs:label>
+	    <bf:code>cmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2001056872">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Davis, Sharen</rdfs:label>
+	    <bflc:marcKey>1001 $aDavis, Sharen</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cst">
+	    <rdfs:label>costume designer</rdfs:label>
+	    <bf:code>cst</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n78089065">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Twentieth Century-Fox Film Corporation</rdfs:label>
+	    <bflc:marcKey>1102 $aTwentieth Century-Fox Film Corporation</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pre">
+	    <rdfs:label>presenter</rdfs:label>
+	    <bf:code>pre</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no95048037">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Regency Enterprises</rdfs:label>
+	    <bflc:marcKey>1102 $aRegency Enterprises</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pre">
+	    <rdfs:label>presenter</rdfs:label>
+	    <bf:code>pre</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2003110526">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>New Regency (Firm)</rdfs:label>
+	    <bflc:marcKey>1102 $aNew Regency (Firm)</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+	    <rdfs:label>production company</rdfs:label>
+	    <bf:code>prn</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2010200101">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Manifest Film Company</rdfs:label>
+	    <bflc:marcKey>1102 $aManifest Film Company</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+	    <rdfs:label>production company</rdfs:label>
+	    <bf:code>prn</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034953">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Monarch Pictures (Firm)</rdfs:label>
+	    <bflc:marcKey>1102 $aMonarch Pictures (Firm)</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+	    <rdfs:label>production company</rdfs:label>
+	    <bf:code>prn</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2004034955">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Epsilon Motion Pictures (Firm)</rdfs:label>
+	    <bflc:marcKey>1102 $aEpsilon Motion Pictures (Firm)</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+	    <rdfs:label>production company</rdfs:label>
+	    <bf:code>prn</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Twentieth Century Fox Home Entertainment, Inc</rdfs:label>
+	    <bflc:marcKey>7102 $aTwentieth Century Fox Home Entertainment, Inc.,$epublisher.</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pbl">
+	    <rdfs:label>publisher</rdfs:label>
+	    <bf:code>pbl</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/relatedwork">
+	    <rdfs:label>related work</rdfs:label>
+	    <bf:code>relatedwork</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/entities/relationships/motionpictureadaptationof">
+	    <rdfs:label>Motion picture adaptation of</rdfs:label>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/82874e39-9561-436c-f6fe-e6bc3a4ffa09">
+	    <rdfs:label>Finder, Joseph. High crimes</rdfs:label>
+	    <bflc:marcKey>1001 $aFinder, Joseph.$tHigh crimes.</bflc:marcKey>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n82134077">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Finder, Joseph</rdfs:label>
+		    <bflc:marcKey>1001 $aFinder, Joseph</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>High crimes</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/16648989"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-11</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>GEC</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-04T13:42:47</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T18:48:40.050444-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+	    <rdfs:label>minimal</rdfs:label>
+	    <bf:code>7</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>16648989</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$du$encip$f20$gy-gencatlg</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d u $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b* shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b * shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bqm11 2011-02-11 z-processor$aqm19 2025-02-04</bflc:marcKey>
+	<lclocal:d955>=955     $b qm11 2011-02-11 z-processor $a qm19 2025-02-04</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aGEC$erda$cGEC$dTEF$dOCLCQ$dBTCTA$dOCLCG$dSINLB$dNED$dOCLCQ$dCO2$dCKL$dCRU$dRNC$dTDS$dTXQ$dACN$dOCLCA$dEGM$dSYB$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+  <bf:Item rdf:about="http://id.loc.gov/resources/items/16648989">
+    <bf:heldBy>
+      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	<rdfs:label>United States, Library of Congress</rdfs:label>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+      </bf:Organization>
+    </bf:heldBy>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n85376539">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Copyright Collection (Library of Congress)</rdfs:label>
+	    <bflc:marcKey>11020$aCopyright Collection (Library of Congress)</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/items"/>
+    <bf:itemOf>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16648989">
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>High crimes</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+	<bf:publicationStatement>Beverly Hills, California: Twentieth Century Fox Home Entertainment, Inc, [2002]</bf:publicationStatement>
+      </bf:Instance>
+    </bf:itemOf>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-11</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>GEC</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-04T13:42:47</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T18:48:40.050444-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+	    <rdfs:label>minimal</rdfs:label>
+	    <bf:code>7</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>16648989</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$du$encip$f20$gy-gencatlg</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d u $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b* shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b * shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bqm11 2011-02-11 z-processor$aqm19 2025-02-04</bflc:marcKey>
+	<lclocal:d955>=955     $b qm11 2011-02-11 z-processor $a qm19 2025-02-04</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aGEC$erda$cGEC$dTEF$dOCLCQ$dBTCTA$dOCLCG$dSINLB$dNED$dOCLCQ$dCO2$dCKL$dCRU$dRNC$dTDS$dTXQ$dACN$dOCLCA$dEGM$dSYB$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Item>
+</rdf:RDF>

@@ -1,0 +1,2804 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/13595597">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/intg">
+	<rdfs:label>integrating resource</rdfs:label>
+	<bf:code>intg</bf:code>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:colorContent>
+      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mix">
+	<rdfs:label>mixed color</rdfs:label>
+	<bf:code>mix</bf:code>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1998/..</bf:date>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/current">
+	    <rdfs:label>current</rdfs:label>
+	    <bf:code>current</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:place>
+	  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/mdu">
+	    <rdfs:label xml:lang="en">Maryland</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdu</bf:code>
+	  </bf:Place>
+	</bf:place>
+	<bflc:simplePlace>College Park, MD</bflc:simplePlace>
+	<bflc:simpleAgent>American Physical Society</bflc:simpleAgent>
+	<bflc:simpleDate>©1998-</bflc:simpleDate>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:publicationStatement>College Park, MD: American Physical Society, ©1998-</bf:publicationStatement>
+    <bf:frequency>
+      <bf:Frequency rdf:about="http://id.loc.gov/vocabulary/frequencies/ann">
+	<rdfs:label>annual</rdfs:label>
+	<bf:code>ann</bf:code>
+      </bf:Frequency>
+    </bf:frequency>
+    <bf:identifiedBy>
+      <bf:Lccn>
+	<rdf:value>  2001229218</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>0242620</rdf:value>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+	    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>P13940000</rdf:value>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+	    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>012091291</rdf:value>
+	<bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OclcNumber>
+	<rdf:value>40431267</rdf:value>
+      </bf:OclcNumber>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Physical review online archive</bf:mainTitle>
+	<bf:subtitle>PROLA</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:extent>
+      <bf:Extent>
+	<rdfs:label>1 online resource</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
+	<rdfs:label>computer</rdfs:label>
+	<bf:code>c</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
+	<rdfs:label>online resource</rdfs:label>
+	<bf:code>cr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Description based on contents viewed on June 14, 2017; title from home page.</rdfs:label>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/descsource"/>
+      </bf:Note>
+    </bf:note>
+    <bf:electronicLocator rdf:resource="https://journals.aps.org/archive/"/>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/13595597"/>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/13595597-859-55"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-12-02</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>CIT</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-22T10:06:43</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Agent>
+	    <bf:code>OCLCL</bf:code>
+	  </bf:Agent>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T14:03:10.903391-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>13595597</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/metaentry"/>
+	    <rdfs:label>2 - integrated</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aCIT$beng$erda$cCIT$dOCL$dUMC$dEYM$dFUG$dOCLCQ$dDLC$dOCLCQ$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dNDD$dS3O$dOCL$dOCLCQ$dAU@$dCUS$dOCLCL</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
+	    <bf:code>pcc</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xpolicy default 2004-05-17</bflc:marcKey>
+	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x policy default 2004-05-17</lclocal:d925>
+	<bflc:marcKey>955  $ada11 2004-05-17$ida11 2004-05-17</bflc:marcKey>
+	<lclocal:d955>=955     $a da11 2004-05-17 $i da11 2004-05-17</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-893</lclocal:d955>
+	<bflc:marcKey>999ff$sc831a9a7-b05f-40be-afcc-311bba35e3b6$i3233463b-cdb7-56fa-b992-7442639fe09f</bflc:marcKey>
+	<lclocal:d999>=999  ff $s c831a9a7-b05f-40be-afcc-311bba35e3b6 $i 3233463b-cdb7-56fa-b992-7442639fe09f</lclocal:d999>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/13595597">
+    <bflc:aap>Physical review online archive</bflc:aap>
+    <bflc:aap-normalized>physicalreviewonlinearchive</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Integrating"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	<rdfs:label xml:lang="en">English</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bflc:serialPubType>
+      <bflc:SerialPubType rdf:about="http://id.loc.gov/vocabulary/mserialpubtype/database">
+	<rdfs:label>database</rdfs:label>
+	<bf:code>database</bf:code>
+      </bflc:SerialPubType>
+    </bflc:serialPubType>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>QC1</bf:classificationPortion>
+	<bf:assigner>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:assigner>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+	    <rdfs:label>used by assigner</rdfs:label>
+	    <bf:code>uba</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Physical review online archive</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+	<bf:mainTitle>PROLA</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Title in title bar</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:mainTitle>APS Journals Archive</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Also known as</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:mainTitle>American Physical Society [PROLA]</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+	<bf:mainTitle>Physical review journals archive</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:code>txt</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:summary>
+      <bf:Summary>
+	<rdfs:label>PROLA is a complete archive of the American Physical Society's journal publications back to their beginnings in 1893. A subscription to PROLA gives access to all journal content, except for the current year and the preceding three years.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Physics--Databases</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Physics--Databases</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85101653">
+	    <rdfs:label xml:lang="en">Physics</rdfs:label>
+	    <bflc:marcKey>150 0$aPhysics</bflc:marcKey>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Databases</madsrdf:authoritativeLabel>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>physicsdatabases</bflc:aap-normalized>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.worldcat.org/fast/1063025">
+	<bflc:marcKey>150  $aPhysics</bflc:marcKey>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Physics</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label>Fysik</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Fysik</madsrdf:authoritativeLabel>
+	<bflc:aap-normalized>fysik</bflc:aap-normalized>
+	<madsrdf:isMemberOfMADSScheme xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/sao">
+	    <rdfs:label>Svenska ämnesord</rdfs:label>
+	    <bf:code>sao</bf:code>
+	  </madsrdf:Authority>
+	</madsrdf:isMemberOfMADSScheme>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/sao">
+	    <rdfs:label>Svenska ämnesord</rdfs:label>
+	    <bf:code>sao</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411643">
+	<bflc:marcKey>155  $aDatabases</bflc:marcKey>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Databases</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Periodika</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/saogf" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	    <rdfs:label>Svenska ämnesord - Genre/Form</rdfs:label>
+	    <bf:code>saogf</bf:code>
+	  </madsrdf:Authority>
+	</bf:source>
+	<rdfs:label>Periodika</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Fulltextdatabaser</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/saogf" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	    <rdfs:label>Svenska ämnesord - Genre/Form</rdfs:label>
+	    <bf:code>saogf</bf:code>
+	  </madsrdf:Authority>
+	</bf:source>
+	<rdfs:label>Fulltextdatabaser</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>American Physical Society</rdfs:label>
+	    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pbl">
+	    <rdfs:label>publisher</rdfs:label>
+	    <bf:code>pbl</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11376368">
+	    <rdfs:label>Physical review. A. Atomic, molecular, and optical physics</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Physical Society.$1https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Institute of Physics.$1https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.P42</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530/.05</bf:classificationPortion>
+		<bf:source>
+		  <bf:Source>
+		    <bf:code>20</bf:code>
+		  </bf:Source>
+		</bf:source>
+		<bf:edition>full</bf:edition>
+		<bf:assigner>
+		  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </madsrdf:CorporateName>
+		</bf:assigner>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev., A At. mol. opt. phy.</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review, A, Atomic, molecular, and optical physics</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>A</bf:partNumber>
+		<bf:partName>Atomic, molecular, and optical physics</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle>Atomic, molecular, and optical physics</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle>Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:note>
+		  <bf:Note>
+		    <rdfs:label>Vols. for 1990-1992 had fluctuating title</rdfs:label>
+		  </bf:Note>
+		</bf:note>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>A, Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:partNumber>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11376368">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>A</bf:partNumber>
+		    <bf:partName>Atomic, molecular, and optical physics</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   90656533 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 90033512 </rdf:value>
+		    <bf:status>
+		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+			<rdfs:label>invalid</rdfs:label>
+		      </bf:Status>
+		    </bf:status>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 91010359 </rdf:value>
+		    <bf:status>
+		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+			<rdfs:label>invalid</rdfs:label>
+		      </bf:Status>
+		    </bf:status>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>9887339</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>SR0077225</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>012091296</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/uk">
+			<bf:code>Uk</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>1472694-4</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/de-600">
+			<bf:code>DE-600</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PLRAAN</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:PostalRegistration>
+		    <rdf:value>431240</rdf:value>
+		    <bf:assigner>
+		      <bf:Organization>
+			<rdfs:label>USPS</rdfs:label>
+		      </bf:Organization>
+		    </bf:assigner>
+		  </bf:PostalRegistration>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>21266025</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, N.Y.: Published by the American Physical Society through the American Institute of Physics, ©1990-</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>52 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11185835">
+	    <rdfs:label>Physical review. A. General physics</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Physical Society.$1https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Institute of Physics.$1https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.P42</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH737A</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		    <rdfs:label>not used by assigner</rdfs:label>
+		    <bf:code>nuba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530/.05</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev., A, Gen. phys.</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. A, General physics</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>A</bf:partNumber>
+		<bf:partName>General physics</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>General physics</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11185835">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>A</bf:partNumber>
+		    <bf:partName>General physics</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   75021361 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 78005027 </rdf:value>
+		    <bf:status>
+		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+			<rdfs:label>invalid</rdfs:label>
+		      </bf:Status>
+		    </bf:status>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>0250142</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13920000</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PLRAAN</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1083925</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, N.Y.: Published for the American Physical Society by the American Institute of Physics, [©1970]-1989</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>40 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11240102">
+	    <rdfs:label>Physical review. B. Condensed matter</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Physical Society.$1https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Institute of Physics.$1https://id.oclc.org/worldcat/entity/E39QH7Jmt4Pmkvj8gdHvCc3FhR</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC176.A1</bf:classificationPortion>
+		<bf:itemPortion>P513</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530.4/1</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev., B, Condens. matter</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. B, Condensed matter</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>B</bf:partNumber>
+		<bf:partName>Condensed matter</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Condensed matter</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11240102">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>B</bf:partNumber>
+		    <bf:partName>Condensed matter</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   80644831 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 78000566 </rdf:value>
+		    <bf:status>
+		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+			<rdfs:label>invalid</rdfs:label>
+		      </bf:Status>
+		    </bf:status>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>9878217</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13930000</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PRBMDO</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>4206245</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, N.Y.: Published for the American Physical Society by the American Institute of Physics, ©1978-©1997</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>39 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11206454">
+	    <rdfs:label>Physical review. C. Nuclear physics</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC770</bf:classificationPortion>
+		<bf:itemPortion>.P45</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH737C</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		    <rdfs:label>not used by assigner</rdfs:label>
+		    <bf:code>nuba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>539.7/05</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev. C. Nucl. phys.</bf:mainTitle>
+		<bf:qualifier>(Print)</bf:qualifier>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. C. Nuclear physics</bf:mainTitle>
+		<bf:qualifier>(Print)</bf:qualifier>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>C</bf:partNumber>
+		<bf:partName>Nuclear physics</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Nuclear physics</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11206454">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>C</bf:partNumber>
+		    <bf:partName>Nuclear physics</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   77021568 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>000011308114</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/au"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>0250143</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13960000</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>007862850</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PRVCAN</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:PostalRegistration>
+		    <rdf:value>879160</rdf:value>
+		    <bf:assigner>
+		      <bf:Organization>
+			<rdfs:label>USPS</rdfs:label>
+		      </bf:Organization>
+		    </bf:assigner>
+		  </bf:PostalRegistration>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1639677</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>New York, N.Y.: Published for the American Physical Society by the American Institute of Physics, ©1970-</bf:publicationStatement>
+		<bf:publicationStatement>Ridge, N.Y.: Published by American Physical Society</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11215658">
+	    <rdfs:label>Physical review. D. Particles and fields</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC721</bf:classificationPortion>
+		<bf:itemPortion>.P457</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1 PH737D</bf:classificationPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>539.7/05</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev. D</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. D. Particles and fields</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>D</bf:partNumber>
+		<bf:partName>Particles and fields</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Particles and fields</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>D</bf:partNumber>
+		<bf:partName>Particles, fields, gravitation, and cosmology</bf:partName>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Particles, fields, gravitation, and cosmology</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11215658">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>D</bf:partNumber>
+		    <bf:partName>Particles and fields</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   78021394 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13980000</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>007862852</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>CAT71328400</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnal"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PRVDAQ</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:PostalRegistration>
+		    <rdf:value>788540</rdf:value>
+		    <bf:assigner>
+		      <bf:Organization>
+			<rdfs:label>USPS</rdfs:label>
+		      </bf:Organization>
+		    </bf:assigner>
+		  </bf:PostalRegistration>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1762331</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>Lancaster, Pa: Published for the American Physical Society by the American Institute of Physics, 1970-</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>68 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11425439">
+	    <rdfs:label>Physical review. E. Statistical physics, plasmas, fluids, and related interdisciplinary topics</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC174.7</bf:classificationPortion>
+		<bf:itemPortion>.P48</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH737DM</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530.1/3</bf:classificationPortion>
+		<bf:source>
+		  <bf:Source>
+		    <bf:code>20</bf:code>
+		  </bf:Source>
+		</bf:source>
+		<bf:edition>full</bf:edition>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev., E Stat. phys. plasmas fluids relat. interdiscip. topics</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. E, Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>E</bf:partNumber>
+		<bf:partName>Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11425439">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>E</bf:partNumber>
+		    <bf:partName>Statistical physics, plasmas, fluids, and related interdisciplinary topics</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   93661989 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 92001280 </rdf:value>
+		    <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>9887340</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>SR0077226</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>012091299</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PLEEE8</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>26103502</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>New York, N.Y.: Published by the American Physical Society through the American Institute of Physics, ©1993-©2000</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>16 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11152495">
+	    <rdfs:label>Physical review letters</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Physical Society.$1https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.P43</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH739</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNal>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnal">
+		    <rdfs:label>United States, National Agricultural Library</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNAL</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnal</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnal</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+		<bf:classificationPortion>334.8</bf:classificationPortion>
+		<bf:itemPortion>P566</bf:itemPortion>
+	      </bf:ClassificationNal>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530.5</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev. lett.</bf:mainTitle>
+		<bf:qualifier>(Print)</bf:qualifier>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review letters</bf:mainTitle>
+		<bf:qualifier>(Print)</bf:qualifier>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review letters</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11152495">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review letters</bf:mainTitle>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   59037543 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>000001920809</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/au">
+			<bf:code>AU</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>0401141</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P14000000</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>007862857</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/uk">
+			<bf:code>Uk</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PRLTAO</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:PostalRegistration>
+		    <rdf:value>431260</rdf:value>
+		    <bf:assigner>
+		      <bf:Organization>
+			<rdfs:label>USPS</rdfs:label>
+		      </bf:Organization>
+		    </bf:assigner>
+		  </bf:PostalRegistration>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1715834</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">[Woodbury, N.Y., etc.]: American Physical Society</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11138913">
+	    <rdfs:label>Reviews of modern physics</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.R4</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1 RE257E</bf:classificationPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530</bf:classificationPortion>
+		<bf:source>
+		  <bf:Source>
+		    <bf:code>11</bf:code>
+		  </bf:Source>
+		</bf:source>
+		<bf:edition>abridged</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Rev. mod. phys.</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Reviews of modern physics</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Reviews of modern physics</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11138913">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Reviews of modern physics</bf:mainTitle>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   31021290 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 86014747 </rdf:value>
+		    <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>R29160000</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>009221689</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>RMPHAT</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:PostalRegistration>
+		    <rdf:value>464000</rdf:value>
+		    <bf:assigner>
+		      <bf:Organization>
+			<rdfs:label>USPS</rdfs:label>
+		      </bf:Organization>
+		    </bf:assigner>
+		  </bf:PostalRegistration>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>5975699</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>Minneapolis: American Physical Society, [1930]-</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11348673">
+	    <rdfs:label>The Physical review supplement</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>7102 $aAmerican Physical Society.$1https://id.oclc.org/worldcat/entity/E39QH7Jmqgd7R6MQKtBjRwCq6g</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </madsrdf:Authority>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.R4</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1 RE257E</bf:classificationPortion>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530.5</bf:classificationPortion>
+		<bf:itemPortion>qR45</bf:itemPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical Review, Supplement</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>The Physical review supplement</bf:mainTitle>
+		<bflc:nonSortNum>4</bflc:nonSortNum>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11348673">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>The Physical review supplement</bf:mainTitle>
+		    <bflc:nonSortNum>4</bflc:nonSortNum>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   88657064 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>R29160000</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+			<bf:code>DNLM</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>007862859</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/uk">
+			<bf:code>Uk</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>012097374</rdf:value>
+		    <bf:source>
+		      <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/uk">
+			<bf:code>Uk</bf:code>
+		      </bf:Source>
+		    </bf:source>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>6170377</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Minneapolis: American Physical Society, [1929-1929]</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>1 volume</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11136243">
+	    <rdfs:label>Physical review</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79021621">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>Cornell University</rdfs:label>
+		    <bflc:marcKey>1102 $aCornell University</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC1</bf:classificationPortion>
+		<bf:itemPortion>.P4</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH737</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		    <rdfs:label>not used by assigner</rdfs:label>
+		    <bf:code>nuba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530/.05</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev.</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11136243">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   12037719 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>0242473</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13900000</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>007862844</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PHRVAO</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1715212</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>Lancaster, Pa: Published for the American Physical Society by the American Institute of Physics</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>223 volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
+	    <rdfs:label>other physical format</rdfs:label>
+	    <bf:code>otherphysicalformat</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11224919">
+	    <rdfs:label>Physical review. B. Solid state</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80096507">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Physical Society</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Physical Society</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79078128">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+		    <rdfs:label>American Institute of Physics</rdfs:label>
+		    <bflc:marcKey>1102 $aAmerican Institute of Physics</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>QC176.A1</bf:classificationPortion>
+		<bf:itemPortion>P513</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationNlm>
+		<bf:classificationPortion>W1</bf:classificationPortion>
+		<bf:itemPortion>PH737B</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dnlm">
+		    <rdfs:label>United States, National Library of Medicine</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DNLM</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dnlm</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dnlm</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		    <rdfs:label>not used by assigner</rdfs:label>
+		    <bf:code>nuba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationNlm>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>530.4/1/05</bf:classificationPortion>
+		<bf:edition>full</bf:edition>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:AbbreviatedTitle>
+		<bf:mainTitle>Phys. rev., B, Solid state</bf:mainTitle>
+		<bf:assigner>
+		  <bf:Agent>
+		    <bf:code>issnkey</bf:code>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:AbbreviatedTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:KeyTitle>
+		<bf:mainTitle>Physical review. B, Solid state</bf:mainTitle>
+	      </bf:KeyTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Physical review</bf:mainTitle>
+		<bf:partNumber>B</bf:partNumber>
+		<bf:partName>Solid state</bf:partName>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+		<bf:mainTitle>Solid state</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11224919">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>Physical review</bf:mainTitle>
+		    <bf:partNumber>B</bf:partNumber>
+		    <bf:partName>Solid state</bf:partName>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>   79021362 </rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>0242620</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>P13940000</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dnlm"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>012091291</rdf:value>
+		    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/uk"/>
+		  </bf:Local>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Coden>
+		    <rdf:value>PLRBAQ</rdf:value>
+		  </bf:Coden>
+		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:OclcNumber>
+		    <rdf:value>1762330</rdf:value>
+		  </bf:OclcNumber>
+		</bf:identifiedBy>
+		<bf:publicationStatement>New York, N.Y.: Published for the American Physical Society by the American Institute of Physics</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/13595597"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-12-02</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>CIT</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-22T10:06:43</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Agent>
+	    <bf:code>OCLCL</bf:code>
+	  </bf:Agent>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T14:03:10.903391-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>13595597</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/metaentry"/>
+	    <rdfs:label>2 - integrated</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aCIT$beng$erda$cCIT$dOCL$dUMC$dEYM$dFUG$dOCLCQ$dDLC$dOCLCQ$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dNDD$dS3O$dOCL$dOCLCQ$dAU@$dCUS$dOCLCL</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
+	    <bf:code>pcc</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xpolicy default 2004-05-17</bflc:marcKey>
+	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x policy default 2004-05-17</lclocal:d925>
+	<bflc:marcKey>955  $ada11 2004-05-17$ida11 2004-05-17</bflc:marcKey>
+	<lclocal:d955>=955     $a da11 2004-05-17 $i da11 2004-05-17</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-893</lclocal:d955>
+	<bflc:marcKey>999ff$sc831a9a7-b05f-40be-afcc-311bba35e3b6$i3233463b-cdb7-56fa-b992-7442639fe09f</bflc:marcKey>
+	<lclocal:d999>=999  ff $s c831a9a7-b05f-40be-afcc-311bba35e3b6 $i 3233463b-cdb7-56fa-b992-7442639fe09f</lclocal:d999>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+  <bf:Item rdf:about="http://id.loc.gov/resources/items/13595597-859-55">
+    <bf:electronicLocator rdf:resource="https://journals.aps.org/archive/"/>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/items"/>
+    <bf:itemOf>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/13595597">
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>Physical review online archive</bf:mainTitle>
+	    <bf:subtitle>PROLA</bf:subtitle>
+	  </bf:Title>
+	</bf:title>
+	<bf:publicationStatement>College Park, MD: American Physical Society, ©1998-</bf:publicationStatement>
+      </bf:Instance>
+    </bf:itemOf>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-12-02</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>CIT</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-22T10:06:43</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Agent>
+	    <bf:code>OCLCL</bf:code>
+	  </bf:Agent>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T14:03:10.903391-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>13595597-859-55</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/metaentry"/>
+	    <rdfs:label>2 - integrated</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aCIT$beng$erda$cCIT$dOCL$dUMC$dEYM$dFUG$dOCLCQ$dDLC$dOCLCQ$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dNDD$dS3O$dOCL$dOCLCQ$dAU@$dCUS$dOCLCL</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
+	    <bf:code>pcc</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xpolicy default 2004-05-17</bflc:marcKey>
+	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x policy default 2004-05-17</lclocal:d925>
+	<bflc:marcKey>955  $ada11 2004-05-17$ida11 2004-05-17</bflc:marcKey>
+	<lclocal:d955>=955     $a da11 2004-05-17 $i da11 2004-05-17</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-893</lclocal:d955>
+	<bflc:marcKey>999ff$sc831a9a7-b05f-40be-afcc-311bba35e3b6$i3233463b-cdb7-56fa-b992-7442639fe09f</bflc:marcKey>
+	<lclocal:d999>=999  ff $s c831a9a7-b05f-40be-afcc-311bba35e3b6 $i 3233463b-cdb7-56fa-b992-7442639fe09f</lclocal:d999>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Item>
+</rdf:RDF>
