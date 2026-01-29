@@ -1,0 +1,15 @@
+[project]
+name = "big-dctap"
+version = "0.2.0"
+description = "BIBFRAME Interoperability Group DCTap TSV files used to generate SHACL graphs for validation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dctap2shacl>=0.1.1",
+    "pyshacl>=0.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
