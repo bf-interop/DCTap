@@ -9,6 +9,30 @@ from rdflib import Graph
 
 
 @pytest.fixture
+def violation_query():
+    return """
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+SELECT (COUNT(DISTINCT ?result) AS ?count)
+WHERE {
+    ?result sh:resultSeverity sh:Violation .
+}
+"""
+
+
+@pytest.fixture
+def warning_query():
+    return """
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+SELECT (COUNT(DISTINCT ?result) AS ?count)
+WHERE {
+    ?result sh:resultSeverity sh:Warning .
+}
+"""
+
+
+@pytest.fixture
 def dctap_to_shacl() -> Callable[[str], Graph]:
     """
     Factory fixture that converts a DCTap TSV file to a SHACL rdflib Graph.
