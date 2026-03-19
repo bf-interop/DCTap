@@ -19,6 +19,7 @@ The tab delimited files available here conform to the DCTAP specification with m
 
 ### BIG DCTAP Extension Elements
 * target (used to record the class type/s for the entity shape)
+* severity (used for SHACL level, violation or warnings)
 
 ## Current and Future Work
 DCTAP has been created for Monographs and Serials, we will iterate on these, and DCTAP for other resource types will gradually be added.
