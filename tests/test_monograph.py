@@ -4,19 +4,12 @@ import pytest
 
 from pyshacl import validate
 
+from conftest import load_params
+
 TEST_DIRECTORY = pathlib.Path(__file__).parent
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/monograph/12516952.cbd.rdf", 5, 2),
-        ("loc/monograph/22932823.cbd.rdf", 6, 2),
-        ("loc/monograph/23703536.cbd.rdf", 0, 3),
-        ("loc/monograph/22483233.cbd.rdf", 0, 3),
-        ("loc/monograph/23694998.cbd.rdf", 0, 3),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("monograph_text_works.csv"))
 def test_text_works(
     rdf_file_path: str,
     violations: int,
@@ -35,16 +28,7 @@ def test_text_works(
     assert warnings == warning_count
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/monograph/12516952.cbd.rdf", 3, 1),
-        ("loc/monograph/22932823.cbd.rdf", 2, 1),
-        ("loc/monograph/23703536.cbd.rdf", 0, 1),
-        ("loc/monograph/22483233.cbd.rdf", 0, 1),
-        ("loc/monograph/23694998.cbd.rdf", 0, 1),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("monograph_print_instances.csv"))
 def test_print_instances(
     rdf_file_path: str,
     violations: int,
@@ -63,16 +47,7 @@ def test_print_instances(
     assert warnings == warning_count
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/monograph/12516952.cbd.rdf", 24, 0),
-        ("loc/monograph/22932823.cbd.rdf", 16, 0),
-        ("loc/monograph/23703536.cbd.rdf", 16, 0),
-        ("loc/monograph/22483233.cbd.rdf", 16, 0),
-        ("loc/monograph/23694998.cbd.rdf", 16, 0),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("monograph_admin_metadata.csv"))
 def test_monograph_admin_metadata(
     rdf_file_path: str,
     violations: int,
