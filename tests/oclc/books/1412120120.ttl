@@ -1,0 +1,270 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1412120120#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20250515145631.7" ;
+    bf:creationDate "20231206" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1412120120> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG8QCTcRYCDBjGfkxTbXBd> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RM817" ;
+            bf:itemPortion ".K55 1956" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "615.853" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230216" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E39frrKXJcGfbmhtGFgrQvyYjF> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Kneipp, Sebastian, $d 1821-1897, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kneipp, Sebastian, 1821-1897," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca78625" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Meine Wasser-Kur. English" ;
+            bflc:marcKey "240 10 $a Meine Wasser-Kur. $l English" ;
+            bf:contribution [ a bf:PrimaryContribution ;
+                    bf:agent [ a bf:Person ;
+                            rdfs:label "Kneipp, Sebastian, 1821-1897, " ;
+                            bf:identifiedBy [ a bf:Local ;
+                                    bf:assigner [ a bf:Organization ;
+                                            bf:code "OCoLC" ] ;
+                                    rdf:value "oca78625" ] ] ;
+                    bf:role [ a bf:Role ;
+                            rdfs:label "author." ] ] ;
+            bf:language [ a bf:Language ;
+                    rdfs:label "English" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Meine Wasser-Kur." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1412120120> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Translated from the German."@en ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Herbes Emploi en thérapeutique." ;
+            bflc:marcKey "650  6 $a Herbes $x Emploi en thérapeutique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Herbes" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0060544" ] ] [ a bf:Topic ;
+                        rdfs:label "Emploi en thérapeutique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0060544" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Hydrotherapy" ;
+            bflc:marcKey "650  2 $a Hydrotherapy" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D006875" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Hydrotherapy" ;
+            bflc:marcKey "650  7 $a Hydrotherapy $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00965283" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Herbs Therapeutic use." ;
+            bflc:marcKey "650  0 $a Herbs $x Therapeutic use." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Herbs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2068093" ] ] [ a bf:Topic ;
+                        rdfs:label "Therapeutic use." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2068093" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Hydrotherapy." ;
+            bflc:marcKey "650  0 $a Hydrotherapy." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2092472" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Hydrothérapie." ;
+            bflc:marcKey "650  6 $a Hydrothérapie." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0076310" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "My water-cure :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "My water-cure :" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1412120120> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1412120120#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "21 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xxii, 395, 26 unnumbered pages :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9780787305079" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1412120120" ],
+        [ a bf:Isbn ;
+            rdf:value "0787305073" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG8QCTcRYCDBjGfkxTbXBd> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "At head of title: \"The only authorized and original edition\" and \"Popular edition for America\"."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from cover."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations, portrait ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes index."@en ],
+        [ a bf:Note ;
+            rdfs:label "Reprint. Originally published by Jos. Koesel : Kempten, Bavaria, 1897?"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Pomeroy, WA : $b Health Research, $c 1956." ;
+            bflc:simpleAgent "Health Research," ;
+            bflc:simpleDate "1956." ;
+            bflc:simplePlace "Pomeroy, WA :" ;
+            bf:date "1956"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/wau> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $c ©1897." ;
+            bflc:simpleDate "©1897." ] ;
+    bf:publicationStatement "Pomeroy, WA : Health Research, 1956.",
+        "©1897." ;
+    bf:responsibilityStatement "by Father Sebastian Kneipp ; translated from the 62nd German edition." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "My water-cure : tested for more than 40 years and published for the cure of diseases and for the preservation of health /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "My water-cure :" ;
+            bf:subtitle "tested for more than 40 years and published for the cure of diseases and for the preservation of health /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

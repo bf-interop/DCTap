@@ -1,0 +1,510 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1365639360#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251001101837.7" ;
+    bf:creationDate "20230117" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1365639360> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG3thdvQ3xc8b4QfXxkjBX> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "Originally produced by Women Make Movies in 2020."@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "328.73092" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3K6Rq8mRhQTPFvXgMWyTdFgHK> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Women Make Movies (Firm) $4 dst $1 https://id.oclc.org/worldcat/entity/E39QQPVp7KwHJcHkK6kVvBqxc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7KwHJcHkK6kVvBqxc6> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dst> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lee, Barbara, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Lee, Barbara," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Kanopy (Firm) $4 dst $1 https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dst> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ginzberg, Abby, $e film director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ginzberg, Abby," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ] ;
+    bf:duration "PT1H23M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1365639360> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Barbara Lee."@en ;
+            bflc:marcKey "511 0  $a Barbara Lee." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "women's studies." ;
+            bflc:marcKey "650  7 $a women's studies. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300194262" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Current affairs." ;
+            bflc:marcKey "650  0 $a Current affairs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Women's studies" ;
+            bflc:marcKey "650  7 $a Women's studies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01178850" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "650  0 $a Documentary films." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2042120" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "History" ;
+            bflc:marcKey "650  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00958235" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "History." ;
+            bflc:marcKey "650  0 $a History." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2075554" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "ethnicity." ;
+            bflc:marcKey "650  7 $a ethnicity. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300250435" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "650  6 $a Documentaires." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0018434" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Women's studies." ;
+            bflc:marcKey "650  0 $a Women's studies." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2108247" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "History, Modern" ;
+            bflc:marcKey "650  7 $a History, Modern $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00958367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Racism" ;
+            bflc:marcKey "650  7 $a Racism $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01086616" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Political science" ;
+            bflc:marcKey "650  7 $a Political science $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01069781" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politicians." ;
+            bflc:marcKey "650  0 $a Politicians." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2154696" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Racisme." ;
+            bflc:marcKey "650  6 $a Racisme." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0001691" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Americans." ;
+            bflc:marcKey "650  0 $a Americans." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2013552" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Histoire." ;
+            bflc:marcKey "650  6 $a Histoire." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0006155" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Ethnicité." ;
+            bflc:marcKey "650  6 $a Ethnicité." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0033148" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Études sur les femmes." ;
+            bflc:marcKey "650  6 $a Études sur les femmes." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0066291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Ethnicity." ;
+            bflc:marcKey "650  0 $a Ethnicity." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2139347" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Racism." ;
+            bflc:marcKey "650  0 $a Racism." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2024465" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "650  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00896079" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "politicians." ;
+            bflc:marcKey "650  7 $a politicians. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300025474" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Histoire moderne et contemporaine." ;
+            bflc:marcKey "650  6 $a Histoire moderne et contemporaine." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0006170" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Ethnicity" ;
+            bflc:marcKey "650  7 $a Ethnicity $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00916034" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politicians" ;
+            bflc:marcKey "650  7 $a Politicians $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01069915" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "history (discipline)" ;
+            bflc:marcKey "650  7 $a history (discipline) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300054394" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "History, Modern." ;
+            bflc:marcKey "650  0 $a History, Modern." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2075750" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Political science." ;
+            bflc:marcKey "650  0 $a Political science." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2154557" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Americans" ;
+            bflc:marcKey "650  7 $a Americans $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00807488" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politiciens." ;
+            bflc:marcKey "650  6 $a Politiciens." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0016043" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "An intimate and inspiring portrait of Representative Barbara Lee, a champion of civil rights and a steadfast voice for human rights, peace, and economic and racial justice in the U.S. Congress. In 2001, in the face of extreme backlash, she cast the lone vote in opposition to the broad authorization of military force following the September 11th attacks and issued a strident warning in the House of Representatives, \"Let us now become the evil we deplore.\" Decades later, she continued that clarion call, demanding that Congress stand up to President Trump when he escalated tensions with numerous foreign governments while seeding division within his own country. This feature documentary reveals the many challenges faced by Barbara Lee early in her life, including raising two sons as a single mother on food stamps and surviving domestic violence, which have provided her with the compassion, motivation, and commitment to use her position as an elected representative to improve the lives of her constituents. Uncompromising and conscientious to the core, Barbara Lee paves a path of integrity for future politicians."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Barbara Lee." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Barbara Lee." ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6> a bf:Organization ;
+    rdfs:label "Kanopy (Firm)" .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7KwHJcHkK6kVvBqxc6> a bf:Organization ;
+    rdfs:label "Women Make Movies (Firm)" .
+
+<http://id.loc.gov/vocabulary/relators/dst> a bf:Role ;
+    bf:code "dst" .
+
+<https://id.oclc.org/worldcat/entity/1365639360> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1365639360#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "Flash"@en ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "MPEG-4"@en ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (streaming video file) (83 minutes):"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1365639360" ],
+        [ a bf:PublisherNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Kanopy" ] ;
+            rdf:value "13998024" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG3thdvQ3xc8b4QfXxkjBX> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "In Process Record."@en ],
+        [ a bf:Note ;
+            rdfs:label "Film."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label ".flv file, sound"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from title frames."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "subscribed" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://stanford.kanopy.com/node/12998025 $y Kanopy Streaming Video $x Provider: Kanopy $x subscribed $x eLoaderURL $x kp4 $x kpkan13998024" ;
+            bf:electronicLocator <http://stanford.kanopy.com/node/12998025> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Kanopy"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "Kanopy Streaming Video"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Women Make Movies, $c 2020." ;
+            bflc:simpleAgent "Women Make Movies," ;
+            bflc:simpleDate "2020." ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [San Francisco, California, USA] : $b Kanopy Streaming, $c 2023." ;
+            bflc:simpleAgent "Kanopy Streaming," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "[San Francisco, California, USA] :" ] ;
+    bf:publicationStatement "Women Make Movies, 2020.",
+        "[San Francisco, California, USA] : Kanopy Streaming, 2023." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ] ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u https://www.kanopy.com/node/12998025/external-image" ;
+            bf:electronicLocator <http://www.kanopy.com/node/12998025/external-image> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Barbara Lee." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Barbara Lee." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

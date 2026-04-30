@@ -1,0 +1,229 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1370199812#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250612183429.8" ;
+    bf:creationDate "20230215" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1370199812> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFW8rGgprDfVxWDcrr3rYP> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "February-December 2020" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Alms Vert in Los Angeles, California."@en ] ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "786.7" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3rBCMJwPcdTWPByKD4gt7MWJt> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Davachi, Sarah, $e composer, $e performer, $e producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Davachi, Sarah," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca10337149" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer," ],
+                [ a bf:Role ;
+                    rdfs:label "producer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1370199812> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Sarah Davachi, Mellotron (English horn, bass flute, clarinet, recorder, oboe, French horn, chamber organ, nylon string guitar), tape echo, Korg CX-3 electric organ, pipe organ, harpsichord, piano, ARP Odyssey synthesizer, acoustic guitar, violin, voice."@en ;
+            bflc:marcKey "511 0  $a Sarah Davachi, Mellotron (English horn, bass flute, clarinet, recorder, oboe, French horn, chamber organ, nylon string guitar), tape echo, Korg CX-3 electric organ, pipe organ, harpsichord, piano, ARP Odyssey synthesizer, acoustic guitar, violin, voice." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced by Sarah Davachi."@en ;
+            bflc:marcKey "508    $a Produced by Sarah Davachi." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Ambient music." ;
+            bflc:marcKey "650  0 $a Ambient music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca7048410" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Ambient music" ;
+            bflc:marcKey "650  7 $a Ambient music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01740635" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Chorus scene (2:48) -- Magdalena (10:20) -- First cadence (5:58) -- Gradual of image (3:09) -- Border of mind (5:53) -- Abeyant (7:13) -- Rushes recede (6:35) -- Doubled flutes (2:18)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Antiphonals /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Antiphonals /" ] .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<https://id.oclc.org/worldcat/entity/1370199812> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1370199812#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:dimensions "12 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Late Music" ] ;
+            rdf:value "LMIVLP" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1370199812" ],
+        [ a bf:Ean ;
+            rdf:value "5060263723882" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFW8rGgprDfVxWDcrr3rYP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 33 1/3 rpm ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Los Angeles] : $b Late Music, $c [2021]" ;
+            bflc:simpleAgent "Late Music," ;
+            bflc:simpleDate "[2021]" ;
+            bflc:simplePlace "[Los Angeles] :" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Los Angeles] : Late Music, [2021]" ;
+    bf:responsibilityStatement "Sarah Davachi." ;
+    bf:soundCharacteristic [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Antiphonals /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Antiphonals /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

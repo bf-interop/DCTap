@@ -1,0 +1,162 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/frequencies/san> a bf:Frequency ;
+    rdfs:label "semiannual"@en ;
+    bf:code "san" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/millus/plt> a bf:Illustration ;
+    rdfs:label "plates"@en ;
+    bf:code "plt" .
+
+<http://id.loc.gov/vocabulary/mscript/b> a bf:Script ;
+    rdfs:label "Extended roman"@en ;
+    bf:code "b" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/supplement> a bf:Relationship ;
+    rdfs:label "supplement"@en .
+
+<https://id.oclc.org/worldcat/entity/1442200573#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20260225084338.2" ;
+    bf:creationDate "20240625" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1442200573> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1442200573#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationUdc ;
+            bf:classificationPortion "7.03(438)(091)" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Centrum Sztuki Współczesnej Łaźnia (Gdańsk)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Centrum Sztuki Współczesnej Łaźnia (Gdańsk)" ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1442200573> ;
+    bf:identifiedBy [ a bf:IssnL ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "0" ] ;
+            rdf:value "2657-8174" ],
+        [ a bf:Issn ;
+            rdf:value "2657-8174" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm>,
+        <http://id.loc.gov/vocabulary/millus/plt> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "pol" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/pol> ],
+        [ a bf:Language ;
+            bf:code "mul" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/mul> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/b> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Ręcznik Ekstra" ] ] ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "2956-4549" ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Ręcznik Ekstra" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Har supplement:"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/supplement> ] ;
+    bf:title [ a bf:AbbreviatedTitle ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "issnkey" ] ;
+            bf:mainTitle "Ręcznik" ;
+            bf:qualifier "(Gdań.)" ],
+        [ a bf:KeyTitle ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ręcznik" ;
+            bf:qualifier "(Gdańsk)" ],
+        [ a bf:Title ;
+            rdfs:label "Ręcznik." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ręcznik." ] .
+
+<https://id.oclc.org/worldcat/entity/1442200573> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1442200573#adminMetadata> ;
+    bf:firstIssue "Nr 1 (styczeń/marzec 2019)-" ;
+    bf:frequency <http://id.loc.gov/vocabulary/frequencies/san> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1442200573" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1442200573#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:lastIssue "Nr 1 (styczeń/marzec 2019)-" ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $c 2019-" ;
+            bflc:simpleDate "2019-" ;
+            bf:date "2019/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pl> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Gdańsk : $b Centrum Sztuki Współczesnej Łaźnia" ;
+            bflc:simpleAgent "Centrum Sztuki Współczesnej Łaźnia" ;
+            bflc:simplePlace "Gdańsk :" ] ;
+    bf:publicationStatement "2019-",
+        "Gdańsk : Centrum Sztuki Współczesnej Łaźnia" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ręcznik." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ręcznik." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

@@ -1,0 +1,292 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/mus> a bf:Illustration ;
+    rdfs:label "music"@en ;
+    bf:code "mus" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/mag> a bflc:SerialPubType ;
+    rdfs:label "magazine"@en ;
+    bf:code "mag" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<https://id.oclc.org/worldcat/entity/1372495246#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20240710033344.3" ;
+    bf:creationDate "20230313" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCF $d OCLCO $d OCLCL $d DLC" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1372495246> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1372495246#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/mag> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "TT500" ;
+            bf:itemPortion ".P37" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "still image"@en ;
+            bf:code "sti" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/sti> ],
+        [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Pearsmag.com (Website), $e publisher." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Pearsmag.com (Website)," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16188522" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Pears (Jakarta, Indonesia)" ;
+            bflc:marcKey "130 0  $a Pears (Jakarta, Indonesia)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Pears (Jakarta, Indonesia)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals" ;
+            bflc:marcKey "655  7 $a Periodicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-io---" ;
+            bf:code "a-io---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-io> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1372495246> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/mus> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fashion Social aspects Periodicals." ;
+            bflc:marcKey "650  0 $a Fashion $x Social aspects $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fashion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2152736" ] ] [ a bf:Topic ;
+                        rdfs:label "Social aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5180379" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fashion Periodicals." ;
+            bflc:marcKey "650  0 $a Fashion $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fashion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2152736" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fashion Social aspects" ;
+            bflc:marcKey "650  7 $a Fashion $x Social aspects $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fashion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00921619" ] ] [ a bf:Topic ;
+                        rdfs:label "Social aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00921619" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Fashion" ;
+            bflc:marcKey "650  7 $a Fashion $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00921600" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Pears." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Pears." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Indonesia" ;
+    bflc:marcKey "651  7 $a Indonesia $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01209242" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1372495246> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1372495246#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "29 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes :"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2024320337" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1372495246" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1372495246#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Each number issued with multiple different cover images."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 1 (2020); title from cover."@en ],
+        [ a bf:Note ;
+            rdfs:label "Each issue has a theme title."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with: 1 (2020)"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 2 (2021)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color illustrations ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Jakarta] : $b Pearsmag.com, $c 2020-" ;
+            bflc:simpleAgent "Pearsmag.com," ;
+            bflc:simpleDate "2020-" ;
+            bflc:simplePlace "[Jakarta] :" ;
+            bf:date "2020/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/io> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "[Jakarta] : Pearsmag.com, 2020-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Pears." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Pears." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

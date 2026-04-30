@@ -1,0 +1,177 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1422166602#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20251011193440.5" ;
+    bf:creationDate "20240216" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1422166602> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1422166602#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "363.960973" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3MWpgTtGQTJhHkyjYDytYFCQg> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Planned Parenthood Federation of America. $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpvvGPCbcM9rPqPqtCF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpvvGPCbcM9rPqPqtCF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1422166602> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Birth control." ;
+            bflc:marcKey "650  0 $a Birth control." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2086726" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Régulation des naissances." ;
+            bflc:marcKey "650  6 $a Régulation des naissances." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0004146" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Birth control" ;
+            bflc:marcKey "650  7 $a Birth control $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00833148" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Planned parenthood" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Planned parenthood" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpvvGPCbcM9rPqPqtCF> a bf:Organization ;
+    rdfs:label "Planned Parenthood Federation of America." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca109131" ] .
+
+<https://id.oclc.org/worldcat/entity/1422166602> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1422166602#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:dimensions "23 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 folded sheet (8 unnumbered panels)"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1422166602" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1422166602#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations"@en ],
+        [ a bf:Note ;
+            rdfs:label "Panel title"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"November, 1950\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, N.Y. $b Planned Parenthood Federation of America, Inc. $c [1950]" ;
+            bflc:simpleAgent "Planned Parenthood Federation of America, Inc." ;
+            bflc:simpleDate "[1950]" ;
+            bflc:simplePlace "New York, N.Y." ;
+            bf:date "1950"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York, N.Y. Planned Parenthood Federation of America, Inc. [1950]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Planned parenthood your questions answered" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Planned parenthood" ;
+            bf:subtitle "your questions answered" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

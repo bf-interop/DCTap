@@ -1,0 +1,287 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/aes> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Analog electrical storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/libretto> a bf:SupplementaryContent ;
+    rdfs:label "libretto or text"@en .
+
+<https://id.oclc.org/worldcat/entity/1406834647#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250920031601.0" ;
+    bf:creationDate "20231025" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1406834647> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1406834647#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Joywave (Musical group), $e composer, $e performer. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7TJ6WD7GFghpVYr4Fg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7TJ6WD7GFghpVYr4Fg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer," ],
+                [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Rock music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027054> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock alternatif." ;
+            bflc:marcKey "655  7 $a Rock alternatif. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001152" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs." ;
+            bflc:marcKey "655  7 $a Songs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Alternative rock music." ;
+            bflc:marcKey "655  7 $a Alternative rock music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090235" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1406834647> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Joywave."@en ;
+            bflc:marcKey "511 0  $a Joywave." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Rock alternatif." ;
+            bflc:marcKey "650  6 $a Rock alternatif." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0284990" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock music 2011-2020." ;
+            bflc:marcKey "650  0 $a Rock music $y 2011-2020." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8797051" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8797051" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Alternative rock music." ;
+            bflc:marcKey "650  0 $a Alternative rock music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca4117740" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock (Musique) 2011-2020." ;
+            bflc:marcKey "650  6 $a Rock (Musique) $y 2011-2020." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock (Musique)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270475" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270475" ] ] ) ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/libretto> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Like a Kennedy -- Coming apart -- Half your age -- Obsession -- Blank slate -- F.E.A.R. -- Funny thing about opinions -- Who owns who? -- Blastoffff -- Possession -- No shoulder -- Mr. Eastman." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The sounds of possession /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The sounds of possession /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7TJ6WD7GFghpVYr4Fg> a bf:Organization ;
+    rdfs:label "Joywave (Musical group)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10145985" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1406834647> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1406834647#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl."@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "12 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1406834647" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023615265" ],
+        [ a bf:Upc ;
+            rdf:value "050087443702" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Cultco Music" ] ;
+            rdf:value "D003383801" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1406834647#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:manufactureStatement "Burbank, CA : Manufactured and marketed by Hollywood Records" ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note ;
+            rdfs:label "Lyrics inserted in container."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Burbank, CA : $b Cultco, $c [2020]" ;
+            bflc:simpleAgent "Cultco," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "Burbank, CA :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ],
+        [ a bf:Manufacture ;
+            bflc:marcKey "264  3 $a Burbank, CA : $b Manufactured and marketed by Hollywood Records" ;
+            bflc:simpleAgent "Manufactured and marketed by Hollywood Records" ;
+            bflc:simplePlace "Burbank, CA :" ] ;
+    bf:publicationStatement "Burbank, CA : Cultco, [2020]" ;
+    bf:responsibilityStatement "Joywave." ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/aes>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The sounds of possession /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The sounds of possession /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

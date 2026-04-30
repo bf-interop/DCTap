@@ -1,0 +1,511 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1426045181#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20240315040712.4" ;
+    bf:creationDate "20240313" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1426045181> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1426045181#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "385.0985" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HE3460.T35" ;
+            bf:itemPortion "T38 2021" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ru Sheng, $e director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ru Sheng," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Southlawn Studios Film Collective." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Southlawn Studios Film Collective." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Monson, Jamie, $e director, $e producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Monson, Jamie," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1245496" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "producer." ],
+                [ a bf:Role ;
+                    rdfs:label "director," ] ] ;
+    bf:duration "PT43M"^^xsd:duration ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-cc---" ;
+            bf:code "a-cc---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-cc> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a f-tz---" ;
+            bf:code "f-tz---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/f-tz> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a f-za---" ;
+            bf:code "f-za---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/f-za> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1426045181> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Ru Sheng, Jamie Monson, directors."@en ;
+            bflc:marcKey "508    $a Ru Sheng, Jamie Monson, directors." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Railroads Design and construction" ;
+            bflc:marcKey "650  7 $a Railroads $x Design and construction $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Railroads" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01088848" ] ] [ a bf:Topic ;
+                        rdfs:label "Design and construction" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01088848" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Streaming video" ;
+            bflc:marcKey "650  7 $a Streaming video $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01738354" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Technical assistance, Chinese" ;
+            bflc:marcKey "650  7 $a Technical assistance, Chinese $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01144780" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Africa, East" ;
+            bflc:marcKey "651  7 $a Africa, East $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01239511" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Infrastructure (Economics)" ;
+            bflc:marcKey "650  7 $a Infrastructure (Economics) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00973275" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Railroads Zambia Design and construction." ;
+            bflc:marcKey "650  0 $a Railroads $z Zambia $x Design and construction." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Railroads" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030550" ] ] [ a bf:Topic ;
+                        rdfs:label "Design and construction." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5740016" ] ] [ a bf:Geographic ;
+                        rdfs:label "Zambia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030550" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Africa Foreign economic relations China." ;
+            bflc:marcKey "651  0 $a Africa $x Foreign economic relations $z China." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Africa" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001892" ] ] [ a bf:Topic ;
+                        rdfs:label "Foreign economic relations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5186079" ] ] [ a bf:Geographic ;
+                        rdfs:label "China." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca323484" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Tanzania-Zambia Railway Authority $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Tanzania-Zambia Railway Authority" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca221323" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] ) ],
+        [ a bf:Organization ;
+            rdfs:label "Tanzania-Zambia Railway Authority" ;
+            bflc:marcKey "610 27 $a Tanzania-Zambia Railway Authority $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00528363" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Economic development projects Zambia." ;
+            bflc:marcKey "650  0 $a Economic development projects $z Zambia." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Economic development projects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2112411" ] ] [ a bf:Geographic ;
+                        rdfs:label "Zambia." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca471133" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Infrastructure (Economics) Africa." ;
+            bflc:marcKey "650  0 $a Infrastructure (Economics) $z Africa." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Infrastructure (Economics)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2109460" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001892" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "China Foreign economic relations Africa." ;
+            bflc:marcKey "651  0 $a China $x Foreign economic relations $z Africa." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "China" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca323484" ] ] [ a bf:Topic ;
+                        rdfs:label "Foreign economic relations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5186079" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001892" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Economic development projects" ;
+            bflc:marcKey "650  7 $a Economic development projects $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00901885" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "China" ;
+            bflc:marcKey "651  7 $a China $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01206073" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Afrique Relations économiques extérieures Chine." ;
+            bflc:marcKey "651  6 $a Afrique $x Relations économiques extérieures $z Chine." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Afrique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0098126" ] ] [ a bf:Topic ;
+                        rdfs:label "Relations économiques extérieures" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0375292" ] ] [ a bf:Geographic ;
+                        rdfs:label "Chine." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0476619" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Technical assistance, Chinese Africa, East." ;
+            bflc:marcKey "650  0 $a Technical assistance, Chinese $z Africa, East." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Technical assistance, Chinese" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2130998" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa, East." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001950" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Projets de développement économique Zambie." ;
+            bflc:marcKey "650  6 $a Projets de développement économique $z Zambie." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Projets de développement économique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0082267" ] ] [ a bf:Geographic ;
+                        rdfs:label "Zambie." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0440010" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Railroads Tanzania Design and construction." ;
+            bflc:marcKey "650  0 $a Railroads $z Tanzania $x Design and construction." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Railroads" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030522" ] ] [ a bf:Topic ;
+                        rdfs:label "Design and construction." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5740016" ] ] [ a bf:Geographic ;
+                        rdfs:label "Tanzania" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030522" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Economic development projects Tanzania." ;
+            bflc:marcKey "650  0 $a Economic development projects $z Tanzania." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Economic development projects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2112411" ] ] [ a bf:Geographic ;
+                        rdfs:label "Tanzania." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca501857" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "International economic relations" ;
+            bflc:marcKey "650  7 $a International economic relations $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00976891" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJgt4Pf4rtTk7Bvrf6gkDq>,
+        <https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtcKVcVhpCVBXd79gw6Kd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The Tanzania Zambia Railway Authority (TAZARA) was constructed as a turn key project between 1968 and 1975. TAZARA Stories tells the story of a train through the memories of those who built it. Set in Tanzania, Zambia and China, the film interweaves oral and visual narratives of workers from three nations who found themselves laboring side by side in a massive infrastructure project at the height of the Cold War. Remembering and reliving their youth, the workers take us on a journey in time from the exhilaration of construction through disappointments and derailments to their own hopeful resilience in the face of enduring change."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tazara stories." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tazara stories." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgt4Pf4rtTk7Bvrf6gkDq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Tanzania" ;
+    bflc:marcKey "651  7 $a Tanzania $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgt4Pf4rtTk7Bvrf6gkDq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01210143" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Africa" ;
+    bflc:marcKey "651  7 $a Africa $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01239509" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtcKVcVhpCVBXd79gw6Kd> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Zambia" ;
+    bflc:marcKey "651  7 $a Zambia $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtcKVcVhpCVBXd79gw6Kd" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01209422" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1426045181> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1426045181#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 streaming video file (43 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1426045181" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1426045181#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color, black & white"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b Southlawn Studios Film Collective, $c [2021]" ;
+            bflc:simpleAgent "Southlawn Studios Film Collective," ;
+            bflc:simpleDate "[2021]" ;
+            bflc:simplePlace "[Place of publication not identified] :" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "[Place of publication not identified] : Southlawn Studios Film Collective, [2021]" ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tazara stories." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tazara stories." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

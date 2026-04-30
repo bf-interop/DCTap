@@ -1,0 +1,176 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm ;
+    rdfs:label "Conference papers and proceedings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/5> a bflc:EncodingLevel ;
+    rdfs:label "preliminary"@en ;
+    bf:code "5" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/u> a bf:Status ;
+    rdfs:label "unknown" .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1393202370#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/5> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20230810035052.2" ;
+    bf:creationDate "20230801" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1393202370> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1393202370#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "WZ 1 AA1" ;
+            bf:itemPortion "AM516p" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a American Medical Writers Association." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "American Medical Writers Association." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Program." ;
+            bflc:marcKey "655  2 $a Program." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1393202370> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Congresses as Topic." ;
+            bflc:marcKey "650 22 $a Congresses as Topic." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Publishing." ;
+            bflc:marcKey "650 12 $a Publishing." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Organization ;
+            rdfs:label "American Medical Writers Association. Annual Meeting." ;
+            bflc:marcKey "610 22 $a American Medical Writers Association. $b Annual Meeting." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Program /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Program /" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1393202370> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1393202370#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "26 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes :"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2023228310" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1393202370" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918645967306676" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1393202370#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 10th (1953) ; title from cover."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 15th (1958)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "portraits ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Quincy, Illinois : $b American Medical Writers Association" ;
+            bflc:simpleAgent "American Medical Writers Association" ;
+            bflc:simplePlace "Quincy, Illinois :" ;
+            bf:date "19XX~/XXXX~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ilu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current>,
+                <http://id.loc.gov/vocabulary/mstatus/u> ] ;
+    bf:publicationStatement "Quincy, Illinois : American Medical Writers Association" ;
+    bf:responsibilityStatement "American Medical Writers Association ... Annual Meeting." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Program /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Program /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

@@ -1,0 +1,330 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G7541> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 7541" ;
+    bf:code "7541" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mprojection/bh> a bf:Projection ;
+    rdfs:label "Transverse Mercator"@en ;
+    bf:code "bh" .
+
+<http://id.loc.gov/vocabulary/mrelief/cont> a bf:Relief ;
+    rdfs:label "contours"@en ;
+    bf:code "cont" ;
+    rdf:value "a" .
+
+<http://id.loc.gov/vocabulary/mrelief/spot> a bf:Relief ;
+    rdfs:label "spot heights"@en ;
+    bf:code "spot" ;
+    rdf:value "g" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<https://id.oclc.org/worldcat/entity/1423501311#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250920012815.4" ;
+    bf:creationDate "20240222" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1423501311> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1423501311#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:projection [ a bf:Projection ;
+                    rdfs:label "Universal transverse Mercator projection" ] ],
+        [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/spot> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "E0420000 E0540000 N0190000 N0130000" ],
+        [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/cont> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "(E 42°--E 54°/N 19°--N 13°)." ],
+        [ a bf:Cartographic ;
+            bf:projection <http://id.loc.gov/vocabulary/mprojection/bh> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "G7541.C3 1990" ;
+            bf:itemPortion ".R6" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a Yemen (Republic). $b Wizārat al-Nafṭ wa-al-Tharawāt al-maʻdinīyah." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "Yemen (Republic). Wizārat al-Nafṭ wa-al-Tharawāt al-maʻdinīyah." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3718096" ] ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a Yemen (Republic). $b Mashrūʻ al-Mawārid al-Ṭabīʻīyah." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "Yemen (Republic). Mashrūʻ al-Mawārid al-Ṭabīʻīyah." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3718100" ] ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Robertson Group plc, $e cartographer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqPqqDtfdb9R499mCp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqPqqDtfdb9R499mCp6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage <http://id.loc.gov/authorities/classification/G7541> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1423501311> ;
+    bf:language [ a bf:Language ;
+            bf:code "ara" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ara> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English and Arabic."@en ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scale 1:1,000,000 ;" ],
+        [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "1000000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Hydrology Yemen (Republic) Maps." ;
+            bflc:marcKey "650  0 $a Hydrology $z Yemen (Republic) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Hydrology" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2092110" ] ] [ a bf:Geographic ;
+                        rdfs:label "Yemen (Republic)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca598900" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Hydrogeology Yemen (Republic) Maps." ;
+            bflc:marcKey "650  0 $a Hydrogeology $z Yemen (Republic) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Hydrogeology" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2091976" ] ] [ a bf:Geographic ;
+                        rdfs:label "Yemen (Republic)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca598900" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Groundwater Yemen (Republic) Maps." ;
+            bflc:marcKey "650  0 $a Groundwater $z Yemen (Republic) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Groundwater" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2095165" ] ] [ a bf:Geographic ;
+                        rdfs:label "Yemen (Republic)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca598900" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Eastern sheet -- Western sheet." ] ;
+    bf:title [ a bf:ParallelTitle ;
+            bflc:marcKey "246 31 $a Jumhūrīyat al-Yaman, kharīṭah hīdrūjiyūlūjiyah" ;
+            bf:mainTitle "Jumhūrīyat al-Yaman, kharīṭah hīdrūjiyūlūjiyah" ],
+        [ a bf:Title ;
+            rdfs:label "Republic of Yemen :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Republic of Yemen :" ],
+        [ a bf:ParallelTitle ;
+            bflc:marcKey "246 31 $a Republic of Yemen, hydrogeological map" ;
+            bf:mainTitle "Republic of Yemen, hydrogeological map" ],
+        [ a bf:ParallelTitle ;
+            bflc:marcKey "246 31 $a Jumhūrīyat al-Yaman : $b mashrūʻ al-mawārid al-ṭabīʻīyah : kharīṭah hīdrūjiyūlūjiyah" ;
+            bf:mainTitle "Jumhūrīyat al-Yaman :" ;
+            bf:subtitle "mashrūʻ al-mawārid al-ṭabīʻīyah : kharīṭah hīdrūjiyūlūjiyah" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqPqqDtfdb9R499mCp6> a bf:Organization ;
+    rdfs:label "Robertson Group plc," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3718098" ] .
+
+<https://id.oclc.org/worldcat/entity/1423501311> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1423501311#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "130 x 65 cm, sheets 70 x 98 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map on 2 sheets :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1423501311" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024585182" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1423501311#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"Copyright reserved: Ministry of Oil and Mineral Resources, Oil and Mineral Corporation, Mineral Exploration Board, Ṣanʻaa, Republic of Yemen.\""@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Relief shown by contours and spot heights."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes sheet index, 1 inset \"The Brothers\", and source material information."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Ṣanʻaāʼ : $b The Director General, The Natural Resources Project, $c [1990]" ;
+            bflc:simpleAgent "The Director General, The Natural Resources Project," ;
+            bflc:simpleDate "[1990]" ;
+            bflc:simplePlace "Ṣanʻaāʼ :" ;
+            bf:date "1990"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ye> ] ;
+    bf:publicationStatement "Ṣanʻaāʼ : The Director General, The Natural Resources Project, [1990]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Republic of Yemen : the Natural Resources Project : hydrogeological map = Jumhūrīyat al-Yaman : mashrūʻ al-mawārid al-ṭabīʻīyah : kharīṭah hīdrūjiyūlūjiyah." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Republic of Yemen :" ;
+            bf:subtitle "the Natural Resources Project : hydrogeological map = Jumhūrīyat al-Yaman : mashrūʻ al-mawārid al-ṭabīʻīyah : kharīṭah hīdrūjiyūlūjiyah." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

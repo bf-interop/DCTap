@@ -1,0 +1,720 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1386967869#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20241005172127.4" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "HUL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "NDD" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d NDD $d OCLCO $d OCLCL $d HUL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1386967869> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1386967869#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HQ767.5.U5" ;
+            bf:itemPortion "A26 2022" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Perkins, Sarah $c (Motion picture director), $e director, $e producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Perkins, Sarah (Motion picture director)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "producer." ],
+                [ a bf:Role ;
+                    rdfs:label "director," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a J&S Productions, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "J&S Productions," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kogut, Melissa, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kogut, Melissa," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sabey, Joshua, $e director, $e producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sabey, Joshua," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16153074" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "producer." ],
+                [ a bf:Role ;
+                    rdfs:label "director," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Throp, Barbara, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Throp, Barbara," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hogan, Frances, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hogan, Frances," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Essential Partners." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Essential Partners." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gamble, Nicki, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Gamble, Nicki," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McComish, Madeline, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "McComish, Madeline," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Fowler, Anne, $e participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Fowler, Anne," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "participant." ] ] ;
+    bf:duration "PT1H33M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentaires télévisés." ;
+            bflc:marcKey "655  7 $a Documentaires télévisés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000018" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Internet videos." ;
+            bflc:marcKey "655  7 $a Internet videos. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866317" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs" ;
+            bflc:marcKey "655  7 $a Documentary television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710387" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs." ;
+            bflc:marcKey "655  7 $a Documentary television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos sur Internet." ;
+            bflc:marcKey "655  7 $a Vidéos sur Internet. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001568" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ma" ;
+            bf:code "n-us-ma" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ma> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1386967869> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Josh Sabey, Sarah Perkins, producers, directors, editors ; Lorenzo Emanuel, music."@en ;
+            bflc:marcKey "508    $a Josh Sabey, Sarah Perkins, producers, directors, editors ; Lorenzo Emanuel, music." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Nicki Gamble, Madeline McComish, Frances Hogan, Anne Fowler, Melissa Kogut, Barbara Thorp"@en ;
+            bflc:marcKey "511 0  $a Nicki Gamble, Madeline McComish, Frances Hogan, Anne Fowler, Melissa Kogut, Barbara Thorp" ] ;
+    bf:subject [ a bf:Person ;
+            rdfs:label "Salvi, John." ;
+            bflc:marcKey "600 10 $a Salvi, John." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Political violence United States." ;
+            bflc:marcKey "650  0 $a Political violence $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Political violence" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3905933" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cliniques d'avortement États-Unis." ;
+            bflc:marcKey "650  6 $a Cliniques d'avortement $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cliniques d'avortement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0079334" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Avortement Aspect moral États-Unis." ;
+            bflc:marcKey "650  6 $a Avortement $x Aspect moral $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Avortement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0033208" ] ] [ a bf:Topic ;
+                        rdfs:label "Aspect moral" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0033208" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Reproductive rights" ;
+            bflc:marcKey "650  7 $a Reproductive rights $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01745961" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abortion Massachusetts." ;
+            bflc:marcKey "650  0 $a Abortion $z Massachusetts." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abortion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2000558" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241214" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "McComish, Madeline." ;
+            bflc:marcKey "600 10 $a McComish, Madeline." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abortion services United States." ;
+            bflc:marcKey "650  0 $a Abortion services $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abortion services" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2000573" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Kogut, Melissa." ;
+            bflc:marcKey "600 10 $a Kogut, Melissa." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Person ;
+            rdfs:label "Thorp, Barbara." ;
+            bflc:marcKey "600 10 $a Thorp, Barbara." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Polarization (Social sciences) United States." ;
+            bflc:marcKey "650  0 $a Polarization (Social sciences) $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Polarization (Social sciences)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2153038" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Droits génésiques États-Unis." ;
+            bflc:marcKey "650  6 $a Droits génésiques $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Droits génésiques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270030" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Mouvement pour le respect de la vie États-Unis." ;
+            bflc:marcKey "650  6 $a Mouvement pour le respect de la vie $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Mouvement pour le respect de la vie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0129867" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abortion Moral and ethical aspects United States." ;
+            bflc:marcKey "650  0 $a Abortion $x Moral and ethical aspects $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abortion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2000563" ] ] [ a bf:Topic ;
+                        rdfs:label "Moral and ethical aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2000563" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Mouvement pour la libéralisation de l'avortement États-Unis." ;
+            bflc:marcKey "650  6 $a Mouvement pour la libéralisation de l'avortement $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Mouvement pour la libéralisation de l'avortement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0129864" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Hogan, Frances." ;
+            bflc:marcKey "600 10 $a Hogan, Frances." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Abortion services" ;
+            bflc:marcKey "650  7 $a Abortion services $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00794650" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Pro-life movement United States." ;
+            bflc:marcKey "650  0 $a Pro-life movement $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Pro-life movement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2005393" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Gamble, Nicki." ;
+            bflc:marcKey "600 10 $a Gamble, Nicki." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Pro-choice movement United States." ;
+            bflc:marcKey "650  0 $a Pro-choice movement $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Pro-choice movement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2005380" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Fowler, Anne." ;
+            bflc:marcKey "600 10 $a Fowler, Anne." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cliniques d'avortement Massachusetts." ;
+            bflc:marcKey "650  6 $a Cliniques d'avortement $z Massachusetts." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cliniques d'avortement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0079334" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0460813" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Conflict management United States." ;
+            bflc:marcKey "650  0 $a Conflict management $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Conflict management" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2035563" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Abortion" ;
+            bflc:marcKey "650  7 $a Abortion $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00794582" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Violence politique États-Unis." ;
+            bflc:marcKey "650  6 $a Violence politique $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Violence politique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0275652" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Reproductive rights United States." ;
+            bflc:marcKey "650  0 $a Reproductive rights $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Reproductive rights" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7853872" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Pro-choice movement" ;
+            bflc:marcKey "650  7 $a Pro-choice movement $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01077721" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Pro-life movement" ;
+            bflc:marcKey "650  7 $a Pro-life movement $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01077725" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abortion Moral and ethical aspects" ;
+            bflc:marcKey "650  7 $a Abortion $x Moral and ethical aspects $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abortion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00794606" ] ] [ a bf:Topic ;
+                        rdfs:label "Moral and ethical aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00794606" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abortion services Massachusetts." ;
+            bflc:marcKey "650  0 $a Abortion services $z Massachusetts." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abortion services" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2000573" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241214" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Polarisation collective États-Unis." ;
+            bflc:marcKey "650  6 $a Polarisation collective $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Polarisation collective" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0184311" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJjXhqWY9tQdd4wPBQPWjC>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The Abortion Talks is a documentary film about the secret dialogues that took place between pro-life and pro-choice leaders in the Boston area, in the wake of shootings that left employees dead at two clinics. It follows the crimes, trial, and murder of John Salvi--and the story of six women, all of them leaders in the pro-life and pro-choice movements, who sought to ensure that it would never happen again. Disillusioned by the rhetoric and posturing from both sides, three pro-life and three pro-choice leaders meet secretly to see if together they could fix their broken worlds. These courageous leaders risked their personal safety and professional lives to meet secretly for six years under the guidance of Essential Partners co-founder Laura R. Chasin and mediator Susan Podziba."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The abortion talks /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The abortion talks /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjXhqWY9tQdd4wPBQPWjC> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Massachusetts" ;
+    bflc:marcKey "651  7 $a Massachusetts $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjXhqWY9tQdd4wPBQPWjC" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204307" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $0 (OCoLC)1204155 $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "1204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<https://id.oclc.org/worldcat/entity/1386967869> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1386967869#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix>,
+        <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 streaming video file (93 minutes)) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1386967869" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1386967869#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $i dbcode=FDSID; providercode=PRVITK $u https://media.library.cornell.edu/media/The+Abortion+Talks/1_2cc7b1wu/21845411 $z Available via Cornell's Library MediaSpace." ;
+            bf:electronicLocator <http://media.library.cornell.edu/media/The+Abortion+Talks/1_2cc7b1wu/21845411> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available via Cornell's Library MediaSpace."@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Title from title screen (viewed June 27, 2023)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Cambridge, MA] : $b J&S Production, $c [2022]" ;
+            bflc:simpleAgent "J&S Production," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[Cambridge, MA] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/mau> ] ;
+    bf:publicationStatement "[Cambridge, MA] : J&S Production, [2022]" ;
+    bf:responsibilityStatement "a J&S Production." ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The abortion talks /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The abortion talks /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+

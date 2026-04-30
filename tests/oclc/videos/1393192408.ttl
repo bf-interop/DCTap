@@ -1,0 +1,787 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/gen> a bf:IntendedAudience ;
+    rdfs:label "general"@en ;
+    bf:code "gen" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1393192408#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20260320115837.7" ;
+    bf:creationDate "20230809" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCO $d OCLCQ $d OCLCA $d OCLCL $d OCLCO $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1393192408> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1393192408#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "\"Originally aired as 'Biography: Barack Obama inaugural edition' on A & E Television Networks\"--Container."@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "E908" ;
+            bf:itemPortion ".B3723 2009" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Marans, Ron, $e screenwriter, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Marans, Ron," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sanders, Samantha, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sanders, Samantha," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bisaillon, Maurice, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Bisaillon, Maurice," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gaynor, Jim, $e composer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Gaynor, Jim," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Towers, Jonathan, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Towers, Jonathan," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Schneiger, Robert, $e chief creative officer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Schneiger, Robert," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "chief creative officer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Arts and Entertainment Network. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrxjHRD8RkRrR6QwvTR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrxjHRD8RkRrR6QwvTR> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ohtani, Rodney A., $e director of photography." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ohtani, Rodney A.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Houston, Rodd, $e narrator." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Houston, Rodd," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "narrator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Towers Productions, Inc. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqWyqPHkxcKQdf3hRhR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqWyqPHkxcKQdf3hRhR> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Treumann, Julie, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Treumann, Julie," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Biography Channel (Firm) $1 https://id.oclc.org/worldcat/entity/E39QH7JmpbHxyJhK3xHkYdVWPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpbHxyJhK3xHkYdVWPF> ] ;
+    bf:duration "PT50M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Émissions télévisées autres que de fiction." ;
+            bflc:marcKey "655  7 $a Émissions télévisées autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000019" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires télévisés." ;
+            bflc:marcKey "655  7 $a Documentaires télévisés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000018" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs" ;
+            bflc:marcKey "655  7 $a Documentary television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710387" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographical television programs" ;
+            bflc:marcKey "655  7 $a Biographical television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726117" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographical television programs." ;
+            bflc:marcKey "655  7 $a Biographical television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866082" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographies télévisées." ;
+            bflc:marcKey "655  7 $a Biographies télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000062" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films"@en ;
+            bflc:marcKey "380    $a Documentary films $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographies" ;
+            bflc:marcKey "655  7 $a Biographies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919896" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs." ;
+            bflc:marcKey "655  7 $a Documentary television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction television programs." ;
+            bflc:marcKey "655  7 $a Nonfiction television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866405" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction television programs" ;
+            bflc:marcKey "655  7 $a Nonfiction television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710270" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-il" ;
+            bf:code "n-us-il" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-il> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1393192408> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/gen> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Update production team: written and produced by Ron Marans ; finishing editor and audio mix, David de la Parra ; additional music, Mark Humble ; camera, John Lawrence."@en ;
+            bflc:marcKey "508    $a Update production team: written and produced by Ron Marans ; finishing editor and audio mix, David de la Parra ; additional music, Mark Humble ; camera, John Lawrence." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Closed-captioned."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Producer, Maurice Basaillon ; writers, Samantha Sanders, Julie Treumann ; editors, Alberto Mendez, Tim McLaughlin, Jan Sutcliffe ; chief creative officer, Robert Schneiger ; camera, Oral User, Rodney Ohtani ; finishing editor, John Schlauch."@en ;
+            bflc:marcKey "508    $a Producer, Maurice Basaillon ; writers, Samantha Sanders, Julie Treumann ; editors, Alberto Mendez, Tim McLaughlin, Jan Sutcliffe ; chief creative officer, Robert Schneiger ; camera, Oral User, Rodney Ohtani ; finishing editor, John Schlauch." ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Not rated."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Narrator, Rodd Houston ; commentators include Cokie Roberts, Craig Robinson, David Mendell, David Axelrod, Maya Soetoro-Ng, Marty Nesbitt, David Plotz, Michelle Obama, Lawrence Tribe, Sen. Emil Jones, Jr., and Cindy Moelis ; original music, Jim Gaynor."@en ;
+            bflc:marcKey "511 0  $a Narrator, Rodd Houston ; commentators include Cokie Roberts, Craig Robinson, David Mendell, David Axelrod, Maya Soetoro-Ng, Marty Nesbitt, David Plotz, Michelle Obama, Lawrence Tribe, Sen. Emil Jones, Jr., and Cindy Moelis ; original music, Jim Gaynor." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Camera, Oral User, Rodney Ohtani ; editors, Alberto Mendez, Tim McLaughlin, Jan Sutcliffe ; original music, Jim Gaynor."@en ;
+            bflc:marcKey "508    $a Camera, Oral User, Rodney Ohtani ; editors, Alberto Mendez, Tim McLaughlin, Jan Sutcliffe ; original music, Jim Gaynor." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Presidential candidates United States." ;
+            bflc:marcKey "650  0 $a Presidential candidates $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Presidential candidates" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca11711872" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca11711872" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Legislators" ;
+            bflc:marcKey "650  7 $a Legislators $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00995828" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Illinois Politics and government 20th century." ;
+            bflc:marcKey "651  0 $a Illinois $x Politics and government $y 20th century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Illinois" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2097570" ] ] [ a bf:Topic ;
+                        rdfs:label "Politics and government" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2097570" ] ] [ a bf:Temporal ;
+                        rdfs:label "20th century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930674" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Legislators United States Biography." ;
+            bflc:marcKey "650  0 $a Legislators $z United States $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Legislators" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2044570" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2044570" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933801" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "1900-2099" ;
+            bflc:marcKey "648  7 $a 1900-2099 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politics and government" ;
+            bflc:marcKey "650  7 $a Politics and government $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919741" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Presidential candidates" ;
+            bflc:marcKey "650  7 $a Presidential candidates $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01075708" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Legislators Illinois Biography." ;
+            bflc:marcKey "650  0 $a Legislators $z Illinois $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Legislators" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2044541" ] ] [ a bf:Geographic ;
+                        rdfs:label "Illinois" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca286907" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933801" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "États-Unis Politique et gouvernement 21e siècle." ;
+            bflc:marcKey "651  6 $a États-Unis $x Politique et gouvernement $y 21e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0112282" ] ] [ a bf:Topic ;
+                        rdfs:label "Politique et gouvernement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0112282" ] ] [ a bf:Temporal ;
+                        rdfs:label "21e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373679" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Multiracial people United States Biography." ;
+            bflc:marcKey "650  0 $a Multiracial people $z United States $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Multiracial people" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3570009" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3570009" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933801" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Obama, Barack." ;
+            bflc:marcKey "600 10 $a Obama, Barack." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca3725304" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "United States Politics and government 21st century." ;
+            bflc:marcKey "651  0 $a United States $x Politics and government $y 21st century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059496" ] ] [ a bf:Topic ;
+                        rdfs:label "Politics and government" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059496" ] ] [ a bf:Temporal ;
+                        rdfs:label "21st century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930675" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Noirs américains Biographies." ;
+            bflc:marcKey "650  6 $a Noirs américains $v Biographies." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Noirs américains" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0068453" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biographies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378258" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Presidents" ;
+            bflc:marcKey "650  7 $a Presidents $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01075723" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African Americans Biography." ;
+            bflc:marcKey "650  0 $a African Americans $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African Americans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002293" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933801" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Presidents United States Biography." ;
+            bflc:marcKey "650  0 $a Presidents $z United States $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Presidents" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2162497" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2162497" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2162497" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Parlementaires États-Unis Biographies." ;
+            bflc:marcKey "650  6 $a Parlementaires $z États-Unis $v Biographies." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Parlementaires" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0070850" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0070850" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biographies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378258" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJgt3k8FThFDJMfjp8rpfq>,
+        <https://id.oclc.org/worldcat/entity/E39PBJjCKvFkHQ3F9QhY6vw3cP>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Through a combination of first-person interviews and those with friends, family, and colleagues, Biography® explores the life of the President from his childhood in Honolulu to his successful bid to become America's 44th Chief Executive. Learn about his struggles to find an identity as a teenager and how his dedication to learning and compassion for his peers propelled him through two of the top universities in the U.S. Follow him through his days as a community organizer in Chicago, as a state senator in Illinois, as a member of the U.S. Senate, and as his party's nominee for President of the United States. Finally, take a look at how he harnessed the power of change to connect with millions of Americans on his way to winning the White House in November 2008.\"--Described and Captioned Media Program website."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Introduction -- Early life -- Youth in Hawaii -- Harvard law -- Public life -- 2004 Convention -- Primaries -- Presidential win." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Barack Obama inaugural edition /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Barack Obama inaugural edition /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i At head of title on disc surface and container: $a Black enterprise, in our footsteps video collection" ;
+            bf:mainTitle "Black enterprise, in our footsteps video collection" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "At head of title on disc surface and container:"@en ] ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title on container spine: $a Black enterprise : $b Barack Obama inaugural edition" ;
+            bf:mainTitle "Black enterprise :" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title on container spine:"@en ] ;
+            bf:subtitle "Barack Obama inaugural edition" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgt3k8FThFDJMfjp8rpfq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Illinois" ;
+    bflc:marcKey "651  7 $a Illinois $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgt3k8FThFDJMfjp8rpfq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01205143" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjCKvFkHQ3F9QhY6vw3cP> a bf:Person ;
+    rdfs:label "Obama, Barack" ;
+    bflc:marcKey "600 17 $a Obama, Barack $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjCKvFkHQ3F9QhY6vw3cP" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst00348231" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpbHxyJhK3xHkYdVWPF> a bf:Organization ;
+    rdfs:label "Biography Channel (Firm)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7653963" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqWyqPHkxcKQdf3hRhR> a bf:Organization ;
+    rdfs:label "Towers Productions, Inc." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4981141" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrxjHRD8RkRrR6QwvTR> a bf:Organization ;
+    rdfs:label "Arts and Entertainment Network." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3178221" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1393192408> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1393192408#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color"@en ],
+        <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:copyrightDate "©2008, ©2009"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region 1"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/region1> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:distributionStatement "[New York, N.Y.] : Distributed by Black Enterprise" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 50 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "A&E Television Networks" ] ;
+            rdf:value "D7021D" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1393192408" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1393192408#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Widescreen presentation, enhanced for 16X9 televisions."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color with black and white sequences ;"@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a [New York, N.Y.] : $b Distributed by Black Enterprise" ;
+            bflc:simpleAgent "Distributed by Black Enterprise" ;
+            bflc:simplePlace "[New York, N.Y.] :" ;
+            bf:date "2009"^^<http://id.loc.gov/datatypes/edtf> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New York, N.Y.] : $b A&E Television Networks, $c [2009]" ;
+            bflc:simpleAgent "A&E Television Networks," ;
+            bflc:simpleDate "[2009]" ;
+            bflc:simplePlace "[New York, N.Y.] :" ;
+            bf:date "2009"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "[New York, N.Y.] : A&E Television Networks, [2009]" ;
+    bf:responsibilityStatement "produced by Towers Productions, Inc. and Ron Marans Communications, Inc. for the A & E Television Network ; executive producer, Jonathan Towers ; producer, Maurice Bisaillon ; writers, Samantha Sanders, Julie Treumann." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Barack Obama inaugural edition /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Barack Obama inaugural edition /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdabs" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

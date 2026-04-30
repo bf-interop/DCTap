@@ -1,0 +1,705 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/mtechnique/anim> a bflc:MovingImageTechnique ;
+    rdfs:label "animation"@en ;
+    bf:code "anim" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1358410041#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011220820.5" ;
+    bf:creationDate "20230112" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCL $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1358410041> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkp3WxWtjjJpxVQmjMHG3> a bf:Person ;
+    rdfs:label "Blackton, James Stuart, 1875-1941," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1209258" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvHctJcW4PkYc6W7hF9Xd> a bf:Person ;
+    rdfs:label "O'Brien, Willis, 1886-1962," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1973654" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwCWVbv6t9YY9RbdgCG73> a bf:Person ;
+    rdfs:label "Danforth, Jim," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7783270" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFHcx4PKJCvBTPygv8PVJC> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/anim> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.5" ;
+            bf:itemPortion ".S867 2022" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Thunderbean Animation (Firm), $e publisher,e distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqjV8yyyWjJtx934CGR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqjV8yyyWjJtx934CGR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher,e distributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a O'Brien, Willis, $d 1886-1962, $e animator. $1 https://id.oclc.org/worldcat/entity/E39PBJvHctJcW4PkYc6W7hF9Xd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvHctJcW4PkYc6W7hF9Xd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "animator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Baker, Bob, $e commentator." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Baker, Bob," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cabellero, Mark, $e commentator." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cabellero, Mark," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Danforth, Jim, $e commentator. $1 https://id.oclc.org/worldcat/entity/E39PBJwCWVbv6t9YY9RbdgCG73" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwCWVbv6t9YY9RbdgCG73> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Walsh, Seamus, $e commentator." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Walsh, Seamus," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Kinex Animation (Firm), $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Kinex Animation (Firm)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Blackton, James Stuart, $d 1875-1941, $e animator. $1 https://id.oclc.org/worldcat/entity/E39PBJkp3WxWtjjJpxVQmjMHG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkp3WxWtjjJpxVQmjMHG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "animator." ] ] ;
+    bf:duration "PT2H16M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Television commercials." ;
+            bflc:marcKey "655  7 $a Television commercials. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866633" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Messages publicitaires télévisés." ;
+            bflc:marcKey "655  7 $a Messages publicitaires télévisés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000688" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Silent films" ;
+            bflc:marcKey "655  7 $a Silent films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710368" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Stop-motion animation films." ;
+            bflc:marcKey "655  7 $a Stop-motion animation films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866593" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Puppet films" ;
+            bflc:marcKey "655  7 $a Puppet films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710474" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "children's films." ;
+            bflc:marcKey "655  7 $a children's films. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300138231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Children's films." ;
+            bflc:marcKey "655  7 $a Children's films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866113" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'animation en stop-motion." ;
+            bflc:marcKey "655  7 $a Films d'animation en stop-motion. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000125" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Animated films." ;
+            bflc:marcKey "655  7 $a Animated films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866041" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Animated films" ;
+            bflc:marcKey "655  7 $a Animated films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726127" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fantasy films." ;
+            bflc:marcKey "655  7 $a Fantasy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866224" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Silent films." ;
+            bflc:marcKey "655  7 $a Silent films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866553" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Puppet films." ;
+            bflc:marcKey "655  7 $a Puppet films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866458" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sources" ;
+            bflc:marcKey "655  7 $a Sources $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423900" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Juvenile works" ;
+            bflc:marcKey "655  7 $a Juvenile works $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411637" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films pour enfants." ;
+            bflc:marcKey "655  7 $a Films pour enfants. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000012" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films muets." ;
+            bflc:marcKey "655  7 $a Films muets. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000078" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Children's films" ;
+            bflc:marcKey "655  7 $a Children's films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920781" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television commercials" ;
+            bflc:marcKey "655  7 $a Television commercials $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726182" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Stop-motion animation films" ;
+            bflc:marcKey "655  7 $a Stop-motion animation films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01752666" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films" ;
+            bflc:marcKey "655  7 $a Short films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710364" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fantasy films" ;
+            bflc:marcKey "655  7 $a Fantasy films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710304" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films fantastiques." ;
+            bflc:marcKey "655  7 $a Films fantastiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000011" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de marionnettes." ;
+            bflc:marcKey "655  7 $a Films de marionnettes. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000098" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1358410041> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Animation classics collection." ;
+                    bflc:marcKey "830  0 $a Animation classics collection." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca9069222" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Animation classics collection." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Animation classics collection" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Animation classics collection" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Montage (Cinéma) Histoire Sources." ;
+            bflc:marcKey "650  6 $a Montage (Cinéma) $x Histoire $v Sources." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Montage (Cinéma)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0026324" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Stop-motion animation films History Sources." ;
+            bflc:marcKey "650  0 $a Stop-motion animation films $x History $v Sources." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Stop-motion animation films" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8411398" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Motion pictures Editing History Sources." ;
+            bflc:marcKey "650  0 $a Motion pictures $x Editing $x History $v Sources." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Motion pictures" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041996" ] ] [ a bf:Topic ;
+                        rdfs:label "Editing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041996" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Motion picture industry History Sources." ;
+            bflc:marcKey "650  0 $a Motion picture industry $x History $v Sources." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Motion picture industry" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041523" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Animated films" ;
+            bflc:marcKey "650  7 $a Animated films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00809611" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Motion pictures Editing" ;
+            bflc:marcKey "650  7 $a Motion pictures $x Editing $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Motion pictures" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01027319" ] ] [ a bf:Topic ;
+                        rdfs:label "Editing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01027319" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cinéma Industrie Histoire Sources." ;
+            bflc:marcKey "650  6 $a Cinéma $x Industrie $x Histoire $v Sources." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cinéma" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0011237" ] ] [ a bf:Topic ;
+                        rdfs:label "Industrie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0011237" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Animated films History Sources." ;
+            bflc:marcKey "650  0 $a Animated films $x History $v Sources." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Animated films" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041333" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916294" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Stop-motion animation films" ;
+            bflc:marcKey "650  7 $a Stop-motion animation films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01749972" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Films d'animation en stop-motion Histoire Sources." ;
+            bflc:marcKey "650  6 $a Films d'animation en stop-motion $x Histoire $v Sources." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Films d'animation en stop-motion" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000269657" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Sources." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0382350" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Motion picture industry" ;
+            bflc:marcKey "650  7 $a Motion picture industry $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01027150" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "A collection of early examples of stop-motion animation, featuring rare Kinex films, originally made in Hollywood for distribution to the new \"home movie\" market of the 1920's. Also includes early silent examples by the medium's pioneers including J. Stuart Blackton and Willis O'Brien."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Early experiments. Princess Nicotine -- The Automatic Moving Company -- Prehistoric poultry -- George Washington in clay -- Miracles in mud -- Swat the fly. The Kinex Studios collection. Red Riding Hood -- Snap the Gingerbread Man -- Chip the Wooden Man -- Daffy doings in Doodlebugville -- Pepper the Pup in Toodle-oo-o -- Hector the Pup -- Horse laffs. All sorts of shorts. Ferda the Ant -- Dolly Daisy in hearts and flowers -- Toyland ice capades -- The peanut vendor -- Mecki introduces himself -- Rock a bye baby -- The peanut vendor -- The Ice Princess. Theatrical & Television Commercials. Lucky Strike commercials (1948) -- Butter commercial (early 50's) -- 'Camel' commercial workprint (late 40's) -- 'King Kong' Volkswagen (1971) -- Glo Coat (mid 60's) -- Chocks (early 60's) -- Brylcreem (early 50's)." ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i At head of title: $a Thunderbean presents" ;
+            bf:mainTitle "Thunderbean presents" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "At head of title:"@en ] ],
+        [ a bf:Title ;
+            rdfs:label "Stop-motion marvels! :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Stop-motion marvels! :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqjV8yyyWjJtx934CGR> a bf:Organization ;
+    rdfs:label "Thunderbean Animation (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8367582" ] .
+
+<https://id.oclc.org/worldcat/entity/1358410041> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1358410041#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:copyrightDate "©2010"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:distributionStatement "Ann Arbor, Michigan : Thunderbean Animation, [2022]." ;
+    bf:editionStatement "Newly remastered Blu-ray edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (136 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1358410041" ],
+        [ a bf:Upc ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "738211838410" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFHcx4PKJCvBTPygv8PVJC> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from container; series title from earlier edition."@en ],
+        [ a bf:Note ;
+            rdfs:label "Special features: a collection of commercials featuring stop-motion animation; commentary tracks including noted stop-motion animators Bob Baker, Jim Danforth, and Screen Novelties' Mark Caballero and Seamus Walsh; still gallery; more rare stop-motion shorts from around the world, including Ferda the Ant (1942) and Mecki the Hedgehog (1952)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "1 booklet (12 pages : illustrations ; 19 cm.)"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "silent and sound, black & white and color ;"@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Blu-ray disc, all regions; full screen (1.33:1) presentation; requires Blu-ray player."@en ] ;
+    bf:provisionActivity [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a Ann Arbor, Michigan : $b Thunderbean Animation, $c [2022]." ;
+            bflc:simpleAgent "Thunderbean Animation," ;
+            bflc:simpleDate "[2022]." ;
+            bflc:simplePlace "Ann Arbor, Michigan :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ] ;
+    bf:responsibilityStatement "Thunderbean Animation." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Stop-motion marvels! : featuring the Kinex collection /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Stop-motion marvels! :" ;
+            bf:subtitle "featuring the Kinex collection /" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

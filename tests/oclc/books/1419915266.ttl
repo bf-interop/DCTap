@@ -1,0 +1,240 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmmss> a bf:DescriptionConventions ;
+    bf:code "dcrmmss" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1419915266#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250507155905.5" ;
+    bf:creationDate "20231026" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Non-ISBD"@en ;
+            bf:code "blank" ],
+        <http://id.loc.gov/vocabulary/descriptionConventions/dcrmmss> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1419915266> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1419915266#work> a bf:Manuscript,
+        bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Livres de cuisine." ;
+            bflc:marcKey "655  7 $a Livres de cuisine. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000119" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Recipes." ;
+            bflc:marcKey "655  7 $a Recipes. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077296" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "recipes." ;
+            bflc:marcKey "655  7 $a recipes. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300027043" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cookbooks." ;
+            bflc:marcKey "655  7 $a Cookbooks. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866159" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Recettes." ;
+            bflc:marcKey "655  7 $a Recettes. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001175" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "cookbooks." ;
+            bflc:marcKey "655  7 $a cookbooks. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026109" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "codices (bound manuscripts)" ;
+            bflc:marcKey "655  7 $a codices (bound manuscripts) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300224200" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1419915266> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "medicine (discipline)" ;
+            bflc:marcKey "650  7 $a medicine (discipline) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300054518" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Cuisine anglaise." ;
+            bflc:marcKey "650  6 $a Cuisine anglaise." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0134247" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking, English." ;
+            bflc:marcKey "650  0 $a Cooking, English." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2043048" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Médecine." ;
+            bflc:marcKey "650  6 $a Médecine." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0055077" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Medicine." ;
+            bflc:marcKey "650  0 $a Medicine." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2010645" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:GenreForm ;
+            rdfs:label "Manuscripts, English 19th century." ;
+            bflc:marcKey "655  4 $a Manuscripts, English $y 19th century." ;
+            madsrdf:componentList ( [ a bf:GenreForm ;
+                        rdfs:label "Manuscripts, English" ] [ a bf:Temporal ;
+                        rdfs:label "19th century." ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This volume contains 94 culinary, medicinal, and household recipes written and compiled by an unknown creator in England between 1827 and 1832. It is bound in half leather over marbled paper boards and includes an index (p. 1-4), inlaid leaves (p. 6, 63, 64), clippings(p. 68), and recipes and clippings that have been sewed into the volume (p. 57, 76, 77). Due to significant gaps in original pagination (p. 78-87, 96-117, 120-159) and numerous missing pages, this volume appears to have been rebound without all of its original pages. As a result, the cataloger provided pagination for this volume. Several of the recipes and remedies are attributed to both medical figures at the time and to individuals likely known to the creator. These individuals include Ane Hickerton (p. 22), Dr. Richard Reece (p. 32), \"the intelligent and communicative Mr. Player\" (p. 49), and Mrs. Sealy of Little Somerford (p.69). Examples of the varied recipes in this volume include to prevent the skin coming off sick people (p. 2), for the evil (p. 2), to destroy vermin on cattle and to cure the mange (p. 15), for a consumption (p. 19), universal pickle (p. 26), raspberry brandy (p. 31), lime water from Dr. Reece's The Medical Guide (p. 32), pound cake (p. 36), family pills (p. 42), and Mrs. Sealy's Little Somerford receipt for mince meat (p. 69)."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "British recipe book :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "British recipe book :" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1419915266> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1419915266#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:dimensions "21 x 17 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 volume (94 pages) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1419915266" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1419915266#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:CustodialNote ;
+            rdfs:label "Sold by Alastor Rare Books (East Cowes, England), 2023."@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label ""@en ] ;
+            bflc:marcKey "561 1  $a Sold by Alastor Rare Books (East Cowes, England), 2023." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/citeas> ;
+            rdfs:label "British Recipe Book (Ms. Codex 2158). Kislak Center for Special Collections, Rare Books and Manuscripts, University of Pennsylvania."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 41 $z Finding aid $u https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.CODEX2158" ;
+            bf:electronicLocator <http://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.CODEX2158> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Finding aid"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                oclcbf:AccessPolicy ;
+            rdfs:label "Access to this item is subject to staff review."@en ] ;
+    bf:productionStatement "England, 1827-1832." ;
+    bf:provisionActivity [ a bf:Production ;
+            bflc:marcKey "264  0 $a England, $c 1827-1832." ;
+            bflc:simpleDate "1827-1832." ;
+            bflc:simplePlace "England," ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "British recipe book : manuscript." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "British recipe book :" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+

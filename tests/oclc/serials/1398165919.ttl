@@ -1,0 +1,686 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/earliest> a bf:Status ;
+    rdfs:label "earliest"@en .
+
+<http://id.loc.gov/vocabulary/relationship/separatedfrom> a bf:Relationship ;
+    rdfs:label "separated from"@en .
+
+<https://id.oclc.org/worldcat/entity/1398165919#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20240325203552.0" ;
+    bf:creationDate "20230918" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d CUV $d OCLCF" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1398165919> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1398165919#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TP557" ;
+            bf:itemPortion ".S57" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gariglio, Giancarlo, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Gariglio, Giancarlo," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca9275382" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals." ;
+            bflc:marcKey "655  7 $a Periodicals. $2 fast $0 (OCoLC)fst01411641" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1398165919> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/relnote> ;
+            rdfs:label "This publication originated in <2018> covering California vineyards and wines as an included supplement section of: Slow wine ... : A year in the life of Italy's vineyards and wines. With the 2019 guide of that title, the included supplement section expanded to include California and Oregon vineyards and wines under the title: Slow wine guide 2019 : A year in the life of California's and Oregon's vineyards and wines. The included supplement section continued with the 2020 guide of that title with the title: Slow wine : California and Oregon. Beginning in 2021, it became separately published as an individual publication under the title: Slow wine guide USA." ;
+            bflc:marcKey "580    $a This publication originated in <2018> covering California vineyards and wines as an included supplement section of: Slow wine ... : A year in the life of Italy's vineyards and wines. With the 2019 guide of that title, the included supplement section expanded to include California and Oregon vineyards and wines under the title: Slow wine guide 2019 : A year in the life of California's and Oregon's vineyards and wines. The included supplement section continued with the 2020 guide of that title with the title: Slow wine : California and Oregon. Beginning in 2021, it became separately published as an individual publication under the title: Slow wine guide USA." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/842056786#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/separatedfrom> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Slow Food (Mouvement) États-Unis Périodiques." ;
+            bflc:marcKey "650  6 $a Slow Food (Mouvement) $z États-Unis $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Slow Food (Mouvement)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0366767" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Viticulture." ;
+            bflc:marcKey "650  7 $a Viticulture. $2 fast $0 (OCoLC)fst01168260" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01168260" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Sustainable agriculture." ;
+            bflc:marcKey "650  7 $a Sustainable agriculture. $2 fast $0 (OCoLC)fst01139712" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01139712" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Agriculture durable États-Unis Périodiques." ;
+            bflc:marcKey "650  6 $a Agriculture durable $z États-Unis $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Agriculture durable" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0000576" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Organic viticulture United States Periodicals." ;
+            bflc:marcKey "650  0 $a Organic viticulture $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Organic viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7597705" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine and wine making United States Periodicals." ;
+            bflc:marcKey "650  0 $a Wine and wine making $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine and wine making" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2103408" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Sustainable agriculture United States Periodicals." ;
+            bflc:marcKey "650  0 $a Sustainable agriculture $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Sustainable agriculture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2075390" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Vintners." ;
+            bflc:marcKey "650  7 $a Vintners. $2 fast $0 (OCoLC)fst01167087" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01167087" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Vineyards United States Periodicals." ;
+            bflc:marcKey "650  0 $a Vineyards $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Vineyards" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2081066" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Terroir." ;
+            bflc:marcKey "650  7 $a Terroir. $2 fast $0 (OCoLC)fst01744177" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01744177" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "United States." ;
+            bflc:marcKey "651  7 $a United States. $2 fast $0 (OCoLC)fst01204155" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01204155" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Slow food movement." ;
+            bflc:marcKey "650  7 $a Slow food movement. $2 fast $0 (OCoLC)fst00761003" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00761003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Terroir United States Periodicals." ;
+            bflc:marcKey "650  0 $a Terroir $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Terroir" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7586861" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Vineyards." ;
+            bflc:marcKey "650  7 $a Vineyards. $2 fast $0 (OCoLC)fst01167068" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01167068" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Vignobles États-Unis Périodiques." ;
+            bflc:marcKey "650  6 $a Vignobles $z États-Unis $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Vignobles" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0137903" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Wineries." ;
+            bflc:marcKey "650  7 $a Wineries. $2 fast $0 (OCoLC)fst01175997" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175997" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture États-Unis Périodiques." ;
+            bflc:marcKey "650  6 $a Viticulture $z États-Unis $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0022793" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wineries United States Periodicals." ;
+            bflc:marcKey "650  0 $a Wineries $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wineries" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2103610" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Organic viticulture." ;
+            bflc:marcKey "650  7 $a Organic viticulture. $2 fast $0 (OCoLC)fst01744250" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01744250" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Wine industry." ;
+            bflc:marcKey "650  7 $a Wine industry. $2 fast $0 (OCoLC)fst01175961" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175961" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine industry United States Periodicals." ;
+            bflc:marcKey "650  0 $a Wine industry $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine industry" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2103524" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture United States Periodicals." ;
+            bflc:marcKey "650  0 $a Viticulture $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085665" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Vintners United States Periodicals." ;
+            bflc:marcKey "650  0 $a Vintners $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Vintners" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2081089" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Vin Industrie États-Unis Périodiques." ;
+            bflc:marcKey "650  6 $a Vin $x Industrie $z États-Unis $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Vin" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0119464" ] ] [ a bf:Topic ;
+                        rdfs:label "Industrie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0119464" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Slow food movement United States Periodicals." ;
+            bflc:marcKey "650  0 $a Slow food movement $z United States $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Slow food movement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6880770" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Wine and wine making." ;
+            bflc:marcKey "650  7 $a Wine and wine making. $2 fast $0 (OCoLC)fst01175907" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175907" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine and wine making United States Evaluation Periodicals." ;
+            bflc:marcKey "650  0 $a Wine and wine making $z United States $x Evaluation $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine and wine making" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2103408" ] ] [ a bf:Topic ;
+                        rdfs:label "Evaluation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5180449" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"A new chapter is beginning for Slow Wine USA. Four years after its first edition, this guide has grown to such an extent that it is not longer an appendix to the Italian Slow Wine Guide but it now gathers more than enough producers and stories to easily stand on its own feet, thus we've decided to publish it separately. And so, what started as a small experiment, a sort of spin-off, reviewing a handful of California wineries, expanded quickly to Oregon and now, finally, has come to include two more important viticultural states, Washington and New York.\"-- taken from 2021 guide, Foreword, page 7."@en ],
+        [ a bf:Summary ;
+            rdfs:label "\"With a total of 285 wineries reviewed from California, Oregon and now from New York and Washington states, the 2021 edition of the 'Slow Wine guide USA' covers more ground than ever before. For the first time, the 2021 edition stands as an individual publication devoted to US producers. The idea behind 'Slow Wine' is straightforward : it acknowledges the unique stories of people and vineyards, of grape varieties and landscapes, and of their wines. The knowledge that wine is more than just liquid in a glass helps wine lovers make better, more conscious choices and enhances the very enjoyment of these products. Since its beginnings in Italy eleven years ago, 'Slow Wine' has combined its tasting sessions with equally important moments of exchange and debate with producers. In doing so, we're bringing you the most up-to-date information about what's happening at the wineries within our pages. We're thrilled to see the guide finding fertile ground int he USA. Our incredible team of wine experts has once again teamed up to bring you our fourth edition, 'Slow Wine' 2021 -- a year in the life of the vineyards and wines of the USA.\"-- taken from 2021 guide, back cover."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Slow wine guide USA ... :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Slow wine guide USA ... :" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title page title: $a Slow wine : $b a year in the life of the vineyards and wines of the USA" ;
+            bf:mainTitle "Slow wine :" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title page title:"@en ] ;
+            bf:subtitle "a year in the life of the vineyards and wines of the USA" ] .
+
+<https://id.oclc.org/worldcat/entity/842056786#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2013254607" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "842056786" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Slow wine ..." ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Slow wine ..." ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1398165919> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1398165919#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "23 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes :"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1398165919" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023237133" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1398165919#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: first issue; title from front cover."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "maps ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 2023."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Each winery receives a review divided in three sections : the first one is dedicated to the people who live and work at the winery, the second to the vineyards and the way they're farmed, and the third to the finest wines currently available on the market. The very best wines are awarded Top Wine accolade. Among these we have the Slow Wines -- which beyond their outstanding sensory quality are of particular interest for their sense of place, environmental sustainability or historical value -- and the Everyday Wines, representing excellent value at prices within $30. The most interesting wineries on the other hand are awarded the Snail, for the way they interpret Slow Food values (sensory perceptions, territory, environment, identity) while offering good value for money ; the Bottle to wineries whose wines are of outstanding sensory quality throughout the range ; the Coin to those estates offering excellent value for money.\"--taken from 2022 guide back cover."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with 2021 guide."@en ],
+        [ a bf:Note ;
+            rdfs:label "Editor-in-chief: Giancarlo Gariglio."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Parker, Colorado] : $b Outskirts Press, $c [2021-]" ;
+            bflc:simpleAgent "Outskirts Press," ;
+            bflc:simpleDate "[2021-]" ;
+            bflc:simplePlace "[Parker, Colorado] :" ;
+            bf:date "2021/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/it> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/earliest> ],
+        [ a bf:Publication ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "2023-"@en ] ;
+            bflc:marcKey "264 31 $3 2023- $a Bra (CN), Italy : $b Slow Food Promozione" ;
+            bflc:simpleAgent "Slow Food Promozione" ;
+            bflc:simplePlace "Bra (CN), Italy :" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        [ a bf:Publication ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "2022:"@en ] ;
+            bflc:marcKey "264 21 $3 2022: $a [Novato, CA] : $b ORO Editions" ;
+            bflc:simpleAgent "ORO Editions" ;
+            bflc:simplePlace "[Novato, CA] :" ] ;
+    bf:publicationStatement "2022: [Novato, CA] : ORO Editions",
+        "2023- Bra (CN), Italy : Slow Food Promozione",
+        "[Parker, Colorado] : Outskirts Press, [2021-]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Slow wine guide USA ... : a year in the life of the vineyards and wines of the USA." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Slow wine guide USA ... :" ;
+            bf:subtitle "a year in the life of the vineyards and wines of the USA." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

@@ -1,0 +1,279 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a bf:GenreForm ;
+    rdfs:label "Fiction"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmb> a bf:DescriptionConventions ;
+    bf:code "dcrmb" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1411546304#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250714151555.1" ;
+    bf:creationDate "20231127" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmb>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCF $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1411546304> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1411546304#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "TX715" ;
+            bf:itemPortion ".C45 1980" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Children's Hospital of Philadelphia. $b Oncology Division. $b Parent Group." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Children's Hospital of Philadelphia. Oncology Division. Parent Group." ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1411546304> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States Pennsylvania Phil." ;
+            bflc:marcKey "752    $a United States $b Pennsylvania $d Phil." ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "Pennsylvania" ] [ a madsrdf:City ;
+                        rdfs:label "Phil." ] ) ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Cooking, American." ;
+            bflc:marcKey "650  0 $a Cooking, American." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2042690" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cooking Pennsylvania." ;
+            bflc:marcKey "650  0 $a Cooking $z Pennsylvania." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cooking" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8535691" ] ] [ a bf:Geographic ;
+                        rdfs:label "Pennsylvania." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca256684" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Community cookbooks." ;
+            bflc:marcKey "650  0 $a Community cookbooks." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca3969129" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking." ;
+            bflc:marcKey "650  7 $a Cooking. $2 fast $0 (OCoLC)fst01754966" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01754966" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Cuisine américaine." ;
+            bflc:marcKey "650  6 $a Cuisine américaine." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0134377" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Pennsylvania." ;
+            bflc:marcKey "651  7 $a Pennsylvania. $2 fast $0 (OCoLC)fst01204598" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01204598" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Livres de cuisine d'organismes communautaires." ;
+            bflc:marcKey "650  6 $a Livres de cuisine d'organismes communautaires." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0440267" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking, American." ;
+            bflc:marcKey "650  7 $a Cooking, American. $2 fast $0 (OCoLC)fst01753224" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01753224" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Community cookbooks." ;
+            bflc:marcKey "650  7 $a Community cookbooks. $2 fast $0 (OCoLC)fst00870814" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00870814" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Appetizers and Beverages -- Soups and Sandwiches -- Breads -- Salads and Dressings -- Vegetables -- Main Dishes: Poultry, Meats, Seafood, Eggs and Cheese -- Desserts: Cakes and Frostings, Pies, Cookies, Puddings -- Snacks, Candies, and Miscellaneous." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A Cookbook /" ;
+            bflc:nonSortNum "2" ;
+            bf:mainTitle "A Cookbook /" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1411546304> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1411546304#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Culinary Collection (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Culinary Collection (University of Pennsylvania)" ] ],
+        [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Nancy Klavans Cookery Collection (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Nancy Klavans Cookery Collection (University of Pennsylvania)" ] ] ;
+    bf:dimensions "22 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "viii, 236, [6] pages :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1411546304" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1411546304#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:manufactureStatement "[Place of publication not identified] : Printed by Faith Publishing Company," ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Plastic comb binding."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes index."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Cook Book Committee: Eleanor Wetherill, Chairman ... Artists: Rosemary E. Morgan, Lois Carnevale, Karen Pucci."@en ],
+        [ a bf:Note ;
+            rdfs:label "Recipes attributed."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"We have gathered together both favorite family recipes and inspirational Biblical passages, poems, and verses. We would like our cook book to be not only food for the body but for the spirit as well.\"--Page ii."@en ] ;
+    bf:provisionActivity [ a bf:Manufacture ;
+            bflc:marcKey "264  3 $a [Place of publication not identified] : $b Printed by Faith Publishing Company," ;
+            bflc:simpleAgent "Printed by Faith Publishing Company," ;
+            bflc:simplePlace "[Place of publication not identified] :" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Philadelphia, Pa.] : $b [Children's Hospital of Philadelphia], $c 1980." ;
+            bflc:simpleAgent "[Children's Hospital of Philadelphia]," ;
+            bflc:simpleDate "1980." ;
+            bflc:simplePlace "[Philadelphia, Pa.] :" ;
+            bf:date "1980"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "[Philadelphia, Pa.] : [Children's Hospital of Philadelphia], 1980." ;
+    bf:responsibilityStatement "compiled by the Parent Group of the Broomall Satellite Clinic of the Oncology Division of the Children's Hospital of Philadelphia." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A Cookbook /" ;
+            bflc:nonSortNum "2" ;
+            bf:mainTitle "A Cookbook /" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/cov> ;
+            bflc:marcKey "246 14 $a From Our Table to Yours" ;
+            bf:mainTitle "From Our Table to Yours" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

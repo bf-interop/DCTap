@@ -1,0 +1,315 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/sudocs> a bf:Source ;
+    rdfs:label "Superintendent of Documents classification system"@en ;
+    bf:code "sudocs" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/mon> a bf:Frequency ;
+    rdfs:label "monthly"@en ;
+    bf:code "mon" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/millus/pho> a bf:Illustration ;
+    rdfs:label "phonodisc"@en ;
+    bf:code "pho" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dgpo> a bf:Organization ;
+    bf:code "dgpo" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<https://id.oclc.org/worldcat/entity/1400038147#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20250916143549.3" ;
+    bf:creationDate "20230717" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "GPO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d GPO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1400038147> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1400038147#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:Classification ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ;
+            rdf:value "PREX 3.11/2:" ],
+        [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "W1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a United States. $b Central Intelligence Agency, $e issuing body." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. Central Intelligence Agency," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca331448" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodical." ;
+            bflc:marcKey "655  2 $a Periodical." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1400038147> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm>,
+        <http://id.loc.gov/vocabulary/millus/pho> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/48672567#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Heads of state Registers." ;
+            bflc:marcKey "650  0 $a Heads of state $v Registers." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Heads of state" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2060123" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Registers." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5900662" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Government Agencies." ;
+            bflc:marcKey "650 22 $a Government Agencies." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Internationality." ;
+            bflc:marcKey "650 22 $a Internationality." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cabinet officers Registers." ;
+            bflc:marcKey "650  0 $a Cabinet officers $v Registers." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cabinet officers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2112617" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Registers." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5900662" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Government." ;
+            bflc:marcKey "650 12 $a Government." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Also known as: $a World leaders and cabinet members of foreign governments" ;
+            bf:mainTitle "World leaders and cabinet members of foreign governments" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Also known as:"@en ] ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a All foreign governments" ;
+            bf:mainTitle "All foreign governments" ],
+        [ a bf:Title ;
+            rdfs:label "World leaders - all foreign governments." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "World leaders - all foreign governments." ] .
+
+<https://id.oclc.org/worldcat/entity/48672567#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2004230164" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "48672567" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Chiefs of State and Cabinet members of foreign governments (Online)" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2332-1601" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Chiefs of State and Cabinet members of foreign governments (Online)" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1400038147> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1400038147#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (volumes)"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Monthly"@en ;
+            bflc:marcKey "310    $a Monthly" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/mon> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918646088106676" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1400038147" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023228329" ],
+        [ a bf:Identifier ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dgpo> ;
+            rdf:value "0856-A-05 (online)" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1400038147#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Archive"@en ] ;
+            bflc:marcKey "856 40 $3 Archive $u https://purl.fdlp.gov/GPO/gpo248446 $7 0" ;
+            bf:electronicLocator <http://purl.fdlp.gov/GPO/gpo248446> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://purl.fdlp.gov/GPO/gpo248445 $7 0" ;
+            bf:electronicLocator <http://purl.fdlp.gov/GPO/gpo248445> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: August 2022; title from journal homepage (publisher's website, viewed September 27, 2023)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 4  $z Address at time of PURL creation $u https://www.cia.gov/resources/world-leaders/" ;
+            bf:electronicLocator <http://www.cia.gov/resources/world-leaders> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Address at time of PURL creation"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "blank" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/issuance> ;
+            rdfs:label "Volume for 2022 complete in 3 issues."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/orig> ;
+            rdfs:label "Online"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: August 2025 (viewed September 12, 2025)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with August 2022."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 4  $z Address at time of PURL creation $u https://www.cia.gov/resources/world-leaders/historical-data/" ;
+            bf:electronicLocator <http://www.cia.gov/resources/world-leaders/historical-data> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Address at time of PURL creation"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "blank" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Washington, D.C.] : $b Central Intelligence Agency." ;
+            bflc:simpleAgent "Central Intelligence Agency." ;
+            bflc:simplePlace "[Washington, D.C.] :" ;
+            bf:date "2022/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "[Washington, D.C.] : Central Intelligence Agency." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "World leaders - all foreign governments." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "World leaders - all foreign governments." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

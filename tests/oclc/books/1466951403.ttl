@@ -1,0 +1,342 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/nationalbibschemes/bnb> a bf:Source ;
+    bf:code "bnb" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.kb.se/term/sao/Akutv%C3%A5rd> a bf:Topic ;
+    rdfs:label "Akutvård." ;
+    bflc:marcKey "650  7 $a Akutvård. $0 https://id.kb.se/term/sao/Akutv%C3%A5rd $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Psykiatri> a bf:Topic ;
+    rdfs:label "Psykiatri." ;
+    bflc:marcKey "650  7 $a Psykiatri. $0 https://id.kb.se/term/sao/Psykiatri $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.oclc.org/worldcat/entity/1466951403#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DNLM/DLC" ] ;
+    bf:changeDate "20251010044218.0" ;
+    bf:creationDate "20240827" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "S3O" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "IG#" ],
+        [ a bf:Organization ;
+            bf:code "YDX" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "UKMGB" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DNLM/DLC $b eng $c DLC $d IG# $d OCLCO $d UKMGB $d YDX $d OCLCO $d OCLCL $d S3O $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1466951403> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1466951403#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "RC480.6" ;
+            bf:itemPortion ".A28 2025" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Vla" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "WM 401" ;
+            bf:itemPortion ".A189 2025" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "616.89/025" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20241105" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3qc3dHKC6YXMHRvtwQ7qdc9Dh> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Longson, Damian, $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjB7V4VVTxpCwQFK3pFBj3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjB7V4VVTxpCwQFK3pFBj3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Buchanan, Mark $c (Consultant in emergency medicine), $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Buchanan, Mark (Consultant in emergency medicine)," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16372742" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Advanced Life Support Group (Manchester, England) $1 https://id.oclc.org/worldcat/entity/E39QH7JmqDBWYbfpHKyPbMPVxt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqDBWYbfpHKyPbMPVxt> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1466951403> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:editionStatement "Second edition." ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781394286287" ],
+                                [ a bf:Lccn ;
+                                    rdf:value "  2024039492" ] ;
+                            bf:provisionActivityStatement "Hoboken, NJ : Wiley, 2025" ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Acute psychiatric emergencies" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Acute psychiatric emergencies" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Crisis intervention (Mental health services)" ;
+            bflc:marcKey "650  0 $a Crisis intervention (Mental health services)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2063307" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Urgences en psychiatrie." ;
+            bflc:marcKey "650  6 $a Urgences en psychiatrie." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0044311" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Psychiatric emergencies." ;
+            bflc:marcKey "650  0 $a Psychiatric emergencies." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2013350" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Crisis Intervention" ;
+            bflc:marcKey "650  2 $a Crisis Intervention" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D003419" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Intervention en situation de crise (Santé mentale)" ;
+            bflc:marcKey "650  6 $a Intervention en situation de crise (Santé mentale)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0044310" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Emergency Services, Psychiatric" ;
+            bflc:marcKey "650 12 $a Emergency Services, Psychiatric" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D004637" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        <https://id.kb.se/term/sao/Akutv%C3%A5rd>,
+        <https://id.kb.se/term/sao/Psykiatri> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The Acute Psychiatric Emergencies (APEx) 1st edition was published in February 2020. With ongoing changes to legislation and following feedback from running the course for the past few years, the Working Group feel that a new edition is required in order to ensure that the material is up-to-date and relevant. Following discussion with the Working Group, and after presenting them with pros and cons of undertaking a revised edition vs. a new edition of the manual, they have agreed that a second edition with new typesetting and full support from the Wiley production team would be the best way forward. A second edition would revise and update the text where required\"-- Provided by publisher."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Structured approach to acute psychiatric emergencies -- Primary unified assessment and immediate psychiatric management -- Secondary physical and psychosocial assessment -- Mental state examination -- The patient who has harmed themselves -- Organic causes for behavioural disturbances -- The acutely confused patient (including delirium) -- The intoxicated patient? -- The aggressive patient -- Special circumstances -- Legal aspects of emergency psychiatry -- Getting it right : non-technical skills -- The patient experience." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Acute psychiatric emergencies :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Acute psychiatric emergencies :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjB7V4VVTxpCwQFK3pFBj3> a bf:Person ;
+    rdfs:label "Longson, Damian," .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqDBWYbfpHKyPbMPVxt> a bf:Organization ;
+    rdfs:label "Advanced Life Support Group (Manchester, England)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3265178" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sao> a bf:Source ;
+    bf:code "sao" .
+
+<https://id.oclc.org/worldcat/entity/1466951403> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1466951403#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "25" ;
+    bf:editionStatement "Second edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvi, 189 pages :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1466951403" ],
+        [ a bf:Nbn ;
+            bf:source <http://id.loc.gov/vocabulary/nationalbibschemes/bnb> ;
+            rdf:value "GBC506852" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(adobe pdf)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781394286287" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(paperback)" ;
+            rdf:value "9781394286263" ],
+        [ a bf:Identifier ;
+            rdf:value "CIPO000187930" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024039491" ],
+        [ a bf:Isbn ;
+            rdf:value "1394286260" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "Uk" ] ;
+            rdf:value "300482800" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(epub)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781394286270" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1466951403#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@en ],
+        [ a bf:Note ;
+            rdfs:label "Previous edition: 2020."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Bognor Regis, West Sussex ; $b Wiley, $c 2025." ;
+            bflc:simpleAgent "Wiley," ;
+            bflc:simpleDate "2025." ;
+            bflc:simplePlace "Bognor Regis, West Sussex ;" ;
+            bf:date "2025"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Hoboken, NJ : $c 2025." ;
+            bflc:simpleDate "2025." ;
+            bflc:simplePlace "Hoboken, NJ :" ] ;
+    bf:publicationStatement "Bognor Regis, West Sussex ; Wiley, 2025.",
+        "Hoboken, NJ : 2025." ;
+    bf:responsibilityStatement "edited by Mark Buchanan, Damien Longson." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Acute psychiatric emergencies : a practical approach /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Acute psychiatric emergencies :" ;
+            bf:subtitle "a practical approach /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

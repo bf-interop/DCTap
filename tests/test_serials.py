@@ -4,19 +4,12 @@ import pytest
 
 from pyshacl import validate
 
+from conftest import load_params
+
 TEST_DIRECTORY = pathlib.Path(__file__).parent
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/serial/11158534.cbd.rdf", 0, 8),
-        ("loc/serial/21507607.cbd.rdf", 0, 6),
-        ("loc/serial/23326748.cbd.rdf", 0, 3),
-        ("loc/serial/23793113.cbd.rdf", 0, 3),
-        ("loc/serial/23996113.cbd.rdf", 6, 3),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("serial_text_works.csv"))
 def test_serial_works(
     rdf_file_path: str,
     violations: int,
@@ -35,16 +28,7 @@ def test_serial_works(
     assert warnings == warning_count
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/serial/11158534.cbd.rdf", 0, 8),
-        ("loc/serial/21507607.cbd.rdf", 0, 4),
-        ("loc/serial/23326748.cbd.rdf", 0, 1),
-        ("loc/serial/23793113.cbd.rdf", 0, 2),
-        ("loc/serial/23996113.cbd.rdf", 4, 1),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("serial_instances.csv"))
 def test_serials_instances(
     rdf_file_path: str,
     violations: int,
@@ -63,16 +47,7 @@ def test_serials_instances(
     assert warnings == warning_count
 
 
-@pytest.mark.parametrize(
-    "rdf_file_path, violations, warnings",
-    [
-        ("loc/serial/11158534.cbd.rdf", 16, 0),
-        ("loc/serial/21507607.cbd.rdf", 24, 0),
-        ("loc/serial/23326748.cbd.rdf", 16, 0),
-        ("loc/serial/23793113.cbd.rdf", 16, 0),
-        ("loc/serial/23996113.cbd.rdf", 32, 0),
-    ],
-)
+@pytest.mark.parametrize("rdf_file_path, violations, warnings", load_params("serial_admin_metadata.csv"))
 def test_serials_admin_metadata(
     rdf_file_path: str,
     violations: int,

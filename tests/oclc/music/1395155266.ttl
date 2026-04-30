@@ -1,0 +1,155 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Rhythm%20%26%20blues> a bf:GenreForm ;
+    rdfs:label "Rhythm & blues." ;
+    bflc:marcKey "655  7 $a Rhythm & blues. $0 https://id.kb.se/term/saogf/Rhythm%20%26%20blues $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Soul%20%28musik%29> a bf:GenreForm ;
+    rdfs:label "Soul (musik)" ;
+    bflc:marcKey "655  7 $a Soul (musik) $0 https://id.kb.se/term/saogf/Soul%20%28musik%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1395155266#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250528130915.3" ;
+    bf:creationDate "20230825" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1395155266> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG3KGJBP69ffXFxm7TJVqP> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.421644" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3fcgbjdRPQr3XDg4vW7fRcxPt> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Yxfea" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Musikinspelningar>,
+        <https://id.kb.se/term/saogf/Rhythm%20%26%20blues>,
+        <https://id.kb.se/term/saogf/Soul%20%28musik%29> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1395155266> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Innehåll: CD 1: Hold what you've got ; Be your own judge ; I let her get away ; I wanna be free ; Say thank you / Joe Tex -- I've got a thing going on ; I gotta sit down and cry ; Get down with it ; Half a mind ; Just be yourself / Bobby Marhan -- Somebody will ; I refuse to give up / Clarence Reid -- Only your love ; Chills and fever / Paul Kelly -- I want to (do everything for you) ; A sweet woman like you ; The love you save (may be your own) / Joe Tex -- Can't help it ; Since I found you / Paul Kelly -- You really fooled me / Chris Harris and the Soul Agents -- Gimme a try / Clarence Reid -- It comes and it goes / Len Wade -- You can't tie me down ; All I have to do / Little Archie -- I just want what belongs to me ; Sad sack / Bobby Marchan." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "CD 2: Skinny legs and all / Joe Tex -- Don't let the sun shine on me / The Dialtones -- Hummin' a heartache ; This time ; THat's when I guessed / Clarence \"Frogman\" Henry -- I need you ; I am a carpet / Little Archie -- Dr. Funky ; Tell 'em I am who I am / Chris Harris -- Call another doctor (on the case) ; We're gonna make it / Paul Kelly -- Throw the switch ; I know where I've been / Frederick Knight -- Footprints on my mind ; I'll be your fool once more ; You oughta be here with me ; Get your thing together ; Just as hooked as I've ever been ; Love connection / Annette Snell -- Can you dig it? ; Learning to forget you / King Floyd -- Dirt ; Jesse Joe (you got to go) / Jean Knight -- Ain't nothin' wrong with Whitey / Bobby Marchan -- I gotcha / Joe Tex." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Dial Records southern soul story." ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Dial Records southern soul story." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1395155266> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1395155266#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2003"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:identifiedBy [ a bf:Ean ;
+            rdf:value "0029667222327" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Kent Soul" ] ;
+            rdf:value "CDKEN2 223" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1395155266" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG3KGJBP69ffXFxm7TJVqP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Kent Soul, $c 2003" ;
+            bflc:simpleAgent "Kent Soul," ;
+            bflc:simpleDate "2003" ;
+            bf:date "2003"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxk> ] ;
+    bf:publicationStatement "Kent Soul, 2003" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Dial Records southern soul story." ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Dial Records southern soul story." ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+

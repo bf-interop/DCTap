@@ -1,0 +1,392 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026039> a bf:GenreForm ;
+    rdfs:label "Academic theses"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1431007440#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20250910052809.0" ;
+    bf:creationDate "20240423" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "JNA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "UMI" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d JNA $d OCLCF $d UMI $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1431007440> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Indonesia" ;
+    bflc:marcKey "651  7 $a Indonesia $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01209242" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjxvKBqHHGKGkBxDgFdwC> a bf:Person ;
+    rdfs:label "Baswedan, Anies Rasyid, 1969-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10055172" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG87DwkWcFxtM3T4JVdbBP> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "JS7193.A3" ;
+            bf:itemPortion "B37 2007" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Baswedan, Anies Rasyid, $d 1969- $1 https://id.oclc.org/worldcat/entity/E39PBJjxvKBqHHGKGkBxDgFdwC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJjxvKBqHHGKGkBxDgFdwC> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2007" ;
+            bf:degree "Ph. D." ;
+            bf:grantingInstitution [ a bf:Agent ;
+                    rdfs:label "Northern Illinois University" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "dissertations." ;
+            bflc:marcKey "655  7 $a dissertations. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028029" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thèses et écrits académiques." ;
+            bflc:marcKey "655  7 $a Thèses et écrits académiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001173" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Academic theses" ;
+            bflc:marcKey "655  7 $a Academic theses $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726453" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Academic theses." ;
+            bflc:marcKey "655  7 $a Academic theses. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077173" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-io---" ;
+            bf:code "a-io---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-io> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1431007440> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Administration locale Indonésie." ;
+            bflc:marcKey "650  6 $a Administration locale $z Indonésie." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Administration locale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0000233" ] ] [ a bf:Geographic ;
+                        rdfs:label "Indonésie." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0482678" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Political participation Indonesia." ;
+            bflc:marcKey "650  0 $a Political participation $z Indonesia." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Political participation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2154133" ] ] [ a bf:Geographic ;
+                        rdfs:label "Indonesia." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca464874" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Autonomy" ;
+            bflc:marcKey "650  7 $a Autonomy $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00824163" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Democracy" ;
+            bflc:marcKey "650  7 $a Democracy $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00890077" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Political participation" ;
+            bflc:marcKey "650  7 $a Political participation $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01069386" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Local government Indonesia." ;
+            bflc:marcKey "650  0 $a Local government $z Indonesia." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Local government" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2063513" ] ] [ a bf:Geographic ;
+                        rdfs:label "Indonesia." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca464874" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Democracy Indonesia." ;
+            bflc:marcKey "650  0 $a Democracy $z Indonesia." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Democracy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2084562" ] ] [ a bf:Geographic ;
+                        rdfs:label "Indonesia." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca464874" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Indonesia Politics and government." ;
+            bflc:marcKey "651  0 $a Indonesia $x Politics and government." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Indonesia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2105764" ] ] [ a bf:Topic ;
+                        rdfs:label "Politics and government." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2105764" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Indonésie Politique et gouvernement." ;
+            bflc:marcKey "651  6 $a Indonésie $x Politique et gouvernement." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Indonésie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0083093" ] ] [ a bf:Topic ;
+                        rdfs:label "Politique et gouvernement." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0083093" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Participation politique Indonésie." ;
+            bflc:marcKey "650  6 $a Participation politique $z Indonésie." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Participation politique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0007797" ] ] [ a bf:Geographic ;
+                        rdfs:label "Indonésie." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0482678" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Local government" ;
+            bflc:marcKey "650  7 $a Local government $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01001300" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politics and government" ;
+            bflc:marcKey "650  7 $a Politics and government $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919741" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJcrbVHmQ674B9vYY3X8G3> ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Regional autonomy and patterns of democracy in Indonesia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Regional autonomy and patterns of democracy in Indonesia /" ] .
+
+<https://id.oclc.org/worldcat/entity/1431007440> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1431007440#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2007"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "29 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "x, 221 pages :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "154230909" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1431007440" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG87DwkWcFxtM3T4JVdbBP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references (pages 210-216)."@en ],
+        [ a bf:Note ;
+            rdfs:label "Dissertation copyright held by student."@en ],
+        [ a bf:Note ;
+            rdfs:label "UMI Number: 3272142"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Ann Arbor, MI : $b ProQuest Information and Learning Company, $c [2007]" ;
+            bflc:simpleAgent "ProQuest Information and Learning Company," ;
+            bflc:simpleDate "[2007]" ;
+            bflc:simplePlace "Ann Arbor, MI :" ;
+            bf:date "2007"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/miu> ] ;
+    bf:publicationStatement "Ann Arbor, MI : ProQuest Information and Learning Company, [2007]" ;
+    bf:responsibilityStatement "by Anies Rasyid Baswedan." ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "ProQuest, Abstract"@en ] ;
+            bflc:marcKey "856 42 $3 ProQuest, Abstract $u http://gateway.proquest.com/openurl?url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:dissertation&res_dat=xri:pqm&rft_dat=xri:pqdiss:3272142" ;
+            bf:electronicLocator <http://gateway.proquest.com/openurl?url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:dissertation&res_dat=xri:pqm&rft_dat=xri:pqdiss:3272142> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Regional autonomy and patterns of democracy in Indonesia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Regional autonomy and patterns of democracy in Indonesia /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

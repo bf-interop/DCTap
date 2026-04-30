@@ -1,0 +1,550 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/map> a bf:Illustration ;
+    rdfs:label "maps"@en ;
+    bf:code "map" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1401987277#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20250912230346.8" ;
+    bf:creationDate "20231006" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "EBLCP" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "YDX" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "UKKRT" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "MUU" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d EBLCP $d OCLCO $d OCLCF $d OCLCQ $d YDX $d OCLCL $d UKKRT $d OCLCL $d MUU $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1401987277> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1427686201#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:editionStatement "Third edition." ;
+            bf:identifiedBy [ a bf:Isbn ;
+                    rdf:value "9780198867012" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1427686201" ] ;
+            bf:provisionActivityStatement "Oxford : Oxford University Press, 2023" ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Oxford handbook of expedition and wilderness medicine." ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Oxford handbook of expedition and wilderness medicine." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGGXFVxdcT3pcmHHcRJyHP> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "616.02/52" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20240119" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3CdFfRfj9pPBjhbycyvKDB9H8> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RC88.9.O95" ;
+            bf:itemPortion "O94 2023" ],
+        [ a bf:ClassificationNlm ;
+            bf:classificationPortion "WA 292" ;
+            bf:itemPortion ".O98 2023eb" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Anderson, Sarah R., $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjD3wpbc4tfkm3gWCMkfmb" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjD3wpbc4tfkm3gWCMkfmb> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dallimore, Jon, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dallimore, Jon," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16908587" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Imray, Chris, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Imray, Chris," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16908451" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Johnson, Chris, $d 1953- $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjDymWVfdW89xhHX4Q6YRq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjDymWVfdW89xhHX4Q6YRq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Winser, Shane, $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjt4c7cDQHYjr6Vm88jKVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjt4c7cDQHYjr6Vm88jKVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Moore, James, $d 1974- $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Moore, James, 1974-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16908170" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Handbook" ;
+            bflc:marcKey "655  2 $a Handbook" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D020479" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Handbooks and manuals" ;
+            bflc:marcKey "655  7 $a Handbooks and manuals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423877" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "handbooks." ;
+            bflc:marcKey "655  7 $a handbooks. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300311807" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Handbooks and manuals." ;
+            bflc:marcKey "655  7 $a Handbooks and manuals. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077243" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Guides et manuels." ;
+            bflc:marcKey "655  7 $a Guides et manuels. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001065" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1401987277> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1427686201#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Print version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Oxford handbooks" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Oxford handbooks" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Oxford medical publications" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Oxford medical publications" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Oxford handbooks." ;
+                    bflc:marcKey "830  0 $a Oxford handbooks." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6406367" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Oxford handbooks." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Oxford medical publications." ;
+                    bflc:marcKey "830  0 $a Oxford medical publications." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca17157" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Oxford medical publications." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Outdoor medical emergencies." ;
+            bflc:marcKey "650  0 $a Outdoor medical emergencies." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2103940" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Outdoor medical emergencies" ;
+            bflc:marcKey "650  7 $a Outdoor medical emergencies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01049154" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Premiers soins." ;
+            bflc:marcKey "650  6 $a Premiers soins." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0017601" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Plein air Accidents et blessures." ;
+            bflc:marcKey "650  6 $a Plein air $x Accidents et blessures." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Plein air" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0307676" ] ] [ a bf:Topic ;
+                        rdfs:label "Accidents et blessures." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0307676" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "First aid in illness and injury." ;
+            bflc:marcKey "650  0 $a First aid in illness and injury." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2159285" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "First Aid" ;
+            bflc:marcKey "650 22 $a First Aid" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D005392" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adventure travel Health aspects." ;
+            bflc:marcKey "650  0 $a Adventure travel $x Health aspects." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adventure travel" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6032112" ] ] [ a bf:Topic ;
+                        rdfs:label "Health aspects." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5175574" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Expeditions" ;
+            bflc:marcKey "650 22 $a Expeditions" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D005101" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wilderness Medicine methods" ;
+            bflc:marcKey "650 12 $a Wilderness Medicine $x methods" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wilderness Medicine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D055813Q000379" ] ] [ a bf:Topic ;
+                        rdfs:label "methods" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D055813Q000379" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "First aid in illness and injury" ;
+            bflc:marcKey "650  7 $a First aid in illness and injury $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00925747" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Emergency Treatment methods" ;
+            bflc:marcKey "650 12 $a Emergency Treatment $x methods" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Emergency Treatment" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D004638Q000379" ] ] [ a bf:Topic ;
+                        rdfs:label "methods" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D004638Q000379" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Fully revised for its third edition, the Oxford Handbook of Expedition and Wilderness Medicine continues to be the essential resource for all expedition medics and well-informed travellers, as well as nurses, paramedics, medical students, and other expedition members travelling in remote, wilderness areas of the world. Now containing more guidance about caving medicine, the third edition includes revised and additional illustrations and essential maps of the spread of diseases. Clear and concise, readers can rely on this handbook to provide the key knowledge and practical advice they need. It enables efficient preparation and planning before the journey, advises on camp logistics, risk management, and medical problems during the expedition, as well as highlighting rare but important risks to those visiting remote areas. Focusing on preventative measures, it also contains chapters dealing with crisis management, emergency care, and evacuation from challenging environments, with guidance about the obligations of a clinician joining an expedition, ethical approaches to such work, and medicine in various extreme environments. This edition will give you the confidence and skills you need to travel to any extreme or remote environment. Incorporating the combined knowledge and experience of a team of experienced clinicians and expeditioners, this is a practical, easy-to-use guide to all aspects of expedition and wilderness medicine.\"--Provided by publisher."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Expedition medicine -- Preparations -- Caring for people in the field -- Ethics and professional responsibilities -- Crisis management -- Emergencies : diagnosis -- Emergencies : trauma -- Emergencies : collapse and serious illness -- Skin -- Head and neck -- Dental -- Chest -- Abdomen -- Limbs and back -- Infectious diseases -- Expedition mental health -- Risks from animals -- Plants and fungi -- Analgesia and anaesthesia in remote locations -- Cold climates -- Mountains and high altitude -- Inland and coastal waters -- Offshore -- Underwater -- Hot, dry environments : deserts -- Hot, humid environments: tropical forests -- Caving -- Medical kits." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Oxford handbook of expedition and wilderness medicine /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Oxford handbook of expedition and wilderness medicine /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjD3wpbc4tfkm3gWCMkfmb> a bf:Person ;
+    rdfs:label "Anderson, Sarah R.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5749103" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjDymWVfdW89xhHX4Q6YRq> a bf:Person ;
+    rdfs:label "Johnson, Chris, 1953-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3334092" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjt4c7cDQHYjr6Vm88jKVC> a bf:Person ;
+    rdfs:label "Winser, Shane," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1206527" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1401987277> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1401987277#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:editionStatement "Third edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9780192636836" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1394120558" ],
+        [ a bf:Isbn ;
+            rdf:value "0192636839" ],
+        [ a bf:Isbn ;
+            bf:qualifier "softcover" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "0198867018" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "9780191903793" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1401987277" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "0191903795" ],
+        [ a bf:Isbn ;
+            bf:qualifier "softcover" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9780198867012" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGGXFVxdcT3pcmHHcRJyHP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations, maps"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on online resource; title from digital title page (ProQuest Ebook Central, viewed on August 18, 2025)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Kortext"@en ] ;
+            bflc:marcKey "856 40 $3 Kortext $u https://app.kortext.com/borrow/2915251" ;
+            bf:electronicLocator <http://app.kortext.com/borrow/2915251> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note ;
+            rdfs:label "Previous edition: 2015"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $z Click here to view book $u https://public.ebookcentral.proquest.com/choice/PublicFullRecord.aspx?p=7280778" ;
+            bf:electronicLocator <http://public.ebookcentral.proquest.com/choice/PublicFullRecord.aspx?p=7280778> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Click here to view book"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Oxford Academic"@en ] ;
+            bflc:marcKey "856 40 $3 Oxford Academic $u https://doi.org/10.1093/med/9780198867012.001.0001" ;
+            bf:electronicLocator <http://doi.org/10.1093/med/9780198867012.001.0001> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, NY : $b Oxford University Press, $c 2023." ;
+            bflc:simpleAgent "Oxford University Press," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "New York, NY :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York, NY : Oxford University Press, 2023." ;
+    bf:responsibilityStatement "Jon Dallimore, Sarah R. Anderson, Chris Imray, Chris Johnson, James Moore, Shane Winser." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Oxford handbook of expedition and wilderness medicine /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Oxford handbook of expedition and wilderness medicine /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

@@ -1,0 +1,393 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/historicalinfo> a bf:SupplementaryContent ;
+    rdfs:label "historical information"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/libretto> a bf:SupplementaryContent ;
+    rdfs:label "libretto or text"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/techmusic> a bf:SupplementaryContent ;
+    rdfs:label "technical information on music"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1370988774#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251012013838.5" ;
+    bf:creationDate "20230222" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1370988774> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1370988774#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "2018 March 26-30" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Fantasy Studios, Berkeley, California."@en ] ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.1" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E34QWPHwGTyDfKMDXfhcyHyJK4> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Chessman, Harriet Scott, $e librettist. $1 https://id.oclc.org/worldcat/entity/E39PBJgHhwwCpWFTfbXkM8WRrq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgHhwwCpWFTfbXkM8WRrq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "librettist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Vō, Vân-Ánh Vanessa, $e instrumentalist. $1 https://id.oclc.org/worldcat/entity/E39PCjDrH84FFDgB6dDxYRtp6C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjDrH84FFDgB6dDxYRtp6C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Eckert, Rinde, $e singer. $1 https://id.oclc.org/worldcat/entity/E39PCjrp3GRwDFKTrghbgvr6Xb" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjrp3GRwDFKTrghbgvr6Xb> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Kronos Quartet, $e audio producer, $e instrumentalist. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqMF46tHm6JFmY77tWt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqMF46tHm6JFmY77tWt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ],
+                [ a bf:Role ;
+                    rdfs:label "audio producer," ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Berger, Jonathan, $d 1954- $e composer. $1 https://id.oclc.org/worldcat/entity/E39PBJpjfyxK6RB76WqTTk7vHC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpjfyxK6RB76WqTTk7vHC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Operas" ;
+            bflc:marcKey "655  7 $a Operas $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726688" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Operas." ;
+            bflc:marcKey "655  7 $a Operas. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090584" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Operas"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026976> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs and music" ;
+            bflc:marcKey "655  7 $a Songs and music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01985328" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1370988774> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Sung in English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced by Scott Fraser and Kronos Quartet."@en ;
+            bflc:marcKey "508    $a Produced by Scott Fraser and Kronos Quartet." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Rinde Eckert, vocals ; Vân-Ánh Vanessa Võ, instruments (t'rưng, đàn b̂̀au, đàn tranh) ; the Kronos Quartet (David Harrington, violin ; John Sherba, violin ; Hank Dutt, viola ; Sunny Yang, cello)."@en ;
+            bflc:marcKey "511 0  $a Rinde Eckert, vocals ; Vân-Ánh Vanessa Võ, instruments (t'rưng, đàn b̂̀au, đàn tranh) ; the Kronos Quartet (David Harrington, violin ; John Sherba, violin ; Hank Dutt, viola ; Sunny Yang, cello)." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Operas." ;
+            bflc:marcKey "650  0 $a Operas." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2096278" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "My Lai Massacre, Vietnam, 1968 Songs and music." ;
+            bflc:marcKey "650  0 $a My Lai Massacre, Vietnam, 1968 $v Songs and music." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "My Lai Massacre, Vietnam, 1968" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3415735" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Songs and music." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945072" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "1968" ;
+            bflc:marcKey "648  7 $a 1968 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Massacre de My Laï, Viêt-nam, 1968 Chants et musique." ;
+            bflc:marcKey "650  6 $a Massacre de My Laï, Viêt-nam, 1968 $v Chants et musique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Massacre de My Laï, Viêt-nam, 1968" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0261896" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Chants et musique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378541" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Operas" ;
+            bflc:marcKey "650  7 $a Operas $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01046191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJjhFyhTBdYgGbRpV6YwYP>,
+        <https://id.oclc.org/worldcat/entity/E39Qhp4vBbvhYqGG9XpyhcYtpX> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "On March 16, 1968, the United States Army killed over 500 unarmed civilians in the hamlet of Mỹ Lai, Vietnam. This definitive recording of the new opera Mỹ Lai recounts the visceral, phantasmal feelings of grief and horror experienced by US helicopter pilot Hugh Thompson on that day and in the haunting memories over the nearly four decades since."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/historicalinfo>,
+        <http://id.loc.gov/vocabulary/msupplcont/libretto>,
+        <http://id.loc.gov/vocabulary/msupplcont/techmusic> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Mỹ Lai lullaby (7:58) -- First landing: flight (9:36) -- First landing: descent (7:04) -- First landing: the ditch (14:16) -- Second landing: hovering (8:26) -- Second landing: bunker (12:31) -- Third landing: postcard (5:16) -- Third landing: fishing (5:45)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Mỹ Lai /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Mỹ Lai /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgHhwwCpWFTfbXkM8WRrq> a bf:Person ;
+    rdfs:label "Chessman, Harriet Scott," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2319274" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjhFyhTBdYgGbRpV6YwYP> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Vietnam" ;
+    bflc:marcKey "651  7 $a Vietnam $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjhFyhTBdYgGbRpV6YwYP" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204778" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpjfyxK6RB76WqTTk7vHC> a bf:Person ;
+    rdfs:label "Berger, Jonathan, 1954-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2821639" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjDrH84FFDgB6dDxYRtp6C> a bf:Person ;
+    rdfs:label "Vō, Vân-Ánh Vanessa," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9670756" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjrp3GRwDFKTrghbgvr6Xb> a bf:Person ;
+    rdfs:label "Eckert, Rinde," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3760435" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqMF46tHm6JFmY77tWt> a bf:Organization ;
+    rdfs:label "Kronos Quartet," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca437518" ] .
+
+<https://id.oclc.org/worldcat/entity/E39Qhp4vBbvhYqGG9XpyhcYtpX> a bf:Event ;
+    rdfs:label "My Lai Massacre (Vietnam : 1968)" ;
+    bflc:marcKey "647  7 $a My Lai Massacre $c (Vietnam : $d 1968) $2 fast $1 https://id.oclc.org/worldcat/entity/E39Qhp4vBbvhYqGG9XpyhcYtpX" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01031266" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<https://id.oclc.org/worldcat/entity/1370988774> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1370988774#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2022"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "12 in. +" ;
+    bf:duration "011052" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Smithsonian Folkways" ] ;
+            rdf:value "SFW CD 40251" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1370988774" ],
+        [ a bf:Upc ;
+            rdf:value "093074025116" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1370988774#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Performance notes by Jonathan Berger and libretto by Harriet Scott Chessman in English in accompanying booklet, including the names of the 504 people who perished in the Mỹ Lai Massacre."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 33 1/3 rpm ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "booklet (27 pages ; 9 in.)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Washington, DC] : $b Smithsonian Folkways, $c [2022]" ;
+            bflc:simpleAgent "Smithsonian Folkways," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[Washington, DC] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ] ;
+    bf:publicationStatement "[Washington, DC] : Smithsonian Folkways, [2022]" ;
+    bf:responsibilityStatement "music by Jonathan Berger ; libretto by Harriet Scott Chessman." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Mỹ Lai /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Mỹ Lai /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

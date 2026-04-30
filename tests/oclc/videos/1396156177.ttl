@@ -1,0 +1,504 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/amim> a bf:DescriptionConventions ;
+    bf:code "amim" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/datasource> a bf:Relationship ;
+    rdfs:label "data source"@en .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<https://id.oclc.org/worldcat/entity/1396156177#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011051600.6" ;
+    bf:creationDate "20230816" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/amim> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1396156177> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1396156177#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "157" ;
+            bf:edition "full" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E36Y6PwYMJ4BR8qpQD38JfKJB9> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a Oklahoma. $b State Department of Health, $e presenter." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "Oklahoma. State Department of Health," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca525863" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hobbs, Peter, $d 1918-2011, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hobbs, Peter, 1918-2011," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15543782" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bryan, Julien H. $q (Julien Hequembourg), $d 1899-1974, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJjxpbqFjcW3CK9dHf9hpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJjxpbqFjcW3CK9dHf9hpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Glushanok, Peter, $e cinematographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Glushanok, Peter," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cinematographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Thompson, Francis, $d 1908-2003, $e screenwriter, $e film director. $1 https://id.oclc.org/worldcat/entity/E39PBJtGWrRWJkmT4m83mVF7pP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtGWrRWJkmT4m83mVF7pP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a International Film Foundation, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqpDmbQH7MYJGxVVc7R" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqpDmbQH7MYJGxVVc7R> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Senn, Milton J. E., $d 1902-1990, $e consultant. $1 https://id.oclc.org/worldcat/entity/E39PBJd8gqBGyRqj39fYgfbjmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJd8gqBGyRqj39fYgfbjmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cunningham, Sarah Lucie, $d 1918-1986, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJmHFkqxby98vmC3mQp3wC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmHFkqxby98vmC3mQp3wC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Minot, Anna, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Minot, Anna," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ridenour, Nina, $e consultant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ridenour, Nina," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a National Association for Mental Health (U.S.), $e sponsor. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7Wj8KRBBF3hhwmDPp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7Wj8KRBBF3hhwmDPp6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Mental Health Film Board (New York, N.Y.), $e other. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpVk44HTcK4Gv34ccqF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpVk44HTcK4Gv34ccqF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "other." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dushock, Joseph E., $d 1918-1993, $e film editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dushock, Joseph E., 1918-1993," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15543953" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Thompson, Rex, $d 1942- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJdcxvGjD4KQTDVjKxhGpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdcxvGjD4KQTDVjKxhGpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hellams, Alfred A., $d 1912-1998, $e consultant. $1 https://id.oclc.org/worldcat/entity/E39PCjDyjF9QTP3cc9RGDHyKV3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjDyjF9QTP3cc9RGDHyKV3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a International Film Bureau, $e film distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpWyxJjy8CFTmjVXJvR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpWyxJjy8CFTmjVXJvR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film distributor." ] ] ;
+    bf:duration "PT27M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sponsored films." ;
+            bflc:marcKey "655  7 $a Sponsored films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866577" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films éducatifs." ;
+            bflc:marcKey "655  7 $a Films éducatifs. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000109" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Educational films." ;
+            bflc:marcKey "655  7 $a Educational films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866203" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1396156177> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Rex Thompson, Anna Minot Franz, Peter Hobbs, Sarah Cunningham, Lee Richmond."@en ;
+            bflc:marcKey "511 1  $a Rex Thompson, Anna Minot Franz, Peter Hobbs, Sarah Cunningham, Lee Richmond." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Photographed by Peter Glushanok ; film editor, Joseph E. Dushock ; sound recordist, William Schwartz ; unit manager, Robert Betts ; script clerk, Allegra Fuller ; electrician, Stanley Meredith ; music arrangement, Herman Price ; psychiatric consultants, A.A. Hellams, M.D., Milton Senn, M.D. ; educational consultant, Nina Ridenour, Ph.D."@en ;
+            bflc:marcKey "508    $a Photographed by Peter Glushanok ; film editor, Joseph E. Dushock ; sound recordist, William Schwartz ; unit manager, Robert Betts ; script clerk, Allegra Fuller ; electrician, Stanley Meredith ; music arrangement, Herman Price ; psychiatric consultants, A.A. Hellams, M.D., Milton Senn, M.D. ; educational consultant, Nina Ridenour, Ph.D." ] ;
+    bf:originDate "1951"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 0  $a Emotions of every-day living ; $v 3" ;
+                    bf:seriesEnumeration "3" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Emotions of every-day living ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "American Archives of the Factual Film Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "American Archives of the Factual Film Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Lccn ;
+                                    rdf:value " 2035394" ] ;
+                            bf:note [ a bf:Note ;
+                                    rdfs:label "MAVIS" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Fears of children" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Fears of children" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/datasource> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Garçons Santé mentale." ;
+            bflc:marcKey "650  6 $a Garçons $x Santé mentale." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Garçons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0000369" ] ] [ a bf:Topic ;
+                        rdfs:label "Santé mentale." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0379166" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Boys Mental health." ;
+            bflc:marcKey "650  0 $a Boys $x Mental health." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Boys" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2098786" ] ] [ a bf:Topic ;
+                        rdfs:label "Mental health." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5225895" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Fear in children." ;
+            bflc:marcKey "650  0 $a Fear in children." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2153535" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Parents et enfants Aspect psychologique." ;
+            bflc:marcKey "650  6 $a Parents et enfants $x Aspect psychologique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Parents et enfants" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0006682" ] ] [ a bf:Topic ;
+                        rdfs:label "Aspect psychologique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373794" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Peur chez l'enfant." ;
+            bflc:marcKey "650  6 $a Peur chez l'enfant." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0101414" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Parent and child Psychological aspects." ;
+            bflc:marcKey "650  0 $a Parent and child $x Psychological aspects." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Parent and child" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2114574" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychological aspects." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916272" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Five-year-old Paul Robbins exhibits fears common among children between the ages of four and six. Paul's fears of the dark, of being alone, and of new situations affect his everyday life. These fears are exacerbated by his mother Helen being too protective and his father Jim being too severe. As the film closes, Helen and Jim begin to develop different attitudes which in time can help Paul achieve better emotional health. This subtle, dramatized case study produced for parents, teachers, and mental health professionals illustrates the importance of constructive parenting in overcoming childhood fears."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Fears of children /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Fears of children /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJd8gqBGyRqj39fYgfbjmd> a bf:Person ;
+    rdfs:label "Senn, Milton J. E., 1902-1990," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca45313" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdcxvGjD4KQTDVjKxhGpP> a bf:Person ;
+    rdfs:label "Thompson, Rex, 1942-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4980083" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjxpbqFjcW3CK9dHf9hpP> a bf:Person ;
+    rdfs:label "Bryan, Julien H. (Julien Hequembourg), 1899-1974," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca76294" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmHFkqxby98vmC3mQp3wC> a bf:Person ;
+    rdfs:label "Cunningham, Sarah Lucie, 1918-1986," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9235180" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtGWrRWJkmT4m83mVF7pP> a bf:Person ;
+    rdfs:label "Thompson, Francis, 1908-2003," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6975560" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjDyjF9QTP3cc9RGDHyKV3> a bf:Person ;
+    rdfs:label "Hellams, Alfred A., 1912-1998," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3885141" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpVk44HTcK4Gv34ccqF> a bf:Organization ;
+    rdfs:label "Mental Health Film Board (New York, N.Y.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca553014" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpWyxJjy8CFTmjVXJvR> a bf:Organization ;
+    rdfs:label "International Film Bureau," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca433707" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqpDmbQH7MYJGxVVc7R> a bf:Organization ;
+    rdfs:label "International Film Foundation," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca433706" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7Wj8KRBBF3hhwmDPp6> a bf:Organization ;
+    rdfs:label "National Association for Mental Health (U.S.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca35938" ] .
+
+<https://id.oclc.org/worldcat/entity/1396156177> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1396156177#adminMetadata> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 video file (digital) (27 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1396156177" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023600370" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1396156177#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Parts of summary from the National Film Preservation Foundation WWW site, Mental health motion pictures: a selected guide, and See & hear."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "digital viewing copy"@en ] ;
+            bflc:marcKey "856 41 $3 digital viewing copy $d ntscrm $f 02035394 $u https://hdl.loc.gov/loc.mbrsmi/ntscrm.02035394" ;
+            bf:electronicLocator <http://hdl.loc.gov/loc.mbrsmi/ntscrm.02035394> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sd., b&w."@en ],
+        [ a bf:Note ;
+            rdfs:label "Sources used: National Film Preservation Foundation WWW site, viewed August 16, 2023; Selected mental health films, 1967, p. 35, viewed online August 16, 2023 via Media History Digital Library; Mental health motion pictures: a selected guide, 1952, p. 21, viewed online August 16, 2023 via Media History Digital Library; See & hear, 1953, v. 8, no. 5, p. 9, viewed online August 16, 2023 via Media History Digital Library."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a United States : $b International Film Bureau, Inc., $c 1951." ;
+            bflc:simpleAgent "International Film Bureau, Inc.," ;
+            bflc:simpleDate "1951." ;
+            bflc:simplePlace "United States :" ;
+            bf:date "1951"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "United States : International Film Bureau, Inc., 1951." ;
+    bf:responsibilityStatement "the Oklahoma State Department of Public Health presents ; a Julien Bryan International Film Foundation production ; sponsored by the National Association for Mental Health, Inc. ; written and directed by Francis Thompson." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Fears of children /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Fears of children /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+

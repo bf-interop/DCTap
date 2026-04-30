@@ -1,0 +1,132 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1454679841#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250319180449.2" ;
+    bf:creationDate "20240904" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Non-ISBD"@en ;
+            bf:code "blank" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1454679841> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1454679841#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 0  $a Maribel Yasmina Santos." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Maribel Yasmina Santos." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Leclerc, Benoit." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Leclerc, Benoit." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cale, Jesse." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cale, Jesse." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 0  $a Jesse Cale." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jesse Cale." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1454679841> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "1138492787" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Big Data" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Big Data" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Print:"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Big Data" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Big Data" ] .
+
+<https://id.oclc.org/worldcat/entity/1454679841> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1454679841#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1454679841" ],
+        [ a bf:Isbn ;
+            bf:qualifier "PRINT" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1138492787" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1454679841#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Routledge, $c 2020" ;
+            bflc:simpleAgent "Routledge," ;
+            bflc:simpleDate "2020" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Routledge, 2020" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Big Data" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Big Data" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

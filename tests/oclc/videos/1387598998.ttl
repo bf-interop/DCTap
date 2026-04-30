@@ -1,0 +1,924 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1387598998#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011191421.0" ;
+    bf:creationDate "20230628" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "WAU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d WAU $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1387598998> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1387598998#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "363.20973" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3wfVhww7cycQmCMJQcTwcfBPW> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dancy, Chanda, $e composer (expression)" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dancy, Chanda," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a DiAngelo, Robin, $d 1956- $e commentator. $1 https://id.oclc.org/worldcat/entity/E39PBJwRQF4kvpvYPwRqBW83cP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwRQF4kvpvYPwRqBW83cP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kenny, Niya, $e commentator, paticipant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kenny, Niya," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commentator, paticipant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Carriage House Pictures, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Carriage House Pictures," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Video Project, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Colvard, Chico David, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjH4DCWVQxd4dBrYMm6c4C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjH4DCWVQxd4dBrYMm6c4C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Garfinkel, Ariana, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjvvtFB4cjym8XBwQQwMrm" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjvvtFB4cjym8XBwQQwMrm> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Consiglio, Jeff, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjyRTjmqVVHhxMqxxvkXcX" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjyRTjmqVVHhxMqxxvkXcX> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Zevgetis, Garrett, $e film director. $1 https://id.oclc.org/worldcat/entity/E39PCjChyJHfhYPRqJj3XrkyQy" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjChyJHfhYPRqJj3XrkyQy> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a VFRFilms (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmq4kqKf3vJK9KrgDy9t" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmq4kqKf3vJK9KrgDy9t> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a C-Line Films (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqfpqKc3HhfQxWHj8xt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqfpqKc3HhfQxWHj8xt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:duration "PT1H41M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Case studies" ;
+            bflc:marcKey "655  7 $a Case studies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423765" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films" ;
+            bflc:marcKey "655  7 $a Nonfiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710269" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaries and Factual Films" ;
+            bflc:marcKey "655  2 $a Documentaries and Factual Films" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D019499" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-sc" ;
+            bf:code "n-us-sc" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-sc> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1387598998> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Interviewees include Niya Kenny (one of the students who videoed the incident) and Robin DiAngelo."@en ;
+            bflc:marcKey "511 0  $a Interviewees include Niya Kenny (one of the students who videoed the incident) and Robin DiAngelo." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Cinematographers, Alexandre Naufel, Christopher Lewis Dawkins, Pablo Durana, Ryan Miyamoto ; editor, Jeff Consiglio ; composer of original music, Chanda Dancy."@en ;
+            bflc:marcKey "508    $a Cinematographers, Alexandre Naufel, Christopher Lewis Dawkins, Pablo Durana, Ryan Miyamoto ; editor, Jeff Consiglio ; composer of original music, Chanda Dancy." ] ;
+    bf:originDate "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African Americans Violence against Case studies." ;
+            bflc:marcKey "650  0 $a African Americans $x Violence against $v Case studies." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African Americans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca13714672" ] ] [ a bf:Topic ;
+                        rdfs:label "Violence against" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca13714672" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Case studies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933917" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African American teenagers Violence against Case studies." ;
+            bflc:marcKey "650  0 $a African American teenagers $x Violence against $v Case studies." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African American teenagers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2169315" ] ] [ a bf:Topic ;
+                        rdfs:label "Violence against" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5032074" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Case studies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933917" ] ] ) ],
+        [ a bf:Organization ;
+            rdfs:label "Spring Valley High School (Columbia, S.C.)" ;
+            bflc:marcKey "610 20 $a Spring Valley High School (Columbia, S.C.)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2239610" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adolescents noirs américains Violence envers Études de cas." ;
+            bflc:marcKey "650  6 $a Adolescents noirs américains $x Violence envers $v Études de cas." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adolescents noirs américains" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0188624" ] ] [ a bf:Topic ;
+                        rdfs:label "Violence envers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000288502" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Études de cas." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376950" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police brutality United States." ;
+            bflc:marcKey "650  0 $a Police brutality $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police brutality" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4012129" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African Americans Social conditions 21st century." ;
+            bflc:marcKey "650  0 $a African Americans $x Social conditions $y 21st century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African Americans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002344" ] ] [ a bf:Topic ;
+                        rdfs:label "Social conditions" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002344" ] ] [ a bf:Temporal ;
+                        rdfs:label "21st century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930675" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adolescents noirs américains Conditions sociales 21e siècle." ;
+            bflc:marcKey "650  6 $a Adolescents noirs américains $x Conditions sociales $y 21e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adolescents noirs américains" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0188624" ] ] [ a bf:Topic ;
+                        rdfs:label "Conditions sociales" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376596" ] ] [ a bf:Temporal ;
+                        rdfs:label "21e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376596" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Kenny, Niya." ;
+            bflc:marcKey "600 10 $a Kenny, Niya." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Racism against Black people" ;
+            bflc:marcKey "650  7 $a Racism against Black people $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst02029244" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Noirs américains Conditions sociales 21e siècle." ;
+            bflc:marcKey "650  6 $a Noirs américains $x Conditions sociales $y 21e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Noirs américains" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0071717" ] ] [ a bf:Topic ;
+                        rdfs:label "Conditions sociales" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0071717" ] ] [ a bf:Temporal ;
+                        rdfs:label "21e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373679" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African American teenagers Social conditions 21st century." ;
+            bflc:marcKey "650  0 $a African American teenagers $x Social conditions $y 21st century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African American teenagers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2169315" ] ] [ a bf:Topic ;
+                        rdfs:label "Social conditions" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5536469" ] ] [ a bf:Temporal ;
+                        rdfs:label "21st century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5536469" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Brutalités policières Caroline du Sud Columbia Études de cas." ;
+            bflc:marcKey "650  6 $a Brutalités policières $z Caroline du Sud $z Columbia $v Études de cas." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Brutalités policières" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0247375" ] ] [ a bf:Geographic ;
+                        rdfs:label "Caroline du Sud" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468828" ] ] [ a bf:Geographic ;
+                        rdfs:label "Columbia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468828" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Études de cas." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376950" ] ] ) ],
+        [ a bf:Organization ;
+            rdfs:label "Spring Valley High School (Columbia, S.C.)" ;
+            bflc:marcKey "610 27 $a Spring Valley High School (Columbia, S.C.) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00635046" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African Americans Violence against" ;
+            bflc:marcKey "650  7 $a African Americans $x Violence against $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African Americans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst02025838" ] ] [ a bf:Topic ;
+                        rdfs:label "Violence against" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst02025838" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African Americans Social conditions" ;
+            bflc:marcKey "650  7 $a African Americans $x Social conditions $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African Americans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799698" ] ] [ a bf:Topic ;
+                        rdfs:label "Social conditions" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799698" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police brutality South Carolina Columbia Case studies." ;
+            bflc:marcKey "650  0 $a Police brutality $z South Carolina $z Columbia $v Case studies." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police brutality" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4012129" ] ] [ a bf:Geographic ;
+                        rdfs:label "South Carolina" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca358006" ] ] [ a bf:Geographic ;
+                        rdfs:label "Columbia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca358006" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Case studies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933917" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Brutalités policières États-Unis." ;
+            bflc:marcKey "650  6 $a Brutalités policières $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Brutalités policières" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0247375" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "South Carolina Columbia" ;
+            bflc:marcKey "651  7 $a South Carolina $z Columbia $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjCPhTpKwkW7gjMkpjBfq" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "South Carolina" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206785" ] ] [ a bf:Geographic ;
+                        rdfs:label "Columbia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206785" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJjCPhTpKwkW7gjMkpjBfq> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Racism against Black people United States." ;
+            bflc:marcKey "650  0 $a Racism against Black people $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Racism against Black people" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca13942592" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Racisme à l'égard des personnes noires États-Unis." ;
+            bflc:marcKey "650  6 $a Racisme à l'égard des personnes noires $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Racisme à l'égard des personnes noires" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000340336" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "2000-2099" ;
+            bflc:marcKey "648  7 $a 2000-2099 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "African American teenagers Social conditions" ;
+            bflc:marcKey "650  7 $a African American teenagers $x Social conditions $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "African American teenagers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799413" ] ] [ a bf:Topic ;
+                        rdfs:label "Social conditions" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799413" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Police brutality" ;
+            bflc:marcKey "650  7 $a Police brutality $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01068571" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "In 2015, Niya Kenny, an African American female student at Spring Valley High School in Columbia South Carolina was violently removed from the classroom by school police. The incident was caught on video, spurring national discussion on the racial power structure and the routine mistreatment of African Americans by authorities."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "On these grounds /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "On these grounds /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwRQF4kvpvYPwRqBW83cP> a bf:Person ;
+    rdfs:label "DiAngelo, Robin, 1956-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6468831" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjChyJHfhYPRqJj3XrkyQy> a bf:Person ;
+    rdfs:label "Zevgetis, Garrett," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10721647" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjH4DCWVQxd4dBrYMm6c4C> a bf:Person ;
+    rdfs:label "Colvard, Chico David," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8974742" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjvvtFB4cjym8XBwQQwMrm> a bf:Person ;
+    rdfs:label "Garfinkel, Ariana," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11395695" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjyRTjmqVVHhxMqxxvkXcX> a bf:Person ;
+    rdfs:label "Consiglio, Jeff," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9958056" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmq4kqKf3vJK9KrgDy9t> a bf:Organization ;
+    rdfs:label "VFRFilms (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11697046" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqfpqKc3HhfQxWHj8xt> a bf:Organization ;
+    rdfs:label "C-Line Films (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8973729" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF> a bf:Organization ;
+    rdfs:label "Video Project," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3610454" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<https://id.oclc.org/worldcat/entity/1387598998> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1387598998#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdfs:label "wide screen"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaar" ] ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "polychrome"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacc" ] ],
+        [ a bf:ColorContent ;
+            rdfs:label "color"@en ],
+        <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            oclcbf:auditoryAssistiveFeatures "captions"@en ;
+            oclcbf:contentAccessMode "auditory"@en ] ;
+    bf:copyrightDate "©2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:RegionalEncoding ;
+            rdfs:label "region 1"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/region1> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:editionStatement "Widescreen." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (101 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1387598998" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1387598998#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD-R (might not be compatible with all players), NTSC, all regions; widescreen (1.85:1) presentation; Dolby Digital 5.1 surround."@en ],
+        [ a bf:Note ;
+            rdfs:label "This videodisc also includes a 59 minute version of the film."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally released as a motion picture in 2021."@en ],
+        [ a bf:Note ;
+            rdfs:label "Documentary."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Closed-captioned in English for the hearing impaired."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "burning"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [San Francisco, CA] : $b Video Project, $c [2021]" ;
+            bflc:simpleAgent "Video Project," ;
+            bflc:simpleDate "[2021]" ;
+            bflc:simplePlace "[San Francisco, CA] :" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[San Francisco, CA] : Video Project, [2021]" ;
+    bf:responsibilityStatement "a Carriage House Pictures, VFRFilms and C-Line Films production ; directed by Garrett Zevgetis ; produced by Ariana Garfinkel, Jeff Consiglio, Chico Colvard." ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "5.1 Dolby Digital"@en ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent [ a bf:SoundContent ;
+            rdfs:label "sound"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdasco" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/msoundcontent/sound> ],
+        <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "On these grounds /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "On these grounds /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdabs" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

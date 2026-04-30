@@ -1,0 +1,203 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1396453590#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20260329181829.6" ;
+    bf:creationDate "20230605" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "ORU" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d ORU" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1396453590> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1396453590#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RA1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ],
+        [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "W1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universitas Syiah Kuala, $e issuing body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Universitas Syiah Kuala," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodical." ;
+            bflc:marcKey "655  2 $a Periodical." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1396453590> ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2807-2618" ],
+        [ a bf:IssnL ;
+            rdf:value "2807-2618" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Public Health." ;
+            bflc:marcKey "650 12 $a Public Health." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "One Health." ;
+            bflc:marcKey "650 22 $a One Health." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Tropical Medicine." ;
+            bflc:marcKey "650 22 $a Tropical Medicine." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Narra J." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Narra J." ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1396453590> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1396453590#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Three times a year"@en ;
+            bflc:marcKey "310    $a Three times a year" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1396453590" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918625888906676" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023228320" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1396453590#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with Volume 1, no. 1 (April 2021)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/orig> ;
+            rdfs:label "Online"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: Vol. 3, no. 2 (August 2023) (viewed August 15, 2023)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/issuing> ;
+            rdfs:label "Published by Narra Sains Indonesia and collaboration with Universitas Syiah Kuala."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Vol. 1, no. 1 (April 2021) ; title from journal home page (publisher's website, viewed August 15, 2023)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://narraj.org/" ;
+            bf:electronicLocator <http://narraj.org> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Banda Aceh, Indonesia : $b Narra Sains Indonesia, $c [2021]-" ;
+            bflc:simpleAgent "Narra Sains Indonesia," ;
+            bflc:simpleDate "[2021]-" ;
+            bflc:simplePlace "Banda Aceh, Indonesia :" ;
+            bf:date "2021/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/io> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Banda Aceh, Indonesia : Narra Sains Indonesia, [2021]-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Narra J." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Narra J." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

@@ -1,0 +1,397 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/nationalbibschemes/bnb> a bf:Source ;
+    bf:code "bnb" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1353778098#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250726153629.9" ;
+    bf:creationDate "20230119" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "UKMGB" ],
+        [ a bf:Organization ;
+            bf:code "YDX" ],
+        [ a bf:Organization ;
+            bf:code "IG#" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d UKMGB $d OCLCF $d YDX $d OCLCO $d IG# $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1353778098> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1353778098#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "306.2" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230123" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E489DY8bQCvdtGY7rRfQMRtcGT> ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "JA75.7" ;
+            bf:itemPortion ".P66265 2023" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a De Anna, Gabriele, $d 1970- $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "De Anna, Gabriele, 1970-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5752396" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dozzi, Manuele, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dozzi, Manuele," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15082542" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1353778098> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Routledge studies in metaphysics." ;
+                    bflc:marcKey "830  0 $a Routledge studies in metaphysics." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca8547411" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Routledge studies in metaphysics." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781003255185" ],
+                                [ a bf:Lccn ;
+                                    rdf:value "  2022056496" ] ;
+                            bf:provisionActivityStatement "New York : Routledge, 2023" ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Political identity and the metaphysics of polities" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Political identity and the metaphysics of polities" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Routledge studies in metaphysics" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Routledge studies in metaphysics" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Identity politics" ;
+            bflc:marcKey "650  7 $a Identity politics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01747531" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Ideology." ;
+            bflc:marcKey "650  0 $a Ideology." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2096731" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Political culture Philosophy" ;
+            bflc:marcKey "650  7 $a Political culture $x Philosophy $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Political culture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01069273" ] ] [ a bf:Topic ;
+                        rdfs:label "Philosophy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01069273" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Metaphysics." ;
+            bflc:marcKey "650  0 $a Metaphysics." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2017926" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Metaphysics" ;
+            bflc:marcKey "650  7 $a Metaphysics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01018304" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "metaphysics." ;
+            bflc:marcKey "650  7 $a metaphysics. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300054293" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Political culture Philosophy." ;
+            bflc:marcKey "650  0 $a Political culture $x Philosophy." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Political culture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2058184" ] ] [ a bf:Topic ;
+                        rdfs:label "Philosophy." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155910" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Métaphysique." ;
+            bflc:marcKey "650  6 $a Métaphysique." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0013551" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Ideology" ;
+            bflc:marcKey "650  7 $a Ideology $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00966915" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Politique identitaire." ;
+            bflc:marcKey "650  6 $a Politique identitaire." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "000263040" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Idéologie." ;
+            bflc:marcKey "650  6 $a Idéologie." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0013483" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Identity politics." ;
+            bflc:marcKey "650  0 $a Identity politics." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8047853" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "ideology." ;
+            bflc:marcKey "650  7 $a ideology. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300258340" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The essays in this volume clarify the notion of political identity by focusing on the metaphysics of polities. By analysing the notion of political identity, they provide the conceptual resources for a deeper understanding of the theoretical and practical debates on populism, on the crisis of sovereignty, on the feasibility of a world government, and on ethical, religious, and cultural pluralism. What is a political community? Any answer to this question lies at the intersection between three fields: metaphysics, philosophy of action, and political philosophy. The question concerns how and why a plurality of individuals becomes a political unity, what principles or forces keep that unity together, and what threats that unity can encounter. In this volume, the contributors investigate how different metanormative views affect the possible answers to this metaphysical question. They explore the role that the individual identities of agents play in grounding common practices that underpin political life. They investigate the individual identities of agents as the result of the interplay between natural and cultural factors. Finally, they observe the ways in which a political community, as a collection of individuals who hang together in the attempt to reach common purposes, demonstrate a certain metaphysical solidity. Political Identity and the Metaphysics of Polities will appeal to researchers and advanced students working in metaphysics, political philosophy, political theory, and philosophy of action\"-- Provided by publisher."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Political identity and human agency -- The metaphysical identity of polities -- The practical significance of the identity of polities." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Political identity and the metaphysics of polities /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Political identity and the metaphysics of polities /" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1353778098> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1353778098#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "24 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vi, 246 pages ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1353778098" ],
+        [ a bf:Nbn ;
+            bf:source <http://id.loc.gov/vocabulary/nationalbibschemes/bnb> ;
+            rdf:value "GBC353883" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781003255185" ],
+        [ a bf:Lccn ;
+            rdf:value "  2022056495" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardcover" ;
+            rdf:value "9781032181493" ],
+        [ a bf:Isbn ;
+            bf:qualifier "paperback" ;
+            rdf:value "9781032185699" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781000878790" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic publication" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781000878806" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "Uk" ] ;
+            rdf:value "020989471" ],
+        [ a bf:Isbn ;
+            bf:qualifier "paperback" ;
+            rdf:value "1032185694" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardcover" ;
+            rdf:value "1032181494" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1353778098#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York : $b Routledge, Taylor & Francis Group, $c 2023." ;
+            bflc:simpleAgent "Routledge, Taylor & Francis Group," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "New York :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York : Routledge, Taylor & Francis Group, 2023." ;
+    bf:responsibilityStatement "edited by Gabriele De Anna and Manuele Dozzi." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Political identity and the metaphysics of polities /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Political identity and the metaphysics of polities /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

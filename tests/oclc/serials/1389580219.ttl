@@ -1,0 +1,287 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/unk> a bf:Frequency ;
+    rdfs:label "unknown"@en ;
+    bf:code "unk" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/u> a bf:Status ;
+    rdfs:label "unknown" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1389580219#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250403060142.3" ;
+    bf:creationDate "20230707" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCF $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1389580219> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1389580219#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RK97.P45" ;
+            bf:itemPortion "R47" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Shapiro, Irving M." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Shapiro, Irving M." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a University of Pennsylania. $b Center for Oral Health Research." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "University of Pennsylania. Center for Oral Health Research." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a University of Pennsylvania. $b School of Dental Medicine. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7YRx8HdJJfWyjmR36g" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7YRx8HdJJfWyjmR36g> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Directories" ;
+            bflc:marcKey "655  7 $a Directories $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423796" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1389580219> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Dentisterie Recherche Répertoires." ;
+            bflc:marcKey "650  6 $a Dentisterie $x Recherche $v Répertoires." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Dentisterie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0007329" ] ] [ a bf:Topic ;
+                        rdfs:label "Recherche" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0007329" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Répertoires." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378054" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "research (function)" ;
+            bflc:marcKey "650  7 $a research (function) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300054687" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Research" ;
+            bflc:marcKey "650  2 $a Research" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D012106" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Dentistry Research Directories." ;
+            bflc:marcKey "650  0 $a Dentistry $x Research $v Directories." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Dentistry" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2086486" ] ] [ a bf:Topic ;
+                        rdfs:label "Research" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2086486" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Directories." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4944977" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Research" ;
+            bflc:marcKey "650  7 $a Research $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01095153" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Dentistry Research" ;
+            bflc:marcKey "650  7 $a Dentistry $x Research $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Dentistry" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00890671" ] ] [ a bf:Topic ;
+                        rdfs:label "Research" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00890671" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Research." ;
+            bflc:marcKey "650  0 $a Research." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2045176" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Recherche." ;
+            bflc:marcKey "650  6 $a Recherche." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0029424" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a University of Pennsylvania Research activities of The School of Dental Medicine and The Center for Oral Health Research" ;
+            bf:mainTitle "University of Pennsylvania Research activities of The School of Dental Medicine and The Center for Oral Health Research" ],
+        [ a bf:Title ;
+            rdfs:label "Reseach directory of The School of Dental Medicine and The Center for Oral Health Research /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Reseach directory of The School of Dental Medicine and The Center for Oral Health Research /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7YRx8HdJJfWyjmR36g> a bf:Organization ;
+    rdfs:label "University of Pennsylvania. School of Dental Medicine." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca463079" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1389580219> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1389580219#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "28 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes ;"@en ] ;
+    bf:frequency <http://id.loc.gov/vocabulary/frequencies/unk> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1389580219" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1389580219#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 1973."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 1970-1971."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Philadelphia, PA] : $b [University of Pennsylvania School of Dental Medicine]," ;
+            bflc:simpleAgent "[University of Pennsylvania School of Dental Medicine]," ;
+            bflc:simplePlace "[Philadelphia, PA] :" ;
+            bf:date "197X~/XXXX~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current>,
+                <http://id.loc.gov/vocabulary/mstatus/u> ] ;
+    bf:publicationStatement "[Philadelphia, PA] : [University of Pennsylvania School of Dental Medicine]," ;
+    bf:responsibilityStatement "compiled by Dr. I.M. Shapiro." ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/cov> ;
+            bflc:marcKey "246 14 $a Research activities of The School of Dental Medicine and The Center for Oral Health Research" ;
+            bf:mainTitle "Research activities of The School of Dental Medicine and The Center for Oral Health Research" ],
+        [ a bf:Title ;
+            rdfs:label "Reseach directory of The School of Dental Medicine and The Center for Oral Health Research /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Reseach directory of The School of Dental Medicine and The Center for Oral Health Research /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

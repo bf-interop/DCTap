@@ -1,0 +1,387 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1419700822#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251013004355.0" ;
+    bf:creationDate "20240201" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCO $d COO $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1419700822> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1419700822#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "DS135.I85" ;
+            bf:itemPortion "R6 2017" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ciriaci, Valerio, $e film director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ciriaci, Valerio," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15744100" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Awen Films, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Awen Films," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Centro Primo Levi, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmp9qK7J9BjC6yrgDy9t" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmp9qK7J9BjC6yrgDy9t> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:duration "PT30M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films" ;
+            bflc:marcKey "655  7 $a Short films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710364" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-it---" ;
+            bf:code "e-it---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-it> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1419700822> ;
+    bf:language [ a bf:Language ;
+            bf:code "ita" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ],
+        [ a bf:Language ;
+            bf:code "heb" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/heb> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Directed by Valerio Ciriaci ; cinematographer, Isaak Liptzin ; music, Francesco Venturi."@en ;
+            bflc:marcKey "508    $a Directed by Valerio Ciriaci ; cinematographer, Isaak Liptzin ; music, Francesco Venturi." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sum> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English, Italian and Hebrew dialogue with subtitles in Italian."@en ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Cultural pluralism" ;
+            bflc:marcKey "650  7 $a Cultural pluralism $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01715991" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jews Italy Rome." ;
+            bflc:marcKey "650  0 $a Jews $z Italy $z Rome." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jews" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2133666" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca252552" ] ] [ a bf:Geographic ;
+                        rdfs:label "Rome." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca252552" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Italy Rome" ;
+            bflc:marcKey "651  7 $a Italy $z Rome $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJqfPdVkJT8KqM83krFMyd" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204500" ] ] [ a bf:Geographic ;
+                        rdfs:label "Rome" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204500" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJqfPdVkJT8KqM83krFMyd> ],
+        [ a bf:Topic ;
+            rdfs:label "Jews" ;
+            bflc:marcKey "650  7 $a Jews $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00983135" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Ghettos Italie Rome." ;
+            bflc:marcKey "650  6 $a Ghettos $z Italie $z Rome." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Ghettos" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0219713" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485315" ] ] [ a bf:Geographic ;
+                        rdfs:label "Rome." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485315" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Jewish ghettos" ;
+            bflc:marcKey "650  7 $a Jewish ghettos $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00982786" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jewish ghettos Italy Rome." ;
+            bflc:marcKey "650  0 $a Jewish ghettos $z Italy $z Rome." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jewish ghettos" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3934016" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca252552" ] ] [ a bf:Geographic ;
+                        rdfs:label "Rome." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca252552" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Juifs Italie Rome." ;
+            bflc:marcKey "650  6 $a Juifs $z Italie $z Rome." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Juifs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0061876" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485315" ] ] [ a bf:Geographic ;
+                        rdfs:label "Rome." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485315" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Iom Romì\" chronicles a day in the life of the contemporary Jewish community of Rome, which traces its origins to the times of the Empire - a microcosm with unique rituals and traditions, both fiercely independent and distinctly Roman."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Iom Romì =" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Iom Romì =" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmp9qK7J9BjC6yrgDy9t> a bf:Organization ;
+    rdfs:label "Centro Primo Levi," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10780569" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1419700822> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1419700822#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region 0"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (30 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1419700822" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1419700822#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacarrier" ] ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color with black and white ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New York, New York] : $b Awen Films, $c 2017." ;
+            bflc:simpleAgent "Awen Films," ;
+            bflc:simpleDate "2017." ;
+            bflc:simplePlace "[New York, New York] :" ;
+            bf:date "2017"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "[New York, New York] : Awen Films, 2017." ;
+    bf:responsibilityStatement "Centro Primo Levi NY presents ; an Awen Films production." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Iom Romì = A day in Rome /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Iom Romì =" ;
+            bf:subtitle "A day in Rome /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

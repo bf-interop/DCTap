@@ -1,0 +1,346 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/map> a bf:Illustration ;
+    rdfs:label "maps"@en ;
+    bf:code "map" .
+
+<http://id.loc.gov/vocabulary/millus/plt> a bf:Illustration ;
+    rdfs:label "plates"@en ;
+    bf:code "plt" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<https://id.oclc.org/worldcat/entity/1191224000#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "IEB" ] ;
+    bf:changeDate "20250710101251.5" ;
+    bf:creationDate "20230322" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "IG#" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a IEB $b eng $c DLC $d OCLCO $d OCLCL $d IG# $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1191224000> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFFrh73g7FFdHmVK3H3Kgq> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "English" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcdgt> ],
+        [ a bflc:CreatorCharacteristic ;
+            rdfs:label "Journalists" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcdgt> ] ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DA677" ;
+            bf:itemPortion ".J44 2020" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "942.1" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E39PxGCc7WwXFyTgh9bbygV9TK> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Jenkins, Simon, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jenkins, Simon," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-uk-en" ;
+            bf:code "e-uk-en" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-uk-en> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1191224000> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map>,
+        <http://id.loc.gov/vocabulary/millus/plt> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "England London" ;
+            bflc:marcKey "651  7 $a England $z London $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "England" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204271" ] ] [ a bf:Geographic ;
+                        rdfs:label "London" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204271" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Economic history" ;
+            bflc:marcKey "650  7 $a Economic history $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00901974" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Manners and customs" ;
+            bflc:marcKey "650  7 $a Manners and customs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01007815" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Londres (Angleterre) Mœurs et coutumes." ;
+            bflc:marcKey "651  6 $a Londres (Angleterre) $x Mœurs et coutumes." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Londres (Angleterre)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0122477" ] ] [ a bf:Topic ;
+                        rdfs:label "Mœurs et coutumes." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0122477" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Londres (Angleterre) Histoire." ;
+            bflc:marcKey "651  6 $a Londres (Angleterre) $x Histoire." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Londres (Angleterre)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0042992" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0042992" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "London (England) History." ;
+            bflc:marcKey "651  0 $a London (England) $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "London (England)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2065945" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2065945" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "London (England) Economic conditions." ;
+            bflc:marcKey "651  0 $a London (England) $x Economic conditions." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "London (England)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca239822" ] ] [ a bf:Topic ;
+                        rdfs:label "Economic conditions." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5090833" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "London (England) Social life and customs." ;
+            bflc:marcKey "651  0 $a London (England) $x Social life and customs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "London (England)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2065994" ] ] [ a bf:Topic ;
+                        rdfs:label "Social life and customs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2065994" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "By the former editor of the London Times, a vivid, evocative, and deeply knowledgeable history of this unique world capital. London: a settlement founded by the Romans, occupied by the Saxons, conquered by the Danes, and ruled by the Normans. This transformative place became a medieval maze of alleys and courtyards, later to be checkered with grand estates of Georgian splendor. It swelled with industry and became the center of the largest empire in history. And having risen from the rubble of the Blitz, it is now one of the greatest cities in the world. From the prehistoric occupants of the Thames Valley to the preoccupied commuters of today, Simon Jenkins brings together the key events, individuals, and trends in London's history to create a matchless portrait of the capital. He masterfully explains the battles that determined how London was conceived and built--and especially the perennial conflict between money and power. Based in part on his experiences of and involvement in the events that shaped the post-war city, and with his trademark color and authority, Simon Jenkins shows above all how London has taken shape over more than two thousand years. Fascinating for locals and visitors alike, this is narrative history at its finest, from the most ardent protector of British heritage."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "1. Londinium : 43-410. Old Father Thames ; Rome and Boudicca ; Londinium's decline -- 2. Saxon city : 410-1066. Lundenwic ; Christianity reborn ; Saxons and Danes ; London and Westminster -- 3. Medieval metropolis : 1066-1348. Norman conquest ; Growth of trade ; De Montfort's Rebellion ; Monarchy vs money -- 4. The age of Chaucer and Whittington : 1348-1485. Plague and revolt ; Chaucer's London ; Church and politics ; Medieval epitaph -- 5. Tudor London : 1485-1603. Reformation capital ; Dissolution of the monasteries ; Elizabeth I ; Mapping the city ; John Stow ; Dawn of planning -- 6. Stuarts and rebellion : 1603-1660. James I ; Inigo Jones ; Charles I ; Civil war ; The commonwealth -- 7. Restoration, calamity, recovery : 1660-1688. Charles II ; Rise of the square ; The Plague and Pepys ; The Great Fire ; Rebuilding the sky ; Development of Westminster -- 8. Dutch courage : 1688-1714. Succession crisis ; William of Orange ; Royal palaces ; Rise of banking ; Westward expansion -- 9. Hanoverian dawn : 1714-1763. Whig ascendancy ; Growth of family estates ; The Enlightenment ; Law, order and gin ; Bridging the Thames -- 10. A tarnished age : 1763-1789. George III ; Gordon riots ; The spirit of improvement ; 1774 Building act ; The great estates revived ; Class divisions -- 11. Regency : the dawn of Nash : 1789-1825. Revolution in France ; War economy ; The 'royal way' ; George IV ; Waterloo churches -- 12. Cubittopolis : 1825-1832. Belgravia ; The Ladbroke disaster ; Development North and East ; The city's independence ; Demands for reform -- 13. The age of reform : 1832-1848. 1834 Poor Law ; Westminster rebuilt ; Cholera ; Arrival of the train -- 14. The birth of a new metropolis : 1848-1860. Poverty ; The Chartists ; The great stink ; First underground railway ; Property boom and bust ; European immigration -- 15. The maturing of Victorian London : 1860-1875. The world's largest city ; Recession and the vote ; Victorian architecture ; Leisure and shopping ; Open-space preservation ; Booth, Dickens and poverty -- 16. Philanthropy versus the state : 1875-1900. Octavia Hill ; Industrial unrest ; The LCC ; Public transport -- 17. Edwardian apotheosis : 1900-1914. Victorian legacy ; Edwardian style ; Localism ascendant ; Expansion of the Underground ; Trams and buses ; Growth of services ; A new suburbia -- 18. War and aftermath : 1914-1930. The Great War ; Lloyd George ; The general strike ; 'Homes for heroes' -- 19. The climax of the sprawl : 1930-1939. Town and Country Planning Act ; London Passenger Transport Board ; Suburban culture -- 20. Metropolis at war : 1939-1951. The blitz ; The Beveridge report ; Planning under Abercrombie ; Post-war economy ; Festival of Britain -- 21. The great property boom : 1951-1960. A planning free-for-all ; The new millionaires ; Modernism ascendant -- 22. Swinging city : 1960-1970. The permissive society ; The GLC ; The council estate and Ronan Point ; Conservation areas -- 23. Recession years : 1970-1980. Immigration ; The common market ; Rise of the drugs trade ; The Motorway Box ; Battle for Covent Garden -- 24. Metropolis renascent : 1980-1997. Thatcher vs. Livingstone ; IRA bombs ; Docklands development ; Big Bang ; The decline of the council house -- 25. Going for broke : 1997-2008. Blair and the mayoralty ; Post-9/11 threats ; Livingstone's skyline -- 26. Constructs of vanity : 2008 to the present. Boris Johnson ; 2011 riots ; 2012 Olympics ; High-rise London ; Whose city? ; Brexit." ] ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a History of London" ;
+            bf:mainTitle "History of London" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Creation of a world capital : a history of London" ;
+            bf:mainTitle "Creation of a world capital : a history of London" ],
+        [ a bf:Title ;
+            rdfs:label "The city on the Thames :" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The city on the Thames :" ] .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcdgt> a bf:Source ;
+    bf:code "lcdgt" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1191224000> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1191224000#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "24 cm" ;
+    bf:editionStatement "First Pegasus Books cloth edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 393 pages, 32 pages of unnumbered plates :"@en ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2022435559" ],
+        [ a bf:Isbn ;
+            rdf:value "9781643135526" ],
+        [ a bf:Isbn ;
+            rdf:value "164313552X" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1191224000" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1142298966" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFFrh73g7FFdHmVK3H3Kgq> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color), maps ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references (pages 349-350) and index."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York : $b Pegasus Books, $c [2020]" ;
+            bflc:simpleAgent "Pegasus Books," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "New York :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York : Pegasus Books, [2020]" ;
+    bf:responsibilityStatement "Simon Jenkins." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The city on the Thames : the creation of a world capital : a history of London /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The city on the Thames :" ;
+            bf:subtitle "the creation of a world capital : a history of London /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

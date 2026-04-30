@@ -1,0 +1,799 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languageschemes/iso6393> a bf:Source ;
+    bf:code "iso639-3" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1372411708#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260320141334.5" ;
+    bf:creationDate "20230306" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "TWA" ],
+        [ a bf:Organization ;
+            bf:code "TEF" ],
+        [ a bf:Organization ;
+            bf:code "BKL" ],
+        [ a bf:Organization ;
+            bf:code "JQW" ],
+        [ a bf:Organization ;
+            bf:code "GO4" ],
+        [ a bf:Organization ;
+            bf:code "DWP" ],
+        [ a bf:Organization ;
+            bf:code "PAU" ],
+        [ a bf:Organization ;
+            bf:code "PUL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "TEFMT" ],
+        [ a bf:Organization ;
+            bf:code "IUL" ],
+        [ a bf:Organization ;
+            bf:code "JG0" ],
+        [ a bf:Organization ;
+            bf:code "IOS" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "ZCU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d ZCU $d PAU $d OCLCF $d TEFMT $d TEF $d OCLCO $d BKL $d IUL $d IOS $d OCLCO $d GO4 $d OCLCL $d PUL $d JG0 $d TWA $d OCLCO $d OCLCL $d DWP $d OCLCO $d OCLCL $d OCLCO $d JQW $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1372411708> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1372411708#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "623.4" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3TcXgCQkjv7WrBmGWxBwbVR8G> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "D767.25.H6" ;
+            bf:itemPortion "A866 2021" ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "940.54/2521954" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3QF7VWBPrDjgqpjRbJCRhk3XK> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Seaborn, Charlie, $e composer (expression)" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Seaborn, Charlie," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15709953" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mitchell, Suzanne $c (Film producer), $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Mitchell, Suzanne (Film producer)," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15710032" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Burgos, Rob, $e editor of moving image work." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Burgos, Rob," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15710052" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Video Project, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mitchell, Greg, $d 1947- $e screenwriter, $e film director, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJB8mKkwVbpXHjRTmXP84q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJB8mKkwVbpXHjRTmXP84q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer." ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter," ] ] ;
+    bf:duration "PT52M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Atomic cover-up (Motion picture)" ;
+            bflc:marcKey "130 0  $a Atomic cover-up (Motion picture)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Atomic cover-up (Motion picture)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Plans d'archives (Cinéma, télévision, etc.)" ;
+            bflc:marcKey "655  7 $a Plans d'archives (Cinéma, télévision, etc.) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001805" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Newsreel films." ;
+            bflc:marcKey "655  0 $a Newsreel films." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Stock footage." ;
+            bflc:marcKey "655  7 $a Stock footage. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866592" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Stock footage" ;
+            bflc:marcKey "655  7 $a Stock footage $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726139" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films" ;
+            bflc:marcKey "655  7 $a Short films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710364" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films" ;
+            bflc:marcKey "655  7 $a Nonfiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710269" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-ja---" ;
+            bf:code "a-ja---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-ja> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1372411708> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            bf:source <http://id.loc.gov/vocabulary/languageschemes/iso6393> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/iso639-3/eng> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Editor, Rob Burgos ; music, Charlie Seaborn."@en ;
+            bflc:marcKey "508    $a Editor, Rob Burgos ; music, Charlie Seaborn." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Voices, Osamu Inoue, Dennis Predovic, Rob Burgos."@en ;
+            bflc:marcKey "511 0  $a Voices, Osamu Inoue, Dennis Predovic, Rob Burgos." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Soundtrack in English; optional subtitles in English; closed-captioned in English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ] ;
+    bf:originDate "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Atomic bomb victims Japan." ;
+            bflc:marcKey "650  0 $a Atomic bomb victims $z Japan." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Atomic bomb victims" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2045138" ] ] [ a bf:Geographic ;
+                        rdfs:label "Japan." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca224181" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Victimes de bombardements atomiques Japon." ;
+            bflc:marcKey "650  6 $a Victimes de bombardements atomiques $z Japon." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Victimes de bombardements atomiques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0173679" ] ] [ a bf:Geographic ;
+                        rdfs:label "Japon." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0482806" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Hiroshima-shi (Japan) History Bombardment, 1945." ;
+            bflc:marcKey "651  0 $a Hiroshima-shi (Japan) $x History $y Bombardment, 1945." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Hiroshima-shi (Japan)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868910" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868910" ] ] [ a bf:Temporal ;
+                        rdfs:label "Bombardment, 1945." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868910" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Nuclear weapons" ;
+            bflc:marcKey "650  7 $a Nuclear weapons $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01040971" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Japan Nagasaki-shi" ;
+            bflc:marcKey "651  7 $a Japan $z Nagasaki-shi $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJm4V69yqKRgwJCYkrKTpP" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Japan" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01211968" ] ] [ a bf:Geographic ;
+                        rdfs:label "Nagasaki-shi" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01211968" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJm4V69yqKRgwJCYkrKTpP> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Nagasaki (Japon) Histoire 1945 (Bombardement)" ;
+            bflc:marcKey "651  6 $a Nagasaki (Japon) $x Histoire $y 1945 (Bombardement)" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Nagasaki (Japon)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0287771" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0287771" ] ] [ a bf:Temporal ;
+                        rdfs:label "1945 (Bombardement)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0287771" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Atomic bomb victims" ;
+            bflc:marcKey "650  7 $a Atomic bomb victims $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00820593" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Temporal ;
+            rdfs:label "1945" ;
+            bflc:marcKey "648  7 $a 1945 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Hiroshima (Japon) Histoire 1945 (Bombardement)" ;
+            bflc:marcKey "651  6 $a Hiroshima (Japon) $x Histoire $y 1945 (Bombardement)" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Hiroshima (Japon)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211147" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211147" ] ] [ a bf:Temporal ;
+                        rdfs:label "1945 (Bombardement)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211147" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Japan Hiroshima-shi" ;
+            bflc:marcKey "651  7 $a Japan $z Hiroshima-shi $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRmgxQVTX7Jx4KmGT7QY" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Japan" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01209723" ] ] [ a bf:Geographic ;
+                        rdfs:label "Hiroshima-shi" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01209723" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39QbtfRmgxQVTX7Jx4KmGT7QY> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nuclear weapons United States History." ;
+            bflc:marcKey "650  0 $a Nuclear weapons $z United States $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nuclear weapons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7597791" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7597791" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Nagasaki-shi (Japan) History Bombardment, 1945." ;
+            bflc:marcKey "651  0 $a Nagasaki-shi (Japan) $x History $y Bombardment, 1945." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Nagasaki-shi (Japan)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4139749" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4139749" ] ] [ a bf:Temporal ;
+                        rdfs:label "Bombardment, 1945." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4139749" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq>,
+        <https://id.oclc.org/worldcat/entity/E39Qhp4vBb9Md7HwVyg64R3RHK>,
+        <https://id.oclc.org/worldcat/entity/E39Qhp4vBbvj6mkBxBtKVVV6HK> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "An exploration of the 1945 bombings of Hiroshima and Nagasaki that reveals the suppressed footage of human suffering caused by the US nuclear bombings. It focuses on the brave camera crews who risked their lives capturing the aftermath, starting with a Japanese newsreel crew and later continuing under the supervision of the US Army. This vital footage was classified top secret and buried by American officials for decades to conceal the true human cost as the nuclear arms race escalated."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "52 minute version -- 29 minute version." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Atomic cover-up /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Atomic cover-up /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJB8mKkwVbpXHjRTmXP84q> a bf:Person ;
+    rdfs:label "Mitchell, Greg, 1947-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5122242" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Japan" ;
+    bflc:marcKey "651  7 $a Japan $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204082" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr9FGwGBpG4CJpFQJPF> a bf:Organization ;
+    rdfs:label "Video Project," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3610454" ] .
+
+<https://id.oclc.org/worldcat/entity/E39Qhp4vBb9Md7HwVyg64R3RHK> a bf:Event ;
+    rdfs:label "Bombardment of Nagasaki-shi (Nagasaki-shi, Japan : 1945)" ;
+    bflc:marcKey "647  7 $a Bombardment of Nagasaki-shi $c (Nagasaki-shi, Japan : $d 1945) $2 fast $1 https://id.oclc.org/worldcat/entity/E39Qhp4vBb9Md7HwVyg64R3RHK" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01352095" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39Qhp4vBbvj6mkBxBtKVVV6HK> a bf:Event ;
+    rdfs:label "Bombardment of Hiroshima-shi (Hiroshima-shi, Japan : 1945)" ;
+    bflc:marcKey "647  7 $a Bombardment of Hiroshima-shi $c (Hiroshima-shi, Japan : $d 1945) $2 fast $1 https://id.oclc.org/worldcat/entity/E39Qhp4vBbvj6mkBxBtKVVV6HK" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01352071" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1372411708> a bf:Instance ;
+    bf:acquisitionSource [ a bf:AcquisitionSource ;
+            rdfs:label "Midwest Tape" ;
+            bf:identifiedBy [ a bf:StockNumber ;
+                    rdf:value "16011202" ] ] ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1372411708#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdfs:label "wide screen"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaar" ] ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:copyrightDate "©2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (52, 29 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1372411708" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1372411708#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally released as a documentary in 2021."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Recordable DVD, NTSC, widescreen presentation; 2.0 stereo."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color and black and white ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes 52 minute cut and 29 minute cut."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"2021 Exposed Films in association with [FullMotionPicture.com]\"--Credits."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [San Francisco, CA] : $b Video Project, $c [2023]" ;
+            bflc:simpleAgent "Video Project," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "[San Francisco, CA] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[San Francisco, CA] : Video Project, [2023]" ;
+    bf:responsibilityStatement "written and directed by Greg Mitchell ; produced by Greg Mitchell, Suzanne Mitchell." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Atomic cover-up /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Atomic cover-up /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdabs" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

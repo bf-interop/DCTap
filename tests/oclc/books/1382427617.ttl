@@ -1,0 +1,135 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a bf:GenreForm ;
+    rdfs:label "Fiction"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    bf:code "aut" .
+
+<https://id.oclc.org/worldcat/entity/1382427617#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250805115407.2" ;
+    bf:creationDate "20230614" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1382427617> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1382427617#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "813/.6" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3qfYbMxFWYckDv9XcrydTCjh8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@sv ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Tucker, K.A. $4 aut" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Tucker, K.A." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1382427617> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "From the internationally best-selling author of The Simple Wild comes the continuation of a woman's journey to Alaska and a life she never imagined for herself.Calla Fletcher returns to Toronto a different person, struggling to find direction and still very much in love with the rugged bush pilot she left behind.When he unexpectedly makes a proposition she can't d[Bokinfo]."@sv ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Wild at Heart /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Wild at Heart /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1382427617> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1382427617#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@sv ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "20 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "400 sidor"@sv ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1804947253" ],
+        [ a bf:Isbn ;
+            bf:qualifier "pocket" ;
+            rdf:value "9781804947258" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1382427617" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1382427617#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:projectedProvisionDate "202308" ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Random House UK, $c 2023" ;
+            bflc:simpleAgent "Random House UK," ;
+            bflc:simpleDate "2023" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Random House UK, 2023" ;
+    bf:responsibilityStatement "K.A. Tucker." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Wild at Heart /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Wild at Heart /" ] .
+

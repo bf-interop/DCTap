@@ -1,0 +1,407 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1433664840#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011183245.9" ;
+    bf:creationDate "20240513" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCL $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1433664840> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1433664840#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "20100626" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ],
+        [ a bf:Capture ;
+            rdfs:label "Recorded live on June 26, 2010, at Toyota Park in Bridgeview, Illinois, outside of Chicago."@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVE8606(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Weintraub, Stephen, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Weintraub, Stephen," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hidalgo, David, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hidalgo, David," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Crow, Sheryl, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Crow, Sheryl," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pluta, James, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Pluta, James," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Rhino Entertainment Company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqHQqDjcM9Mdqd8g6CF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqHQqDjcM9Mdqd8g6CF> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Clapton, Eric, $e film producer, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Clapton, Eric," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer," ],
+                [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Guy, Buddy, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Guy, Buddy," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a ZZ Top (Musical group), $e performer. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7KKVdwHPK8tg3Qffkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7KKVdwHPK8tg3Qffkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Beck, Jeff, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Beck, Jeff," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Atkins, Martyn $c (Filmmaker), $e film director. $1 https://id.oclc.org/worldcat/entity/E39PCjrx7VGcXdcm4bmpwCQ9wy" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjrx7VGcXdcm4bmpwCQ9wy> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Warner Music Group, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpTyCt7cfkYWMTrbFWt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpTyCt7cfkYWMTrbFWt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a King, B. B., $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "King, B. B.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Winwood, Steve, $d 1948- $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJxGPGv4RPx8B8drGxYQMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxGPGv4RPx8B8drGxYQMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concerts filmés." ;
+            bflc:marcKey "655  7 $a Concerts filmés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000106" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concert films." ;
+            bflc:marcKey "655  7 $a Concert films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866151" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1433664840> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Performers: Eric Clapton, B.B. King, Buddy Guy, David Hidalgo, ZZ Top, Sheryl Crow, Steve Winwood, Jeff Beck, and others."@en ;
+            bflc:marcKey "511 0  $a Performers: Eric Clapton, B.B. King, Buddy Guy, David Hidalgo, ZZ Top, Sheryl Crow, Steve Winwood, Jeff Beck, and others." ] ;
+    bf:originDate "2010"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Disc 1. Promise land (Sonny Landreth with Eric Clapton) -- Z. Rider (Sonny Landreth) -- Traveling shoes (Robert Randolph & The Family Band) -- Going down (Pino Daniele, Joe Bonamassa, Robert Randolph & The Family Band) -- Killing floor (Robert Cray with Jimmie Vaughan & Hubert Sumlin) -- Six strings down (Jimmie Vaughan with Robert Cray & Hubert Sumlin) -- Waiting for the bus ; Jesus just left Chicago (ZZ Top) -- Gypsy blood (Doyle Bramhall II) -- In my time of dying (Jesus make up my dying bed) (Doyle Bramhall II) -- Bright lights (Gary Clark Jr.) -- Long road home (Sheryl Crow with Derek Trucks, Susan Tedeschi, Doyle Bramhall II & Gary Clark Jr.) -- Our love is fading (Sheryl Crow with Eric Clapton, Doyle Bramhall II & Gary Clark Jr.) -- Blackwaterside (Bert Jansch) -- Mississippi blues (Stefan Grossman & Keb' Mo') -- Roll and tumble blues (Stefan Grossman & Keb' Mo') -- One more last chance (Vince Gill with Keb' Mo', James Burton, Earl Klugh & Albert Lee) -- Mystery train (Vince Gill with James Burton, Albert Lee, James Burton & Earl Klugh) -- Lay down Sally ( Vince Gill with Sheryl Crow, Keb' Mo', Albert Lee, James Burton & Earl Klugh) -- Angelina (Earl Klugh) -- Vonetta (Earl Klugh) -- Who did you think I was ; Ain't no sunshine (John Mayer Trio)." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Disc 2. Midnight in Harlem (Derek Trucks & Susan Tedeschi Band) -- Coming home (Derek Trucks & Susan Tedeschi Band with Warren Haynes) -- Soulshine (Warren Haynes) -- Don't keep me wondering (David Hidalgo & Cesar Rosas with Derek Trucks) -- Space captain (Derek Trucks & Susan Tedeschi Band with Warren Haynes, David Hidalgo, Cesar Rosas & Chris Stainton) -- Five long years ; Miss you (Buddy Guy with Jonny Lang & Ronnie Wood) -- Hammerhead ; Nessun dorma (Jeff Beck) -- Crossroads (Eric Clapton) -- Hands of the saints (Citizen Cope & Eric Clapton) -- I shot the sheriff (Eric Clapton) -- Shake your money maker (Eric Clapton & Jeff Beck) -- Had to cry today (Steve Winwood & Eric Clapton) -- Voodoo Chile (Eric Clapton & Steve Winwood) -- Dear Mr. Fantasy (Steve Winwood & Eric Clapton) -- The thrill is gone (B.B. King & ensemble)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Crossroads: Eric Clapton Guitar Festival 2010 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Crossroads: Eric Clapton Guitar Festival 2010 /" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Eric Clapton Guitar Festival 2010" ;
+            bf:mainTitle "Eric Clapton Guitar Festival 2010" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxGPGv4RPx8B8drGxYQMP> a bf:Person ;
+    rdfs:label "Winwood, Steve, 1948-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2256453" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjrx7VGcXdcm4bmpwCQ9wy> a bf:Person ;
+    rdfs:label "Atkins, Martyn (Filmmaker)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10012193" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpTyCt7cfkYWMTrbFWt> a bf:Organization ;
+    rdfs:label "Warner Music Group," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5417536" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqHQqDjcM9Mdqd8g6CF> a bf:Organization ;
+    rdfs:label "Rhino Entertainment Company." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5623429" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> a bf:Organization ;
+    rdfs:label "Copyright Collection (Library of Congress)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1580830" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7KKVdwHPK8tg3Qffkt> a bf:Organization ;
+    rdfs:label "ZZ Top (Musical group)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1337333" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1433664840> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1433664840#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "DLC" ] ;
+            bflc:marcKey "710 2  $a Copyright Collection (Library of Congress) $1 https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> ] ;
+    bf:copyrightDate "©2010"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 videodiscs :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Rhino Entertainment Company" ] ;
+            rdf:value "BD2 525668" ],
+        [ a bf:Upc ;
+            rdf:value "603497948727" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1433664840" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024603197" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1433664840#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally released direct-to-video in 2010."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "1 booklet"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "\"Royalties from the sale of this DVD will benefit Crossroads Centre, Antigua\"--Container."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Source used: videodisc container."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Burbank, CA : $b Warner Music Group, $c [2010]" ;
+            bflc:simpleAgent "Warner Music Group," ;
+            bflc:simpleDate "[2010]" ;
+            bflc:simplePlace "Burbank, CA :" ;
+            bf:date "2010"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Burbank, CA : Warner Music Group, [2010]" ;
+    bf:responsibilityStatement "directed by Martyn Atkins ; produced by Eric Clapton, Peter Jackson, James Pluta & Scooter Weintraub." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "DTS"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dts> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Crossroads: Eric Clapton Guitar Festival 2010 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Crossroads: Eric Clapton Guitar Festival 2010 /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

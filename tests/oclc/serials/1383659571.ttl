@@ -1,0 +1,355 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/unk> a bf:Frequency ;
+    rdfs:label "unknown"@en ;
+    bf:code "unk" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/u> a bf:Status ;
+    rdfs:label "unknown" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1383659571#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251001101843.8" ;
+    bf:creationDate "20230620" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1383659571> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1383659571#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "BF1562.5.N49 1991" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a New Moon New York (Organization), $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrGt8RC4pWWwKQK7MJt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrGt8RC4pWWwKQK7MJt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals." ;
+            bflc:marcKey "655  7 $a Periodicals. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077273" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Periodicals" ;
+            bflc:marcKey "655  7 $a Periodicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Périodiques." ;
+            bflc:marcKey "655  7 $a Périodiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Lettres d'informations." ;
+            bflc:marcKey "655  7 $a Lettres d'informations. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001104" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Newsletters." ;
+            bflc:marcKey "655  7 $a Newsletters. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077264" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Newsletters" ;
+            bflc:marcKey "655  7 $a Newsletters $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919943" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "periodicals." ;
+            bflc:marcKey "655  7 $a periodicals. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026657" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1383659571> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Witchcraft Periodicals." ;
+            bflc:marcKey "650  0 $a Witchcraft $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Witchcraft" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2104465" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Occultisme Périodiques." ;
+            bflc:marcKey "650  6 $a Occultisme $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Occultisme" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0010546" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Paganism" ;
+            bflc:marcKey "650  7 $a Paganism $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01050321" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Paganisme Périodiques." ;
+            bflc:marcKey "650  6 $a Paganisme $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Paganisme" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0050449" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Paganism Periodicals." ;
+            bflc:marcKey "650  0 $a Paganism $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Paganism" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106725" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Occultism Periodicals." ;
+            bflc:marcKey "650  0 $a Occultism $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Occultism" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2088872" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Occultism" ;
+            bflc:marcKey "650  7 $a Occultism $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01043123" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Sorcellerie Périodiques." ;
+            bflc:marcKey "650  6 $a Sorcellerie $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Sorcellerie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0002542" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Witchcraft" ;
+            bflc:marcKey "650  7 $a Witchcraft $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01176327" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "New Moon New York calendar of events." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "New Moon New York calendar of events." ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrGt8RC4pWWwKQK7MJt> a bf:Organization ;
+    rdfs:label "New Moon New York (Organization)," .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1383659571> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1383659571#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Monthly"@en ;
+            bflc:marcKey "310    $a Monthly" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/unk> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1383659571" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1383659571#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: February-April 1992."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: December-January 1991; title from header."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New York, NY] : $b New Moon New York" ;
+            bflc:simpleAgent "New Moon New York" ;
+            bflc:simplePlace "[New York, NY] :" ;
+            bf:date "1991~/XXXX~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current>,
+                <http://id.loc.gov/vocabulary/mstatus/u> ] ;
+    bf:publicationStatement "[New York, NY] : New Moon New York" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "New Moon New York calendar of events." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "New Moon New York calendar of events." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

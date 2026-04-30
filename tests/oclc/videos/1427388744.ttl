@@ -1,0 +1,466 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1427388744#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251011034339.9" ;
+    bf:creationDate "20240320" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1427388744> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1427388744#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1995.9.C55" ;
+            bf:itemPortion "Y68 2016b" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Fox Searchlight Pictures, $e presenter. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmpk4RGMWjqtTmCHQ8dF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmpk4RGMWjqtTmCHQ8dF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Twentieth Century Fox Home Entertainment, Inc., $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqMF3Hwbh3GXKKBWwRg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqMF3Hwbh3GXKKBWwRg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cima, Francesca, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjCCFt9JRqjxPDjyFrK9j3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjCCFt9JRqjxPDjyFrK9j3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Weisz, Rachel, $d 1970- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJxhdGRyMjp3FvrXGtdhHC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxhdGRyMjp3FvrXGtdhHC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Indigo Film (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqXFkQxRGtHqG9ymxPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqXFkQxRGtHqG9ymxPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Calori, Carlotta, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjr6D87tB4FBxpXd9JXBKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjr6D87tB4FBxpXd9JXBKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dano, Paul, $d 1984- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJycTGHv6W6Xm3RbMmFYfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJycTGHv6W6Xm3RbMmFYfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Travaglioli, Cristiano, $e film editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Travaglioli, Cristiano," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Medusa Film, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpH9pgC9dhvBVhwDWvR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpH9pgC9dhvBVhwDWvR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Keitel, Harvey, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJw4yJFkTY4FFJT9d3Tyh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJw4yJFkTY4FFJT9d3Tyh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lang, David $q (David A.), $e composer. $1 https://id.oclc.org/worldcat/entity/E39PBJdRwdw7tv9KgFCJ6mMByd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdRwdw7tv9KgFCJ6mMByd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Giuliano, Nicola, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJqk6dQWXmcFYX9HKpyjmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqk6dQWXmcFYX9HKpyjmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sorrentino, Paolo, $e film director, $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PBJrmf3Pc9HKXPFHTjXwQv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrmf3Pc9HKXPFHTjXwQv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Fonda, Jane, $d 1937- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJtrYjqxfDWPfByDvdBgKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtrYjqxfDWPfByDvdBgKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bigazzi, Luca, $d 1958- $e cinematographer. $1 https://id.oclc.org/worldcat/entity/E39PBJf4gQ4Px73FQ4mBFjfcyd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJf4gQ4Px73FQ4mBFjfcyd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cinematographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Caine, Michael, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJk8X7PkJ73mKm9MpfRtKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJk8X7PkJ73mKm9MpfRtKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT2H3M"^^xsd:duration ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-sz---" ;
+            bf:code "e-sz---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-sz> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1427388744> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Harvey Keitel, Michael Caine, Rachel Weisz, Paul Dano, Jane Fonda."@en ;
+            bflc:marcKey "511 1  $a Harvey Keitel, Michael Caine, Rachel Weisz, Paul Dano, Jane Fonda." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Written and directed by Paolo Sorrentino, Director of photography, Luca Bigazzi ; editor, Cristiano Travaglioli ; music, David Lang."@en ;
+            bflc:marcKey "508    $a Written and directed by Paolo Sorrentino, Director of photography, Luca Bigazzi ; editor, Cristiano Travaglioli ; music, David Lang." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Older men Drama." ;
+            bflc:marcKey "650  0 $a Older men $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Older men" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002515" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Vacations Switzerland Alps, Swiss Drama." ;
+            bflc:marcKey "650  0 $a Vacations $z Switzerland $z Alps, Swiss $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Vacations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2067363" ] ] [ a bf:Geographic ;
+                        rdfs:label "Switzerland" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2010335" ] ] [ a bf:Geographic ;
+                        rdfs:label "Alps, Swiss" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2010335" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Alps, Swiss (Switzerland) Drama." ;
+            bflc:marcKey "651  0 $a Alps, Swiss (Switzerland) $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Alps, Swiss (Switzerland)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2010335" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Friendship Drama." ;
+            bflc:marcKey "650  0 $a Friendship $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Friendship" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2011813" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Two longtime friends are vacationing in the Swiss Alps. Fred, an acclaimed composer and conductor, who brings along his daughter and best friend Mick, a renowned filmmaker. The two men reflect on their past, each finding that some of the most important experiences can come later in life."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Youth /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "Youth /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdRwdw7tv9KgFCJ6mMByd> a bf:Person ;
+    rdfs:label "Lang, David (David A.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1157329" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJf4gQ4Px73FQ4mBFjfcyd> a bf:Person ;
+    rdfs:label "Bigazzi, Luca, 1958-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5143334" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJk8X7PkJ73mKm9MpfRtKd> a bf:Person ;
+    rdfs:label "Caine, Michael," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca663965" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqk6dQWXmcFYX9HKpyjmd> a bf:Person ;
+    rdfs:label "Giuliano, Nicola," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7514588" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrmf3Pc9HKXPFHTjXwQv3> a bf:Person ;
+    rdfs:label "Sorrentino, Paolo," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7514585" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtrYjqxfDWPfByDvdBgKd> a bf:Person ;
+    rdfs:label "Fonda, Jane, 1937-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca335727" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJw4yJFkTY4FFJT9d3Tyh3> a bf:Person ;
+    rdfs:label "Keitel, Harvey," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3105132" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxhdGRyMjp3FvrXGtdhHC> a bf:Person ;
+    rdfs:label "Weisz, Rachel, 1970-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5085833" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJycTGHv6W6Xm3RbMmFYfq> a bf:Person ;
+    rdfs:label "Dano, Paul, 1984-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6021956" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjCCFt9JRqjxPDjyFrK9j3> a bf:Person ;
+    rdfs:label "Cima, Francesca," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8016495" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjr6D87tB4FBxpXd9JXBKd> a bf:Person ;
+    rdfs:label "Calori, Carlotta," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9634919" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpH9pgC9dhvBVhwDWvR> a bf:Organization ;
+    rdfs:label "Medusa Film," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6154320" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmpk4RGMWjqtTmCHQ8dF> a bf:Organization ;
+    rdfs:label "Fox Searchlight Pictures," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4299188" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqMF3Hwbh3GXKKBWwRg> a bf:Organization ;
+    rdfs:label "Twentieth Century Fox Home Entertainment, Inc.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4034346" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqXFkQxRGtHqG9ymxPF> a bf:Organization ;
+    rdfs:label "Indigo Film (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7514590" ] .
+
+<https://id.oclc.org/worldcat/entity/1427388744> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1427388744#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 streaming video file (123 min.)) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1427388744" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1427388744#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Online resource; title from title frames (viewed March 20, 2024)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Los Angeles, CA : $b Twentieth Century Fox Home Entertainment, $c [2016]" ;
+            bflc:simpleAgent "Twentieth Century Fox Home Entertainment," ;
+            bflc:simpleDate "[2016]" ;
+            bflc:simplePlace "Los Angeles, CA :" ;
+            bf:date "2016"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Los Angeles, CA : Twentieth Century Fox Home Entertainment, [2016]" ;
+    bf:responsibilityStatement "Fox Searchlight Pictures presents ; an Indigo Film production in collaboration with Medusa Film ; an Italy/France/UK/Switzerland co-production ; produced by Nicola Giuliano, Francesca Cima, Carlotta Calori ; written and directed by Paolo Sorrentino." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ] ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Youth /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "Youth /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

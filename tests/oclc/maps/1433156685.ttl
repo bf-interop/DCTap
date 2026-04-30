@@ -1,0 +1,387 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmc> a bf:DescriptionConventions ;
+    bf:code "dcrmc" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> a bf:Source ;
+    bf:code "rbmscv" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mrelief/pict> a bf:Relief ;
+    rdfs:label "pictorially"@en ;
+    bf:code "pict" ;
+    rdf:value "i" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lctgm> a bf:Source ;
+    bf:code "lctgm" .
+
+<https://id.oclc.org/worldcat/entity/1433156685#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260226175343.6" ;
+    bf:creationDate "20240510" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1433156685> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1433156685#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/pict> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "(E 034.0686--E 036.3538/N 033.4910--N 030.6237)." ],
+        [ a bf:Cartographic ;
+            bf:coordinates "(E 34°04'00\"--E 36°21'00\"/N 33°29'00\"--N 30°37'00\")." ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G7481.2" ;
+            bf:itemPortion "C73 1880" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Marks, A. J., $e lithographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Marks, A. J.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "lithographer." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Cram, George Franklin, $d 1841-1928, $e engraver, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39PBJdx4gmwy3y8MFc6xWrjG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdx4gmwy3y8MFc6xWrjG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "engraver," ],
+                [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1433156685> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/relnote> ;
+            rdfs:label "Appears in Unrivaled atlas of the world; edition unknown." ;
+            bflc:marcKey "580    $a Appears in Unrivaled atlas of the world; edition unknown." ] ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States Illinois Chicago." ;
+            bflc:marcKey "752    $a United States $b Illinois $d Chicago." ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "Illinois" ] [ a madsrdf:City ;
+                        rdfs:label "Chicago." ] ) ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Cram, George Franklin, 1841-1928. Cram's unrivaled atlas of the world." ;
+                    bflc:marcKey "700 1  $i Contained in (manifestation): $a Cram, George Franklin, $d 1841-1928. $t Cram's unrivaled atlas of the world." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Cram, George Franklin, 1841-1928." ;
+                                    bf:identifiedBy [ a bf:Local ;
+                                            bf:assigner [ a bf:Organization ;
+                                                    bf:code "OCoLC" ] ;
+                                            rdf:value "oca56047" ] ] ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Cram's unrivaled atlas of the world." ;
+                            bf:mainTitle "Cram's unrivaled atlas of the world." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Contained in (manifestation):" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "In decimal degrees:" ],
+        [ a bf:Scale ;
+            rdfs:label "Scale not given" ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Christianity" ;
+            bflc:marcKey "650  7 $a Christianity $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00859599" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Middle East Palestine" ;
+            bflc:marcKey "651  7 $a Middle East $z Palestine $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJbGRpdjCJGRyrXqt8rTHC" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Middle East" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01207534" ] ] [ a bf:Geographic ;
+                        rdfs:label "Palestine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01207534" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJbGRpdjCJGRyrXqt8rTHC> ],
+        [ a bf:Work ;
+            rdfs:label "Bible" ;
+            bflc:marcKey "630 07 $a Bible $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01356024" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Bible" ] ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Bird's-eye views Palestine 19th century." ;
+            bflc:marcKey "650  7 $a Bird's-eye views $z Palestine $y 19th century. $2 lctgm" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lctgm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Bird's-eye views" ] [ a bf:Geographic ;
+                        rdfs:label "Palestine" ] [ a bf:Temporal ;
+                        rdfs:label "19th century." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Christianity Palestine Maps 19th century." ;
+            bflc:marcKey "650  0 $a Christianity $z Palestine $v Maps $y 19th century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Christianity" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002833" ] ] [ a bf:Geographic ;
+                        rdfs:label "Palestine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca392206" ] ] [ a bf:Temporal ;
+                        rdfs:label "19th century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930673" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "630 00 $a Bible $x Geography $v Maps $y 19th century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Title ;
+                        bflc:nonSortNum "0" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2081303" ] ;
+                        bf:mainTitle "Bible" ] [ a bf:Topic ;
+                        rdfs:label "Geography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2081303" ] ] [ a bf:Temporal ;
+                        rdfs:label "19th century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930673" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2081303" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Geography" ;
+            bflc:marcKey "650  7 $a Geography $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00940469" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Palestine Maps 19th century." ;
+            bflc:marcKey "651  0 $a Palestine $v Maps $y 19th century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Palestine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca392206" ] ] [ a bf:Temporal ;
+                        rdfs:label "19th century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930673" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Birds-eye-view of the Holy Land /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Birds-eye-view of the Holy Land /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdx4gmwy3y8MFc6xWrjG3> a bf:Person ;
+    rdfs:label "Cram, George Franklin, 1841-1928," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca56047" ] .
+
+<https://id.oclc.org/worldcat/entity/1433156685> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1433156685#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1433156685" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1433156685#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Shows topography, drainage, places of historical interest."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"177\" -- left margin."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color chromolithograph,"@en ],
+        [ a bf:Note ;
+            rdfs:label "Coordinates approximate and based on Greenwich meridian."@en ],
+        [ a bf:Note ;
+            rdfs:label "Features illustrations of ships and settlements."@en ],
+        [ a bf:Note ;
+            rdfs:label "Relief shown pictorially."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Chicago] : $b [G. Cram], $c [in or after 1880s]" ;
+            bflc:simpleAgent "[G. Cram]," ;
+            bflc:simpleDate "[in or after 1880s]" ;
+            bflc:simplePlace "[Chicago] :" ;
+            bf:date "1880"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ilu> ] ;
+    bf:publicationStatement "[Chicago] : [G. Cram], [in or after 1880s]" ;
+    bf:responsibilityStatement "engraved by permission, from A.J. Marks' large chromo lithograph ; [Geo. F. Cram engraver and publisher]." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Birds-eye-view of the Holy Land /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Birds-eye-view of the Holy Land /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

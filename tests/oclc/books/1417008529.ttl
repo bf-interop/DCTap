@@ -1,0 +1,218 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<https://id.oclc.org/worldcat/entity/1417008529#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250730232213.7" ;
+    bf:creationDate "20240110" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1417008529> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1417008529#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QC718.5.P5" ;
+            bf:itemPortion "K78 2019" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "530.4/4" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "19/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E433fMCYbvjHYyBcQb4DxFMvCY> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Kruer, William L., $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kruer, William L.," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1886911" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1417008529> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Frontiers in physics ; $v volume 73" ;
+                    bf:seriesEnumeration "volume 73" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Frontiers in physics ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Frontiers in physics ;" ;
+                    bflc:marcKey "830  0 $a Frontiers in physics ; $v v. 73." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca11166" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Frontiers in physics ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "v. 73." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Laser-plasma interactions." ;
+            bflc:marcKey "650  0 $a Laser-plasma interactions." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2158151" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Laser fusion." ;
+            bflc:marcKey "650  0 $a Laser fusion." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2158124" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The physics of laser plasma interactions /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The physics of laser plasma interactions /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1417008529> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1417008529#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "24 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xviii, 182 pages :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "(hbk)" ;
+            rdf:value "9780367314187" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(pbk)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9780813340838" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(hbk)" ;
+            rdf:value "0367314185" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1417008529" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1417008529#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"ABP, Advanced book program\"--Page 4 of cover"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Boca Raton : $b CRC Press, Taylor & Francis Group, $c 2019" ;
+            bflc:simpleAgent "CRC Press, Taylor & Francis Group," ;
+            bflc:simpleDate "2019" ;
+            bflc:simplePlace "Boca Raton :" ;
+            bf:date "2019"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/flu> ] ;
+    bf:publicationStatement "Boca Raton : CRC Press, Taylor & Francis Group, 2019" ;
+    bf:responsibilityStatement "William L. Kruer" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The physics of laser plasma interactions /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The physics of laser plasma interactions /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

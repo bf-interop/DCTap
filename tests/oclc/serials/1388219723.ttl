@@ -1,0 +1,223 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/oth> a bf:Frequency ;
+    rdfs:label "other"@en ;
+    bf:code "oth" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/nsdp> a bf:DescriptionAuthentication ;
+    bf:code "nsdp" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/incorrect> a bf:Status ;
+    rdfs:label "incorrect"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1149062824#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2020200119" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1149062824" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "National farmers market managers" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2691-3267" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "National farmers market managers" ] .
+
+<https://id.oclc.org/worldcat/entity/1388219723#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250703144059.4" ;
+    bf:creationDate "20230629" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/nsdp>,
+        <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388219723> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1388219723#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "ISSN RECORD" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "381.41" ;
+            bf:edition "abridged" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3Qh7jqXpj4CvhxMmq4H8tvFgf> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a United States. $b National Agricultural Statistics Service." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. National Agricultural Statistics Service." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388219723> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "1" ] ;
+            rdf:value "2993-3382" ],
+        [ a bf:Issn ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "1" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/incorrect> ;
+            rdf:value "2691-3267" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1149062824#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:title [ a bf:KeyTitle ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "National farmers market managers" ;
+            bf:qualifier "(Print)" ],
+        [ a bf:Title ;
+            rdfs:label "National farmers market managers." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "National farmers market managers." ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a National farmers market managers survey" ;
+            bf:mainTitle "National farmers market managers survey" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1388219723> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388219723#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Every 5 years"@en ;
+            bflc:marcKey "310    $a Every 5 years" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/oth> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1388219723" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023202751" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1388219723#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 2019 [released] Aug. 17, 2020 (surrogate)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://usda.library.cornell.edu/concern/publications/pz50hd694" ;
+            bf:electronicLocator <http://usda.library.cornell.edu/concern/publications/pz50hd694> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with: 2019 [released] Aug. 17, 2020"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The National Farmers Market Managers Survey is a survey conducted under an agreement with the Agricultural Marketing Service. AMS uses these data to measure the customer demand of local foods from the Farmer's Market manager's perspective, look for potential expansion opportunities, target access to nutritional foods, market nutritional education, measure access to local foods and organic foods, and strengthening community engagement. This survey will be conducted every 5 years.\""@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 2019 [released] Aug. 17, 2020 ; title from caption (surrogate)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Washington, DC : $b National Agricultural Statistics Service (NASS), Agriculture Statistics Board, United States Department of Agriculture (USDA), $c 2020-" ;
+            bflc:simpleAgent "National Agricultural Statistics Service (NASS), Agriculture Statistics Board, United States Department of Agriculture (USDA)," ;
+            bflc:simpleDate "2020-" ;
+            bflc:simplePlace "Washington, DC :" ;
+            bf:date "2020/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Washington, DC : National Agricultural Statistics Service (NASS), Agriculture Statistics Board, United States Department of Agriculture (USDA), 2020-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "National farmers market managers." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "National farmers market managers." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

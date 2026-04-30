@@ -1,0 +1,727 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dist> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Digital storage"@en .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mix> a bf:PlaybackChannels ;
+    rdfs:label "mixed"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1395424548#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "IMD" ] ;
+    bf:changeDate "20250528130854.6" ;
+    bf:creationDate "20230824" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "BTCTA" ],
+        [ a bf:Organization ;
+            bf:code "JDP" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "IMD" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a IMD $b eng $c DLC $d IMD $d BTCTA $d OCLCF $d JDP $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1395424548> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1395424548#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "2004" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Filmed during the Silk & Sandpaper Tour"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Atlanta Civic Center, Atlanta, Georgia."@en ] ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "782.421644" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3fcgbjdRPQr3XDg4vW7fRcxPt> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "M1630.18" ;
+            bf:itemPortion ".A58 2005" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ],
+        [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 0  $a Scarface, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Scarface," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Williams, LaToiya, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Williams, LaToiya," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dupri, Jermaine, $d 1972- $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dupri, Jermaine, 1972-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca4403504" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hamilton, Anthony, $d 1971- $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hamilton, Anthony, 1971-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6362327" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:duration "PT1H34M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Live sound recordings." ;
+            bflc:marcKey "655  7 $a Live sound recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866348" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores live." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores live. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Soul music." ;
+            bflc:marcKey "655  7 $a Soul music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090707" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "sound recordings." ;
+            bflc:marcKey "655  7 $a sound recordings. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028633" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings" ;
+            bflc:marcKey "655  7 $a Video recordings $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01692913" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remixes (Music)" ;
+            bflc:marcKey "655  7 $a Remixes (Music) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090648" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rhythm and blues." ;
+            bflc:marcKey "655  7 $a Rhythm and blues. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000950" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rhythm and blues music." ;
+            bflc:marcKey "655  7 $a Rhythm and blues music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090654" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concerts filmés." ;
+            bflc:marcKey "655  7 $a Concerts filmés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000106" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sound recordings" ;
+            bflc:marcKey "655  7 $a Sound recordings $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411639" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Music videos" ;
+            bflc:marcKey "655  7 $a Music videos $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726176" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000201" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remix (Musique)" ;
+            bflc:marcKey "655  7 $a Remix (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000928" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Music videos." ;
+            bflc:marcKey "655  7 $a Music videos. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866393" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concert films." ;
+            bflc:marcKey "655  7 $a Concert films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866151" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings." ;
+            bflc:marcKey "655  7 $a Video recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866701" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos." ;
+            bflc:marcKey "655  7 $a Vidéos. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001738" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Soul." ;
+            bflc:marcKey "655  7 $a Soul. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000957" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "video recordings (physical artifacts)" ;
+            bflc:marcKey "655  7 $a video recordings (physical artifacts) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028682" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéoclips." ;
+            bflc:marcKey "655  7 $a Vidéoclips. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001739" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sound recordings." ;
+            bflc:marcKey "655  7 $a Sound recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866572" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1395424548> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Anthony Hamilton, vocals ; with accompanying musicians."@en ;
+            bflc:marcKey "511 1  $a Anthony Hamilton, vocals ; with accompanying musicians." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Music videos." ;
+            bflc:marcKey "650  0 $a Music videos." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2049915" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Soul music." ;
+            bflc:marcKey "650  0 $a Soul music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2130880" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Music videos" ;
+            bflc:marcKey "650  7 $a Music videos $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01030654" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Temporal ;
+            rdfs:label "2001 - 2010" ;
+            bflc:marcKey "648  7 $a 2001 - 2010 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Vidéoclips." ;
+            bflc:marcKey "650  6 $a Vidéoclips." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0138542" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musique populaire 2001-2010." ;
+            bflc:marcKey "650  6 $a Musique populaire $y 2001-2010." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musique populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0358774" ] ] [ a bf:Temporal ;
+                        rdfs:label "2001-2010." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0358774" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Remixes." ;
+            bflc:marcKey "650  0 $a Remixes." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca5685029" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Soul music" ;
+            bflc:marcKey "650  7 $a Soul music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01126930" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music 2001-2010." ;
+            bflc:marcKey "650  0 $a Popular music $y 2001-2010." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5478354" ] ] [ a bf:Temporal ;
+                        rdfs:label "2001-2010." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5478354" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Rhythm and blues music." ;
+            bflc:marcKey "650  0 $a Rhythm and blues music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2052468" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "650  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071422" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Rhythm and blues music" ;
+            bflc:marcKey "650  7 $a Rhythm and blues music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01097281" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Remix." ;
+            bflc:marcKey "650  6 $a Remix." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0365118" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "R & B singer Anthony Hamilton performs live in Atlanta."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Bonus CD: Comin' from where I'm from : remix (featuring Scarface & Jermaine Dupri) -- Charlene : iTunes originals acoustic version -- Charlene : live from Atlanta -- Comin' from where I'm from : live from Atlanta." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "DVD: Documentary (86 min.) featuring live performances of: Since I seen't you ; Better days ; Cornbread, fish, & collard greens ; Float ; Lucille ; Chyna Black ; I tried ; My first love (featuring LaToiya Williams) ; Mama knew love ; Charlene ; I'm a mess ; Comin' from where I'm from -- Music videos: Charlene (5:00) -- Comin' from where I'm from (5:00)" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Coming from where I'm from" ;
+            bf:mainTitle "Coming from where I'm from" ],
+        [ a bf:Title ;
+            rdfs:label "Comin' from where I'm from :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Comin' from where I'm from :" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<https://id.oclc.org/worldcat/entity/1395424548> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1395424548#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audiodisc"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "audio disc"@en ] ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ],
+        [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2005,"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "audio disc"@en ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "DVD video"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "audio disc"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 94 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Arista" ] ;
+            rdf:value "82876-67157-2" ],
+        [ a bf:Upc ;
+            rdf:value "828766715798" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1395424548" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Arista" ] ;
+            rdf:value "82876-67157-9" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Arista" ] ;
+            rdf:value "67157-2" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "178893915" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Arista" ] ;
+            rdf:value "67157-9" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023628128" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "59756979" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1395424548#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ],
+        [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "audio disc"@en ] ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "1 audio disc (digital ; 4 3/4 in.)"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, N.Y. : $b Arista, $c [2005]" ;
+            bflc:simpleAgent "Arista," ;
+            bflc:simpleDate "[2005]" ;
+            bflc:simplePlace "New York, N.Y. :" ;
+            bf:date "2005"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York, N.Y. : Arista, [2005]" ;
+    bf:responsibilityStatement "Anthony Hamilton." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital 5.1"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "videodisc"@en ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig51> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dist>,
+        <http://id.loc.gov/vocabulary/mplayback/mix>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Comin' from where I'm from : live & more /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Comin' from where I'm from :" ;
+            bf:subtitle "live & more /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+

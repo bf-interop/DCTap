@@ -1,0 +1,298 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1375057780#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20250807114154.9" ;
+    bf:creationDate "20230407" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "YDX" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "HMS" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d OCLCL $d YDX $d CUV $d OCLCO $d HMS $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1375057780> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGCVWVt4CJDJbFhYkpyq8K> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "WE 550" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "616.7/44" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20240410" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E43X6QJ73yDfkDTkmvqxfpYkvr> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "616.7/44" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E43X6QJ73yDfkDTkmvqxfpYkvr> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RC925.5" ;
+            bf:itemPortion ".B435 2025" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "still image"@en ;
+            bf:code "sti" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/sti> ],
+        [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Bertorini, Tulio E., $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Bertorini, Tulio E.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Case Reports" ;
+            bflc:marcKey "655  2 $a Case Reports" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D002363" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Études de cas." ;
+            bflc:marcKey "655  7 $a Études de cas. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001726" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Case studies." ;
+            bflc:marcKey "655  7 $a Case studies. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca11142492" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1375057780> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Maladies neuromusculaires Études de cas." ;
+            bflc:marcKey "650  6 $a Maladies neuromusculaires $v Études de cas." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Maladies neuromusculaires" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0002689" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Études de cas." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376950" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Neuromuscular diseases." ;
+            bflc:marcKey "650  0 $a Neuromuscular diseases." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2068991" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Neuromuscular diseases Case studies." ;
+            bflc:marcKey "650  0 $a Neuromuscular diseases $v Case studies." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Neuromuscular diseases" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2068991" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Case studies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933917" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Maladies neuromusculaires." ;
+            bflc:marcKey "650  6 $a Maladies neuromusculaires." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0002689" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Neuromuscular Diseases" ;
+            bflc:marcKey "650 12 $a Neuromuscular Diseases" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D009468" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"A multidisciplinary case-study approach to the full range of neuromuscular disorders. Ideal for neurologists and other health care professionals who treat patients with neuromuscular diseases, 'Neuromuscular Case Studies, 2nd Edition', presents more than 100 cases of both common and rare neuromuscular disorders. Dr. Tulio E. Bertorini provides the latest tools and strategies for diagnosis and management that minimize disability and maximize quality of life for your patients, including up-to-date coverage of numerous recent advances in the field. Using a multidisciplinary approach, this practical text contains two parts: the first includes basic aspects of anatomy, physiology, diagnostic tests, and therapeutic strategies; the second describes specific cases and their diagnosis and management. Presents a multidisciplinary approach to the management and therapeutic treatment of the full range of neuromuscular disorders and resulting complications. Covers the latest advances in the field, including genetic causes of hereditary diseases, new autoimmune diseases, and promising new therapies such as antisense oligonucleotides, gene therapies, and immunotherapy. Includes the wide range of disorders that fall under each disease classification (e.g., the Motor Neuron Diseases chapter includes all forms of spinal atrophy, ALS, neuropathies and myopathies, as well as disorders of neuromuscular transmission). In turn, each disease section includes diagnosis and evaluation, treatment, outcome, and suggested readings. Uses a reader-friendly format that takes you step by step through the diagnosis and treatment of neuromuscular disorders, from the basic anatomy and physiology of the nerve and muscle through to clinical evaluation, diagnostic testing, and therapy. Reviews the etiologies, pathogenesis, differential diagnosis, and management of each disorder, helping you not only recognize its presentation, but also determine the best treatment plan. Arranges case studies and indexes both by complaint and by diagnosis. Features full-color clinical images and diagrams -- along with numerous diagnosis tools, tables, and treatment algorithms throughout -- that make complex concepts easier to understand and apply. Shares the knowledge and experience of an expert in clinical neuromuscular care.\"-- Taken from back cover."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Case 81: A Woman with Proximal Muscle Weakness, Calf Hypertrophy, Heel Contractures, and Elevated Serum Creatine Kinase -- Case 82: A Young Man with Distal Leg Wasting and Normal Sensation -- Case 83: A Boy with Proximal Weakness and Cardiomyopathy -- Case 84: A Woman with Droopy Eyelids and Difficulty Swallowing -- Case 85: A Man with Facial and Shoulder Muscle Weakness -- Case 86: A Boy Born Floppy with Severe Weakness and, Later, Contractures -- Case 87: A Woman with Long-standing Weakness and Foot Deformities -- Case 88: A Floppy Baby Who Later Developed Malignant Hyperthermia -- Case 89: A Woman with Droopy Eyelids and Ophthalmoplegia -- Case 90: A Man with Weakness and Swelling in the Neck -- Case 91: A Woman with Muscle Pains and Dark Urine -- Case 92: A Woman with Progressive Proximal Muscle Weakness -- Case 93: A Sedentary Man with Acute Respiratory Failure and Myoglobinuria -- Case 94: An Elderly Man with New Onset Weakness -- Case 95: A Uremic Man with Proximal Muscle Weakness -- Case 96: A Woman with Weakness, Elevated Cholesterol, and Serum Creatine Kinase Levels -- Case 97: An Older Woman with Leg Weakness and Atrophic Muscle Fibers on Biopsy -- Case 98A: A Woman with Muscle Weakness and a Skin Rash -- Case 98B: A Child with Muscle Weakness and a Skin Rash -- Case 99: A Man with Muscle Pains -- Case 100A: An Older Woman with Progressive Muscle Weakness -- Case 100B: An Elderly Man with Weakness Diagnosed as Having a Myopathy and a Neuropathy -- Case 101: An HIV-Infected Man with Muscle Weakness and Spasms -- Case 102: A Patient with Rapidly Progressive Muscle Weakness and Rather Elevated Creatine Kinase -- Case 103: A Woman with Painful and Swollen Legs -- Case 104: A Man with a Bent Spine -- Case 105: A Man with Muscle Stiffness and Later with Diplopia -- Case 106: A Woman with Muscle Cramps and Fasciculations -- Case 107: A Young Man with Large and Stiff Muscles -- Case 108: A Woman with Generalized Increased Insertional Activity on EMG -- Case 109: A Boy with Short Stature, Small Jaw, Muscle Hypertrophy, and Stiffness -- Case 110: An Elderly Woman with Muscle Spasms -- Case 111: A Woman with Proximal Muscle Weakness and Neuromuscular Irritability -- Case 112: A Woman with Focal Spontaneous Muscle Movements -- Index of Cases by Diagnosis." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Neuromuscular Anatomy and Function. Anatomy of the cranial and peripheral nerves ; The brachial plexus ; The lumbosacral plexus ; Structure of the peripheral nerves ; The structure of muscles ; The neuromuscular junction ; Physiology -- Neurologic Evaluation and Ancillary Tests. The history and physical examination ; Important ancillary tests ; Clinical electrophysiologic studies ; Autonomic testing ; Muscle/nerve histopathology -- Therapy in Neuromuscular Diseases. Treatment of painful neuropathies ; Drugs used to treat chronic pain ; Treatment of autonomic dysfunction ; Other symptomatic treatments in neuromuscular disorders ; Treatment of myasthenia gravis and other disorders of neuromuscular transmission ; Immunotherapy -- Case Studies -- Case 1: An Elderly Woman with Numbness in the Hands -- Case 2: A Diabetic Man with Arm Swelling, Pain, and Numbness -- Case 3: A Diabetic Man with Hand Numbness and Fainting Spells -- Case 4: A Man with Hand Pain -- Case 5: A Woman with Hand Weakness, Numbness, and Pain After Cardiac Catheterization -- Case 6: A Man Who Practices Karate and Has Forearm Pain -- Case 7: A Man with a History of Polio Who Developed Hand Weakness and Numbness -- Case 8: A Young Woman with Multiple Sclerosis and Hand Numbness -- Case 9: A Woman with a Wrist Drop and a Mass in the Arm -- Case 10: A Man with Bilateral Arm Weakness After Lumbar Surgery -- Case 11: A Woman with Acute Onset of Shoulder Pain and Weakness -- Case 12: A Man with Lymphoma and Numbness in the Fingers of One Hand -- Case 13: A Woman with Arm Weakness After Treatment for Breast Cancer -- Case 14: A Diabetic Man with Shoulder Pain and Weakness -- Case 15: A Woman with Arm Weakness and a Skin Rash -- Case 16: A Woman with Neck and Arm Pain -- Case 17: A Woman with Neck Pain and a Weak Arm -- Case 18: A Woman with Back Pain and Leg Weakness -- Case 19: A Woman with Back Pain and Weakness -- Case 20: A Woman with Back Pain and Unusual Nerve Conduction Tests" ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Case 55: A Man with Progressive Lower Extremity Weakness and Monoclonal Gammopathy -- Case 56: A Woman with a Neuropathy and Symptoms of a Central Nervous System Disease -- Case 57: A Man with Progressive Weakness After a Gastroplasty -- Case 58: A Diabetic Woman with Unilateral Proximal Leg Weakness and Pain -- Case 59: A Diabetic Man with Bilateral Arm Weakness -- Case 60: A Diabetic Man with Acute Onset of Pain and Swelling in the Thigh -- Case 61: A Uremic Man with Burning Feet -- Case 62A: A Woman with Leg Numbness, Pain, Weakness, and Slow Nerve Conduction Velocities -- Case 62B: A Boy with Leg Weakness -- Case 63: A Man with Hand Weakness and Numbness After Skiing -- Case 64: A Man with Recurrent Foot Drop -- Case 65: An Elderly Woman with Foot Drop and Hand Weakness -- Case 66: A Woman with Rheumatoid Arthritis Who Developed Numbness and Pain in the Feet -- Case 67: A Woman with Granulomatous Lesions in the Lungs and a Peripheral Neuropathy -- Case 68: A Man with a Neuropathy, Weight Loss, and Lung Nodules -- Case 69: A Woman with Difficulty Walking and Ataxia -- Case 70A: A Man with Progressive Neuropathy and Congestive Heart Failure -- Case 70B: A Woman with a Demyelinating and Axonal Neuropathy -- Case 71: An Elderly Woman with a Progressive Neuropathy -- Case 72A: A Young Woman with Difficulty Swallowing -- Case 72B: A Young Woman with Intermittent Weakness and a Positive Family History of Similar Problems -- Case 73: A Weak Woman with a Weak Baby -- Case 74: A Woman with Muscle Weakness and Areflexia -- Case 75: An Elderly Woman with Proximal Weakness -- Case 76: An Elderly Woman with Ptosis, Areflexia, and Weakness -- Case 77: A Young Woman with Distal Upper Extremity Weakness -- Case 78: A Young Man with Episodic Weakness -- Case 79: An African American Man with Hyperthyroidism and Acute Paralysis -- Case 80: A Boy with Large Muscles, Leg Pain, and Elevated Serum Creatine Kinase" ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Case 21: A Man with Pheochromocytoma and Back Pain -- Case 22: A Diabetic Man with Back and Leg Pain -- Case 23: A Man with Leg Pain While Walking -- Case 24: A Man with Foot Pain -- Case 25: A Man with Unilateral Proximal Leg Weakness After Heart Catheterization -- Case 26: A Woman with Uterine Cancer and Unilateral Leg Weakness -- Case 27: A Man with Burning Sensations in the Thigh -- Case 28: A Man with Weakness and Fasciculations in the Lower Extremities -- Case 29: A Woman with Unilateral Facial Weakness -- Case 30: A Diabetic Woman with Muscle Weakness and Ophthalmoplegia -- Case 31: A Man with a Dropped Head -- Case 32: A Man in the \"Barrel\" -- Case 33A: A Man with a Long History of Muscle Weakness in One Arm -- Case 33B: A Young Man with Longstanding Weakness in Both Arms -- Case 34: A Man with Progressive Leg Muscle Weakness 20 Years After an Acute Paralysis -- Case 35: A Man with One Large Calf -- Case 36: A Man with Muscle Spasms and Elevated Serum Creatine Kinase -- Case 37: A Man with Muscle Twitching and Poor Balance -- Case 38: A Floppy Child -- Case 39: A Man with Acute Areflexic Paralysis and Central Nervous System Symptoms -- Case 40: A Man with Acute Muscle Weakness and Respiratory Failure -- Case 41: A Young Woman with Acute Onset of Clumsiness and Ophthalmoplegia -- Case 42: A Woman with Seafood Poisoning in Catfish Country -- Case 43: A Woman with a Kingly Disease -- Case 44: A Myasthenic Woman with Persistent Weakness -- Case 45: A Woman with COVID-19 Infection and Quadriparesis -- Case 46: A Man with Neck Pain and Numbness in the Hands -- Case 47: A Woman with Peripheral Neuropathy and Frequent Falls -- Case 48: A Woman with Progressive Four Limb Paresthesias -- Case 49: An Elderly Woman with Frequent Falls and Abnormal MRI -- Case 50: A Man with Weakness in the Legs -- Case 51: An Elderly Woman with Asymmetric Weakness and a Monoclonal Gammopathy -- Case 52: A Man with Progressive Weakness and Fasciculations -- Case 53: A Man with Diabetic Polyneuropathy Who Developed Rapidly Progressive Weakness -- Case 54A: An Older Man with Leg Numbness -- Case 54B: An Elderly Man with a Peripheral Neuropathy Like His Sister" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Neuromuscular case studies /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Neuromuscular case studies /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1375057780> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1375057780#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2025"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "28 cm" ;
+    bf:editionStatement "Second edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 643 pages :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "(paperback)" ;
+            rdf:value "9780323874007" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918986563406676" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(paperback)" ;
+            rdf:value "0323874002" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1375057780" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGCVWVt4CJDJbFhYkpyq8K> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color) ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Philadelphia, PA : $b Elsevier, $c [2025]" ;
+            bflc:simpleAgent "Elsevier," ;
+            bflc:simpleDate "[2025]" ;
+            bflc:simplePlace "Philadelphia, PA :" ;
+            bf:date "2025"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "Philadelphia, PA : Elsevier, [2025]" ;
+    bf:responsibilityStatement "Tulio E. Bertorini." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Neuromuscular case studies /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Neuromuscular case studies /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

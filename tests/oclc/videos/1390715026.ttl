@@ -1,0 +1,270 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/mag> a bf:RecordingMedium ;
+    rdfs:label "magnetic"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/mvidformat/vhs> a bf:VideoFormat ;
+    rdfs:label "VHS"@en .
+
+<https://id.oclc.org/worldcat/entity/1390715026#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251011210916.9" ;
+    bf:creationDate "20230718" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCL $d OCLCO $d OCLCL $d OCLCO $d OCLCQ $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1390715026> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1390715026#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "LD1364.1958" ;
+            bf:itemPortion "C53 1993" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Cornell University. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr7X37cjPD3KPBYX4kt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr7X37cjPD3KPBYX4kt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Cornell University. $b Class of 1958." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Cornell University. Class of 1958." ] ] ;
+    bf:duration ""^^xsd:duration ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ny" ;
+            bf:code "n-us-ny" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ny> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1390715026> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Organization ;
+            rdfs:label "Cornell University. Class of 1958." ;
+            bflc:marcKey "610 20 $a Cornell University. $b Class of 1958." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Universities and colleges Alumni and alumnae" ;
+            bflc:marcKey "650  7 $a Universities and colleges $x Alumni and alumnae $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Universities and colleges" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01161636" ] ] [ a bf:Topic ;
+                        rdfs:label "Alumni and alumnae" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01161636" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Students" ;
+            bflc:marcKey "650  7 $a Students $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01136041" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Cornell University $x Alumni and alumnae." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Cornell University" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca255419" ] ] [ a bf:Topic ;
+                        rdfs:label "Alumni and alumnae." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5026979" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Cornell University $x Students." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Cornell University" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca255419" ] ] [ a bf:Topic ;
+                        rdfs:label "Students." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5186101" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "New York (State) Ithaca" ;
+            bflc:marcKey "651  7 $a New York (State) $z Ithaca $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgt9fJ6RhxTBXYrvCXDbd" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01205507" ] ] [ a bf:Geographic ;
+                        rdfs:label "Ithaca" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01205507" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJgt9fJ6RhxTBXYrvCXDbd> ],
+        <https://id.oclc.org/worldcat/entity/E39QH7Jmr7X37cjPD3KPBYX4kt> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A class above :" ;
+            bflc:nonSortNum "1" ;
+            bf:mainTitle "A class above :" ] .
+
+<https://id.oclc.org/worldcat/entity/1390715026> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1390715026#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videocassette"@en ;
+            bf:code "vf" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vf> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "1/2 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videocassette :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1390715026" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1390715026#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "VHS."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from cassette label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a [Ithaca, NY] : $b [publisher not identified], $c [1993?]." ;
+            bflc:simpleAgent "[publisher not identified]," ;
+            bflc:simpleDate "[1993?]." ;
+            bflc:simplePlace "[Ithaca, NY] :" ;
+            bf:date "1993"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "[Ithaca, NY] : [publisher not identified], [1993?]." ;
+    bf:responsibilityStatement "[Cornell class of 1958]." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/mag> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A class above : a tribute to Cornell and her class of 1958 /" ;
+            bflc:nonSortNum "1" ;
+            bf:mainTitle "A class above :" ;
+            bf:subtitle "a tribute to Cornell and her class of 1958 /" ] ;
+    bf:videoCharacteristic <http://id.loc.gov/vocabulary/mvidformat/vhs> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr7X37cjPD3KPBYX4kt> a bf:Organization ;
+    rdfs:label "Cornell University",
+        "Cornell University." ;
+    bflc:marcKey "610 27 $a Cornell University $2 fast $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr7X37cjPD3KPBYX4kt" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst00530369" ],
+        [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca255419" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

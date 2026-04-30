@@ -1,0 +1,380 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1381684300#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251028210756.4" ;
+    bf:creationDate "20230512" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "INT" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d INT" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1381684300> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1381684300#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Studio Salford, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Studio Salford," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sleepers, Reckless, $e writer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sleepers, Reckless," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cruys, Leentje Van de, $e performer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cruys, Leentje Van de," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wetherell, Mole, $e director" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Wetherell, Mole," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Egan, Kevin, $e performer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Egan, Kevin," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Covell, Alex, $e performer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Covell, Alex," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Reckless Sleepers, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Reckless Sleepers," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wetherell, Mole, $e performer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Wetherell, Mole," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dewilde, Leen, $e performer" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dewilde, Leen," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer" ] ] ;
+    bf:duration "PT1H11M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Internet videos" ;
+            bflc:marcKey "655  7 $a Internet videos $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01750214" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos sur Internet." ;
+            bflc:marcKey "655  7 $a Vidéos sur Internet. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001568" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Internet videos." ;
+            bflc:marcKey "655  7 $a Internet videos. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866317" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Online media." ;
+            bflc:marcKey "655  4 $a Online media." ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1381684300> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director, Wetherell, Mole ; Writer, Sleepers, Reckless ; Lighting & Sound Operator, O'Shea, Ryan ; Composor, Macdonald, Alistair ; Pianist, Giannopulou, Angeliki ; Costume, Lytwyn, Anna ; Costume, Coleman, Rebecca."@en ;
+            bflc:marcKey "508    $a Director, Wetherell, Mole ; Writer, Sleepers, Reckless ; Lighting & Sound Operator, O'Shea, Ryan ; Composor, Macdonald, Alistair ; Pianist, Giannopulou, Angeliki ; Costume, Lytwyn, Anna ; Costume, Coleman, Rebecca." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Plays-in-progress" ;
+            bflc:marcKey "650  7 $a Plays-in-progress $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01067040" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Experimental theater." ;
+            bflc:marcKey "650  0 $a Experimental theater." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2146456" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Temporal ;
+            rdfs:label "2000-2099" ;
+            bflc:marcKey "648  7 $a 2000-2099 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Drama 21st century." ;
+            bflc:marcKey "650  0 $a Drama $y 21st century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Drama" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5175594" ] ] [ a bf:Temporal ;
+                        rdfs:label "21st century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5175594" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Experimental theater" ;
+            bflc:marcKey "650  7 $a Experimental theater $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00918508" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "650  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00897468" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Plays-in-progress." ;
+            bflc:marcKey "650  0 $a Plays-in-progress." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2045734" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Théâtre (Genre littéraire) 21e siècle." ;
+            bflc:marcKey "650  6 $a Théâtre (Genre littéraire) $y 21e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Théâtre (Genre littéraire)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0341454" ] ] [ a bf:Temporal ;
+                        rdfs:label "21e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0341454" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Created by Reckless Sleepers, Schrodinger is an experimental theatre project where the impossible is probable, and truth and illusion are inseparable."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Schrödinger /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Schrödinger /" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<https://id.oclc.org/worldcat/entity/1381684300> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1381684300#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 video file (71 min.)):"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1390711365" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1406023725" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1381684300" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1381684300#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:AccessPolicy ;
+            rdfs:label "Restricted to the University of North Texas System."@en ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "TxDN" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Description based on online resource; title from title screen (Digital Theatre+, viewed May 12, 2023)"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "subscribed" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://edu.digitaltheatreplus.com/content/productions/schrodinger $y Digital Theatre+ $x Provider: Digital Theatre+ $x subscribed $x eLoaderURL $x tp4 $x tpdtnid26ZaKXk9tFSbVWDDVf4onp" ;
+            bf:electronicLocator <http://edu.digitaltheatreplus.com/content/productions/schrodinger> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "Digital Theatre+"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Digital Theatre+"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://libproxy.library.unt.edu/login?url=https://edu.digitaltheatreplus.com/content/productions/schrodinger\"; target=\"_blank $z Connect to online video" ;
+            bf:electronicLocator <http://libproxy.library.unt.edu/login?url=https://edu.digitaltheatreplus.com/content/productions/schrodinger%22;+target=%22_blank> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Connect to online video"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b Studio Salford, $c 2022" ;
+            bflc:simpleAgent "Studio Salford," ;
+            bflc:simpleDate "2022" ;
+            bflc:simplePlace "[Place of publication not identified] :" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b Reckless Sleepers, $c 2022" ;
+            bflc:simpleAgent "Reckless Sleepers," ;
+            bflc:simpleDate "2022" ;
+            bflc:simplePlace "[Place of publication not identified] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "[Place of publication not identified] : Reckless Sleepers, 2022",
+        "[Place of publication not identified] : Studio Salford, 2022" ;
+    bf:responsibilityStatement "Reckless Sleepers, Studio Salford :" ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayback/mon> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Schrödinger / Production." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Schrödinger /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

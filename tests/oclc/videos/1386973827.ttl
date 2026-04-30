@@ -1,0 +1,506 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1386973827#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011040439.3" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCL $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1386973827> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJht7hQWcMRGkhMQHrdRKd> a bf:Person ;
+    rdfs:label "Hurst, Paul, 1888-1953," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1913399" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjdcRhr6dgdXYYv7GqWjC> a bf:Person ;
+    rdfs:label "Hale, Creighton, 1882-1965," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1988113" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqQxvYPDvPQMcDv8MFqcP> a bf:Person ;
+    rdfs:label "Holmes, Stuart, 1884-1971," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3334814" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqVRWwP4qYKjFjhHgtxjC> a bf:Person ;
+    rdfs:label "Hawley, Wanda, 1895-1963," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3348131" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtcFKwQTDTpJK6t4W6Yfq> a bf:Person ;
+    rdfs:label "Harlan, Otis, 1865-1940," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2204191" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJv8CwdmF4TYxmTd4TDDv3> a bf:Person ;
+    rdfs:label "Carr, Mary, 1874-1973," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2213093" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvxvwGTxJ9BQhKv69YkjC> a bf:Person ;
+    rdfs:label "Metcalfe, Earl, 1889-1928," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3633436" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFPPRqfHCqmrxHvM6VcWwC> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997" ;
+            bf:itemPortion ".M5465 2010" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Silvera, Karl, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Silvera, Karl," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Holmes, Stuart, $d 1884-1971, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJqQxvYPDvPQMcDv8MFqcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqQxvYPDvPQMcDv8MFqcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brundage, Mathilda, $d 1871-1939, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PCjD3BJyp37GKRm7CmbG8RX" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjD3BJyp37GKRm7CmbG8RX> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hurst, Paul, $d 1888-1953, $e film director. $1 https://id.oclc.org/worldcat/entity/E39PBJht7hQWcMRGkhMQHrdRKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJht7hQWcMRGkhMQHrdRKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Carr, Mary, $d 1874-1973, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJv8CwdmF4TYxmTd4TDDv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJv8CwdmF4TYxmTd4TDDv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hale, Creighton, $d 1882-1965, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJjdcRhr6dgdXYYv7GqWjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJjdcRhr6dgdXYYv7GqWjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Grapevine Video (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpxgDYhQBXcCdr9wK9t" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpxgDYhQBXcCdr9wK9t> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Harlan, Otis, $d 1865-1940, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJtcFKwQTDTpJK6t4W6Yfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtcFKwQTDTpJK6t4W6Yfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Metcalfe, Earl, $d 1889-1928, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJvxvwGTxJ9BQhKv69YkjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvxvwGTxJ9BQhKv69YkjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Fox, Johnny, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PCjwgXqBDqBmBtYMPGp4C73" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjwgXqBDqBmBtYMPGp4C73> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hawley, Wanda, $d 1895-1963, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJqVRWwP4qYKjFjhHgtxjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqVRWwP4qYKjFjhHgtxjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Goodwill Pictures (Firm), $e film production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Goodwill Pictures (Firm)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McMahon, Louis, $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39PCjqt8ttCqvxCK4hkC4PcGd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjqt8ttCqvxCK4hkC4PcGd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ] ;
+    bf:duration "PT1H3M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Action and adventure films." ;
+            bflc:marcKey "655  7 $a Action and adventure films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866019" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Melodramas (Motion pictures)" ;
+            bflc:marcKey "655  7 $a Melodramas (Motion pictures) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866373" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion picture."@en ;
+            bflc:marcKey "380    $a Motion picture." ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Silent films." ;
+            bflc:marcKey "655  7 $a Silent films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866553" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Comedy films." ;
+            bflc:marcKey "655  7 $a Comedy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866137" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Mélodrames (Films)" ;
+            bflc:marcKey "655  7 $a Mélodrames (Films) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000180" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'aventures." ;
+            bflc:marcKey "655  7 $a Films d'aventures. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000144" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films muets." ;
+            bflc:marcKey "655  7 $a Films muets. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000078" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films comiques." ;
+            bflc:marcKey "655  7 $a Films comiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000016" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Animated films." ;
+            bflc:marcKey "655  7 $a Animated films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866041" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1386973827> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Johnnie Fox, Jr., Mary Carr, Stuart Holmes, Wanda Hawley."@en ;
+            bflc:marcKey "511 1  $a Johnnie Fox, Jr., Mary Carr, Stuart Holmes, Wanda Hawley." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Orchestra score by Lou McMahon."@en ;
+            bflc:marcKey "508    $a Orchestra score by Lou McMahon." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Silent film with English intertitles and added musical accompaniment."@en ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Messengers" ;
+            bflc:marcKey "650  7 $a Messengers $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01017399" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Messengers Drama." ;
+            bflc:marcKey "650  0 $a Messengers $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Messengers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2016035" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Burglars Drama." ;
+            bflc:marcKey "650  0 $a Burglars $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Burglars" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3525845" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Films muets." ;
+            bflc:marcKey "650  6 $a Films muets." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0080470" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Silent films" ;
+            bflc:marcKey "650  7 $a Silent films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01118542" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Burglars" ;
+            bflc:marcKey "650  7 $a Burglars $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00841735" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Silent films." ;
+            bflc:marcKey "650  0 $a Silent films." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2112988" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Those little shacks out along the road to the city dump are homes, homes in which you will find mothers, wives, daughters, sweethearts, and all those other things which go to make up life's comedies and tragedies. One such of these places was the home of the widow Malone who had a son how worked as a Western Union messenger who interrupts a burglary and follows the thieves until they are caught."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The midnight message /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The midnight message /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjD3BJyp37GKRm7CmbG8RX> a bf:Person ;
+    rdfs:label "Brundage, Mathilda, 1871-1939," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4053475" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjqt8ttCqvxCK4hkC4PcGd> a bf:Person ;
+    rdfs:label "McMahon, Louis," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7325339" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjwgXqBDqBmBtYMPGp4C73> a bf:Person ;
+    rdfs:label "Fox, Johnny," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9242539" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpxgDYhQBXcCdr9wK9t> a bf:Organization ;
+    rdfs:label "Grapevine Video (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4009921" ] .
+
+<https://id.oclc.org/worldcat/entity/1386973827> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1386973827#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:duration "010300" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (63 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1386973827" ],
+        [ a bf:Upc ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "842614104282" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFPPRqfHCqmrxHvM6VcWwC> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD-R, NTSC; full screen (1.33:1) presentation."@en ],
+        [ a bf:Note ;
+            rdfs:label "Special feature: One man dog (animated short : 6 min : 1926)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, black and white ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Videodisc release of the motion picture produced in 1926."@en ] ;
+    bf:provisionActivity [ a bf:Distribution ;
+            bf:date "2010"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/azu> ],
+        [ a bf:Publication ;
+            bflc:marcKey "260    $a Phoenix, Ariz. : $b Grapevine Video, $c 2010." ;
+            bflc:simpleAgent "Grapevine Video," ;
+            bflc:simpleDate "2010." ;
+            bflc:simplePlace "Phoenix, Ariz. :" ;
+            bf:date "2010"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/azu> ],
+        [ a bf:Production ;
+            bf:date "1926"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/azu> ] ;
+    bf:publicationStatement "Phoenix, Ariz. : Grapevine Video, 2010." ;
+    bf:responsibilityStatement "distributed by Goodwill Pictures, Inc. ; directed by Paul Hurst ; story by H.H. Van Loan." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The midnight message /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The midnight message /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+

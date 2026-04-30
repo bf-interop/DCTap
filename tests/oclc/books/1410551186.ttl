@@ -1,0 +1,138 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    bf:code "aut" .
+
+<https://id.oclc.org/worldcat/entity/1410551186#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250514144530.4" ;
+    bf:creationDate "20231124" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1410551186> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCYYrxCF88pwH9k3Gdjyw4q> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "525.5" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E46yx838yVKF7RqjRvBdwJdHjg> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@sv ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Peterson, Ellie. $4 aut" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Peterson, Ellie." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1410551186> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Reason for the Seasons /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "The Reason for the Seasons /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1410551186> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1410551186#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@sv ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1410551186" ],
+        [ a bf:Isbn ;
+            rdf:value "9781635921366" ],
+        [ a bf:Isbn ;
+            rdf:value "1635921368" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCYYrxCF88pwH9k3Gdjyw4q> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Omslagsbild"@sv ] ;
+            bflc:marcKey "856 48 $3 Omslagsbild $u https://s1.adlibris.com/images/52511267/the-reason-for-the-seasons.jpg" ;
+            bf:electronicLocator <http://s1.adlibris.com/images/52511267/the-reason-for-the-seasons.jpg> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "8" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Astra Young Readers, $c 2020" ;
+            bflc:simpleAgent "Astra Young Readers," ;
+            bflc:simpleDate "2020" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "Astra Young Readers, 2020" ;
+    bf:responsibilityStatement "Ellie Peterson." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Reason for the Seasons /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "The Reason for the Seasons /" ] .
+

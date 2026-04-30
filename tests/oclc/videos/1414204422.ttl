@@ -1,0 +1,344 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1414204422#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011045910.6" ;
+    bf:creationDate "20231214" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1414204422> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1414204422#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.2" ;
+            bf:itemPortion ".S3676 2008" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Frimpong-Manso, Shirley, $e film director, $e film producer, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Frimpong-Manso, Shirley," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Sparrow Productions. $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmryY8YM76YwjtjJcrFg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmryY8YM76YwjtjJcrFg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Asante, Ekow Smith, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Asante, Ekow Smith," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Executive Image Movies, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmmPqB84g6gXFPDpFghR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmmPqB84g6gXFPDpFghR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mawugbe, Efo Ko̳djo, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Mawugbe, Efo Ko̳djo," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT1H57M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures, Ghanian." ;
+            bflc:marcKey "655  0 $a Motion pictures, Ghanian." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ;
+            bflc:marcKey "655  7 $a Fiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710264" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a f-gh---" ;
+            bf:code "f-gh---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/f-gh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1414204422> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Kwame Sefa Kayi, Chris Attoh, Efo Mawugbe, Ecow Smith-Asante, Dzifa Glikpoe, Lydia Forson, Soraya Kukubor, Naa Ashorkor Mensah-Doku."@en ;
+            bflc:marcKey "511 1  $a Kwame Sefa Kayi, Chris Attoh, Efo Mawugbe, Ecow Smith-Asante, Dzifa Glikpoe, Lydia Forson, Soraya Kukubor, Naa Ashorkor Mensah-Doku." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, Ken Attoh ; camera, John Passah ; sound, Kofi Sefa-Bonsu ; editor, Esi Adjei-Boateng."@en ;
+            bflc:marcKey "508    $a Director of photography, Ken Attoh ; camera, John Passah ; sound, Kofi Sefa-Bonsu ; editor, Esi Adjei-Boateng." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English dialogue."@en ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Manners and customs Drama." ;
+            bflc:marcKey "650  0 $a Manners and customs $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Manners and customs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085843" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Man-woman relationships Drama." ;
+            bflc:marcKey "650  0 $a Man-woman relationships $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Man-woman relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3173806" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Two years of marriage to Orlando Thompson, the reverend minister's son, has left Dea Thompson badly scarred. A case of self defense leaves Orlando battling for his life and Dea an opportunity for a more financially secure future.\"--Container."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Scorned /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Scorned /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmmPqB84g6gXFPDpFghR> a bf:Organization ;
+    rdfs:label "Executive Image Movies," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8976642" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmryY8YM76YwjtjJcrFg> a bf:Organization ;
+    rdfs:label "Sparrow Productions." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8737693" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1414204422> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1414204422#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "VCD"@en ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc :(117 minutes) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1414204422" ],
+        [ a bf:Upc ;
+            rdf:value "567542729221" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1414204422#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Special feature: Making-of featurette."@en ],
+        [ a bf:Note ;
+            rdfs:label "Videodisc release of the motion picture produced in 2008."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Full story.\"--Container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Widescreen."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, NTSC, Region 1; widescreen (2.35:1) presentation; Dolby Digital 5.1."@en ],
+        [ a bf:Note ;
+            rdfs:label "Copyright notice on video: Sparrow Productions Entertainment ; 2008."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Ghana."@en ;
+            bflc:marcKey "257    $a Ghana. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "burning."@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Bronx, NY : $b Executive Image African Mov ies, $c c2008." ;
+            bflc:simpleAgent "Executive Image African Mov ies," ;
+            bflc:simpleDate "c2008." ;
+            bflc:simplePlace "Bronx, NY :" ;
+            bf:date "2008"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "Bronx, NY : Executive Image African Mov ies, c2008." ;
+    bf:responsibilityStatement "Sparrow Productions Entertainment presents ; director-producer-writer, Shirley Frimpong-Manso." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Scorned /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Scorned /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "PAL"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/pal> ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

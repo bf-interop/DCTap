@@ -1,0 +1,242 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm ;
+    rdfs:label "Conference papers and proceedings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/nsdp> a bf:DescriptionAuthentication ;
+    bf:code "nsdp" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1418718908#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250618081433.4" ;
+    bf:creationDate "20240122" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/nsdp>,
+        <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d DLC $d OCLCL" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1418718908> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1418718908#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "ISSN RECORD" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "004" ;
+            bf:edition "abridged" ;
+            bf:source [ a bf:Source ;
+                    bf:code "15" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3crFxr84MQkDt9mHBYTvbkPCB> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "111 2  $a International Conference on Information Networking." ;
+            bf:agent [ a bf:Meeting ;
+                    rdfs:label "International Conference on Information Networking." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca4761557" ] ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Institute of Electrical and Electronics Engineers, $e publisher." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Institute of Electrical and Electronics Engineers," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca286392" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1418718908> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "1" ] ;
+            rdf:value "2996-1572" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/456190899#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a ICOIN" ;
+            bf:mainTitle "ICOIN" ],
+        [ a bf:AbbreviatedTitle ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "issnkey" ] ;
+            bf:mainTitle "Int. Conf. Inform.Inf. Netw." ;
+            bf:qualifier "(Print)" ],
+        [ a bf:KeyTitle ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Networking" ;
+            bf:qualifier "(Print)" ],
+        [ a bf:Title ;
+            rdfs:label "International Conference on Information Networking :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Networking :" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Proceedings, International Conference on Information Networking" ;
+            bf:mainTitle "Proceedings, International Conference on Information Networking" ] .
+
+<https://id.oclc.org/worldcat/entity/456190899#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "International Conference on Information Networking." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2024202317" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "456190899" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "International Conference on Information Networking" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2996-1580" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "International Conference on Information Networking" ] .
+
+<https://id.oclc.org/worldcat/entity/1418718908> a bf:Instance ;
+    bf:acquisitionSource [ a bf:AcquisitionSource ;
+            rdfs:label "445 Hoes Lane, Piscataway, NJ 08854" ] ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1418718908#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@en ] ;
+    bf:frequency <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1418718908" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024202316" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1418718908#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 2023 (surrogate)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 41 $u https://ieeexplore.ieee.org/xpl/conhome/1000363/all-proceedings" ;
+            bf:electronicLocator <http://ieeexplore.ieee.org/xpl/conhome/1000363/all-proceedings> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began in 1998?"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 2008 (surrogate); title from cover."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Piscataway, NJ : $b IEEE" ;
+            bflc:simpleAgent "IEEE" ;
+            bflc:simplePlace "Piscataway, NJ :" ;
+            bf:date "1998/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nju> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Piscataway, NJ : IEEE" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "International Conference on Information Networking : ICOIN." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Networking :" ;
+            bf:subtitle "ICOIN." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

@@ -1,0 +1,155 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1388673517#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250716061656.2" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Unknown"@en ;
+            bf:code "u" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388673517> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGPqMrVYrbwXXX93D6q6Gb> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "621.384156" ;
+            bf:edition "full" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E37y9F9B6WxxTTxPqHWGywD4mY> ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "TK5104.J69 2011" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Jo, Kenneth Y." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jo, Kenneth Y." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388673517> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781608071944" ] ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This authoritative book provides a thorough understanding of the fundamental concepts of satellite communications (SATCOM) network design and performance assessments. You find discussions on a wide class of SATCOM networks using satellites as core components, as well as coverage key applications in the field. This in-depth resource presents a broad range of critical topics, from geosynchronous Earth orbiting (GEO) satellites and direct broadcast satellite systems, to low Earth orbiting (LEO) satellites, radio standards and protocols.This invaluable reference explains the many specific uses of satellite networks, including small-terminal wireless and mobile communications systems. Moreover, this book presents advanced topics such as satellite RF link analyses, optimum transponder loading, on-board processing, antenna characteristics, protected systems, information assurance, and spread spectrums. You are introduced to current and future SATCOM systems and find details on their performance supportabilities. This cutting-edge book also presents trends in multimedia satellite applications and IP services over satellites."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Satellite Communications Network Design and Analysis.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Satellite Communications Network Design and Analysis.." ] .
+
+<https://id.oclc.org/worldcat/entity/1388673517> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388673517#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource 522 p"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1608071944" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1388673517" ],
+        [ a bf:Isbn ;
+            rdf:value "1608071952" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print)" ;
+            rdf:value "9781608071944" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(electronic bk.)" ;
+            rdf:value "9781608071951" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGPqMrVYrbwXXX93D6q6Gb> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "eLoaderURL" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608071951 $y Artech House Ebooks $x Provider: Artech House $x eLoaderURL $x ar4 $x arEBL829299" ;
+            bf:electronicLocator <http://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608071951> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Artech House"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "Artech House Ebooks"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Norwood : $b Artech House, $c 2011." ;
+            bflc:simpleAgent "Artech House," ;
+            bflc:simpleDate "2011." ;
+            bflc:simplePlace "Norwood :" ;
+            bf:date "2011"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Norwood : Artech House, 2011." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Satellite Communications Network Design and Analysis.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Satellite Communications Network Design and Analysis.." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

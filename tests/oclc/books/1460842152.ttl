@@ -1,0 +1,331 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/relators/ill> a bf:Role ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/relators/wfw> a bf:Role ;
+    bf:code "wfw" .
+
+<http://id.loc.gov/vocabulary/relators/win> a bf:Role ;
+    bf:code "win" .
+
+<https://id.oclc.org/worldcat/entity/1460842152#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250912222911.6" ;
+    bf:creationDate "20240428" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "GCV" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "MWD" ],
+        [ a bf:Organization ;
+            bf:code "OCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "IG#" ],
+        [ a bf:Organization ;
+            bf:code "WIM" ],
+        [ a bf:Organization ;
+            bf:code "PBJ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d WIM $d PBJ $d IG# $d OCLCL $d OCO $d GCV $d MWD $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1460842152> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1460842152#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "BJ1857.C5" ;
+            bf:itemPortion "M37 2024" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "395" ;
+            bf:edition "abridged" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3vXhMJY3w6MfMV8QCWJtHVTtb> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Klass, Perri, $d 1958- $e writer of introduction. $4 http://id.loc.gov/vocabulary/relators/win $1 https://id.oclc.org/worldcat/entity/E39PBJmDgpvtGG7D7q6Cd3BgKd $1 http://id.loc.gov/rwo/agents/n85098849" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmDgpvtGG7D7q6Cd3BgKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of introduction." ],
+                <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Child, Nicholas $e illustrator $4 http://id.loc.gov/vocabulary/relators/ill $0 http://id.loc.gov/authorities/names/no2022027926 $1 http://id.loc.gov/rwo/agents/no2022027926." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Child, Nicholas" ;
+                    skos:closeMatch <http://id.loc.gov/rwo/agents/no2022027926.> ;
+                    skos:relatedMatch <http://id.loc.gov/authorities/names/no2022027926> ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "illustrator" ],
+                <http://id.loc.gov/vocabulary/relators/ill> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Burch, Tory $e writer of foreword $4 http://id.loc.gov/vocabulary/relators/wfw $0 http://id.loc.gov/authorities/names/no2014151123 $1 http://id.loc.gov/rwo/agents/no2014151123." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Burch, Tory" ;
+                    skos:closeMatch <http://id.loc.gov/rwo/agents/no2014151123.> ;
+                    skos:relatedMatch <http://id.loc.gov/authorities/names/no2014151123> ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword" ],
+                <http://id.loc.gov/vocabulary/relators/wfw> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1460842152> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Children." ;
+            bflc:marcKey "650  7 $a Children. $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ],
+        [ a bf:Topic ;
+            rdfs:label "Etiquette for children and teenagers." ;
+            bflc:marcKey "650  0 $a Etiquette for children and teenagers." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2140508" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Éducation des enfants." ;
+            bflc:marcKey "650  6 $a Éducation des enfants." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0005834" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Etiquette." ;
+            bflc:marcKey "650  7 $a Etiquette. $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Children Conduct of life." ;
+            bflc:marcKey "650  0 $a Children $x Conduct of life." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Children" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2142158" ] ] [ a bf:Topic ;
+                        rdfs:label "Conduct of life." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2142158" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Social skills." ;
+            bflc:marcKey "650  7 $a Social skills. $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ],
+        [ a bf:Topic ;
+            rdfs:label "Parenting." ;
+            bflc:marcKey "650  0 $a Parenting." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2114765" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Teenagers Conduct of life." ;
+            bflc:marcKey "650  7 $a Teenagers $x Conduct of life. $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Teenagers" ] [ a bf:Topic ;
+                        rdfs:label "Conduct of life." ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Child rearing." ;
+            bflc:marcKey "650  0 $a Child rearing." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2141793" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Child rearing." ;
+            bflc:marcKey "650  7 $a Child rearing. $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Enfants Morale pratique." ;
+            bflc:marcKey "650  6 $a Enfants $x Morale pratique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Enfants" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0084693" ] ] [ a bf:Topic ;
+                        rdfs:label "Morale pratique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0084693" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Savoir-vivre Enfants et adolescents." ;
+            bflc:marcKey "650  6 $a Savoir-vivre $x Enfants et adolescents." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Savoir-vivre" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0101437" ] ] [ a bf:Topic ;
+                        rdfs:label "Enfants et adolescents." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0101437" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Rôle parental." ;
+            bflc:marcKey "650  6 $a Rôle parental." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0057331" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Princess Marie-Chantal's perennial, must-have parenting resource for the modern age, now fully revised and updated The founder of a successful lifestyle and gifting brand, author of an influential parenting blog, and mother of five children, Princess Marie-Chantal of Greece is constantly asked how she manages to do it all. So many of these queries-about proper etiquette for children in our fast-paced, technology-centered world-led her to recognize the need for a modern handbook on children's manners. First published in 2020, Manners Begin at Breakfast addresses rules of etiquette, including table manners, social media, fashion dos and don'ts, and party conversation. Covering children from infants to teens, it is an essential guide for all parents keen to raise polite, well-rounded children, equipped to thrive in society and develop into confident, successful adults. This updated edition adds new insights on parenting in a post-pandemic world. By popular demand, each chapter is now peppered with delightful anecdotes and personal stories from Marie-Chantal's experience putting her own advice into practice. Adorned with charming, specially commissioned illustrations and a fresh updated introduction by leading pediatrician Dr. Perri Klass, Manners Begin at Breakfast is the quintessential guide to propriety for the modern family\"-- Provided by publisher."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "At the table -- Let's talk about technology -- To wear or not to wear -- Travel tips-- Playdates -- Party essentials -- Being a good sport -- Why family matters -- Navigating holiday celebrations -- Baby etiquette." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Manners begin at breakfast :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Manners begin at breakfast :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmDgpvtGG7D7q6Cd3BgKd> a bf:Person ;
+    rdfs:label "Klass, Perri, 1958-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1314444" ] ;
+    skos:closeMatch <http://id.loc.gov/rwo/agents/n85098849> .
+
+<https://id.oclc.org/worldcat/entity/1460842152> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1460842152#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2024"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "24 cm" ;
+    bf:editionStatement "Revised and Updated edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "231 pages"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1460842152" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardcover" ;
+            rdf:value "9780865654464" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024937403" ],
+        [ a bf:Isbn ;
+            rdf:value "0865654468" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1460842152#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bflc:marcKey "334    $a single unit $b mono $0 http://id.loc.gov/vocabulary/issuance/mono" ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color illustrations"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a London : $c 2024." ;
+            bflc:simpleDate "2024." ;
+            bflc:simplePlace "London :" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York ; $b Vendome, $c 2024." ;
+            bflc:simpleAgent "Vendome," ;
+            bflc:simpleDate "2024." ;
+            bflc:simplePlace "New York ;" ;
+            bf:date "2024"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "London : 2024.",
+        "New York ; Vendome, 2024." ;
+    bf:responsibilityStatement "Princess Marie-Chantal of Greece ; foreword by Tory Burch ; introduction by Dr. Perri Klass ; illustrations by Nicholas Child." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Manners begin at breakfast : modern etiquette for families /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Manners begin at breakfast :" ;
+            bf:subtitle "modern etiquette for families /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sears> a bf:Source ;
+    bf:code "sears" .
+

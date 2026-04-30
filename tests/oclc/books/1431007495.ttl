@@ -1,0 +1,315 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/pht> a bf:Illustration ;
+    rdfs:label "photographs"@en ;
+    bf:code "pht" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1431007495#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20241029165019.3" ;
+    bf:creationDate "20240423" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1431007495> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJx8JW9b34B8KQk9PTpVmd> a bf:Person ;
+    rdfs:label "Del Valle, Eduardo." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6236949" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFYtxgJMXTRqQHQyBpvwP3> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "still image"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ],
+        [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Nazraeli Press. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrC3K8b439rbwKw4RWt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrC3K8b439rbwKw4RWt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gómez, Mirta. $1 https://id.oclc.org/worldcat/entity/E39PCjHmXDphmkydJBphjKRwcq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjHmXDphmkydJBphjKRwcq> ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Del Valle, Eduardo. $1 https://id.oclc.org/worldcat/entity/E39PBJx8JW9b34B8KQk9PTpVmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJx8JW9b34B8KQk9PTpVmd> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Photobooks." ;
+            bflc:marcKey "655  7 $a Photobooks. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077278" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "photobooks." ;
+            bflc:marcKey "655  7 $a photobooks. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300265728" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Livres de photographies." ;
+            bflc:marcKey "655  7 $a Livres de photographies. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001206" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Artists' books." ;
+            bflc:marcKey "655  7 $a Artists' books. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca11219522" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Livres d'artistes." ;
+            bflc:marcKey "655  7 $a Livres d'artistes. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000187" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "artists' books (books)" ;
+            bflc:marcKey "655  7 $a artists' books (books) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300123016" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1431007495> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/pht> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States Arizona Tucson," ;
+            bflc:marcKey "752    $a United States $b Arizona $d Tucson, $e publication place." ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publication place." ] ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "Arizona" ] [ a madsrdf:City ;
+                        rdfs:label "Tucson," ] ) ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Nazraeli Press one picture book ;" ;
+                    bflc:marcKey "830  0 $a Nazraeli Press one picture book ; $v no. 22." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5772828" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Nazraeli Press one picture book ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "no. 22." ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Nazraeli Press one picture book ; $v no. 22" ;
+                    bf:seriesEnumeration "no. 22" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Nazraeli Press one picture book ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Photographie artistique." ;
+            bflc:marcKey "650  6 $a Photographie artistique." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0048937" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "art photography." ;
+            bflc:marcKey "650  7 $a art photography. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300178594" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Photography, Artistic." ;
+            bflc:marcKey "650  0 $a Photography, Artistic." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2134994" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Artists' books Specimens." ;
+            bflc:marcKey "650  0 $a Artists' books $v Specimens." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Artists' books" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca15243176" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Specimens." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca15243176" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Labná Site (Mexico) Pictorial works." ;
+            bflc:marcKey "651  0 $a Labná Site (Mexico) $v Pictorial works." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Labná Site (Mexico)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2152355" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Pictorial works." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155818" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Four sections of time /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Four sections of time /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjHmXDphmkydJBphjKRwcq> a bf:Person ;
+    rdfs:label "Gómez, Mirta." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6236950" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrC3K8b439rbwKw4RWt> a bf:Organization ;
+    rdfs:label "Nazraeli Press." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3726837" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<https://id.oclc.org/worldcat/entity/1431007495> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1431007495#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:dimensions "19 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "4 volumes :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1431007495" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFYtxgJMXTRqQHQyBpvwP3> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Each volume has the same text and a different photograph."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"A book of four reproductions and one original Type C print ... printed in an edition of 500 copies\"--Colophon."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "chiefly color illustrations, 1 color photograph ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Tucson, AZ : $b Nazraeli Press, $c 2004." ;
+            bflc:simpleAgent "Nazraeli Press," ;
+            bflc:simpleDate "2004." ;
+            bflc:simplePlace "Tucson, AZ :" ;
+            bf:date "2004"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/azu> ] ;
+    bf:publicationStatement "Tucson, AZ : Nazraeli Press, 2004." ;
+    bf:responsibilityStatement "Eduardo del Valle & Mirta Gómez." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Four sections of time /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Four sections of time /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+

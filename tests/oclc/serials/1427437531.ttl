@@ -1,0 +1,235 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<https://id.oclc.org/worldcat/entity/08339974#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "National Institute of Cholera & Enteric Diseases (India)" ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "08339974" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Annual report" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "0253-6811" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Annual report" ] .
+
+<https://id.oclc.org/worldcat/entity/1427437531#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20240321032426.4" ;
+    bf:creationDate "20230317" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1427437531> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1427437531#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "W1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a India. $b Department of Health Research, $e supporting body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "India. Department of Health Research," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "supporting body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a National Institute of Cholera & Enteric Diseases (India), $e issuing body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "National Institute of Cholera & Enteric Diseases (India)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Indian Council of Medical Research, $e issuing body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Indian Council of Medical Research," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Annual Report." ;
+            bflc:marcKey "655  2 $a Annual Report." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1427437531> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/08339974#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Cholera." ;
+            bflc:marcKey "650 12 $a Cholera." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Intestinal Diseases." ;
+            bflc:marcKey "650 22 $a Intestinal Diseases." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "India." ;
+            bflc:marcKey "651  2 $a India." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Achievements and activities report" ;
+            bf:mainTitle "Achievements and activities report" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Achievement & activity report" ;
+            bf:mainTitle "Achievement & activity report" ],
+        [ a bf:Title ;
+            rdfs:label "Achievements and activities /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Achievements and activities /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a ICMR-NICED achievements and activities report" ;
+            bf:mainTitle "ICMR-NICED achievements and activities report" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/u> a bf:Status ;
+    rdfs:label "unknown",
+        "unknown"@en .
+
+<https://id.oclc.org/worldcat/entity/1427437531> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1427437531#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918574081206676" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024228238" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1427437531" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1427437531#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/orig> ;
+            rdfs:label "Online"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://niced.org.in/publications/NICED-AnnualReports.htm" ;
+            bf:electronicLocator <http://niced.org.in/publications/NICED-AnnualReports.htm> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 2018/2019; title from 2018/2019 pdf cover (publisher's website, viewed March 13, 2024)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 2021/2022 (viewed March 13, 2024)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with 2018/2019; ceased with 2021/2022?"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New Delhi] : India Council of Medical Research ; $b National Institute of Cholera & Enteric Diseases, $c [2018]-" ;
+            bflc:simpleAgent "National Institute of Cholera & Enteric Diseases," ;
+            bflc:simpleDate "[2018]-" ;
+            bflc:simplePlace "[New Delhi] : India Council of Medical Research ;" ;
+            bf:date "2018~/202X~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ii> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current>,
+                <http://id.loc.gov/vocabulary/mstatus/u> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Kolkata, India] : $c [2018]-" ;
+            bflc:simpleDate "[2018]-" ;
+            bflc:simplePlace "[Kolkata, India] :" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/u> ] ;
+    bf:publicationStatement "[Kolkata, India] : [2018]-",
+        "[New Delhi] : India Council of Medical Research ; National Institute of Cholera & Enteric Diseases, [2018]-" ;
+    bf:responsibilityStatement "ICMR - National Institute of Cholera and Enteric Diseases." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Achievements and activities /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Achievements and activities /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

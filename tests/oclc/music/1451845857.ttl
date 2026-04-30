@@ -1,0 +1,403 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<https://id.oclc.org/worldcat/entity/1451845857#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250911162535.6" ;
+    bf:creationDate "20240807" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1451845857> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1451845857#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "DVD"@en ] ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ],
+        [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "CD"@en ] ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Feld, Steven, $e filmmaker, $e recordist." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Feld, Steven," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "recordist." ],
+                [ a bf:Role ;
+                    rdfs:label "filmmaker," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Annan, Nii Otoo, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Annan, Nii Otoo," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000201" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "sound recordings." ;
+            bflc:marcKey "655  7 $a sound recordings. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028633" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "video recordings (physical artifacts)" ;
+            bflc:marcKey "655  7 $a video recordings (physical artifacts) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028682" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sound recordings." ;
+            bflc:marcKey "655  7 $a Sound recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866572" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings." ;
+            bflc:marcKey "655  7 $a Video recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866701" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos." ;
+            bflc:marcKey "655  7 $a Vidéos. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001738" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a fw-----" ;
+            bf:code "fw-----" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/fw> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e------" ;
+            bf:code "e------" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1451845857> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Steven Feld, video and sound; Jeremiah Ra Richards, editing."@en ;
+            bflc:marcKey "508    $a Steven Feld, video and sound; Jeremiah Ra Richards, editing." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Nii Otoo Annan, percussionist."@en ;
+            bflc:marcKey "511 0  $a Nii Otoo Annan, percussionist." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "650  6 $a Documentaires." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0018434" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "bells (idiophones)" ;
+            bflc:marcKey "650  7 $a bells (idiophones) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300041872" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Bells." ;
+            bflc:marcKey "650  0 $a Bells." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2077111" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Soundscapes (Music) Europe." ;
+            bflc:marcKey "650  0 $a Soundscapes (Music) $z Europe." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Soundscapes (Music)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6107653" ] ] [ a bf:Geographic ;
+                        rdfs:label "Europe." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2141674" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Cloches." ;
+            bflc:marcKey "650  6 $a Cloches." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0004721" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Paysages sonores (Musique) Europe." ;
+            bflc:marcKey "650  6 $a Paysages sonores (Musique) $z Europe." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Paysages sonores (Musique)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0474440" ] ] [ a bf:Geographic ;
+                        rdfs:label "Europe." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0421387" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "650  0 $a Documentary films." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2042120" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Paysages sonores (Musique) Afrique occidentale." ;
+            bflc:marcKey "650  6 $a Paysages sonores (Musique) $z Afrique occidentale." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Paysages sonores (Musique)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0474440" ] ] [ a bf:Geographic ;
+                        rdfs:label "Afrique occidentale." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0386866" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Soundscapes (Music) Africa, West." ;
+            bflc:marcKey "650  0 $a Soundscapes (Music) $z Africa, West." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Soundscapes (Music)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6107653" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa, West." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2002049" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "DVD includes six short videos about bells in Europe and West Africa. The first two videos show bell-dressed carnival dances in Sardinia (Italy) and Skyros (Greece). The third piece shows car horn and hand bell musical performances in Accra by the La Drivers Union Por Por Group. The fourth piece features Nil Otoo Annan performing his Bufo Variations on an instrument of his own invention, the gangofone, a rack of gangokui double bells. The fifth piece, made in collaboration with blacksmith Tom Joyce, documents the complete manufacture and tuning of gangokui double bells in Yohonou, a renown community of blacksmiths in Togo. The final piece features master blacksmith of Northern Togo who makes the ekpande bell, central to the Waa initiation performances of Kabre youth."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Mamuthones and issohadores of Mamoida, Sardinia (10:19) -- Carnival of Skyros (11:38) -- Por Por horns and double bells in Accra (12:33) -- Toad's and bells of Accra (13:13) -- Making double bells in Yohonou (16:03) -- Striking iron, sounding initiation (20:45)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The time of bells. 5 /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The time of bells." ;
+            bf:partNumber "5 /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<https://id.oclc.org/worldcat/entity/1451845857> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1451845857#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "DVD"@en ] ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ],
+        [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "CD"@en ] ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "polychrome."@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacc" ] ],
+        <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2012"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "DVD video"@en ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (83 min., 51 sec.) :"@en ],
+        [ a bf:Extent ;
+            rdfs:label "1 audio disc :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1451845857" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1451845857#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "CD"@en ] ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ],
+        [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "DVD"@en ] ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from DVD disc label."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes a bonus sound disc and booklet \"The time of bells, 2: soundscapes of Finland, Norway, Italy and Greece\" featuring audio soundscapes of cathedral bells of Turku, Finland and Oslo, Norway, bells and brass bands of May Day in Oslo, festival bells and bagpipes of Basilicata, Southern Italy, and carnival bells of Skyros, Greece. The disc was produced and recorded by Steven Feld in 2004."@en ],
+        [ a bf:Note ;
+            rdfs:label "Liner notes for the compact disc laid in container."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD-R."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Sante Fe, N.M.] : $b VoxLox, $c [2012]" ;
+            bflc:simpleAgent "VoxLox," ;
+            bflc:simpleDate "[2012]" ;
+            bflc:simplePlace "[Sante Fe, N.M.] :" ;
+            bf:date "2012"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nmu> ] ;
+    bf:publicationStatement "[Sante Fe, N.M.] : VoxLox, [2012]" ;
+    bf:responsibilityStatement "Steven Feld." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The time of bells. 5 /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The time of bells." ;
+            bf:partNumber "5 /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+

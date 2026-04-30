@@ -1,0 +1,312 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/contentTypes/tdi> a bf:Content ;
+    rdfs:label "two-dimensional moving image"@en ;
+    bf:code "tdi" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/amim> a bf:DescriptionConventions ;
+    bf:code "amim" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lcode> a bf:DescriptionAuthentication ;
+    bf:code "lcode" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/5> a bflc:EncodingLevel ;
+    rdfs:label "preliminary"@en ;
+    bf:code "5" .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1389184556#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/5> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250727162753.8" ;
+    bf:creationDate "20230117" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lcode> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/amim> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCF $d OCLCO $d OCLCQ $d OCLCL $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1389184556> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFFQmFGf3YFqJbrXFfj4pX> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "967.5710431" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3F73jqhkPwvtKh6mjXrRyyWXt> ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/tdi> ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Basset, Laurent, $e direction." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Basset, Laurent," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "direction." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a CAG Museum. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpX94YcXMrf3YWymxPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpX94YcXMrf3YWymxPF> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hall, Richard $c (Television producer and director), $e production, $e writing." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hall, Richard (Television producer and director)," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15456563" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writing." ],
+                [ a bf:Role ;
+                    rdfs:label "production," ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films" ;
+            bflc:marcKey "655  7 $a Nonfiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710269" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1389184556> ;
+    bf:language [ a bf:Language ;
+            bf:code "kin" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/kin> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Narrator: Raymond Karogo."@en ;
+            bflc:marcKey "511 0  $a Narrator: Raymond Karogo." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English and Kinyarwanda, with English subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Co-executive producer Annette Uwizeye ; production manager, Adam Manzi ; editors, MikkaTokuda-Hall, Mathys Vande Bruggen ; casting director, Jean Kwezi."@en ;
+            bflc:marcKey "508    $a Co-executive producer Annette Uwizeye ; production manager, Adam Manzi ; editors, MikkaTokuda-Hall, Mathys Vande Bruggen ; casting director, Jean Kwezi." ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The little known story of a surrounded battalion of 600 men and women that started the counterattack to end the Rwandan Genocide against the Tutsi in 1994."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The 600, the soldiers story /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The 600, the soldiers story /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Six hundred" ;
+            bf:mainTitle "Six hundred" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Soldier's story" ;
+            bf:mainTitle "Soldier's story" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpX94YcXMrf3YWymxPF> a bf:Organization ;
+    rdfs:label "CAG Museum." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca15430085" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<https://id.oclc.org/worldcat/entity/1389184556> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1389184556#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:editionStatement "[English language subtitled version]." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc of 1 (DVD) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1389184556" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023320070" ] ;
+    bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
+            rdfs:label "Purchase."@en ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFFQmFGf3YFqJbrXFfj4pX> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ],
+        [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Source of title: Disc label."@en ],
+        [ a bf:Note ;
+            rdfs:label "Copyright notice on video: Great Blue Productions ; 2019."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sd., col. ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Rwanda."@en ;
+            bflc:marcKey "257    $a Rwanda." ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a [Kigali] : $b Great Blue Productions, $c c2019." ;
+            bflc:simpleAgent "Great Blue Productions," ;
+            bflc:simpleDate "c2019." ;
+            bflc:simplePlace "[Kigali] :" ;
+            bf:date "2019"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/rw> ] ;
+    bf:publicationStatement "[Kigali] : Great Blue Productions, c2019." ;
+    bf:responsibilityStatement "Courtesy of the CAG Museum ; executive producer-writer, Richard Hall ; directed by Laurent Basset." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The 600, the soldiers story /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The 600, the soldiers story /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

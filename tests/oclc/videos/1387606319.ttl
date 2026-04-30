@@ -1,0 +1,290 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/contentTypes/tdi> a bf:Content ;
+    rdfs:label "two-dimensional moving image"@en ;
+    bf:code "tdi" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1387606319#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20260315224600.9" ;
+    bf:creationDate "20230621" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "AU@" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d AU@ $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1387606319> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1387606319#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "Originally produced by David A. Fanella in 2023."@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "624.72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TA645" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/tdi> ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a McGraw-Hill Education LLC. $e publisher." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "McGraw-Hill Education LLC." ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Fanella, David A. $u Ph.D., S.E., P.E., Senior Director of Engineering, CRSI." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Fanella, David A. Ph.D., S.E., P.E., Senior Director of Engineering, CRSI." ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1387606319> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English."@en ] ;
+    bf:originDate "2023" ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a McGraw-Hill's AccessEngineering" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "McGraw-Hill's AccessEngineering" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:provisionActivityStatement "New York, N.Y. : McGraw-Hill Education, 2023" ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Ice Loads : 2024 IBC and ASCE/SEI 7-22." ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Ice Loads : 2024 IBC and ASCE/SEI 7-22." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "McGraw-Hill's AccessEngineering." ;
+                    bflc:marcKey "830  0 $a McGraw-Hill's AccessEngineering." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca13946909" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "McGraw-Hill's AccessEngineering." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Structural analysis (Engineering)" ;
+            bflc:marcKey "650  7 $a Structural analysis (Engineering) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01135602" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Théorie des constructions." ;
+            bflc:marcKey "650  6 $a Théorie des constructions." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0015598" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Structural analysis (Engineering)" ;
+            bflc:marcKey "650  0 $a Structural analysis (Engineering)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2153609" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Loads (Mechanics)" ;
+            bflc:marcKey "650  0 $a Loads (Mechanics)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca6873946" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Loads (Mechanics)" ;
+            bflc:marcKey "650  7 $a Loads (Mechanics) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01739107" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "structural analysis." ;
+            bflc:marcKey "650  7 $a structural analysis. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300056397" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Charges." ;
+            bflc:marcKey "650  6 $a Charges." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "000269976" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This Excel workbook determines ice loads in accordance with the 2024 IBC and ASCE/SEI 7-22. Ice load calculations are performed in Imperial and metric units for chimneys and tanks and for solid freestanding walls and signs."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ice Loads :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ice Loads :" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1387606319> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1387606319#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "other"@en ;
+            bf:code "vz" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vz> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 Volume."@en ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "McGraw-Hill Education LLC" ] ;
+            rdf:value "S0081" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1507693561" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1387606319" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1387606319#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ],
+        [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from title Spreadsheet."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "System requirements: Excel packages."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on title URL and its spreadsheet viewed on June 21, 2023."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Mode of access: World Wide Web."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "Collection: AccessEngineering" ;
+            bflc:marcKey "856 41 $z Available to Stanford-affiliated users. $u https://www.accessengineeringlibrary.com/content/calculator/S0081_Ice_Loads_2024_IBC_and_ASCE-SEI_7-22 $y AccessEngineering $x Provider: McGraw-Hill $x Collection: AccessEngineering $x subscribed $x eLoaderURL $x ae4 $x aeS0081" ;
+            bf:electronicLocator <http://www.accessengineeringlibrary.com/content/calculator/S0081_Ice_Loads_2024_IBC_and_ASCE-SEI_7-22> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: McGraw-Hill"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "AccessEngineering"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, N.Y. : $b McGraw-Hill Education LLC., $c c2023" ;
+            bflc:simpleAgent "McGraw-Hill Education LLC.," ;
+            bflc:simpleDate "c2023" ;
+            bflc:simplePlace "New York, N.Y. :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York, N.Y. : McGraw-Hill Education LLC., c2023" ;
+    bf:responsibilityStatement "David A. Fanella." ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ice Loads : 2024 IBC and ASCE/SEI 7-22 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ice Loads :" ;
+            bf:subtitle "2024 IBC and ASCE/SEI 7-22 /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

@@ -1,0 +1,223 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/qrt> a bf:Frequency ;
+    rdfs:label "quarterly"@en ;
+    bf:code "qrt" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/msc> a bf:DescriptionAuthentication ;
+    bf:code "msc" .
+
+<http://id.loc.gov/vocabulary/menclvl/8> a bflc:EncodingLevel ;
+    rdfs:label "prepublication"@en ;
+    bf:code "8" .
+
+<http://id.loc.gov/vocabulary/millus/mus> a bf:Illustration ;
+    rdfs:label "music"@en ;
+    bf:code "mus" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/mag> a bflc:SerialPubType ;
+    rdfs:label "magazine"@en ;
+    bf:code "mag" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1407415286#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/8> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20231106094450.9" ;
+    bf:creationDate "20231106" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/msc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d DLC" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1407415286> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1407415286#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/mag> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "ISSN RECORD" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a California Pharmacists Association, $e issuing body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "California Pharmacists Association," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca2336418" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "California pharmacist (2024 : Online)" ;
+            bflc:marcKey "130 0  $a California pharmacist (2024 : Online)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "California pharmacist (2024 : Online)" ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1407415286> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "1" ] ;
+            rdf:value "2995-2085" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/mus> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1407415290#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Print version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/988075585#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "California pharmacist." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California pharmacist." ] .
+
+<https://id.oclc.org/worldcat/entity/1407415290#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2023202643" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1407415290" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "California pharmacist (2024)" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2995-2077" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "California pharmacist (2024)" ] .
+
+<https://id.oclc.org/worldcat/entity/988075585#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "988075585" ],
+                [ a bf:Lccn ;
+                    rdf:value "  2017201394" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Journal of contemporary pharmacy practice" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2573-2765" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Journal of contemporary pharmacy practice" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1407415286> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1407415286#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Quarterly"@en ;
+            bflc:marcKey "310    $a Quarterly" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/qrt> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1407415286" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023202644" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1407415286#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "An official publication of the California Pharmacists Association."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://meridian.allenpress.com/jcphp" ;
+            bf:electronicLocator <http://meridian.allenpress.com/jcphp> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:projectedProvisionDate "202403" ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Sacramento, California : $b Susan Bonilla, $c 2024-" ;
+            bflc:simpleAgent "Susan Bonilla," ;
+            bflc:simpleDate "2024-" ;
+            bflc:simplePlace "Sacramento, California :" ;
+            bf:date "2024/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Sacramento, California : Susan Bonilla, 2024-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "California pharmacist." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California pharmacist." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

@@ -1,0 +1,1259 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1365399009#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20241204192018.1" ;
+    bf:creationDate "20230125" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "GUA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "IUK" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d GUA $d OCLCF $d OCLCA $d IUK $d OCLCO $d OCLCL $d OCLCA $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1365399009> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJB4gCkfx6HQFrxQmpg3Qq> a bf:Person ;
+    rdfs:label "Jensen, Henning, 1943-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10201482" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJbH34kQHY4xRpr87YCmh3> a bf:Person ;
+    rdfs:label "Elphick, Michael, 1946-2002," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5347154" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJg4mPt3KVDYp7yPHf9hpP> a bf:Person ;
+    rdfs:label "Barr, Jean-Marc, 1960-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5143326" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgCQGrkkQPmVKDTDykbh3> a bf:Person ;
+    rdfs:label "Gislason, Tómas, 1961-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6402295" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhH4F7FqHRH6WJ36x4rMP> a bf:Person ;
+    rdfs:label "Kier, Udo." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4247200" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhd7b8vfMvyrG69dCDQbd> a bf:Person ;
+    rdfs:label "Holten, Bo," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca676960" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJj4vJHVkHXbWM6xjQq4v3> a bf:Person ;
+    rdfs:label "Christensen, Bo, 1937-2020," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5189830" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjtdYthtdtgv3bG6hHHmd> a bf:Person ;
+    rdfs:label "Bendtsen, Henning, 1925-2011," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10025169" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJk4yCc78BpByHVqQTfg8C> a bf:Person ;
+    rdfs:label "Lai, Me Me," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5347155" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkHkMJkkbD3RV3JyQYByd> a bf:Person ;
+    rdfs:label "Reenberg, Jørgen, 1927-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8088294" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkXxtt6kV46RJYFkGhPwC> a bf:Person ;
+    rdfs:label "Hansen, Claes Kastholm," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1104561" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpYvCVbQTCPTypfBB6R8C> a bf:Person ;
+    rdfs:label "Bach, Peter (Composer)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca15093314" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpYxJdhhQcXfcKJ4gy8G3> a bf:Person ;
+    rdfs:label "Kłosiński, Edward, 1943-2008," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7553296" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpdQMVhkT3cP4MD9kYkjC> a bf:Person ;
+    rdfs:label "Knight, Esmond, 1906-1987," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5303598" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJptYxBrcBG97cXjgFFHYP> a bf:Person ;
+    rdfs:label "Sydow, Max von, 1929-2020," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1786724" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJt3YmtT9tMJkMG8TqgtKd> a bf:Person ;
+    rdfs:label "Vørsel, Niels," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6468870" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Germany" ;
+    bflc:marcKey "651  7 $a Germany $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01210272" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtX6W67JJRJdw9Br6KPQq> a bf:Person ;
+    rdfs:label "Järegård, Ernst-Hugo, 1928-1998," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5866168" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvt4G9tvJm869vd46RVG3> a bf:Person ;
+    rdfs:label "Jensen, Peter Aalbæk, 1956-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4567505" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvt4RxCRXHY46YH6kg9Xd> a bf:Person ;
+    rdfs:label "Holbek, Joachim," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5537560" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvxpfJbhycyDxkwjT9FKd> a bf:Person ;
+    rdfs:label "Wells, Jerold, 1908-1999," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11827034" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwmRbWdxHBVMvkxHggkDq> a bf:Person ;
+    rdfs:label "Constantine, Eddie, 1917-1993," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1894849" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxH47DGHM64kpvXGB8V4q> a bf:Person ;
+    rdfs:label "Trier, Lars von, 1956-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4310340" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyGYMfxMwWKjvDdPyP84q> a bf:Person ;
+    rdfs:label "Sukowa, Barbara, 1950-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3264612" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyxbXjwDc98wdf8V88Bfq> a bf:Person ;
+    rdfs:label "Schneid, Hervé," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6065587" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFRFJJr79gX7vdkrKpy6JC> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sukowa, Barbara, $d 1950- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyGYMfxMwWKjvDdPyP84q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyGYMfxMwWKjvDdPyP84q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kłosiński, Edward, $d 1943-2008, $e director of photograpy. $1 https://id.oclc.org/worldcat/entity/E39PBJpYxJdhhQcXfcKJ4gy8G3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpYxJdhhQcXfcKJ4gy8G3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photograpy." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sydow, Max von, $d 1929-2020, $e narrator. $1 https://id.oclc.org/worldcat/entity/E39PBJptYxBrcBG97cXjgFFHYP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJptYxBrcBG97cXjgFFHYP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "narrator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Knight, Esmond, $d 1906-1987, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJpdQMVhkT3cP4MD9kYkjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpdQMVhkT3cP4MD9kYkjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lai, Me Me, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJk4yCc78BpByHVqQTfg8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJk4yCc78BpByHVqQTfg8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Elling, Tom, $e director of photography." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Elling, Tom," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15091941" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bendtsen, Henning, $d 1925-2011, $e director of photography. $1 https://id.oclc.org/worldcat/entity/E39PBJjtdYthtdtgv3bG6hHHmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJjtdYthtdtgv3bG6hHHmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Schneid, Hervé, $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PBJyxbXjwDc98wdf8V88Bfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyxbXjwDc98wdf8V88Bfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Criterion Collection (Firm) $1 https://id.oclc.org/worldcat/entity/E39QH7JmmY36KGgVxcHG8vKCp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmmY36KGgVxcHG8vKCp6> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Reenberg, Jørgen, $d 1927- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJkHkMJkkbD3RV3JyQYByd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkHkMJkkbD3RV3JyQYByd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wells, Jerold, $d 1908-1999, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJvxpfJbhycyDxkwjT9FKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvxpfJbhycyDxkwjT9FKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hansen, Claes Kastholm, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJkXxtt6kV46RJYFkGhPwC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkXxtt6kV46RJYFkGhPwC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Trier, Lars von, $d 1956- $e film director, $e screenwriter, $e actor, $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PBJxH47DGHM64kpvXGB8V4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxH47DGHM64kpvXGB8V4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "actor," ],
+                [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jensen, Peter Aalbæk, $d 1956- $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJvt4G9tvJm869vd46RVG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvt4G9tvJm869vd46RVG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gislason, Tómas, $d 1961- $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PBJgCQGrkkQPmVKDTDykbh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgCQGrkkQPmVKDTDykbh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Constantine, Eddie, $d 1917-1993, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJwmRbWdxHBVMvkxHggkDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwmRbWdxHBVMvkxHggkDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mørk, Erik, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PCjDpHjhq9F8q7VXvmgrhd3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjDpHjhq9F8q7VXvmgrhd3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Krag, Thomas, $e editor of moving image work." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Krag, Thomas," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15093227" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jensen, Henning, $d 1943- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJB4gCkfx6HQFrxQmpg3Qq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJB4gCkfx6HQFrxQmpg3Qq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Vørsel, Niels, $e screenwriter, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJt3YmtT9tMJkMG8TqgtKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJt3YmtT9tMJkMG8TqgtKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ottesen, Susanne, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PCjCj7XHMyM4Wt3YF3jRxWC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjCj7XHMyM4Wt3YF3jRxWC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Holten, Bo, $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39PBJhd7b8vfMvyrG69dCDQbd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhd7b8vfMvyrG69dCDQbd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bach, Peter $c (Composer), $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39PBJpYvCVbQTCPTypfBB6R8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpYvCVbQTCPTypfBB6R8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Järegård, Ernst-Hugo, $d 1928-1998, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJtX6W67JJRJdw9Br6KPQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtX6W67JJRJdw9Br6KPQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Holbek, Joachim, $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39PBJvt4RxCRXHY46YH6kg9Xd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvt4RxCRXHY46YH6kg9Xd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Barr, Jean-Marc, $d 1960- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJg4mPt3KVDYp7yPHf9hpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJg4mPt3KVDYp7yPHf9hpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Christensen, Bo, $d 1937-2020, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJj4vJHVkHXbWM6xjQq4v3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJj4vJHVkHXbWM6xjQq4v3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Elphick, Michael, $d 1946-2002, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJbH34kQHY4xRpr87YCmh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJbH34kQHY4xRpr87YCmh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kier, Udo. $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJhH4F7FqHRH6WJ36x4rMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhH4F7FqHRH6WJ36x4rMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Meurisse, Jean-Paul, $e director of photograpy. $1 https://id.oclc.org/worldcat/entity/E39PCjtDJ3XMGFtDpXyPrg4Dv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjtDJ3XMGFtDpXyPrg4Dv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photograpy." ] ] ;
+    bf:duration "PT5H21M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Films)" ;
+            bflc:marcKey "655  7 $a Thrillers (Films) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000075" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "War films" ;
+            bflc:marcKey "655  7 $a War films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710402" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Detective and mystery films" ;
+            bflc:marcKey "655  7 $a Detective and mystery films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710476" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Motion pictures)" ;
+            bflc:marcKey "655  7 $a Thrillers (Motion pictures) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866670" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Experimental films." ;
+            bflc:marcKey "655  7 $a Experimental films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866219" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Motion pictures)" ;
+            bflc:marcKey "655  7 $a Thrillers (Motion pictures) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726193" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Experimental films" ;
+            bflc:marcKey "655  7 $a Experimental films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710354" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ;
+            bflc:marcKey "655  7 $a Fiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710264" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "War films." ;
+            bflc:marcKey "655  7 $a War films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de détective." ;
+            bflc:marcKey "655  7 $a Films de détective. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000089" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films expérimentaux." ;
+            bflc:marcKey "655  7 $a Films expérimentaux. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000095" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Detective and mystery films." ;
+            bflc:marcKey "655  7 $a Detective and mystery films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866179" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-gx---" ;
+            bf:code "e-gx---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-gx> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1365399009> ;
+    bf:language [ a bf:Language ;
+            bf:code "ger" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "dan" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/dan> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English dialogue (The element of crime); Danish and English dialogues (Epidemic), English and German dialogues (Europa); English subtitles for Epidemic and Europa ; English subtitled for the deaf and hard of hearing (SDH) for all three films."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Epidemic: Lars von Trier, Niels Vørsel, Claes Kastholm Hansen, Susanne Ottesen, Udo Kier."@en ;
+            bflc:marcKey "511 1  $a Epidemic: Lars von Trier, Niels Vørsel, Claes Kastholm Hansen, Susanne Ottesen, Udo Kier." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Europa: Udo Kier, Jean-Marc Barr, Barbara Sukowa, Ernst-Hugo Järegård, Erik Mørk, Jørgen Reenberg, Henning Jensen, Eddie Constantine, Lars Von Trier; narrator, Max Von Sydow."@en ;
+            bflc:marcKey "511 1  $a Europa: Udo Kier, Jean-Marc Barr, Barbara Sukowa, Ernst-Hugo Järegård, Erik Mørk, Jørgen Reenberg, Henning Jensen, Eddie Constantine, Lars Von Trier; narrator, Max Von Sydow." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Europa: directors of photography, Henning Bendtsen, Jean-Paul Meurisse, Edward Kłosiński; editor, Hervé Schneid; composer, Jokim Holbek."@en ;
+            bflc:marcKey "508    $a Europa: directors of photography, Henning Bendtsen, Jean-Paul Meurisse, Edward Kłosiński; editor, Hervé Schneid; composer, Jokim Holbek." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "The dlement of crime: Michael Elphick, Esmond Knight, Meme Lai, Jerold Wells."@en ;
+            bflc:marcKey "511 1  $a The dlement of crime: Michael Elphick, Esmond Knight, Meme Lai, Jerold Wells." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Epidemic: director of photography, Henning Bendtsen; music, Peter Bach; editor, Lars Von Trier, Thomas Krag ; production company Elementfilm."@en ;
+            bflc:marcKey "508    $a Epidemic: director of photography, Henning Bendtsen; music, Peter Bach; editor, Lars Von Trier, Thomas Krag ; production company Elementfilm." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "The Element of crime: director of photography, Tom Elling; music, Bo Holten; editor, Tómas Gislason."@en ;
+            bflc:marcKey "508    $a The Element of crime: director of photography, Tom Elling; music, Bo Holten; editor, Tómas Gislason." ] ;
+    bf:originDate "1984",
+        "1987",
+        "1991" ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Nocturne." ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Nocturne." ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Nocturne." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Nocturne." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Element of crime" ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Element of crime" ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Element of crime" ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Element of crime" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Criterion collection ; $v 1168" ;
+                    bf:seriesEnumeration "1168" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Criterion collection ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Europa (Motion picture : 1991)" ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Europa (Motion picture : 1991)" ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Europa (Motion picture : 1991)" ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Europa (Motion picture : 1991)" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Epidemic (1987)" ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Epidemic (1987)" ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Epidemic (1987)" ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Epidemic (1987)" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Images of liberation." ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Images of liberation." ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Images of liberation." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Images of liberation." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Criterion collection ;" ;
+                    bflc:marcKey "830  0 $a Criterion collection ; $v 1168." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3521142" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Criterion collection ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "1168." ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Work ;
+                    bflc:marcKey "740 02 $a Forbrydelsens element." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Forbrydelsens element." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Epidemics" ;
+            bflc:marcKey "650  7 $a Epidemics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00914079" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Screenwriters" ;
+            bflc:marcKey "650  7 $a Screenwriters $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01109351" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Serial murder investigation" ;
+            bflc:marcKey "650  7 $a Serial murder investigation $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01113109" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Epidemics Drama." ;
+            bflc:marcKey "650  0 $a Epidemics $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Epidemics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2134368" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Railroad conductors Germany Drama." ;
+            bflc:marcKey "650  0 $a Railroad conductors $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Railroad conductors" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2028834" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Railroads Germany Drama." ;
+            bflc:marcKey "650  0 $a Railroads $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Railroads" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3159959" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3159959" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Ex-police officers Drama." ;
+            bflc:marcKey "650  0 $a Ex-police officers $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Ex-police officers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4492649" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Plague Drama." ;
+            bflc:marcKey "650  0 $a Plague $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Plague" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2143469" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Ex-police officers" ;
+            bflc:marcKey "650  7 $a Ex-police officers $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00917462" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Denazification Germany Drama." ;
+            bflc:marcKey "650  0 $a Denazification $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Denazification" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2084878" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Serial murderers" ;
+            bflc:marcKey "650  7 $a Serial murderers $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01113110" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Germany History 1945-1955 Drama." ;
+            bflc:marcKey "651  0 $a Germany $x History $y 1945-1955 $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2026638" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2026638" ] ] [ a bf:Temporal ;
+                        rdfs:label "1945-1955" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2026638" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Railroad conductors" ;
+            bflc:marcKey "650  7 $a Railroad conductors $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01088587" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Screenwriters Drama." ;
+            bflc:marcKey "650  0 $a Screenwriters $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Screenwriters" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2090987" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Railroads" ;
+            bflc:marcKey "650  7 $a Railroads $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01088711" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Serial murder investigation Germany Drama." ;
+            bflc:marcKey "650  0 $a Serial murder investigation $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Serial murder investigation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3929363" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "1945-1955" ;
+            bflc:marcKey "648  7 $a 1945-1955 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Plague" ;
+            bflc:marcKey "650  7 $a Plague $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01065045" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Denazification" ;
+            bflc:marcKey "650  7 $a Denazification $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00890254" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Serial murderers Germany Drama." ;
+            bflc:marcKey "650  0 $a Serial murderers $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Serial murderers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3812560" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Europa: \"An idealistic American (Jean-Marc Barr) travels to postwar Germany to take a job as a sleeping-car conductor for the Zentropa railways- and finds himself plunged into a murky, Kafkaesque world of intrigue and betrayal where the shadow of Nazism hovers menacingly over everything.\"--Publish' website."@en ],
+        [ a bf:Summary ;
+            rdfs:label "The element of crime: \"From his exile in Cairo, a former police investigator (Michael Elphick) undergoes hypnosis in order to relive his memories of Europe and his last case, for which he went to dangerous lengths to enter into the mind of and catch a serial killer targeting children.\"--Publisher's website."@en ],
+        [ a bf:Summary ;
+            rdfs:label "Epidemic: \"The filmmaker himself stars as a harried screenwriter whose efforts to complete a script about the outbreak of a deadly disease coincide with a grisly real-life plague.\"--Publisher's website."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "The element of crime (AKA : Forbrydelsens element, 1984, 103 min., color, 1.89:1, mono) / Per Holist Filmproduction presents ; directed by Lars von Trier ; screenplay by Lars von Terier & Niels Vørsel -- Epidemic (1987, 106 min., black and white/color, 1.66:1, mono) / Lars von Trier, Elementfilm ; manuskript Lars von Trier & Niels Vørsel ; producer, Jacob Eriksen -- Europa (1991, 112 min., black and white/color, 2.39:1, stereo) / a Danish-French-German-Swedish coproduction ; produced by Gunner Obel & Nordisk Film & TV A/S [and 4 others] ; director, Lars von Trier ; producers, Peter Aalbæk Jensen, Bo Christensen ; screenplay: Lars von Terier & Niels Vørsel." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Lars von Trier's Europe trilogy :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Lars von Trier's Europe trilogy :" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Element of crime, Epidemic, Europa" ;
+            bf:mainTitle "Element of crime, Epidemic, Europa" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjCj7XHMyM4Wt3YF3jRxWC> a bf:Person ;
+    rdfs:label "Ottesen, Susanne," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10149768" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjDpHjhq9F8q7VXvmgrhd3> a bf:Person ;
+    rdfs:label "Mørk, Erik," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7553299" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjtDJ3XMGFtDpXyPrg4Dv3> a bf:Person ;
+    rdfs:label "Meurisse, Jean-Paul," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7275851" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmmY36KGgVxcHG8vKCp6> a bf:Organization ;
+    rdfs:label "Criterion Collection (Firm)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4753799" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1365399009> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1365399009#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "captions"@en ] ;
+    bf:copyrightDate "©2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region A"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionA> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:editionStatement "Blu-ray edition" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "3 videodiscs (103 min., 106 min., 112 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "(set)" ;
+            rdf:value "9798886070088" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Criterion Collection" ] ;
+            rdf:value "CC3432BD" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1365399009" ],
+        [ a bf:Upc ;
+            bf:qualifier "(set)" ;
+            rdf:value "715515280815" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFRFJJr79gX7vdkrKpy6JC> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Blu-ray; region A; requires Blu-ray player."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color, black and white."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally produced in Denmar as motion pictures in 1984, 1987, and 1991."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Blu-ray special features: 4K digital restoration of Europa and 3K digital restorations of The element of crime and Epidemic, all approved by director Lars von Trier, with uncompressed stereo or monaural soundtracks; audio commentaries featuring von Trier and others; Tranceformer: a portait of Lars von Trier (1997), a documentary by Stig Björkman; interview from 2005 with von Tier about Europe trilogy; making of commentaries; programs on the films featuring interviews with many of von Trier's collaborations ; two short student films by von Trier: Nocturne (1980) and Images of liberation (1982); Danish television interview with von Trier from 1991; trailers."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes booklet with essay by Howard Hampton (23 pages ; 17 cm.)."@en ],
+        [ a bf:Note ;
+            rdfs:label "Wide screen."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English SDH"@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Denmark"@en ;
+            bflc:marcKey "257    $a Denmark $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "stamping"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [United States] : $b The Criterion Collection, $c [2023]" ;
+            bflc:simpleAgent "The Criterion Collection," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "[United States] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "[United States] : The Criterion Collection, [2023]" ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "LPCM"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/lpcm> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "mono"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "except Europe"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mon> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Europe"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        <http://id.loc.gov/vocabulary/mplayback/mon>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Lars von Trier's Europe trilogy : The Element of crime ; Epidemic ; Europa" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Lars von Trier's Europe trilogy :" ;
+            bf:subtitle "The Element of crime ; Epidemic ; Europa" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/relationship/part> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

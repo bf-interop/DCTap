@@ -1,0 +1,475 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.kb.se/term/sao/Afrikaner> a bf:Topic ;
+    rdfs:label "Afrikaner." ;
+    bflc:marcKey "650  7 $a Afrikaner. $0 https://id.kb.se/term/sao/Afrikaner $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Asiater> a bf:Topic ;
+    rdfs:label "Asiater." ;
+    bflc:marcKey "650  7 $a Asiater. $0 https://id.kb.se/term/sao/Asiater $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Europ%C3%A9er> a bf:Topic ;
+    rdfs:label "Européer." ;
+    bflc:marcKey "650  7 $a Européer. $0 https://id.kb.se/term/sao/Europ%C3%A9er $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/F%C3%B6re%201500> a bf:Temporal ;
+    rdfs:label "Före 1500" ;
+    bflc:marcKey "648  7 $a Före 1500 $0 https://id.kb.se/term/sao/F%C3%B6re%201500 $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.oclc.org/worldcat/entity/1377311435#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250804200515.5" ;
+    bf:creationDate "20230425" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCF $d OCLCO $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1377311435> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFVf9rBPyCyK6gQJFJm7xP> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "GN370" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "304.809" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3JR7phY3PtGgB9fdX9gHkYgMp> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@sv ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Preiser-Kapeller, Johannes. $4 edt" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Preiser-Kapeller, Johannes." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Stouraitis, Yannis. $4 edt" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Stouraitis, Yannis." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Reinfandt, Lucian. $4 edt" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Reinfandt, Lucian." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1377311435> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9789004425613" ] ;
+                            bf:provisionActivityStatement "Leiden ; Boston : Brill, 2020." ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Migration histories of the medieval afroeurasian transition zone" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Migration histories of the medieval afroeurasian transition zone" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 0  $a Studies in global migration history ; $v volume 13" ;
+                    bf:seriesEnumeration "volume 13" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Studies in global migration history ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 0  $a Studies in global social history, $x 18746705 ; $v volume 39" ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "18746705 ;" ] ;
+                    bf:seriesEnumeration "volume 39" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Studies in global social history," ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Asians Migrations" ;
+            bflc:marcKey "650  7 $a Asians $x Migrations $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Asians" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01765348" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01765348" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "To 1500" ;
+            bflc:marcKey "648  7 $a To 1500 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Migration historia." ;
+            bflc:marcKey "650  7 $a Migration $x historia. $2 sao" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Migration" ] [ a bf:Topic ;
+                        rdfs:label "historia." ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Europa." ;
+            bflc:marcKey "651  7 $a Europa. $0 https://id.kb.se/term/sao/Europa $2 sao" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+            skos:relatedMatch <https://id.kb.se/term/sao/Europa> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Europeans Migrations History To 1500." ;
+            bflc:marcKey "650  0 $a Europeans $x Migrations $x History $y To 1500." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Europeans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2133059" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2133059" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1500." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Asien." ;
+            bflc:marcKey "651  7 $a Asien. $0 https://id.kb.se/term/sao/Asien $2 sao" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+            skos:relatedMatch <https://id.kb.se/term/sao/Asien> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Africans Migrations" ;
+            bflc:marcKey "650  7 $a Africans $x Migrations $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Africans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799945" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00799945" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Africans Migrations History To 1500." ;
+            bflc:marcKey "650  0 $a Africans $x Migrations $x History $y To 1500." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Africans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3076274" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3076274" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1500." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Asians Migrations History To 1500." ;
+            bflc:marcKey "650  0 $a Asians $x Migrations $x History $y To 1500." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Asians" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6544752" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6544752" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1500." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Europeans Migrations" ;
+            bflc:marcKey "650  7 $a Europeans $x Migrations $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Europeans" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00916827" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00916827" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Human beings Migrations History To 1500." ;
+            bflc:marcKey "650  0 $a Human beings $x Migrations $x History $y To 1500." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Human beings" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2083784" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2083784" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1500." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5728379" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Human beings Migrations" ;
+            bflc:marcKey "650  7 $a Human beings $x Migrations $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Human beings" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00962853" ] ] [ a bf:Topic ;
+                        rdfs:label "Migrations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00962853" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Afrika." ;
+            bflc:marcKey "651  7 $a Afrika. $0 https://id.kb.se/term/sao/Afrika $2 sao" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+            skos:relatedMatch <https://id.kb.se/term/sao/Afrika> ],
+        <https://id.kb.se/term/sao/Afrikaner>,
+        <https://id.kb.se/term/sao/Asiater>,
+        <https://id.kb.se/term/sao/Europ%C3%A9er>,
+        <https://id.kb.se/term/sao/F%C3%B6re%201500> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The transition zone between Africa, Asia and Europe was the most important intersection of human mobility in the medieval period. The present volume for the first time systematically covers migration histories of the regions between the Mediterranean and Central Asia and between Eastern Europe and the Indian Ocean in the centuries from Late Antiquity up to the early modern era. Within this framework, specialists from Byzantine, Islamic, Medieval and African history provide detailed analyses of specific regions and groups of migrants, both elites and non-elites as well as voluntary and involuntary. Thereby, also current debates of migration studies are enriched with a new dimension of deep historical time. Contributors are: Alexander Beihammer, Lutz Berger, Florin Curta, Charalampos Gasparis, George Hatke, Dirk Hoerder, Johannes Koder, Johannes Preiser-Kapeller, Lucian Reinfandt, Youval Rotman, Yannis Stouraitis, Panayiotis Theodoropoulos, and Myriam Wissa\"-- Provided by publisher."@sv ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Migration histories of the medieval Afroeurasian transition zone :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Migration histories of the medieval Afroeurasian transition zone :" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1377311435> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1377311435#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@sv ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "25 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiii, 478 pages"@sv ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9004382496" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1377311435" ],
+        [ a bf:Lccn ;
+            rdf:value "  2019059351" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(hardback)" ;
+            rdf:value "9789004382497" ],
+        [ a bf:Isbn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9789004425613" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFVf9rBPyCyK6gQJFJm7xP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations"@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Boston : $c 2020" ;
+            bflc:simpleDate "2020" ;
+            bflc:simplePlace "Boston :" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Leiden ; $b Brill, $c 2020" ;
+            bflc:simpleAgent "Brill," ;
+            bflc:simpleDate "2020" ;
+            bflc:simplePlace "Leiden ;" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ne> ] ;
+    bf:publicationStatement "Boston : 2020",
+        "Leiden ; Brill, 2020" ;
+    bf:responsibilityStatement "edited by Johannes Preiser-Kapeller, Lucian Reinfandt, Yannis Stouraitis." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Migration histories of the medieval Afroeurasian transition zone : aspects of mobility between Africa, Asia and Europe, 300-1500 C.E." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Migration histories of the medieval Afroeurasian transition zone :" ;
+            bf:subtitle "aspects of mobility between Africa, Asia and Europe, 300-1500 C.E." ] .
+
+<http://id.loc.gov/vocabulary/relators/edt> a bf:Role ;
+    bf:code "edt" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sao> a bf:Source ;
+    bf:code "sao" .
+

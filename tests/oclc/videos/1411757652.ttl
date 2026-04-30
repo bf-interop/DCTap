@@ -1,0 +1,393 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1411757652#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20260320104348.4" ;
+    bf:creationDate "20231204" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1411757652> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1411757652#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "JC591" ;
+            bf:itemPortion ".F74 2023" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bentov, Elan, $e film director, $e director of photography, $e screen writer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Bentov, Elan," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography," ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screen writer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Free To Choose Media. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqK9dk77HB8ytWBGMJt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqK9dk77HB8ytWBGMJt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a American Public Television. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqrQcGWf4Cvm8RXDhTR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqrQcGWf4Cvm8RXDhTR> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Strossen, Nadine, $e host. $1 https://id.oclc.org/worldcat/entity/E39PBJdcCrxtkvdv4bGTFktkDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdcCrxtkvdv4bGTFktkDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "host." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Perry, Kip, $e film director, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Perry, Kip," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer." ] ] ;
+    bf:duration "PT3H"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentary films"@en ;
+            bflc:marcKey "380    $a Documentary films $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs." ;
+            bflc:marcKey "655  7 $a Documentary television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires télévisés." ;
+            bflc:marcKey "655  7 $a Documentaires télévisés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000018" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary television programs" ;
+            bflc:marcKey "655  7 $a Documentary television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710387" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1411757652> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Closed-captioned."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Nadine Strossen, host; with numerous participants in each episode."@en ;
+            bflc:marcKey "511 0  $a Nadine Strossen, host; with numerous participants in each episode." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Directed by Kip Perry and Elan Bentov ; produced by Kip Perry. Executive producers: Thomas Skinner and Robert Chatfield ; director of photography and written by Elan Bentov. Project manager: Tara Schupp."@en ;
+            bflc:marcKey "508    $a Directed by Kip Perry and Elan Bentov ; produced by Kip Perry. Executive producers: Thomas Skinner and Robert Chatfield ; director of photography and written by Elan Bentov. Project manager: Tara Schupp." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Freedom of the press." ;
+            bflc:marcKey "650  0 $a Freedom of the press." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2010337" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Liberté d'expression." ;
+            bflc:marcKey "650  6 $a Liberté d'expression." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0022441" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Censorship History." ;
+            bflc:marcKey "650  0 $a Censorship $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Censorship" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2131914" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Freedom of speech." ;
+            bflc:marcKey "650  0 $a Freedom of speech." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2010298" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Liberté de la presse." ;
+            bflc:marcKey "650  6 $a Liberté de la presse." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0011547" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The speech we hate features a Kenyan filmmaker whose love story of two women garnered a nationwide ban. Viewers also meet a Turkish political artist who was censored for his provocative work in the U.S., a hip-hop historian who recalls the arrest of members of 2 Live Crew for obscenity, and a student who took a lawsuit over banned books in his school all the way to the Supreme Court."@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Disc 3"@en ] ],
+        [ a bf:Summary ;
+            rdfs:label "\"What is free speech? Is it an outdated idea? What about hate speech? This three-part series underscores how free speech is necessary for human survival as it presents thought-provoking, ironic, and often heartbreaking stories. Host Nadine Strossen is joined by free speech experts, critics, and defenders to examine its power and controversy historically and today.\"--Container."@en ],
+        [ a bf:Summary ;
+            rdfs:label "Challenging either religious or scientific dogma can prove explosive. The one true faith looks at the once-sacrilegious beliefs of Galileo and shows the uproar caused by the Scopes Monkey Trial. The program also examines the work of Nobel Laureate Barry Marshall, who proved that ulcers were caused by bacteria, and explores the cartoons published by Charlie Hebdo that led to a horrifying massacre."@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Disc 2"@en ] ],
+        [ a bf:Summary ;
+            rdfs:label "Thought police examines the long history of governments suppressing speech - with clear echoes of George Orwell's warning of a world without free speech. The program weaves personal stories from Hong Kong, North Korea, and Peru, whose governments tried to suppress free speech, one of them resulting in a monumental--and avoidable--human tragedy."@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Disc 1"@en ] ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Episode 1. Thought police -- Episode 2. The one true faith -- Episode 3. The speech we hate." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Free to speak /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Free to speak /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdcCrxtkvdv4bGTFktkDq> a bf:Person ;
+    rdfs:label "Strossen, Nadine," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2804553" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqK9dk77HB8ytWBGMJt> a bf:Organization ;
+    rdfs:label "Free To Choose Media." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8493898" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqrQcGWf4Cvm8RXDhTR> a bf:Organization ;
+    rdfs:label "American Public Television." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6242130" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1411757652> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1411757652#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:copyrightDate "©2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:RegionalEncoding ;
+            rdfs:label "all regions"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/all> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "3 videodiscs (180 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            rdf:value "793888381384" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1411757652" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1411757652#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"A sweeping exploration of free speech in three programs\"--Container."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color, sound ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, NTSC, All regions."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"As seen on public TV\"--Container"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Erie, Pennsylvania] : $b Free to Choose Media, $c [2023]" ;
+            bflc:simpleAgent "Free to Choose Media," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "[Erie, Pennsylvania] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "[Erie, Pennsylvania] : Free to Choose Media, [2023]" ;
+    bf:responsibilityStatement "a documentary series with Nadine Strossen ; Free to Choose Media, American Public Television ; directed by Kip Perry and Elan Bentov ; produced by Kip Perry ; written by Elan Bentov." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Free to speak /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Free to speak /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdabs" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

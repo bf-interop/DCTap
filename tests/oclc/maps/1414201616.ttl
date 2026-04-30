@@ -1,0 +1,296 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4361> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4361" ;
+    bf:code "4361" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mrelief/shad> a bf:Relief ;
+    rdfs:label "shading"@en ;
+    bf:code "shad" ;
+    rdf:value "b" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1414201616#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20250919230902.7" ;
+    bf:creationDate "20231214" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d CUV $d OCLCF $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1414201616> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1414201616#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "W 124°25ʹ--W 114°07ʹ/N 42°00ʹ--N 32°32ʹ" ],
+        [ a bf:Cartographic ;
+            bf:coordinates "W1242500 W1140700 N0420000 N0323200" ],
+        [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/shad> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4361.J73 2014" ;
+            bf:itemPortion ".V4" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Vestra Resources, Inc., $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cartes thématiques." ;
+            bflc:marcKey "655  7 $a Cartes thématiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000211" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thematic maps" ;
+            bflc:marcKey "655  7 $a Thematic maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01752679" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thematic maps." ;
+            bflc:marcKey "655  7 $a Thematic maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866668" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ],
+        <http://id.loc.gov/authorities/classification/G4361> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1414201616> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scale approximately 1:1,210,000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "1210000" ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture California Maps." ;
+            bflc:marcKey "650  0 $a Viticulture $z California $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085665" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Viticulture" ;
+            bflc:marcKey "650  7 $a Viticulture $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01168260" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine districts California Maps." ;
+            bflc:marcKey "650  0 $a Wine districts $z California $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine districts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca10554013" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca10554013" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Wine districts" ;
+            bflc:marcKey "650  7 $a Wine districts $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175955" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a California American viticultural areas $b 2014" ;
+            bf:mainTitle "California American viticultural areas" ;
+            bf:subtitle "2014" ],
+        [ a bf:Title ;
+            rdfs:label "California 2014 American viticultural areas" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California 2014 American viticultural areas" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "California" ;
+    bflc:marcKey "651  7 $a California $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204928" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F> a bf:Organization ;
+    rdfs:label "Vestra Resources, Inc.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5534452" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1414201616> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1414201616#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2014"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "113 x 55 cm, on sheet 121 x 63" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1414201616" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1414201616#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Oriented with north toward upper right"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes notes and table of AVA data"@en ],
+        [ a bf:Note ;
+            rdfs:label "Relief shown by shading"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Redding, CA $b Vestra Resources, Inc. $c [2014]" ;
+            bflc:simpleAgent "Vestra Resources, Inc." ;
+            bflc:simpleDate "[2014]" ;
+            bflc:simplePlace "Redding, CA" ;
+            bf:date "2014"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Redding, CA Vestra Resources, Inc. [2014]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "California 2014 American viticultural areas" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California 2014 American viticultural areas" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

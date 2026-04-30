@@ -1,0 +1,329 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1371267326#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250607161540.1" ;
+    bf:creationDate "20230227" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371267326> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1371267326#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.421646" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3CVKYkYP9pYqkTrhfT3jCjy79> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Royal, Jesse, $d 1989- $e composer, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJkp9p4RTXj8dCbF9BHt8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkp9p4RTXj8dCbF9BHt8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "655  7 $a Musique populaire. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000700" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090610" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Reggae." ;
+            bflc:marcKey "655  7 $a Reggae. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000927" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Reggae music" ;
+            bflc:marcKey "655  7 $a Reggae music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726717" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Reggae music." ;
+            bflc:marcKey "655  7 $a Reggae music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090647" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "655  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027009> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371267326> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Performed by Jesse Royal ; with musical accompaniment."@en ;
+            bflc:marcKey "511 0  $a Performed by Jesse Royal ; with musical accompaniment." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Reggae." ;
+            bflc:marcKey "650  6 $a Reggae." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0094894" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Reggae music." ;
+            bflc:marcKey "650  0 $a Reggae music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2038440" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music Jamaica 2021-2030." ;
+            bflc:marcKey "650  0 $a Popular music $z Jamaica $y 2021-2030." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2049163" ] ] [ a bf:Geographic ;
+                        rdfs:label "Jamaica" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2049163" ] ] [ a bf:Temporal ;
+                        rdfs:label "2021-2030." ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Reggae music" ;
+            bflc:marcKey "650  7 $a Reggae music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01093058" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "650  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071422" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Temporal ;
+            rdfs:label "2021-2030" ;
+            bflc:marcKey "648  7 $a 2021-2030 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJgMFVHwFVBfgHmXtgptrq> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "High tide or low (feat. Samory I) -- Lionorder (feat. Protoje) -- Dirty money (feat. Stonebwoy) -- Natty dread -- Home -- Rich forever (feat. Vybz Kartel) -- Natty Pablo -- Black -- Like dat (feat. Runkus) -- Differences -- Strongest link (do my best) (feat. Kumar)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Royal /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Royal /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgMFVHwFVBfgHmXtgptrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Jamaica" ;
+    bflc:marcKey "651  7 $a Jamaica $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgMFVHwFVBfgHmXtgptrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01211575" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkp9p4RTXj8dCbF9BHt8C> a bf:Person ;
+    rdfs:label "Royal, Jesse, 1989-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10345689" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<https://id.oclc.org/worldcat/entity/1371267326> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371267326#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "12 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Easy Star Records" ] ;
+            rdf:value "ES-1090V" ],
+        [ a bf:Upc ;
+            rdf:value "657481109014" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1371267326" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1371267326#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 33 1/3 rpm ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Released on color vinyl."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a NY, NY : $b Easy Star Records, $c [2021]" ;
+            bflc:simpleAgent "Easy Star Records," ;
+            bflc:simpleDate "[2021]" ;
+            bflc:simplePlace "NY, NY :" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "NY, NY : Easy Star Records, [2021]" ;
+    bf:responsibilityStatement "Jesse Royal." ;
+    bf:soundCharacteristic [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Royal /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Royal /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

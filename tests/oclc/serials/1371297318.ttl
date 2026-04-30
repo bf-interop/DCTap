@@ -1,0 +1,298 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026181> a bf:GenreForm ;
+    rdfs:label "Statistics"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1371297318#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20241104192739.1" ;
+    bf:creationDate "20230228" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371297318> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1371297318#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HG9970.3" ;
+            bf:itemPortion ".A93" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Highway Loss Data Institute. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqWH4mQyb9dHgtvpfY6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqWH4mQyb9dHgtvpfY6> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals" ;
+            bflc:marcKey "655  7 $a Periodicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026181> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371297318> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Highway Loss Data Institute insurance collision report" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Highway Loss Data Institute insurance collision report" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Research report HLDI. R." ;
+                    bflc:marcKey "830  0 $a Research report HLDI. $n R." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Research report HLDI." ;
+                            bf:partNumber "R." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Research report HLDI. R" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Research report HLDI. R" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Traffic accidents United States Costs Statistics Periodicals." ;
+            bflc:marcKey "650  0 $a Traffic accidents $z United States $x Costs $x Statistics $x Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Traffic accidents" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2033806" ] ] [ a bf:Topic ;
+                        rdfs:label "Costs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037111" ] ] [ a bf:Topic ;
+                        rdfs:label "Statistics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5956126" ] ] [ a bf:Topic ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5032008" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Automobile insurance United States Statistics Periodicals." ;
+            bflc:marcKey "650  0 $a Automobile insurance $z United States $x Statistics $x Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Automobile insurance" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2113056" ] ] [ a bf:Topic ;
+                        rdfs:label "Statistics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5956126" ] ] [ a bf:Topic ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5032008" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Assurance-automobiles États-Unis Statistiques Périodiques." ;
+            bflc:marcKey "650  6 $a Assurance-automobiles $z États-Unis $x Statistiques $x Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Assurance-automobiles" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0002136" ] ] [ a bf:Topic ;
+                        rdfs:label "Statistiques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378408" ] ] [ a bf:Topic ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378415" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Insurance collision report." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Insurance collision report." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqWH4mQyb9dHgtvpfY6> a bf:Organization ;
+    rdfs:label "Highway Loss Data Institute." .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1371297318> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371297318#adminMetadata> ;
+    bf:dimensions "28 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes :"@en ] ;
+    bf:firstIssue "1989-" ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1371297318" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1371297318#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:lastIssue "1989-" ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Some issues describe initial results for current model year; other issues cover current year and two previous years."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Passenger cars, vans, pickups, and utility vehicles\" (varies)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Arlington, Va. : $b Highway Loss Data Institute, $c 1989-" ;
+            bflc:simpleAgent "Highway Loss Data Institute," ;
+            bflc:simpleDate "1989-" ;
+            bflc:simplePlace "Arlington, Va. :" ;
+            bf:date "1989/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/vau> ] ;
+    bf:publicationStatement "Arlington, Va. : Highway Loss Data Institute, 1989-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Insurance collision report." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Insurance collision report." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

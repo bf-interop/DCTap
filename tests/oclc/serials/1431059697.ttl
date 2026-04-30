@@ -1,0 +1,322 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/irr> a bf:Frequency ;
+    rdfs:label "irregular"@en ;
+    bf:code "irr" .
+
+<http://id.loc.gov/vocabulary/frequencies/mon> a bf:Frequency ;
+    rdfs:label "monthly"@en ;
+    bf:code "mon" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/millus/pho> a bf:Illustration ;
+    rdfs:label "phonodisc"@en ;
+    bf:code "pho" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/ceased> a bf:Status ;
+    rdfs:label "ceased" .
+
+<https://id.oclc.org/worldcat/entity/1431059697#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250807151256.1" ;
+    bf:creationDate "20240424" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1431059697> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1431059697#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a State University of New York at Albany. $1 https://id.oclc.org/worldcat/entity/E39QH7JmtfWHdwRBFbPf4pt6CF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmtfWHdwRBFbPf4pt6CF> ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Ejournal (Albany, N.Y.)" ;
+            bflc:marcKey "130 0  $a Ejournal (Albany, N.Y.)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Ejournal (Albany, N.Y.)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals" ;
+            bflc:marcKey "655  7 $a Periodicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1431059697> ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "1054-1055" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm>,
+        <http://id.loc.gov/vocabulary/millus/pho> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Education Data processing Periodicals." ;
+            bflc:marcKey "650  0 $a Education $x Data processing $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Education" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2113379" ] ] [ a bf:Topic ;
+                        rdfs:label "Data processing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2113379" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Education Data processing" ;
+            bflc:marcKey "650  7 $a Education $x Data processing $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Education" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00902579" ] ] [ a bf:Topic ;
+                        rdfs:label "Data processing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00902579" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Information électronique Périodiques." ;
+            bflc:marcKey "650  6 $a Information électronique $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Information électronique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0272329" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Computer network resources" ;
+            bflc:marcKey "650  7 $a Computer network resources $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00872288" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Éducation Informatique Périodiques." ;
+            bflc:marcKey "650  6 $a Éducation $x Informatique $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Éducation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0015539" ] ] [ a bf:Topic ;
+                        rdfs:label "Informatique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0015539" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Computer network resources Periodicals." ;
+            bflc:marcKey "650  0 $a Computer network resources $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Computer network resources" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3797007" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Electronic journal" ;
+            bf:mainTitle "Electronic journal" ],
+        [ a bf:KeyTitle ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ejournal" ;
+            bf:qualifier "(Albany, N.Y.)" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a E journal" ;
+            bf:mainTitle "E journal" ],
+        [ a bf:Title ;
+            rdfs:label "Ejournal." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ejournal." ],
+        [ a bf:AbbreviatedTitle ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "issnkey" ] ;
+            bf:mainTitle "Ejournal" ;
+            bf:qualifier "(Albany N.Y.)" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i List name: $a EJRNL" ;
+            bf:mainTitle "EJRNL" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "List name:"@en ] ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmtfWHdwRBFbPf4pt6CF> a bf:Organization ;
+    rdfs:label "State University of New York at Albany." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca582656" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1431059697> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1431059697#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©1991-"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:firstIssue "Vol. 1, issue 1 (Mar. 1991)-" ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Monthly"@en ;
+            bflc:marcKey "310    $a Monthly" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/irr>,
+        <http://id.loc.gov/vocabulary/frequencies/mon> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1431059697" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1431059697#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:lastIssue "Vol. 1, issue 1 (Mar. 1991)-" ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: Vol. 4, no. 1 (April 1994)."@en ],
+        [ a bf:Note ;
+            rdfs:label "A compilation of volume 4-6 (April 1994-August 1996) of the online journal, reformatted and bound in book form."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"An electronic journal concerned with the implications of electronic networks and texts.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Albany, N.Y. : $b University at Albany, State University of New York, $c [1991]-" ;
+            bflc:simpleAgent "University at Albany, State University of New York," ;
+            bflc:simpleDate "[1991]-" ;
+            bflc:simplePlace "Albany, N.Y. :" ;
+            bf:date "1991/199u"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/ceased>,
+                <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Albany, N.Y. : University at Albany, State University of New York, [1991]-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ejournal." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ejournal." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

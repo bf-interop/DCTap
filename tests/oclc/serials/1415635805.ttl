@@ -1,0 +1,351 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/l> a bflc:GovernmentPubType ;
+    rdfs:label "local"@en ;
+    bf:code "l" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/ceased> a bf:Status ;
+    rdfs:label "ceased" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/continuedby> a bf:Relationship ;
+    rdfs:label "continued by"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1415635805#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20231221180631.4" ;
+    bf:creationDate "20231220" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1415635805> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1415635805#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/l> ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "L161.A7" ;
+            bf:itemPortion "A75c" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a Arlington (Mass.). $b Superintendent of Schools, $e author." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "Arlington (Mass.). Superintendent of Schools," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca9109979" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 1  $a Arlington (Mass.). $b School Committee, $e author." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "Arlington (Mass.). School Committee," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15817643" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Annual reports." ;
+            bflc:marcKey "655  7 $a Annual reports. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077180" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Publications en série." ;
+            bflc:marcKey "655  7 $a Publications en série. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001102" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "serials (publications)" ;
+            bflc:marcKey "655  7 $a serials (publications) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026642" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "annual reports." ;
+            bflc:marcKey "655  7 $a annual reports. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300027292" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Serial publications." ;
+            bflc:marcKey "655  7 $a Serial publications. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077308" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rapports annuels." ;
+            bflc:marcKey "655  7 $a Rapports annuels. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001055" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ma" ;
+            bf:code "n-us-ma" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ma> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1415635805> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/45743002#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuedby> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Public schools Massachusetts Arlington." ;
+            bflc:marcKey "650  0 $a Public schools $z Massachusetts $z Arlington." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Public schools" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2016326" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca715799" ] ] [ a bf:Geographic ;
+                        rdfs:label "Arlington." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca715799" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Education" ;
+            bflc:marcKey "650  7 $a Education $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00902499" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Education Massachusetts Arlington." ;
+            bflc:marcKey "650  0 $a Education $z Massachusetts $z Arlington." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Education" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2113289" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca715799" ] ] [ a bf:Geographic ;
+                        rdfs:label "Arlington." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca715799" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Écoles publiques Massachusetts Arlington." ;
+            bflc:marcKey "650  6 $a Écoles publiques $z Massachusetts $z Arlington." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Écoles publiques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0008850" ] ] [ a bf:Geographic ;
+                        rdfs:label "Massachusetts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465756" ] ] [ a bf:Geographic ;
+                        rdfs:label "Arlington." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465756" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Report of the School Committee and the Superintendent of Schools of the town of Arlington :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Report of the School Committee and the Superintendent of Schools of the town of Arlington :" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Reports for 1909-1910 have cover title: $a Town of Arlington, report of the School Committee for ..." ;
+            bf:mainTitle "Town of Arlington, report of the School Committee for ..." ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Reports for 1909-1910 have cover title:"@en ] ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Reports for 1911-1913 have cover title: $a Arlington school report : $b for the municipal year ..." ;
+            bf:mainTitle "Arlington school report :" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Reports for 1911-1913 have cover title:"@en ] ;
+            bf:subtitle "for the municipal year ..." ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Reports for 1906-1913 have title: $a Report of the School Committee of the town of Arlington : $b for the year ending ..." ;
+            bf:mainTitle "Report of the School Committee of the town of Arlington :" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Reports for 1906-1913 have title:"@en ] ;
+            bf:subtitle "for the year ending ..." ] .
+
+<https://id.oclc.org/worldcat/entity/45743002#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Arlington (Mass.). School Committee." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "45743002" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Annual report of the School Committee of the town of Arlington" ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Annual report of the School Committee of the town of Arlington" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1415635805> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1415635805#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "24 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes ;"@en ] ;
+    bf:frequency <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1415635805" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1415635805#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: December 31, 1905; title from cover"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Ceased with 1913"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 1913"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Arlington, Mass. : $b School Committee" ;
+            bflc:simpleAgent "School Committee" ;
+            bflc:simplePlace "Arlington, Mass. :" ;
+            bf:date "1uuu/1913"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/mau> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/ceased>,
+                <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Arlington, Mass. : School Committee" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Report of the School Committee and the Superintendent of Schools of the town of Arlington : for the year ending ..." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Report of the School Committee and the Superintendent of Schools of the town of Arlington :" ;
+            bf:subtitle "for the year ending ..." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

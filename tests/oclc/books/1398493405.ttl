@@ -1,0 +1,459 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sears> a bf:Source ;
+    bf:code "sears" .
+
+<https://id.oclc.org/worldcat/entity/1398493405#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250813081914.7" ;
+    bf:creationDate "20230921" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1398493405> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1398493405#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.45/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E4cqVpRBDfhTmmwQpmgGjGjchr> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1992.77.P379" ;
+            bf:itemPortion "G35 2023" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Gaines, Caseen, $d 1986- $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Gaines, Caseen, 1986-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca9005197" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Children's television programs." ;
+            bflc:marcKey "655  7 $a Children's television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866117" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Émissions télévisées pour enfants." ;
+            bflc:marcKey "655  7 $a Émissions télévisées pour enfants. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000039" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographies" ;
+            bflc:marcKey "655  7 $a Biographies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919896" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Children's television programs" ;
+            bflc:marcKey "655  7 $a Children's television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920774" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Juvenile works" ;
+            bflc:marcKey "655  7 $a Juvenile works $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411637" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1398493405> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Work ;
+            rdfs:label "Pee-Wee's playhouse (Television program)" ;
+            bflc:marcKey "630 00 $a Pee-Wee's playhouse (Television program)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca9005195" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Pee-Wee's playhouse (Television program)" ] ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Acteurs États-Unis Biographies." ;
+            bflc:marcKey "650  6 $a Acteurs $z États-Unis $v Biographies." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Acteurs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0262324" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0262324" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biographies." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378258" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Émissions télévisées pour enfants États-Unis Histoire." ;
+            bflc:marcKey "650  6 $a Émissions télévisées pour enfants $z États-Unis $x Histoire." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Émissions télévisées pour enfants" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0069484" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378888" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Work ;
+            rdfs:label "Pee-Wee's playhouse (Television program)" ;
+            bflc:marcKey "630 07 $a Pee-Wee's playhouse (Television program) $2 sears" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sears> ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Pee-Wee's playhouse (Television program)" ] ],
+        [ a bf:Topic ;
+            rdfs:label "Actors" ;
+            bflc:marcKey "650  7 $a Actors $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00796296" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular culture" ;
+            bflc:marcKey "650  7 $a Popular culture $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071344" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Person ;
+            rdfs:label "Reubens, Paul, 1952-" ;
+            bflc:marcKey "600 16 $a Reubens, Paul, $d 1952- $0 (CaOONL)ncf10453915" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaOONL" ] ;
+                    rdf:value "ncf10453915" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Person ;
+            rdfs:label "Reubens, Paul, 1952-2023." ;
+            bflc:marcKey "600 10 $a Reubens, Paul, $d 1952-2023." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2178237" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "United States" ;
+            bflc:marcKey "651  7 $a United States $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01204155" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Children's television programs" ;
+            bflc:marcKey "650  7 $a Children's television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01716047" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular culture United States." ;
+            bflc:marcKey "650  0 $a Popular culture $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular culture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059680" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059680" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Reubens, Paul, 1952-2023" ;
+            bflc:marcKey "600 17 $a Reubens, Paul, $d 1952-2023 $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00221670" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Culture populaire États-Unis." ;
+            bflc:marcKey "650  6 $a Culture populaire $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Culture populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0278879" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0278879" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Actors United States Biography." ;
+            bflc:marcKey "650  0 $a Actors $z United States $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Actors" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3530062" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3530062" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933801" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Children's television programs United States History." ;
+            bflc:marcKey "650  0 $a Children's television programs $z United States $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Children's television programs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2014735" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Work ;
+            rdfs:label "Pee Wee's playhouse (Television program)" ;
+            bflc:marcKey "630 07 $a Pee Wee's playhouse (Television program) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01789539" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Pee Wee's playhouse (Television program)" ] ],
+        [ a bf:Work ;
+            rdfs:label "Pee-Wee's playhouse (Émission de télévision)" ;
+            bflc:marcKey "630 06 $a Pee-Wee's playhouse (Émission de télévision) $0 (CaOONL)ncf10606829" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaOONL" ] ;
+                    rdf:value "ncf10606829" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Pee-Wee's playhouse (Émission de télévision)" ] ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "On the 25th anniversary of the show \"Pee-wee's Playhouse,\" the behind-the-scenes story is being told for the first time by those who experienced it. Complete with an episode guide, biographical information about the cast and key members of the show's creative team, never-before-told anecdotes, and previously unpublished photos."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Introduction -- From the Groundlings up -- The pitch and the hit -- Puppetland, California -- A Christmas story -- Foreclosure -- P2K -- Appraising the playhouse -- Episode guide -- Afterword -- The Puppetland directory -- Acknowledgements -- Notes -- Back cover material." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Inside Pee-Wee's playhouse :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Inside Pee-Wee's playhouse :" ] .
+
+<https://id.oclc.org/worldcat/entity/1398493405> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1398493405#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2011"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "26 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiv, 383 pages. :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1398493405" ],
+        [ a bf:Isbn ;
+            rdf:value "1459651367" ],
+        [ a bf:Identifier ;
+            rdf:value "99994326339" ],
+        [ a bf:Isbn ;
+            rdf:value "9781459651364" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1398493405#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally published by ECW Press, 2011."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes index."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"EasyRead large\"."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"This optimized ReadHowYouWant edition contains the complete, unabridged text of the original publisher's edition. Other aspects of the book may vary from the original edition... The text in this edition has been formatted and typeset ... set in 16 pt. Verdana\"--preliminaries."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b Read How You Want, $c [2023?]" ;
+            bflc:simpleAgent "Read How You Want," ;
+            bflc:simpleDate "[2023?]" ;
+            bflc:simplePlace "[Place of publication not identified] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "[Place of publication not identified] : Read How You Want, [2023?]" ;
+    bf:responsibilityStatement "Caseen Gaines." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Inside Pee-Wee's playhouse : the untold, unauthorized, and unpredictable story of a pop phenomenon /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Inside Pee-Wee's playhouse :" ;
+            bf:subtitle "the untold, unauthorized, and unpredictable story of a pop phenomenon /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

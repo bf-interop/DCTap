@@ -1,0 +1,530 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1416356670#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250712052227.7" ;
+    bf:creationDate "20231226" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1416356670> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1416356670#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVE8226(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.4372" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Carrière, Jean-Claude, $d 1931-2021, $e adapter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Carrière, Jean-Claude, 1931-2021," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca601096" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "adapter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rappeneau, J.-P., $e film director, $e adapter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Rappeneau, J.-P.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "adapter." ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lhomme, Pierre, $d 1930-2019, $e cinematographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Lhomme, Pierre, 1930-2019," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3989502" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cinematographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Seydoux, Michel, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Seydoux, Michel," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cleitman, René, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cleitman, René," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brochet, Anne, $d 1966- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Brochet, Anne, 1966-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca7567000" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Perez, Vincent, $d 1964- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Perez, Vincent, 1964-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5679397" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Depardieu, Gérard, $d 1948- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Depardieu, Gérard, 1948-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca937077" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Boisson, Noelle, $e editor of moving image work." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Boisson, Noelle," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ] ;
+    bf:duration "PT2H15M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Cyrano de Bergerac (Motion picture : 1990)" ;
+            bflc:marcKey "130 0  $a Cyrano de Bergerac (Motion picture : 1990)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2866928" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Cyrano de Bergerac (Motion picture : 1990)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes handicapées auditives." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes handicapées auditives. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Romance films." ;
+            bflc:marcKey "655  7 $a Romance films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866521" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Historical films." ;
+            bflc:marcKey "655  7 $a Historical films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'amour." ;
+            bflc:marcKey "655  7 $a Films d'amour. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000116" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films historiques." ;
+            bflc:marcKey "655  7 $a Films historiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000093" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1416356670> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Cinematographer, Pierre Lhomme ; editor, Noë̈lle Boisson."@en ;
+            bflc:marcKey "508    $a Cinematographer, Pierre Lhomme ; editor, Noë̈lle Boisson." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Gerard Depardieu, Anne Brochet, Vincent Perez."@en ;
+            bflc:marcKey "511 1  $a Gerard Depardieu, Anne Brochet, Vincent Perez." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "kor" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/kor> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English. Subtitles in English or Korean."@en ] ;
+    bf:originDate "1990"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "National Film Preservation Foundation Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "National Film Preservation Foundation Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Rostand, Edmond, 1868-1918. Cyrano de Bergerac." ;
+                    bflc:marcKey "700 1  $a Rostand, Edmond, $d 1868-1918. $t Cyrano de Bergerac." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Rostand, Edmond, 1868-1918." ] ] ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca293977" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Cyrano de Bergerac." ;
+                            bf:mainTitle "Cyrano de Bergerac." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Ugliness." ;
+            bflc:marcKey "650  0 $a Ugliness." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2053349" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Laideur." ;
+            bflc:marcKey "650  6 $a Laideur." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0011278" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Person ;
+            rdfs:label "Cyrano de Bergerac, 1619-1655." ;
+            bflc:marcKey "600 10 $a Cyrano de Bergerac, $d 1619-1655." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca112188" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Relations entre hommes et femmes." ;
+            bflc:marcKey "650  6 $a Relations entre hommes et femmes." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0038585" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Man-woman relationships." ;
+            bflc:marcKey "650  0 $a Man-woman relationships." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca3173806" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "ugliness." ;
+            bflc:marcKey "650  7 $a ugliness. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300055845" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Famed swordsman and poet Cyrano de Bergerac is in love with his cousin Roxane. He has never expressed his love for her as he his large nose undermines his self-confidence. Then he finds a way to express his love to her, indirectly.\"--IMDb."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Cyrano de Bergerac /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Cyrano de Bergerac /" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1416356670> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1416356670#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "all regions"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/all> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 135 min.) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2023600659" ],
+        [ a bf:Ean ;
+            rdf:value "8809046778001" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1416356670" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1416356670#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Sources used: videodisc container; Internet movie database WWW site, viewed December 26, 2023; Record Store Day WWW site, viewed December 26, 2023."@en ],
+        [ a bf:Note ;
+            rdfs:label "Adapted from the novel by Edmond Rostand."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English subtitles for the deaf and hard-of-hearing (SDH)."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Originally released in 1990."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Aspect ratio: Standard 4:3."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "France."@en ;
+            bflc:marcKey "257    $a France. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [United States] : $b [Publisher not identified], $c [2013?]" ;
+            bflc:simpleAgent "[Publisher not identified]," ;
+            bflc:simpleDate "[2013?]" ;
+            bflc:simplePlace "[United States] :" ;
+            bf:date "2013"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/fr> ] ;
+    bf:publicationStatement "[United States] : [Publisher not identified], [2013?]" ;
+    bf:responsibilityStatement "directed by Jean-Paul Rappeneau ; produced by René Cleitman, Michel Seydoux, André Szöts ; adapted by Jean-Paul Rappeneau and Jean-Claude Carrière." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "2.0"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Cyrano de Bergerac /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Cyrano de Bergerac /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

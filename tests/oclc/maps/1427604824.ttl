@@ -1,0 +1,247 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmc> a bf:DescriptionConventions ;
+    bf:code "dcrmc" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1427604824#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251011181959.4" ;
+    bf:creationDate "20240322" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1427604824> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1427604824#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "(W 37°45ʹ--W 37°49ʹ/N 122°25ʹ--N 122°22ʹ)" ],
+        [ a bf:Cartographic ;
+            bf:coordinates "-37.750000 -37.816667 122.416667 122.366667" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4364.S5" ;
+            bf:itemPortion "1859" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bache, A. D. $q (Alexander Dallas), $d 1806-1867, $e surveyor. $1 https://id.oclc.org/worldcat/entity/E39PBJhd9fthXMx3cKwgf8CxXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhd9fthXMx3cKwgf8CxXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "surveyor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bien, Julius, $d 1826-1909, $e lithographer. $1 https://id.oclc.org/worldcat/entity/E39PBJdcwC3MKf3vv97vwb6qcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdcwC3MKf3vv97vwb6qcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "lithographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rodgers, A. F., $e typographer. $1 https://id.oclc.org/worldcat/entity/E39PCjwf6tKVbPhqDf87jKKJH3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjwf6tKVbPhqDf87jKKJH3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "typographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cuyler, R. M. $q (Richard M.), $e surveyor. $1 https://id.oclc.org/worldcat/entity/E39PCjBkF7JFGQjYTMPdmXBGd3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBkF7JFGQjYTMPdmXBGd3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "surveyor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a United States Coast Survey, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmmKCy4Bb347vrDtQfkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmmKCy4Bb347vrDtQfkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1427604824> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "10000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "Scale 1:10,000" ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "San Francisco (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a San Francisco (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "San Francisco (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca252301" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "651  7 $a Maps. $2 fast $0 (OCoLC)fst01423704" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "City of San Francisco and its vicinity :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "City of San Francisco and its vicinity :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdcwC3MKf3vv97vwb6qcP> a bf:Person ;
+    rdfs:label "Bien, Julius, 1826-1909," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca76787" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhd9fthXMx3cKwgf8CxXd> a bf:Person ;
+    rdfs:label "Bache, A. D. (Alexander Dallas), 1806-1867," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca920886" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBkF7JFGQjYTMPdmXBGd3> a bf:Person ;
+    rdfs:label "Cuyler, R. M. (Richard M.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7365399" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjwf6tKVbPhqDf87jKKJH3> a bf:Person ;
+    rdfs:label "Rodgers, A. F.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca783397" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmmKCy4Bb347vrDtQfkt> a bf:Organization ;
+    rdfs:label "United States Coast Survey," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1542964" ] .
+
+<https://id.oclc.org/worldcat/entity/1427604824> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1427604824#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "60 x 87 cm ; on sheet 69 x 94 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1427604824" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1427604824#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:manufactureStatement "[New York] : Lith of J. Bien." ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes: \"Table of reference, public buildings etc.\""@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from map recto."@en ],
+        [ a bf:Note ;
+            rdfs:label "At head of title: U.S. Coast Survey, A.D. Bache, superintendent."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The topography was executed in 1857-8. The hydrography ... in 1857.\"--Note on map recto."@en ] ;
+    bf:provisionActivity [ a bf:Manufacture ;
+            bflc:marcKey "264  3 $a [New York] : $b Lith of J. Bien." ;
+            bflc:simpleAgent "Lith of J. Bien." ;
+            bflc:simplePlace "[New York] :" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Washington, D.C.] : $b U.S. Coast Survey, $c 1859." ;
+            bflc:simpleAgent "U.S. Coast Survey," ;
+            bflc:simpleDate "1859." ;
+            bflc:simplePlace "[Washington, D.C.] :" ;
+            bf:date "1959"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ] ;
+    bf:publicationStatement "[Washington, D.C.] : U.S. Coast Survey, 1859." ;
+    bf:responsibilityStatement "U.S. Coast Survey ; A.D. Bache, superintendent ; typography by A.F. Rodgers, sub assistant ; hydrography by the Party under the command of Lieut. R.M. Cuyler N.S.N. assistant." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "City of San Francisco and its vicinity : California /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "City of San Francisco and its vicinity :" ;
+            bf:subtitle "California /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

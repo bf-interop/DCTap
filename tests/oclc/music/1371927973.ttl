@@ -1,0 +1,293 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1371927973#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250521023751.6" ;
+    bf:creationDate "20230306" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371927973> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PD3twRfMXMpyvhxfWFBkcvb> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.42164" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3pTYfq3Q7cWDmtwgGC3ffdQ6P> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Rousay, Claire, $e composer, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Rousay, Claire," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca14892502" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Musique concrète." ;
+            bflc:marcKey "655  7 $a Musique concrète. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090567" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique concrète" ;
+            bflc:marcKey "655  7 $a Musique concrète $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920254" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "musique concrète." ;
+            bflc:marcKey "655  7 $a musique concrète. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300266052" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique concrète." ;
+            bflc:marcKey "655  7 $a Musique concrète. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000736" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027009> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371927973> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Claire Rousay, electronics, pre-recorded audio ; with Lia Kohl, cello (tracks 2, 3, 6) ; Ben Baker Billington, vocals (track 4) ; Macie Stewart, violin (track 4) ; Alex Cunningham, violin (track 5)."@en ;
+            bflc:marcKey "511 0  $a Claire Rousay, electronics, pre-recorded audio ; with Lia Kohl, cello (tracks 2, 3, 6) ; Ben Baker Billington, vocals (track 4) ; Macie Stewart, violin (track 4) ; Alex Cunningham, violin (track 5)." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Electronic music." ;
+            bflc:marcKey "650  0 $a Electronic music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2121870" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "musique concrète." ;
+            bflc:marcKey "650  7 $a musique concrète. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300266052" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique concrète" ;
+            bflc:marcKey "650  7 $a Musique concrète $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01030904" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Electronic music" ;
+            bflc:marcKey "650  7 $a Electronic music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00907363" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique concrète." ;
+            bflc:marcKey "650  6 $a Musique concrète." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0015355" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique concrète." ;
+            bflc:marcKey "650  0 $a Musique concrète." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2034283" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Preston Ave -- Discreet (The market) -- Peak chroma -- Diluted dreams -- Stoned gesture -- A kind of promise." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A softer focus /" ;
+            bflc:nonSortNum "2" ;
+            bf:mainTitle "A softer focus /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1371927973> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371927973#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:dimensions "12 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1371927973" ],
+        [ a bf:AudioIssueNumber ;
+            rdf:value "18 ADR" ],
+        [ a bf:Upc ;
+            rdf:value "618119854638" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PD3twRfMXMpyvhxfWFBkcvb> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 33 1/3 rpm ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"A Softer Focus is the collaborative project between musician Claire Rousay and artist Dani Torat\"--Back cover."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b [publisher not identified], $c [2021]" ;
+            bflc:simpleAgent "[publisher not identified]," ;
+            bflc:simpleDate "[2021]" ;
+            bflc:simplePlace "[Place of publication not identified] :" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "[Place of publication not identified] : [publisher not identified], [2021]" ;
+    bf:responsibilityStatement "Claire Rousay." ;
+    bf:soundCharacteristic [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "A softer focus /" ;
+            bflc:nonSortNum "2" ;
+            bf:mainTitle "A softer focus /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

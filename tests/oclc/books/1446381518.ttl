@@ -1,0 +1,282 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/map> a bf:Illustration ;
+    rdfs:label "maps"@en ;
+    bf:code "map" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1446381518#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20240725180041.0" ;
+    bf:creationDate "20240716" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1446381518> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjCcxcC947DBMx46FRyYpq> a bf:Person ;
+    rdfs:label "Zoia, Diego," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5297331" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PD3HkgtvgY8pgkYCjRhHtJC> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TP559.I8" ;
+            bf:itemPortion "Z652 2004" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Zoia, Diego, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjCcxcC947DBMx46FRyYpq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjCcxcC947DBMx46FRyYpq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Biancotti, Manuela, $e translator." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Biancotti, Manuela," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16270878" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "translator." ] ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-it---" ;
+            bf:code "e-it---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-it> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1446381518> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Zoia, Diego. Vite e vino in Valtellina e Valchiavenna." ;
+                    bflc:marcKey "700 1  $i Summary of (work) $a Zoia, Diego. $t Vite e vino in Valtellina e Valchiavenna." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Zoia, Diego." ;
+                                    bf:identifiedBy [ a bf:Local ;
+                                            bf:assigner [ a bf:Organization ;
+                                                    bf:code "OCoLC" ] ;
+                                            rdf:value "oca5297331" ] ] ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Vite e vino in Valtellina e Valchiavenna." ;
+                            bf:mainTitle "Vite e vino in Valtellina e Valchiavenna." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Summary of (work)" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Viticulture" ;
+            bflc:marcKey "650  7 $a Viticulture $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01168260" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Italy Valtellina" ;
+            bflc:marcKey "651  7 $a Italy $z Valtellina $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01257646" ] ] [ a bf:Geographic ;
+                        rdfs:label "Valtellina" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01257646" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture Italy Valtellina." ;
+            bflc:marcKey "650  0 $a Viticulture $z Italy $z Valtellina." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085665" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6901580" ] ] [ a bf:Geographic ;
+                        rdfs:label "Valtellina." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6901580" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture Italie Valteline." ;
+            bflc:marcKey "650  6 $a Viticulture $z Italie $z Valteline." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0022793" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485953" ] ] [ a bf:Geographic ;
+                        rdfs:label "Valteline." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0485953" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine and wine making Italy Valtellina." ;
+            bflc:marcKey "650  0 $a Wine and wine making $z Italy $z Valtellina." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine and wine making" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2103408" ] ] [ a bf:Geographic ;
+                        rdfs:label "Italy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6901580" ] ] [ a bf:Geographic ;
+                        rdfs:label "Valtellina." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6901580" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Wine and wine making" ;
+            bflc:marcKey "650  7 $a Wine and wine making $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175907" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The wine's valley" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The wine's valley" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1446381518> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1446381518#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "24 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "52 pages"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1446381518" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PD3HkgtvgY8pgkYCjRhHtJC> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color illustrations, 1 color map"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The present is a summary of the volume Vite e vino in Valtellina e Valchiavenna, Sondrio 2004\"--Title page verso"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Tirano $b [Zoia Diego?] $c 2004" ;
+            bflc:simpleAgent "[Zoia Diego?]" ;
+            bflc:simpleDate "2004" ;
+            bflc:simplePlace "Tirano" ;
+            bf:date "2004"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/it> ] ;
+    bf:publicationStatement "Tirano [Zoia Diego?] 2004" ;
+    bf:responsibilityStatement "Diego Zoia ; traduzione di Manuela Biancotti" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The wine's valley vineyards and wine of Valtellina : a short summary of a long story" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The wine's valley" ;
+            bf:subtitle "vineyards and wine of Valtellina : a short summary of a long story" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

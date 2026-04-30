@@ -1,0 +1,412 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dsna> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Direct storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/she> a bf:BaseMaterial ;
+    rdfs:label "shellac"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/d> a bf:PlayingSpeed ;
+    rdfs:label "78 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1418976953#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011205744.2" ;
+    bf:creationDate "20240125" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "NTE" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCQ $d OCLCA $d NTE $d OCLCO $d OCLCA $d OCLCL $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1418976953> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1418976953#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Williams, Tex., $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJtMmKQcfFFQjwxp6wjKVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtMmKQcfFFQjwxp6wjKVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Fisher, Shug. $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJxrWGdF7KX7hfBtfCgYfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxrWGdF7KX7hfBtfCgYfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Western Caravan (Musical group), $e performer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpMwtY8xQxFHcfHg6CF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpMwtY8xQxFHcfHg6CF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wakely, Jimmy, $d 1914-1982. $1 https://id.oclc.org/worldcat/entity/E39PBJcgy4CXKXHd8tJ6yDhrbd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJcgy4CXKXHd8tJ6yDhrbd> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Travis, Merle, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJmxV6fGg3y93pv9bHtqcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmxV6fGg3y93pv9bHtqcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ritter, Tex, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJbWqJgyKTgtFtYXQykbh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJbWqJgyKTgtFtYXQykbh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Stone, Cliffie, $d 1917-1998, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Stone, Cliffie, 1917-1998," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3018389" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Barn Dance Band, $e performer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrCvVD9h3gXwbPQffkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrCvVD9h3gXwbPQffkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Texas Stars (Musical group) $1 https://id.oclc.org/worldcat/entity/E39QH7JmpYhdqbRtVWqk3tYTB6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpYhdqbRtVWqk3tYTB6> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Guthrie, Jack, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJdmgVq8Rc6fKDtRchHcT3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdmgVq8Rc6fKDtRchHcT3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Tuttle, Wesley, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJxrRgjjVWTCKrVRQXj9jC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxrRgjjVWTCKrVRQXj9jC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Oklahomans (Musical group), $e performer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqjCTcyfjXRKRMvyWc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqjCTcyfjXRKRMvyWc6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Country music." ;
+            bflc:marcKey "655  7 $a Country music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090350" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Country music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026739> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Country." ;
+            bflc:marcKey "655  7 $a Country. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000890" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1418976953> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Merle Travis, vocals with cowboy band (1st work) ; Tex Ritter, vocals with cowboy band (2nd work) ; Jimmy Wakely, vocals with cowboy band (3rd work) ; Jack Guthrie and his Oklahomans, vocals with cowboy band (4th work) ; Tex Williams and his Western Caravan, vocals with trio (5th work) ; Shug Fisher and his Ranchmen, vocal trio with cowboy band (6th work) ; Cliffie Stone and his barn dance band, vocals (7th work) ; Wesley Tuttle and his Texas Stars, vocals with cowboy band (8th work)."@en ;
+            bflc:marcKey "511 0  $a Merle Travis, vocals with cowboy band (1st work) ; Tex Ritter, vocals with cowboy band (2nd work) ; Jimmy Wakely, vocals with cowboy band (3rd work) ; Jack Guthrie and his Oklahomans, vocals with cowboy band (4th work) ; Tex Williams and his Western Caravan, vocals with trio (5th work) ; Shug Fisher and his Ranchmen, vocal trio with cowboy band (6th work) ; Cliffie Stone and his barn dance band, vocals (7th work) ; Wesley Tuttle and his Texas Stars, vocals with cowboy band (8th work)." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Country music To 1951." ;
+            bflc:marcKey "650  0 $a Country music $y To 1951." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Country music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069393" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1951." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069393" ] ] ) ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Sioux City Sue / Dick Thomas, Ray Freedman -- Fort Worth Jail / Dick Reinhart -- Shame on you / Spade Cooley -- Oklahoma hills / Jack Guthrie, Woody Guthrie -- Shame on you / Spade Cooley -- Miss Molly / Cindy Walker -- Ridin' down to Sante Fe / Johnny Bond -- Roly poly / Fred Rose -- Old Shep / Red Foley" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Riding down to Santa Fe" ;
+            bf:mainTitle "Riding down to Santa Fe" ],
+        [ a bf:Title ;
+            rdfs:label "Cowboy hit parade." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Cowboy hit parade." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJbWqJgyKTgtFtYXQykbh3> a bf:Person ;
+    rdfs:label "Ritter, Tex," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1274299" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcgy4CXKXHd8tJ6yDhrbd> a bf:Person ;
+    rdfs:label "Wakely, Jimmy, 1914-1982." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3017486" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdmgVq8Rc6fKDtRchHcT3> a bf:Person ;
+    rdfs:label "Guthrie, Jack," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3040810" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmxV6fGg3y93pv9bHtqcP> a bf:Person ;
+    rdfs:label "Travis, Merle," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1771817" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtMmKQcfFFQjwxp6wjKVC> a bf:Person ;
+    rdfs:label "Williams, Tex.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca792832" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxrRgjjVWTCKrVRQXj9jC> a bf:Person ;
+    rdfs:label "Tuttle, Wesley," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3651088" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxrWGdF7KX7hfBtfCgYfq> a bf:Person ;
+    rdfs:label "Fisher, Shug." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5332124" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpMwtY8xQxFHcfHg6CF> a bf:Organization ;
+    rdfs:label "Western Caravan (Musical group)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4354968" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpYhdqbRtVWqk3tYTB6> a bf:Organization ;
+    rdfs:label "Texas Stars (Musical group)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3651093" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqjCTcyfjXRKRMvyWc6> a bf:Organization ;
+    rdfs:label "Oklahomans (Musical group)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5333113" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrCvVD9h3gXwbPQffkt> a bf:Organization ;
+    rdfs:label "Barn Dance Band," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9136985" ] .
+
+<http://id.loc.gov/vocabulary/mgroove/coarse> a bf:GrooveCharacteristic ;
+    rdfs:label "coarse groove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<https://id.oclc.org/worldcat/entity/1418976953> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1418976953#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "shellac"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/she> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "©1947"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "10 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "4 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "1606" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "A48005" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol Americana" ] ;
+            rdf:value "AD-55" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "A48007" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "A48006" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "1787" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1418976953" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "1796" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "A48004" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "1469" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "589" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Capitol" ] ;
+            rdf:value "1601" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1418976953#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 78 rpm ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Container title."@en ],
+        [ a bf:Note ;
+            rdfs:label "Country music."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Hollywood : $b Capitol Americana, $c [1947]" ;
+            bflc:simpleAgent "Capitol Americana," ;
+            bflc:simpleDate "[1947]" ;
+            bflc:simplePlace "Hollywood :" ;
+            bf:date "1947"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Hollywood : Capitol Americana, [1947]" ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "mono"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mon> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "78 rpm"@en ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:GrooveCharacteristic ;
+            rdfs:label "coarse groove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/coarse> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dsna>,
+        <http://id.loc.gov/vocabulary/mgroove/coarse>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mplayback/mon>,
+        <http://id.loc.gov/vocabulary/mplayspeed/d> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Cowboy hit parade." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Cowboy hit parade." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

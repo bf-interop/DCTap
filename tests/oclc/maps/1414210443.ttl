@@ -1,0 +1,596 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4361> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4361" ;
+    bf:code "4361" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mrelief/shad> a bf:Relief ;
+    rdfs:label "shading"@en ;
+    bf:code "shad" ;
+    rdf:value "b" .
+
+<http://id.loc.gov/vocabulary/mrelief/spot> a bf:Relief ;
+    rdfs:label "spot heights"@en ;
+    bf:code "spot" ;
+    rdf:value "g" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1414210443#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20250919191437.7" ;
+    bf:creationDate "20231214" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCQ $d OCLCF $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1414210443> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1414210443#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/spot> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "W 123°54ʹ--W 122°05ʹ/N 39°49ʹ--N 37°48ʹ" ],
+        [ a bf:Cartographic ;
+            bf:relief <http://id.loc.gov/vocabulary/mrelief/shad> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "W1235400 W1220500 N0394900 N0374800" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4361.J73 2014" ;
+            bf:itemPortion ".V44" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Vestra Resources, Inc., $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thematic maps" ;
+            bflc:marcKey "655  7 $a Thematic maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01752679" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cartes thématiques." ;
+            bflc:marcKey "655  7 $a Cartes thématiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000211" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thematic maps." ;
+            bflc:marcKey "655  7 $a Thematic maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866668" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "thematic maps." ;
+            bflc:marcKey "655  7 $a thematic maps. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028142" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ],
+        <http://id.loc.gov/authorities/classification/G4361> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1414210443> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "284000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "Scale approximately 1:284,000" ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Mendocino County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Mendocino County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Mendocino County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca653834" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Pacific Coast" ;
+            bflc:marcKey "651  7 $a California $z Pacific Coast $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01243509" ] ] [ a bf:Geographic ;
+                        rdfs:label "Pacific Coast" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01243509" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Marin County" ;
+            bflc:marcKey "651  7 $a California $z Marin County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJvhvYwcDgdV84WMGdgYfq" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206041" ] ] [ a bf:Geographic ;
+                        rdfs:label "Marin County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206041" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJvhvYwcDgdV84WMGdgYfq> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Sonoma County" ;
+            bflc:marcKey "651  7 $a California $z Sonoma County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtMjkHQKfQF9QdM9rtBT3" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01213638" ] ] [ a bf:Geographic ;
+                        rdfs:label "Sonoma County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01213638" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJtMjkHQKfQF9QdM9rtBT3> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine districts California Pacific Coast Maps." ;
+            bflc:marcKey "650  0 $a Wine districts $z California $z Pacific Coast $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine districts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2143942" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106011" ] ] [ a bf:Geographic ;
+                        rdfs:label "Pacific Coast" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106011" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Wine districts California, Northern Maps." ;
+            bflc:marcKey "650  0 $a Wine districts $z California, Northern $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Wine districts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2143942" ] ] [ a bf:Geographic ;
+                        rdfs:label "California, Northern" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2114562" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Marin County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Marin County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Marin County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca321947" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Northern California" ;
+            bflc:marcKey "651  7 $a Northern California $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01692637" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture California, Northern Maps." ;
+            bflc:marcKey "650  0 $a Viticulture $z California, Northern $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085665" ] ] [ a bf:Geographic ;
+                        rdfs:label "California, Northern" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2114562" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Napa County" ;
+            bflc:marcKey "651  7 $a California $z Napa County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJcGmRYM48vjdKJ3hxvmBP" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206424" ] ] [ a bf:Geographic ;
+                        rdfs:label "Napa County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206424" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJcGmRYM48vjdKJ3hxvmBP> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Solano County" ;
+            bflc:marcKey "651  7 $a California $z Solano County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJbRjwdJ89BHGbkQhKpHG3" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01214273" ] ] [ a bf:Geographic ;
+                        rdfs:label "Solano County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01214273" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJbRjwdJ89BHGbkQhKpHG3> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Lake County" ;
+            bflc:marcKey "651  7 $a California $z Lake County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgmH9rBvrGv7YQc9ypdcP" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01208616" ] ] [ a bf:Geographic ;
+                        rdfs:label "Lake County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01208616" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJgmH9rBvrGv7YQc9ypdcP> ],
+        [ a bf:Topic ;
+            rdfs:label "Wine districts" ;
+            bflc:marcKey "650  7 $a Wine districts $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175955" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Viticulture" ;
+            bflc:marcKey "650  7 $a Viticulture $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01168260" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Mendocino County" ;
+            bflc:marcKey "651  7 $a California $z Mendocino County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJccgbQCB4tJ6X6TxR69Xd" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01215516" ] ] [ a bf:Geographic ;
+                        rdfs:label "Mendocino County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01215516" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJccgbQCB4tJ6X6TxR69Xd> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Napa County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Napa County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Napa County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca340818" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Solano County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Solano County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Solano County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca625430" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Sonoma County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Sonoma County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Sonoma County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca607169" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Lake County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Lake County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Lake County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca438463" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Viticulture California Pacific Coast Maps." ;
+            bflc:marcKey "650  0 $a Viticulture $z California $z Pacific Coast $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Viticulture" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085665" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106011" ] ] [ a bf:Geographic ;
+                        rdfs:label "Pacific Coast" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106011" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "California's North Coast 2014 American viticultural areas" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California's North Coast 2014 American viticultural areas" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a North Coast American viticultural areas" ;
+            bf:mainTitle "North Coast American viticultural areas" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a California's North Coast American viticultural areas, 2014" ;
+            bf:mainTitle "California's North Coast American viticultural areas, 2014" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpRJX9pkVYqRFv9BQ3F> a bf:Organization ;
+    rdfs:label "Vestra Resources, Inc.," .
+
+<https://id.oclc.org/worldcat/entity/1414210443> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1414210443#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "89 x 57 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1414210443" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1414210443#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Covers AVA areas of Lake, Marin, Mendocino, Napa, Solano, and Sonoma, counties"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes notes, table of AVA data, and location map"@en ],
+        [ a bf:Note ;
+            rdfs:label "Color shaded to show AVA boundaries and annual precipitation"@en ],
+        [ a bf:Note ;
+            rdfs:label "Oriented with north toward upper right"@en ],
+        [ a bf:Note ;
+            rdfs:label "Relief shown by shading and spot heights"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Redding, CA $b Vestra Resources, Inc. $c [2014]" ;
+            bflc:simpleAgent "Vestra Resources, Inc." ;
+            bflc:simpleDate "[2014]" ;
+            bflc:simplePlace "Redding, CA" ;
+            bf:date "2014"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Redding, CA Vestra Resources, Inc. [2014]" ;
+    bf:responsibilityStatement "Vestra Resources, Inc." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "California's North Coast 2014 American viticultural areas" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "California's North Coast 2014 American viticultural areas" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

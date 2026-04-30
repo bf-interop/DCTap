@@ -1,0 +1,761 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1379200811#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011202834.4" ;
+    bf:creationDate "20230516" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "MDY" ],
+        [ a bf:Organization ;
+            bf:code "STF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d STF $d OCLCO $d OCLCQ $d OCLCL $d MDY $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1379200811> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1379200811#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.2.T27" ;
+            bf:itemPortion "A1 2022B" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20221102" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hoss, Nina, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJqBvgDj8hCjdcjmFHHDMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqBvgDj8hCjdcjmFHHDMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lambert, Scott, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjCj7y48t3QkkpmdtGTDtq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjCj7y48t3QkkpmdtGTDtq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Focus Features, $e presenter. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7Vddb3Y6Ccb6dXt9c6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7Vddb3Y6Ccb6dXt9c6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Glover, Julian, $d 1935- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJxCx4dPVTb69F9KHp6R8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxCx4dPVTb69F9KHp6R8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Field, Todd, $e film director, $e screenwriter, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJfmpYrvR76GTMjgqjXTpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfmpYrvR76GTMjgqjXTpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Corduner, Allan, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJvmMJpGvgrrfdVdyVXmVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvmMJpGvgrrfdVdyVXmVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Blanchett, Cate, $d 1969- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJymt8pJ4VKcHM8MFvC84q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJymt8pJ4VKcHM8MFvC84q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Merlant, Noémie, $d 1988- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyh6VHX6QyVmFdTBxf8YP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyh6VHX6QyVmFdTBxf8YP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Strong, Mark, $d 1963- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyt4MXPkf9mwYQJMgGfv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyt4MXPkf9mwYQJMgGfv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universal Pictures (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7VddcRDKg4xV4TCY7R" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7VddcRDKg4xV4TCY7R> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Studio Distribution Services (Firm), $e film distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqKmcVgfWThryyCt36g" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqKmcVgfWThryyCt36g> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film distributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Standard Film Company, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmtgcRpWYWWdCG6KX7TR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmtgcRpWYWWdCG6KX7TR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kauer, Sophie, $d 2001- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kauer, Sophie, 2001-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15037815" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Milchan, Alexandra, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PCjyQfFf9x9kgXYpccVVY8y" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjyQfFf9x9kgXYpccVVY8y> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a EMJAG Productions, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpWqVcvDH3Djf7BW3p6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpWqVcvDH3Djf7BW3p6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:duration "PT5H16M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Psychological films." ;
+            bflc:marcKey "655  7 $a Psychological films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca13650452" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films psychologiques." ;
+            bflc:marcKey "655  7 $a Films psychologiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000168" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ;
+            bflc:marcKey "655  7 $a Fiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710264" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Psychological films" ;
+            bflc:marcKey "655  7 $a Psychological films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst02025645" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1379200811> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Cinematographer, Florian Hoffmeister; editor, Monika Willi; music, Hildur Guðnadóttir"@en ;
+            bflc:marcKey "508    $a Cinematographer, Florian Hoffmeister; editor, Monika Willi; music, Hildur Guðnadóttir" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Cate Blanchett, Noémie Merlant, Nina Hoss, Sophie Kauer, Julian Glover,  Allan Corduner, Mark Strong"@en ;
+            bflc:marcKey "511 1  $a Cate Blanchett, Noémie Merlant, Nina Hoss, Sophie Kauer, Julian Glover,  Allan Corduner, Mark Strong" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English, French or Spanish dialogue; French or Spanish subtitles; English subtitles for the deaf and hard of hearing (SDH)"@en ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "MPA rating: R; for some language and brief nudity"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:originDate "2022" ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Tár (Motion picture)" ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Tár (Motion picture)" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15231331" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Tár (Motion picture)" ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Tár (Motion picture)" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Tár (Motion picture). Spanish." ;
+                    bflc:marcKey "730 02 $i Container of (expression): $a Tár (Motion picture). $l Spanish." ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "Spanish." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Tár (Motion picture). Spanish." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Tár (Motion picture)." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Tár (Motion picture). French." ;
+                    bflc:marcKey "730 02 $i Container of (expression): $a Tár (Motion picture). $l French." ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "French." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Tár (Motion picture). French." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Tár (Motion picture)." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Orchestra" ;
+            bflc:marcKey "650  7 $a Orchestra $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01047284" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Women composers Germany Drama." ;
+            bflc:marcKey "650  0 $a Women composers $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Women composers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2106609" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Orchestra Germany Drama." ;
+            bflc:marcKey "650  0 $a Orchestra $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Orchestra" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2098790" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Women conductors (Music) Germany Drama." ;
+            bflc:marcKey "650  0 $a Women conductors (Music) $z Germany $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Women conductors (Music)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5536357" ] ] [ a bf:Geographic ;
+                        rdfs:label "Germany" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca506437" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Women conductors (Music)" ;
+            bflc:marcKey "650  7 $a Women conductors (Music) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01177524" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Women composers" ;
+            bflc:marcKey "650  7 $a Women composers $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01177510" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Set in the international world of classical music, the film centers on Lydia Tr̀, widely considered one of the greatest living composer/conductors and first-ever female chief conductor of a major German orchestra"@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tár /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tár /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfmpYrvR76GTMjgqjXTpP> a bf:Person ;
+    rdfs:label "Field, Todd," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4721033" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqBvgDj8hCjdcjmFHHDMP> a bf:Person ;
+    rdfs:label "Hoss, Nina," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4433792" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Germany" ;
+    bflc:marcKey "651  7 $a Germany $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01210272" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvmMJpGvgrrfdVdyVXmVC> a bf:Person ;
+    rdfs:label "Corduner, Allan," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5284914" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxCx4dPVTb69F9KHp6R8C> a bf:Person ;
+    rdfs:label "Glover, Julian, 1935-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca930592" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyh6VHX6QyVmFdTBxf8YP> a bf:Person ;
+    rdfs:label "Merlant, Noémie, 1988-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10971216" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJymt8pJ4VKcHM8MFvC84q> a bf:Person ;
+    rdfs:label "Blanchett, Cate, 1969-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5010725" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyt4MXPkf9mwYQJMgGfv3> a bf:Person ;
+    rdfs:label "Strong, Mark, 1963-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6747551" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjCj7y48t3QkkpmdtGTDtq> a bf:Person ;
+    rdfs:label "Lambert, Scott," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11507023" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjyQfFf9x9kgXYpccVVY8y> a bf:Person ;
+    rdfs:label "Milchan, Alexandra," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7827708" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpWqVcvDH3Djf7BW3p6> a bf:Organization ;
+    rdfs:label "EMJAG Productions," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11350192" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqKmcVgfWThryyCt36g> a bf:Organization ;
+    rdfs:label "Studio Distribution Services (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca14363932" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmtgcRpWYWWdCG6KX7TR> a bf:Organization ;
+    rdfs:label "Standard Film Company," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7774279" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7Vddb3Y6Ccb6dXt9c6> a bf:Organization ;
+    rdfs:label "Focus Features," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6054230" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7VddcRDKg4xV4TCY7R> a bf:Organization ;
+    rdfs:label "Universal Pictures (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca975408" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1379200811> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1379200811#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdf:value "2.39:1" ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "captions"@en ] ;
+    bf:copyrightDate "©2022"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:RegionalEncoding ;
+            rdfs:label "region A"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Blu-ray"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionA> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region B"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Blu-ray"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionB> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "4K Ultra HD Blu-ray"@en ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:distributionStatement "Universal City, CA : Studio Distribution Services" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 videodiscs (316 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(set)" ;
+            rdf:value "1000823707" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(4K Ultra HD Blu-ray)" ;
+            rdf:value "1207283" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1379200811" ],
+        [ a bf:Upc ;
+            bf:qualifier "(set)" ;
+            rdf:value "191329239612" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(Blu-ray)" ;
+            rdf:value "1207282" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1379200811#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "4K Ultra HD Blu-ray: 2160p ultra high definition, HDR10; 4K ultra HD TV with HDR, Ultra Blu-ray player, high-speed HDMI 2.0A cable; 4K television required for full 4K UHD effect; can also be viewed using a 1080 television without full 4K UHD effects.4K television required for full 4K UHD effect; can also be viewed using a 1080 television without full 4K UHD effects"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Wide screen (2.39:1)"@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English SDH"@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Originally produced in the United States, released as a motion picture in 2022"@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "stamping"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:provisionActivity [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a Universal City, CA : $b Studio Distribution Services" ;
+            bflc:simpleAgent "Studio Distribution Services" ;
+            bflc:simplePlace "Universal City, CA :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Universal City, CA : $b Universal, $c [2022]" ;
+            bflc:simpleAgent "Universal," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "Universal City, CA :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Universal City, CA : Universal, [2022]" ;
+    bf:responsibilityStatement "Focus Features presents a Standard Film Company/Emjag production ; producers, Alexandra Milchan, Scott Lambert ; written, produced and directed by Todd Field" ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital 5.1"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "French and Spanish"@en ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig51> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "English"@en ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolby> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tár /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tár /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/relationship/part> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

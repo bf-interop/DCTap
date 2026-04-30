@@ -1,0 +1,251 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4363.S5> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4363 $b S5" ;
+    bf:code "4363.S5" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026530> a bf:GenreForm ;
+    rdfs:label "Remote-sensing images"@en .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/one> a bf:ColorContent ;
+    rdfs:label "one color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<https://id.oclc.org/worldcat/entity/1371110875#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20241005100852.8" ;
+    bf:creationDate "20230223" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371110875> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1371110875#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4363.M2A4 1943" ;
+            bf:itemPortion ".U5" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 1  $a United States. $b Agricultural Stabilization and Conservation Service, $e commissioning body." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. Agricultural Stabilization and Conservation Service," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca506606" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "commissioning body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Images-satellite." ;
+            bflc:marcKey "655  7 $a Images-satellite. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000217" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remote-sensing images." ;
+            bflc:marcKey "655  7 $a Remote-sensing images. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866508" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Aerial photographs." ;
+            bflc:marcKey "655  7 $a Aerial photographs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866026" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remote-sensing images" ;
+            bflc:marcKey "655  7 $a Remote-sensing images $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423694" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Aerial photographs" ;
+            bflc:marcKey "655  7 $a Aerial photographs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423684" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026530> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ],
+        <http://id.loc.gov/authorities/classification/G4363.S5> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371110875> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "20000" ],
+        [ a bf:Scale ;
+            rdfs:label "Scale 1:20,000." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Santa Cruz County" ;
+            bflc:marcKey "651  7 $a California $z Santa Cruz County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJxt36Pdm8vKB3QqYVTPwC" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01210722" ] ] [ a bf:Geographic ;
+                        rdfs:label "Santa Cruz County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01210722" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJxt36Pdm8vKB3QqYVTPwC> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "JMarin County (Calif.) Remote-sensing images." ;
+            bflc:marcKey "651  0 $a JMarin County (Calif.) $v Remote-sensing images." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "JMarin County (Calif.)" ] [ a bf:GenreForm ;
+                        rdfs:label "Remote-sensing images." ] ) ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Point Reyes Quadrangle, Marin County, California :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Point Reyes Quadrangle, Marin County, California :" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1371110875> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371110875#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/one> ;
+    bf:dimensions "46 x 46 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "remote-sensing images :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1371110875" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1371110875#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "black and white prints ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Flight symbol: COF."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title supplied by cataloger."@en ],
+        [ a bf:Note ;
+            rdfs:label "Flown in 10-12-'43."@en ],
+        [ a bf:Note ;
+            rdfs:label "Stamp on back: \"Photogeology Laboratory, School of Mineral Sciences, Stanford University.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Washington, D.C.] : $b USDA Agricultural Stabilization and Conservation Service, $c [1956]." ;
+            bflc:simpleAgent "USDA Agricultural Stabilization and Conservation Service," ;
+            bflc:simpleDate "[1956]." ;
+            bflc:simplePlace "[Washington, D.C.] :" ;
+            bf:date "1943"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ] ;
+    bf:publicationStatement "[Washington, D.C.] : USDA Agricultural Stabilization and Conservation Service, [1956]." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Point Reyes Quadrangle, Marin County, California : aerial photos from flight COF]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Point Reyes Quadrangle, Marin County, California :" ;
+            bf:subtitle "aerial photos from flight COF]." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

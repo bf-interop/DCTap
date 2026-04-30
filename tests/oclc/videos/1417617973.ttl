@@ -1,0 +1,286 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/mag> a bf:RecordingMedium ;
+    rdfs:label "magnetic"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/mvidformat/vhs> a bf:VideoFormat ;
+    rdfs:label "VHS"@en .
+
+<https://id.oclc.org/worldcat/entity/1417617973#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20241213023623.6" ;
+    bf:creationDate "20240118" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1417617973> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1417617973#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QC16.B46" ;
+            bf:itemPortion "I2 1995" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Cornell University. $b Office of Communication Strategies." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Cornell University. Office of Communication Strategies." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3885767" ] ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Cornell University. $b Department of Physics. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7PDdGQt4gqrbjYr4Fg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7PDdGQt4gqrbjYr4Fg> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bethe, Hans A. $q (Hans Albrecht), $d 1906-2005. $1 https://id.oclc.org/worldcat/entity/E39PBJyRFGMfrgBPH9PkhVxv73" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyRFGMfrgBPH9PkhVxv73> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Rose Films." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Rose Films." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Champlin, Michael." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Champlin, Michael." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hershey, Edward." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hershey, Edward." ] ] ;
+    bf:duration "PT24M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1417617973> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Camera, Michael Champlin ; additional camera, Slawomir Grunberg ; sound, David Huntley, Bill Shackleton."@en ;
+            bflc:marcKey "508    $a Camera, Michael Champlin ; additional camera, Slawomir Grunberg ; sound, David Huntley, Bill Shackleton." ] ;
+    bf:subject [ a bf:Organization ;
+            rdfs:label "Cornell University" ;
+            bflc:marcKey "610 27 $a Cornell University $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00530369" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Cornell University $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Cornell University" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca255419" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] ) ],
+        [ a bf:Organization ;
+            rdfs:label "Cornell University. Department of Physics" ;
+            bflc:marcKey "610 27 $a Cornell University. $b Department of Physics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01813942" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Cornell University. $b Department of Physics $x History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Cornell University. Department of Physics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3971992" ] ] [ a bf:Topic ;
+                        rdfs:label "History." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] ) ],
+        [ a bf:Person ;
+            rdfs:label "Bethe, Hans A. (Hans Albrecht), 1906-2005." ;
+            bflc:marcKey "600 10 $a Bethe, Hans A. $q (Hans Albrecht), $d 1906-2005." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca44625" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJyRFGMfrgBPH9PkhVxv73> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Through interviews and film clips, this video recounts the long and varied career of Hans Bethe, theoretical physicist."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "\"I can do that!\" :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "\"I can do that!\" :" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Hans Bethe's first 60 years at Cornell" ;
+            bf:mainTitle "Hans Bethe's first 60 years at Cornell" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7PDdGQt4gqrbjYr4Fg> a bf:Organization ;
+    rdfs:label "Cornell University. Department of Physics." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3971992" ] .
+
+<https://id.oclc.org/worldcat/entity/1417617973> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1417617973#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "1/2 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 streaming video file (24 min.)) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1417617973" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1417617973#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color with black and white sequences"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://ecommons.cornell.edu/handle/1813/84 $z Available via Cornell's eCommons." ;
+            bf:electronicLocator <http://ecommons.cornell.edu/handle/1813/84> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available via Cornell's eCommons."@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Converted from VHS."@en ],
+        [ a bf:Note ;
+            rdfs:label "Documentary."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a [Ithaca, N.Y.] : $b Rose Films, $c c1995." ;
+            bflc:simpleAgent "Rose Films," ;
+            bflc:simpleDate "c1995." ;
+            bflc:simplePlace "[Ithaca, N.Y.] :" ;
+            bf:date "1995"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "[Ithaca, N.Y.] : Rose Films, c1995." ;
+    bf:responsibilityStatement "produced and written by Edward Hershey ; directed and edited by Michael Champlin ; produced for the Department of Physics at Cornell University by the Office of Communication Strategies and Rose Films, Inc." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/mag> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "\"I can do that!\" : Hans Bethe's first 60 years at Cornell /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "\"I can do that!\" :" ;
+            bf:subtitle "Hans Bethe's first 60 years at Cornell /" ] ;
+    bf:videoCharacteristic <http://id.loc.gov/vocabulary/mvidformat/vhs> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyRFGMfrgBPH9PkhVxv73> a bf:Person ;
+    rdfs:label "Bethe, Hans A. (Hans Albrecht), 1906-2005",
+        "Bethe, Hans A. (Hans Albrecht), 1906-2005." ;
+    bflc:marcKey "600 17 $a Bethe, Hans A. $q (Hans Albrecht), $d 1906-2005 $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJyRFGMfrgBPH9PkhVxv73" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca44625" ],
+        [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01427179" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

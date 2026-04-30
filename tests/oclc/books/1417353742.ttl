@@ -1,0 +1,180 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<https://id.oclc.org/worldcat/entity/1417353742#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20240116133706.8" ;
+    bf:creationDate "20240116" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1417353742> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1417353742#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HD2127.Z8" ;
+            bf:itemPortion "F675 2018" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a f-ug---" ;
+            bf:code "f-ug---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/f-ug> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1417353742> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Industries." ;
+            bflc:marcKey "650  7 $a Industries. $2 fast $0 (OCoLC)fst00971852" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00971852" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Agricultural industries." ;
+            bflc:marcKey "650  7 $a Agricultural industries. $2 fast $0 (OCoLC)fst00800842" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00800842" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Sustainable agriculture Planning." ;
+            bflc:marcKey "650  7 $a Sustainable agriculture $x Planning. $2 fast $0 (OCoLC)fst01139721" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01139721" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Sustainable agriculture" ] [ a bf:Topic ;
+                        rdfs:label "Planning." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Sustainable agriculture Government policy." ;
+            bflc:marcKey "650  7 $a Sustainable agriculture $x Government policy. $2 fast $0 (OCoLC)fst01139716" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01139716" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Sustainable agriculture" ] [ a bf:Topic ;
+                        rdfs:label "Government policy." ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Agriculture and state." ;
+            bflc:marcKey "650  7 $a Agriculture and state. $2 fast $0 (OCoLC)fst00801722" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00801722" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJdcxwbtk4ChHbHRf6bfMP> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Fostering a sustainable agro-industrialisation agenda in Uganda" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Fostering a sustainable agro-industrialisation agenda in Uganda" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 13 $a Fostering a sustainable agro-industrialization agenda in Uganda" ;
+            bf:mainTitle "Fostering a sustainable agro-industrialization agenda in Uganda" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdcxwbtk4ChHbHRf6bfMP> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Uganda." ;
+    bflc:marcKey "651  7 $a Uganda. $2 fast $0 (OCoLC)fst01210282 $1 https://id.oclc.org/worldcat/entity/E39PBJdcxwbtk4ChHbHRf6bfMP" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01210282" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/1417353742> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1417353742#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "29 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "111 pages ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1417353742" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1417353742#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Kampala, Uganda : $b EPRC -- Economic Policy Research Centre, $c 2018" ;
+            bflc:simpleAgent "EPRC -- Economic Policy Research Centre," ;
+            bflc:simpleDate "2018" ;
+            bflc:simplePlace "Kampala, Uganda :" ;
+            bf:date "2018"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ug> ] ;
+    bf:publicationStatement "Kampala, Uganda : EPRC -- Economic Policy Research Centre, 2018" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Fostering a sustainable agro-industrialisation agenda in Uganda" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Fostering a sustainable agro-industrialisation agenda in Uganda" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

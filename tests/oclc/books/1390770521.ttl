@@ -1,0 +1,226 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/mcolor/blw> a bf:ColorContent ;
+    rdfs:label "black and white"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/map> a bf:Illustration ;
+    rdfs:label "maps"@en ;
+    bf:code "map" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1390770521#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20231125213905.2" ;
+    bf:creationDate "20230702" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1390770521> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1390770521#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "QV 156" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Harper, Carolyn, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Harper, Carolyn," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a United States. $b Agency for Toxic Substances and Disease Registry, $e issuing body." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. Agency for Toxic Substances and Disease Registry," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1891208" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1390770521> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nitrates toxicity" ;
+            bflc:marcKey "650 12 $a Nitrates $x toxicity" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nitrates" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D009566Q000633" ] ] [ a bf:Topic ;
+                        rdfs:label "toxicity" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D009566Q000633" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "United States" ;
+            bflc:marcKey "651  2 $a United States" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D014481" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nitrites toxicity" ;
+            bflc:marcKey "650 12 $a Nitrites $x toxicity" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nitrites" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D009573Q000633" ] ] [ a bf:Topic ;
+                        rdfs:label "toxicity" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D009573Q000633" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The ATSDR toxicological profile succinctly characterizes the toxicology and adverse health effects information for the toxic substance described therein. Each peer-reviewed profile identifies and reviews the key literature that describes a substance's toxicological properties. This Public Health Statement summarizes the Agency for Toxic Substances and Disease Registry's(ATSDR) findings on inorganic nitrate and nitrite, including chemical characteristics, exposure risks, possible health effects from exposure, and ways to limit exposure. Nitrate and nitrite can be present inorganic or inorganic compounds, depending on their chemical structures. This profile pertains to inorganic nitrate and nitrite, specifically the ionic forms of both nitrate and nitrite."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Toxicological profile for nitrate and nitrite /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Toxicological profile for nitrate and nitrite /" ] .
+
+<https://id.oclc.org/worldcat/entity/1390770521> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1390770521#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/blw> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 PDF file (xi, 271 pages)) :"@en ] ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918644387506676" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1390770521" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1390770521#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u http://www.ncbi.nlm.nih.gov/books/NBK592479/" ;
+            bf:electronicLocator <http://www.ncbi.nlm.nih.gov/books/NBK592479> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on online resource; title from PDF title page (viewed July 19, 2023)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations, maps"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Atlanta, Georgia : $b U.S. Department of Health and Human Services, Public Health Service, Agency for Toxic Substances and Disease Registry, $c July 2017." ;
+            bflc:simpleAgent "U.S. Department of Health and Human Services, Public Health Service, Agency for Toxic Substances and Disease Registry," ;
+            bflc:simpleDate "July 2017." ;
+            bflc:simplePlace "Atlanta, Georgia :" ;
+            bf:date "2017"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/gau> ] ;
+    bf:publicationStatement "Atlanta, Georgia : U.S. Department of Health and Human Services, Public Health Service, Agency for Toxic Substances and Disease Registry, July 2017." ;
+    bf:responsibilityStatement "chemical managers/authors, Carolyn Harper [and 8 others]." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Toxicological profile for nitrate and nitrite /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Toxicological profile for nitrate and nitrite /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

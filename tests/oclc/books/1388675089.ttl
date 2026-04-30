@@ -1,0 +1,155 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1388675089#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250606064630.4" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Non-ISBD"@en ;
+            bf:code "blank" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388675089> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1388675089#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "621.384" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3rfDDcMjRy9Hfgm9MPYxgGdbr> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Quaglia, Roberto." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Quaglia, Roberto." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Camarchia, Vittorio." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Camarchia, Vittorio." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Del Corso, Dante." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Del Corso, Dante." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388675089> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            bf:code "TEC041000" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ],
+        [ a bf:Topic ;
+            bf:code "TEC008000" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This practical, hands-on resource describes functional units and circuits of telecommunication systems. The functions characterizing these systems, including RF amplifiers (both low noise and power amplifiers), signal sources, mixers and phase lock loops, are explored from an operational level viewpoint. And as all functions are migrating to digital implementations, this book describes functional units and circuits of telecommunication systems (with radio, wire, or optical links), from functional level viewpoint to the circuit details and examples. The structure of a radio transceiver is described and a view of all functional units, including migration to SDR (Software Defined Radio) is provided. Chapters include a functional identification of the units described and analysis of possible circuit solutions and analysis of error sources. The sequence reflects the actual design procedure: functional identification, search and analysis of solutions, and critical review to provide an understanding of the various solutions and tradeoffs, with guidelines for design and/or selection of proper functional units."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Telecommunication Electronics." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Telecommunication Electronics." ] .
+
+<http://id.loc.gov/vocabulary/classSchemes/agricola> a bf:Source ;
+    bf:code "agricola" .
+
+<https://id.oclc.org/worldcat/entity/1388675089> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388675089#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource 307 pages"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1630817376" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(electronic bk.)" ;
+            rdf:value "9781630817374" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1388675089" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1388675089#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "eLoaderURL" ;
+            bflc:marcKey "856 40 $u https://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781630817374 $x Provider: Artech House $x eLoaderURL $x ar4 $x arEBL210080727 $z Available to Stanford-affiliated users." ;
+            bf:electronicLocator <http://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781630817374> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Artech House"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Norwood : $b Artech House, $c 2020." ;
+            bflc:simpleAgent "Artech House," ;
+            bflc:simpleDate "2020." ;
+            bflc:simplePlace "Norwood :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Norwood : Artech House, 2020." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Telecommunication Electronics." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Telecommunication Electronics." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

@@ -1,0 +1,284 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relators/fmd> a bf:Role ;
+    bf:code "fmd" .
+
+<https://id.kb.se/term/sao/Br%C3%B6der> a bf:Topic ;
+    rdfs:label "Bröder." ;
+    bflc:marcKey "650  7 $a Bröder. $0 https://id.kb.se/term/sao/Br%C3%B6der $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/F%C3%B6renta%20staterna--New%20York> a bf:Topic,
+        madsrdf:ComplexSubject,
+        madsrdf:Geographic ;
+    rdfs:label "Förenta staterna New York." ;
+    bflc:marcKey "651  7 $a Förenta staterna $z New York. $0 https://id.kb.se/term/sao/F%C3%B6renta%20staterna--New%20York $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+    madsrdf:componentList ( [ a bf:Geographic ;
+                rdfs:label "Förenta staterna" ] [ a bf:Geographic ;
+                rdfs:label "New York." ] ) .
+
+<https://id.kb.se/term/sao/Frieri> a bf:Topic ;
+    rdfs:label "Frieri." ;
+    bflc:marcKey "650  7 $a Frieri. $0 https://id.kb.se/term/sao/Frieri $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Italienare> a bf:Topic ;
+    rdfs:label "Italienare." ;
+    bflc:marcKey "650  7 $a Italienare. $0 https://id.kb.se/term/sao/Italienare $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/K%C3%A4rlek> a bf:Topic ;
+    rdfs:label "Kärlek." ;
+    bflc:marcKey "650  7 $a Kärlek. $0 https://id.kb.se/term/sao/K%C3%A4rlek $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/saogf/L%C3%A5ngfilmer> a bf:GenreForm ;
+    rdfs:label "Långfilmer." ;
+    bflc:marcKey "655  7 $a Långfilmer. $0 https://id.kb.se/term/saogf/L%C3%A5ngfilmer $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Romantisk%20komedi%20%28film%29> a bf:GenreForm ;
+    rdfs:label "Romantisk komedi (film)" ;
+    bflc:marcKey "655  7 $a Romantisk komedi (film) $0 https://id.kb.se/term/saogf/Romantisk%20komedi%20%28film%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1458562644#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250913195710.4" ;
+    bf:creationDate "20241003" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1458562644> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1458562644#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "1987."@sv ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "791.4372" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/swe" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "He.025" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@sv ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Palmer, Patrick. $4 fmp" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Palmer, Patrick." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jewison, Norman, $d 1926-1924. $4 fmd $4 fmp" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jewison, Norman, 1926-1924." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmd>,
+                <http://id.loc.gov/vocabulary/relators/fmp> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/L%C3%A5ngfilmer>,
+        <https://id.kb.se/term/saogf/Romantisk%20komedi%20%28film%29> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1458562644> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "nor" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/nor> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Skådespelare: Cher, Nicolas Cage, Olympia Dukakis, Vincent Gardenia [med flera]."@sv ;
+            bflc:marcKey "511 0  $a Skådespelare: Cher, Nicolas Cage, Olympia Dukakis, Vincent Gardenia [med flera]." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Tal på engelska. Textad på svenska, engelska, danska, nederländska, finska, norska, polska, portugisiska, franska."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dan" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dan> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fin" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fin> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "swe" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/swe> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dut" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dut> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "pol" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/pol> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "por" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "[Från 7 år]."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:subject <https://id.kb.se/term/sao/Br%C3%B6der>,
+        <https://id.kb.se/term/sao/F%C3%B6renta%20staterna--New%20York>,
+        <https://id.kb.se/term/sao/Frieri>,
+        <https://id.kb.se/term/sao/Italienare>,
+        <https://id.kb.se/term/sao/K%C3%A4rlek> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Moonstruck /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Moonstruck /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Mångalen" ;
+            bf:mainTitle "Mångalen" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/relators/fmp> a bf:Role ;
+    bf:code "fmp" .
+
+<https://id.oclc.org/worldcat/entity/1458562644> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1458562644#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@sv ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:copyrightDate "©2004"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 DVD-video (1 tim., 43 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            rdf:value "15861DVD" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1458562644" ],
+        [ a bf:Ean ;
+            rdf:value "5050070001815" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1458562644#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@sv ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "This disc includes: original theatrical trailer, feature length audio commentary by Cger, Norman Jewison and John Patrick Shanley"@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "ljud, färg"@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b MGM Home Entertainment, $c [2004]" ;
+            bflc:simpleAgent "MGM Home Entertainment," ;
+            bflc:simpleDate "[2004]" ;
+            bf:date "2004"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "MGM Home Entertainment, [2004]" ;
+    bf:responsibilityStatement "Directed by Norman Jewison ; produced by Patrick Palmer & Norman Jewison ; written by ?John Patrick Shanley." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Moonstruck /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Moonstruck /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sao> a bf:Source ;
+    bf:code "sao" .
+

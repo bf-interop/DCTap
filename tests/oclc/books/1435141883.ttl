@@ -1,0 +1,279 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026039> a bf:GenreForm ;
+    rdfs:label "Academic theses"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/mcolor/blw> a bf:ColorContent ;
+    rdfs:label "black and white"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<https://id.oclc.org/worldcat/entity/1435141883#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20251011232056.3" ;
+    bf:creationDate "20240513" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1435141883> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1435141883#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "WM 11.1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a University of New Hampshire, $e degree granting institution. $1 https://id.oclc.org/worldcat/entity/E39QH7JmmWQTdgTwGmjgCpjrkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmmWQTdgTwGmjgCpjrkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "degree granting institution." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Farreras, Ingrid G., $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Farreras, Ingrid G.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2001." ;
+            bf:degree "Doctor of Philosophy in psychology" ;
+            bf:grantingInstitution [ a bf:Agent ;
+                    rdfs:label "University of New Hampshire" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1435141883> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "History, 20th Century" ;
+            bflc:marcKey "650 22 $a History, 20th Century" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D049673" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "History, 19th Century" ;
+            bflc:marcKey "650 22 $a History, 19th Century" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D049672" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Psychology, Clinical history" ;
+            bflc:marcKey "650 12 $a Psychology, Clinical $x history" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Psychology, Clinical" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D011586Q000266" ] ] [ a bf:Topic ;
+                        rdfs:label "history" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D011586Q000266" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Psychology, Clinical education" ;
+            bflc:marcKey "650 22 $a Psychology, Clinical $x education" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Psychology, Clinical" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D011586Q000193" ] ] [ a bf:Topic ;
+                        rdfs:label "education" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D011586Q000193" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Médecine Histoire 19e siècle." ;
+            bflc:marcKey "650  6 $a Médecine $x Histoire $y 19e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Médecine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437833" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437833" ] ] [ a bf:Temporal ;
+                        rdfs:label "19e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437833" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Médecine Histoire 20e siècle." ;
+            bflc:marcKey "650  6 $a Médecine $x Histoire $y 20e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Médecine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437836" ] ] [ a bf:Topic ;
+                        rdfs:label "Histoire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437836" ] ] [ a bf:Temporal ;
+                        rdfs:label "20e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0437836" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This dissertation documents the early history that led to the scientist-practitioner (Boulder\") model of training in clinical psychology. It uncovers pre-Boulder training guidelines and programs suggested by individuals and psychological organizations while exploring two themes: 1) the boundary issues between the budding clinical psychologists and the more established, elite mental health providers, particularly psychiatrists, between academic psychologists and these new clinical or applied psychologists, and between the various applied psychologists, and 2) how these training models (and organization membership requirements, codes of ethics, licensing and certification issues, and institutional accreditation) served as a way to professionalize clinical psychology, to improve its scientific status vis-à-vis psychiatry as well as help it establish a separate identity from academic psychology. Focusing on the 1896-1949 time period, this dissertation explores the emerging and evolving role of the clinical psychologist, from administrators of intelligence and occupational tests before, during and between the world wars to their increased visibility as therapists and researchers during and after World War II."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Before Boulder :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Before Boulder :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmmWQTdgTwGmjgCpjrkt> a bf:Organization ;
+    rdfs:label "University of New Hampshire," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca239828" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1435141883> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1435141883#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/blw> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 PDF file (xii, 317 pages))"@en ] ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918821688506676" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1435141883" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1435141883#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://scholars.unh.edu/dissertation/13/" ;
+            bf:electronicLocator <http://scholars.unh.edu/dissertation/13> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on online resource; title from PDF title page (viewed on May 15, 2024)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Durham, New Hampshire] : $b University of New Hampshire, $c May 2001." ;
+            bflc:simpleAgent "University of New Hampshire," ;
+            bflc:simpleDate "May 2001." ;
+            bflc:simplePlace "[Durham, New Hampshire] :" ;
+            bf:date "2001"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nhu> ] ;
+    bf:publicationStatement "[Durham, New Hampshire] : University of New Hampshire, May 2001." ;
+    bf:responsibilityStatement "by Ingrid G. Farreras." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Before Boulder : professionalizing clinical psychology, 1896-1949 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Before Boulder :" ;
+            bf:subtitle "professionalizing clinical psychology, 1896-1949 /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

@@ -1,0 +1,497 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/aes> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Analog electrical storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/c> a bf:PlayingSpeed ;
+    rdfs:label "45 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/msupplcont/historicalinfo> a bf:SupplementaryContent ;
+    rdfs:label "historical information"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/libretto> a bf:SupplementaryContent ;
+    rdfs:label "libretto or text"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/techmusic> a bf:SupplementaryContent ;
+    rdfs:label "technical information on music"@en .
+
+<https://id.oclc.org/worldcat/entity/1397343010#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20240325200802.2" ;
+    bf:creationDate "20230915" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d COO $d OCLCF" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1397343010> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1397343010#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "1958-1965." ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Reed, Lou, $e composer, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Reed, Lou," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca2956407" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cale, John, $e performer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cale, John," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca2783019" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Personal recordings." ;
+            bflc:marcKey "655  7 $a Personal recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca9537268" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027054> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock (Musique)" ;
+            bflc:marcKey "655  7 $a Rock (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000951" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Alternate takes (Sound recordings)" ;
+            bflc:marcKey "655  7 $a Alternate takes (Sound recordings) $2 fast $0 (OCoLC)fst01752722" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01752722" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Versions alternatives (Enregistrements sonores)" ;
+            bflc:marcKey "655  7 $a Versions alternatives (Enregistrements sonores) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001775" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Démos." ;
+            bflc:marcKey "655  7 $a Démos. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000203" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Alternate takes (Sound recordings)" ;
+            bflc:marcKey "655  7 $a Alternate takes (Sound recordings) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866031" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Folk-rock music." ;
+            bflc:marcKey "655  7 $a Folk-rock music. $2 fast $0 (OCoLC)fst01726619" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726619" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Demo recordings." ;
+            bflc:marcKey "655  7 $a Demo recordings. $2 fast $0 (OCoLC)fst01752723" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01752723" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Personal recordings." ;
+            bflc:marcKey "655  7 $a Personal recordings. $2 fast $0 (OCoLC)fst01910792" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01910792" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Folk-rock music." ;
+            bflc:marcKey "655  7 $a Folk-rock music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090413" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock music." ;
+            bflc:marcKey "655  7 $a Rock music. $2 fast $0 (OCoLC)fst01726724" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726724" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Demo recordings." ;
+            bflc:marcKey "655  7 $a Demo recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866178" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores personnels." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores personnels. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001508" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock music." ;
+            bflc:marcKey "655  7 $a Rock music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090656" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Folk-rock." ;
+            bflc:marcKey "655  7 $a Folk-rock. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000781" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1397343010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Lou Reed ; with John Cale."@en ;
+            bflc:marcKey "511 0  $a Lou Reed ; with John Cale." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced for release by Laurie Anderson, Don Fleming, Jason Stern, Matt Sullivan, Hal Willner."@en ;
+            bflc:marcKey "508    $a Produced for release by Laurie Anderson, Don Fleming, Jason Stern, Matt Sullivan, Hal Willner." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Lou Reed archive series ;" ;
+                    bflc:marcKey "830  0 $a Lou Reed archive series ; $v no. 1." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15163995" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Lou Reed archive series ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "no. 1." ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Lou Reed archive series ; $v no. 1" ;
+                    bf:seriesEnumeration "no. 1" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Lou Reed archive series ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock music To 1961." ;
+            bflc:marcKey "650  0 $a Rock music $y To 1961." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069418" ] ] [ a bf:Temporal ;
+                        rdfs:label "To 1961." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069418" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Rock music." ;
+            bflc:marcKey "650  7 $a Rock music. $2 fast $0 (OCoLC)fst01099204" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01099204" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock (Musique) Jusqu'à 1961." ;
+            bflc:marcKey "650  6 $a Rock (Musique) $y Jusqu'à 1961." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock (Musique)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164316" ] ] [ a bf:Temporal ;
+                        rdfs:label "Jusqu'à 1961." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164316" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock music 1961-1970." ;
+            bflc:marcKey "650  0 $a Rock music $y 1961-1970." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069422" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069422" ] ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "To 1970" ;
+            bflc:marcKey "648  7 $a To 1970 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rock (Musique) 1961-1970." ;
+            bflc:marcKey "650  6 $a Rock (Musique) $y 1961-1970." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rock (Musique)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164320" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164320" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Capturing Lou Reed in his formative years, this previously unreleased collection of songs--authored and recorded to tape by Reed with the help of future bandmate John Cale, and mailed to himself as a 'poor man's copyright' on May 11th, 1965--remained unopened for nearly 50 years; features the earliest known recordings of 'I'm waiting for the man,' 'Pale blue eyes,' and 'Heroin' as made famous by The Velvet Underground; includes six unheard tracks recorded between 1958 and 1964, including early demos, a cover of Bob Dylan's 'Don't think twice, it's all right,' and a doo-wop serenade recorded in '58 when the legendary singer-songwriter was just sixteen years old\"--Container packaging."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/historicalinfo>,
+        <http://id.loc.gov/vocabulary/msupplcont/libretto>,
+        <http://id.loc.gov/vocabulary/msupplcont/techmusic> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "7-inch EP: 1958 rehearsal. Gee whiz -- 1963/64 home recordings. Baby, let me follow you down ; Michael, row the boat ashore ; Don't think twice, it's all right (partial) ; W & X, Y, Z blues ; Lou's 12-bar instrumental." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "CD: May 1965 demos. I'm waiting for the man ; Men of good fortune ; Heroin ; Too late ; Buttercup song ; Walk alone ; Buzz buzz buzz ; Pale blue eyes ; Stockpile ; Wrap your troubles in dreams -- May 1965 alternate version. I'm waiting for the man -- 1958 rehearsal. Gee whiz -- 1963/64 home recordings. Baby, let me follow you down ; Michael, row the boat ashore ; Don't think twice, it's all right (partial) ; W & X, Y, Z blues ; Lou's 12-bar instrumental." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "12-inch LPs: May 1965 demos. I'm waiting for the man ; Men of good fortune ; Heroin ; Too late ; Buttercup song ; Walk alone ; Buzz buzz buzz ; Pale blue eyes ; Stockpile ; Wrap your troubles in dreams -- I'm waiting for the man (alternate version)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Words & music May 1965 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Words & music May 1965 /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Words and music" ;
+            bf:mainTitle "Words and music" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1397343010> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1397343010#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ] ;
+    bf:dimensions "12 in.",
+        "4 3/4 in.",
+        "7 in." ;
+    bf:editionStatement "Deluxe edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "4 audio discs"@en ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            rdf:value "826853018913" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Light in the Attic" ] ;
+            bf:qualifier "(7-inch EP)" ;
+            rdf:value "LITA 45-056" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1397343010" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Light in the Attic" ] ;
+            bf:qualifier "(set, 12-inch LPs, CD)" ;
+            rdf:value "LITA 189" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1397343010#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "All tracks previously unreleased."@en ],
+        [ a bf:Note ;
+            rdfs:label "Consists of two 12-inch 45 rpm LPs (May 1965 demos and alternate version), a 7-inch 45 rpm EP (1958 rehearsal and 1963-1964 home recordings), and a CD containing complete audio from the LPs and EP."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes 28-page booklet featuring lyrics, archival photos, and liner notes by Greil Marcus, Don Fleming, and Jason Stern; includes archival reproduction of letter written by Lou Reed to Delmore Schwartz, circa 1964."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Seattle, WA] : $b Light in the Attic, $c [2022]" ;
+            bflc:simpleAgent "Light in the Attic," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[Seattle, WA] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/wau> ] ;
+    bf:publicationStatement "[Seattle, WA] : Light in the Attic, [2022]" ;
+    bf:responsibilityStatement "Lou Reed." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "45 rpm"@en ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/aes>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayspeed/c>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Words & music May 1965 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Words & music May 1965 /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

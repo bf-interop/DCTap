@@ -1,0 +1,326 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1386967824#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011212825.1" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCF $d OCLCO $d OCLCL $d OCLCA $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1386967824> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJp9wThMmvymQ9hR6C8jYP> a bf:Person ;
+    rdfs:label "Von Thun, Friedrich, 1942-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6848241" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtMrBW7j9pYPV9jCxgFrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Liechtenstein" ;
+    bflc:marcKey "651  7 $a Liechtenstein $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtMrBW7j9pYPV9jCxgFrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01211042" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PCGpPkmkFBHb77Mrf3Qgc8C> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kindle, Jürgen, $e film producer, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kindle, Jürgen," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ],
+                [ a bf:Role ;
+                    rdfs:label "film producer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a BayView Entertainment (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqG8J4qQJp8pJtffJPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqG8J4qQJp8pJtffJPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hohmann, Lew $d 1944- $e film director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hohmann, Lew 1944-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Von Thun, Friedrich, $d 1942- $e narrator. $1 https://id.oclc.org/worldcat/entity/E39PBJp9wThMmvymQ9hR6C8jYP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJp9wThMmvymQ9hR6C8jYP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "narrator." ] ] ;
+    bf:duration "PT54M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-lh---" ;
+            bf:code "e-lh---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-lh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1386967824> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, Christian Huck; editor, Ladislav Cosira; music, Claus Quidde."@en ;
+            bflc:marcKey "508    $a Director of photography, Christian Huck; editor, Ladislav Cosira; music, Claus Quidde." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English dialogue, dubbed from the original German."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Narrated by Friedrich von Thun."@en ;
+            bflc:marcKey "511 0  $a Narrated by Friedrich von Thun." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ] ;
+    bf:subject [ a bflc:Uncontrolled,
+                bf:Topic ;
+            rdfs:label "Liechtenstein" ;
+            bflc:marcKey "653    $a Liechtenstein" ],
+        [ a bf:Topic ;
+            rdfs:label "Historischer Film" ;
+            bflc:marcKey "650  7 $a Historischer Film $2 gnd" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Liechtenstein" ;
+            bflc:marcKey "651  7 $a Liechtenstein $2 gnd" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Liechtenstein History." ;
+            bflc:marcKey "651  0 $a Liechtenstein $v History." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Liechtenstein" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca538469" ] ] [ a bf:GenreForm ;
+                        rdfs:label "History." ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtMrBW7j9pYPV9jCxgFrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "A broad overview of the surprising history of the principality of Liechtenstein, from its foundation in 1719, through the alliance with Napoleon and the looming annexation by Hitler, as well as how the country transformed from a poor farmers' state into one of the wealthiest countries in the world."@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title on container and disc label: $a Liechtenstein - how farmers became bankers" ;
+            bf:mainTitle "Liechtenstein - how farmers became bankers" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title on container and disc label:"@en ] ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title on menu screen: $a How farmers became bankers" ;
+            bf:mainTitle "How farmers became bankers" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title on menu screen:"@en ] ],
+        [ a bf:Title ;
+            rdfs:label "Liechtenstein - how farmers turned into bankers /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Liechtenstein - how farmers turned into bankers /" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a How farmers turned into bankers" ;
+            bf:mainTitle "How farmers turned into bankers" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqG8J4qQJp8pJtffJPF> a bf:Organization ;
+    rdfs:label "BayView Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8461232" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/gnd> a bf:Source ;
+    bf:code "gnd" .
+
+<https://id.oclc.org/worldcat/entity/1386967824> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1386967824#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (54 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            rdf:value "012233530919" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1386967824" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Bayview Entertainment" ] ;
+            rdf:value "BAY3091" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGpPkmkFBHb77Mrf3Qgc8C> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, NTSC, Region 1; widescreen (1.78:1) presentation; Dolby Digital stereo."@en ],
+        [ a bf:Note ;
+            rdfs:label "Documentary film."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Videodisc release of an English-dubbed version originally produced in 2014."@en ] ;
+    bf:responsibilityStatement "a J-K Entertainment production ; executive producer, Jürgen Kindle ; director, Lew Hohmann ; writers, Lew Hohmann [and four others]." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Liechtenstein - how farmers turned into bankers /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Liechtenstein - how farmers turned into bankers /" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

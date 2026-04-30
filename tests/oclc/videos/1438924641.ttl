@@ -1,0 +1,480 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mplayback/mix> a bf:PlaybackChannels ;
+    rdfs:label "mixed"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1438924641#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011182853.8" ;
+    bf:creationDate "20240604" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1438924641> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1438924641#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVE8638(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Paramount Pictures Corporation, $e production company, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrVMVTrqfcJv3PJJXM6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrVMVTrqfcJv3PJJXM6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ],
+                [ a bf:Role ;
+                    rdfs:label "production company," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lewis, Jerry, $d 1926-2017, $e film director, $e actor, $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PBJtRPKj4x8rr7Fkppt69Xd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtRPKj4x8rr7Fkppt69Xd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter." ],
+                [ a bf:Role ;
+                    rdfs:label "actor," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Glucksman, Ernest D., $d 1902-1979, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJtRPV3yWygvy3qGVkf8YP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtRPV3yWygvy3qGVkf8YP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Stevens, Stella, $d 1938-2023, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJqjYd4Bw7g9d3VwjbtMyd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqjYd4Bw7g9d3VwjbtMyd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Moore, Del, $d 1916-1970, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJkXyYKfVKWcPRFvCkYQMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkXyYKfVKWcPRFvCkYQMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Richmond, Bill, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Richmond, Bill," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ] ;
+    bf:duration "PT1H47M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Nutty professor (Motion picture : 1963)" ;
+            bflc:marcKey "130 0  $a Nutty professor (Motion picture : 1963)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8229043" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Nutty professor (Motion picture : 1963)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Comedy films." ;
+            bflc:marcKey "655  7 $a Comedy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866137" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1438924641> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, W. Wallace Kelley ; editor, John Woodcock ; music, Walter Scharf."@en ;
+            bflc:marcKey "508    $a Director of photography, W. Wallace Kelley ; editor, John Woodcock ; music, Walter Scharf." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English, French, or Spanish dialogue; English, French or Spanish subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Jerry Lewis, Stella Stevens, Del Moore, Kathleen Freeman."@en ;
+            bflc:marcKey "511 1  $a Jerry Lewis, Stella Stevens, Del Moore, Kathleen Freeman." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:originDate "1963"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Snelson (John) Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Snelson (John) Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Social interaction Drama." ;
+            bflc:marcKey "650  0 $a Social interaction $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Social interaction" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2121671" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Chemistry teachers Drama." ;
+            bflc:marcKey "650  0 $a Chemistry teachers $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Chemistry teachers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2139539" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "To improve his social life, a nerdish professor drinks a potion that temporarily turns him into the handsome, but obnoxious, Buddy Love."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The nutty professor /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The nutty professor /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkXyYKfVKWcPRFvCkYQMP> a bf:Person ;
+    rdfs:label "Moore, Del, 1916-1970," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6643424" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqjYd4Bw7g9d3VwjbtMyd> a bf:Person ;
+    rdfs:label "Stevens, Stella, 1938-2023," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3754869" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtRPKj4x8rr7Fkppt69Xd> a bf:Person ;
+    rdfs:label "Lewis, Jerry, 1926-2017," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca88306" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtRPV3yWygvy3qGVkf8YP> a bf:Person ;
+    rdfs:label "Glucksman, Ernest D., 1902-1979," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8097155" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrVMVTrqfcJv3PJJXM6> a bf:Organization ;
+    rdfs:label "Paramount Pictures Corporation," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca288516" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1438924641> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1438924641#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "4K Ultra HD Blu-ray"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 107 min.) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1438924641" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Paramount Pictures" ] ;
+            rdf:value "3000094342" ],
+        [ a bf:Upc ;
+            rdf:value "191329245965" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024601111" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1438924641#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Sources used: videodisc container; Internet movie database WWW site, viewed June 4, 2024."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English subtitles for the deaf and hard of hearing."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Originally released as a motion picture in 1963."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Wide screen 1.85:1."@en ],
+        [ a bf:Note ;
+            rdfs:label "Special features: Filmmaker focus with Leonard Maltin; Both sides of the camera: the innovative genius of Jerry Lewis, presented by The Academy's Science and Technology Council from September 12, 2012; Jerry Lewis and Frank Tashlin discuss The Nutty Professor, September 1962 recording; over an hour of legacy featurettes and content, including commentary by Jerry Lewis and Steve Lawrence, screen tests, deleted scenes, bloopers, and promos."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "4K Ultra HD Blu-ray player required. 4K television required for full 4K UHD effect; can also be viewed using a 1080 television without full 4K UHD effects."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Hollywood, California] : $b Paramount Pictures, $c [2023]" ;
+            bflc:simpleAgent "Paramount Pictures," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "[Hollywood, California] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Hollywood, California] : Paramount Pictures, [2023]" ;
+    bf:responsibilityStatement "Paramount Pictures presents ; director, Jerry Lewis ; produced by Ernest D. Glucksman ; written by Jerry Lewis and Bill Richmond." ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "mono"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mon> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "DTS-HD Master Audio 5.1"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dtshd51> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mplayback/mix>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The nutty professor /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The nutty professor /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

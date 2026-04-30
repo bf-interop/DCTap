@@ -1,0 +1,153 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Pop> a bf:GenreForm ;
+    rdfs:label "Pop." ;
+    bflc:marcKey "655  7 $a Pop. $0 https://id.kb.se/term/saogf/Pop $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Rock> a bf:GenreForm ;
+    rdfs:label "Rock." ;
+    bflc:marcKey "655  7 $a Rock. $0 https://id.kb.se/term/saogf/Rock $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1406158207#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250607161554.4" ;
+    bf:creationDate "20231027" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1406158207> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1406158207#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.42166" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3kjdjQtvhyp9m8gmfHBTpCfmX> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Yxne" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Musikinspelningar>,
+        <https://id.kb.se/term/saogf/Pop>,
+        <https://id.kb.se/term/saogf/Rock> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1406158207> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Rewrite -- Sunday -- Breathe me -- The bully -- Sweet potato -- Don't bring me down -- Natale's song -- Moon -- The church of what's happening now -- Numb -- Where I belong" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Colour the small one /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Colour the small one /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1406158207> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1406158207#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 CD"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1406158207" ],
+        [ a bf:Ean ;
+            rdf:value "0602498661031" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Go! Beat!" ] ;
+            rdf:value "9866103" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1406158207#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Sia Furler, sång ..."@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Universal Music Company, $c [2004]" ;
+            bflc:simpleAgent "Universal Music Company," ;
+            bflc:simpleDate "[2004]" ;
+            bf:date "2004"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Universal Music Company, [2004]" ;
+    bf:responsibilityStatement "Sia." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Colour the small one /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Colour the small one /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+

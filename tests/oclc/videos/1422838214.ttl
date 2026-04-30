@@ -1,0 +1,325 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relators/fmd> a bf:Role ;
+    bf:code "fmd" .
+
+<https://id.kb.se/term/saogf/Drama%20%28film%29> a bf:GenreForm ;
+    rdfs:label "Drama (film)" ;
+    bflc:marcKey "655  7 $a Drama (film) $0 https://id.kb.se/term/saogf/Drama%20%28film%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Komedier> a bf:GenreForm ;
+    rdfs:label "Komedier." ;
+    bflc:marcKey "655  7 $a Komedier. $0 https://id.kb.se/term/saogf/Komedier $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/L%C3%A5ngfilmer> a bf:GenreForm ;
+    rdfs:label "Långfilmer." ;
+    bflc:marcKey "655  7 $a Långfilmer. $0 https://id.kb.se/term/saogf/L%C3%A5ngfilmer $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1422838214#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250712052237.8" ;
+    bf:creationDate "20240221" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1422838214> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1422838214#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "He.025" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "791.4372" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/swe" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "He.025/VC" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@sv ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Shuler Donner, Lauren. $4 fmp" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Shuler Donner, Lauren." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ephron, Nora. $4 fmd $4 aus $4 fmp" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ephron, Nora." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aus>,
+                <http://id.loc.gov/vocabulary/relators/fmd>,
+                <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ephron, Delia. $4 aus" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ephron, Delia." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aus> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/Drama%20%28film%29>,
+        <https://id.kb.se/term/saogf/Komedier>,
+        <https://id.kb.se/term/saogf/L%C3%A5ngfilmer> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1422838214> ;
+    bf:language [ a bf:Language ;
+            bf:code "ger" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ],
+        [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dut" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dut> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "pol" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/pol> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "tur" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/tur> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "hrv" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/hrv> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "grc" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/grc> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "por" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ice" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ice> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Skådespelare: Tom Hanks, Meg Ryan, Parker Posey [med flera]."@sv ;
+            bflc:marcKey "511 0  $a Skådespelare: Tom Hanks, Meg Ryan, Parker Posey [med flera]." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "cze" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/cze> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fin" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fin> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "heb" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/heb> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dan" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dan> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "hun" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/hun> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Barntillåten."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "swe" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/swe> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "nor" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/nor> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Tal på engelska, tyska och spanska. Textad på engelska, tyska, spanska, nederländska, svenska, norska, danska, finska, portugisiska, franska, italienska, hebreiska, polska, grekiska, tjeckiska, turkiska, ungerska, isländska och kroatiska."@sv ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Upper West Side i New York. Här bor Joe Fox och Kathleen Kelly. Båda gör sina matinköp på Zabars, båda intar sin cappuccino på samma Starbucks-kafé, båda tar sin söndagspromenad på samma gator i området. Joe bor ihop med Patricia Eden, en framgångsrik bokförläggare. Kathleen är sambo med Frank Navasky, en samhällsengagerad journalist.?Kathleen har ärvt sin mors barnbokhandel \"The Shop Around the Corner\" där hon har kompetent personal, grupphögläsning m m. Joe är son till en mäktig bokhandlarfamilj som nu planerar att etablera sig i kvarteret intill med en supermarket i böcker, cappuccinobar, prålig arkitektur och extrapriser.?Kathleen och Joe utbyter e-post över sina datorer; hon under namnet \"Shopgirl\" och han under namnet \"NY152\". Joe upptäcker \"Shopgirls\" identitet och börjar uppvakta henne. Trots den affärsmässiga fiendeskapen vinner han Kathleens förtroende, vänskap och kärlek, innan även hon får reda på \"NY152\"s identitet."@sv ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "You've got mail /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "You've got mail /" ] .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/relators/aus> a bf:Role ;
+    bf:code "aus" .
+
+<http://id.loc.gov/vocabulary/relators/fmp> a bf:Role ;
+    bf:code "fmp" .
+
+<https://id.oclc.org/worldcat/entity/1422838214> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1422838214#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@sv ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 DVD-video (1 tim., 55 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1422838214" ],
+        [ a bf:Ean ;
+            rdf:value "7321938169540" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1422838214#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@sv ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "ljud, färg"@sv ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Region 2 ; bildformat: 16:9 (1.85:1) ; ljudformat: Dolby digital."@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Stockholm : $b Warner Home Video, $c 1998" ;
+            bflc:simpleAgent "Warner Home Video," ;
+            bflc:simpleDate "1998" ;
+            bflc:simplePlace "Stockholm :" ;
+            bf:date "1998"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sw> ] ;
+    bf:publicationStatement "Stockholm : Warner Home Video, 1998" ;
+    bf:responsibilityStatement "directed by Nora Ephron ; screenplay by Nora Ephron and Delia Ephron ; produced by Nora Ephron and Lauren Shuler Donner." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "You've got mail /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "You've got mail /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

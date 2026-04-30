@@ -1,0 +1,151 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/frequencies/unk> a bf:Frequency ;
+    rdfs:label "unknown"@en ;
+    bf:code "unk" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1371462512#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20260313230222.3" ;
+    bf:creationDate "20230301" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Non-ISBD"@en ;
+            bf:code "blank" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371462512> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1371462512#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371462512> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "0742-5554" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Behavioral medicine update (Print)" ] ] ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "0742-5554" ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Behavioral medicine update (Print)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Health Sciences General and Others." ;
+            bflc:marcKey "650  4 $a Health Sciences $x General and Others." ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Health Sciences" ] [ a bf:Topic ;
+                        rdfs:label "General and Others." ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Behavioral medicine update" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Behavioral medicine update" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<http://id.loc.gov/vocabulary/mstatus/ceased> a bf:Status ;
+    rdfs:label "ceased",
+        "ceased"@en .
+
+<https://id.oclc.org/worldcat/entity/1371462512> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371462512#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:frequency <http://id.loc.gov/vocabulary/frequencies/unk> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1371462512" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1371462512#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Knoxville, TN : $b The Society" ;
+            bflc:simpleAgent "The Society" ;
+            bflc:simplePlace "Knoxville, TN :" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/ceased> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $c 1979-1984" ;
+            bflc:simpleDate "1979-1984" ;
+            bf:date "1979/1984"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/tnu> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/ceased>,
+                <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "1979-1984",
+        "Knoxville, TN : The Society" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Behavioral medicine update" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Behavioral medicine update" ],
+        [ a bf:AbbreviatedTitle ;
+            bf:mainTitle "BEHAV MED UPDATE" ] .
+

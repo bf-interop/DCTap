@@ -1,0 +1,590 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/s> a bflc:GovernmentPubType ;
+    rdfs:label "state"@en ;
+    bf:code "s" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship ;
+    rdfs:label "related work"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1140510168#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "California. Department of Housing and Community Development." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "1140510168" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Annual action plan ..." ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Annual action plan ..." ] .
+
+<https://id.oclc.org/worldcat/entity/1268148302#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "California. Department of Housing and Community Development." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "1268148302" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "State of California 2020-2024 federal consolidated plan" ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "State of California 2020-2024 federal consolidated plan" ] .
+
+<https://id.oclc.org/worldcat/entity/1425198081#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250625153530.3" ;
+    bf:creationDate "20240306" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "CUS" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d CUS" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1425198081> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1425198081#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/s> ;
+    bf:classification [ a bf:Classification ;
+            bf:source [ a bf:Source ;
+                    bf:code "cadocs" ] ;
+            rdf:value "H777.P53a" ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HN79.C23" ;
+            bf:itemPortion "C617" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 1  $a California. $b Department of Housing and Community Development, $e author, $e issuing body." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "California. Department of Housing and Community Development," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca311250" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author," ],
+                [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodical" ;
+            bflc:marcKey "655  2 $a Periodical $0 (DNLM)D020492" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D020492" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Serial publications." ;
+            bflc:marcKey "655  7 $a Serial publications. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077308" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "periodicals." ;
+            bflc:marcKey "655  7 $a periodicals. $2 aat $0 (CStmoGRI)aatgf300026657" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026657" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "serials (publications)" ;
+            bflc:marcKey "655  7 $a serials (publications) $2 aat $0 (CStmoGRI)aatgf300026642" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026642" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Périodiques." ;
+            bflc:marcKey "655  7 $a Périodiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001105" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Serial publications." ;
+            bflc:marcKey "655  7 $a Serial publications. $2 fast $0 (OCoLC)fst01919968" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919968" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Periodicals." ;
+            bflc:marcKey "655  7 $a Periodicals. $2 fast $0 (OCoLC)fst01411641" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Periodicals." ;
+            bflc:marcKey "655  7 $a Periodicals. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077273" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Publications en série." ;
+            bflc:marcKey "655  7 $a Publications en série. $2 rvmgf $0 (CaQQLa)RVMGF-000001102" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001102" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1425198081> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/suppl> ;
+            rdfs:label "Some issues have amendments."@en ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Work ;
+                    bflc:marcKey "740 02 $a State of California 2020-24 federal consolidated plan, amendment to ... annual action plan ..." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "State of California 2020-24 federal consolidated plan, amendment to ... annual action plan ..." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1140510168#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ],
+        [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1268148302#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Updates:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Logement Politique gouvernementale Californie." ;
+            bflc:marcKey "650  6 $a Logement $0 (CaQQLa)201-0026184 $x Politique gouvernementale $0 (CaQQLa)201-0026184 $z Californie. $0 (CaQQLa)201-0460772" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0026184" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0460772" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0026184" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Logement" ] [ a bf:Topic ;
+                        rdfs:label "Politique gouvernementale" ] [ a bf:Geographic ;
+                        rdfs:label "Californie." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Homeless persons Services for California." ;
+            bflc:marcKey "650  0 $a Homeless persons $x Services for $z California." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Homeless persons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2078573" ] ] [ a bf:Topic ;
+                        rdfs:label "Services for" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2078573" ] ] [ a bf:Geographic ;
+                        rdfs:label "California." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Homeless persons Services for." ;
+            bflc:marcKey "650  7 $a Homeless persons $x Services for. $2 fast $0 (OCoLC)fst00959479" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00959479" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Homeless persons" ] [ a bf:Topic ;
+                        rdfs:label "Services for." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "AIDS (Disease) Patients Services for." ;
+            bflc:marcKey "650  7 $a AIDS (Disease) $x Patients $x Services for. $2 fast $0 (OCoLC)fst00793897" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00793897" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "AIDS (Disease)" ] [ a bf:Topic ;
+                        rdfs:label "Patients" ] [ a bf:Topic ;
+                        rdfs:label "Services for." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Federal aid to community development California." ;
+            bflc:marcKey "650  0 $a Federal aid to community development $z California." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Federal aid to community development" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2153755" ] ] [ a bf:Geographic ;
+                        rdfs:label "California." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] ) ],
+        [ a bf:Jurisdiction ;
+            rdfs:label "California. Department of Housing and Community Development." ;
+            bflc:marcKey "610 17 $a California. $b Department of Housing and Community Development. $2 fast $0 (OCoLC)fst01810878" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01810878" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Jurisdiction ;
+            rdfs:label "United States. Department of Housing and Urban Development." ;
+            bflc:marcKey "610 17 $a United States. $b Department of Housing and Urban Development. $2 fast $0 (OCoLC)fst01852754" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01852754" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Federal aid to community development." ;
+            bflc:marcKey "650  7 $a Federal aid to community development. $2 fast $0 (OCoLC)fst00922168" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00922168" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Housing policy." ;
+            bflc:marcKey "650  7 $a Housing policy. $2 fast $0 (OCoLC)fst00962432" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00962432" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Housing policy California." ;
+            bflc:marcKey "650  0 $a Housing policy $z California." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Housing policy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2086676" ] ] [ a bf:Geographic ;
+                        rdfs:label "California." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] ) ],
+        [ a bf:Jurisdiction ;
+            rdfs:label "United States. Department of Housing and Urban Development." ;
+            bflc:marcKey "610 10 $a United States. $b Department of Housing and Urban Development." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca282558" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Sidéens Services Californie Périodiques." ;
+            bflc:marcKey "650  6 $a Sidéens $0 (CaQQLa)201-0167592 $x Services $0 (CaQQLa)000282874 $z Californie $0 (CaQQLa)201-0460772 $v Périodiques. $0 (CaQQLa)201-0378307" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "000282874" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0460772" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0378307" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0167592" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Sidéens" ] [ a bf:Topic ;
+                        rdfs:label "Services" ] [ a bf:Geographic ;
+                        rdfs:label "Californie" ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Personnes sans-abri Services Californie." ;
+            bflc:marcKey "650  6 $a Personnes sans-abri $0 (CaQQLa)201-0191088 $x Services $0 (CaQQLa)201-0191088 $z Californie. $0 (CaQQLa)201-0460772" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0460772" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0191088" ],
+                [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0191088" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Personnes sans-abri" ] [ a bf:Topic ;
+                        rdfs:label "Services" ] [ a bf:Geographic ;
+                        rdfs:label "Californie." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "AIDS (Disease) Patients Services for California Periodicals." ;
+            bflc:marcKey "650  0 $a AIDS (Disease) $x Patients $x Services for $z California $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "AIDS (Disease)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3220783" ] ] [ a bf:Topic ;
+                        rdfs:label "Patients" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3220783" ] ] [ a bf:Topic ;
+                        rdfs:label "Services for" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5530422" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Community development California." ;
+            bflc:marcKey "650  0 $a Community development $z California." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Community development" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025062" ] ] [ a bf:Geographic ;
+                        rdfs:label "California." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] ) ],
+        [ a bf:Jurisdiction ;
+            rdfs:label "California. Department of Housing and Community Development." ;
+            bflc:marcKey "610 10 $a California. $b Department of Housing and Community Development." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca311250" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Community development." ;
+            bflc:marcKey "650  7 $a Community development. $2 fast $0 (OCoLC)fst00870818" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00870818" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Annual updates to the 2020-2024 State of California Consolidated Plan (ConPlan). It outlines the state's current priorities and strategies to address housing and community development goals using federal community development funds from the U.S. Department of Housing and Urban Development (HUD), and from other federal, state, and local sources"@en ],
+        [ a bf:Summary ;
+            rdfs:label "Programs covered: Community Development Block Grant (CDBG); Home Investment Partnerships Program (HOME); National Housing Trust Fund (NHTF); Emergency Solutions Grants (ESG); and: Housing Opportunities for Persons with AIDS (HOPWA)"@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Annual action plan one year use of funds ..." ;
+            bf:mainTitle "Annual action plan one year use of funds ..." ],
+        [ a bf:Title ;
+            rdfs:label "State of California 2020-2024 federal consolidated plan annual action plan one year use of funds ..." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "State of California 2020-2024 federal consolidated plan annual action plan one year use of funds ..." ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Annual action plan" ;
+            bf:mainTitle "Annual action plan" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a AAP" ;
+            bf:mainTitle "AAP" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "California." ;
+    bflc:marcKey "651  7 $a California. $2 fast $0 (OCoLC)fst01204928 $1 https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204928" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1425198081> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1425198081#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "28 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes ;"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1425198081" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1425198081#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Fiscal year 2021/2022; title from cover"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: Fiscal year 2023/2024"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with: Fiscal year 2021/2022"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Sacramento, CA : $b California Department of Housing and Community Development, $c 2021-" ;
+            bflc:simpleAgent "California Department of Housing and Community Development," ;
+            bflc:simpleDate "2021-" ;
+            bflc:simplePlace "Sacramento, CA :" ;
+            bf:date "2022/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Sacramento, CA : California Department of Housing and Community Development, 2021-" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "State of California 2020-2024 federal consolidated plan annual action plan one year use of funds ..." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "State of California 2020-2024 federal consolidated plan annual action plan one year use of funds ..." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

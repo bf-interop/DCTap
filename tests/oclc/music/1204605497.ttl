@@ -1,0 +1,494 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dist> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Digital storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/libretto> a bf:SupplementaryContent ;
+    rdfs:label "libretto or text"@en .
+
+<https://id.oclc.org/worldcat/entity/1204605497#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "TEFMT" ] ;
+    bf:changeDate "20250520203413.6" ;
+    bf:creationDate "20240429" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "TEF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "GO6" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "CLE" ],
+        [ a bf:Organization ;
+            bf:code "TEFMT" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a TEFMT $b eng $c DLC $d TEF $d OCLCF $d GO6 $d CLE $d OCLCL $d TEFMT $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1204605497> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1204605497#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "782.42164" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3pTYfq3Q7cWDmtwgGC3ffdQ6P> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "M1630.18.L57" ;
+            bf:itemPortion "F88 2020" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Lipa, Dua, $d 1995- $e composer, $e singer. $1 https://id.oclc.org/worldcat/entity/E39PBJvRQbvG6TpqYCWCFT6BT3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvRQbvG6TpqYCWCFT6BT3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "House music." ;
+            bflc:marcKey "655  7 $a House music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090468" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Electronic dance music." ;
+            bflc:marcKey "655  7 $a Electronic dance music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090752" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Synthpop." ;
+            bflc:marcKey "655  7 $a Synthpop. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001323" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remixes (Music)" ;
+            bflc:marcKey "655  7 $a Remixes (Music) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726719" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090610" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027009> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "655  7 $a Musique populaire. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000700" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remix (Musique)" ;
+            bflc:marcKey "655  7 $a Remix (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000928" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Synthpop (Music)" ;
+            bflc:marcKey "655  7 $a Synthpop (Music) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920377" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Dance music." ;
+            bflc:marcKey "655  7 $a Dance music. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001023" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Synthpop (Music)" ;
+            bflc:marcKey "655  7 $a Synthpop (Music) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090721" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "655  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs." ;
+            bflc:marcKey "655  7 $a Songs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "House (Musique)" ;
+            bflc:marcKey "655  7 $a House (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001331" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Remixes (Music)" ;
+            bflc:marcKey "655  7 $a Remixes (Music) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090648" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1204605497> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Dua Lipa, vocals ; with accompanying instrumentalists and backing vocalists."@en ;
+            bflc:marcKey "511 0  $a Dua Lipa, vocals ; with accompanying instrumentalists and backing vocalists." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Work ;
+                    bflc:marcKey "740 02 $a Club future nostalgia." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Club future nostalgia." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Dance music." ;
+            bflc:marcKey "650  6 $a Dance music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0348611" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "House music." ;
+            bflc:marcKey "650  0 $a House music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca4657412" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Temporal ;
+            rdfs:label "2011-2020" ;
+            bflc:marcKey "648  7 $a 2011-2020 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Electropop." ;
+            bflc:marcKey "650  6 $a Electropop." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "000269970" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "House music." ;
+            bflc:marcKey "650  6 $a House music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0248474" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music 2011-2020." ;
+            bflc:marcKey "650  0 $a Popular music $y 2011-2020." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8966683" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8966683" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musique populaire 2011-2020." ;
+            bflc:marcKey "650  6 $a Musique populaire $y 2011-2020." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musique populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270456" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270456" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Remix." ;
+            bflc:marcKey "650  6 $a Remix." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0365118" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Synthpop (Music)" ;
+            bflc:marcKey "650  0 $a Synthpop (Music)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8527573" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "650  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071422" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Remixes." ;
+            bflc:marcKey "650  0 $a Remixes." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca5685029" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Remixes" ;
+            bflc:marcKey "650  7 $a Remixes $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01094443" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Electronic dance music." ;
+            bflc:marcKey "650  0 $a Electronic dance music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca5229945" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/libretto> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Disc 1. Future nostalgia -- Don't start now -- Cool -- Physical -- Levitating -- Pretty please -- Hallucinate -- Love again -- Break my heart -- Good in bed (explicit) -- Boys will be boys -- Levitating (feat. DaBaby)." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Disc 2 (with the Blessed Madonna). Future nostalgia (Joe Goddard remix) -- Cool (Jayda G remix) -- Good in bed (Zach Witness & Gen Hoshino remixes) -- Pretty please (Midland refix) -- Pretty please (Masters at work remix) -- Boys will be boys (Zach Witness remix) -- Love again (Horse meat disco remix) -- Break my heart ; Cosmic girl (Dimitri from Paris edit) -- Levitating (the Blessed Madonna remix) (feat. Madonna and Missy Elliott) -- Hallucinate (Mr. FIngers deep stripped mix) -- Hallucinate (Paul Woolford remix) -- Love is religion (the Blessed Madonna remix) -- Don't start now (Yaeji remix) -- Physical (Mark Ronson remix) (feat. Gwen Stefani) -- Kiss and make up (remix) -- That kind of woman (Jacques Lu Cont remix) -- Break my heart (Moodymann remix)." ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title on container spine: $a Future nostalgia + Club future nostalgia" ;
+            bf:mainTitle "Future nostalgia + Club future nostalgia" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title on container spine:"@en ] ],
+        [ a bf:Title ;
+            rdfs:label "Future nostalgia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Future nostalgia /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvRQbvG6TpqYCWCFT6BT3> a bf:Person ;
+    rdfs:label "Lipa, Dua, 1995-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10876528" ] .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<https://id.oclc.org/worldcat/entity/1204605497> a bf:Instance ;
+    bf:acquisitionSource [ a bf:AcquisitionSource ;
+            rdfs:label "Midwest Tape" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "http://www.midwesttapes.com"@en ] ] ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1204605497#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda ft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:editionStatement "Bonus ed." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1204605497" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024619687" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Warner Records UK" ] ;
+            rdf:value "0190295142193" ],
+        [ a bf:Upc ;
+            rdf:value "190295142193" ],
+        [ a bf:Ean ;
+            rdf:value "0190295142193" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1204605497#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Most songs written by Dua Lipa in collaboration with others."@en ],
+        [ a bf:Note ;
+            rdfs:label "Lyrics inserted in container."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [London] : $b Warner Records UK $c [2020]" ;
+            bflc:simpleAgent "Warner Records UK" ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "[London] :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ] ;
+    bf:publicationStatement "[London] : Warner Records UK [2020]" ;
+    bf:responsibilityStatement "Dua Lipa." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dist>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Future nostalgia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Future nostalgia /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

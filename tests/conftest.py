@@ -1,7 +1,15 @@
 """Pytest fixtures for DCTap to SHACL conversion testing."""
 
+import csv
 from pathlib import Path
 from typing import Callable
+
+TEST_DIRECTORY = Path(__file__).parent
+
+
+def load_params(csv_name):
+    with open(TEST_DIRECTORY / csv_name) as f:
+        return [(row[0], int(row[1]), int(row[2])) for row in csv.reader(f) if row[0] != "rdf_file_path"]
 
 import pytest
 from dctap2shacl import DCTap2SHACLTransformer

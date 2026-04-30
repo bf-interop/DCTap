@@ -1,0 +1,270 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026049> a bf:GenreForm ;
+    rdfs:label "Biographies"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1373630904#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250629175600.5" ;
+    bf:creationDate "20230321" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1373630904> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcWvf9xXVHQKFTDpVGCQq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Nigeria" ;
+    bflc:marcKey "651  7 $a Nigeria $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJcWvf9xXVHQKFTDpVGCQq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01205229" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PD3wmg9tFDqymDGcHJgPDG3> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "R654.S65" ;
+            bf:itemPortion "A36 2013" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "330" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E37JHjV9yp67MdX74mthKYkKCx> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Afolabi, O. Lukman, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Afolabi, O. Lukman," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Tomori, Abdulfatai, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Tomori, Abdulfatai," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Biographies." ;
+            bflc:marcKey "655  7 $a Biographies. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077183" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biography" ;
+            bflc:marcKey "655  2 $a Biography" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D019215" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographies" ;
+            bflc:marcKey "655  7 $a Biographies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919896" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographies." ;
+            bflc:marcKey "655  7 $a Biographies. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000519" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026049> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a f-nr---" ;
+            bf:code "f-nr---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/f-nr> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1373630904> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Physicians" ;
+            bflc:marcKey "650  7 $a Physicians $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01062841" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Person ;
+            rdfs:label "Soleye, Jonathan Durojaiye, 1923-" ;
+            bflc:marcKey "600 10 $a Soleye, Jonathan Durojaiye, $d 1923-" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca15170552" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Physicians Nigeria Biography." ;
+            bflc:marcKey "650  0 $a Physicians $z Nigeria $v Biography." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Physicians" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2137189" ] ] [ a bf:Geographic ;
+                        rdfs:label "Nigeria" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca289512" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Biography." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2137189" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJcWvf9xXVHQKFTDpVGCQq> ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Blessed to serve :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Blessed to serve :" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1373630904> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1373630904#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "23 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xx, 256 pages :"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "(HB)" ;
+            rdf:value "9788457053" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(PB)" ;
+            rdf:value "9788457045" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(HB)" ;
+            rdf:value "9789788457053" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(PB)" ;
+            rdf:value "9789788457046" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1373630904" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PD3wmg9tFDqymDGcHJgPDG3> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (chiefly color) ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Ibadan, Nigeria : $b Bookcraft, $c 2013" ;
+            bflc:simpleAgent "Bookcraft," ;
+            bflc:simpleDate "2013" ;
+            bflc:simplePlace "Ibadan, Nigeria :" ;
+            bf:date "2013"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nr> ] ;
+    bf:publicationStatement "Ibadan, Nigeria : Bookcraft, 2013" ;
+    bf:responsibilityStatement "by Afolabi O. Lukman, Tomori Abdulfatai." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Blessed to serve : a biography of Dr (Chief) Jonathan Durojaiye Soleye ... /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Blessed to serve :" ;
+            bf:subtitle "a biography of Dr (Chief) Jonathan Durojaiye Soleye ... /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

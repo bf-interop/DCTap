@@ -1,0 +1,657 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1390129457#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011051702.8" ;
+    bf:creationDate "20230712" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "JOZ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "STF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d STF $d OCLCO $d OCLCL $d JOZ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1390129457> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdRrktxxDFRK3RKp7qqQq> a bf:Person ;
+    rdfs:label "Shepard, Dax, 1975-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7583825" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfGR7CbXrFYJh699YMwYP> a bf:Person ;
+    rdfs:label "Bedelia, Bonnie, 1946-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca613117" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfh4MXwT99MtpghtMYHG3> a bf:Person ;
+    rdfs:label "Graham, Lauren, 1967-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5085829" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md> a bf:Person ;
+    rdfs:label "Grazer, Brian, 1953-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3926878" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgXb8v9wRtcY3mX3yBVmd> a bf:Person ;
+    rdfs:label "Krause, Peter, 1965 August 12-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6010835" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmHJ8pWKx6gHTqgFq3JDq> a bf:Person ;
+    rdfs:label "Christensen, Erika, 1982-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5784633" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd> a bf:Person ;
+    rdfs:label "Howard, Ron, 1954-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3091798" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJq6YCmPWQTxwff3yVXmVC> a bf:Person ;
+    rdfs:label "Potter, Monica," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4990743" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtmtpCXdDwrJDkXgvVpyd> a bf:Person ;
+    rdfs:label "Katims, Jason," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5993786" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvXgYyX8rgjW9Vpq4PqQq> a bf:Person ;
+    rdfs:label "Jaeger, Sam," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7380381" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxRwq3WmrxtkcwKXDvCQq> a bf:Person ;
+    rdfs:label "Nelson, Craig T.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1867766" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGkHGbq8VtqrcJx9878Mrm> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Graham, Lauren, $d 1967- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJfh4MXwT99MtpghtMYHG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfh4MXwT99MtpghtMYHG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Potter, Monica, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJq6YCmPWQTxwff3yVXmVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJq6YCmPWQTxwff3yVXmVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a True Jack Productions, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqgCWW3kXbP3qCvCtCF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqgCWW3kXbP3qCvCtCF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Grazer, Brian, $d 1953- $e television producer. $1 https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Imagine Television (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmq9tTt8tKj7vVhgPHRg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmq9tTt8tKj7vVhgPHRg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Howard, Ron, $d 1954- $e television producer. $1 https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Trilling, Lawrence, $e television producer. $1 https://id.oclc.org/worldcat/entity/E39PCjFkpvCm46Br69ytQtDH4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjFkpvCm46Br69ytQtDH4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Katims, Jason, $e television producer, $e creator. $1 https://id.oclc.org/worldcat/entity/E39PBJtmtpCXdDwrJDkXgvVpyd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtmtpCXdDwrJDkXgvVpyd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television producer," ],
+                [ a bf:Role ;
+                    rdfs:label "creator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Christensen, Erika, $d 1982- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJmHJ8pWKx6gHTqgFq3JDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmHJ8pWKx6gHTqgFq3JDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bedelia, Bonnie, $d 1946- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJfGR7CbXrFYJh699YMwYP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfGR7CbXrFYJh699YMwYP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Shepard, Dax, $d 1975- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJdRrktxxDFRK3RKp7qqQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdRrktxxDFRK3RKp7qqQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universal Studios Home Entertainment (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Nelson, Craig T., $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJxRwq3WmrxtkcwKXDvCQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxRwq3WmrxtkcwKXDvCQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universal Media Studios, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmpfpwr48F4crcrHym9t" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmpfpwr48F4crcrHym9t> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Krause, Peter, $d 1965 August 12- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJgXb8v9wRtcY3mX3yBVmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgXb8v9wRtcY3mX3yBVmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jaeger, Sam, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJvXgYyX8rgjW9Vpq4PqQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvXgYyX8rgjW9Vpq4PqQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universal Television (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmmKTMR8Y9QJBFm4CBJt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmmKTMR8Y9QJBFm4CBJt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Parenthood (Television program : 2010-2015)" ;
+            bflc:marcKey "130 0  $a Parenthood (Television program : 2010-2015)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8692870" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Parenthood (Television program : 2010-2015)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Television comedies" ;
+            bflc:marcKey "655  7 $a Television comedies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710440" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Comédies télévisées." ;
+            bflc:marcKey "655  7 $a Comédies télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000030" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television program"@en ;
+            bflc:marcKey "380    $a Television program" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction television programs" ;
+            bflc:marcKey "655  7 $a Fiction television programs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710265" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fictions télévisées." ;
+            bflc:marcKey "655  7 $a Fictions télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000022" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction television programs." ;
+            bflc:marcKey "655  7 $a Fiction television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866233" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television comedies." ;
+            bflc:marcKey "655  7 $a Television comedies. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866632" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1390129457> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Rating: Not rated."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Developed by Jason Katims; executive producer, Jason Katims, Lawrence Trilling, Ron Howard, Brian Grazer; production company, True Jack Productions, Imagine Television, Universal Media Studios, Universal Television, Open 4 Business Productions"@en ;
+            bflc:marcKey "508    $a Developed by Jason Katims; executive producer, Jason Katims, Lawrence Trilling, Ron Howard, Brian Grazer; production company, True Jack Productions, Imagine Television, Universal Media Studios, Universal Television, Open 4 Business Productions" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Monica Potter, Lauren Graham, Dax Shepard, Peter Krause, Erika Christensen, Sam Jaeger, Savannah Paige Rae, Max Burkholder, Joy Bryant, Miles Heizer, Mae Whitman, Bonnie Bedelia, Craig T. Nelson, Tyree Brown"@en ;
+            bflc:marcKey "511 1  $a Monica Potter, Lauren Graham, Dax Shepard, Peter Krause, Erika Christensen, Sam Jaeger, Savannah Paige Rae, Max Burkholder, Joy Bryant, Miles Heizer, Mae Whitman, Bonnie Bedelia, Craig T. Nelson, Tyree Brown" ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Man-woman relationships" ;
+            bflc:marcKey "650  7 $a Man-woman relationships $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01007080" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Parenthood Drama." ;
+            bflc:marcKey "650  0 $a Parenthood $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Parenthood" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2114759" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Families Drama." ;
+            bflc:marcKey "650  0 $a Families $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Families" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2150551" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Parenthood" ;
+            bflc:marcKey "650  7 $a Parenthood $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01053396" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Man-woman relationships Drama." ;
+            bflc:marcKey "650  0 $a Man-woman relationships $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Man-woman relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3173806" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Families" ;
+            bflc:marcKey "650  7 $a Families $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01728849" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Family always comes first with the Braverman's in this stunning collection that captures every wise, warm and witty moment from the critically lauded series.\"--Container"@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "season 1, disc 1. Pilot ; Man versus possum ; The deep end of the pool ; Whassup ; The situation -- season 1, disc 2. Big 'O' ; What's going on down there? ; Rubber band ball ; Perchance to dream -- season 1, disc 3. Namaste no more ; Solace ; Team Braverman ; Lost and found -- season 2, disc 1. I hear you, I see you ; No good deed ; I'm cooler than you think ; Date night ; The booth job -- season 2, disc 2. Orange alert ; Seven names ; If this boat is a rockin' ; Put yourself out there ; Happy Thanksgiving -- season 2, disc 3. Damage control ; Meet the new boss ; Opening night ; A house divided -- season 2, disc 4. Just go home ; Amazing Andy and his wonderful world of bugs ; Do not sleep with your autistic nephew's therapist ; Qualities and difficulties -- season 2, disc 5. Taking the leap ; New plan ; Slipping away ; Hard times come again no more -- season 3, disc 1. I don't want to do this without you ; Hey if you're not using that baby ; Step right up ; Clear skies from here on out ; Nora -- season 3, disc 2. Tales from the luncheonette ;  Forced family fun ; In-between ; Sore loser ; Mr. Honesty -- season 3, disc 3. Missing ; Road trip ; Just smile It is what it is -- season 3, disc 4. Politics ; Tough love ; Remember me, I'm the one who loves you ; My brother's wedding -- season 4, disc 1. Family portrait ; Left field ; Everything is not okay ; The talk ; There's something I need to tell you... -- season 4, disc 2. I'll be right here ; Together ; One more weekend with you ; You can't always get what you want ; Trouble in Candyland -- season 4, disc 3. What to my wondering eyes ; Keep on rowing ; Small victories ; One step forward, two steps back ; Because you're my sister -- season 5, disc 1. It has to be now ; All aboard who's coming aboard ; Nipple confusion ;  In dreams begin responsibilities ; Let's be mad together -- season 5, disc 2. The M word ;  Speaking of baggage ; The ring ; Election day ; All that's left is the hugging -- season 5., disc 3. Promises ; Stay a little longer ; Jump ball ; You've got mold -- season 5, disc 4. Just like at home ; The enchanting Mr. Knight ; Limbo ; The offer -- season 5, disc 5. Fraud alert ; Cold feet ; I'm still here ; The Pontiac -- season 6, disc 1. Vegas ;Happy birthday, Zeek ; The waiting room ; A potpurri of freaks ; The scale of affection is fluid -- season 6, disc 2. Too big to fail ; These are the times we live in ; Aaron Brownstein must be stopped ; Lean in -- season 6, disc 3. How did we get here? Let's go home ; We made it through the night ; May God bless and keep you always" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Parenthood :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Parenthood :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjFkpvCm46Br69ytQtDH4q> a bf:Person ;
+    rdfs:label "Trilling, Lawrence," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10584841" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmmKTMR8Y9QJBFm4CBJt> a bf:Organization ;
+    rdfs:label "Universal Television (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca918990" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmpfpwr48F4crcrHym9t> a bf:Organization ;
+    rdfs:label "Universal Media Studios," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8302040" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmq9tTt8tKj7vVhgPHRg> a bf:Organization ;
+    rdfs:label "Imagine Television (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5669721" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg> a bf:Organization ;
+    rdfs:label "Universal Studios Home Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6854819" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqgCWW3kXbP3qCvCtCF> a bf:Organization ;
+    rdfs:label "True Jack Productions," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca15459597" ] .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<https://id.oclc.org/worldcat/entity/1390129457> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1390129457#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdf:value "1.78:1" ],
+        [ a bf:AspectRatio ;
+            rdfs:label "wide screen"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaar" ] ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "captions"@en ] ;
+    bf:copyrightDate "©2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region A"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionA> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region B"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionB> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "23 videodiscs (73 hr. 52 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1390129457" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 6)" ;
+            rdf:value "810134940383" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 1)" ;
+            rdf:value "810134940338" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 3)" ;
+            rdf:value "810134940352" ],
+        [ a bf:Upc ;
+            bf:qualifier "(set)" ;
+            rdf:value "810134940321" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 4)" ;
+            rdf:value "810134940369" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 2)" ;
+            rdf:value "810134940345" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 5)" ;
+            rdf:value "810134940376" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGkHGbq8VtqrcJx9878Mrm> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container"@en ],
+        [ a bf:Note ;
+            rdfs:label "Based on characters created by Lowell Ganz & Babaloo Mandel & Ron Howard"@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally produced in the United States as television program, broadcast from 2010-2015"@en ],
+        [ a bf:Note ;
+            rdfs:label "Special features include audio commentaries; deleted scenes; behind-the-scenes features;  deleted storyline - Drew seeks out estracurricular opportunities; Farewell: a Parenthood pretrospective"@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English SHD"@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United Statres"@en ;
+            bflc:marcKey "257    $a United Statres $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "stamping"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Universal City, CA : $b Universal Studios Home Entertainment, $c [2023]" ;
+            bflc:simpleAgent "Universal Studios Home Entertainment," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "Universal City, CA :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Universal City, CA : Universal Studios Home Entertainment, [2023]" ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent [ a bf:SoundContent ;
+            rdfs:label "sound"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdasco" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/msoundcontent/sound> ],
+        <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Parenthood : the complete series" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Parenthood :" ;
+            bf:subtitle "the complete series" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

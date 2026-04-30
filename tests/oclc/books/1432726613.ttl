@@ -1,0 +1,507 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026057> a bf:GenreForm ;
+    rdfs:label "Catalogs"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<https://id.oclc.org/worldcat/entity/1432726613#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20251011182820.8" ;
+    bf:creationDate "20240506" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1432726613> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1432726613#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TX631" ;
+            bf:itemPortion ".B46 2020" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Kinmont, Ben, $d 1963- $e author, $e curator. $1 https://id.oclc.org/worldcat/entity/E39PBJgH7Jhx6Y3GKd4rkGpVmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgH7Jhx6Y3GKd4rkGpVmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author," ],
+                [ a bf:Role ;
+                    rdfs:label "curator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Ben Kinmont (Firm), $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqGT8bHhbGgyJ3jrJPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqGT8bHhbGgyJ3jrJPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Bibliographies" ;
+            bflc:marcKey "655  7 $a Bibliographies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01919895" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Catalogs" ;
+            bflc:marcKey "655  7 $a Catalogs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423692" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026057> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ny" ;
+            bf:code "n-us-ny" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ny> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1432726613> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 0  $a Catalogue $v Seventeen" ;
+                    bf:seriesEnumeration "Seventeen" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Catalogue" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Catalogues de librairies New York (État) New York." ;
+            bflc:marcKey "650  6 $a Catalogues de librairies $z New York (État) $z New York." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Catalogues de librairies" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0022170" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (État)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Home economics Bibliography Catalogs." ;
+            bflc:marcKey "650  0 $a Home economics $v Bibliography $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Home economics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2078906" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2078906" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933809" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Gastronomy" ;
+            bflc:marcKey "650  7 $a Gastronomy $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00938901" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nutrition Bibliography Catalogs." ;
+            bflc:marcKey "650  0 $a Nutrition $v Bibliography $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nutrition" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2086395" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "New York (State) New York" ;
+            bflc:marcKey "651  7 $a New York (State) $z New York $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRvQh7864Jh4rDGBFDWc" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204333" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01204333" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39QbtfRvQh7864Jh4rDGBFDWc> ],
+        [ a bf:Topic ;
+            rdfs:label "Rare books" ;
+            bflc:marcKey "650  7 $a Rare books $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01090104" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Livres rares Catalogues." ;
+            bflc:marcKey "650  6 $a Livres rares $v Catalogues." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Livres rares" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0013884" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogues." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378043" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nutrition Bibliographie Catalogues." ;
+            bflc:marcKey "650  6 $a Nutrition $v Bibliographie $v Catalogues." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nutrition" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0064996" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliographie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376952" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogues." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376952" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gastronomie Bibliographie Catalogues." ;
+            bflc:marcKey "650  6 $a Gastronomie $v Bibliographie $v Catalogues." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gastronomie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0022545" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliographie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376952" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogues." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376952" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Ben Kinmont (Firm) $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Ben Kinmont (Firm)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6342770" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933809" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking" ;
+            bflc:marcKey "650  7 $a Cooking $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01754966" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cooking Bibliography Catalogs." ;
+            bflc:marcKey "650  0 $a Cooking $v Bibliography $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cooking" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8535691" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Home economics" ;
+            bflc:marcKey "650  7 $a Home economics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00959173" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Nutrition" ;
+            bflc:marcKey "650  7 $a Nutrition $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01042187" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Booksellers' catalogs New York (State) New York." ;
+            bflc:marcKey "650  0 $a Booksellers' catalogs $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Booksellers' catalogs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2126173" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gastronomy Bibliography Catalogs." ;
+            bflc:marcKey "650  0 $a Gastronomy $v Bibliography $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gastronomy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2020858" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Bibliography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933803" ] ] ) ],
+        [ a bf:Organization ;
+            rdfs:label "Ben Kinmont (Firm)" ;
+            bflc:marcKey "610 27 $a Ben Kinmont (Firm) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01974492" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Rare books Catalogs." ;
+            bflc:marcKey "650  0 $a Rare books $v Catalogs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Rare books" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2032415" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Catalogs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933809" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Booksellers' catalogs" ;
+            bflc:marcKey "650  7 $a Booksellers' catalogs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01727430" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Gastronomy" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Gastronomy" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgH7Jhx6Y3GKd4rkGpVmd> a bf:Person ;
+    rdfs:label "Kinmont, Ben, 1963-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8923610" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqGT8bHhbGgyJ3jrJPF> a bf:Organization ;
+    rdfs:label "Ben Kinmont (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6342770" ] .
+
+<https://id.oclc.org/worldcat/entity/1432726613> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1432726613#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "19 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "126, [2] pages"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1432726613" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1432726613#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations"@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes subject index"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The Antinomian Press, 7 October 2020, 300 copies printed letterpress at the shop of Bradley Hutchison, Austin, Texas.\"--Colophon"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Sebastopol, CA $b Ben Kinmont $c 2014" ;
+            bflc:simpleAgent "Ben Kinmont" ;
+            bflc:simpleDate "2014" ;
+            bflc:simplePlace "Sebastopol, CA" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Sebastopol, CA Ben Kinmont 2014" ;
+    bf:responsibilityStatement "Ben Kinmont" ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/cov> ;
+            bflc:marcKey "246 14 $a Ben Kinmont gastronomy catalogue 17" ;
+            bf:mainTitle "Ben Kinmont gastronomy catalogue 17" ],
+        [ a bf:Title ;
+            rdfs:label "Gastronomy a catalogue of books & manuscripts on cookery, wine, perfume, health, food & economic precarity, domestic & rural economy, kitchen technology, art of the table, & the history of taste, c.1175-2006" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Gastronomy" ;
+            bf:subtitle "a catalogue of books & manuscripts on cookery, wine, perfume, health, food & economic precarity, domestic & rural economy, kitchen technology, art of the table, & the history of taste, c.1175-2006" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

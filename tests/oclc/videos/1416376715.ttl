@@ -1,0 +1,326 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/drt> a bf:Role ;
+    bf:code "drt" .
+
+<https://id.kb.se/term/saogf/L%C3%A5ngfilmer> a bf:GenreForm ;
+    rdfs:label "Långfilmer." ;
+    bflc:marcKey "655  7 $a Långfilmer. $0 https://id.kb.se/term/saogf/L%C3%A5ngfilmer $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Spelfilmer> a bf:GenreForm ;
+    rdfs:label "Spelfilmer." ;
+    bflc:marcKey "655  7 $a Spelfilmer. $0 https://id.kb.se/term/saogf/Spelfilmer $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1416376715#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250801195754.4" ;
+    bf:creationDate "20240102" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1416376715> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1416376715#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "He.025" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "He.025/VC" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@sv ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Scorsese, Martin, $d 1942- $4 drt $0 https://libris.kb.se/nl036ld652bh7vf#it" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Scorsese, Martin, 1942-" ;
+                    skos:relatedMatch <https://libris.kb.se/nl036ld652bh7vf#it> ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/drt> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/L%C3%A5ngfilmer>,
+        <https://id.kb.se/term/saogf/Spelfilmer> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1416376715> ;
+    bf:language [ a bf:Language ;
+            bf:code "ita" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ],
+        [ a bf:Language ;
+            bf:code "ger" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ],
+        [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "bul" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/bul> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dut" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dut> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "heb" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/heb> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "pol" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/pol> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "grc" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/grc> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Barntillåten."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "por" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ice" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ice> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "tur" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/tur> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Tal på engelska, dubbad till franska, tyska, italienska, spanska, textad på svenska, norska, finska, engelska, arabiska, franska, kroatiska, nederländska, spanska, grekiska, hebreiska, hindi, ungerska, isländksa, italienska, polska, portugisiska, turkiska, bulgariska, tjeckiska."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "nor" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/nor> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "cze" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/cze> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "hin" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/hin> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "hun" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/hun> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fin" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fin> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dan" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dan> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ara" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ara> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "hrv" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/hrv> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "swe" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/swe> ] ] ;
+    bf:subject [ a bf:Work ;
+            rdfs:label "Age of innocence (US, Martin Scorsese, 1993)" ;
+            bflc:marcKey "630 04 $a Age of innocence (US, Martin Scorsese, 1993)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Age of innocence (US, Martin Scorsese, 1993)" ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The age of innocence" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The age of innocence" ] .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<https://id.oclc.org/worldcat/entity/1416376715> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1416376715#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:copyrightDate "©2009"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 DVD (2 tim., 13 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:Ean ;
+            rdf:value "5035822462632" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Sony Pictures" ] ;
+            rdf:value "CDR 14626" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1416376715" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1416376715#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@sv ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Systemkrav: region 2 ; bildformat: 2.35:1 ; ljudformat: Dolby digital 5.1."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "ljud, färg"@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Sony Pictures Home Etertainment" ;
+            bflc:simpleAgent "Sony Pictures Home Etertainment" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $c 2009" ;
+            bflc:simpleDate "2009" ;
+            bf:date "2009"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxk> ] ;
+    bf:publicationStatement "2009",
+        "Sony Pictures Home Etertainment" ;
+    bf:responsibilityStatement "a Martin Scorsese picture." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The age of innocence" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The age of innocence" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

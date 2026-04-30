@@ -1,0 +1,204 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1369928830#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20240127100239.6" ;
+    bf:creationDate "20230213" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "FUG" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCF $d FUG $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1369928830> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCXFBH7fcRcx7RG8y3Qmb4V> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kulik, Alexei $e author" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kulik, Alexei" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Schilling, René L. $e author" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Schilling, René L." ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Knopova, Victoria $e autor" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Knopova, Victoria" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "autor" ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1369928830> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Dissertationes mathematicae ;" ;
+                    bflc:marcKey "830  0 $a Dissertationes mathematicae ; $v 569. $x 0012-3862" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca7391976" ],
+                        [ a bf:Issn ;
+                            rdf:value "0012-3862" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Dissertationes mathematicae ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "569." ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Dissertationes Mathematicae $x 0012-3862 $v 569" ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "0012-3862" ] ;
+                    bf:seriesEnumeration "569" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Dissertationes Mathematicae" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Mathematics" ;
+            bflc:marcKey "650  7 $a Mathematics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01012163" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Mathematics." ;
+            bflc:marcKey "650  0 $a Mathematics." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2004824" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Mathématiques." ;
+            bflc:marcKey "650  6 $a Mathématiques." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0068291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Construction and heat kernel estimates of general stable-like Markov processes" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Construction and heat kernel estimates of general stable-like Markov processes" ] .
+
+<https://id.oclc.org/worldcat/entity/1369928830> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1369928830#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "24 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "86 pages"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1369928830" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCXFBH7fcRcx7RG8y3Qmb4V> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references (pages 83-86)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Warszawa $b Institute of Mathematics. Polish Academy of Sciences $c 2021" ;
+            bflc:simpleAgent "Institute of Mathematics. Polish Academy of Sciences" ;
+            bflc:simpleDate "2021" ;
+            bflc:simplePlace "Warszawa" ;
+            bf:date "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pl> ] ;
+    bf:publicationStatement "Warszawa Institute of Mathematics. Polish Academy of Sciences 2021" ;
+    bf:responsibilityStatement "Victoria Knopova, Alexei Kulik and René L. Schilling ; Institute of Mathematics. Polish Academy of Sciences" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Construction and heat kernel estimates of general stable-like Markov processes" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Construction and heat kernel estimates of general stable-like Markov processes" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
