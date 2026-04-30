@@ -1,0 +1,111 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<https://id.oclc.org/worldcat/entity/1441321654#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250422155856.3" ;
+    bf:creationDate "20240621" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1441321654> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1441321654#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@sv ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1441321654> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Durable and waterproof, with a handy slipcase and an easy-fold format, Lonely Planet's South Australia Planning Map is your essential navigation tool. This full-colour map features accompanying images and information about top attractions, itinerary suggestions, a transport guide, themed lists and practical travel tips.[Bokinfo]."@sv ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Lonely Planet South Australia Planning Map." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Lonely Planet South Australia Planning Map." ] .
+
+<https://id.oclc.org/worldcat/entity/1441321654> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1441321654#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            bf:code "nz" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nz> ] ;
+    bf:dimensions "20 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 sidor"@sv ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1788688821" ],
+        [ a bf:Isbn ;
+            rdf:value "9781788688826" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1441321654" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1441321654#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:projectedProvisionDate "202408" ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Lonely Planet, $c 2024" ;
+            bflc:simpleAgent "Lonely Planet," ;
+            bflc:simpleDate "2024" ;
+            bf:date "2024"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Lonely Planet, 2024" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Lonely Planet South Australia Planning Map." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Lonely Planet South Australia Planning Map." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

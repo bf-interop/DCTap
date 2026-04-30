@@ -1,0 +1,395 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmb> a bf:DescriptionConventions ;
+    bf:code "dcrmb" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1391116411#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251120004052.8" ;
+    bf:creationDate "20230725" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmb>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCF $d OCLCO $d OCLCQ $d OCLCL $d OCLCA $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1391116411> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJc3GD3jH4P3WphJXrq4v3> a bf:Person ;
+    rdfs:label "Paul, Elliot, 1891-1958," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1070558" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJd8gD4vdtqQMdQHvYqbBP> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "France" ;
+    bflc:marcKey "651  7 $a France $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJd8gD4vdtqQMdQHvYqbBP" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204289" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PCG7XV96HkhFx6gRp7R84D3> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "823.912" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "21/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33H8KRwbgkwrQdHXQWFWcyg7V> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "711 2  $a 21st Anniversary Conference of the Society of Bookbinders $d (1995 : $c Manchester, England), $e host institution." ;
+            bf:agent [ a bf:Meeting ;
+                    rdfs:label "21st Anniversary Conference of the Society of Bookbinders (1995 : Manchester, England), host institution." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Stephenson, Blake and Company, $e type designer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpbVrqd9tgQcq69RB7R" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpbVrqd9tgQcq69RB7R> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "type designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Moss, Graham, $d 1947-2025, $e printer, $e typographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Moss, Graham, 1947-2025," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca9497913" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "typographer." ],
+                [ a bf:Role ;
+                    rdfs:label "printer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sanderson, Peter J., $e typographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sanderson, Peter J.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "typographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Griffin Mill, $e papermaker." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Griffin Mill," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "papermaker." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Monotype Corporation, $e type designer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpFbwkdRxRxhXyd6DFg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpFbwkdRxRxhXyd6DFg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "type designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Incline Press, $e publisher, $e printer. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmrj6gMqtw6Ytw84DCGR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmrj6gMqtw6Ytw84DCGR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher," ],
+                [ a bf:Role ;
+                    rdfs:label "printer." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Paul, Elliot, $d 1891-1958, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJc3GD3jH4P3WphJXrq4v3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJc3GD3jH4P3WphJXrq4v3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Printed wrappers (Binding)" ;
+            bflc:marcKey "655  7 $a Printed wrappers (Binding) $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Handmade papers (Paper)" ;
+            bflc:marcKey "655  7 $a Handmade papers (Paper) $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Limitation statements (Publishing)" ;
+            bflc:marcKey "655  7 $a Limitation statements (Publishing) $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Private press books (Printing)" ;
+            bflc:marcKey "655  7 $a Private press books (Printing) $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Printers' devices (Publishing)" ;
+            bflc:marcKey "655  7 $a Printers' devices (Publishing) $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Unopened edges (Paper)" ;
+            bflc:marcKey "655  7 $a Unopened edges (Paper) $2 rbmscv $5 PU" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Keepsakes." ;
+            bflc:marcKey "655  7 $a Keepsakes. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-fr---" ;
+            bf:code "e-fr---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-fr> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1391116411> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "England Oldham." ;
+            bflc:marcKey "752    $a England $d Oldham." ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "England" ] [ a madsrdf:City ;
+                        rdfs:label "Oldham." ] ) ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Paul, Elliot, 1891-1958, Narrow street." ;
+                    bflc:marcKey "700 1  $a Paul, Elliot, $d 1891-1958, $e bibliographic antecedent. $t Narrow street." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Paul, Elliot, 1891-1958," ;
+                                    bf:identifiedBy [ a bf:Local ;
+                                            bf:assigner [ a bf:Organization ;
+                                                    bf:code "OCoLC" ] ;
+                                            rdf:value "oca1070558" ] ;
+                                    bf:role [ a bf:Role ;
+                                            rdfs:label "bibliographic antecedent." ] ] ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Narrow street." ;
+                            bf:mainTitle "Narrow street." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Bookbinders" ;
+            bflc:marcKey "650  7 $a Bookbinders $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00836260" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:GenreForm ;
+            rdfs:label "Typefaces (Type evidence) Monotype Caslon." ;
+            bflc:marcKey "655  7 $a Typefaces (Type evidence) $x Monotype Caslon. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ;
+            madsrdf:componentList ( [ a bf:GenreForm ;
+                        rdfs:label "Typefaces (Type evidence)" ] [ a bf:Topic ;
+                        rdfs:label "Monotype Caslon." ] ) ],
+        [ a bf:Temporal ;
+            rdfs:label "1900-1999" ;
+            bflc:marcKey "648  7 $a 1900-1999 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Bookbinders France 20th century." ;
+            bflc:marcKey "650  0 $a Bookbinders $z France $y 20th century." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Bookbinders" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2095982" ] ] [ a bf:Geographic ;
+                        rdfs:label "France" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca240552" ] ] [ a bf:Temporal ;
+                        rdfs:label "20th century." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5930674" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Relieurs France 20e siècle." ;
+            bflc:marcKey "650  6 $a Relieurs $z France $y 20e siècle." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Relieurs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0028591" ] ] [ a bf:Geographic ;
+                        rdfs:label "France" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0452039" ] ] [ a bf:Temporal ;
+                        rdfs:label "20e siècle." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373677" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:GenreForm ;
+            rdfs:label "Typefaces (Type evidence) Verona." ;
+            bflc:marcKey "655  7 $a Typefaces (Type evidence) $x Verona. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ;
+            madsrdf:componentList ( [ a bf:GenreForm ;
+                        rdfs:label "Typefaces (Type evidence)" ] [ a bf:Topic ;
+                        rdfs:label "Verona." ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJd8gD4vdtqQMdQHvYqbBP> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Monsieur Dorlan, relieur :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Monsieur Dorlan, relieur :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpFbwkdRxRxhXyd6DFg> a bf:Organization ;
+    rdfs:label "Monotype Corporation," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca470813" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpbVrqd9tgQcq69RB7R> a bf:Organization ;
+    rdfs:label "Stephenson, Blake and Company," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5805332" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmrj6gMqtw6Ytw84DCGR> a bf:Organization ;
+    rdfs:label "Incline Press," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4204774" ] .
+
+<https://id.oclc.org/worldcat/entity/1391116411> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1391116411#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Jean-François Vilain and Roger S. Wieck Collection of Private Presses, Ephemera, & Related References (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Jean-François Vilain and Roger S. Wieck Collection of Private Presses, Ephemera, & Related References (University of Pennsylvania)" ] ] ;
+    bf:dimensions "17 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "[8] pages ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1391116411" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG7XV96HkhFx6gRp7R84D3> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:manufactureStatement "Oldham : Printed ... by Graham Moss at Incline Press." ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"21st anniversary conference of the Society of Bookbinders Manchester--June 1995\"--Cover."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Machine setting in 12 pt Monotype Caslon by Peter 'Captain Caslon' Sanderson of Whittington Press and hand set in Verona and printed on his Arab treadle press by Graham Moss at Incline Press. This edition is in two parts: 125 numbered copies were printed on handmade paper from Griffin Mill for the mailing list of Incline Press ... Oldham ... A further impression without limit has been made on acid free paper for the use of the bindery at PAPERSAFE ...\"--Colophon."@en ],
+        [ a bf:Note ;
+            rdfs:label "Publisher's device at colophon and on front wrapper."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"An Incline Press keepsake\"--Cover."@en ],
+        [ a bf:Note ;
+            rdfs:label "Extracted from: A narrow street. London : Cresset Press, 1942."@en ],
+        [ a bf:Note ;
+            rdfs:label "Binding: printed paper wrapper."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Oldham : $b Incline Press, $c 1995." ;
+            bflc:simpleAgent "Incline Press," ;
+            bflc:simpleDate "1995." ;
+            bflc:simplePlace "Oldham :" ;
+            bf:date "1995"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ],
+        [ a bf:Manufacture ;
+            bflc:marcKey "264  3 $a Oldham : $b Printed ... by Graham Moss at Incline Press." ;
+            bflc:simpleAgent "Printed ... by Graham Moss at Incline Press." ;
+            bflc:simplePlace "Oldham :" ] ;
+    bf:publicationStatement "Oldham : Incline Press, 1995." ;
+    bf:responsibilityStatement "by Elliot Paul." ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/cov> ;
+            bflc:marcKey "246 14 $a Excuse me has anyone brought a needle?" ;
+            bf:mainTitle "Excuse me has anyone brought a needle?" ],
+        [ a bf:Title ;
+            rdfs:label "Monsieur Dorlan, relieur : extracted from A narrow street /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Monsieur Dorlan, relieur :" ;
+            bf:subtitle "extracted from A narrow street /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> a bf:Source ;
+    bf:code "rbmscv" .
+

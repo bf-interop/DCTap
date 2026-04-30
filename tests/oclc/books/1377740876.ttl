@@ -1,0 +1,140 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    bf:code "aut" .
+
+<https://id.oclc.org/worldcat/entity/1377740876#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250719032937.3" ;
+    bf:creationDate "20230428" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1377740876> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFy4dVVWkpk3BYBD6y6c4C> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "823.92" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3Qm8MMjKGfpCQQfhcCHtHwrCD> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@sv ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Anderson, Laura Ellen. $4 aut" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Anderson, Laura Ellen." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1377740876> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "I Don't Want to Be Quiet! /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "I Don't Want to Be Quiet! /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1377740876> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1377740876#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@sv ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1377740876" ],
+        [ a bf:Isbn ;
+            rdf:value "9781526602442" ],
+        [ a bf:Isbn ;
+            rdf:value "152660244X" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFy4dVVWkpk3BYBD6y6c4C> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Omslagsbild"@sv ] ;
+            bflc:marcKey "856 48 $3 Omslagsbild $u https://s1.adlibris.com/images/52655897/i-dont-want-to-be-quiet.jpg" ;
+            bf:electronicLocator <http://s1.adlibris.com/images/52655897/i-dont-want-to-be-quiet.jpg> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "8" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Bloomsbury Childrens Books, $c 2020" ;
+            bflc:simpleAgent "Bloomsbury Childrens Books," ;
+            bflc:simpleDate "2020" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "Bloomsbury Childrens Books, 2020" ;
+    bf:responsibilityStatement "Laura Ellen Anderson." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "I Don't Want to Be Quiet! /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "I Don't Want to Be Quiet! /" ] .
+

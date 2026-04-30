@@ -1,0 +1,133 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Soul%20%28musik%29> a bf:GenreForm ;
+    rdfs:label "Soul (musik)" ;
+    bflc:marcKey "655  7 $a Soul (musik) $0 https://id.kb.se/term/saogf/Soul%20%28musik%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1430471257#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250113152102.7" ;
+    bf:creationDate "20240418" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1430471257> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1430471257#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "Yxfea" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Musikinspelningar>,
+        <https://id.kb.se/term/saogf/Soul%20%28musik%29> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1430471257> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Innehåll: Hey little girl ; Baby please / Norm West -- So good to me ; I'm gonna wait ; Aretha, sing one for me ; Patricia ; Let them know you care / George Jackson -- Tumbling down ; Still around ; Mama's boy ; I've got enough / James Fry -- Without you ; Rhymes / O.V. Wright -- I love my baby ; Love map ; The very first time / Lyndon ; Be good to the one (that's good to you) / Jimmy Mack -- I love her ; Sweet thing / Willie Walker -- Fried chicken ; I ain't got time / Rufus Thomas." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Memphis soul greats." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Memphis soul greats." ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1430471257> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1430471257#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗1995"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 CD"@sv ] ;
+    bf:identifiedBy [ a bf:Ean ;
+            rdf:value "0740155201722" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1430471257" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Hi Records" ] ;
+            rdf:value "HILOCD 17" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1430471257#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Hi Records, $c 1995" ;
+            bflc:simpleAgent "Hi Records," ;
+            bflc:simpleDate "1995" ;
+            bf:date "1995"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/gw> ] ;
+    bf:publicationStatement "Hi Records, 1995" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Memphis soul greats." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Memphis soul greats." ] .
+

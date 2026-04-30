@@ -1,0 +1,507 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<https://id.oclc.org/worldcat/entity/1370250609#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260320104351.5" ;
+    bf:creationDate "20230216" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCF $d OCLCO $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1370250609> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1370250609#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997" ;
+            bf:itemPortion ".D4956 2017" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Fulci, Lucio, $e film director, $e actor, $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PBJr83dfqhTTWpwvbvDgVG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJr83dfqhTTWpwvbvDgVG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor," ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Marsillach, Blanca, $d 1966- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Marsillach, Blanca, 1966-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Madia, Stefano, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Madia, Stefano," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Severin Films, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmtgyvrwD4wqcmCDy4kt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmtgyvrwD4wqcmCDy4kt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Clery, Corinne, $d 1950- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJr7QJJ887MMMYhVm43G73" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJr7QJJ887MMMYhVm43G73> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Balcázar, Jaime Jesús, $d 1934- $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Balcázar, Jaime Jesús, 1934-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Halsey, Brett, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJhMpcBrF7JWDgcCjgbfMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhMpcBrF7JWDgcCjgbfMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Natili, Claudio, $e composer (expression)" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Natili, Claudio," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Marineo, Ludovica, $d 1953- $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Marineo, Ludovica, 1953-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ] ;
+    bf:duration "PT1H23M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired" ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710450" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films érotiques." ;
+            bflc:marcKey "655  7 $a Films érotiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000130" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Motion pictures)" ;
+            bflc:marcKey "655  7 $a Thrillers (Motion pictures) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866670" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures, Spanish." ;
+            bflc:marcKey "655  0 $a Motion pictures, Spanish." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures, Italian." ;
+            bflc:marcKey "655  0 $a Motion pictures, Italian." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Films)" ;
+            bflc:marcKey "655  7 $a Thrillers (Films) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000075" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Erotic films." ;
+            bflc:marcKey "655  7 $a Erotic films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866211" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Erotic films" ;
+            bflc:marcKey "655  7 $a Erotic films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710302" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Thrillers (Motion pictures)" ;
+            bflc:marcKey "655  7 $a Thrillers (Motion pictures) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726193" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-it---" ;
+            bf:code "e-it---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-it> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1370250609> ;
+    bf:language [ a bf:Language ;
+            bf:code "ita" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "und" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/und> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Brett Halsey, Corinne Clery, Blanca Marsillach, Stefano Madia."@en ;
+            bflc:marcKey "511 1  $a Brett Halsey, Corinne Clery, Blanca Marsillach, Stefano Madia." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English or Italian; closed-captioned in English for the hearing impaired."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Cinematography, Allesandra Ulloa; editor, Vincenzo Tomassi; music, Claudio Natili."@en ;
+            bflc:marcKey "508    $a Cinematography, Allesandra Ulloa; editor, Vincenzo Tomassi; music, Claudio Natili." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Surgeons Drama." ;
+            bflc:marcKey "650  0 $a Surgeons $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Surgeons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2160711" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Man-woman relationships" ;
+            bflc:marcKey "650  7 $a Man-woman relationships $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01007080" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Kidnapping" ;
+            bflc:marcKey "650  7 $a Kidnapping $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00987322" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Kidnapping Drama." ;
+            bflc:marcKey "650  0 $a Kidnapping $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Kidnapping" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2144752" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Man-woman relationships Drama." ;
+            bflc:marcKey "650  0 $a Man-woman relationships $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Man-woman relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3173806" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Surgeons" ;
+            bflc:marcKey "650  7 $a Surgeons $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01139336" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "When her boyfriend dies during an unsuccessful attempt to save him after an accident, his deranged girlfriend kidnaps and tortures the emergency room surgeon."@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Originally released under title: $a Miele del diavolo" ;
+            bf:mainTitle "Miele del diavolo" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Originally released under title:"@en ] ],
+        [ a bf:Title ;
+            rdfs:label "The devil's honey /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The devil's honey /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Also released under title: $a Dangerous obsession" ;
+            bf:mainTitle "Dangerous obsession" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Also released under title:"@en ] ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhMpcBrF7JWDgcCjgbfMP> a bf:Person ;
+    rdfs:label "Halsey, Brett," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2691877" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJr7QJJ887MMMYhVm43G73> a bf:Person ;
+    rdfs:label "Clery, Corinne, 1950-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5966985" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJr83dfqhTTWpwvbvDgVG3> a bf:Person ;
+    rdfs:label "Fulci, Lucio," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3657930" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmtgyvrwD4wqcmCDy4kt> a bf:Organization ;
+    rdfs:label "Severin Films," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8222435" ] .
+
+<https://id.oclc.org/worldcat/entity/1370250609> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1370250609#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (83 min) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1370250609" ],
+        [ a bf:Upc ;
+            rdf:value "663390001905" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1370250609#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Videodisc release of the motion picture produced in 1986."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Closed-captioned."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Special features: The devil's Halsey (interview with Brett Halsey); Wild flower (interview with Corinne Clery); Producing honey (Interview with Vincenzo Salviani); The devil's sax (interview with Claudio Natili); Stephen Thrower on the film; Troy Howarth on the film; alternate opening; original theatrical trailer."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, NTSC, Region 1; widescreen (1.85:1) presentation; Dolby Digital 2.0 mono."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a [Los Angeles, CA] : $b Severin Films, $c 2017." ;
+            bflc:simpleAgent "Severin Films," ;
+            bflc:simpleDate "2017." ;
+            bflc:simplePlace "[Los Angeles, CA] :" ;
+            bf:date "2017"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ],
+        [ a bf:Distribution ;
+            bf:date "2017"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ],
+        [ a bf:Production ;
+            bf:date "1986"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Los Angeles, CA] : Severin Films, 2017." ;
+    bf:responsibilityStatement "Selvaggia film : Producciones cinematográficas Balcazar ; directed by Lucio Fulci ; story and screenplay by Ludovica Marineo, Vincenzo Marineo, Jesus Balcazar, Lucio Fulci ; produced by Franco Casati, Sergio Martinelli & Vincenzo Salviani." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mplayback/mon>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Bibliothèque Nationale de France catalog record and holdings"@en ] ;
+            bflc:marcKey "856 42 $3 Bibliothèque Nationale de France catalog record and holdings $u http://catalogue.bnf.fr/ark:/12148/cb46611138r" ;
+            bf:electronicLocator <http://catalogue.bnf.fr/ark:/12148/cb46611138r> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The devil's honey /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The devil's honey /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

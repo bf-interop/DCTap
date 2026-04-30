@@ -1,0 +1,775 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1451147575#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20260129180459.4" ;
+    bf:creationDate "20240806" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCL $d OCLCO $d STF" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1451147575> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1451147575#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dinklage, Peter, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJB48HpYCyjqm3ctPpdYT3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJB48HpYCyjqm3ctPpdYT3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Weiss, D. B., $e creator. $1 https://id.oclc.org/worldcat/entity/E39PBJyRvvVF6KfhvrwHTJmKh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyRvvVF6KfhvrwHTJmKh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "creator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bradley, John, $d 1988- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyMjRckG4TVyGR44vXWXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyMjRckG4TVyGR44vXWXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Bighead Littlehead (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmt4cBqkrfCHXgHgXm9t" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmt4cBqkrfCHXgHgXm9t> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Allen, Alfie, $d 1986- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJkxJHYFfY9TRFxhGQgqcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkxJHYFfY9TRFxhGQgqcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Coster-Waldau, Nikolaj, $d 1970- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJhMfgDCDjJyHx6FKJGyh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhMfgDCDjJyHx6FKJGyh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Headey, Lena, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJrrCMbqfDBpJjV69mH3cP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrrCMbqfDBpJjV69mH3cP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Harington, Kit, $d 1986- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJg4pDXYV7gd7X9qjjCxXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJg4pDXYV7gd7X9qjjCxXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a HBO Entertainment (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7TK9KpFtTXGMxdDGgg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7TK9KpFtTXGMxdDGgg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hill, Conleth, $d 1964- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJk94GDGqJqPwbKV3CrDv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJk94GDGqJqPwbKV3CrDv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Williams, Maisie, $d 1997- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJxd6x4PPjGJKtmHFGhj4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxd6x4PPjGJKtmHFGhj4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Turner, Sophie, $d 1996- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJkD7bKQ8m9VqmKxXjvrbd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJkD7bKQ8m9VqmKxXjvrbd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Glen, Iain, $d 1961- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJp67KYfMXYkFT7WmPRxjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJp67KYfMXYkFT7WmPRxjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Clarke, Emilia, $d 1986- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJv8JF3WQ9wYjFCpTtqvpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJv8JF3WQ9wYjFCpTtqvpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Grok! Television (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr4xdp3JKGdWRQfddp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr4xdp3JKGdWRQfddp6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Television 360 (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqRtCrC6MJRd8gwwjdF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqRtCrC6MJRd8gwwjdF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Benioff, David, $e creator. $1 https://id.oclc.org/worldcat/entity/E39PBJt3VYVXc7FBxk36Q9xqwC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJt3VYVXc7FBxk36Q9xqwC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "creator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Generator Entertainment, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqDTcvh7mJ4WJqMTYqF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqDTcvh7mJ4WJqMTYqF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:duration "more than 999 minutes" ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Séries télévisées." ;
+            bflc:marcKey "655  7 $a Séries télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000025" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Tellevision series"@en ;
+            bflc:marcKey "380    $a Tellevision series $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Émissions fantastiques télévisées." ;
+            bflc:marcKey "655  7 $a Émissions fantastiques télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000055" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television programs." ;
+            bflc:marcKey "655  7 $a Television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866651" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Action and adventure television programs." ;
+            bflc:marcKey "655  7 $a Action and adventure television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866020" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Adaptations télévisées." ;
+            bflc:marcKey "655  7 $a Adaptations télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000028" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Émissions d'aventures télévisées." ;
+            bflc:marcKey "655  7 $a Émissions d'aventures télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000032" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction television programs." ;
+            bflc:marcKey "655  7 $a Fiction television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866233" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fictions télévisées." ;
+            bflc:marcKey "655  7 $a Fictions télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000022" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fantasy television programs." ;
+            bflc:marcKey "655  7 $a Fantasy television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866226" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television adaptations." ;
+            bflc:marcKey "655  7 $a Television adaptations. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866631" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Émissions télévisées." ;
+            bflc:marcKey "655  7 $a Émissions télévisées. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000027" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Television series." ;
+            bflc:marcKey "655  7 $a Television series. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866658" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1451147575> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Peter Dinklage, Lena Headey, Kit Harington, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen, Emilia Clarke, John Bradley, Alfie Allen, Conleth Hill"@en ;
+            bflc:marcKey "511 1  $a Peter Dinklage, Lena Headey, Kit Harington, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen, Emilia Clarke, John Bradley, Alfie Allen, Conleth Hill" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Creators, David Benioff and D.B. Weiss ; production companies, HBO Entertainment, Television 360, Grok! Television, Generator Entertainment, Bighead, Littlehead"@en ;
+            bflc:marcKey "508    $a Creators, David Benioff and D.B. Weiss ; production companies, HBO Entertainment, Television 360, Grok! Television, Generator Entertainment, Bighead, Littlehead" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English, French or Spanish audio; optional French or Spanish subtitles"@en ] ;
+    bf:originDate "2011/2019"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Game of thrones (Television program). Spanish." ;
+                    bflc:marcKey "730 02 $i Container of (expression): $a Game of thrones (Television program). $l Spanish." ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "Spanish." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Game of thrones (Television program). Spanish." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Game of thrones (Television program)." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Game of thrones (Television program). English." ;
+                    bflc:marcKey "730 02 $i Container of (work): $a Game of thrones (Television program). $l English." ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "English." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Game of thrones (Television program). English." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Game of thrones (Television program)." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Game of thrones (Television program). French." ;
+                    bflc:marcKey "730 02 $i Container of (expression): $a Game of thrones (Television program). $l French." ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "French." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Game of thrones (Television program). French." ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Game of thrones (Television program)." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Martin, George R. R. Song of ice and fire." ;
+                    bflc:marcKey "700 1  $i Based on (work): $a Martin, George R. R. $t Song of ice and fire." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Martin, George R. R." ] ] ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3938017" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Song of ice and fire." ;
+                            bf:mainTitle "Song of ice and fire." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Based on (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Kings and rulers Drama." ;
+            bflc:marcKey "650  0 $a Kings and rulers $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Kings and rulers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2145742" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Imaginary wars and battles Drama." ;
+            bflc:marcKey "650  0 $a Imaginary wars and battles $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Imaginary wars and battles" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2098472" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Nobility Drama." ;
+            bflc:marcKey "650  0 $a Nobility $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Nobility" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2076278" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The series follows the adventures of the powerful families constantly vying for control of the throne in the kingdom of Westeros"@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Season 1 Season 2 Season 3 Season 4 Season 5 Season 6 Season 7 Season 8 Bonus features" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Game of thrones, the complete collection" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Game of thrones, the complete collection" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJB48HpYCyjqm3ctPpdYT3> a bf:Person ;
+    rdfs:label "Dinklage, Peter," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6405180" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJg4pDXYV7gd7X9qjjCxXd> a bf:Person ;
+    rdfs:label "Harington, Kit, 1986-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152545" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhMfgDCDjJyHx6FKJGyh3> a bf:Person ;
+    rdfs:label "Coster-Waldau, Nikolaj, 1970-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7256606" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJk94GDGqJqPwbKV3CrDv3> a bf:Person ;
+    rdfs:label "Hill, Conleth, 1964-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6971445" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkD7bKQ8m9VqmKxXjvrbd> a bf:Person ;
+    rdfs:label "Turner, Sophie, 1996-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9411058" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkxJHYFfY9TRFxhGQgqcP> a bf:Person ;
+    rdfs:label "Allen, Alfie, 1986-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8831805" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJp67KYfMXYkFT7WmPRxjC> a bf:Person ;
+    rdfs:label "Glen, Iain, 1961-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5388637" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrrCMbqfDBpJjV69mH3cP> a bf:Person ;
+    rdfs:label "Headey, Lena," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4229695" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJt3VYVXc7FBxk36Q9xqwC> a bf:Person ;
+    rdfs:label "Benioff, David," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5390146" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJv8JF3WQ9wYjFCpTtqvpP> a bf:Person ;
+    rdfs:label "Clarke, Emilia, 1986-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152537" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxd6x4PPjGJKtmHFGhj4q> a bf:Person ;
+    rdfs:label "Williams, Maisie, 1997-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9411033" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyMjRckG4TVyGR44vXWXd> a bf:Person ;
+    rdfs:label "Bradley, John, 1988-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9411060" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyRvvVF6KfhvrwHTJmKh3> a bf:Person ;
+    rdfs:label "Weiss, D. B.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5809904" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqDTcvh7mJ4WJqMTYqF> a bf:Organization ;
+    rdfs:label "Generator Entertainment," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152565" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqRtCrC6MJRd8gwwjdF> a bf:Organization ;
+    rdfs:label "Television 360 (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152561" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr4xdp3JKGdWRQfddp6> a bf:Organization ;
+    rdfs:label "Grok! Television (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152563" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmt4cBqkrfCHXgHgXm9t> a bf:Organization ;
+    rdfs:label "Bighead Littlehead (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9152570" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7TK9KpFtTXGMxdDGgg> a bf:Organization ;
+    rdfs:label "HBO Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7687248" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<https://id.oclc.org/worldcat/entity/1451147575> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1451147575#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdfs:label "Wide screen"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaar" ] ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:copyrightDate "©2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Special features discs"@en ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "all regions"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/all> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "4K Ultra HD"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Episode discs"@en ] ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "19 videodiscs (4,185 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            bf:qualifier "(season 1)" ;
+            rdf:value "883929726875" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 8)" ;
+            rdf:value "883929726950" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Warner Bros. Entertainment" ] ;
+            rdf:value "3000084907" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 6)" ;
+            rdf:value "883929656462" ],
+        [ a bf:Upc ;
+            bf:qualifier "(set)" ;
+            rdf:value "883929720460" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 3)" ;
+            rdf:value "883929656431" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 4)" ;
+            rdf:value "883929656448" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 5)" ;
+            rdf:value "883929656455" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 2)" ;
+            rdf:value "883929650293" ],
+        [ a bf:Upc ;
+            bf:qualifier "(season 7)" ;
+            rdf:value "883929656479" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1451147575" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1451147575#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English SDH (subtitles for the deaf and hard of hearing)"@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "16 4K Ultra-HD discs containing the Game of Thrones episodes and 3 Blu-ray discs of special features. Requires an Ultra HD Blu-ray player.  For the full 4K Ultra HD experience with HDR, you also need a 4K Ultra HD TV with HDR"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "1 episode guide (unpaged : color illustrations ; 18 cm)"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally produced in the United States as a television series from 2011 to 2019"@en ],
+        [ a bf:Note ;
+            rdfs:label "Bonus features include: two-part \"Game of Thrones: Reunion Special\" hosted by Conan O'Brien; \"Game of Thrones: The Last Watch\" documentary; \"Conquest & Rebellion: An Animated History of the Seven Kingdoms\"; audio commentaries; deleted scenes; behind-the-scenes featurettes"@en ],
+        [ a bf:Note ;
+            rdfs:label "Based on \"A Song of Ice and Fire\" by George R.R. Martin"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from set packaging"@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "stamping"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Burbank, CA : $b Warner Bros. Entertainment, $c [2020]" ;
+            bflc:simpleAgent "Warner Bros. Entertainment," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "Burbank, CA :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Burbank, CA : Warner Bros. Entertainment, [2020]" ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolby> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent [ a bf:SoundContent ;
+            rdfs:label "sound"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdasco" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/msoundcontent/sound> ],
+        <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Game of thrones, the complete collection" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Game of thrones, the complete collection" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/relationship/part> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+

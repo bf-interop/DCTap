@@ -1,0 +1,597 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dist> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Digital storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/libretto> a bf:SupplementaryContent ;
+    rdfs:label "libretto or text"@en .
+
+<https://id.oclc.org/worldcat/entity/1366200520#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011030438.6" ;
+    bf:creationDate "20230128" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "STF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d STF $d OCLCF $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1366200520> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1366200520#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "various studio locations."@en ] ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Münchner Symphoniker, $e instrumentalist. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqRCdHWc7KQCfTMHjdF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqRCdHWc7KQCfTMHjdF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Richard, Cliff, $e singer. $1 https://id.oclc.org/worldcat/entity/E39PBJvmKFbk9hdYTxmtgGGGpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvmKFbk9hdYTxmtgGGGpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lloyd Webber, Julian, $d 1951- $e instrumentalist. $1 https://id.oclc.org/worldcat/entity/E39PBJpyqpmVHBmR8hDM9bPCwC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpyqpmVHBmR8hDM9bPCwC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a La Scola, Vincenzo, $e singer. $1 https://id.oclc.org/worldcat/entity/E39PBJghmjTk8QDwwQtMRfgqcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJghmjTk8QDwwQtMRfgqcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wolf, Peter $c (Cellist), $e conductor. $1 https://id.oclc.org/worldcat/entity/E39PCjBwQHCpFqcGTj3Jb4JDmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBwQHCpFqcGTj3Jb4JDmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "conductor." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Studio recordings" ;
+            bflc:marcKey "655  7 $a Studio recordings $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst02010330" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music"@en ;
+            bflc:marcKey "047    $a pp $a rc" ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027009> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs." ;
+            bflc:marcKey "655  7 $a Songs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique savante." ;
+            bflc:marcKey "655  7 $a Musique savante. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000692" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Art music." ;
+            bflc:marcKey "655  7 $a Art music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090242" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Studio recordings." ;
+            bflc:marcKey "655  7 $a Studio recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca12658223" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "655  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Chamber music" ;
+            bflc:marcKey "655  7 $a Chamber music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726551" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique de chambre." ;
+            bflc:marcKey "655  7 $a Musique de chambre. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000719" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "655  7 $a Musique populaire. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000700" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Art music" ;
+            bflc:marcKey "655  7 $a Art music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920007" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Rock music"@en ;
+            bflc:marcKey "047    $a pp $a rc" ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014027054> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090610" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores en studio." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores en studio. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000312620" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Chamber music." ;
+            bflc:marcKey "655  7 $a Chamber music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090316" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs" ;
+            bflc:marcKey "655  7 $a Songs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726744" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1366200520> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:musicMedium [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 11 $b tenor voice $n 1 $a male voice $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ],
+        [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 01 $a tenor voice $n 1 $a cello $n 1 $s 2 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ],
+        [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 11 $b tenor voice $n 1 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ],
+        [ a bf:MusicMedium ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Track 6"@en ] ;
+            bflc:readMarc382 "382 01 $b male voice $n 2 $a orchestra $e 1 $r 2 $t 1 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Sung in Italian, French or English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/lib> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/lib> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/lib> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/stx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/stx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/stx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Vincenzo la Scola, tenor ; with various instrumental accompaniment ; tracks 3, 6, 9 with Cliff Richard, vocals ; track 5 with Julian Lloyd Webber, cello ; track 6 accompanied by the Munich Symphony Orchestra ; Peter Wolf, conductor."@en ;
+            bflc:marcKey "511 0  $a Vincenzo la Scola, tenor ; with various instrumental accompaniment ; tracks 3, 6, 9 with Cliff Richard, vocals ; track 5 with Julian Lloyd Webber, cello ; track 6 accompanied by the Munich Symphony Orchestra ; Peter Wolf, conductor." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with cello" ;
+            bflc:marcKey "650  7 $a Songs (High voice) with cello $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01861443" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Chansons (Voix aiguë) acc. de violoncelle." ;
+            bflc:marcKey "650  6 $a Chansons (Voix aiguë) acc. de violoncelle." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0387025" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Temporal ;
+            rdfs:label "1991-2000" ;
+            bflc:marcKey "648  7 $a 1991-2000 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with instrumental ensemble." ;
+            bflc:marcKey "650  0 $a Songs (High voice) with instrumental ensemble." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2129588" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music 1991-2000." ;
+            bflc:marcKey "650  0 $a Popular music $y 1991-2000." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3022011" ] ] [ a bf:Temporal ;
+                        rdfs:label "1991-2000." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3022011" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with cello." ;
+            bflc:marcKey "650  0 $a Songs (High voice) with cello." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2129659" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with orchestra." ;
+            bflc:marcKey "650  0 $a Songs (High voice) with orchestra." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2129606" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Vocal duets with orchestra" ;
+            bflc:marcKey "650  7 $a Vocal duets with orchestra $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01168365" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Chansons (Voix aiguë) acc. d'orchestre." ;
+            bflc:marcKey "650  6 $a Chansons (Voix aiguë) acc. d'orchestre." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0062541" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with orchestra" ;
+            bflc:marcKey "650  7 $a Songs (High voice) with orchestra $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01126150" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musique populaire 1991-2000." ;
+            bflc:marcKey "650  6 $a Musique populaire $y 1991-2000." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musique populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0206668" ] ] [ a bf:Temporal ;
+                        rdfs:label "1991-2000." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0206668" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Chansons (Voix aiguë) acc. d'ensemble instrumental." ;
+            bflc:marcKey "650  6 $a Chansons (Voix aiguë) acc. d'ensemble instrumental." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0063466" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Vocal duets with orchestra." ;
+            bflc:marcKey "650  0 $a Vocal duets with orchestra." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2086025" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "650  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071422" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with instrumental ensemble" ;
+            bflc:marcKey "650  7 $a Songs (High voice) with instrumental ensemble $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01126144" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Duos vocaux acc. d'orchestre." ;
+            bflc:marcKey "650  6 $a Duos vocaux acc. d'orchestre." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0183055" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/libretto> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Sweet love / Bizzarri,  Marcucci (3:50) -- Go the distance / Alen Menken ; David Zippel (4:11) -- My love / Stevie Wonder (5:17) -- La vita che Sarà / Robert Schumann ; Bizzari, Marcucci, La Scola (3:59) -- Après un rêve / Fauré ; arranged by David Arch (3:21) -- Vita mia / Peter Wolf, Michelle Wolf, Zucchero Fornaciari (4:16) -- An American hymn / Molly Leikin, Lee Holdridge (3:48) -- Passione Mediterranea / Bizzari, Marcucci, La Scola (4:14) -- If it were up to me / Peter Wolf, Michelle Wolf (4:23) -- The exodus song / Ernest Gold, Pat Boone (3:06)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Vita mia Vincenzo la Scola :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Vita mia Vincenzo la Scola :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJghmjTk8QDwwQtMRfgqcP> a bf:Person ;
+    rdfs:label "La Scola, Vincenzo," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2577916" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpyqpmVHBmR8hDM9bPCwC> a bf:Person ;
+    rdfs:label "Lloyd Webber, Julian, 1951-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca558152" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvmKFbk9hdYTxmtgGGGpP> a bf:Person ;
+    rdfs:label "Richard, Cliff," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca80053" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBwQHCpFqcGTj3Jb4JDmd> a bf:Person ;
+    rdfs:label "Wolf, Peter (Cellist)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6679925" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqRCdHWc7KQCfTMHjdF> a bf:Organization ;
+    rdfs:label "Münchner Symphoniker," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca723640" ] .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/part> a bf:Status ;
+    rdfs:label "partial" .
+
+<https://id.oclc.org/worldcat/entity/1366200520> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1366200520#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗1999"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1366200520" ],
+        [ a bf:Upc ;
+            rdf:value "724355692627" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "EMI" ] ;
+            rdf:value "7243 5 56926 2 7" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1366200520#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Lyrics laid in container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital, CD audio ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Blacknight, $c [1999]" ;
+            bflc:simpleAgent "Blacknight," ;
+            bflc:simpleDate "[1999]" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [London] : $b EMI : $c [1999]" ;
+            bflc:simpleAgent "EMI :" ;
+            bflc:simpleDate "[1999]" ;
+            bflc:simplePlace "[London] :" ;
+            bf:date "1999"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ] ;
+    bf:publicationStatement "Blacknight, [1999]",
+        "[London] : EMI : [1999]" ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "1.4 m/s"@en ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dist>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Vita mia Vincenzo la Scola : featuring Cliff Richard." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Vita mia Vincenzo la Scola :" ;
+            bf:subtitle "featuring Cliff Richard." ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

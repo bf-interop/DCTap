@@ -1,0 +1,114 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/supplementto> a bf:Relationship ;
+    rdfs:label "supplement to"@en .
+
+<https://id.oclc.org/worldcat/entity/1465038544#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20251003200459.2" ;
+    bf:creationDate "20241101" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1465038544> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1465038544#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1465038544> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Local ;
+                                    bf:assigner [ a bf:Organization ;
+                                            bf:code "jthxd74dg5m0s913" ] ;
+                                    rdf:value "jthxd74dg5m0s913" ] ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "channel record"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/supplementto> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Black Birds of Berlin -- Dragrace -- Stillbilder -- Drömmar -- Sci-Fi Norrland -- Postpunk Kärlek -- Air Jam -- Pianointro Till en Kopp Te -- Drönarbild -- Nostalgibilder Norrland -- Grisslakt -- Stupid Stupid Humans -- Frihet -- People Are Strange" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Songs for Movies" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Songs for Movies" ] .
+
+<https://id.oclc.org/worldcat/entity/1465038544> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1465038544#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1465038544" ],
+        [ a bf:Identifier ;
+            rdf:value "MASSCD-285" ],
+        [ a bf:Upc ;
+            rdf:value "7332181129007" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1465038544#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $c 2024" ;
+            bflc:simpleDate "2024" ;
+            bf:date "2024"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Massproduktion, $c 2024-12-27" ;
+            bflc:simpleAgent "Massproduktion," ;
+            bflc:simpleDate "2024-12-27" ] ;
+    bf:publicationStatement "2024",
+        "Massproduktion, 2024-12-27" ;
+    bf:responsibilityStatement "The Confusions." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Songs for Movies" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Songs for Movies" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

@@ -1,0 +1,495 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dist> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Digital storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/part> a bf:Status ;
+    rdfs:label "partial" .
+
+<http://id.loc.gov/vocabulary/msupplcont/historicalinfo> a bf:SupplementaryContent ;
+    rdfs:label "historical information"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/marctarget> a bf:Source ;
+    bf:code "marctarget" .
+
+<https://id.oclc.org/worldcat/entity/1389527135#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NOC" ] ;
+    bf:changeDate "20250521023752.9" ;
+    bf:creationDate "20240920" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "NOC" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NOC $b eng $c DLC $d OCLCL $d NOC $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1389527135> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1389527135#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "TheBarn, Washington, MA ;"@en ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "M1630.18.T39" ;
+            bf:itemPortion "A44 2020b" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.42164" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3pTYfq3Q7cWDmtwgGC3ffdQ6P> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a O'Donnell, David, $d 1974- $e audio producer. $1 https://id.oclc.org/worldcat/entity/E39PBJth9ghqVMPTr3WRW9hbVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJth9ghqVMPTr3WRW9hbVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "audio producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Taylor, James, $d 1948- $e audio producer, $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJrwVqb4w94MFrrVBTRR8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrwVqb4w94MFrrVBTRR8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "audio producer," ],
+                [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pizzarelli, John, $e audio producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Pizzarelli, John," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "audio producer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Arrangements (Musique)" ;
+            bflc:marcKey "655  7 $a Arrangements (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000691" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cover versions." ;
+            bflc:marcKey "655  7 $a Cover versions. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090354" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Excerpts" ;
+            bflc:marcKey "655  7 $a Excerpts $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01692837" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musicals" ;
+            bflc:marcKey "655  7 $a Musicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726680" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs"@en ;
+            bflc:marcKey "380    $a Songs" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music" ;
+            bflc:marcKey "655  7 $a Popular music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Extraits." ;
+            bflc:marcKey "655  7 $a Extraits. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001040" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs." ;
+            bflc:marcKey "655  7 $a Songs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090610" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Excerpts." ;
+            bflc:marcKey "655  7 $a Excerpts. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "655  7 $a Musique populaire. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000700" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cover versions" ;
+            bflc:marcKey "655  7 $a Cover versions $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920089" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Reprises de chansons." ;
+            bflc:marcKey "655  7 $a Reprises de chansons. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000891" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musicals." ;
+            bflc:marcKey "655  7 $a Musicals. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090566" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "excerpts." ;
+            bflc:marcKey "655  7 $a excerpts. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026939" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Comédies musicales." ;
+            bflc:marcKey "655  7 $a Comédies musicales. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000767" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Arrangements (Music)" ;
+            bflc:marcKey "655  7 $a Arrangements (Music) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10107621" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1389527135> ;
+    bf:intendedAudience [ a bf:IntendedAudience ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/marctarget> ;
+            oclcbf:audienceTerm "general" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:musicMedium [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 11 $a male voice $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "James Taylor, vocals, acoustic guitar ; with accompanying instrumentalists and vocalists."@en ;
+            bflc:marcKey "511 0  $a James Taylor, vocals, acoustic guitar ; with accompanying instrumentalists and vocalists." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced by Dave O'Donnell, John Pizzarelli and James Taylor."@en ;
+            bflc:marcKey "508    $a Produced by Dave O'Donnell, John Pizzarelli and James Taylor." ] ;
+    bf:subject [ a bf:Temporal ;
+            rdfs:label "2011-2020" ;
+            bflc:marcKey "648  7 $a 2011-2020 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musicals Excerpts, Arranged." ;
+            bflc:marcKey "650  7 $a Musicals $x Excerpts, Arranged. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musicals" ] [ a bf:Topic ;
+                        rdfs:label "Excerpts, Arranged." ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "650  0 $a Popular music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2049101" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "650  7 $a Popular music. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "650  6 $a Musique populaire." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0046096" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musique populaire 2011-2020." ;
+            bflc:marcKey "650  6 $a Musique populaire $y 2011-2020." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musique populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270456" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270456" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music 2011-2020." ;
+            bflc:marcKey "650  0 $a Popular music $y 2011-2020." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8966683" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8966683" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musicals Excerpts, Arranged." ;
+            bflc:marcKey "650  0 $a Musicals $v Excerpts, Arranged." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musicals" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2050535" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Excerpts, Arranged." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933941" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "It takes an extraordinary artist to reimagine some of the most beloved songs of the 20th century, making them completely their own. And that's precisely what James Taylor has accomplished with his new album. It features beautifully simple, stripped-down arrangements, infusing new sounds and fresh meaning into the timeless works of art. These carefully chosen interpretations emphasize Taylor's warm, unique vocal ability and acoustic guitar talents."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/historicalinfo> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "My blue heaven (2:42) -- Moon River (3:13) -- Teach me tonight (2:58) -- As easy as rolling off a log (2:50) -- Almost like being in love (3:42) -- Sit down, you're rockin' the boat (4:11) -- The nearness of you (3:52) -- You've got to be carefully taught (2:26) -- God bless the child (3:21) -- Pennies from heaven (2:52) -- My heart stood still (3:27) -- Ol' man river (2:53) -- It's only a paper moon (3:11) -- The surrey with the fringe on top (3:20) -- Bonus tracks. I've grown accustomed to her face (2:15) ; Never never land (3:22)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "American standard /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "American standard /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrwVqb4w94MFrrVBTRR8C> a bf:Person ;
+    rdfs:label "Taylor, James, 1948-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2583192" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJth9ghqVMPTr3WRW9hbVC> a bf:Person ;
+    rdfs:label "O'Donnell, David, 1974-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8686799" ] .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1389527135> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1389527135#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:duration "005036" ;
+    bf:editionStatement "[Target exclusive]." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Fantasy Records" ] ;
+            bf:qualifier "(container spine)" ;
+            rdf:value "FAN00642" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024619963" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1389527135" ],
+        [ a bf:Upc ;
+            rdf:value "888072150959" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1389527135#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Program notes (8 unnumbered pages : illustrations) inserted in container."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Los Angeles, CA : $b Fantasy Records, $c [2020]" ;
+            bflc:simpleAgent "Fantasy Records," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "Los Angeles, CA :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Los Angeles, CA : Fantasy Records, [2020]" ;
+    bf:responsibilityStatement "James Taylor." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dist>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "American standard /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "American standard /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

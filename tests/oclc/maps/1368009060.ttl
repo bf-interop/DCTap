@@ -1,0 +1,242 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4362.S16> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4362 $b S16" ;
+    bf:code "4362.S16" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026530> a bf:GenreForm ;
+    rdfs:label "Remote-sensing images"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/one> a bf:ColorContent ;
+    rdfs:label "one color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship ;
+    rdfs:label "related work"@en .
+
+<https://id.oclc.org/worldcat/entity/1368009060#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250429150843.7" ;
+    bf:creationDate "20230131" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1368009060> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1368009060#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4362 .S16A 1960Z" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026530> ;
+    bf:geographicCoverage <http://id.loc.gov/authorities/classification/G4362.S16> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1368009060> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Local ;
+                                    bf:assigner [ a bf:Organization ;
+                                            bf:code "512396" ] ;
+                                    rdf:value "512396" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Approximate trace of the main surface rupture in the San Andreas fault zone between Pacifica and the vicinity of Saratoga, California, formed during the earthquake of April 18, 1906" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Approximate trace of the main surface rupture in the San Andreas fault zone between Pacifica and the vicinity of Saratoga, California, formed during the earthquake of April 18, 1906" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Map from the same period :"@en ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "Scale not given." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Faults (Geology)" ;
+            bflc:marcKey "650  7 $a Faults (Geology) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00921993" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California San Andreas Fault" ;
+            bflc:marcKey "651  7 $a California $z San Andreas Fault $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRFvbjRxVmHkgcqKwyJc" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01250198" ] ] [ a bf:Geographic ;
+                        rdfs:label "San Andreas Fault" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01250198" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39QbtfRFvbjRxVmHkgcqKwyJc> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "San Andreas Fault (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a San Andreas Fault (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "San Andreas Fault (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2466259" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Faults (Geology) California San Andreas Rift Zone Maps." ;
+            bflc:marcKey "650  0 $a Faults (Geology) $z California $z San Andreas Rift Zone $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Faults (Geology)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2153415" ] ] [ a bf:Geographic ;
+                        rdfs:label "California" ] [ a bf:Geographic ;
+                        rdfs:label "San Andreas Rift Zone" ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Aerial view of the San Andreas fault, California.]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Aerial view of the San Andreas fault, California.]." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1368009060> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1368009060#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/one> ;
+    bf:dimensions "28 x 75 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1368009060" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1368009060#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes map showing the faulats at the bottom right corner."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "remote-sensing image ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Showing area from Pacifica to Portola Valley."@en ],
+        [ a bf:Note ;
+            rdfs:label "Dating based on photo showing SLAC and area of Foster City."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Place of publication not identified] : $b [Publisher not identified], $c [between late 1960s and early 1970s?]" ;
+            bflc:simpleAgent "[Publisher not identified]," ;
+            bflc:simpleDate "[between late 1960s and early 1970s?]" ;
+            bflc:simplePlace "[Place of publication not identified] :" ;
+            bf:date "1960~/1970~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Place of publication not identified] : [Publisher not identified], [between late 1960s and early 1970s?]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Aerial view of the San Andreas fault, California.]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Aerial view of the San Andreas fault, California.]." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

@@ -1,0 +1,430 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> a bf:Source ;
+    bf:code "rbmscv" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/rbmscv/cv00472> a bf:GenreForm ;
+    rdfs:label "Publishers' cloth bindings." ;
+    bflc:marcKey "655  7 $a Publishers' cloth bindings. $2 rbmscv $0 http://id.loc.gov/vocabulary/rbmscv/cv00472" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1456140561#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251012234120.3" ;
+    bf:creationDate "20240917" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCA $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1456140561> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1456140561#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "F353.G47" ;
+            bf:itemPortion "W55" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Gerstäcker, Friedrich, $d 1816-1872, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJfh6Jq3fMbdxFVBQpFVG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfh6Jq3fMbdxFVBQpFVG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a J.B. Lippincott Company, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmppDvC3m6JxBFM7cyM6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmppDvC3m6JxBFM7cyM6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas. English" ;
+            bflc:marcKey "240 00 $a Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas. $l English" ;
+            bf:contribution [ a bf:PrimaryContribution ;
+                    bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfh6Jq3fMbdxFVBQpFVG3> ;
+                    bf:role [ a bf:Role ;
+                            rdfs:label "author." ] ] ;
+            bf:language [ a bf:Language ;
+                    rdfs:label "English" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "publishers' cloth bindings." ;
+            bflc:marcKey "655  7 $a publishers' cloth bindings. $2 aat $0 (CStmoGRI)aat300417789" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300417789" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        <http://id.loc.gov/vocabulary/rbmscv/cv00472> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1456140561> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Gerstäcker, Friedrich, 1816-1872. Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas. English." ;
+                    bflc:marcKey "700 1  $a Gerstäcker, Friedrich, $d 1816-1872. $t Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas. $l English." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Gerstäcker, Friedrich, 1816-1872." ] ] ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "English." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas. English." ;
+                            bf:mainTitle "Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Mississippi River Valley Description and travel." ;
+            bflc:marcKey "651  0 $a Mississippi River Valley $x Description and travel." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Mississippi River Valley" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2029523" ] ] [ a bf:Topic ;
+                        rdfs:label "Description and travel." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933831" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Chasse Mississippi, Vallée du." ;
+            bflc:marcKey "650  6 $a Chasse $z Mississippi, Vallée du." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Chasse" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0074529" ] ] [ a bf:Geographic ;
+                        rdfs:label "Mississippi, Vallée du." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0406005" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "États-Unis Descriptions et voyages." ;
+            bflc:marcKey "651  6 $a États-Unis $x Descriptions et voyages." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0115926" ] ] [ a bf:Topic ;
+                        rdfs:label "Descriptions et voyages." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0115926" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Arkansas Descriptions et voyages." ;
+            bflc:marcKey "651  6 $a Arkansas $x Descriptions et voyages." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Arkansas" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0185745" ] ] [ a bf:Topic ;
+                        rdfs:label "Descriptions et voyages." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0185745" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Hunting Mississippi River Valley." ;
+            bflc:marcKey "650  0 $a Hunting $z Mississippi River Valley." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Hunting" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2089712" ] ] [ a bf:Geographic ;
+                        rdfs:label "Mississippi River Valley." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2029523" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "United States Description and travel." ;
+            bflc:marcKey "651  0 $a United States $x Description and travel." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2058130" ] ] [ a bf:Topic ;
+                        rdfs:label "Description and travel." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2058130" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Ohio River Valley Description and travel." ;
+            bflc:marcKey "651  0 $a Ohio River Valley $x Description and travel." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Ohio River Valley" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2092253" ] ] [ a bf:Topic ;
+                        rdfs:label "Description and travel." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2092253" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Mississippi River Valley" ;
+            bflc:marcKey "651  7 $a Mississippi River Valley $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01240240" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Mississippi, Vallée du Descriptions et voyages." ;
+            bflc:marcKey "651  6 $a Mississippi, Vallée du $x Descriptions et voyages." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Mississippi, Vallée du" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0108270" ] ] [ a bf:Topic ;
+                        rdfs:label "Descriptions et voyages." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0375269" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Ohio, Vallée de l' Descriptions et voyages." ;
+            bflc:marcKey "651  6 $a Ohio, Vallée de l' $x Descriptions et voyages." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Ohio, Vallée de l'" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0109424" ] ] [ a bf:Topic ;
+                        rdfs:label "Descriptions et voyages." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0109424" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Ohio River Valley" ;
+            bflc:marcKey "651  7 $a Ohio River Valley $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01243054" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Arkansas Description and travel." ;
+            bflc:marcKey "651  0 $a Arkansas $x Description and travel." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Arkansas" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030148" ] ] [ a bf:Topic ;
+                        rdfs:label "Description and travel." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2030148" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Hunting" ;
+            bflc:marcKey "650  7 $a Hunting $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00964162" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <https://id.oclc.org/worldcat/entity/E39PBJqBtVCC6BXmQB84M8xv73>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Recounts the author's travels and adventures in the United States from 1837 to 1843."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Chapter I. From Bremen to New York -- Chapter II. New York to Buffalo -- Chapter III. Ohio ; Indiana ; Illinois ; Missouri -- Chapter IV. Arkansas, and \"down river\" to New Orleans -- Chapter V. Cincinnati ; A farmer's life in the woods -- Chapter VI. A farmer's life in the woods (continued) -- Chapter VII. Woodland sports ; Cane-brakes ; My examination by the school commission -- Chapter VIII. Farming at Fourche Le Fave ; A backwoods \"frolic\" ; Residence at Kelfer's farm ; Schools ; Hunting excursion -- Chapter IX. Hunting anecdotes and experiences ; Christmas ; Conwell and his reminiscences -- Chapter X. A perilous bear-hunt ; A debating society ; Panther hunt ; Disatrous events ; Death of Erskine ; Departure -- Chapter XI. A fatal brawl ; Return to Little Rock ; Summary justice ; Down South -- Chapter XII. Louisiana ; New Orleans, and home." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Wild sports in the Far West /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Wild sports in the Far West /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 13 $a Wildsports in the Far West" ;
+            bf:mainTitle "Wildsports in the Far West" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqBtVCC6BXmQB84M8xv73> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Arkansas" ;
+    bflc:marcKey "651  7 $a Arkansas $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJqBtVCC6BXmQB84M8xv73" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204809" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmppDvC3m6JxBFM7cyM6> a bf:Organization ;
+    rdfs:label "J.B. Lippincott Company," .
+
+<https://id.oclc.org/worldcat/entity/1456140561> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1456140561#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "20 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 396 pages ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1456140561" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1456140561#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "English translation of: Streif- und Jagdzüge durch die Vereinigten Staaten Nordamerikas."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Philadelphia : $b J. B. Lippincott Company, $c [between 1880 and 1889?]" ;
+            bflc:simpleAgent "J. B. Lippincott Company," ;
+            bflc:simpleDate "[between 1880 and 1889?]" ;
+            bflc:simplePlace "Philadelphia :" ;
+            bf:date "1880~/1889~"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "Philadelphia : J. B. Lippincott Company, [between 1880 and 1889?]" ;
+    bf:responsibilityStatement "by Frederick Gerstaecker ; translated from the German." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Wild sports in the Far West /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Wild sports in the Far West /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfh6Jq3fMbdxFVBQpFVG3> a bf:Person ;
+    rdfs:label "Gerstäcker, Friedrich, 1816-1872,",
+        "Gerstäcker, Friedrich, 1816-1872, " .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+

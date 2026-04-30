@@ -1,0 +1,256 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmb> a bf:DescriptionConventions ;
+    bf:code "dcrmb" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1379362047#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251012013526.1" ;
+    bf:creationDate "20230522" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmb>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCF $d OCLCO $d OCLCL $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1379362047> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGGYyHH9JkrgxYGtpFg8yd> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TP548" ;
+            bf:itemPortion ".W66 1962" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Paul Masson (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmryY93gRHVV8KYvtQkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmryY93gRHVV8KYvtQkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Wood, Morrison, $d 1893- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjBPyWPvDkVwTVjX4JBJKq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBPyWPvDkVwTVjX4JBJKq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1379362047> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States California Saratoga." ;
+            bflc:marcKey "752    $a United States $b California $d Saratoga." ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "California" ] [ a madsrdf:City ;
+                        rdfs:label "Saratoga." ] ) ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Cuisine (Vin)" ;
+            bflc:marcKey "650  6 $a Cuisine (Vin)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0032454" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Wine." ;
+            bflc:marcKey "650  0 $a Wine." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2103359" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking (Wine)" ;
+            bflc:marcKey "650  7 $a Cooking (Wine) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01754930" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Cocktails." ;
+            bflc:marcKey "650  0 $a Cocktails." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2015405" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Cocktails" ;
+            bflc:marcKey "650  7 $a Cocktails $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00866130" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Cocktails (Boissons)" ;
+            bflc:marcKey "650  6 $a Cocktails (Boissons)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0036797" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Cooking (Wine)" ;
+            bflc:marcKey "650  0 $a Cooking (Wine)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2046119" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Wine" ;
+            bflc:marcKey "650  7 $a Wine $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01175881" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ways with wine :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ways with wine :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBPyWPvDkVwTVjX4JBJKq> a bf:Person ;
+    rdfs:label "Wood, Morrison, 1893-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7322228" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmryY93gRHVV8KYvtQkt> a bf:Organization ;
+    rdfs:label "Paul Masson (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca899833" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1379362047> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1379362047#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Culinary Collection (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Culinary Collection (University of Pennsylvania)" ] ],
+        [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Chef Fritz Blank Culinary Archive and Library (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Chef Fritz Blank Culinary Archive and Library (University of Pennsylvania)" ] ] ;
+    bf:copyrightDate "©1962"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "21 cm" ;
+    bf:editionStatement "Third edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "31, [1] pages :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1379362047" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGGYyHH9JkrgxYGtpFg8yd> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color illustrations ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Covers included in pagination."@en ],
+        [ a bf:Note ;
+            rdfs:label "Cover title. Statement of responsibility from caption title on page [3]."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Saratoga, California] : $b Published by Paul Masson Vineyards, $c [1962]" ;
+            bflc:simpleAgent "Published by Paul Masson Vineyards," ;
+            bflc:simpleDate "[1962]" ;
+            bflc:simplePlace "[Saratoga, California] :" ;
+            bf:date "1962"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Saratoga, California] : Published by Paul Masson Vineyards, [1962]" ;
+    bf:responsibilityStatement "[by Morrison Wood]." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Ways with wine : a cook book, a drink book /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Ways with wine :" ;
+            bf:subtitle "a cook book, a drink book /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

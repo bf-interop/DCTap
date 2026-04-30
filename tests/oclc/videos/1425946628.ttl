@@ -1,0 +1,778 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1425946628#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251012014150.2" ;
+    bf:creationDate "20240306" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1425946628> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1425946628#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVD6944(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Reinert, Al, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Reinert, Al," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Berkeley, Xander, $d 1955- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJfX3GHjcqH7jQGXkjXmVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfX3GHjcqH7jQGXkjXmVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Andrews, David, $d 1952- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJxx9jHV3xBcpxpk36dPcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxx9jHV3xBcpxpk36dPcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Spano, Joe, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Spano, Joe," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ryack, Rita, $e costume designer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ryack, Rita," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "costume designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hill, Mike $q (Michael J.), $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PCjDfpr6mCMhhQ487XBDFyq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjDfpr6mCMhhQ487XBDFyq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cullen, Brett, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cullen, Brett," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hanks, Tom, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hanks, Tom," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Universal Studios Home Entertainment (Firm), $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cundey, Dean, $d 1945- $e cinematographer. $1 https://id.oclc.org/worldcat/entity/E39PBJbM4Mr4VXvH7JvcKBrH4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJbM4Mr4VXvH7JvcKBrH4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cinematographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McClure, Marc, $d 1957- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJwRVRK6rB36Kh6KqypHG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwRVRK6rB36Kh6KqypHG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Howard, Clint, $d 1959- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJgHc4BfwVHGw9GGc3X8G3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgHc4BfwVHGw9GGc3X8G3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Quinlan, Kathleen, $d 1954- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJrWG34Dk8FwqyM4QVKGHC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrWG34Dk8FwqyM4QVKGHC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Imagine Entertainment (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmtd34dXwYgvxgPjkDY6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmtd34dXwYgvxgPjkDY6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Horner, James, $e composer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Horner, James," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sinise, Gary, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sinise, Gary," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Howard, Ron, $d 1954- $e film director. $1 https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Corenblith, Michael, $e production designer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Corenblith, Michael," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Broyles, William, $c Jr., $d 1944- $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PBJpPCKQ9YdmcHKc4HwvWDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJpPCKQ9YdmcHKc4HwvWDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hanley, Dan, $d 1955- $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PBJhH7BPhqmG4CBgDFkFxjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhH7BPhqmG4CBgDFkFxjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Grazer, Brian, $d 1953- $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Harris, Ed, $d 1950- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyWW4YJf6Gw3vCcgB7mBP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyWW4YJf6Gw3vCcgB7mBP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Bacon, Kevin, $d 1958- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyWTmRrCjK87VWCKb9v73" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyWTmRrCjK87VWCKb9v73> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dean, Loren, $d 1969- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJwthkvRFqdgxvCFmJ6Yfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwthkvRFqdgxvCFmJ6Yfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Paxton, Bill, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Paxton, Bill," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Clemenson, Christian, $d 1959- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJbCVydKxrHr3HKmyqGmBP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJbCVydKxrHr3HKmyqGmBP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Reiner, Tracy, $d 1964- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJktpr4Gq7RJBRdgK3cVmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJktpr4Gq7RJBRdgK3cVmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT2H20M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Apollo 13 (Motion picture)" ;
+            bflc:marcKey "130 0  $a Apollo 13 (Motion picture)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca5917321" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Apollo 13 (Motion picture)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'aventures." ;
+            bflc:marcKey "655  7 $a Films d'aventures. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000144" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Historical films." ;
+            bflc:marcKey "655  7 $a Historical films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films historiques." ;
+            bflc:marcKey "655  7 $a Films historiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000093" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Action and adventure films." ;
+            bflc:marcKey "655  7 $a Action and adventure films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866019" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1425946628> ;
+    bf:language [ a bf:Language ;
+            bf:code "jpn" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/jpn> ],
+        [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "por" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, Dean Cundey ; film editors, Mike Hill, Dan Hanley ; music, James Horner ; costume designer, Rita Ryack ; production designer, Michael Corenblith."@en ;
+            bflc:marcKey "508    $a Director of photography, Dean Cundey ; film editors, Mike Hill, Dan Hanley ; music, James Horner ; costume designer, Rita Ryack ; production designer, Michael Corenblith." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "4K Ultra HD: In English, Latin American Spanish, French, Brazilian Portuguese or Japanese with optional Latin American Spanish, French, Brazilian Portuguese or Japanese subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "por" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Tom Hanks, Kevin Bacon, Bill Paxton, Gary Sinise, Ed Harris, Kathleen Quinlan, David Andrews, Xander Berkeley, Christian Clemenson, Brett Cullen, Loren Dean, Clint Howard, Ben Marley, Marc McClure, Tracy Reiner, Joe Spano."@en ;
+            bflc:marcKey "511 1  $a Tom Hanks, Kevin Bacon, Bill Paxton, Gary Sinise, Ed Harris, Kathleen Quinlan, David Andrews, Xander Berkeley, Christian Clemenson, Brett Cullen, Loren Dean, Clint Howard, Ben Marley, Marc McClure, Tracy Reiner, Joe Spano." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "jpn" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/jpn> ] ] ;
+    bf:originDate "1995"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Lovell, Jim. Lost moon." ;
+                    bflc:marcKey "700 1  $i Motion picture adaptation of (work): $a Lovell, Jim. $t Lost moon." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Lovell, Jim." ] ] ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5917322" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Lost moon." ;
+                            bf:mainTitle "Lost moon." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Motion picture adaptation of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "National Film Preservation Foundation Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "National Film Preservation Foundation Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Space vehicle accidents Drama." ;
+            bflc:marcKey "650  0 $a Space vehicle accidents $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Space vehicle accidents" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041653" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "610 20 $a Apollo 13 (Spacecraft) $x Accidents $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Organization ;
+                        rdfs:label "Apollo 13 (Spacecraft)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2682517" ] ] [ a bf:Topic ;
+                        rdfs:label "Accidents" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5032003" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "NASA must devise a strategy to return Apollo 13 to Earth safely after the spacecraft undergoes massive internal damage putting the lives of the three astronauts on board in jeopardy."@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Apollo thirteen" ;
+            bf:mainTitle "Apollo thirteen" ],
+        [ a bf:Title ;
+            rdfs:label "Apollo 13 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Apollo 13 /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJbCVydKxrHr3HKmyqGmBP> a bf:Person ;
+    rdfs:label "Clemenson, Christian, 1959-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6267385" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJbM4Mr4VXvH7JvcKBrH4q> a bf:Person ;
+    rdfs:label "Cundey, Dean, 1945-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6355374" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfX3GHjcqH7jQGXkjXmVC> a bf:Person ;
+    rdfs:label "Berkeley, Xander, 1955-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4472296" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfxchPHKVFVjTJGxfv8md> a bf:Person ;
+    rdfs:label "Grazer, Brian, 1953-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3926878" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgHc4BfwVHGw9GGc3X8G3> a bf:Person ;
+    rdfs:label "Howard, Clint, 1959-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5447891" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhH7BPhqmG4CBgDFkFxjC> a bf:Person ;
+    rdfs:label "Hanley, Dan, 1955-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7371759" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJktpr4Gq7RJBRdgK3cVmd> a bf:Person ;
+    rdfs:label "Reiner, Tracy, 1964-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5996307" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJmphqw77fy4QWtVgwWkXd> a bf:Person ;
+    rdfs:label "Howard, Ron, 1954-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3091798" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpPCKQ9YdmcHKc4HwvWDq> a bf:Person ;
+    rdfs:label "Broyles, William, Jr., 1944-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1515683" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrWG34Dk8FwqyM4QVKGHC> a bf:Person ;
+    rdfs:label "Quinlan, Kathleen, 1954-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4156937" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwRVRK6rB36Kh6KqypHG3> a bf:Person ;
+    rdfs:label "McClure, Marc, 1957-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7526877" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwthkvRFqdgxvCFmJ6Yfq> a bf:Person ;
+    rdfs:label "Dean, Loren, 1969-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4561666" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxx9jHV3xBcpxpk36dPcP> a bf:Person ;
+    rdfs:label "Andrews, David, 1952-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4788009" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyWTmRrCjK87VWCKb9v73> a bf:Person ;
+    rdfs:label "Bacon, Kevin, 1958-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2424929" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyWW4YJf6Gw3vCcgB7mBP> a bf:Person ;
+    rdfs:label "Harris, Ed, 1950-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3421619" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjDfpr6mCMhhQ487XBDFyq> a bf:Person ;
+    rdfs:label "Hill, Mike (Michael J.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7371769" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqKQkQRVydgJBH76Xtg> a bf:Organization ;
+    rdfs:label "Universal Studios Home Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6854819" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmtd34dXwYgvxgPjkDY6> a bf:Organization ;
+    rdfs:label "Imagine Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3961396" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1425946628> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1425946628#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:Resolution ;
+            rdfs:label "2160p"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "4K Ultra HD Blu-ray"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (2 hr., 20 min.) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1425946628" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024601048" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(container)" ;
+            rdf:value "61186788" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(Blu-ray)" ;
+            rdf:value "2040001" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(Blu-ray)" ;
+            rdf:value "549223" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(container)" ;
+            rdf:value "2080195" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(4K Ultra HD)" ;
+            rdf:value "2070819" ],
+        [ a bf:Upc ;
+            rdf:value "191329009871" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Universal" ] ;
+            bf:qualifier "(4K Ultra HD)" ;
+            rdf:value "626283" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1425946628#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "1 Blu-ray (sound, color ; 4 3/4 in.)"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Sources used: videodisc container; Internet movie database WWW site, viewed March 6, 2024."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Subtitles for the deaf and hard of hearing (SDH)."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "4K Ultra HD Blu-ray player required. 4K television required for full 4K UHD effect; can also be viewed using a 1080 television without full 4K UHD effects."@en ],
+        [ a bf:Note ;
+            rdfs:label "Based on the book 'Lost moon' by Jim Lovell & Jeffrey Kluger."@en ],
+        [ a bf:Note ;
+            rdfs:label "Wide screen (2.35:1)."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally released as a motion picture in 1995."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note ;
+            rdfs:label "4K Ultra HD bonus features: feature commentary with Jim and Marilyn Lovell; feature commentary with director Ron Howard."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Also includes a Blu-ray copy of the movie. Blu-ray bonus features: Apollo 13: twenty years later; Lost moon: the triumph of Apollo 13; Conquering space: the moon and beyond; Lucky 13: the astronaut's story; U-Control: the Apollo era; U-Control: Tech-Splanations; Feature commentary with Jim and Marilyn Lovell; Feature commentary with director Ron Howard."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Universal City, CA : $b Universal Pictures Home Entertainment, $c [2020]" ;
+            bflc:simpleAgent "Universal Pictures Home Entertainment," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "Universal City, CA :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "Universal City, CA : Universal Pictures Home Entertainment, [2020]" ;
+    bf:responsibilityStatement "Imagine Entertainment presents ; a Brian Grazer production ; a Ron Howard film ; screenplay by William Broyles, Jr. & Al Reinert ; produced by Brian Grazer ; directed by Ron Howard." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "5.1 DTS Digital Surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Apollo 13 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Apollo 13 /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

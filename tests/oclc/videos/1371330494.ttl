@@ -1,0 +1,1020 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1371330494#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20251011195626.7" ;
+    bf:creationDate "20230228" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d CUV $d OCLCF $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1371330494> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1371330494#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "362.76" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230406" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3VbmHBFyYVHKQ8BydVVDjTqmT> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HV6570.7" ;
+            bf:itemPortion ".S555 2022" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Black Public Media, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqfRxkykRhXDx7Dbbtg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqfRxkykRhXDx7Dbbtg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Latino Public Broadcasting (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmry3Qv8vwcXh6qjxQFg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmry3Qv8vwcXh6qjxQFg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Geis, Sarah, $e interviewer (expression)." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Geis, Sarah," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewer (expression)." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a López, Jasmín Mara, $e film director, $e film producer, $e singer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "López, Jasmín Mara," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Talmi, Gil, $d 1968- $e composer (expression), $e instrumentalist. $1 https://id.oclc.org/worldcat/entity/E39PCjGqDPhbQvVJrDkWwJfj83" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjGqDPhbQvVJrDkWwJfj83> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)," ],
+                [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Corazón Oscuro Productions, $e presenter, $e production company, $e film distributor." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Corazón Oscuro Productions," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter," ],
+                [ a bf:Role ;
+                    rdfs:label "production company," ],
+                [ a bf:Role ;
+                    rdfs:label "film distributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Chicken & Egg Pictures (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmt6YCymtKhkRBRKX7TR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmt6YCymtKhkRBRKX7TR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Moyi, Bron, $e director of photography." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Moyi, Bron," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rodriguez Maleck, Marta, $e interviewer (expression)." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Rodriguez Maleck, Marta," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewer (expression)." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Diaz-Cortes, Anayansi, $e interviewer (expression)." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Diaz-Cortes, Anayansi," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewer (expression)." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Corporation for Public Broadcasting, $e sponsoring body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpDcbxPqxWmjgPfTkPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpDcbxPqxWmjgPfTkPF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Flynn, Laura, $e interviewer (expression)." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Flynn, Laura," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewer (expression)." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Firelight Media, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr4KcgQTrtWy8Pwk9vR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr4KcgQTrtWy8Pwk9vR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Garrahan, Sarah, $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PCjwytX38M79BKH8cTprtTd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjwytX38M79BKH8cTprtTd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Independent Television Service, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqkfD3BpxJXjR4xV8xt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqkfD3BpxJXjR4xV8xt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ] ;
+    bf:duration "PT1H29M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films."@en ;
+            bflc:marcKey "380    $a Documentary films. $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films" ;
+            bflc:marcKey "655  7 $a Nonfiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710269" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Personal narratives" ;
+            bflc:marcKey "655  7 $a Personal narratives $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423843" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1371330494> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Interviewers : Anayansi Diaz-Cortes, Laura Flynn, Sarah Geis, Marta Rodriguez Maleck ; vocalist, Jasmín Mara López ; piano, Gil Talmi."@en ;
+            bflc:marcKey "511 0  $a Interviewers : Anayansi Diaz-Cortes, Laura Flynn, Sarah Geis, Marta Rodriguez Maleck ; vocalist, Jasmín Mara López ; piano, Gil Talmi." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Primarily English with some Spanish dialogue with English subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Editor, Sarah Garrahan ; director of photography, Bron Moyi ; original music, Gil Talmi."@en ;
+            bflc:marcKey "508    $a Editor, Sarah Garrahan ; director of photography, Bron Moyi ; original music, Gil Talmi." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Guérison par l'esprit." ;
+            bflc:marcKey "650  6 $a Guérison par l'esprit." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0009944" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Enfants victimes d'abus sexuels devenus adultes États-Unis Psychologie Récits personnels." ;
+            bflc:marcKey "650  6 $a Enfants victimes d'abus sexuels devenus adultes $z États-Unis $x Psychologie $v Récits personnels." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Enfants victimes d'abus sexuels devenus adultes" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0122417" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychologie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0380132" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Récits personnels." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0377735" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Femmes victimes de violence Santé mentale États-Unis Récits personnels." ;
+            bflc:marcKey "650  6 $a Femmes victimes de violence $x Santé mentale $z États-Unis $v Récits personnels." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Femmes victimes de violence" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0029503" ] ] [ a bf:Topic ;
+                        rdfs:label "Santé mentale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0379166" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Récits personnels." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0377735" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Victimes d'inceste Relations familiales États-Unis." ;
+            bflc:marcKey "650  6 $a Victimes d'inceste $x Relations familiales $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Victimes d'inceste" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0122416" ] ] [ a bf:Topic ;
+                        rdfs:label "Relations familiales" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373848" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Psychic trauma" ;
+            bflc:marcKey "650  7 $a Psychic trauma $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01081217" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Grandparent and child Family relationships" ;
+            bflc:marcKey "650  7 $a Grandparent and child $x Family relationships $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Grandparent and child" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00946361" ] ] [ a bf:Topic ;
+                        rdfs:label "Family relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00946361" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Traumatisme psychique." ;
+            bflc:marcKey "650  6 $a Traumatisme psychique." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0049163" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Grandparent and child Family relationships United States." ;
+            bflc:marcKey "650  0 $a Grandparent and child $x Family relationships $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Grandparent and child" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2037446" ] ] [ a bf:Topic ;
+                        rdfs:label "Family relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5100269" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Familles américaines d'origine mexicaine États-Unis Mœurs et coutumes." ;
+            bflc:marcKey "650  6 $a Familles américaines d'origine mexicaine $z États-Unis $x Mœurs et coutumes." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Familles américaines d'origine mexicaine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0226598" ] ] [ a bf:Topic ;
+                        rdfs:label "Mœurs et coutumes." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0379088" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Incest victims Family relationships United States." ;
+            bflc:marcKey "650  0 $a Incest victims $x Family relationships $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Incest victims" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2100494" ] ] [ a bf:Topic ;
+                        rdfs:label "Family relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5100269" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adult child sexual abuse victims United States Psychology Personal narratives." ;
+            bflc:marcKey "650  0 $a Adult child sexual abuse victims $z United States $x Psychology $v Personal narratives." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adult child sexual abuse victims" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2430880" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychology" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5921814" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Personal narratives." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945051" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Grands-parents et enfants Relations familiales États-Unis." ;
+            bflc:marcKey "650  6 $a Grands-parents et enfants $x Relations familiales $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Grands-parents et enfants" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0107804" ] ] [ a bf:Topic ;
+                        rdfs:label "Relations familiales" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373848" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Child sexual abuse" ;
+            bflc:marcKey "650  7 $a Child sexual abuse $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00854640" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Generational trauma Social aspects United States." ;
+            bflc:marcKey "650  0 $a Generational trauma $x Social aspects $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Generational trauma" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca14803673" ] ] [ a bf:Topic ;
+                        rdfs:label "Social aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5180379" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Incest Psychological aspects" ;
+            bflc:marcKey "650  7 $a Incest $x Psychological aspects $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Incest" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00968534" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychological aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00968534" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abusive men Social aspects United States." ;
+            bflc:marcKey "650  0 $a Abusive men $x Social aspects $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abusive men" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2487951" ] ] [ a bf:Topic ;
+                        rdfs:label "Social aspects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5180379" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abused women Mental health United States Personal narratives." ;
+            bflc:marcKey "650  0 $a Abused women $x Mental health $z United States $v Personal narratives." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abused women" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2130718" ] ] [ a bf:Topic ;
+                        rdfs:label "Mental health" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5225895" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Personal narratives." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945051" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adult child sexual abuse victims Psychology" ;
+            bflc:marcKey "650  7 $a Adult child sexual abuse victims $x Psychology $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adult child sexual abuse victims" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00797220" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychology" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00797220" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Traumatisme intergénérationnel Aspect social États-Unis." ;
+            bflc:marcKey "650  6 $a Traumatisme intergénérationnel $x Aspect social $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Traumatisme intergénérationnel" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000348389" ] ] [ a bf:Topic ;
+                        rdfs:label "Aspect social" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0374080" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Child sexual abuse." ;
+            bflc:marcKey "650  0 $a Child sexual abuse." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2141668" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Mexican American families Social life and customs" ;
+            bflc:marcKey "650  7 $a Mexican American families $x Social life and customs $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Mexican American families" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01018977" ] ] [ a bf:Topic ;
+                        rdfs:label "Social life and customs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01018977" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Inceste États-Unis Aspect psychologique." ;
+            bflc:marcKey "650  6 $a Inceste $z États-Unis $x Aspect psychologique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Inceste" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0007933" ] ] [ a bf:Topic ;
+                        rdfs:label "Aspect psychologique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373794" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Abus sexuels à l'égard des adolescentes." ;
+            bflc:marcKey "650  6 $a Abus sexuels à l'égard des adolescentes." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0240148" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Psychic trauma." ;
+            bflc:marcKey "650  0 $a Psychic trauma." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2013695" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Mexican American families United States Social life and customs." ;
+            bflc:marcKey "650  0 $a Mexican American families $z United States $x Social life and customs." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Mexican American families" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2019242" ] ] [ a bf:Topic ;
+                        rdfs:label "Social life and customs." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5536485" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Mental healing" ;
+            bflc:marcKey "650  7 $a Mental healing $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01016334" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Incest victims Family relationships" ;
+            bflc:marcKey "650  7 $a Incest victims $x Family relationships $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Incest victims" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00968553" ] ] [ a bf:Topic ;
+                        rdfs:label "Family relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00968553" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Mental healing." ;
+            bflc:marcKey "650  0 $a Mental healing." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2013999" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Incest United States Psychological aspects." ;
+            bflc:marcKey "650  0 $a Incest $z United States $x Psychological aspects." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Incest" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2100465" ] ] [ a bf:Topic ;
+                        rdfs:label "Psychological aspects." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5916272" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Abused women Mental health" ;
+            bflc:marcKey "650  7 $a Abused women $x Mental health $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Abused women" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00794889" ] ] [ a bf:Topic ;
+                        rdfs:label "Mental health" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00794889" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"In this autobiographical exploration of survivorship, New Orleans journalist and filmmaker Jasmín Mara López unabashedly shares her process of healing from childhood sexual abuse. After Jasmín discloses to her family she'd been abused by her grandfather, she liberates others to come forward in a story of confronting a culture of silence over generational trauma.\"--taken from PBS web site."@en ],
+        [ a bf:Summary ;
+            rdfs:label "\"When director Jasmín Mara López sees a photo of her niece with her grandfather, she is flooded by painful memories of her own childhood sexual abuse at his hands -- and the following 24 years of her silence. In this cinematically striking and poetic documentary, López bravely films her story as a willful act to accept difficult truths while finding beauty in the process of healing. As she defies the cultural silence that pervades her family and confronts her abusive grandfather, who is a Baptist minister, a world of generational abuse unfolds, and she quickly discovers she is not alone. Through archival family footage and intimate moments with her family, López has created a film about confronting painful truths and the beauty one can feel when they reach the other side of grief.\"--taken from film web site."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Silent beauty /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Silent beauty /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PCjGqDPhbQvVJrDkWwJfj83> a bf:Person ;
+    rdfs:label "Talmi, Gil, 1968-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9188332" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjwytX38M79BKH8cTprtTd> a bf:Person ;
+    rdfs:label "Garrahan, Sarah," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11512364" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpDcbxPqxWmjgPfTkPF> a bf:Organization ;
+    rdfs:label "Corporation for Public Broadcasting," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca265842" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqfRxkykRhXDx7Dbbtg> a bf:Organization ;
+    rdfs:label "Black Public Media," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11466048" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqkfD3BpxJXjR4xV8xt> a bf:Organization ;
+    rdfs:label "Independent Television Service," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4011720" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr4KcgQTrtWy8Pwk9vR> a bf:Organization ;
+    rdfs:label "Firelight Media," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6081346" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmry3Qv8vwcXh6qjxQFg> a bf:Organization ;
+    rdfs:label "Latino Public Broadcasting (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6179327" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmt6YCymtKhkRBRKX7TR> a bf:Organization ;
+    rdfs:label "Chicken & Egg Pictures (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8367122" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1371330494> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1371330494#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "polychrome"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacc" ] ],
+        <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (89 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1371330494" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1371330494#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, primarily color with some black and white footage ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "This disc is a recorded DVD and may not play on all DVD players or drives."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Silent Beauty is a co-production of Corazón Oscuro Productions LLC and ITVS, in association with Black Public Media (BPM) and Latino Public Broadcasting (LPB) with major funding provided by the Corporation for Public Broadcasting (CPB). In association with Chicken & Egg Pictures, with support from Women Make Movies Production Assistance Program.\"--end title frames."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD-R."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The following contains graphic descriptions of sexual abuse.\"--opening frames of film."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New Orleans, Louisiana] : $b Corazón Oscuro Productions LLC, $c [2022]" ;
+            bflc:simpleAgent "Corazón Oscuro Productions LLC," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[New Orleans, Louisiana] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/lau> ] ;
+    bf:publicationStatement "[New Orleans, Louisiana] : Corazón Oscuro Productions LLC, [2022]" ;
+    bf:responsibilityStatement "Corazón Oscuro presents ; an ITVS co-production ; in association with Chicken & Egg Pictures ; in association with Firelight Media ; a film by Jasmín Mara López ; directed and produced by Jasmín Mara López." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digtal"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Silent beauty /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Silent beauty /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

@@ -1,0 +1,170 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/agricola> a bf:Source ;
+    bf:code "agricola" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1388675887#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250518041307.4" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388675887> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1388675887#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "621.319" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3YD6pYdTHq66rQJVPcwK48qpj> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Carvallo, Andres." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Carvallo, Andres." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cooper, John." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cooper, John." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388675887> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781608079636" ] ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic ;
+            bf:code "TEC031020" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Placing emphasis on practical \"how-to\" guidance, this cutting-edge resource provides a first-hand, insider#x92;s perspective on the advent and evolution of smart grids in the 21st century. This book presents engineers, researchers, and students with the building blocks that comprise basic smart grids, including power plant, transmission substation, distribution, and meter automation. Moreover, this forward-looking volume explores the next step of this technology#x92;s evolution. It provides a detailed explanation of how an advanced smart grid incorporates demand response with smart appliances and management mechanisms for distributed generation, energy storage, and electric vehicles. This updated second edition focuses on the disruptive impact of DER. This new edition also includes a glossary with well over 100 acronyms and terms, acknowledging the tremendous challenge for a student of smart energy and smart grid to grasp this complex industry"@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Advanced Smart Grid :" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Advanced Smart Grid :" ] .
+
+<https://id.oclc.org/worldcat/entity/1388675887> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388675887#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:editionStatement "2nd ed." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource 293 pages"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1608079643" ],
+        [ a bf:Isbn ;
+            rdf:value "1608079635" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(electronic bk.)" ;
+            rdf:value "9781608079643" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1388675887" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print)" ;
+            rdf:value "9781608079636" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1388675887#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "eLoaderURL" ;
+            bflc:marcKey "856 40 $u https://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608079643 $x Provider: Artech House $x eLoaderURL $x ar4 $x arEBL209826785 $z Available to Stanford-affiliated users." ;
+            bf:electronicLocator <http://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608079643> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Artech House"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Norwood : $b Artech House, $c 2015." ;
+            bflc:simpleAgent "Artech House," ;
+            bflc:simpleDate "2015." ;
+            bflc:simplePlace "Norwood :" ;
+            bf:date "2015"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Norwood : Artech House, 2015." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Advanced Smart Grid : Edge Power Driving Sustainability." ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Advanced Smart Grid :" ;
+            bf:subtitle "Edge Power Driving Sustainability." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

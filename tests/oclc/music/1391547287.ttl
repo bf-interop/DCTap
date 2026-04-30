@@ -1,0 +1,578 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/part> a bf:Status ;
+    rdfs:label "partial"@en .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1391547287#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250704221638.8" ;
+    bf:creationDate "20230730" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCA" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCQ $d OCLCL $d OCLCA $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1391547287> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrwWHxhFvxYR6pWTpkCcP> a bf:Person ;
+    rdfs:label "Mackerras, Charles, 1925-2010," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca695059" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGJdRVTb9m4fHV7tKqgJCP> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "1971." ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@en ] ],
+        [ a bf:Capture ;
+            bf:date "1971----" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.1" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "21/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E34QWPHwGTyDfKMDXfhcyHyJK4> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Herincx, Raimund, $e singer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Herincx, Raimund," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1169945" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Sadler's Wells Opera Company, $e performer." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Sadler's Wells Opera Company," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca728856" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Collier, Marie, $e singer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Collier, Marie," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca2915569" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Walker, Barbara $c (Soprano), $e singer. $1 https://id.oclc.org/worldcat/entity/E39PCjCWQqtccVFJPpVwPdMfmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjCWQqtccVFJPpVwPdMfmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Dempsey, Gregory, $e singer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dempsey, Gregory," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1450349" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mackerras, Charles, $d 1925-2010, $e conductor. $1 https://id.oclc.org/worldcat/entity/E39PBJrwWHxhFvxYR6pWTpkCcP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrwWHxhFvxYR6pWTpkCcP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "conductor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Egerton, Francis, $d 1930- $e singer. $1 https://id.oclc.org/worldcat/entity/E39PCjvDwtjk7cp9QBPCBY6YKb" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjvDwtjk7cp9QBPCBY6YKb> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Musique savante." ;
+            bflc:marcKey "655  7 $a Musique savante. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000692" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "excerpts." ;
+            bflc:marcKey "655  7 $a excerpts. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026939" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs" ;
+            bflc:marcKey "655  7 $a Songs $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726744" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Adaptations" ;
+            bflc:marcKey "655  7 $a Adaptations $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423910" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Songs." ;
+            bflc:marcKey "655  7 $a Songs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Operas." ;
+            bflc:marcKey "655  7 $a Operas. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090584" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Art music" ;
+            bflc:marcKey "655  7 $a Art music $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920007" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Excerpts." ;
+            bflc:marcKey "655  7 $a Excerpts. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Excerpts" ;
+            bflc:marcKey "655  7 $a Excerpts $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01692837" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Operas" ;
+            bflc:marcKey "655  7 $a Operas $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726688" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Operas"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026976> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Extraits." ;
+            bflc:marcKey "655  7 $a Extraits. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001040" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Adaptations." ;
+            bflc:marcKey "655  7 $a Adaptations. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077175" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Art music." ;
+            bflc:marcKey "655  7 $a Art music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090242" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1391547287> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:musicMedium [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 01 $a solo vocal ensemble $e 1 $a mixed chorus $e 1 $a orchestra $e 1 $t 3 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ],
+        [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 01 $b soprano voice $n 1 $a orchestra $e 1 $r 1 $t 1 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Marie Collier (Emilia Marty) ; Gregory Dempsey (Albert Gregor) ; Francis Egerton (Vitek) ; Barbara Walker (Kristina) ; Raimund Herincx (Baron Jaroslav Prus) ; additional soloists ; Sadler's Wells Opera, London ; Sir Charles Mackerras, conductor.."@en ;
+            bflc:marcKey "511 0  $a Marie Collier (Emilia Marty) ; Gregory Dempsey (Albert Gregor) ; Francis Egerton (Vitek) ; Barbara Walker (Kristina) ; Raimund Herincx (Baron Jaroslav Prus) ; additional soloists ; Sadler's Wells Opera, London ; Sir Charles Mackerras, conductor.." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Sung in English or Italian."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "cze" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/cze> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/stx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/stx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ita" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ] ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Puccini, Giacomo, 1858-1924. Manon Lescaut. Selections." ;
+                    bflc:marcKey "700 12 $i Container of (work): $a Puccini, Giacomo, $d 1858-1924. $t Manon Lescaut. $k Selections." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Puccini, Giacomo, 1858-1924." ] ] ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca4555432" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Manon Lescaut. Selections." ;
+                            bf:mainTitle "Manon Lescaut." ;
+                            oclcbf:formSubheading "Selections." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Čapek, Karel, 1890-1938. Věc Makropulos." ;
+                    bflc:marcKey "700 1  $i Opera adaptation of (work) : $a Čapek, Karel, $d 1890-1938. $t Věc Makropulos." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Čapek, Karel, 1890-1938." ] ] ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6775048" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Věc Makropulos." ;
+                            bf:mainTitle "Věc Makropulos." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Opera adaptation of (work) :" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Verdi, Giuseppe, 1813-1901. Don Carlos. Selections. Italian." ;
+                    bflc:marcKey "700 12 $i Container of (expression): $a Verdi, Giuseppe, $d 1813-1901. $t Don Carlos. $k Selections. $l Italian." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Verdi, Giuseppe, 1813-1901." ] ] ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "Italian." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Don Carlos. Selections. Italian." ;
+                            bf:mainTitle "Don Carlos." ;
+                            oclcbf:formSubheading "Selections." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Janáček, Leoš, 1854-1928. Věc Makropulos. English." ;
+                    bflc:marcKey "700 12 $i Container of (expression): $a Janáček, Leoš, $d 1854-1928. $t Věc Makropulos. $l English." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Janáček, Leoš, 1854-1928." ] ] ;
+                    bf:language [ a bf:Language ;
+                            rdfs:label "English." ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Věc Makropulos. English." ;
+                            bf:mainTitle "Věc Makropulos." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Container of (expression):" ],
+                <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Operas Excerpts." ;
+            bflc:marcKey "650  0 $a Operas $v Excerpts." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Operas" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2096339" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Excerpts." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2096339" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Operas." ;
+            bflc:marcKey "650  0 $a Operas." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2096278" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Operas Excerpts" ;
+            bflc:marcKey "650  7 $a Operas $x Excerpts $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Operas" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01046203" ] ] [ a bf:Topic ;
+                        rdfs:label "Excerpts" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01046203" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with orchestra." ;
+            bflc:marcKey "650  0 $a Songs (High voice) with orchestra." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2129606" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Songs (High voice) with orchestra" ;
+            bflc:marcKey "650  7 $a Songs (High voice) with orchestra $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01126150" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Chansons (Voix aiguë) acc. d'orchestre." ;
+            bflc:marcKey "650  6 $a Chansons (Voix aiguë) acc. d'orchestre." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0062541" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Opéras Extraits." ;
+            bflc:marcKey "650  6 $a Opéras $v Extraits." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Opéras" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0014136" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Extraits." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0014136" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Operas" ;
+            bflc:marcKey "650  7 $a Operas $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01046191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Bonus. Marie Collier sings arias from Manon Lescaut and Don Carlos." ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Věc Makropulos  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Věc Makropulos  /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Parallel title from container: $a Makropulos case" ;
+            bf:mainTitle "Makropulos case" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Parallel title from container:"@en ] ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjCWQqtccVFJPpVwPdMfmd> a bf:Person ;
+    rdfs:label "Walker, Barbara (Soprano)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8983278" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjvDwtjk7cp9QBPCBY6YKb> a bf:Person ;
+    rdfs:label "Egerton, Francis, 1930-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3893337" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1391547287> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1391547287#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Opera Depot.com" ] ;
+            rdf:value "OD 10456-2" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1391547287" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGJdRVTb9m4fHV7tKqgJCP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital, CD audio ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, New York : $b Opera Depot.com, $c [between 2007 and 2018?]" ;
+            bflc:simpleAgent "Opera Depot.com," ;
+            bflc:simpleDate "[between 2007 and 2018?]" ;
+            bflc:simplePlace "New York, New York :" ;
+            bf:date "2007"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York, New York : Opera Depot.com, [between 2007 and 2018?]" ;
+    bf:responsibilityStatement "Leoš Janácek." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayspeed/f> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Věc Makropulos  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Věc Makropulos  /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/relationship/part> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

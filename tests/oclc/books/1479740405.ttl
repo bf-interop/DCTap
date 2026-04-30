@@ -1,0 +1,305 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a bf:GenreForm ;
+    rdfs:label "Fiction"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/dcrmb> a bf:DescriptionConventions ;
+    bf:code "dcrmb" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/juv> a bf:IntendedAudience ;
+    rdfs:label "juvenile"@en ;
+    bf:code "juv" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/plt> a bf:Illustration ;
+    rdfs:label "plates"@en ;
+    bf:code "plt" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<https://id.oclc.org/worldcat/entity/1479740405#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251010222353.4" ;
+    bf:creationDate "20241218" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmb>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1479740405> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1479740405#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Miller, Agnes, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJtgYbRGgMVvYh9JgxF3Qq." ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtgYbRGgMVvYh9JgxF3Qq.> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Cupples & Leon Company, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqGGdyRgCWrBbCkgwxt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqGGdyRgCWrBbCkgwxt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Advertisements." ;
+            bflc:marcKey "655  7 $a Advertisements. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Publishers' advertisements." ;
+            bflc:marcKey "655  7 $a Publishers' advertisements. $2 rbmscv" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ny" ;
+            bf:code "n-us-ny" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ny> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1479740405> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/plt> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/juv> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States New York (State) New York (City)" ;
+            bflc:marcKey "752    $a United States $b New York (State) $d New York (City)" ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "New York (State)" ] [ a madsrdf:City ;
+                        rdfs:label "New York (City)" ] ) ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 0  $a Linger-nots series" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Linger-nots series" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musées Romans, nouvelles, etc. pour la jeunesse." ;
+            bflc:marcKey "650  6 $a Musées $v Romans, nouvelles, etc. pour la jeunesse." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musées" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0047820" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Romans, nouvelles, etc. pour la jeunesse." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376960" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Museums Juvenile fiction." ;
+            bflc:marcKey "650  0 $a Museums $v Juvenile fiction." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Museums" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2047887" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Juvenile fiction." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945032" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "New York (N.Y.) Juvenile fiction." ;
+            bflc:marcKey "651  0 $a New York (N.Y.) $v Juvenile fiction." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "New York (N.Y.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Juvenile fiction." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945032" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Girls Juvenile fiction." ;
+            bflc:marcKey "650  0 $a Girls $v Juvenile fiction." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Girls" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2028726" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Juvenile fiction." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945032" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Filles Romans, nouvelles, etc. pour la jeunesse." ;
+            bflc:marcKey "650  6 $a Filles $v Romans, nouvelles, etc. pour la jeunesse." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Filles" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0007030" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Romans, nouvelles, etc. pour la jeunesse." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0376960" ] ] ) ] ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Story of nine adventurous girls" ;
+            bf:mainTitle "Story of nine adventurous girls" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Linger-nots and the mystery house" ;
+            bf:mainTitle "Linger-nots and the mystery house" ],
+        [ a bf:Title ;
+            rdfs:label "The Linger-nots and the mystery house, or, The story of nine adventurous girls /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Linger-nots and the mystery house, or, The story of nine adventurous girls /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtgYbRGgMVvYh9JgxF3Qq.> a bf:Person ;
+    rdfs:label "Miller, Agnes," .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqGGdyRgCWrBbCkgwxt> a bf:Organization ;
+    rdfs:label "Cupples & Leon Company," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5188626" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv> a bf:Source ;
+    bf:code "rbmscv" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1479740405> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1479740405#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Caroline F. Schimmel Collection of Women in the American Wilderness (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Caroline F. Schimmel Collection of Women in the American Wilderness (University of Pennsylvania)" ] ] ;
+    bf:copyrightDate "©1923"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "20 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "[6], 204 pages, [1] leaf of plates :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1479740405" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1479740405#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Publisher's advertisements at end of volume."@en ],
+        [ a bf:Note ;
+            rdfs:label "Terminus post quem for publication date from latest date of first publication of works advertised at end of volume."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Jell-O\" advertisement at end of volume."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "1 illustration ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York : $b Cupples & Leon Company, $c [not before 1926]" ;
+            bflc:simpleAgent "Cupples & Leon Company," ;
+            bflc:simpleDate "[not before 1926]" ;
+            bflc:simplePlace "New York :" ;
+            bf:date "1926"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York : Cupples & Leon Company, [not before 1926]" ;
+    bf:responsibilityStatement "by Agnes Miller ..." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The Linger-nots and the mystery house, or, The story of nine adventurous girls /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The Linger-nots and the mystery house, or, The story of nine adventurous girls /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

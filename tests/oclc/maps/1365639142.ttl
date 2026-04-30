@@ -1,0 +1,226 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1365639142#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250601104745.7" ;
+    bf:creationDate "20230125" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1365639142> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1365639142#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4363.S8 1912" ;
+            bf:itemPortion ".A7" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Arakawa, Santaro." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Arakawa, Santaro." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1365639142> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scales differ." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Stanislaus County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Stanislaus County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Stanislaus County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca385167" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Stanislaus County" ;
+            bflc:marcKey "651  7 $a California $z Stanislaus County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJw4BqJtjb6CBhGwTGJdQq" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01207368" ] ] [ a bf:Geographic ;
+                        rdfs:label "Stanislaus County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01207368" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJw4BqJtjb6CBhGwTGJdQq> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Maps." ;
+            bflc:marcKey "651  0 $a California $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca275170" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Sheet 1 -- Geologic Folio No. 51, Topography of Big Trees and Dardanelles Quadrangles (1907), U.S. Geological Survey (scale 1/125,500) 70 x 44 cm with hand drawings overlaying to show the convergence of four watersheds, largest to smallest: the Middle Fork, Relief, Kennedy's Lake and Lower Kennedy's Meadow Watersheds). -- Sheet 2 -- Drawing A-11-S1, Mass Curve for Run-off of Relief and Kennedy's Lake Watersheds for Seasonal Years 1896 to 1909 showing also a required maximum storage, on graph paper 84 x 54 cm, showing three curves: 1896-1900, 1902-1906, 1906-1909. -- Sheet 3 -- Drawing A-11-S2, Mass Curve for Run-off of Kennedy's Meadow Watershed for Seasonal Years 1896 to 1909 corrections are made to the waters overflowed into the watershed from Relief and Kennedy's Meadows, on graph paper 84 x 54 cm, showing four curves: 1899-1901, 1902-1903, 1904-1905, 1906-1908. -- Sheet 4 -- Drawing A-11-S3, Mass Curve for Run-off of Lower Kennedy's Meadow Watershed for Seasonal Years 1896 to 1909 determining maximum storage required in the reservoir to sustain a reasonable drought, on graph paper 84 x 54 cm, showing four curves: 1896-1900, 1901-1902, 1903-1906, 1907-1909. -- Sheet 5 -- Drawing A-11-S4 Ripll curve, lower Kennedy's meadow, Kennedy's meadow, Kennedy's lake, and relief reservoirs -- Sheet 6 -- Drawing A-12-S1, Stanislaus River Power Projects, Kennedy's Lake Reservoir (scale 1\"=895') and Relief Reservoir (scale 1\"=370') on quality vellum 81 x 77 cm. -- Sheet 7 -- Drawing A-12-S2, Stanislaus River Power Project, Kennedy Meadows Reservoir (scale 3/8\"=100') on quality vellum 76 x 61 cm. -- Sheet 8 -- Stanislaus River Power Project, Series of drawings and charts: Relief rock fill dam, Kennedy's Lake masonry dam, Kennedy Meadows rock fill dam, and Outlet Tower (on quality vellum) 183 x 77 cm. -- Sheet 9 -- Stanislaus River Power Project, Power House (on quality vellum) 90 x 78 cm." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Maps and drawings for the Stanislaus River Power Project]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Maps and drawings for the Stanislaus River Power Project]." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "California" ;
+    bflc:marcKey "651  7 $a California $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJt8p3GDkhpJkC9y6FY3wC" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204928" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1365639142> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1365639142#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:dimensions "cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "maps and drawings:"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1365639142" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1365639142#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Eight sheets from the early days of hydroelectric power development in California."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "blueline, transparencies, hand made drawings ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [California] : $b [Publisher not identified], $c 1912" ;
+            bflc:simpleAgent "[Publisher not identified]," ;
+            bflc:simpleDate "1912" ;
+            bflc:simplePlace "[California] :" ;
+            bf:date "1912"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[California] : [Publisher not identified], 1912" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Maps and drawings for the Stanislaus River Power Project]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Maps and drawings for the Stanislaus River Power Project]." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

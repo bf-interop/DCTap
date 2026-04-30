@@ -1,0 +1,792 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1424945040#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011043350.8" ;
+    bf:creationDate "20240301" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1424945040> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1424945040#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVE8520(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Plummer, Christopher, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Plummer, Christopher," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McCarthy, Tom, $d 1966- $e contributor. $1 https://id.oclc.org/worldcat/entity/E39PBJyhgfJBbbX3hWPr33YF8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyhgfJBbbX3hWPr33YF8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "contributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Leary, Jeremy, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Leary, Jeremy," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Peterson, Bob, $d 1961- $e screenwriter, $e film director. $1 https://id.oclc.org/worldcat/entity/E39PBJf8y4r8mWDGcGBQKyqJDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJf8y4r8mWDGcGBQKyqJDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Pixar (Firm), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqwfYf399bhgx6dDbM6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqwfYf399bhgx6dDbM6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lindo, Delroy, $d 1952- $e voice actor. $1 https://id.oclc.org/worldcat/entity/E39PBJbRpxxhJBM9xGQWMJwV4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJbRpxxhJBM9xGQWMJwV4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ratzenberger, John, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ratzenberger, John," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ranft, Jerome, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ranft, Jerome," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rivera, Jonas, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Rivera, Jonas," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Docter, Elie, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Docter, Elie," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Docter, Pete, $e screenwriter, $e film director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Docter, Pete," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Buena Vista Home Entertainment (Firm), $e film distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmthVB8jmppXCvhb3dp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmthVB8jmppXCvhb3dp6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film distributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Nagai, Jordan, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Nagai, Jordan," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Asner, Edward, $e voice actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Asner, Edward," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Nolting, Kevin, $e editor of moving image work." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Nolting, Kevin," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Giacchino, Michael, $e composer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Giacchino, Michael," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Walt Disney Pictures, $e presenter. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7TtVfcWgmFqbQfCBJt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7TtVfcWgmFqbQfCBJt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ] ] ;
+    bf:duration "PT1H36M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Up (Motion picture)" ;
+            bflc:marcKey "130 0  $a Up (Motion picture)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca7897890" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Up (Motion picture)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Video recordings for people with visual disabilities." ;
+            bflc:marcKey "655  7 $a Video recordings for people with visual disabilities. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866702" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "children's films." ;
+            bflc:marcKey "655  7 $a children's films. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300138231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience visuelle." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience visuelle. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000008" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fantasy films." ;
+            bflc:marcKey "655  7 $a Fantasy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866224" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos pour personnes ayant une déficience auditive." ;
+            bflc:marcKey "655  7 $a Vidéos pour personnes ayant une déficience auditive. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000009" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Computer animation films." ;
+            bflc:marcKey "655  7 $a Computer animation films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866149" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Children's films." ;
+            bflc:marcKey "655  7 $a Children's films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866113" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films fantastiques." ;
+            bflc:marcKey "655  7 $a Films fantastiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000011" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Action and adventure films." ;
+            bflc:marcKey "655  7 $a Action and adventure films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866019" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Video recordings for the hearing impaired." ;
+            bflc:marcKey "655  7 $a Video recordings for the hearing impaired. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866703" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'aventures." ;
+            bflc:marcKey "655  7 $a Films d'aventures. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000144" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Comedy films." ;
+            bflc:marcKey "655  7 $a Comedy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866137" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films pour enfants." ;
+            bflc:marcKey "655  7 $a Films pour enfants. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000012" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films comiques." ;
+            bflc:marcKey "655  7 $a Films comiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000016" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a s------" ;
+            bf:code "s------" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/s> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1424945040> ;
+    bf:language [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "MPAA rating: PG."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "spa" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Voices: Ed Asner, Christopher Plummer, Jordan Nagai, Bob Peterson, Delroy Lindo, Jerome Ranft, John Ratzenberger, Elie Docter, Jeremy Leary."@en ;
+            bflc:marcKey "511 0  $a Voices: Ed Asner, Christopher Plummer, Jordan Nagai, Bob Peterson, Delroy Lindo, Jerome Ranft, John Ratzenberger, Elie Docter, Jeremy Leary." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/aud> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Music, Michael Giacchino ; film editor, Kevin Nolting ; production designer, Ricky Nierva."@en ;
+            bflc:marcKey "508    $a Music, Michael Giacchino ; film editor, Kevin Nolting ; production designer, Ricky Nierva." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English, with optional dubbed language tracks in French and Spanish; optional French or Spanish subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:originDate "2009"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Animaux exotiques Amérique du Sud." ;
+            bflc:marcKey "650  6 $a Animaux exotiques $z Amérique du Sud." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Animaux exotiques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0207171" ] ] [ a bf:Geographic ;
+                        rdfs:label "Amérique du Sud." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0420735" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Adventure and adventurers South America." ;
+            bflc:marcKey "650  0 $a Adventure and adventurers $z South America." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Adventure and adventurers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001427" ] ] [ a bf:Geographic ;
+                        rdfs:label "South America." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2131961" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Waterfalls South America." ;
+            bflc:marcKey "650  0 $a Waterfalls $z South America." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Waterfalls" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2096396" ] ] [ a bf:Geographic ;
+                        rdfs:label "South America." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2131961" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Exotic animals South America." ;
+            bflc:marcKey "650  0 $a Exotic animals $z South America." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Exotic animals" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2714079" ] ] [ a bf:Geographic ;
+                        rdfs:label "South America." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2131961" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Scoutisme." ;
+            bflc:marcKey "650  6 $a Scoutisme." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0052708" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Balloons Piloting." ;
+            bflc:marcKey "650  0 $a Balloons $x Piloting." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Balloons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2063052" ] ] [ a bf:Topic ;
+                        rdfs:label "Piloting." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2063052" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Widowers." ;
+            bflc:marcKey "650  0 $a Widowers." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2101167" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Veufs." ;
+            bflc:marcKey "650  6 $a Veufs." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0006685" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Scouting (Youth activity)" ;
+            bflc:marcKey "650  0 $a Scouting (Youth activity)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca7404245" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Part rascal, part dreamer, retired balloon salesman Carl Fredricksen is ready for his last chance at high-flying excitement. Tying thousands of balloons to his house, Carl sets off to the lost world of his childhood dreams. But unbeknownst to Carl, Russell, an overeager 8-year-old Wilderness Explorer who has never ventured beyond his backyard, is in the wrong place at the wrong time--Carl's front porch!\"--Container."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Up /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Up /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJbRpxxhJBM9xGQWMJwV4q> a bf:Person ;
+    rdfs:label "Lindo, Delroy, 1952-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4419677" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJf8y4r8mWDGcGBQKyqJDq> a bf:Person ;
+    rdfs:label "Peterson, Bob, 1961-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1736164" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyhgfJBbbX3hWPr33YF8C> a bf:Person ;
+    rdfs:label "McCarthy, Tom, 1966-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7861813" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> a bf:Organization ;
+    rdfs:label "Copyright Collection (Library of Congress)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1580830" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqwfYf399bhgx6dDbM6> a bf:Organization ;
+    rdfs:label "Pixar (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2632689" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmthVB8jmppXCvhb3dp6> a bf:Organization ;
+    rdfs:label "Buena Vista Home Entertainment (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4726138" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7TtVfcWgmFqbQfCBJt> a bf:Organization ;
+    rdfs:label "Walt Disney Pictures," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1270763" ] .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mul> a bf:PlaybackChannels ;
+    rdfs:label "surround"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1424945040> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1424945040#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "DLC" ] ;
+            bflc:marcKey "710 2  $a Copyright Collection (Library of Congress) $1 https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> ] ;
+    bf:copyrightDate "©2012"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:RegionalEncoding ;
+            rdfs:label "region A"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionA> ],
+        [ a bf:Resolution ;
+            rdfs:label "1080p high definition"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region C"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "Blu-ray"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/bluray> ],
+        [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "region B"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/regionB> ],
+        <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:dimensions "4 3/4 in. +" ;
+    bf:distributionStatement "Burbank, CA : Buena Vista Home Entertainment, Inc., 2012." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 96 min.) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1424945040" ],
+        [ a bf:Upc ;
+            rdf:value "786936816037" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024603073" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Disney" ] ;
+            rdf:value "107692" ],
+        [ a bf:CopyrightNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "U.S. Copyright Office" ] ;
+            rdf:value "PA0001838604" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1424945040#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Described video in English (DVS)."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "Blu-ray; requires Blu-ray player."@en ],
+        [ a bf:Note ;
+            rdfs:label "Also includes 3-D Blu-ray and DVD copies of the movie, a DVD-ROM with a digital copy of the movie, and a Blu-ray of bonus features."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally released as a motion picture in 2009."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "English subtitles for the deaf and hard of hearing (SDH)."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Bonus features: Dug's special mission, Partly cloudy, Cine-explorers, The many endings of Muntz, Global guardians badge game, Married life, 7 documentaries, and more!"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "2 Blu-rays + 1 DVD + 1 DVD-ROM"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Sources used: videodisc container; Copyright catalog online; Wikipedia WWW site, viewed March 1, 2024."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Wide screen (1.78:1)."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a Burbank, CA : $b Buena Vista Home Entertainment, Inc., $c 2012." ;
+            bflc:simpleAgent "Buena Vista Home Entertainment, Inc.," ;
+            bflc:simpleDate "2012." ;
+            bflc:simplePlace "Burbank, CA :" ;
+            bf:date "2012"^^<http://id.loc.gov/datatypes/edtf> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [United States] : $b Disney, $c 2012." ;
+            bflc:simpleAgent "Disney," ;
+            bflc:simpleDate "2012." ;
+            bflc:simplePlace "[United States] :" ;
+            bf:date "2012"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[United States] : Disney, 2012." ;
+    bf:responsibilityStatement "Walt Disney Pictures presents a Pixar Animation Studios film ; produced by Jonas Rivera ; story by Pete Docter, Bob Peterson and Tom McCarthy ; screenplay by Bob Peterson and Pete Docter ; co-directed by Bob Peterson ; directed by Pete Docter." ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital 2.0"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig2> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "surround"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mul> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital 5.1"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig51> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "DTS-HD Master Audio 5.1"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dtshd51> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "DTS-HD Master Audio"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/ddtshd> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mplayback/mul>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Up /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Up /" ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+

@@ -1,0 +1,146 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/agricola> a bf:Source ;
+    bf:code "agricola" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1388672646#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250415080335.7" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Unknown"@en ;
+            bf:code "u" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388672646> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG8qHhxRqqVdhJkHPBHHYd> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Frank, Randy." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Frank, Randy." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388672646> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781608075072" ] ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic ;
+            bf:code "TEC064000" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Now in its third edition, Understanding Smart Sensors is the most complete, up-to-date, and authoritative summary of the latest applications and developments impacting smart sensors in a single volume. This thoroughly expanded and revised edition of an Artech bestseller contains a wealth of new material, including critical coverage of sensor fusion and energy harvesting, the latest details on wireless technology, the role and challenges involved with sensor apps and cloud sensing, greater emphasis on applications throughout the book, and dozens of figures and examples of current technologies from over 50 companies. This edition provides you with knowledge regarding a broad spectrum of possibilities for technology advancements based on current industry, university and national laboratories R  D efforts in smart sensors. Updated material also identifies the need for trusted sensing, the efforts of many organizations that impact smart sensing, and more.Utilizing the latest in smart sensor, microelectromechanical systems (MEMS) and microelectronic research and development, you get the technical and practical information you need keep your designs and products on the cutting edge. Plus, you see how network (wired and wireless) connectivity continues to impact smart sensor development. By combining information on micromachining and microelectronics, this is the first book that links these two important aspects of smart sensor technology so you don#x92;t have to keep multiple references on hand. This comprehensive resource also includes an extensive list of smart sensor acronyms and a glossary of key terms. With an effective blend of historical information and the latest content, the third edition of Understanding Smart Sensors provides a unique combination of foundational and future-changing information."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Understanding Smart Sensors.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Understanding Smart Sensors.." ] .
+
+<https://id.oclc.org/worldcat/entity/1388672646> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388672646#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:editionStatement "3rd ed." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource 389 p"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "1608075079" ],
+        [ a bf:Isbn ;
+            rdf:value "1608075087" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(electronic bk.)" ;
+            rdf:value "9781608075089" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1388672646" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print)" ;
+            rdf:value "9781608075072" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG8qHhxRqqVdhJkHPBHHYd> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "eLoaderURL" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608075089 $y Artech House Ebooks $x Provider: Artech House $x eLoaderURL $x ar4 $x arEBL209826707" ;
+            bf:electronicLocator <http://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781608075089> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "Artech House Ebooks"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Artech House"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Norwood : $b Artech House, $c 2013." ;
+            bflc:simpleAgent "Artech House," ;
+            bflc:simpleDate "2013." ;
+            bflc:simplePlace "Norwood :" ;
+            bf:date "2013"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Norwood : Artech House, 2013." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Understanding Smart Sensors.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Understanding Smart Sensors.." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

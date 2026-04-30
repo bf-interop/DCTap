@@ -1,0 +1,293 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/8> a bflc:EncodingLevel ;
+    rdfs:label "prepublication"@en ;
+    bf:code "8" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> a bf:Source ;
+    bf:code "bisacsh" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1405842356#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/8> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250818020505.7" ;
+    bf:creationDate "20231026" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "HUA" ],
+        [ a bf:Organization ;
+            bf:code "CLE" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "TOH" ],
+        [ a bf:Organization ;
+            bf:code "IG#" ],
+        [ a bf:Organization ;
+            bf:code "BDX" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d BDX $d TOH $d IG# $d CLE $d OCLCL $d HUA" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1405842356> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1405842356#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "QA76.73" ;
+            bf:itemPortion ".R3 2024" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "005.13/3" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231214" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3mTC4qqt3fTwTdq6YvgwDJHVK> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Aphalo, Pedro J., $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjt9trkj6kYyKdCPjGFWQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjt9trkj6kYyKdCPjGFWQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Textbooks." ;
+            bflc:marcKey "655  7 $a Textbooks. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077323" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1405842356> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:contribution [ a bf:PrimaryContribution ;
+                            bf:agent [ a bf:Agent ;
+                                    rdfs:label "Aphalo, Pedro J." ] ] ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:editionStatement "First edition" ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781003404187" ],
+                                [ a bf:Lccn ;
+                                    rdf:value "  2023049514" ] ;
+                            bf:provisionActivityStatement "Boca Raton : CRC Press, 2024" ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Learn R" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Learn R" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a The R series" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "The R series" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Chapman & Hall/CRC the R series (CRC Press)" ;
+                    bflc:marcKey "830  0 $a Chapman & Hall/CRC the R series (CRC Press)" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca8966456" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Chapman & Hall/CRC the R series (CRC Press)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "MATHEMATICS / General." ;
+            bflc:marcKey "650  7 $a MATHEMATICS / General. $2 bisacsh" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
+        [ a bf:Topic ;
+            rdfs:label "R (Langage de programmation)" ;
+            bflc:marcKey "650  6 $a R (Langage de programmation)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0368319" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "R (Computer program language)" ;
+            bflc:marcKey "650  0 $a R (Computer program language)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca5762679" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Learning a computer language like R can be either frustrating, fun or boring. Having fun requires challenges that wake up the learner's curiosity but also provide an emotional reward on overcoming them. The book is designed so that it includes smaller and bigger challenges, in what I call playgrounds, in the hope that all readers will enjoy their path to R fluency. Fluency in the use of a language is a skill that is acquired through practice and exploration. For students and professionals in the biological sciences, humanities and many applied fields, recognizing the parallels between R and natural languages should help them feel at home with R. The approach I use is similar to that of a travel guide, encouraging exploration and describing the available alternatives and how to reach them. The intention is to guide the reader through the R landscape of 2023 and beyond. What is new in the second edition? Text expanded by more than 25% to include additional R features and gentler and more detailed explanations Contains 24 new diagrams and flowcharts, seven new tables, and revised text and code examples for clarity All three indexes expanded, and answers to 27 frequently asked questions added What will you find in this book? Programming concepts explained as they apply to current R Emphasis on the role of abstractions in programming Few prescriptive rules-mostly the author's preferences together with alternatives Presentation of the R language emphasizing the \"R way of doing things\" Tutoring for \"programming in the small\" using scripts for data analysis Explanation of the differences between R proper and extensions for data wrangling The grammar of graphics described as a language for the construction of data visualisations Examples of data exchange between R and the foreign world using common file formats Coaching to become an independent R user, capable of writing original scripts and of solving future challenges\"-- Provided by publisher."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Learn R :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Learn R :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjt9trkj6kYyKdCPjGFWQq> a bf:Person ;
+    rdfs:label "Aphalo, Pedro J.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca12677122" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<https://id.oclc.org/worldcat/entity/1405842356> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1405842356#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2024"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "26 cm." ;
+    bf:editionStatement "Second edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 447 pages :"@en ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2023049513" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(ebk)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781003404187" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(hardcover)" ;
+            rdf:value "103251843X" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(hardcover)" ;
+            rdf:value "9781032518435" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1405842356" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(paperback)" ;
+            rdf:value "9781032516998" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1405842483" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(paperback)" ;
+            rdf:value "1032516992" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1405842356#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color) ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and indexes."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Boca Raton : $b CRC Press, $c 2024." ;
+            bflc:simpleAgent "CRC Press," ;
+            bflc:simpleDate "2024." ;
+            bflc:simplePlace "Boca Raton :" ;
+            bf:date "2024"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/flu> ] ;
+    bf:publicationStatement "Boca Raton : CRC Press, 2024." ;
+    bf:responsibilityStatement "Pedro J. Aphalo." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Learn R : as a language /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Learn R :" ;
+            bf:subtitle "as a language /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+

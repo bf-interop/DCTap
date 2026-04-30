@@ -1,0 +1,288 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1322998569#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Autio, Karoliina" ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Isbn ;
+                    rdf:value "9783132419285" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1322998569" ] ;
+            bf:provisionActivityStatement "Stuttgart : Georg Thieme Verlag KG, 2022" ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Kleintieronkologie" ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Kleintieronkologie" ] .
+
+<https://id.oclc.org/worldcat/entity/1401023867#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20260228084049.6" ;
+    bf:creationDate "20230929" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCG" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d OCLCQ $d OCLCL $d OCLCG" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1401023867> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/1401023867#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "SF910.T8" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "630" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3CMjtyBFMPdrWcgHbbBTCVCWg> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Autio, Karoliina $e author" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Autio, Karoliina" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Kleintieronkologie. English" ;
+            bflc:marcKey "240 10 $a Kleintieronkologie. $l English" ;
+            bf:contribution [ a bf:PrimaryContribution ;
+                    bf:agent [ a bf:Person ;
+                            rdfs:label "Autio, Karoliina " ] ;
+                    bf:role [ a bf:Role ;
+                            rdfs:label "author" ] ] ;
+            bf:language [ a bf:Language ;
+                    rdfs:label "English" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Kleintieronkologie." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1401023867> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1322998569#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Translation of"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Dogs Diseases" ;
+            bflc:marcKey "650  7 $a Dogs $x Diseases $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Dogs" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00896282" ] ] [ a bf:Topic ;
+                        rdfs:label "Diseases" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00896282" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Veterinary oncology" ;
+            bflc:marcKey "650  7 $a Veterinary oncology $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01166043" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Oncología veterinaria" ;
+            bflc:marcKey "650  7 $a Oncología veterinaria $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cats Diseases" ;
+            bflc:marcKey "650  7 $a Cats $x Diseases $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cats" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00849387" ] ] [ a bf:Topic ;
+                        rdfs:label "Diseases" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00849387" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Perros Enfermedades" ;
+            bflc:marcKey "650  7 $a Perros $x Enfermedades $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Perros" ] [ a bf:Topic ;
+                        rdfs:label "Enfermedades" ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gatos Enfermedades" ;
+            bflc:marcKey "650  7 $a Gatos $x Enfermedades $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gatos" ] [ a bf:Topic ;
+                        rdfs:label "Enfermedades" ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"In this comprehensive and unique handbook, you will find information on modern oncology. Using high-quality illustrations and graphics, this standard work vividly demonstrates - the basics of tumor development, - clinical diagnostics and therapy, - the special oncology of all tumor forms of dogs and cats. Literature references for more in-depth literature study are included. Nutrition of tumor patients, palliative care, paraneoplastic syndromes, and reconstructive surgery are also considered. Thus, this book provides decision support and precise guidance for all-around successful tumor management in the small animal patient\"-- Provided by publisher"@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Etiology and pathology of cancer -- Tumorigenesis due to viruses -- Paraneoplastic syndromes -- Clinical diagnostics -- Imaging techniques in oncology -- Tissue diagnosis -- Oncological surgery -- Cytostatic therapy -- Basics of radiotherapy -- Principles of immunotherapy -- Tyrosine kinase inhibitors, cyclooxygenase inhibitors, metronomic chemotherapy, electrochemotherapy, and retinoids. -- Cryosurgery -- Photodynamic therapy -- Hyperthermia -- Supportive therapy -- Tumors of the skin -- Mammary tumors -- Tumors of the gastrointestinal tract -- Tumors of the respiratory tract -- Tumors of the parenchymatous organs -- Tumors of the urinary organs -- Tumors of the genitals -- Cardiac and mesenteric tumors -- Mesothelioma -- Tumors of the skeleton -- Tumors of the toes -- Tumors of endocrine organs -- Tumors of the nervous system -- Neoplasms of the eye -- Tumors of the auditory canal and middle ear -- Tumors of hematopoietic and lymphoid tissues" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Small animal oncology" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Small animal oncology" ] .
+
+<https://id.oclc.org/worldcat/entity/1401023867> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1401023867#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:editionStatement "4th, completely revised edition" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1401023867" ],
+        [ a bf:Isbn ;
+            bf:qualifier "German edition" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9783132419285" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1401023867#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Thieme MedOne"@en ] ;
+            bflc:marcKey "856 40 $3 Thieme MedOne $u https://medone.thieme.com/QYXVW $7 1" ;
+            bf:electronicLocator <http://medone.thieme.com/QYXVW> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Online resource; title from home page (Thieme MedOne, viewed September 29, 2023)"@en ],
+        [ a bf:Note ;
+            rdfs:label "Translation of: Kleintieronkologie : Diagnose und Therapie von Tumorerkrankungen bei Hund und Katze"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Stuttgart $b Georg Thieme Verlag KG $c 2022" ;
+            bflc:simpleAgent "Georg Thieme Verlag KG" ;
+            bflc:simpleDate "2022" ;
+            bflc:simplePlace "Stuttgart" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/gw> ] ;
+    bf:publicationStatement "Stuttgart Georg Thieme Verlag KG 2022" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Small animal oncology" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Small animal oncology" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/embne> a bf:Source ;
+    bf:code "embne" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

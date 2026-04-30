@@ -1,0 +1,116 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relationship/supplementto> a bf:Relationship ;
+    rdfs:label "supplement to"@en .
+
+<https://id.oclc.org/worldcat/entity/1417292899#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20240510123756.8" ;
+    bf:creationDate "20240115" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1417292899> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1417292899#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1417292899> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Local ;
+                                    bf:assigner [ a bf:Organization ;
+                                            bf:code "1kcp10mc4jx7qrm" ] ;
+                                    rdf:value "1kcp10mc4jx7qrm" ] ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "channel record"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/supplementto> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Glorious -- People -- The Games We Play -- Do You Believe In Heaven -- It Should Have Been Me -- Breathing -- Submerged -- Patiently -- Spaceless -- Please (do me right) (in mayfair) -- Safe from harm -- Unbreakable -- Honeydrops" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Liebling" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Liebling" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1417292899> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1417292899#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1417292899" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    bf:code "url" ;
+                    rdfs:about "http://id.loc.gov/vocabulary/identifiers/url" ] ;
+            rdf:value "http://www.warnermusic.se/" ],
+        [ a bf:Upc ;
+            rdf:value "093624775263" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1417292899#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b WM Sweden, $c 1999" ;
+            bflc:simpleAgent "WM Sweden," ;
+            bflc:simpleDate "1999" ;
+            bf:date "1999"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sw> ] ;
+    bf:publicationStatement "WM Sweden, 1999" ;
+    bf:responsibilityStatement "Andreas Johnson." ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u http://www.warnermusic.se/" ;
+            bf:electronicLocator <http://www.warnermusic.se> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Liebling US-version /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Liebling" ;
+            bf:subtitle "US-version /" ] .
+

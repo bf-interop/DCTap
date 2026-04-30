@@ -1,0 +1,417 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/dist> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Digital storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/part> a bf:Status ;
+    rdfs:label "partial" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1191266073#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "TDF" ] ;
+    bf:changeDate "20250512232421.8" ;
+    bf:creationDate "20230818" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "TDF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "RBMDS" ],
+        [ a bf:Organization ;
+            bf:code "ILC" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a TDF $b eng $c DLC $d ILC $d OCLCF $d RBMDS $d TDF $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1191266073> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCH7JmMtgjXfJcvTFcdr8YP> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "2019" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Tornado Studio, Copenhagen."@en ] ] ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "PB" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/anscr> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "H49" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/anscr> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "785.065" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3xt9QHyKwKgbKDx3PJWCq4YKf> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "HOIB" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/anscr> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "M1366.H653" ;
+            bf:itemPortion "P53 2020" ],
+        [ a bf:Classification ;
+            bf:classificationPortion "MJ" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/anscr> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Michel, Marc, $d 1986- $e instrumentalist, $e composer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Michel, Marc, 1986-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist," ],
+                [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Arcoleo, Josh, $d 1989- $e instrumentalist, $e composer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Arcoleo, Josh, 1989-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ],
+                [ a bf:Role ;
+                    rdfs:label "instrumentalist," ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Høiby, Jasper, $e composer, $e performer, $e arranger of music, $e audio producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Høiby, Jasper," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "arranger of music," ],
+                [ a bf:Role ;
+                    rdfs:label "performer," ],
+                [ a bf:Role ;
+                    rdfs:label "audio producer." ],
+                [ a bf:Role ;
+                    rdfs:label "composer," ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Nu jazz." ;
+            bflc:marcKey "655  7 $a Nu jazz. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001136" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz" ;
+            bflc:marcKey "655  7 $a Jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726653" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026879> ],
+        [ a bf:GenreForm ;
+            rdfs:label "jazz." ;
+            bflc:marcKey "655  7 $a jazz. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300266367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nu jazz" ;
+            bflc:marcKey "655  7 $a Nu jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01920263" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000906" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090482" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nu jazz." ;
+            bflc:marcKey "655  7 $a Nu jazz. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090579" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1191266073> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:musicMedium [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 11 $a double bass $n 1 $d electronics $n 1 $a saxophone $n 1 $a drum set $n 1 $a speaker $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced by Jasper Høiby."@en ;
+            bflc:marcKey "508    $a Produced by Jasper Høiby." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Jasper Høiby, bass & electronics ; Josh Arcoleo, saxophone ; Marc Michel, drums. Includes spoken word segments."@en ;
+            bflc:marcKey "511 0  $a Jasper Høiby, bass & electronics ; Josh Arcoleo, saxophone ; Marc Michel, drums. Includes spoken word segments." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Jazz" ;
+            bflc:marcKey "650  7 $a Jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00982165" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Temporal ;
+            rdfs:label "2011-2020" ;
+            bflc:marcKey "648  7 $a 2011-2020 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Electronic music." ;
+            bflc:marcKey "650  0 $a Electronic music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2121870" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 2011-2020." ;
+            bflc:marcKey "650  0 $a Jazz $y 2011-2020." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8852012" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8852012" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 2011-2020." ;
+            bflc:marcKey "650  6 $a Jazz $y 2011-2020." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270451" ] ] [ a bf:Temporal ;
+                        rdfs:label "2011-2020." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000270451" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Nu jazz." ;
+            bflc:marcKey "650  0 $a Nu jazz." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca9446263" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Nu jazz" ;
+            bflc:marcKey "650  7 $a Nu jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01894801" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Planet B is the new project and title of the first of four albums that sees Danish composer and bassist open up big questions for everyone. Together with the fearless young British saxophonist Josh Arcoleo and adventurous French drummer Marc Michel, Jasper Høiby is shaping adventurous new music to prise open the narrow framework of political debate. Planet B, the project title and title of the first album, is a mix of deep, evocative, thought-provoking voice samples, loops, held together with the open, majestic interplay of three deeply intuitive and creative musicians. Each of the albums will focus on four global topics of vital importance-- Humanity, Climate Change, Artificial Intelligence and Monetary Reform."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Story of self (4:10) -- Reimagine (5:43) -- Consciousness (5:30) -- Interconnectedness (4:56) -- Never forgotten (5:19) -- The dinosaur (2:20) -- We didn't earn the sun (3:59) -- Life is a gift (7:32) -- Never give up (3:30) -- Reimagine (outro) (2:23)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Planet B /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Planet B /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<https://id.oclc.org/worldcat/entity/1191266073> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1191266073#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ],
+        [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:duration "004528" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc (45 min., 28 sec.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1191266073" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Edition Records" ] ;
+            rdf:value "EDN1149" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Edition Records" ] ;
+            rdf:value "1149" ],
+        [ a bf:Ean ;
+            rdf:value "5060509790838" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023626696" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCH7JmMtgjXfJcvTFcdr8YP> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "All music composed and arranged by Jasper Høiby, except track 2 (melody by Josh Arcoleo) and track 3 created by Japser, Josh, and Marc."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"The new album from one of Europe's most original musicians, incorporating soundscapes, speech samples, and dreamlike loops.\"--Sticker on overwrap."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Cardiff, Wales] : $b Edition Records, $c [2020]" ;
+            bflc:simpleAgent "Edition Records," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "[Cardiff, Wales] :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/wlk> ] ;
+    bf:publicationStatement "[Cardiff, Wales] : Edition Records, [2020]" ;
+    bf:responsibilityStatement "Jasper Høiby." ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "1.4 m/s"@en ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/dist>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Planet B /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Planet B /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/classSchemes/anscr> a bf:Source ;
+    bf:code "anscr" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

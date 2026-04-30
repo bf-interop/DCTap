@@ -1,0 +1,293 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G8040> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 8040" ;
+    bf:code "8040" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<https://id.oclc.org/worldcat/entity/1429142994#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20240423205540.8" ;
+    bf:creationDate "20240408" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "GZN" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "NDD" ],
+        [ a bf:Organization ;
+            bf:code "SYB" ],
+        [ a bf:Organization ;
+            bf:code "UIU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d NDD $d SYB $d GZN $d OCLCF $d UIU $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1429142994> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1429142994#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "(E 103°40ʹ--E 103°55ʹ/N 1°25ʹ--N 1°15ʹ)." ],
+        [ a bf:Cartographic ;
+            bf:coordinates "E1034000 E1035500 N0012500 N0011500" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "G8040 1945" ;
+            bf:itemPortion ".U5" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 1  $a United States. $b Office of Strategic Services. $b Research and Analysis Branch, $e cartographer." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. Office of Strategic Services. Research and Analysis Branch," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca2406091" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 1  $a United States. $b Office of Strategic Services. $b Reproduction Branch, $e lithographer." ;
+            bf:agent [ a bf:Jurisdiction ;
+                    rdfs:label "United States. Office of Strategic Services. Reproduction Branch," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5689620" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "lithographer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-si---" ;
+            bf:code "a-si---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-si> ],
+        <http://id.loc.gov/authorities/classification/G8040> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1429142994> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "Scale approximately 1:95,000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "95000" ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Administrative and political divisions" ;
+            bflc:marcKey "650  7 $a Administrative and political divisions $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00796826" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Singapore Maps." ;
+            bflc:marcKey "651  0 $a Singapore $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Singapore" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca292076" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJpV8D6qM4JGxDqvHvtYfq> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Political divisions of Malaya :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Political divisions of Malaya :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJpV8D6qM4JGxDqvHvtYfq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Singapore" ;
+    bflc:marcKey "651  7 $a Singapore $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJpV8D6qM4JGxDqvHvtYfq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01205288" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/1429142994> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1429142994#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "31 x 43 cm" ;
+    bf:editionStatement "Provisional edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "45204562" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024592310" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1429142994" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1429142994#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:manufactureStatement "[Washington, D.C.] : lithographed in the Reproduction Branch, OSS, [1945]" ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"No. 5376--R & A, OSS.\""@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "LC copy: Mounted on cloth."@en ;
+            bflc:applicableInstitution <http://id.loc.gov/vocabulary/organizations/dlc> ],
+        [ a bf:Note ;
+            rdfs:label "Inset: [Gulf of Siam region]."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes reliability of data table."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"23 January 1945.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Washington, D.C.] : $b R & A, OSS, $c 23 January 1945." ;
+            bflc:simpleAgent "R & A, OSS," ;
+            bflc:simpleDate "23 January 1945." ;
+            bflc:simplePlace "[Washington, D.C.] :" ;
+            bf:date "1945"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/dcu> ],
+        [ a bf:Manufacture ;
+            bflc:marcKey "264  3 $a [Washington, D.C.] : $b lithographed in the Reproduction Branch, OSS, $c [1945]" ;
+            bflc:simpleAgent "lithographed in the Reproduction Branch, OSS," ;
+            bflc:simpleDate "[1945]" ;
+            bflc:simplePlace "[Washington, D.C.] :" ] ;
+    bf:publicationStatement "[Washington, D.C.] : R & A, OSS, 23 January 1945." ;
+    bf:responsibilityStatement "R & A, OSS ; lithographed in Reproduction Branch, OSS." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Political divisions of Malaya : Singapore Island /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Political divisions of Malaya :" ;
+            bf:subtitle "Singapore Island /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent,
+        bf:Organization ;
+    bf:code "DLC" .
+

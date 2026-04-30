@@ -1,0 +1,472 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/aes> a bf:CaptureStorage ;
+    rdfs:label "Electrical capture, Analog electrical storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/mtl> a bf:BaseMaterial ;
+    rdfs:label "metal"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/f> a bf:PlayingSpeed ;
+    rdfs:label "1.4 m. per sec."@en .
+
+<http://id.loc.gov/vocabulary/mspecplayback/digital> a bf:PlaybackCharacteristic ;
+    rdfs:label "digital"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/historicalinfo> a bf:SupplementaryContent ;
+    rdfs:label "historical information"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1428794314#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251012032852.9" ;
+    bf:creationDate "20240405" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCL $d OCLCO $d OCLCL $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1428794314> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1428794314#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "1934----/1966----" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ],
+        [ a bf:Capture ;
+            rdfs:label "Recorded 1934-1966."@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Warner Bros. Pictures (1923-1967) $1 https://id.oclc.org/worldcat/entity/E39QQPVp7KrmMC7QYT9GRdqY7R" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7KrmMC7QYT9GRdqY7R> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Metro-Goldwyn-Mayer. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrYFPxT7m4HYFDFVPGR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrYFPxT7m4HYFDFVPGR> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a RKO Radio Pictures. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqHybQM4VqFvwcRQfkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqHybQM4VqFvwcRQfkt> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Extraits." ;
+            bflc:marcKey "655  7 $a Extraits. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001040" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Excerpts." ;
+            bflc:marcKey "655  7 $a Excerpts. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Swing (Musique)" ;
+            bflc:marcKey "655  7 $a Swing (Musique) $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001016" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000201" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion picture music"@en ;
+            bflc:marcKey "047    $a mp $a jz" ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026950> ],
+        [ a bf:GenreForm ;
+            rdfs:label "jazz." ;
+            bflc:marcKey "655  7 $a jazz. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300266367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000906" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "excerpts." ;
+            bflc:marcKey "655  7 $a excerpts. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026939" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "sound recordings." ;
+            bflc:marcKey "655  7 $a sound recordings. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028633" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sound recordings." ;
+            bflc:marcKey "655  7 $a Sound recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866572" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Swing (Music)" ;
+            bflc:marcKey "655  7 $a Swing (Music) $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090718" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz"@en ;
+            bflc:marcKey "047    $a mp $a jz" ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026879> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090482" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1428794314> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Various performers."@en ;
+            bflc:marcKey "511 0  $a Various performers." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Produced by George Feltenstein."@en ;
+            bflc:marcKey "508    $a Produced by George Feltenstein." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Turner classic movies. TCM music" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Turner classic movies. TCM music" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Rhino movie music" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Rhino movie music" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Rhino movie music." ;
+                    bflc:marcKey "830  0 $a Rhino movie music." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6793872" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Rhino movie music." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Turner classic movies. TCM music." ;
+                    bflc:marcKey "830  0 $a Turner classic movies. $p TCM music." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6386992" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Turner classic movies." ;
+                            bf:partName "TCM music." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Motion picture music Excerpts." ;
+            bflc:marcKey "650  0 $a Motion picture music $v Excerpts." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Motion picture music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041612" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Excerpts." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2041612" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "650  0 $a Jazz." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2130591" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Jazz vocals." ;
+            bflc:marcKey "650  0 $a Jazz vocals." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2130702" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Swing (Music)" ;
+            bflc:marcKey "650  0 $a Swing (Music)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2783417" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Film, Musique de Extraits." ;
+            bflc:marcKey "650  6 $a Film, Musique de $v Extraits." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Film, Musique de" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0033679" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Extraits." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0033679" ] ] ) ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/historicalinfo> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Disc 1. Living in a great big way (Bill \"Bojangles\" Robinson, Thomas \"Fats\" Waller, & Jeni Le Gon) -- Congo fever (Jungle fever) (the Mills Brothers) -- Let that be a lesson to you (Johnnie \"Scat\" Davis, Frances Langford, & Benny Goodman & his orchestra) -- I've got a heartful of music (the Benny Goodman Quartet) -- You're an education (the Three Symphonettes with Freddie Rich & his orchestra) -- All God's chillun got rhythm (Ivie Anderson, Benny & the Chrinoline Choir, with Duke Ellington & his orchestra) -- Jeepers creepers (Louis Armstrong) -- Nightmare ; Traffic jam (Artie Shaw & his orchestra) -- Blues in the night (Jimmie Lunceford & his orchestra) -- You've got to know how to dance (Six Hits and a Miss with the Warner Bros. studio orchestra) -- Buds won't bud (Ethel Waters) -- Medley: Things ain't what they used to be/Going up (Duke Ellington & his orchestra) -- Shine (Buck & Bubbles and the Hall Johnson Choir) -- Mrs. Whiffen (Mel Tormé, Marcy McGuire, & Ivy Scott) -- One o'clock jump (Jimmy Dorsey & his orchestra) -- Body and soul (the Hazel Scott Trio) -- Toot suite (Harry James & his orchestra) -- Hong Kong blues ; Baltimore oriole (Hoagy Carmichael) -- Please don't say no (the King Sisters) -- Jammin' the blues (Lester Young & company) -- On the sunny side of the street (Marie Bryant, Lester Young, & company) -- It's you or no one (Doris Day with the Page Cavanaugh Trio) -- You do something to me ; I'll get by (Lena Horne)." ],
+        [ a bf:TableOfContents ;
+            rdfs:label "Disc 2. Medley: Do, do, do/Bidin' my time/I've got a crush on you/Love is here to stay (Benny Carter & his orchestra) -- Ain't misbehavin' (Louis Armstrong & his All-Stars with Jack Teagarden) -- Hold me close to you (Billy Eckstine) -- Taking a chance on love (Dorothy Dandridge) -- My flaming heart (Nat \"King\" Cole) -- Now you has jazz ; I love you, Samantha (Bing Crosby & Louis Armstrong) -- I got it bad and that ain't good (Julie Wilson with Ray Anthony & his orchestra) -- Improvisation (Source #1) ; Red drum blues ; Improvisation (Source #2) (André Previn Trio) -- Coffee time (Carmen McCrae with the André Previn Trio) -- Spaghetti fantasy ; Alarm clock (Gerry Mulligan & company) -- Should I? (André Previn Trio) -- Things are looking down ; Bread and wine (Gerry Mulligan & company) -- God bless the child (Pearl Bailey) -- Don't blame me (Leslie Uggams) -- Sunday in New York (Mel Tormé) -- The girl from Ipanema (Stan Getz & Astrud Gilberto) -- Skol sister ; Goof proof ; Lottie (Count Basie & his octet) -- I got rhythm (Louis Armstrong)." ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 3  $a Hollywood swing and jazz" ;
+            bf:mainTitle "Hollywood swing and jazz" ],
+        [ a bf:Title ;
+            rdfs:label "Hollywood swing & jazz :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Hollywood swing & jazz :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqHybQM4VqFvwcRQfkt> a bf:Organization ;
+    rdfs:label "RKO Radio Pictures." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca116045" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrYFPxT7m4HYFDFVPGR> a bf:Organization ;
+    rdfs:label "Metro-Goldwyn-Mayer." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca398176" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7KrmMC7QYT9GRdqY7R> a bf:Organization ;
+    rdfs:label "Warner Bros. Pictures (1923-1967)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca63692" ] .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<https://id.oclc.org/worldcat/entity/1428794314> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1428794314#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/mtl>,
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2000"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "audio file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/audio> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "CD audio"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/cda> ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Jazz Heritage Society" ] ;
+            rdf:value "5278104" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Rhino" ] ;
+            rdf:value "R2 79805" ],
+        [ a bf:Upc ;
+            rdf:value "717794781021" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1428794314" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1428794314#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Program notes by Will Friedwald (31 pages : illustrations) laid in container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally released by Rhino Records (R2 79805)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "digital, mono, stereo ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Manufactured and distributed by Musical Heritage Society under license from Warner Strategic Mkt\"--Container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Performances, outtakes, and studio recordings from movies produced between 1934 and 1966."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Oakhurst, NJ] : $b Jazz Heritage Society, $c [2000?]" ;
+            bflc:simpleAgent "Jazz Heritage Society," ;
+            bflc:simpleDate "[2000?]" ;
+            bflc:simplePlace "[Oakhurst, NJ] :" ;
+            bf:date "2000"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Oakhurst, NJ] : Jazz Heritage Society, [2000?]" ;
+    bf:soundCharacteristic [ a bf:PlayingSpeed ;
+            rdfs:label "1.4 m/s"@en ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "mono"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mon> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/aes>,
+        <http://id.loc.gov/vocabulary/mplayback/mon>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/f>,
+        <http://id.loc.gov/vocabulary/mspecplayback/digital> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Hollywood swing & jazz : hot numbers from classic M-G-M, Warner Bros., and RKO films." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Hollywood swing & jazz :" ;
+            bf:subtitle "hot numbers from classic M-G-M, Warner Bros., and RKO films." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+

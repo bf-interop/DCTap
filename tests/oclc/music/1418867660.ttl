@@ -1,0 +1,113 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/supplementto> a bf:Relationship ;
+    rdfs:label "supplement to"@en .
+
+<https://id.oclc.org/worldcat/entity/1418867660#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20251005031139.4" ;
+    bf:creationDate "20240124" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1418867660> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1418867660#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1418867660> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Local ;
+                                    bf:assigner [ a bf:Organization ;
+                                            bf:code "1kcp10mc4jx7qrm" ] ;
+                                    rdf:value "1kcp10mc4jx7qrm" ] ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "channel record"@sv ],
+                <http://id.loc.gov/vocabulary/relationship/supplementto> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "The Real Problem -- Get a Job -- Knocked Me over with a Feather -- What Is the Reason -- No If, But, Maybe -- Where We Still Call Home -- The Biggest Fool in Town -- The Picture We Painted -- I Can't Name Them All -- Puttin' It in Reverse -- They Don't Come Much Better -- Only the Sound of My Heart" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "No Ifs, Buts, Maybes" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "No Ifs, Buts, Maybes" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1418867660> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1418867660#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@sv ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            rdf:value "643443401265" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    bf:code "url" ;
+                    rdfs:about "http://id.loc.gov/vocabulary/identifiers/url" ] ;
+            rdf:value "http://www.warnermusic.se/" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1418867660" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1418867660#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b WM Sweden, $c 2005" ;
+            bflc:simpleAgent "WM Sweden," ;
+            bflc:simpleDate "2005" ;
+            bf:date "2005"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sw> ] ;
+    bf:publicationStatement "WM Sweden, 2005" ;
+    bf:responsibilityStatement "Billy Bremner." ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u http://www.warnermusic.se/" ;
+            bf:electronicLocator <http://www.warnermusic.se> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "No Ifs, Buts, Maybes" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "No Ifs, Buts, Maybes" ] .
+

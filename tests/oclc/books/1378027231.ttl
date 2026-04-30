@@ -1,0 +1,346 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/languages/fre> a bf:Language ;
+    bf:code "fre" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/i> a bflc:GovernmentPubType ;
+    rdfs:label "international Intergovernmental"@en ;
+    bf:code "i" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/silent> a bf:SoundContent ;
+    rdfs:label "silent"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/relationship/otheredition> a bf:Relationship ;
+    rdfs:label "other edition"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1378027231#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250920030819.3" ;
+    bf:creationDate "20230401" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "SFB" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "QGK" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d QGK $d OCLCO $d SFB $d OCLCO $d OCLCF $d OCLCL $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1378027231> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1378027231#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/i> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "307.76096" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HT384.A35" ;
+            bf:itemPortion ".O743 2023" ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Organisation for Economic Co-operation and Development. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7TfTP6Tb7rb3DHKxPF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7TfTP6Tb7rb3DHKxPF> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Sahel and West Africa Club. $1 https://id.oclc.org/worldcat/entity/E39QH7JmrmPBDRb7c3JcFb6KM6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrmPBDRb7c3JcFb6KM6> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1378027231> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "West African Studies," ;
+                    bflc:marcKey "830  0 $a West African Studies, $x 2074353X." ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "2074353X." ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "West African Studies," ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9789264418417" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Urbanisation et conflits en Afrique du Nord et de l'Ouest" ] ] ;
+                    bf:language <http://id.loc.gov/vocabulary/languages/fre> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Urbanisation et conflits en Afrique du Nord et de l'Ouest" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otheredition> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9264383883" ] ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a West African Studies, $x 2074353X." ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "2074353X." ] ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "West African Studies," ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Development." ;
+            bflc:marcKey "650  4 $a Development." ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Urbanization Africa." ;
+            bflc:marcKey "650  0 $a Urbanization $z Africa." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Urbanization" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2064556" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001892" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Cities and towns" ;
+            bflc:marcKey "650  7 $a Cities and towns $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00861748" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cities and towns Africa." ;
+            bflc:marcKey "650  0 $a Cities and towns $z Africa." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cities and towns" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2006435" ] ] [ a bf:Geographic ;
+                        rdfs:label "Africa." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2001892" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Urbanization" ;
+            bflc:marcKey "650  7 $a Urbanization $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01162722" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Urbanisation Afrique." ;
+            bflc:marcKey "650  6 $a Urbanisation $z Afrique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Urbanisation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0009760" ] ] [ a bf:Geographic ;
+                        rdfs:label "Afrique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0386836" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Villes Afrique." ;
+            bflc:marcKey "650  6 $a Villes $z Afrique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Villes" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0001590" ] ] [ a bf:Geographic ;
+                        rdfs:label "Afrique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0386836" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "North and West Africa are undergoing rapid urbanisation. While cities and urban areas have always been sites of conflict, given their political and economic importance, many insurgencies, rebellions and separatist movements are associated with rural areas. Has increased urbanisation led to increased conflict in cities or do conflicts stay predominantly rural? Combining a regional and local perspective, this report examines and maps the rural-urban geography of conflict in North and West Africa since the late 1990s. A qualitative analysis of ten cities helps to illuminate the local sources of conflict. At a time of increasing violence in West Africa, the report lays out a solid foundation for policy makers, experts and researchers to develop more security and development place-based policies."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Mapping urban and rural violence in North and West Africa -- Abbreviations and acronyms -- How cities shape conflict in North and West Africa -- Cities, urbanisation and violence -- The changing geography of conflict in North and West Africa -- The team and acknowledgments -- Executive Summary -- Is violence becoming more urban in North and West Africa? -- The Sahel and West Africa Club -- Foreword." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Urbanisation and Conflicts in North and West Africa  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Urbanisation and Conflicts in North and West Africa  /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Africa" ;
+    bflc:marcKey "651  7 $a Africa $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkHrMyfHC67yqRTycbrv3" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01239509" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrmPBDRb7c3JcFb6KM6> a bf:Organization ;
+    rdfs:label "Sahel and West Africa Club." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5599737" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7TfTP6Tb7rb3DHKxPF> a bf:Organization ;
+    rdfs:label "Organisation for Economic Co-operation and Development." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca278746" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1378027231> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1378027231#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (120 p.)."@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9789264562318" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1396938998" ],
+        [ a bf:Isbn ;
+            rdf:value "9789264817104" ],
+        [ a bf:Doi ;
+            rdf:value "https://doi.org/10.1787/3fc68183-en" ],
+        [ a bf:Isbn ;
+            rdf:value "9789264448841" ],
+        [ a bf:Isbn ;
+            rdf:value "9264448845" ],
+        [ a bf:Isbn ;
+            rdf:value "9264562311" ],
+        [ a bf:Isbn ;
+            rdf:value "9264817107" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1378027231" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1378027231#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "Collection: OECD iLibrary" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://doi.org/10.1787/3fc68183-en $y OECD iLibrary $x Provider: OECD Publishing $x Collection: OECD iLibrary $x purchased $x eLoaderURL $x oi4 $x oi3fc68183" ;
+            bf:electronicLocator <http://doi.org/10.1787/3fc68183-en> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "OECD iLibrary"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: OECD Publishing"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Paris : $b OECD Publishing, $c 2023." ;
+            bflc:simpleAgent "OECD Publishing," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "Paris :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/fr> ] ;
+    bf:publicationStatement "Paris : OECD Publishing, 2023." ;
+    bf:responsibilityStatement "Organisation for Economic Co-operation and Development and Sahel and West Africa Club." ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/silent> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Urbanisation and Conflicts in North and West Africa  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Urbanisation and Conflicts in North and West Africa  /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

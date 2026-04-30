@@ -1,0 +1,429 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/mon> a bf:Frequency ;
+    rdfs:label "monthly"@en ;
+    bf:code "mon" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/millus/pho> a bf:Illustration ;
+    rdfs:label "phonodisc"@en ;
+    bf:code "pho" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/earliest> a bf:Status ;
+    rdfs:label "earliest"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1423716077#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251011043709.9" ;
+    bf:creationDate "20240228" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1423716077> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1423716077#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "DS1" ;
+            bf:itemPortion ".C45" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Zhongguo bao dao za zhi she, $e sponsoring body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpY7kX4krHG8GJTyWc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpY7kX4krHG8GJTyWc6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a ASEAN-China Center, $e sponsoring body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "ASEAN-China Center," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Yunnan Sheng ren min zheng fu xin wen ban gong shi, $e sponsoring body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqkVGjTHM7JjcgR96Wt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqkVGjTHM7JjcgR96Wt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a CIPG Asia-Pacific Center, $e publisher, $e sponsoring body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "CIPG Asia-Pacific Center," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher," ],
+                [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodicals" ;
+            bflc:marcKey "655  7 $a Periodicals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a a-cc---" ;
+            bf:code "a-cc---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/a-cc> ],
+        [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a as-----" ;
+            bf:code "as-----" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/as> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1423716077> ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2096-1316" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm>,
+        <http://id.loc.gov/vocabulary/millus/pho> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "China report ASEAN" ] ] ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "2096-1316" ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "China report ASEAN" ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Print version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Asie du Sud-Est Relations extérieures Chine." ;
+            bflc:marcKey "651  6 $a Asie du Sud-Est $x Relations extérieures $z Chine." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Asie du Sud-Est" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0101228" ] ] [ a bf:Topic ;
+                        rdfs:label "Relations extérieures" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0373835" ] ] [ a bf:Geographic ;
+                        rdfs:label "Chine." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0476619" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Asian cooperation Periodicals." ;
+            bflc:marcKey "650  0 $a Asian cooperation $v Periodicals." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Asian cooperation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2038719" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Periodicals." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4945002" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Asian cooperation" ;
+            bflc:marcKey "650  7 $a Asian cooperation $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00818681" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Diplomatic relations" ;
+            bflc:marcKey "650  7 $a Diplomatic relations $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01907412" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Southeast Asia Foreign relations China." ;
+            bflc:marcKey "651  0 $a Southeast Asia $x Foreign relations $z China." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Southeast Asia" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2038614" ] ] [ a bf:Topic ;
+                        rdfs:label "Foreign relations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5186084" ] ] [ a bf:Geographic ;
+                        rdfs:label "China." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca323484" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Coopération asiatique Périodiques." ;
+            bflc:marcKey "650  6 $a Coopération asiatique $v Périodiques." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Coopération asiatique" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0098418" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Périodiques." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378307" ] ] ) ],
+        [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Southeast Asia" ;
+            bflc:marcKey "651  7 $a Southeast Asia $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01240499" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "China Foreign relations Southeast Asia." ;
+            bflc:marcKey "651  0 $a China $x Foreign relations $z Southeast Asia." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "China" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2145797" ] ] [ a bf:Topic ;
+                        rdfs:label "Foreign relations" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2145797" ] ] [ a bf:Geographic ;
+                        rdfs:label "Southeast Asia." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2038614" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Chine Relations extérieures Asie du Sud-Est." ;
+            bflc:marcKey "651  6 $a Chine $x Relations extérieures $z Asie du Sud-Est." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Chine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0053864" ] ] [ a bf:Topic ;
+                        rdfs:label "Relations extérieures" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0053864" ] ] [ a bf:Geographic ;
+                        rdfs:label "Asie du Sud-Est." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0420803" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJdCqh8h6hJY7PT6MQW4bd> ;
+    bf:title [ a bf:ParallelTitle ;
+            bflc:marcKey "246 11 $a Zhongguo dong meng bao dao" ;
+            bf:mainTitle "Zhongguo dong meng bao dao" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Some providers have Chinese title: $a Zhongguo dong meng bao dao (Ying wen ban)" ;
+            bf:mainTitle "Zhongguo dong meng bao dao (Ying wen ban)" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Some providers have Chinese title:"@en ] ],
+        [ a bf:Title ;
+            rdfs:label "China report ASEAN." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "China report ASEAN." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdCqh8h6hJY7PT6MQW4bd> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "China" ;
+    bflc:marcKey "651  7 $a China $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJdCqh8h6hJY7PT6MQW4bd" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01206073" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpY7kX4krHG8GJTyWc6> a bf:Organization ;
+    rdfs:label "Zhongguo bao dao za zhi she," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11049043" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqkVGjTHM7JjcgR96Wt> a bf:Organization ;
+    rdfs:label "Yunnan Sheng ren min zheng fu xin wen ban gong shi," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5403552" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1423716077> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1423716077#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:dimensions "27" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes :"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Monthly"@en ;
+            bflc:marcKey "310    $a Monthly" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/mon> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1423716077" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1423716077#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations ;"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/issuance> ;
+            rdfs:label "Some issues combined."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Vol. 2, no. 9 (January 2020); title from issue front matter (CNKI, viewed January 14, 2022)"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://chn.oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=ZGMD" ;
+            bf:electronicLocator <http://chn.oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=ZGMD> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: Vol. 6, no. 10 (October 2021) (CNKI, viewed January 14, 2022)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "<2021-> :"@en ] ;
+            bflc:marcKey "264 31 $3 <2021-> : $a Beijing : $b CIPG Asia-Pacific Center" ;
+            bflc:simpleAgent "CIPG Asia-Pacific Center" ;
+            bflc:simplePlace "Beijing :" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Beijing : $b China Report Press" ;
+            bflc:simpleAgent "China Report Press" ;
+            bflc:simplePlace "Beijing :" ;
+            bf:date "2016/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cc> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/earliest> ] ;
+    bf:publicationStatement "<2021-> : Beijing : CIPG Asia-Pacific Center",
+        "Beijing : China Report Press" ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u http://search.ebscohost.com/login.aspx?direct=true&site=edspub-live&scope=site&type=44&db=edspub&authtype=ip,guest&custid=ns011247&groupid=main&profile=eds&bquery=AN%2011599618 $z <img src=\"/screens/gifs/go4.gif\" alt=\"Go button\" border=\"0\"width=\"21\"height=\"21\"hspace=\"7\" align=\"middle\">View Full Text Options" ;
+            bf:electronicLocator <http://search.ebscohost.com/login.aspx?direct=true&site=edspub-live&scope=site&type=44&db=edspub&authtype=ip,guest&custid=ns011247&groupid=main&profile=eds&bquery=AN%2011599618> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "<img src=\"/screens/gifs/go4.gif\" alt=\"Go button\" border=\"0\"width=\"21\"height=\"21\"hspace=\"7\" align=\"middle\">View Full Text Options"@en ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "China report ASEAN." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "China report ASEAN." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

@@ -1,0 +1,323 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> a bf:Source ;
+    bf:code "sapdv" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/part> a bf:Relationship .
+
+<https://id.oclc.org/worldcat/entity/1446496961#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260320104356.4" ;
+    bf:creationDate "20240718" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1446496961> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1446496961#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.2" ;
+            bf:itemPortion ".S4643 2023" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Todsharow, Martin, $e composer (expression)" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Todsharow, Martin," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Malkovich, John, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Malkovich, John," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Debie, Benoît, $e director of photography." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Debie, Benoît," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Chaplin, Geraldine, $d 1944- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Chaplin, Geraldine, 1944-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Schwentke, Robert, $d 1968- $e film director, $e screenwriter." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Schwentke, Robert, 1968-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Xander, Tom, $d 1995- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Xander, Tom, 1995-" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT1H48M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  0 $a Feature films." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Historical films." ;
+            bflc:marcKey "655  0 $a Historical films." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographical films." ;
+            bflc:marcKey "655  0 $a Biographical films." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures, German." ;
+            bflc:marcKey "655  0 $a Motion pictures, German." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-gr---" ;
+            bf:code "e-gr---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-gr> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1446496961> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language [ a bf:Language ;
+            bf:code "ger" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, Benoi Debie; editor, Michael Czarnecki; Martin Todsharow."@en ;
+            bflc:marcKey "508    $a Director of photography, Benoi Debie; editor, Michael Czarnecki; Martin Todsharow." ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "\"FSK ab 16 freigegeben.\"--Container."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "John Malkovich, Tom Xander, Louis Hofmann, Lilith Stangenberg."@en ;
+            bflc:marcKey "511 1  $a John Malkovich, Tom Xander, Louis Hofmann, Lilith Stangenberg." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/aud> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ger" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English or German dialogue."@en ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AnalyticalEntry ;
+                    rdfs:label "Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D. Thyestes." ;
+                    bflc:marcKey "700 12 $a Seneca, Lucius Annaeus, $d approximately 4 B.C.-65 A.D. $t Thyestes." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D." ] ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Thyestes." ;
+                            bf:mainTitle "Thyestes." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "600 00 $a Nero, $c Emperor of Rome, $d 37-68 $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Person ;
+                        rdfs:label "Nero, Emperor of Rome, 37-68" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca99604" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "600 10 $a Seneca, Lucius Annaeus, $d approximately 4 B.C.-65 A.D. $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Person ;
+                        rdfs:label "Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca238411" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"A look at the relationship between Seneca and Nero, the infamous emperor he mentored since childhood and who accused him of plotting his assassination.\"-- IMDb."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Seneca /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Seneca /" ] .
+
+<https://id.oclc.org/worldcat/entity/1446496961> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1446496961#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:contentAccessibility [ a bf:ContentAccessibility ;
+            bf:source <http://id.loc.gov/vocabulary/accesscontentschemes/sapdv> ;
+            bf:status [ a bf:Status,
+                        oclcbf:PrimaryContent ] ;
+            oclcbf:contentAccessMode "auditory"@en ;
+            oclcbf:textualAssistiveFeatures "closedCaptions"@en ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Flora Haney Fund." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Flora Haney Fund." ] ] ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 112 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Upc ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "4061229367103" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Weltkino Filmverleih GmBH" ] ;
+            rdf:value "UF36710" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1446496961" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1446496961#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, PAL, Region 2; widescreen (2.40:1) presentation; Dolby Digital 5.1."@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Closed-captioned in German for the hearing impaired; audio description in German for people with visual disabilities."@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Leipzig : $b Weltkino Filmverleih GmbH, $c [2023]" ;
+            bflc:simpleAgent "Weltkino Filmverleih GmbH," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "Leipzig :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/gw> ] ;
+    bf:publicationStatement "Leipzig : Weltkino Filmverleih GmbH, [2023]" ;
+    bf:responsibilityStatement "Weltkino Filmverleih zeigt eine Produktion von Filmgalerie 451 ; produzenten Frieder Schlaich, Irene Von Alberti ; drehbuch, Robert Schwentke, Matthew Wilder ; regie, Robert Schwentke." ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "The Flora Haney Fund Home Page"@en ] ;
+            bflc:marcKey "856 42 $3 The Flora Haney Fund Home Page $u http://hdl.library.upenn.edu/1017.12/366331" ;
+            bf:electronicLocator <http://hdl.library.upenn.edu/1017.12/366331> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Seneca /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Seneca /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+

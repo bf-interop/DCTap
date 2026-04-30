@@ -1,0 +1,220 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/maudience/gen> a bf:IntendedAudience ;
+    rdfs:label "general"@en ;
+    bf:code "gen" .
+
+<http://id.loc.gov/vocabulary/mencformat/bluray> a bf:EncodingFormat ;
+    rdfs:label "Blu-ray video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/fmp> a bf:Role ;
+    bf:code "fmp" .
+
+<https://id.kb.se/term/sao/Gatukonst> a bf:Topic ;
+    rdfs:label "Gatukonst." ;
+    bflc:marcKey "650  7 $a Gatukonst. $0 https://id.kb.se/term/sao/Gatukonst $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Graffiti> a bf:Topic ;
+    rdfs:label "Graffiti." ;
+    bflc:marcKey "650  7 $a Graffiti. $0 https://id.kb.se/term/sao/Graffiti $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Graffitim%C3%A5lare> a bf:Topic ;
+    rdfs:label "Graffitimålare." ;
+    bflc:marcKey "650  7 $a Graffitimålare. $0 https://id.kb.se/term/sao/Graffitim%C3%A5lare $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/saogf/Dokument%C3%A4ra%20skildringar> a bf:GenreForm ;
+    rdfs:label "Dokumentära skildringar." ;
+    bflc:marcKey "655  7 $a Dokumentära skildringar. $0 https://id.kb.se/term/saogf/Dokument%C3%A4ra%20skildringar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1418779790#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250606064632.8" ;
+    bf:creationDate "20240123" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1418779790> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1418779790#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "Ibhc" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Ibz Banksy" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "751.73" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/swe" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3hyRwHmRDdyB9chTMjR8ffKkt> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@sv ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a D'Cruz, Jaimie. $4 fmp" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "D'Cruz, Jaimie." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/Dokument%C3%A4ra%20skildringar> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1418779790> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/gen> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "dan" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/dan> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "nor" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/nor> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Tal på engelska, textad på svenska, norska, danska, finska."@sv ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "swe" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/swe> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Skådespelare: Banksy, Mr Brainwash (Thierry Guetta), Debora Guetta."@sv ;
+            bflc:marcKey "511 0  $a Skådespelare: Banksy, Mr Brainwash (Thierry Guetta), Debora Guetta." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fin" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fin> ] ] ;
+    bf:subject <https://id.kb.se/term/sao/Gatukonst>,
+        <https://id.kb.se/term/sao/Graffiti>,
+        <https://id.kb.se/term/sao/Graffitim%C3%A5lare> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Exit through the gift shop /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Exit through the gift shop /" ] .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<https://id.oclc.org/worldcat/entity/1418779790> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1418779790#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@sv ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:copyrightDate "© 2010"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/bluray> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 Blu-ray skiva (1 tim., 26 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Atlantic Films AB" ] ;
+            rdf:value "1125" ],
+        [ a bf:Ean ;
+            rdf:value "7319980011252" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1418779790" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1418779790#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@sv ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "Färg, ljud"@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Atlantic Film AB, $c [2011]" ;
+            bflc:simpleAgent "Atlantic Film AB," ;
+            bflc:simpleDate "[2011]" ;
+            bf:date "2011"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sw> ] ;
+    bf:publicationStatement "Atlantic Film AB, [2011]" ;
+    bf:responsibilityStatement "A Banksy film." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Exit through the gift shop /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Exit through the gift shop /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sao> a bf:Source ;
+    bf:code "sao" .
+

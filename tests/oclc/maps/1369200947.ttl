@@ -1,0 +1,205 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4363.S4> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4363 $b S4" ;
+    bf:code "4363.S4" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1369200947#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250812025752.4" ;
+    bf:creationDate "20230125" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1369200947> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1369200947#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G4363.S4c315 1912-1914" ;
+            bf:itemPortion ".W4" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Blood, C.N." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Blood, C.N." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Weeks, J.P." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Weeks, J.P." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ] ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ca" ;
+            bf:code "n-us-ca" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ],
+        <http://id.loc.gov/authorities/classification/G4363.S4> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1369200947> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scales differ." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Santa Clara County (Calif.) Maps." ;
+            bflc:marcKey "651  0 $a Santa Clara County (Calif.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Santa Clara County (Calif.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca321493" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "California Santa Clara County" ;
+            bflc:marcKey "651  7 $a California $z Santa Clara County $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJxcVMpBHcDbJRRfGGJdQq" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "California" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206015" ] ] [ a bf:Geographic ;
+                        rdfs:label "Santa Clara County" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01206015" ] ] ) ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/entity/E39PBJxcVMpBHcDbJRRfGGJdQq> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Sheet 1. Tentative design of hydraulic fill dam on Stevens Creek (Stevens Creek Reservoir Survey), May 1914 -- Sheet 2. Stevens Creek reservoir site, Santa Clara Co., California, April 1914 -- Sheet 3. Photographic enlargement of part of U.S.G.S. map, Palo Alto & San Jose quadrangles, showing Stevens Creek reservoir site, catchment area and district capable of irrigation, May 1914 -- Sheet 4. Estimate of seasonal rainfall on Stevens Creek Catchment area (From 1885 to 1912) -- Hand made graph -- Sheet 5. Hand made mass diagram, showing probable service of a reservoir on Stevens Creek of 3000 acre-feet capacity for the years 1885-1912" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Maps and drawings for the Steven Creek Reservoir]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Maps and drawings for the Steven Creek Reservoir]." ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1369200947> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1369200947#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:dimensions "63 x 110 cm, and smaller." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "maps and drawings :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1369200947" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1369200947#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "blueline, transparencies, hand made drawings ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [California] : $b [Publisher not identified], $c [1912-1914]" ;
+            bflc:simpleAgent "[Publisher not identified]," ;
+            bflc:simpleDate "[1912-1914]" ;
+            bflc:simplePlace "[California] :" ;
+            bf:date "1912/1914"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[California] : [Publisher not identified], [1912-1914]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "[Maps and drawings for the Steven Creek Reservoir]." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "[Maps and drawings for the Steven Creek Reservoir]." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

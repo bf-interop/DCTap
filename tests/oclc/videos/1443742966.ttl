@@ -1,0 +1,158 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relators/drt> a bf:Role ;
+    bf:code "drt" .
+
+<https://id.kb.se/term/saogf/Drama%20%28film%29> a bf:GenreForm ;
+    rdfs:label "Drama (film)" ;
+    bflc:marcKey "655  7 $a Drama (film) $0 https://id.kb.se/term/saogf/Drama%20%28film%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/L%C3%A5ngfilmer> a bf:GenreForm ;
+    rdfs:label "Långfilmer." ;
+    bflc:marcKey "655  7 $a Långfilmer. $0 https://id.kb.se/term/saogf/L%C3%A5ngfilmer $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Romantik%20%28film%29> a bf:GenreForm ;
+    rdfs:label "Romantik (film)" ;
+    bflc:marcKey "655  7 $a Romantik (film) $0 https://id.kb.se/term/saogf/Romantik%20%28film%29 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1443742966#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250712052229.7" ;
+    bf:creationDate "20240704" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1443742966> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1443742966#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "791.4372" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/swe" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cowperthwaite, Gabriela. $4 drt" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cowperthwaite, Gabriela." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/drt> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/Drama%20%28film%29>,
+        <https://id.kb.se/term/saogf/L%C3%A5ngfilmer>,
+        <https://id.kb.se/term/saogf/Romantik%20%28film%29> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1443742966> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Skådespelare: Casey Affleck, Dakota Johnson, Violet McGraw, Jason Segel."@sv ;
+            bflc:marcKey "511 0  $a Skådespelare: Casey Affleck, Dakota Johnson, Violet McGraw, Jason Segel." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Engelska."@sv ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Efter att ett par har fått omvälvande nyheter finner de oväntat stöd hos sin bästa vän, som sätter sitt eget liv på paus och flyttar in i familjens hem, vilket har en större och djupare inverkan än nån kunnat föreställa sig. Gabriela Cowperthwaites känslosamma drama med Casey Affleck, Dakota Johnson och Jason Segel. Baserad på en sann händelse. [ForlagEtt]."@sv ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Our Friend" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Our Friend" ] .
+
+<https://id.oclc.org/worldcat/entity/1443742966> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1443742966#adminMetadata> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 strömmande video (2 tim., 4 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    bf:code "Distributör: FörlagEtt" ;
+                    rdfs:about "http://id.loc.gov/vocabulary/identifiers/Distributör: FörlagEtt" ] ;
+            rdf:value "ForlagEttTitle5425" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1443742966" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1443742966#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b SF, $c 2019" ;
+            bflc:simpleAgent "SF," ;
+            bflc:simpleDate "2019" ;
+            bf:date "2019"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "SF, 2019" ;
+    bf:responsibilityStatement "regi: Gabriela Cowperthwaite." ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u http://www.imdb.com/title/tt9608818/ $z IMDB" ;
+            bf:electronicLocator <http://www.imdb.com/title/tt9608818> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "IMDB"@sv ] ],
+        [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u https://d3k9jeyu3pq1ex.cloudfront.net/title_covers/5425 $z Omslagsbild" ;
+            bf:electronicLocator <http://d3k9jeyu3pq1ex.cloudfront.net/title_covers/5425> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "digipic"@sv ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Omslagsbild"@sv ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Our Friend" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Our Friend" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

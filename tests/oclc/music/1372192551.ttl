@@ -1,0 +1,369 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G3804.N4> a bf:Place .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/acds> a bf:CaptureStorage ;
+    rdfs:label "Acoustical capture, Direct storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgeneration/stamper> a bf:Generation ;
+    rdfs:label "stamper"@en .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/she> a bf:BaseMaterial ;
+    rdfs:label "shellac"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/d> a bf:PlayingSpeed ;
+    rdfs:label "78 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1372192551#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20240127100239.6" ;
+    bf:creationDate "20230308" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1372192551> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfxcw6CfCchWMJKxbHwG3> a bf:Person ;
+    rdfs:label "Waters, Ethel, 1896-1977," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1365589" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhGWVKK3g8GwJ3VvfVwG3> a bf:Person ;
+    rdfs:label "Delaney, Tom, 1889-1963," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7538251" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrm7MFMXmyqxHgfdR6Frq> a bf:Person ;
+    rdfs:label "Easton, Sidney, 1885-1971," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4265102" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGcPWPWRTr9BcBbjp9MvRC> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ;
+            bf:place <http://id.loc.gov/authorities/classification/G3804.N4> ],
+        [ a bf:Capture ;
+            bf:date "1921, March 21 and 22." ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded,"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York,"@en ] ],
+        [ a bf:Capture ;
+            bf:date "19210321/19210322" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Waters, Ethel, $d 1896-1977, $e singer. $1 https://id.oclc.org/worldcat/entity/E39PBJfxcw6CfCchWMJKxbHwG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfxcw6CfCchWMJKxbHwG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "singer." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Delaney, Tom, $d 1889-1963, $e composer. $1 https://id.oclc.org/worldcat/entity/E39PBJhGWVKK3g8GwJ3VvfVwG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhGWVKK3g8GwJ3VvfVwG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Albury's Blues and Jazz Seven, $e instrumentalist." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Albury's Blues and Jazz Seven," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Easton, Sidney, $d 1885-1971, $e lyricist. $1 https://id.oclc.org/worldcat/entity/E39PBJrm7MFMXmyqxHgfdR6Frq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrm7MFMXmyqxHgfdR6Frq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "lyricist." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Jazz" ;
+            bflc:marcKey "655  7 $a Jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726653" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090482" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000906" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "jazz." ;
+            bflc:marcKey "655  7 $a jazz. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300266367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz"@en ;
+            skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2014026879> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1372192551> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:musicMedium [ a bf:MusicMedium ;
+            bflc:readMarc382 "382 01 $a female voice $n 1 $a trumpet $n 1 $a trombone $n 1 $a alto saxophone $n 2 $a piano $n 1 $a tuba $n 1 $a drum set $n 1 $s 8 $2 lcmpt" ;
+            bf:source [ a bf:Source ;
+                    bf:code "lcmpt" ] ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Ethel Waters, vocals ; accompanied by Albury's Blue and Jazz Seven (Wesley Johnson, trumpet ; James Reevy, trombone ; Clarence Harris and plus one unidentified musician, alto saxophone ; Wilson \"Peaches\" Kyer, piano ; Ralph Escudero, tuba ; Kaiser Marshall, drums)."@en ;
+            bflc:marcKey "511 0  $a Ethel Waters, vocals ; accompanied by Albury's Blue and Jazz Seven (Wesley Johnson, trumpet ; James Reevy, trombone ; Clarence Harris and plus one unidentified musician, alto saxophone ; Wilson \"Peaches\" Kyer, piano ; Ralph Escudero, tuba ; Kaiser Marshall, drums)." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Work ;
+                    bflc:marcKey "740 42 $a The New York glide." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "4" ;
+                            bf:mainTitle "The New York glide." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Jazz vocals." ;
+            bflc:marcKey "650  0 $a Jazz vocals." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2130702" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Temporal ;
+            rdfs:label "1921-1930" ;
+            bflc:marcKey "648  7 $a 1921-1930 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Jazz" ;
+            bflc:marcKey "650  7 $a Jazz $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00982165" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 1921-1930." ;
+            bflc:marcKey "650  0 $a Jazz $y 1921-1930." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2783391" ] ] [ a bf:Temporal ;
+                        rdfs:label "1921-1930." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2783391" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 1921-1930." ;
+            bflc:marcKey "650  6 $a Jazz $y 1921-1930." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211688" ] ] [ a bf:Temporal ;
+                        rdfs:label "1921-1930." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211688" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Jazz vocals" ;
+            bflc:marcKey "650  7 $a Jazz vocals $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00982216" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "At the new jump steady ball /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "At the new jump steady ball /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mgroove/coarse> a bf:GrooveCharacteristic ;
+    rdfs:label "coarse groove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/mon> a bf:PlaybackChannels ;
+    rdfs:label "mono"@en .
+
+<https://id.oclc.org/worldcat/entity/1372192551> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1372192551#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/she> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:dimensions "10 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc ;"@en ] ;
+    bf:generation <http://id.loc.gov/vocabulary/mgeneration/stamper> ;
+    bf:identifiedBy [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Cardinal" ] ;
+            bf:qualifier "(side B)" ;
+            rdf:value "C673" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Cardinal" ] ;
+            rdf:value "2036" ],
+        [ a bf:MatrixNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Cardinal" ] ;
+            bf:qualifier "(side A)" ;
+            rdf:value "C674" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1372192551" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGcPWPWRTr9BcBbjp9MvRC> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/refcitation> ;
+            rdfs:label "The Jazz Discography Online," ;
+            bf:electronicLocator <https://www.lordisco.com/> ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York : $b Cardinal, $c [1921]" ;
+            bflc:simpleAgent "Cardinal," ;
+            bflc:simpleDate "[1921]" ;
+            bflc:simplePlace "New York :" ;
+            bf:date "1921"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York : Cardinal, [1921]" ;
+    bf:responsibilityStatement "[words by Sidney] Easton, music by Tom Delan[e]y. The New York glide / Tom Delaney." ;
+    bf:soundCharacteristic [ a bf:PlayingSpeed ;
+            rdfs:label "[78 rpm]"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "shellac"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "mono"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/mon> ],
+        [ a bf:GrooveCharacteristic ;
+            rdfs:label "coarse groove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/coarse> ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/acds>,
+        <http://id.loc.gov/vocabulary/mgroove/coarse>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mplayback/mon>,
+        <http://id.loc.gov/vocabulary/mplayspeed/d> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "At the new jump steady ball /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "At the new jump steady ball /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

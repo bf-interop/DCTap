@@ -1,0 +1,451 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcapturestorage/unk> a bf:CaptureStorage ;
+    rdfs:label "Unknown capture and storage"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgroove/lateral> a bf:GrooveCharacteristic ;
+    rdfs:label "lateral or combined cutting"@en .
+
+<http://id.loc.gov/vocabulary/mmaterial/pla> a bf:BaseMaterial ;
+    rdfs:label "plastic"@en .
+
+<http://id.loc.gov/vocabulary/mplayspeed/b> a bf:PlayingSpeed ;
+    rdfs:label "33 1/3 rpm"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/historicalinfo> a bf:SupplementaryContent ;
+    rdfs:label "historical information"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/techmusic> a bf:SupplementaryContent ;
+    rdfs:label "technical information on music"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1401838056#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250521023742.9" ;
+    bf:creationDate "20231004" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCQ $d OCLCF $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1401838056> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1401838056#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "1962 November" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Recorded live in concert"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Bon Soir, Greenwich Village, NY."@en ] ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.42164" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20221014" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3pTYfq3Q7cWDmtwgGC3ffdQ6P> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@en ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cresci, John, $e instrumentalist." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cresci, John," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3324011" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Daniels, Peter $c (Conductor), $e instrumentalist." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Daniels, Peter (Conductor)," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3738947" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Haynes, Tiger, $e instrumentalist." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Haynes, Tiger," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca3611762" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pollard, Averill, $e instrumentalist." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Pollard, Averill," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15123152" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "instrumentalist." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Streisand, Barbra, $e audio producer, $e singer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Streisand, Barbra," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca524759" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "audio producer," ],
+                [ a bf:Role ;
+                    rdfs:label "singer." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 fast $0 (OCoLC)fst01726653" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726653" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Live sound recordings." ;
+            bflc:marcKey "655  7 $a Live sound recordings. $2 fast $0 (OCoLC)fst01726308" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726308" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090610" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000906" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Live sound recordings." ;
+            bflc:marcKey "655  7 $a Live sound recordings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866348" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Musique populaire." ;
+            bflc:marcKey "655  7 $a Musique populaire. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000700" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Enregistrements sonores live." ;
+            bflc:marcKey "655  7 $a Enregistrements sonores live. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000191" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "655  7 $a Popular music. $2 fast $0 (OCoLC)fst01726706" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726706" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "655  7 $a Jazz. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10090482" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "jazz." ;
+            bflc:marcKey "655  7 $a jazz. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300266367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1401838056> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Barbra Streisand, vocals ; with \"Colonel\" Tiger Haynes, guitar ; Peter Daniels, piano ; Averill Pollard, upright bass ; John Cresci, drums."@en ;
+            bflc:marcKey "511 0  $a Barbra Streisand, vocals ; with \"Colonel\" Tiger Haynes, guitar ; Peter Daniels, piano ; Averill Pollard, upright bass ; John Cresci, drums." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Album produced by Barbra Streisand, Jay Landers, and Martin Erlichman."@en ;
+            bflc:marcKey "508    $a Album produced by Barbra Streisand, Jay Landers, and Martin Erlichman." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 1961-1970." ;
+            bflc:marcKey "650  6 $a Jazz $y 1961-1970." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211698" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0211698" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Popular music." ;
+            bflc:marcKey "650  7 $a Popular music. $2 fast $0 (OCoLC)fst01071422" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01071422" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Temporal ;
+            rdfs:label "1961-1970" ;
+            bflc:marcKey "648  7 $a 1961-1970 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Jazz 1961-1970." ;
+            bflc:marcKey "650  0 $a Jazz $y 1961-1970." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Jazz" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2783395" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2783395" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Jazz." ;
+            bflc:marcKey "650  7 $a Jazz. $2 fast $0 (OCoLC)fst00982165" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00982165" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Popular music 1961-1970." ;
+            bflc:marcKey "650  0 $a Popular music $y 1961-1970." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Popular music" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069300" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2069300" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Musique populaire 1961-1970." ;
+            bflc:marcKey "650  6 $a Musique populaire $y 1961-1970." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Musique populaire" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164310" ] ] [ a bf:Temporal ;
+                        rdfs:label "1961-1970." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0164310" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Recorded in November 1962, this album marks the first official release of the legendary Greenwich Village Nightclub shows and includes 24 newly mixed performances from the original master tapes in Barbra's personal collection."@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/historicalinfo>,
+        <http://id.loc.gov/vocabulary/msupplcont/techmusic> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Introduction by David Kapralik ; My name is Barbara (2:01) -- Much more (2:30) -- Napoleon (3:19) -- I hate music (1:16) -- Right as the rain (2:46) -- Cry me a river (4:11) -- Value (2:16) -- Lover, come back to me (1:54) -- Band introductions -- Soon it's gonna rain (3:42) -- Come to the supermarket (in old Peking) (1:51) -- When the sun comes out (3:14) -- Happy days are here again (3:25) -- Keepin' out of mischief now (1:54) -- A sleepin' bee (4:03) -- I had myself a true love (4:47) -- Bewitched, bothered and bewildered (2:39) -- Who's afraid of the big bad wolf? (2:36) -- I'll tell the man in the street (2:49) -- A taste of honey (2:23) -- Never will I marry (2:56) -- Nobody's heart belongs to me (2:14) -- My honey's lovin' arms (2:10) -- I stayed too long at the fair (5:11)." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Live at the Bon Soir /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Live at the Bon Soir /" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Barbra Streisand live at the Bon Soir" ;
+            bf:mainTitle "Barbra Streisand live at the Bon Soir" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mgroove/micro> a bf:GrooveCharacteristic ;
+    rdfs:label "microgroove"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1401838056> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1401838056#adminMetadata> ;
+    bf:baseMaterial [ a bf:BaseMaterial ;
+            rdfs:label "vinyl"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdamat" ] ],
+        <http://id.loc.gov/vocabulary/mmaterial/pla> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@en ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2023"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "12 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio discs :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1401838056" ],
+        [ a bf:Upc ;
+            rdf:value "856276002794" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Columbia Records" ] ;
+            rdf:value "IMP6065" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1401838056#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@en ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "analog, 33 1/3 rpm ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Liner notes by Jay Landers & Barbra Streisand printed on container insert."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from disc label."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Legacy Recordings, $c [2023]" ;
+            bflc:simpleAgent "Legacy Recordings," ;
+            bflc:simpleDate "[2023]" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New York] : $b Columbia ; $c [2023]" ;
+            bflc:simpleAgent "Columbia ;" ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "[New York] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "Legacy Recordings, [2023]",
+        "[New York] : Columbia ; [2023]" ;
+    bf:responsibilityStatement "Barbra Streisand." ;
+    bf:soundCharacteristic [ a bf:GrooveCharacteristic ;
+            rdfs:label "microgroove"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdagw" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mgroove/micro> ],
+        [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "analog"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/analog> ],
+        [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@en ],
+        <http://id.loc.gov/vocabulary/mcapturestorage/unk>,
+        <http://id.loc.gov/vocabulary/mgroove/lateral>,
+        <http://id.loc.gov/vocabulary/mgroove/micro>,
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mplayspeed/b> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Live at the Bon Soir /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Live at the Bon Soir /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

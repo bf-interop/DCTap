@@ -1,0 +1,152 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/relators/mus> a bf:Role ;
+    bf:code "mus" .
+
+<https://id.kb.se/term/saogf/Blues> a bf:GenreForm ;
+    rdfs:label "Blues." ;
+    bflc:marcKey "655  7 $a Blues. $0 https://id.kb.se/term/saogf/Blues $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Chicago%20blues> a bf:GenreForm ;
+    rdfs:label "Chicago blues." ;
+    bflc:marcKey "655  7 $a Chicago blues. $0 https://id.kb.se/term/saogf/Chicago%20blues $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1374879297#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250209114609.4" ;
+    bf:creationDate "20230404" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1374879297> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1374879297#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "Yxfc" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Dawkins, Jimmy. $4 mus" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Dawkins, Jimmy." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/mus> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Blues>,
+        <https://id.kb.se/term/saogf/Chicago%20blues>,
+        <https://id.kb.se/term/saogf/Musikinspelningar> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1374879297> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Innehåll: Tell me baby -- Falling tears -- Kotten field jump -- Mean o'blues -- Gitar king -- Mid nite boogie -- Tired of krying -- Bring it back -- Rumping n'stomping -- Hard life blues." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tell me baby /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tell me baby /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1374879297> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1374879297#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2004"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 CD"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1374879297" ],
+        [ a bf:Ean ;
+            rdf:value "0639445503229" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Fedora" ] ;
+            rdf:value "FCD 5032" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1374879297#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Fedora, $c 2004" ;
+            bflc:simpleAgent "Fedora," ;
+            bflc:simpleDate "2004" ;
+            bf:date "2004"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "Fedora, 2004" ;
+    bf:responsibilityStatement "Jimmy Dawkins." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Tell me baby /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Tell me baby /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+

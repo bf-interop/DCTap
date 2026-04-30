@@ -1,0 +1,395 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/maudience/spe> a bf:IntendedAudience ;
+    rdfs:label "specialized"@en ;
+    bf:code "spe" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1431006544#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250224195050.5" ;
+    bf:creationDate "20240423" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "PAU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCQ $d OCLCO $d PAU $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1431006544> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGR9xHWcQRqc6WWYYttjbq> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "RK656.2" ;
+            bf:itemPortion ".C8775 2020" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Araujo, Mauricio, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Araujo, Mauricio," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sanz, Mariano, $e editor. $e Herausgeber. $4 edt $1 https://id.oclc.org/worldcat/entity/E39PCjBfTByfycGJp9WjVHqd43" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBfTByfycGJp9WjVHqd43> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ],
+                [ a bf:Role ;
+                    rdfs:label "Herausgeber." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Renouard, Franck, $e editor. $e Herausgeber. $4 edt $1 https://id.oclc.org/worldcat/entity/E39PCjwWP8qm7qW8J4tK7kHWtC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjwWP8qm7qW8J4tK7kHWtC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "Herausgeber." ],
+                [ a bf:Role ;
+                    rdfs:label "editor." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Nevins, Myron, $e Herausgeber, $e editor.. $4 edt $1 https://id.oclc.org/worldcat/entity/E39PCjBcdgDDyfXK4fYYGMwxKq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBcdgDDyfXK4fYYGMwxKq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "Herausgeber," ],
+                [ a bf:Role ;
+                    rdfs:label "editor.." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cooper, Lyndon F., $d 1958- $e editor. $4 edt $1 https://id.oclc.org/worldcat/entity/E39PCjKPj9fjBdXkYkRGfDx343 $0 (DE-588)1216140294" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjKPj9fjBdXkYkRGfDx343> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hämmerle, Christoph. $d 1956- $e editor. $e Herausgeber. $4 edt $1 https://id.oclc.org/worldcat/entity/E39PCjBXRxBkBg6JjYH7Q8RmQy $0 (DE-588)112913547" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBXRxBkBg6JjYH7Q8RmQy> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "Herausgeber." ],
+                [ a bf:Role ;
+                    rdfs:label "editor." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Dental Campus Association, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Dental Campus Association," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Quintessence Publishing Company, $e publisher." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Quintessence Publishing Company," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jung, Ronald, $e editor. $e Herausgeber. $4 edt" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jung, Ronald," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "Herausgeber." ],
+                [ a bf:Role ;
+                    rdfs:label "editor." ],
+                <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:duration "more than 999 minutes" ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "lectures." ;
+            bflc:marcKey "655  7 $a lectures. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300026673" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Lectures." ;
+            bflc:marcKey "655  0 $a Lectures." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Lectures." ;
+            bflc:marcKey "655  7 $a Lectures. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077255" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Conférences." ;
+            bflc:marcKey "655  7 $a Conférences. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001263" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1431006544> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/spe> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English dialogue."@en ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Dental Implants" ;
+            bflc:marcKey "650  2 $a Dental Implants" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D015921" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Dents Implantation." ;
+            bflc:marcKey "650  6 $a Dents $x Implantation." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Dents" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0318436" ] ] [ a bf:Topic ;
+                        rdfs:label "Implantation." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0318436" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Implants dentaires." ;
+            bflc:marcKey "650  6 $a Implants dentaires." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0031489" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Dental implants." ;
+            bflc:marcKey "650  0 $a Dental implants." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2099790" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Surgery, Oral" ;
+            bflc:marcKey "650  2 $a Surgery, Oral" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D013515" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Dental Implantation" ;
+            bflc:marcKey "650  2 $a Dental Implantation" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D003757" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "DVD 1. Initial exam -- DVD 2-3. Treatment planning -- DVD 4-6. Preparing for surgery -- DVD 7. Pre- and peri-operative soft tissue management -- DVD 8-12. Implant placement -- DVD 13. Post-operative soft tissue management -- DVD 14-15. Prosthetics -- DVD 16-17. Complications and long-term results." ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 13 $a Dental Campus curriculum implantology" ;
+            bf:mainTitle "Dental Campus curriculum implantology" ],
+        [ a bf:Title ;
+            rdfs:label "Curriculum implantology :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Curriculum implantology :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBXRxBkBg6JjYH7Q8RmQy> a bf:Person ;
+    rdfs:label "Hämmerle, Christoph. 1956-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "DE-588" ] ;
+            rdf:value "112913547" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBcdgDDyfXK4fYYGMwxKq> a bf:Person ;
+    rdfs:label "Nevins, Myron," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2663045" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBfTByfycGJp9WjVHqd43> a bf:Person ;
+    rdfs:label "Sanz, Mariano," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca397389" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjKPj9fjBdXkYkRGfDx343> a bf:Person ;
+    rdfs:label "Cooper, Lyndon F., 1958-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "DE-588" ] ;
+            rdf:value "1216140294" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjwWP8qm7qW8J4tK7kHWtC> a bf:Person ;
+    rdfs:label "Renouard, Franck," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4923227" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1431006544> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1431006544#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:copyrightDate "© 2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ] ;
+    bf:dimensions "12 cm, in Behältnis" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "17 videodiscs (44 h 14 min) ;"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9781786981028" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1431006544" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Quintessence Publishing Company" ] ;
+            rdf:value "C6500" ],
+        [ a bf:Isbn ;
+            rdf:value "1786981025" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGR9xHWcQRqc6WWYYttjbq> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"Lectures: Learning phases 1-8.\"--Container."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, PAL, NTSC (all regions); widescreen (16:9) presentation."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Modular training including CE credits.\"--Container."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Berlin ; Barcelona ; Chicago] $b Quintessence Publishing $c 2020" ;
+            bflc:simpleAgent "Quintessence Publishing" ;
+            bflc:simpleDate "2020" ;
+            bflc:simplePlace "[Berlin ; Barcelona ; Chicago]" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/gw> ] ;
+    bf:publicationStatement "[Berlin ; Barcelona ; Chicago] Quintessence Publishing 2020" ;
+    bf:responsibilityStatement "developed by Dental Campus ; editors (Implant Campus board): M. Araujo, L. Cooper, C. Hämmerle, R. Jung, M. Nevins, F. Renouard, M. Sanz." ;
+    bf:soundCharacteristic [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Curriculum implantology : modular training including CE credits : lectures : learning phases 1-8 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Curriculum implantology :" ;
+            bf:subtitle "modular training including CE credits : lectures : learning phases 1-8 /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ],
+        [ a bf:BroadcastStandard ;
+            rdfs:label "PAL"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/pal> ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/relators/edt> a bf:Role ;
+    bf:code "edt" .
+

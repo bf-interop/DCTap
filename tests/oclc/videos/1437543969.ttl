@@ -1,0 +1,465 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/classification/G3804.N4> a bf:Place .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/amim> a bf:DescriptionConventions ;
+    bf:code "amim" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/datasource> a bf:Relationship ;
+    rdfs:label "data source"@en .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1437543969#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20240605181803.4" ;
+    bf:creationDate "20240523" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/amim> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1437543969> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1437543969#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "Filmed on June 28, 1970, in New York, New York, from Sheridan Square to Sheep Meadow in Central Park."@en ],
+        [ a bf:Capture ;
+            bf:date "19700628" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ],
+        [ a bf:Capture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ;
+            bf:place <http://id.loc.gov/authorities/classification/G3804.N4> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Vincenz, Lilli, $e film producer, $e film director, $e cinematographer, $e film editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Vincenz, Lilli," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film editor." ],
+                [ a bf:Role ;
+                    rdfs:label "cinematographer," ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Witt, Clifton R., $d 1940-2017, $e cinematographer, $e film editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Witt, Clifton R., 1940-2017," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16170802" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film editor." ],
+                [ a bf:Role ;
+                    rdfs:label "cinematographer," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kameny, Frank, $d 1925-2011, $e onscreen participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Kameny, Frank, 1925-2011," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5038592" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "onscreen participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rivera, Sylvia, $d 1951-2002, $e onscreen participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Rivera, Sylvia, 1951-2002," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca10616705" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "onscreen participant." ] ] ;
+    bf:duration "PT12M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  7 $a Documentary films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866189" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-ny" ;
+            bf:code "n-us-ny" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-ny> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1437543969> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Onscreen participants: Sylvia Rivera, Frank Kameny."@en ;
+            bflc:marcKey "511 0  $a Onscreen participants: Sylvia Rivera, Frank Kameny." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Photography & editing, Clifton R. Witt, Lilli Vincenz ; production assistants, Marcelle Leet, Sybil Rosen, Tony Jackubosky, Art Stone, Joe Costa."@en ;
+            bflc:marcKey "508    $a Photography & editing, Clifton R. Witt, Lilli Vincenz ; production assistants, Marcelle Leet, Sybil Rosen, Tony Jackubosky, Art Stone, Joe Costa." ] ;
+    bf:originDate "1970"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Lccn ;
+                                    rdf:value " W1991430" ] ;
+                            bf:note [ a bf:Note ;
+                                    rdfs:label "AVCMS" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Gay and proud" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Gay and proud" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/datasource> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Lilli M. Vincenz Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Lilli M. Vincenz Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gay activists New York (State) New York." ;
+            bflc:marcKey "650  0 $a Gay activists $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gay activists" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3405114" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Défilés de la fierté gaie New York (État) New York." ;
+            bflc:marcKey "650  6 $a Défilés de la fierté gaie $z New York (État) $z New York." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Défilés de la fierté gaie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0361497" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (État)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Journée de la fierté gaie New York (État) New York." ;
+            bflc:marcKey "650  6 $a Journée de la fierté gaie $z New York (État) $z New York." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Journée de la fierté gaie" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000264595" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (État)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gay Pride Day New York (State) New York." ;
+            bflc:marcKey "650  0 $a Gay Pride Day $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gay Pride Day" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3351742" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gay liberation movement New York (State) New York." ;
+            bflc:marcKey "650  0 $a Gay liberation movement $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gay liberation movement" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2021422" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Activistes lesbiennes New York (État) New York." ;
+            bflc:marcKey "650  6 $a Activistes lesbiennes $z New York (État) $z New York." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Activistes lesbiennes" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0287201" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (État)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0468217" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Gay pride parades New York (State) New York." ;
+            bflc:marcKey "650  0 $a Gay pride parades $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Gay pride parades" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7300748" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Lesbian activists New York (State) New York." ;
+            bflc:marcKey "650  0 $a Lesbian activists $z New York (State) $z New York." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Lesbian activists" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4144669" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York (State)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] [ a bf:Geographic ;
+                        rdfs:label "New York." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241873" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Documentary short film featuring one of the earliest gay pride demonstration marches, the first Christopher Street Liberation Day March, held in New York, New York, on June 28, 1970, to commemorate the first anniversary of the Stonewall Riots. Covering about fifty blocks and drawing just a few thousand participants, it and marches like it held the same year in Chicago, San Francisco, and Los Angeles eventually led to hundreds of Pride parades throughout the world in the following decades."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Gay and proud /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Gay and proud /" ] .
+
+<https://id.oclc.org/worldcat/entity/1437543969> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1437543969#adminMetadata> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 video file (digital) (12 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2024603228" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1437543969" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1437543969#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Sources: Library of Congress NAVCC Now see hear! weblog, posted June 5, 2014, viewed May 24, 2024; Library of Congress digital collections today in history WWW site, viewed May 24, 2024; New York times WWW site, posted June 16, 2020 and updated June 3, 2021, viewed May 24, 2024."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "digital viewing copy"@en ] ;
+            bflc:marcKey "856 41 $3 digital viewing copy $d ntscrm $f 01991430 $u https://hdl.loc.gov/loc.mbrsmi/ntscrm.01991430" ;
+            bf:electronicLocator <http://hdl.loc.gov/loc.mbrsmi/ntscrm.01991430> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ],
+        [ a bf:Note ;
+            rdfs:label "Parts of summary from Library of Congress NAVCC Now see hear! weblog and New York times WWW site."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sd., b&w."@en ],
+        [ a bf:Note ;
+            rdfs:label "Activist Sylvia Rivera is seen dancing at 1:51; activist Frank Kameny is seen marching with the Mattachine Society of Washington."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $c [1970]" ;
+            bflc:simpleDate "[1970]" ;
+            bf:date "1970"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "[1970]" ;
+    bf:responsibilityStatement "produced & directed by Lilli Vincenz." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Gay and proud /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Gay and proud /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+

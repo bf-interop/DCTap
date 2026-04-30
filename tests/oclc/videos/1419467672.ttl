@@ -1,0 +1,490 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/mcolor/one> a bf:ColorContent ;
+    rdfs:label "one color"@en .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/mstatus/part> a bf:Status ;
+    rdfs:label "partial"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<https://id.oclc.org/worldcat/entity/1419467672#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20251011034944.6" ;
+    bf:creationDate "20240131" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1419467672> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1419467672#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HQ75.8.C74" ;
+            bf:itemPortion "A362 2017" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a FremantleMedia, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7TtTjyhhXFR4XpJQFg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7TtTjyhhXFR4XpJQFg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Lloyd-Pack, Roger, $d 1944-2014, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJx8C7CGJqvmgr8WhCfXh3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJx8C7CGJqvmgr8WhCfXh3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Thames Television, ltd., $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpTmHG6cMxWJDMtRghR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpTmHG6cMxWJDMtRghR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hurt, John, $d 1940-2017, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJdCtdxFqYcMbd4kWmP84q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdCtdxFqYcMbd4kWmP84q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hodge, Patricia, $d 1946- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJvmKQg3Hw7gQ8B7M7wwG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJvmKQg3Hw7gQ8B7M7wwG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Gold, Jack, $d 1930-2015, $e film director. $1 https://id.oclc.org/worldcat/entity/E39PBJcBTWVKdCFQJ93GfCYF8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJcBTWVKdCFQJ93GfCYF8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mackie, Philip, $e screenwirter. $1 https://id.oclc.org/worldcat/entity/E39PBJyrPMwBGjWqdXcj4pyPQq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyrPMwBGjWqdXcj4pyPQq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwirter." ] ] ;
+    bf:duration "PT1H18M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Adaptations cinématographiques." ;
+            bflc:marcKey "655  7 $a Adaptations cinématographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000013" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Made-for-TV movies." ;
+            bflc:marcKey "655  7 $a Made-for-TV movies. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866361" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Film adaptations." ;
+            bflc:marcKey "655  7 $a Film adaptations. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866235" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "History" ;
+            bflc:marcKey "655  7 $a History $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411628" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Biographical films." ;
+            bflc:marcKey "655  7 $a Biographical films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866080" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Historical films." ;
+            bflc:marcKey "655  7 $a Historical films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films biographiques." ;
+            bflc:marcKey "655  7 $a Films biographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000081" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Téléfilms." ;
+            bflc:marcKey "655  7 $a Téléfilms. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000158" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films historiques." ;
+            bflc:marcKey "655  7 $a Films historiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000093" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a e-uk---" ;
+            bf:code "e-uk---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/e-uk> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1419467672> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English dialogue; optional subtitles in English."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Certificate 15."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Photography, Mike Fash; editor, Mike Taylor; music, Carl Davis."@en ;
+            bflc:marcKey "508    $a Photography, Mike Fash; editor, Mike Taylor; music, Carl Davis." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "John Hurt, Patricia Hodge, Roger Lloyd-Pack, Liz Gebhardt.."@en ;
+            bflc:marcKey "511 1  $a John Hurt, Patricia Hodge, Roger Lloyd-Pack, Liz Gebhardt.." ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Crisp, Quentin, 1908-1999. Naked civil servant." ;
+                    bflc:marcKey "700 1  $i Motion picture adaptation of (work): $a Crisp, Quentin, $d 1908-1999. $t Naked civil servant." ;
+                    bf:contribution [ a bf:Contribution ;
+                            bf:agent [ a bf:Person ;
+                                    rdfs:label "Crisp, Quentin, 1908-1999." ;
+                                    bf:identifiedBy [ a bf:Local ;
+                                            bf:assigner [ a bf:Organization ;
+                                                    bf:code "OCoLC" ] ;
+                                            rdf:value "oca296777" ] ] ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Naked civil servant." ;
+                            bf:mainTitle "Naked civil servant." ] ] ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Motion picture adaptation of (work):" ],
+                <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "600 10 $a Crisp, Quentin, $d 1908-1999 $v Film adaptations." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Person ;
+                        rdfs:label "Crisp, Quentin, 1908-1999" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca296777" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Film adaptations." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8436204" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Homosexuality" ;
+            bflc:marcKey "650  7 $a Homosexuality $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00959755" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            bflc:marcKey "600 10 $a Crisp, Quentin, $d 1908-1999 $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Person ;
+                        rdfs:label "Crisp, Quentin, 1908-1999" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca296777" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Homosexuality Great Britain History Drama." ;
+            bflc:marcKey "650  0 $a Homosexuality $z Great Britain $x History $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Homosexuality" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2079844" ] ] [ a bf:Topic ;
+                        rdfs:label "History" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5037142" ] ] [ a bf:Geographic ;
+                        rdfs:label "Great Britain" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca256912" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJd3GRjbJCgG3hkQmRVt8C>,
+        <https://id.oclc.org/worldcat/entity/E39PBJdmp7p3cx8hpmJ8HvmTpP> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The story of Quentin Crisp trying to live openly as a homosexual in conservative pre-war Britain."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Special features include: commentary with John Hurt, Jack Gold and producer Verity Lambert." ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/part> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The naked civil servant /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The naked civil servant /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcBTWVKdCFQJ93GfCYF8C> a bf:Person ;
+    rdfs:label "Gold, Jack, 1930-2015," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2678946" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJd3GRjbJCgG3hkQmRVt8C> a bf:Person ;
+    rdfs:label "Crisp, Quentin, 1908-1999" ;
+    bflc:marcKey "600 17 $a Crisp, Quentin, $d 1908-1999 $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJd3GRjbJCgG3hkQmRVt8C" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst00037247" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdCtdxFqYcMbd4kWmP84q> a bf:Person ;
+    rdfs:label "Hurt, John, 1940-2017," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1773408" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdmp7p3cx8hpmJ8HvmTpP> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Great Britain" ;
+    bflc:marcKey "651  7 $a Great Britain $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJdmp7p3cx8hpmJ8HvmTpP" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204623" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJvmKQg3Hw7gQ8B7M7wwG3> a bf:Person ;
+    rdfs:label "Hodge, Patricia, 1946-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2895086" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJx8C7CGJqvmgr8WhCfXh3> a bf:Person ;
+    rdfs:label "Lloyd-Pack, Roger, 1944-2014," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5726608" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyrPMwBGjWqdXcj4pyPQq> a bf:Person ;
+    rdfs:label "Mackie, Philip," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6194920" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpTmHG6cMxWJDMtRghR> a bf:Organization ;
+    rdfs:label "Thames Television, ltd.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca115109" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7TtTjyhhXFR4XpJQFg> a bf:Organization ;
+    rdfs:label "FremantleMedia," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6700780" ] .
+
+<https://id.oclc.org/worldcat/entity/1419467672> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1419467672#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/one> ;
+    bf:copyrightDate "©2017"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (78 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1419467672" ],
+        [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Fremantle Media International" ] ;
+            rdf:value "7954667" ],
+        [ a bf:Upc ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "50276264766749" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1419467672#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally broadcast in 1975."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD, PAL, Region 2; full screen (1.33:1) presentation; Dolby Digital mono."@en ],
+        [ a bf:Note ;
+            rdfs:label "Based on the autobiography by Quentin Crisp."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [London, England] : $b Fremantle Media International, $c [2017]" ;
+            bflc:simpleAgent "Fremantle Media International," ;
+            bflc:simpleDate "[2017]" ;
+            bflc:simplePlace "[London, England] :" ;
+            bf:date "2017"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ] ;
+    bf:publicationStatement "[London, England] : Fremantle Media International, [2017]" ;
+    bf:responsibilityStatement "Thames Television presents ; screenplay by Philip Mackie ; producer, Barry Hanson ; director, Jack Gold." ;
+    bf:soundCharacteristic <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The naked civil servant /" ;
+            bflc:nonSortNum "4" ;
+            bf:mainTitle "The naked civil servant /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

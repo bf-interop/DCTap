@@ -1,0 +1,413 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/relatedwork> a bf:Relationship .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1458292066#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011183620.4" ;
+    bf:creationDate "20240924" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1458292066> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1458292066#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            bf:date "200609--" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ],
+        [ a bf:Capture ;
+            rdfs:label "Recorded live in September 2006 at the Palace of Charles V in the Alhambra in Granada, Spain."@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "DVE8966(viewingcopy)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Quinlan Road Limited, $e film distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpyBwQ7gTYW8vm3GJc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpyBwQ7gTYW8vm3GJc6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film distributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Knowles, Julia $c (Television director), $e television director. $1 https://id.oclc.org/worldcat/entity/E39PCjBVQDpftF8HMvhK3BK9cK" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBVQDpftF8HMvhK3BK9cK> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television director." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hutchinson, Su, $e television producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hutchinson, Su," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "television producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McKennitt, Loreena, $d 1957- $e performer. $1 https://id.oclc.org/worldcat/entity/E39PBJxCwBKKfj3vg6VMfCBgKd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxCwBKKfj3vg6VMfCBgKd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "performer." ] ] ;
+    bf:duration "PT1H39M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Television programs"@en ;
+            bflc:marcKey "380    $a Television programs $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction television programs." ;
+            bflc:marcKey "655  7 $a Nonfiction television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866405" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Émissions télévisées autres que de fiction." ;
+            bflc:marcKey "655  7 $a Émissions télévisées autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000019" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concerts télévisés." ;
+            bflc:marcKey "655  7 $a Concerts télévisés. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000237" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Concert television programs." ;
+            bflc:marcKey "655  7 $a Concert television programs. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866152" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1458292066> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Performer: Loreena McKennitt, with accompanying musicians."@en ;
+            bflc:marcKey "511 0  $a Performer: Loreena McKennitt, with accompanying musicians." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Sung in English with optional subtitles."@en ] ;
+    bf:originDate "2007"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work,
+                        oclcbf:AddedEntry ;
+                    rdfs:label "Great performances (WNET (Television station : New York, N.Y.))" ;
+                    bflc:marcKey "730 0  $a Great performances (WNET (Television station : New York, N.Y.))" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca1858326" ] ;
+                    bf:title [ a bf:Title ;
+                            rdfs:label "Great performances (WNET (Television station : New York, N.Y.))" ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Great performances (WNET (Television station : New York, N.Y.))" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/relatedwork> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "New Age music." ;
+            bflc:marcKey "650  0 $a New Age music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2070053" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Harp music." ;
+            bflc:marcKey "650  0 $a Harp music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2056359" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique du Nouvel Âge." ;
+            bflc:marcKey "650  6 $a Musique du Nouvel Âge." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0173760" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Musique celtique." ;
+            bflc:marcKey "650  6 $a Musique celtique." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0313658" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Harpe, Musique de." ;
+            bflc:marcKey "650  6 $a Harpe, Musique de." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0005764" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Celtic music." ;
+            bflc:marcKey "650  0 $a Celtic music." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca4749208" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"An enchanting musical performance, set beneath the stars in the breathtaking Moorish heart of medieval Spain. Captured in concert in September 2006, singer/composer Loreena McKennitt leads viewers through the multi-textured landscapes of her catalogue, from traditional Celtic ballads to literary narratives and highlights from her latest recording, An ancient muse. Filmed in rich HDTV, Nights from the Alhambra evokes the otherworldly magic of Granada's palace of dreams, the fiery and inspired performances of a stellar cast of supporting musicians and, of course, the unforgettable voice and songs of Loreena McKennitt herself\"--Container."@en ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "The mystic's dream -- She moved through the fair -- Stolen child -- The mummers' dance -- Penelope's song -- Marco Polo -- The bonny swans -- Dante's prayer -- Caravanserai -- Bonny Portmore -- Santiago -- Raglan Road -- All souls night -- The lady of Shalott -- The old ways -- Never-ending road (amhrán duit) (encore) -- Huron 'Beltane' fire dance -- Cymbeline." ] ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a Nights from the Alhambra" ;
+            bf:mainTitle "Nights from the Alhambra" ],
+        [ a bf:Title ;
+            rdfs:label "Loreena McKennitt: Nights from the Alhambra /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Loreena McKennitt: Nights from the Alhambra /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxCwBKKfj3vg6VMfCBgKd> a bf:Person ;
+    rdfs:label "McKennitt, Loreena, 1957-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3870002" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBVQDpftF8HMvhK3BK9cK> a bf:Person ;
+    rdfs:label "Knowles, Julia (Television director)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca12441414" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpyBwQ7gTYW8vm3GJc6> a bf:Organization ;
+    rdfs:label "Quinlan Road Limited," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9234330" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> a bf:Organization ;
+    rdfs:label "Copyright Collection (Library of Congress)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1580830" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1458292066> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1458292066#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "DLC" ] ;
+            bflc:marcKey "710 2  $a Copyright Collection (Library of Congress) $1 https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqdXx3qy7rPB3wH6pqF> ] ;
+    bf:copyrightDate "©2007"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "all regions"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/all> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:distributionStatement "Stratford, Ontario : Quinlan Road Limited, [2007]" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (approximately 99min.) :"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ] ;
+    bf:identifiedBy [ a bf:VideoRecordingNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Quinlan Road Limited" ] ;
+            rdf:value "QRDVD2-PBS-N" ],
+        [ a bf:CopyrightNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "U.S. Copyright Office" ] ;
+            rdf:value "PA0001725444" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1458292066" ],
+        [ a bf:Lccn ;
+            rdf:value "  2024603454" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1458292066#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "viewing copy"@en ] ],
+        [ a bf:Note ;
+            rdfs:label "Title from container."@en ],
+        [ a bf:Note ;
+            rdfs:label "Sources used: videodisc container; Copyright catalog online; Internet movie database WWW site, viewed September 24, 2024."@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally broadcast on television as an episode of the PBS series Great performances on March 3, 2007."@en ],
+        [ a bf:Note ;
+            rdfs:label "Partially viewed."@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Canada."@en ;
+            bflc:marcKey "257    $a Canada. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Stratford, Ontario] : $b Perseus Productions, Inc., $c [2007]" ;
+            bflc:simpleAgent "Perseus Productions, Inc.," ;
+            bflc:simpleDate "[2007]" ;
+            bflc:simplePlace "[Stratford, Ontario] :" ;
+            bf:date "2007"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/onc> ],
+        [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a Stratford, Ontario : $b Quinlan Road Limited, $c [2007]" ;
+            bflc:simpleAgent "Quinlan Road Limited," ;
+            bflc:simpleDate "[2007]" ;
+            bflc:simplePlace "Stratford, Ontario :" ;
+            bf:date "2007"^^<http://id.loc.gov/datatypes/edtf> ] ;
+    bf:publicationStatement "[Stratford, Ontario] : Perseus Productions, Inc., [2007]" ;
+    bf:responsibilityStatement "Perseus Productions, Inc. ; director, Julia Knowles ; producers, Su Hutchinson, David Rosen." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Loreena McKennitt: Nights from the Alhambra /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Loreena McKennitt: Nights from the Alhambra /" ] ;
+    bf:videoCharacteristic [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rda" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+

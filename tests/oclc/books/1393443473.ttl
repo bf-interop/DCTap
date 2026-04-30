@@ -1,0 +1,192 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/maudience/spe> a bf:IntendedAudience ;
+    rdfs:label "specialized"@en ;
+    bf:code "spe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<https://id.oclc.org/worldcat/entity/1393443473#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250814064533.3" ;
+    bf:creationDate "20230628" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Unknown"@en ;
+            bf:code "u" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "UKAHL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d UKAHL $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1393443473> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCG6F6tc6vj74hMPM7xBJQq> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "621.382/4" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3D6fwYkrJYPTkXmYvXbCGVdrv> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Gregson, Stuart ," ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Gregson, Stuart ," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McCormick, John." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "McCormick, John." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Parini, Clive." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Parini, Clive." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1393443473> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/spe> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Electromagnetic waves." ;
+                    bflc:marcKey "830  0 $a Electromagnetic waves." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca4208123" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Electromagnetic waves." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Electromagnetic Waves" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Electromagnetic Waves" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This expanded and updated second edition with full colour images provides a comprehensive introduction and explanation of both the theory and practice of planar near-field antenna measurement, from its basic postulates and assumptions, to the intricacies of its deployment in complex and demanding measurement scenarios. The book initially examines the properties of antennas that allow them to enhance the free space interaction of electronic systems and this leads into a full description of the theory of planar near-field scanning. The utility of the planar methodology is illustrated with example measurement campaigns that include discussion of the characterisation of a wide range of antennas. The second edition brings the text right up to date. Advanced techniques including non-canonical transforms, scattering suppression techniques, equivalent current based diagnostics, extrapolation range measurements, use of multi-axis industrial robots and UAV drones for data acquisition are now included, together with a greatly expanded treatment of uncertainty analysis and planar range assessment. A large number of near-field facilities exist worldwide but to the authors' knowledge no single text provides a clear step-by-step description of all the details of the planar near-field measurement technique. All three authors have spent a significant proportion of their professional careers involved with antenna measurements and the aim of this text is to provide the reader with a complete, comprehensive, and practical text that will act as a single reference for all aspects of the measurement technique. Principles of Planar Near-Field Antenna Measurements, 2nd Edition is aimed at electromagnetics students, researchers and professionals, especially those concerned with electromagnetics metrology."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Principles of Planar Near-Field Antenna Measurements  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Principles of Planar Near-Field Antenna Measurements  /" ] .
+
+<https://id.oclc.org/worldcat/entity/1393443473> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1393443473#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:editionStatement "2nd ed." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (634 p.)."@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9781839537004" ],
+        [ a bf:Doi ;
+            rdf:value "10.1049/SBEW566E" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1393443473" ],
+        [ a bf:Isbn ;
+            rdf:value "1839537000" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG6F6tc6vj74hMPM7xBJQq> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://www.vlebooks.com/vleweb/product/openreader?id=none&isbn=9781839537004" ;
+            bf:electronicLocator <http://www.vlebooks.com/vleweb/product/openreader?id=none&isbn=9781839537004> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://www.vlebooks.com/vleweb/product/openreader?id=none&isbn=9781837244515" ;
+            bf:electronicLocator <http://www.vlebooks.com/vleweb/product/openreader?id=none&isbn=9781837244515> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "Collection: IET e-books" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://doi.org/10.1049/SBEW566E $y IET Digital Library $x Provider: IET $x Collection: IET e-books $x purchased $x eLoaderURL $x id4 $x idSBEW566E" ;
+            bf:electronicLocator <http://doi.org/10.1049/SBEW566E> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: IET"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "IET Digital Library"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Stevenage : $b SciTech Publishing Inc., $c 2023." ;
+            bflc:simpleAgent "SciTech Publishing Inc.," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "Stevenage :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ] ;
+    bf:publicationStatement "Stevenage : SciTech Publishing Inc., 2023." ;
+    bf:responsibilityStatement "Gregson, McCormick and Parini." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Principles of Planar Near-Field Antenna Measurements  /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Principles of Planar Near-Field Antenna Measurements  /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

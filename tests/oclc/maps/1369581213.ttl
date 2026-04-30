@@ -1,0 +1,410 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G4184.B55:2E4> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4184 $b B55:2E4" ;
+    bf:code "4184.B55:2E4" .
+
+<http://id.loc.gov/authorities/classification/G4262.P62> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 4262 $b P62" ;
+    bf:code "4262.P62" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/classSchemes/sudocs> a bf:Source ;
+    rdfs:label "Superintendent of Documents classification system"@en ;
+    bf:code "sudocs" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/f> a bflc:GovernmentPubType ;
+    rdfs:label "federal"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mprojection/bh> a bf:Projection ;
+    rdfs:label "Transverse Mercator"@en ;
+    bf:code "bh" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/organizations/dgpo> a bf:Organization ;
+    bf:code "dgpo" .
+
+<https://id.oclc.org/worldcat/entity/1369581213#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250920054759.1" ;
+    bf:creationDate "20230109" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d OCLCL $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1369581213> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1369581213#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/f> ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:projection <http://id.loc.gov/vocabulary/mprojection/bh> ],
+        [ a bf:Cartographic ;
+            bf:coordinates "W1030400 W1025900 N0440800 N0440700" ],
+        [ a bf:Cartographic ;
+            bf:coordinates "(W 103°04ʹ00\"--W 102°59ʹ00\"/N 44°08ʹ00\"--N 44°07ʹ00\")." ],
+        [ a bf:Cartographic ;
+            bf:projection [ a bf:Projection ;
+                    rdfs:label "universal transverse Mercator projection" ] ] ;
+    bf:classification [ a bf:Classification ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ;
+            rdf:value "I 19.91/3:3497" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ],
+        [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Geological Survey (U.S.), $e cartographer. $1 https://id.oclc.org/worldcat/entity/E39QQPVp83d4Vy7x8MF6BhTJc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp83d4Vy7x8MF6BhTJc6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Medler, Colton J., $d 1995- $e cartographer. $1 https://id.oclc.org/worldcat/entity/E39PCjFmwjHF7B9gKDPDV8JrG3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjFmwjHF7B9gKDPDV8JrG3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Air Force Civil Engineering Center (U.S.) $1 https://id.oclc.org/worldcat/entity/E39QH7Jmrr6GDQTbmdKcDfddp6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmrr6GDQTbmdKcDfddp6> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps." ;
+            bflc:marcKey "655  7 $a Maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866367" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Cartes géographiques." ;
+            bflc:marcKey "655  7 $a Cartes géographiques. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000197" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-sd" ;
+            bf:code "n-us-sd" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-sd> ],
+        <http://id.loc.gov/authorities/classification/G4184.B55:2E4>,
+        <http://id.loc.gov/authorities/classification/G4262.P62> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1369581213> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Scientific investigations map ;" ;
+                    bflc:marcKey "830  0 $a Scientific investigations map ; $v 3497." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca6356324" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Scientific investigations map ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "3497." ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Scientific investigations map ; $v 3497" ;
+                    bf:seriesEnumeration "3497" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Scientific investigations map ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scale not given ;" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Geophysical surveys" ;
+            bflc:marcKey "650  7 $a Geophysical surveys $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01746691" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Ellsworth Air Force Base (S.D.) Maps." ;
+            bflc:marcKey "651  0 $a Ellsworth Air Force Base (S.D.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Ellsworth Air Force Base (S.D.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3827302" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "South Dakota Ellsworth Air Force Base" ;
+            bflc:marcKey "651  7 $a South Dakota $z Ellsworth Air Force Base $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "South Dakota" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01271967" ] ] [ a bf:Geographic ;
+                        rdfs:label "Ellsworth Air Force Base" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01271967" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Geophysical surveys South Dakota Ellsworth Air Force Base." ;
+            bflc:marcKey "650  0 $a Geophysical surveys $z South Dakota $z Ellsworth Air Force Base." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Geophysical surveys" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7940251" ] ] [ a bf:Geographic ;
+                        rdfs:label "South Dakota" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3827302" ] ] [ a bf:Geographic ;
+                        rdfs:label "Ellsworth Air Force Base." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3827302" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Geophysics" ;
+            bflc:marcKey "650  7 $a Geophysics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00941002" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Pierre Shale Maps." ;
+            bflc:marcKey "651  0 $a Pierre Shale $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Pierre Shale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca10187542" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Geophysics South Dakota Ellsworth Air Force Base." ;
+            bflc:marcKey "650  0 $a Geophysics $z South Dakota $z Ellsworth Air Force Base." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Geophysics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025032" ] ] [ a bf:Geographic ;
+                        rdfs:label "South Dakota" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3827302" ] ] [ a bf:Geographic ;
+                        rdfs:label "Ellsworth Air Force Base." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3827302" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Delineating the Pierre Shale from geophysical surveys East and Southeast of Ellsworth Air Force Base, South Dakota, 2021 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Delineating the Pierre Shale from geophysical surveys East and Southeast of Ellsworth Air Force Base, South Dakota, 2021 /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjFmwjHF7B9gKDPDV8JrG3> a bf:Person ;
+    rdfs:label "Medler, Colton J., 1995-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca14116980" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmrr6GDQTbmdKcDfddp6> a bf:Organization ;
+    rdfs:label "Air Force Civil Engineering Center (U.S.)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2410833" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp83d4Vy7x8MF6BhTJc6> a bf:Organization ;
+    rdfs:label "Geological Survey (U.S.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca473269" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<https://id.oclc.org/worldcat/entity/1369581213> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1369581213#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (3 maps) :"@en ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dgpo> ;
+            rdf:value "0619-G-33 (online)" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1369581213" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1369581213#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://purl.fdlp.gov/GPO/gpo190576 $7 0" ;
+            bf:electronicLocator <http://purl.fdlp.gov/GPO/gpo190576> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes location maps and 17 transects."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references in pamphlet (pages 14-15)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on online resource; title from PDF pamphlet title page (USGS, viewed Jan. 9, 2023)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Reston, Virginia : $b U.S. Department of the Interior, U.S. Geological Survey, $c 2022." ;
+            bflc:simpleAgent "U.S. Department of the Interior, U.S. Geological Survey," ;
+            bflc:simpleDate "2022." ;
+            bflc:simplePlace "Reston, Virginia :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/vau> ] ;
+    bf:publicationStatement "Reston, Virginia : U.S. Department of the Interior, U.S. Geological Survey, 2022." ;
+    bf:responsibilityStatement "by Colton J. Medler ; prepared in cooperation with U.S. Air Force Civil Engineering Center." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Delineating the Pierre Shale from geophysical surveys East and Southeast of Ellsworth Air Force Base, South Dakota, 2021 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Delineating the Pierre Shale from geophysical surveys East and Southeast of Ellsworth Air Force Base, South Dakota, 2021 /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

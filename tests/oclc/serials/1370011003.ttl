@@ -1,0 +1,269 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm ;
+    rdfs:label "Conference papers and proceedings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/ann> a bf:Frequency ;
+    rdfs:label "annual"@en ;
+    bf:code "ann" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/msc> a bf:DescriptionAuthentication ;
+    bf:code "msc" .
+
+<http://id.loc.gov/vocabulary/marcauthen/nsdp> a bf:DescriptionAuthentication ;
+    bf:code "nsdp" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Script ;
+    rdfs:label "Basic roman"@en ;
+    bf:code "a" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/nuba> a bf:Status ;
+    rdfs:label "not used by assigner" ;
+    bf:code "nuba" .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1370008932#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "International Scientific-Professional Conference on Information Technology." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:Lccn ;
+                    rdf:value "  2023201747" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1370008932" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "International Scientific-Professional Conference on Information Technology" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2836-371X" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "International Scientific-Professional Conference on Information Technology" ] .
+
+<https://id.oclc.org/worldcat/entity/1370011003#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20250618081437.8" ;
+    bf:creationDate "20230214" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/msc>,
+        <http://id.loc.gov/vocabulary/marcauthen/nsdp> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d DLC $d OCLCL" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1370011003> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1370011003#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "004" ;
+            bf:edition "abridged" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230213" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3crFxr84MQkDt9mHBYTvbkPCB> ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "ISSN RECORD" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/nuba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "111 2  $a International Conference on Information Technology (Žabljak, Žabljak, Montenegro)" ;
+            bf:agent [ a bf:Meeting ;
+                    rdfs:label "International Conference on Information Technology (Žabljak, Žabljak, Montenegro)" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1370011003> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "1" ] ;
+            rdf:value "2836-3736" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1370008932#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ],
+        [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1370011078#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a IT" ;
+            bf:mainTitle "IT" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a Information Technology" ;
+            bf:mainTitle "Information Technology" ],
+        [ a bf:AbbreviatedTitle ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "issnkey" ] ;
+            bf:mainTitle "Intern. Conf. Inf. Technol." ;
+            bf:qualifier "(Piscataway, N.J. Print)" ],
+        [ a bf:Title ;
+            rdfs:label "International Conference on Information Technology." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Technology." ],
+        [ a bf:KeyTitle ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Technology" ;
+            bf:qualifier "(Piscataway, N.J. Print)" ] .
+
+<https://id.oclc.org/worldcat/entity/1370011078#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "International Conference on Information Technology (Žabljak, Žabljak, Montenegro)." ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "1370011078" ],
+                [ a bf:Lccn ;
+                    rdf:value "  2023201750" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "International Conference on Information Technology" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "2836-3744" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "International Conference on Information Technology" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1370011003> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1370011003#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:distributionStatement "Red Hook, NY : Available from Curran Associates" ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual"@en ;
+            bflc:marcKey "310    $a Annual" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/ann> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1370011003" ],
+        [ a bf:Lccn ;
+            rdf:value "  2023201749" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1370011003#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with: 24th (2020)"@en ],
+        [ a bf:Note ;
+            rdfs:label "Not to be confused with proceedings of conferences of the same name also published by IEEE (See LCCN: 2010204078 and LCCN 2019204147)"@en ;
+            bflc:applicableInstitution <http://id.loc.gov/vocabulary/organizations/dlc> ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 41 $u https://ieeexplore.ieee.org/xpl/conhome/1825524/all-proceedings $z Listed with issues of former conference title" ;
+            bf:electronicLocator <http://ieeexplore.ieee.org/xpl/conhome/1825524/all-proceedings> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Listed with issues of former conference title"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: 24th (2020) ; title from title page (surrogate)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: 26th (2022) (surrogate)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Piscataway, NJ : $b IEEE" ;
+            bflc:simpleAgent "IEEE" ;
+            bflc:simplePlace "Piscataway, NJ :" ;
+            bf:date "2020/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nju> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a Red Hook, NY : $b Available from Curran Associates" ;
+            bflc:simpleAgent "Available from Curran Associates" ;
+            bflc:simplePlace "Red Hook, NY :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ] ;
+    bf:publicationStatement "Piscataway, NJ : IEEE" ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u https://www.proceedings.com/ $z Search \"IT\"" ;
+            bf:electronicLocator <http://www.proceedings.com> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Search \"IT\""@en ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "International Conference on Information Technology." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "International Conference on Information Technology." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent,
+        bf:Organization ;
+    bf:code "DLC" .
+

@@ -1,0 +1,97 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1357034932#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250607161539.8" ;
+    bf:creationDate "20230104" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Unknown"@en ;
+            bf:code "u" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1357034932> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCGkHDwmJKRvC6Xdbcm7yMK> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "302" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230216" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E487V9xcrWVMYJjfYv4FqvXpmt> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "HM1111 .B756 2021" ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Brodkin, Edward." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Brodkin, Edward." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1357034932> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "MISSING EACH OTHER." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "MISSING EACH OTHER." ] .
+
+<https://id.oclc.org/worldcat/entity/1357034932> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1357034932#adminMetadata> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1357034932" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCGkHDwmJKRvC6Xdbcm7yMK> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $b PUBLIC AFFAIRS $c 2021." ;
+            bflc:simpleAgent "PUBLIC AFFAIRS" ;
+            bflc:simpleDate "2021." ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "PUBLIC AFFAIRS 2021." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "MISSING EACH OTHER." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "MISSING EACH OTHER." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

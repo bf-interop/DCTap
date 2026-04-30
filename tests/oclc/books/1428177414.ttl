@@ -1,0 +1,456 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1400097776#work> a bf:Work ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lefebvre, Henri,1901-1991" ] ] ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:editionStatement "New edition" ;
+            bf:identifiedBy [ a bf:Isbn ;
+                    rdf:value "9781000964943" ],
+                [ a bf:OclcNumber ;
+                    rdf:value "1400097776" ] ;
+            bf:provisionActivityStatement "Abingdon, Oxon ; New York, NY : Routledge Classics, 2024" ] .
+
+<https://id.oclc.org/worldcat/entity/1428177414#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20260305225326.5" ;
+    bf:creationDate "20240328" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCG" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d CUV $d OCLCQ $d OCLCL $d OCLCG $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1428177414> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJm4RKtqBhHWWbMq4trwmd> a bf:Person ;
+    rdfs:label "Shields, Rob, 1961-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca2688940" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFHTPVCJRVWRJt9dq3B49C> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "909.82" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "19/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3Xp86FgtTXQKTkqtbxQTyrbhC> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "CB427" ;
+            bf:itemPortion ".L413 2024" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Shields, Rob, $d 1961- $e writer of foreword. $1 https://id.oclc.org/worldcat/entity/E39PBJm4RKtqBhHWWbMq4trwmd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJm4RKtqBhHWWbMq4trwmd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Lefebvre, Henri, $d 1901-1991, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJdx4jQBtVj8hBHYXgDH4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdx4jQBtVj8hBHYXgDH4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Revol, Claire, $d 1986- $e writer of foreword." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Revol, Claire, 1986-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16029743" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword." ] ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Vie quotidienne dans le monde moderne. English" ;
+            bflc:marcKey "240 10 $a Vie quotidienne dans le monde moderne. $l English" ;
+            bf:contribution [ a bf:PrimaryContribution ;
+                    bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdx4jQBtVj8hBHYXgDH4q> ;
+                    bf:role [ a bf:Role ;
+                            rdfs:label "author." ] ] ;
+            bf:language [ a bf:Language ;
+                    rdfs:label "English" ] ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Vie quotidienne dans le monde moderne." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1428177414> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "fre" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ] ] ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a Routledge classics" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Routledge classics" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Routledge classics." ;
+                    bflc:marcKey "830  0 $a Routledge classics." ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca5501049" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Routledge classics." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/1400097776#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Online version"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Temporal ;
+            rdfs:label "Since 1900" ;
+            bflc:marcKey "648  7 $a Since 1900 $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Social history Philosophy" ;
+            bflc:marcKey "650  7 $a Social history $x Philosophy $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Social history" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01122511" ] ] [ a bf:Topic ;
+                        rdfs:label "Philosophy" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst01122511" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Culture." ;
+            bflc:marcKey "650  0 $a Culture." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2068372" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Histoire sociale 20e siècle Philosophie." ;
+            bflc:marcKey "650  6 $a Histoire sociale $y 20e siècle $x Philosophie." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Histoire sociale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0068360" ] ] [ a bf:Topic ;
+                        rdfs:label "Philosophie." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0380041" ] ] [ a bf:Temporal ;
+                        rdfs:label "20e siècle" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0068360" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Social history 20th century Philosophy." ;
+            bflc:marcKey "650  0 $a Social history $y 20th century $x Philosophy." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Social history" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2121620" ] ] [ a bf:Topic ;
+                        rdfs:label "Philosophy." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155910" ] ] [ a bf:Temporal ;
+                        rdfs:label "20th century" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2121620" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Civilisation 1950-" ;
+            bflc:marcKey "650  6 $a Civilisation $y 1950-" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Civilisation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0036902" ] ] [ a bf:Temporal ;
+                        rdfs:label "1950-" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0036902" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Culture" ;
+            bflc:marcKey "650  7 $a Culture $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00885059" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Sociología de la cultura" ;
+            bflc:marcKey "650  7 $a Sociología de la cultura $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ],
+        [ a bf:Topic ;
+            rdfs:label "Civilization, Modern" ;
+            bflc:marcKey "650  7 $a Civilization, Modern $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00863073" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Civilización moderna 1950-" ;
+            bflc:marcKey "650  7 $a Civilización moderna $y 1950- $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Civilización moderna" ] [ a bf:Temporal ;
+                        rdfs:label "1950-" ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Civilization, Modern 1950-" ;
+            bflc:marcKey "650  0 $a Civilization, Modern $y 1950-" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Civilization, Modern" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2008477" ] ] [ a bf:Temporal ;
+                        rdfs:label "1950-" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2008477" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Historia social S.XX Filosofía" ;
+            bflc:marcKey "650  7 $a Historia social $y S.XX $x Filosofía $2 embne" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/embne> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Historia social" ] [ a bf:Topic ;
+                        rdfs:label "Filosofía" ] [ a bf:Temporal ;
+                        rdfs:label "S.XX" ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Philosopher, sociologist and urban theorist, Henri Lefebvre (1901-1991) was one of the great social theorists of the twentieth century and pioneered the theorization of everyday life and space. In this fascinating book, which became a manifesto for urban activism upon its first publication in the 1960s, Lefebvre poses a major question: what gives a society undergoing constant change the illusion of stability? For Lefebvre, the answer is that our everyday lives are the product of decisions from which we are alienated, resulting in what he memorably describes as 'terror-enforced passivity'. Modern capitalism produces and controls the space around us: the buildings we work in, the roads we drive on and even the parks surrounding us are artificial and controlled, isolating the individual in a life of repetition. Lefebvre rejects such a world of control and monotony, urging instead a spontaneous, utopian creativity, in which human beings can engage in meaningful work and leisure. Profound and prophetic for its insights into the impact of capitalism and urbanization, Everyday Life in the Modern World remains a classic work by a towering thinker and essential reading today. This Routledge Classics edition includes a new Foreword by Claire Revol and Rob Shields\"-- Provided by publisher"@en ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "An inquiry, and some discoveries -- The bureaucratic society of controlled consumption -- Linguistic phenomena -- Terrorism and everyday life -- Towards a permanent cultural revolution." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Everyday life in the modern world" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Everyday life in the modern world" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1428177414> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1428177414#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:copyrightDate "©2024"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:editionStatement "New edition" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (xx, 223 pages)"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "paperback" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781032533933" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardcover" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781032533940" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "9781000964929" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "9781000964943" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "1000964922" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1428177414" ],
+        [ a bf:Isbn ;
+            bf:qualifier "electronic book" ;
+            rdf:value "1000964949" ],
+        [ a bf:Doi ;
+            rdf:value "10.4324/9781003411833" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFHTPVCJRVWRJt9dq3B49C> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Taylor & Francis"@en ] ;
+            bflc:marcKey "856 40 $3 Taylor & Francis $u https://doi.org/10.4324/9781003411833 $7 1" ;
+            bf:electronicLocator <http://doi.org/10.4324/9781003411833> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note ;
+            rdfs:label "Translated from the French"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Print version record"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Abingdon, Oxon $b Routledge Classics $c 2024" ;
+            bflc:simpleAgent "Routledge Classics" ;
+            bflc:simpleDate "2024" ;
+            bflc:simplePlace "Abingdon, Oxon" ;
+            bf:date "2024"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a New York, NY $c 2024" ;
+            bflc:simpleDate "2024" ;
+            bflc:simplePlace "New York, NY" ] ;
+    bf:publicationStatement "Abingdon, Oxon Routledge Classics 2024",
+        "New York, NY 2024" ;
+    bf:responsibilityStatement "Henri Lefebvre ; with a new foreword by Claire Revol and Rob Shields" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Everyday life in the modern world" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Everyday life in the modern world" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdx4jQBtVj8hBHYXgDH4q> a bf:Person ;
+    rdfs:label "Lefebvre, Henri, 1901-1991,",
+        "Lefebvre, Henri, 1901-1991, " ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca419127" ],
+        [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca419127" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/embne> a bf:Source ;
+    bf:code "embne" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

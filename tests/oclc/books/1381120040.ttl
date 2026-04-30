@@ -1,0 +1,391 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/millus/por> a bf:Illustration ;
+    rdfs:label "portraits"@en ;
+    bf:code "por" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index"@en ;
+    bf:code "index" .
+
+<http://id.loc.gov/vocabulary/nationalbibschemes/bnb> a bf:Source ;
+    bf:code "bnb" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/otheredition> a bf:Relationship ;
+    rdfs:label "other edition"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1381120040#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20240920164547.5" ;
+    bf:creationDate "20230517" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "MUU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "UKMGB" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM $d OCLCF $d UKMGB $d OCLCL $d MUU $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1381120040> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/944248306#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "944248306" ] ;
+            bf:provisionActivityStatement "Heidelberg : Springer-Verlag Berlin Heidelberg, [2011]" ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Evolution of fungi and fungal-like organisms." ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Evolution of fungi and fungal-like organisms." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjr73g9cVD6pTcP6QFm6Dm> a bf:Person ;
+    rdfs:label "James, Timothy Yong, 1973-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6142350" ] .
+
+<https://id.oclc.org/worldcat/entity/1381120040> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1381120040#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:dimensions "26 cm." ;
+    bf:editionStatement "Second edition." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xix, 345 pages :"@en ] ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918845370706676" ],
+        [ a bf:Isbn ;
+            bf:qualifier "ebook" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9783031291999" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardback" ;
+            rdf:value "3031291980" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "Uk" ] ;
+            rdf:value "021061676" ],
+        [ a bf:Isbn ;
+            bf:qualifier "hardback" ;
+            rdf:value "9783031291982" ],
+        [ a bf:Nbn ;
+            bf:source <http://id.loc.gov/vocabulary/nationalbibschemes/bnb> ;
+            rdf:value "GBC397075" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1381120040" ] ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references and index."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color), portraits ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Cham, Switzerland : $b Springer, $c [2023]" ;
+            bflc:simpleAgent "Springer," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "Cham, Switzerland :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sz> ] ;
+    bf:publicationStatement "Cham, Switzerland : Springer, [2023]" ;
+    bf:responsibilityStatement "Stefanie Pöggeler, Timothy James, editors." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Evolution of fungi and fungal-like organisms /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Evolution of fungi and fungal-like organisms /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+[] a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "579.5138" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QK604.2.E85" ;
+            bf:itemPortion "E96 2023" ],
+        [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "QW 180" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a James, Timothy Yong, $d 1973- $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjr73g9cVD6pTcP6QFm6Dm" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjr73g9cVD6pTcP6QFm6Dm> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pöggeler, Stefanie, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Pöggeler, Stefanie," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1381120040> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/por> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/944248306#work> ;
+            bf:relationship [ a bf:Relationship ;
+                    rdfs:label "Revision of:"@en ],
+                <http://id.loc.gov/vocabulary/relationship/otheredition> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a The mycota ; $v 14" ;
+                    bf:seriesEnumeration "14" ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "The mycota ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "Mycota ;" ;
+                    bflc:marcKey "830  0 $a Mycota ; $v 14. $x 2945-8048" ;
+                    bf:identifiedBy [ a bf:Issn ;
+                            rdf:value "2945-8048" ],
+                        [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca8390289" ] ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Mycota ;" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ;
+            bf:seriesEnumeration "14." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "evolution." ;
+            bflc:marcKey "650  7 $a evolution. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aat300055135" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:Topic ;
+            rdfs:label "Biodiversity." ;
+            bflc:marcKey "650  0 $a Biodiversity." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2037197" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fungi pathogenicity" ;
+            bflc:marcKey "650 12 $a Fungi $x pathogenicity" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fungi" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D005658Q000472" ] ] [ a bf:Topic ;
+                        rdfs:label "pathogenicity" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "DNLM" ] ;
+                                rdf:value "D005658Q000472" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Champignons Évolution." ;
+            bflc:marcKey "650  6 $a Champignons $x Évolution." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Champignons" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0015091" ] ] [ a bf:Topic ;
+                        rdfs:label "Évolution." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0380961" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fungi Evolution." ;
+            bflc:marcKey "650  0 $a Fungi $x Evolution." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fungi" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2014493" ] ] [ a bf:Topic ;
+                        rdfs:label "Evolution." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5964912" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Évolution (Biologie)" ;
+            bflc:marcKey "650  6 $a Évolution (Biologie)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0019004" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Biodiversity" ;
+            bflc:marcKey "650 22 $a Biodiversity" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D044822" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic ;
+            rdfs:label "Biodiversité." ;
+            bflc:marcKey "650  6 $a Biodiversité." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0170291" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Fungi Evolution" ;
+            bflc:marcKey "650  7 $a Fungi $x Evolution $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Fungi" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00936313" ] ] [ a bf:Topic ;
+                        rdfs:label "Evolution" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00936313" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Evolution (Biology)" ;
+            bflc:marcKey "650  0 $a Evolution (Biology)" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2837854" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Biological Evolution" ;
+            bflc:marcKey "650 22 $a Biological Evolution" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D005075" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Evolutionary roots of fungi. The protistan origins of animals and fungi / Martin Carr, Kayleigh Hopkins, and Michael L. Ginger ; Evolution of signalling and morphogenesis in the dictyostelids / Christina Schilde ; The evolution of mitochondrial genomes in fungi / Vassili N. Kouvelis, Alexandra M. Kortsinoglou, and Timothy Y. James -- Evolution of pathogenic strategies. Dimorphism and pathogenesis in Mucor species / Alexis Garcia, Courtney P. Smith, and Soo Chan Lee ; Genome evolution in fungal plant pathogens : from populations to kingdom-wide dynamics / Ursula Oggenfuss, Alice Feurtey, Claudia Sarai Reyes-Avila, Emile Gluck-Thaler, Guido Puccetti, Hanna Maren Glad, Leen Nanchira Abraham, Luzia Stalder, Sabina Moser Tralamazza, Sandra Milena González-Sáyer, and Daniel Croll ; Host switching and geographic expansions in (hemi)biotrophic plant pathogens / Marco Thines, Hanno Seebens, M. Catherine Aime, Roger G. Shivas, Levente Kiss, Franz Essl, and Anna Schertler -- Evolution of mutualistic interactions. Mycoviruses / Jillian M. Myers and Timothy Y. James ; Bacterial endosymbionts of mucoromycota fungi : diversity and function of their interactions / Jessie K. Uehling, Alessandra Salvioli, Kevin R. Amses, Laila P. Partida-Martínez, Gregory Bonito, and Paola Bonfante ; Fungi and their environmental micropredators / Silvia Radosa, Nauman Saeed, and Falk Hillmann ; Global fungal diversity estimated from high-throughput sequencing / Petr Baldrian, Petr Kohout, and Tomáš Větrovský -- Evolution of metabolism and development. Activation of secondary metabolite production in fungi / Lukas M. Zehner, Mario K.C. Krespach, Maria C. Stroe, Maira Rosin, Volker Schroeckh, and Axel A. Brakhage ; Evolution and diversity of bioluminescent fungi / Huei-Mien Ke, Min R. Lu, Chiung-Chih Chang, Chen Hsiao, Jie-Hao Ou, Yuichi Taneyama, and Isheng Jason Tsai ; Paedomorphosis and evolution of sequestrate basidiomycetes / Francisco Kuhar, Eduardo Nouhra, Donald H. Pfister, and Matthew E. Smith." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Evolution of fungi and fungal-like organisms /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Evolution of fungi and fungal-like organisms /" ] .
+

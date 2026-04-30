@@ -1,0 +1,550 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1377665143#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011200548.6" ;
+    bf:creationDate "20230404" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "HTM" ],
+        [ a bf:Organization ;
+            bf:code "HOPLA" ],
+        [ a bf:Organization ;
+            bf:code "CUI" ],
+        [ a bf:Organization ;
+            bf:code "GRASS" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCF $d OCLCO $d GRASS $d OCLCQ $d HTM $d OCLCO $d HOPLA $d CUI $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1377665143> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1377665143#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "Originally produced by Oscilloscope Laboratories in 2022."@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20221102" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.2" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Kanopy (Firm) $4 dst $1 https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dst> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McCabe-Lokos, Maxwell, $e film director, $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PCjBPCC98gYppmJHP83jP33" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjBPCC98gYppmJHP83jP33> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brown, Hayley $c (Producer), $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Brown, Hayley (Producer)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wuest, Susanne, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Wuest, Susanne," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Benvie, Rob, $d 1975- $e screenwriter. $1 https://id.oclc.org/worldcat/entity/E39PBJp64TgxGY8XrXxT9F6Frq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJp64TgxGY8XrXxT9F6Frq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Oscilloscope Laboratories (Firm) $4 dst $1 https://id.oclc.org/worldcat/entity/E39QH7JmrMHbDb7D6XKmHFWkc6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmrMHbDb7D6XKmHFWkc6> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dst> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Scythia Films, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmtfB8Pp73m8X7gJCQY6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmtfB8Pp73m8X7gJCQY6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Memory International (Firm), $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Memory International (Firm)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Richings, Julian, $d 1955- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJrrwYqH98Fg8hrKgC3fbd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrrwYqH98Fg8hrKgC3fbd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Anthropoid, Ontario Inc., $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Anthropoid, Ontario Inc.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Tchortov, George, $d 1980- $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Tchortov, George, 1980-" ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca16730882" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ricketts, Cara, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PCjxw8Ky7dBP7PXM4X7pbMP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjxw8Ky7dBP7PXM4X7pbMP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Yellow Veil Pictures, $e presenter. $1 https://id.oclc.org/worldcat/entity/E39QH7JmtgxpPmQgK68VyDtXtg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmtgxpPmQgK68VyDtXtg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brown, Adam, $d 1980- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJyhckkWgjttCBgQMq3fbd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyhckkWgjttCBgQMq3fbd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Serritiello, Christian, $e actor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Serritiello, Christian," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT1H28M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Dark comedy films." ;
+            bflc:marcKey "655  7 $a Dark comedy films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866174" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1377665143> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Susanne Wuest, Cara Ricketts, Christian Serritello, George Tchortov, Adam Brown, Julian Richings."@en ;
+            bflc:marcKey "511 1  $a Susanne Wuest, Cara Ricketts, Christian Serritello, George Tchortov, Adam Brown, Julian Richings." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Director of photography, Cabot McNenly ; editors, Duff Smith, Graham Tucker ; music, Joseph Shabason."@en ;
+            bflc:marcKey "508    $a Director of photography, Cabot McNenly ; editors, Duff Smith, Graham Tucker ; music, Joseph Shabason." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/cap> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "In English."@en ] ;
+    bf:originDate "2021"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Comédie." ;
+            bflc:marcKey "650  6 $a Comédie." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0003479" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Independent films." ;
+            bflc:marcKey "650  0 $a Independent films." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca6815631" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic ;
+            rdfs:label "Films indépendants." ;
+            bflc:marcKey "650  6 $a Films indépendants." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0437741" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Cinéma." ;
+            bflc:marcKey "650  6 $a Cinéma." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "201-0000501" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ],
+        [ a bf:Topic ;
+            rdfs:label "Comedy." ;
+            bflc:marcKey "650  0 $a Comedy." ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca2022675" ] ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Women Drama." ;
+            bflc:marcKey "650  0 $a Women $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Women" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2105293" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Comedy" ;
+            bflc:marcKey "650  7 $a Comedy $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00869083" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Contests Drama." ;
+            bflc:marcKey "650  0 $a Contests $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Contests" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2039925" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Independent films" ;
+            bflc:marcKey "650  7 $a Independent films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01738681" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Prim and proper Maria Barbizan (Susanne Wuest of GOODNIGHT MOMMY) unceremoniously walks away from her boring job, her inept husband, and her obnoxious daughter. Moments later, she is swept up in a bizarre contest alongside a handful of idiosyncratic characters, all competing for the chance to win true enlightenment... and one slightly used habanero-orange compact sport utility vehicle."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Stanleyville /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Stanleyville /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJp64TgxGY8XrXxT9F6Frq> a bf:Person ;
+    rdfs:label "Benvie, Rob, 1975-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca6511493" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrrwYqH98Fg8hrKgC3fbd> a bf:Person ;
+    rdfs:label "Richings, Julian, 1955-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8361357" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyhckkWgjttCBgQMq3fbd> a bf:Person ;
+    rdfs:label "Brown, Adam, 1980-" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9510959" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBPCC98gYppmJHP83jP33> a bf:Person ;
+    rdfs:label "McCabe-Lokos, Maxwell," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7956468" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjxw8Ky7dBP7PXM4X7pbMP> a bf:Person ;
+    rdfs:label "Ricketts, Cara," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10193561" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqrKVmcWFgV3BPcJkc6> a bf:Organization ;
+    rdfs:label "Kanopy (Firm)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9903962" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmrMHbDb7D6XKmHFWkc6> a bf:Organization ;
+    rdfs:label "Oscilloscope Laboratories (Firm)" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca8509618" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmtfB8Pp73m8X7gJCQY6> a bf:Organization ;
+    rdfs:label "Scythia Films," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca11101968" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmtgxpPmQgK68VyDtXtg> a bf:Organization ;
+    rdfs:label "Yellow Veil Pictures," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca15365001" ] .
+
+<http://id.loc.gov/vocabulary/relators/dst> a bf:Role ;
+    bf:code "dst" .
+
+<https://id.oclc.org/worldcat/entity/1377665143> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1377665143#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "polychrome"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacc" ] ] ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "Flash"@en ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "MPEG-4"@en ] ;
+    bf:distributionStatement "[San Francisco, California, USA] : Kanopy Streaming, 2023." ;
+    bf:duration "012800" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (streaming video file (88 minutes)) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1377665143" ],
+        [ a bf:PublisherNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Kanopy" ] ;
+            rdf:value "14003475" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1377665143#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Online resource. Title from title frames."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Instantly available on hoopla."@en ] ;
+            bflc:marcKey "856 40 $u https://www.hoopladigital.com/title/17458852?utm_source=MARC&Lid=hh4572 $3 Instantly available on hoopla." ;
+            bf:electronicLocator <http://www.hoopladigital.com/title/17458852?utm_source=MARC&Lid=hh4572> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Grasshopper Film"@en ] ;
+            bflc:marcKey "856 40 $3 Grasshopper Film $u https://edu.projectr.tv/films/stanleyville/65240594adb7050001931692" ;
+            bf:electronicLocator <http://edu.projectr.tv/films/stanleyville/65240594adb7050001931692> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Canada"@en ;
+            bflc:marcKey "257    $a Canada $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [New York, NY] : $b Oscilloscope Laboratories, $c [2022]" ;
+            bflc:simpleAgent "Oscilloscope Laboratories," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[New York, NY] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ],
+        [ a bf:Distribution ;
+            bflc:marcKey "264  2 $a [San Francisco, California, USA] : $b Kanopy Streaming, $c 2023." ;
+            bflc:simpleAgent "Kanopy Streaming," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "[San Francisco, California, USA] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ] ;
+    bf:publicationStatement "[New York, NY] : Oscilloscope Laboratories, [2022]" ;
+    bf:responsibilityStatement "Yellow Veil Pictures presesnts ; an Anthropoid, Ontario Inc. production ; in association with Scythia Films and Memory International ; directed by Maxwell McCabe-Lokos ; written by Rob Benvie and Maxwell McCabe-Lokos ; produced by Hayley Brown." ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ] ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:marcKey "856 42 $u https://www.kanopy.com/node/13003476/external-image" ;
+            bf:electronicLocator <http://www.kanopy.com/node/13003476/external-image> ],
+        [ a bf:SupplementaryContent ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Cover image"@en ] ;
+            bflc:marcKey "856 42 $3 Cover image $u https://d2snwnmzyr8jue.cloudfront.net/osl_1278_180.jpeg" ;
+            bf:electronicLocator <http://d2snwnmzyr8jue.cloudfront.net/osl_1278_180.jpeg> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Stanleyville /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Stanleyville /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

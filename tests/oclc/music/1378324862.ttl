@@ -1,0 +1,176 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/cnd> a bf:Role ;
+    bf:code "cnd" .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1378324862#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250620164328.3" ;
+    bf:creationDate "20230505" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1378324862> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1378324862#work> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:capture [ a bf:Capture ;
+            rdfs:label "Inspelad i Artistens konsertsal, Högskolan för scen och musik, Göteborgs universitet mars och april 2011."@sv ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.5" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3YvXXWkbT6mcXrMYtyQrgWJJY> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Ypb" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Göteborgs ungdomskör. $4 sng" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Göteborgs ungdomskör." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/sng> ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Brunnsbo musikklassers flickkör. $4 sng" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Brunnsbo musikklassers flickkör." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/sng> ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Johansson, Anne. $4 cnd" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Johansson, Anne." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Musikinspelningar> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1378324862> ;
+    bf:language [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        [ a bf:Language ;
+            bf:code "swe" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/swe> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "lat" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/lat> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Come along / text & musik: Jocke Berg, Peter Svensson -- Land of the Silver Birch / kanadensisk sång -- Knäramsa från Småland / musik: Bengt Ernryd -- Vals till vännen min / text och musik: Hans Kennemark -- Il est bel et bon / Pierre Passereau -- Limu, limu, lima / svensk folkvisa -- Eatnemen vueli / text: Frode Fjellheim & Joseph August Seiss, melodi från Schlesien/Fjellheim -- Because / text & musik: John Lennon & Paul McCartney -- Kyrie / musik: Hugo Hammarström -- Adiemus / text & musik: Karl Jenkins -- Slängpolska från Östergötland -- Dona nobis pacem / musik: Anna Cederberg Orreteg -- Kom natt / text och musik: Hillevi Dahl -- Pita le moe / trad. Bulgarien -- O Magnum Mysterium / musik: Franz Havrøy -- Carol of the bells / text: Peter J. Wilhousky ; musik: Mykola Leontovich -- Det är en ros / text: Tekla Knös ; musik: Michael Praetorius, Jan Sandström -- Eternity / text & musik: Michael Bojesen" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Come along /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Come along /" ] .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/relators/sng> a bf:Role ;
+    bf:code "sng" .
+
+<https://id.oclc.org/worldcat/entity/1378324862> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1378324862#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2011"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 CD (55 min.) + kommentarhäfte"@sv ] ;
+    bf:identifiedBy [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Intim Musik" ] ;
+            rdf:value "IMCD 117" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1378324862" ],
+        [ a bf:Ean ;
+            rdf:value "7393892001174" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1378324862#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Göteborg : $b Intim Musik, $c 2011" ;
+            bflc:simpleAgent "Intim Musik," ;
+            bflc:simpleDate "2011" ;
+            bflc:simplePlace "Göteborg :" ;
+            bf:date "2011"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/sw> ] ;
+    bf:publicationStatement "Göteborg : Intim Musik, 2011" ;
+    bf:responsibilityStatement "Brunnsbo musikklassers flickkör ; Göteborgs ungdomskör ; dirigent: Anne Johansson." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Come along /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Come along /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+

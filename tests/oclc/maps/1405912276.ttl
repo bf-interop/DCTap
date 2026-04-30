@@ -1,0 +1,301 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G5720> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 5720" ;
+    bf:code "5720" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026387> a bf:GenreForm ;
+    rdfs:label "Maps"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1405912276#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "COO" ] ;
+    bf:changeDate "20251011035825.7" ;
+    bf:creationDate "20231025" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "COO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a COO $b eng $c COO $d COO $d OCLCO $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1405912276> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "COO" ] .
+
+<https://id.oclc.org/worldcat/entity/1405912276#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G5721.P98" ;
+            bf:itemPortion "D96 1991" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sylvia, Terry N., $e cartographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sylvia, Terry N.," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15738786" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Dymon, Ute J., $e cartographer. $1 https://id.oclc.org/worldcat/entity/E39PCjxXyRhJFTYG6dKbpDdD9C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjxXyRhJFTYG6dKbpDdD9C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cartographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a CW Communications/Inc., $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqFrGymVRxMCmwWh43F" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqFrGymVRxMCmwWh43F> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a IDC Publishers, $e publisher. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmrcctwc9HgdXygj8rkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmrcctwc9HgdXygj8rkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:geographicCoverage <http://id.loc.gov/authorities/classification/G5720> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1405912276> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "linear horizontal"@en ;
+            rdf:value "6000000" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ],
+        [ a bf:Scale ;
+            rdfs:label "Scale 1:6,000,000." ] ;
+    bf:subject [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Western Europe" ;
+            bflc:marcKey "651  7 $a Western Europe $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01272478" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Computer networks" ;
+            bflc:marcKey "650  7 $a Computer networks $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00872297" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Computer systems Europe, Western Maps." ;
+            bflc:marcKey "650  0 $a Computer systems $z Europe, Western $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Computer systems" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4780760" ] ] [ a bf:Geographic ;
+                        rdfs:label "Europe, Western" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868880" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Cyberinfrastructure Europe, Western Maps." ;
+            bflc:marcKey "650  0 $a Cyberinfrastructure $z Europe, Western $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Cyberinfrastructure" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca7900047" ] ] [ a bf:Geographic ;
+                        rdfs:label "Europe, Western" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868880" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Computer networks Europe, Western Maps." ;
+            bflc:marcKey "650  0 $a Computer networks $z Europe, Western $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Computer networks" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2027328" ] ] [ a bf:Geographic ;
+                        rdfs:label "Europe, Western" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3868880" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Cyberinfrastructure" ;
+            bflc:marcKey "650  7 $a Cyberinfrastructure $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01746452" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Multi-user computer systems market by administrative division in Western Europe." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Multi-user computer systems market by administrative division in Western Europe." ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjxXyRhJFTYG6dKbpDdD9C> a bf:Person ;
+    rdfs:label "Dymon, Ute J.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca220188" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqFrGymVRxMCmwWh43F> a bf:Organization ;
+    rdfs:label "CW Communications/Inc.," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1003260" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmrcctwc9HgdXygj8rkt> a bf:Organization ;
+    rdfs:label "IDC Publishers," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca4857718" ] .
+
+<https://id.oclc.org/worldcat/entity/1405912276> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1405912276#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:dimensions "61 x 72 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1405912276" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1405912276#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"Cartographers: Ute J. Dymon, Terry N. Sylvia, University of Massachusetts at Amherst.\""@en ],
+        [ a bf:Note ;
+            rdfs:label "Map showing the distribution of multi-user computer systems installed in Western Europe as of January 1, 1986 by administrative division. Sample data for the map was compiled by IDC using over 50,000 computer systems installed in the region. Includes a color-coded legend classifying computer systems as small, medium, or large based on system cost, in U.S. dollars, and total number of potential users. Each administrative district on the recto of the map is numbered, with a corresponding key on the map's verso."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from caption."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b CW Communications/Inc., $c [1991?]" ;
+            bflc:simpleAgent "CW Communications/Inc.," ;
+            bflc:simpleDate "[1991?]" ],
+        [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Framingham, MA : $b IDC : $c [1991?]" ;
+            bflc:simpleAgent "IDC :" ;
+            bflc:simpleDate "[1991?]" ;
+            bflc:simplePlace "Framingham, MA :" ;
+            bf:date "1991"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/mau> ] ;
+    bf:publicationStatement "CW Communications/Inc., [1991?]",
+        "Framingham, MA : IDC : [1991?]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Multi-user computer systems market by administrative division in Western Europe." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Multi-user computer systems market by administrative division in Western Europe." ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

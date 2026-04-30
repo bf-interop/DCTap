@@ -1,0 +1,215 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1469095096#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260312155532.6" ;
+    bf:creationDate "20241115" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCL $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1469095096> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1469095096#work> a bf:Cartography,
+        bf:Collection,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a McKinley Publishing Company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpXP7XkDp6xyyHbt9c6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpXP7XkDp6xyyHbt9c6> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Fonds de cartes." ;
+            bflc:marcKey "655  7 $a Fonds de cartes. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000210" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Outline maps." ;
+            bflc:marcKey "655  7 $a Outline maps. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866414" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Maps" ;
+            bflc:marcKey "655  7 $a Maps $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423704" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1469095096> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:place [ a bf:Place,
+                madsrdf:HierarchicalGeographic ;
+            rdfs:label "United States Pennsylvania Philadelphia." ;
+            bflc:marcKey "752    $a United States $b Pennsylvania $d Philadelphia." ;
+            madsrdf:componentList ( [ a madsrdf:Country ;
+                        rdfs:label "United States" ] [ a madsrdf:State ;
+                        rdfs:label "Pennsylvania" ] [ a madsrdf:City ;
+                        rdfs:label "Philadelphia." ] ) ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scales differ." ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Geography" ;
+            bflc:marcKey "650  7 $a Geography $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00940469" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Geography Maps." ;
+            bflc:marcKey "650  0 $a Geography $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Geography" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2023894" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "No. 83b. Asia -- No. 84 b. Africa -- No. 85 b. North America -- No. 86 b. South America -- No. 87 b. Australia -- No. 100b The World (Mercator's Projection) -- No. 101b. Europe -- No. 102b. Asia -- No. 103b. Africa -- No. 105b. South America -- No. 106b. Australiasia and the Philippines -- No. 111b. Europe (central and southern parts) -- No. 113b. The Mediterranean World -- No. 114b. The Baltic Lands -- No. 115b. Eastern Mediterranean and Balkan Region -- No. 121b. England -- No. 122b. Scotland -- No. 123b. Ireland -- No. 124b. France and the Netherlands -- No. 216b. Austro-Hungary and the Danube Valley -- No. 127 b. Russia -- No. 128b. Spain -- No. 130b. Greece and Aegean Sea -- No. 131b. Greece (Continental) -- No. 134b. The Roman Empire -- No. 135b. The Eastern World (from Greece and Egypt to India) -- No. 138b. Palestine -- No. 140b. Egypt -- No. 143b. Ancient Athens -- No. 148 b. India -- No. 149 b. Eastern China and Japan -- No. 170b. Gulf of Mexico, Central America, and Panama -- No. 171b. Mexico and Southwestern United States -- No. 172b. The West Indies -- No. 173b Dominion of Canada -- No. 177b. Eastern United States -- No. 178b. The Mississippi Valley -- No. 179b. Pacific Coast of U. S. -- No. 185b. New England -- No. 186b. New England Colonies -- No. 187b. Middle Atlantic States -- No. 188b. Southern States -- No. 189b. Southern Atlantic Coast of U. S. -- No. 190b. Mississippi Valley. Northern Section -- No. 191b. Mississippi Valley, Northeastern Section -- No. 192b. Mississippi Valley. Northwestern Section -- No. 193b. Mississippi Valley. Southern Section -- No. 194b. Virginia, Maryland and Delaware -- No. 195b. Middle Atlantic Colonies -- No. 229b. California and Nevada -- No. 231b. Connecticut -- No. 232b. Cuba -- No. 239b. Illinois -- No.247b. Massachusetts -- No.248b. Michigan -- No.258b. New York State -- No. 265 b. Pennsylvania -- No. 266b. The Philippines -- No.273b. Texas." ] ;
+    bf:title [ a bf:VariantTitle ;
+            bflc:marcKey "246 03 $a McKinley's outline maps" ;
+            bf:mainTitle "McKinley's outline maps" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 03 $a McKinley's desk outline maps" ;
+            bf:mainTitle "McKinley's desk outline maps" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 03 $a McKinley's outline desk maps" ;
+            bf:mainTitle "McKinley's outline desk maps" ],
+        [ a bf:Title ;
+            rdfs:label "McKinley's Geographical and Historical Outline Maps." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "McKinley's Geographical and Historical Outline Maps." ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpXP7XkDp6xyyHbt9c6> a bf:Organization ;
+    rdfs:label "McKinley Publishing Company." ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9682863" ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<https://id.oclc.org/worldcat/entity/1469095096> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1469095096#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "sheet"@en ;
+            bf:code "nb" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nb> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:applicableInstitution [ a bf:Agent ;
+                    bf:code "PU" ] ;
+            bflc:marcKey "710 2  $a Miscellaneous Print Collection (University of Pennsylvania)" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Miscellaneous Print Collection (University of Pennsylvania)" ] ] ;
+    bf:dimensions "20 x 26 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "59 maps ;"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1469095096" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1469095096#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "multipart monograph"@en ;
+            bf:code "mulm" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mulm> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Relief shown by hachures."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Philadelphia, PA : $b McKinley Publishing Company, $c 1900-1915." ;
+            bflc:simpleAgent "McKinley Publishing Company," ;
+            bflc:simpleDate "1900-1915." ;
+            bflc:simplePlace "Philadelphia, PA :" ;
+            bf:date "1900/1915"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "inclusive collection dates"@en ] ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "Philadelphia, PA : McKinley Publishing Company, 1900-1915." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "McKinley's Geographical and Historical Outline Maps." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "McKinley's Geographical and Historical Outline Maps." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

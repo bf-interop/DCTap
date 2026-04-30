@@ -1,0 +1,430 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm ;
+    rdfs:label "Conference papers and proceedings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography"@en ;
+    bf:code "bibliography" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1356938658#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011052935.0" ;
+    bf:creationDate "20230105" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "MYG" ],
+        [ a bf:Organization ;
+            bf:code "STF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "CUS" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d STF $d MYG $d OCLCF $d OCLCO $d CUS $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1356938658> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1356938658#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "111 2  $a International Conference on Biomedical Innovations and Applications $d (2020 : $c Varna, Bulgaria)," ;
+            bf:agent [ a bf:Meeting ;
+                    rdfs:label "International Conference on Biomedical Innovations and Applications (2020 : Varna, Bulgaria)," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Institute of Electrical and Electronics Engineers, $e issuing body. $1 https://id.oclc.org/worldcat/entity/E39QH7JmppbjgFY6j8mDDMWwRg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmppbjgFY6j8mDDMWwRg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ganchev, Todor Dimitrov, $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjJY6BXQFwByDb3qFv8PV3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjJY6BXQFwByDb3qFv8PV3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Institute of Electrical and Electronics Engineers. $b Bulgaria Section, $e organizer." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Institute of Electrical and Electronics Engineers. Bulgaria Section," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "organizer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Tekhnicheski universitet (Varna, Bulgaria), $e organizer. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmq4v4jfQcPdX7ctxXM6" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmq4v4jfQcPdX7ctxXM6> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "organizer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Markova, Valentina Ilieva, $e editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Markova, Valentina Ilieva," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Actes de congrès." ;
+            bflc:marcKey "655  7 $a Actes de congrès. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001049" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "proceedings (reports)" ;
+            bflc:marcKey "655  7 $a proceedings (reports) $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300027316" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Conference papers and proceedings" ;
+            bflc:marcKey "655  7 $a Conference papers and proceedings $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423772" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Conference papers and proceedings." ;
+            bflc:marcKey "655  7 $a Conference papers and proceedings. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca10077202" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1356938658> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Génie biomédical Congrès." ;
+            bflc:marcKey "650  6 $a Génie biomédical $v Congrès." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Génie biomédical" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0021888" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congrès." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378219" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Medical electronics" ;
+            bflc:marcKey "650  7 $a Medical electronics $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01014061" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Électronique en médecine Congrès." ;
+            bflc:marcKey "650  6 $a Électronique en médecine $v Congrès." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Électronique en médecine" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0021887" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congrès." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378219" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Medical technology Congresses." ;
+            bflc:marcKey "650  0 $a Medical technology $v Congresses." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Medical technology" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2010455" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congresses." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933931" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Medical electronics Congresses." ;
+            bflc:marcKey "650  0 $a Medical electronics $v Congresses." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Medical electronics" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2009625" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congresses." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933931" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Technologie médicale Congrès." ;
+            bflc:marcKey "650  6 $a Technologie médicale $v Congrès." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Technologie médicale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0017783" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congrès." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0378219" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Biomedical engineering Congresses." ;
+            bflc:marcKey "650  0 $a Biomedical engineering $v Congresses." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Biomedical engineering" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2085676" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Congresses." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933931" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Biomedical engineering" ;
+            bflc:marcKey "650  7 $a Biomedical engineering $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00832568" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Medical technology" ;
+            bflc:marcKey "650  7 $a Medical technology $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01014742" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a BIA 2022" ;
+            bf:mainTitle "BIA 2022" ],
+        [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 30 $a International Conference on Biomedical Innovations and Applications" ;
+            bf:mainTitle "International Conference on Biomedical Innovations and Applications" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a 2022 International Conference on Biomedical Innovations and Applications" ;
+            bf:mainTitle "2022 International Conference on Biomedical Innovations and Applications" ],
+        [ a bf:Title ;
+            rdfs:label "Proceedings of the International Conference on Biomedical Innovations and Applications :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Proceedings of the International Conference on Biomedical Innovations and Applications :" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Title from PDF copyright page: $a 2021 International Conference on Biomedical Innovations and Applications (BIA)" ;
+            bf:mainTitle "2021 International Conference on Biomedical Innovations and Applications (BIA)" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title from PDF copyright page:"@en ] ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjJY6BXQFwByDb3qFv8PV3> a bf:Person ;
+    rdfs:label "Ganchev, Todor Dimitrov," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca10859844" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmppbjgFY6j8mDDMWwRg> a bf:Organization ;
+    rdfs:label "Institute of Electrical and Electronics Engineers," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca286392" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmq4v4jfQcPdX7ctxXM6> a bf:Organization ;
+    rdfs:label "Tekhnicheski universitet (Varna, Bulgaria)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3443872" ] .
+
+<https://id.oclc.org/worldcat/entity/1356938658> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1356938658#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:copyrightDate "©2022"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "text file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/text> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (126 pages) :"@en ] ;
+    bf:identifiedBy [ a bf:Doi ;
+            rdf:value "10.1109/BIA52594.2022" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1356938658" ],
+        [ a bf:Isbn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1665445815" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print-on-demand)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1665445823" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print-on-demand)" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781665445825" ],
+        [ a bf:Isbn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "9781665445818" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1356938658#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/biblio> ;
+            rdfs:label "Includes bibliographical references."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations (some color)"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://ieeexplore.ieee.org/xpl/conhome/9831190/proceeding $z Access restricted to subscribers" ;
+            bf:electronicLocator <http://ieeexplore.ieee.org/xpl/conhome/9831190/proceeding> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Access restricted to subscribers"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on online resource; title from PDF title page (IEEE, viewed on January 5, 2023)."@en ],
+        [ a bf:Note ;
+            rdfs:label "Held 2-4 June 2022, Varna, Bulgaria."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"IEEE Catalog number: CFP21U85-ART\"--PDF copyright page."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://ieeexplore.ieee.org/servlet/opac?punumber=9831190" ;
+            bf:electronicLocator <http://ieeexplore.ieee.org/servlet/opac?punumber=9831190> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Piscataway, New Jersey] : $b IEEE, $c [2022]" ;
+            bflc:simpleAgent "IEEE," ;
+            bflc:simpleDate "[2022]" ;
+            bflc:simplePlace "[Piscataway, New Jersey] :" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nju> ] ;
+    bf:publicationStatement "[Piscataway, New Jersey] : IEEE, [2022]" ;
+    bf:responsibilityStatement "edited by Valentina Markova, Todor Ganchev, Technical University of Varna, Bulgaria ; organized by the Technical University of Varna, IEEE Bulgaria Section, and  Bulgaria Section CAS/SSC Joint Chapter." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Proceedings of the International Conference on Biomedical Innovations and Applications : BIA 2021 : Varna, 2022 /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Proceedings of the International Conference on Biomedical Innovations and Applications :" ;
+            bf:subtitle "BIA 2021 : Varna, 2022 /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "canceled or invalid"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

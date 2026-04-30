@@ -1,0 +1,121 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1420704426#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20240612204200.9" ;
+    bf:creationDate "20230823" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1420704426> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1420704426#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Işın, Ekrem, $e author." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Işın, Ekrem," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1420704426> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "English."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Everyday Life In Istanbul." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Everyday Life In Istanbul." ] .
+
+<https://id.oclc.org/worldcat/entity/1420704426> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1420704426#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "368 pages"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9789750856501" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1420704426" ],
+        [ a bf:Isbn ;
+            rdf:value "9750856503" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1420704426#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "First published in 1999. On the map of human existence, Istanbul throughout the age of empire represented the administrative power center. Rome, Byzantium and the Ottoman Empire each took its place in history as a ring of civilization that formed around this center. To view history from this perspective means to read the story of humanity in its pages and, in a sense, to rediscover each time this dazzling star that shone in the skies of Anatolia, the Balkans and the Mediterranean. As mankind discovered Istanbul, it also discovered itself as a passionate traveler on the road leading back to its own past. Istanbul today is a treasurehouse where all our lost values are carefully preserved. A compass for our social identity that has lost its way, a touchstone for our decaying aesthetic taste, a trustworthy scale for our degenerating sense of justice - Istanbul can assume all these roles while at the same time generously offering us a human experience and a store of knowledge capable of answering every question put to it. \"Everyday Life in Istanbul\" is a collection of striking images along a journey back to the roots of the Turks' social identity. A work embracing the history of an imperial city in a plane where Man, Culture and Space relate to each other, it is a noteworthy example of the new historiography, which sets up a balance among the social sciences. With its unique style and its theoretical framework set against a multi-dimensional background extending from politics to culture, from architecture to literature, it is at the same time a contemporary historian's gift to our city."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Turkey] : $b Yapı Kredi Yayınları, $c 2023." ;
+            bflc:simpleAgent "Yapı Kredi Yayınları," ;
+            bflc:simpleDate "2023." ;
+            bflc:simplePlace "[Turkey] :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/tu> ] ;
+    bf:publicationStatement "[Turkey] : Yapı Kredi Yayınları, 2023." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Everyday Life In Istanbul." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Everyday Life In Istanbul." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

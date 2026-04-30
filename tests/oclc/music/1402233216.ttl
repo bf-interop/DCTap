@@ -1,0 +1,172 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent/swe" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia/swe" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/cmp> a bf:Role ;
+    bf:code "cmp" .
+
+<http://id.loc.gov/vocabulary/relators/mus> a bf:Role ;
+    bf:code "mus" .
+
+<https://id.kb.se/term/saogf/Blues> a bf:GenreForm ;
+    rdfs:label "Blues." ;
+    bflc:marcKey "655  7 $a Blues. $0 https://id.kb.se/term/saogf/Blues $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Bluesrock%20efter%201970> a bf:GenreForm ;
+    rdfs:label "Bluesrock efter 1970." ;
+    bflc:marcKey "655  7 $a Bluesrock efter 1970. $0 https://id.kb.se/term/saogf/Bluesrock%20efter%201970 $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.kb.se/term/saogf/Musikinspelningar> a bf:GenreForm ;
+    rdfs:label "Musikinspelningar." ;
+    bflc:marcKey "655  7 $a Musikinspelningar. $0 https://id.kb.se/term/saogf/Musikinspelningar $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1402233216#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20250705215747.7" ;
+    bf:creationDate "20231011" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ $d OCLCL $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1402233216> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCYWrJBRpFWxQBytryjHPV3> a bf:Monograph,
+        bf:MusicAudio,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "Yxne" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "782.421643" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20231120" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E38wqtbJf93cFGgQQRRdt6gv6t> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "performed music"@sv ;
+            bf:code "prm" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/prm> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "110 2  $a Roomful of Blues. $4 cmp $4 mus" ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Roomful of Blues." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cmp>,
+                <http://id.loc.gov/vocabulary/relators/mus> ] ;
+    bf:genreForm <https://id.kb.se/term/saogf/Blues>,
+        <https://id.kb.se/term/saogf/Bluesrock%20efter%201970>,
+        <https://id.kb.se/term/saogf/Musikinspelningar> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1402233216> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Innehåll: What can I do? -- You move me -- In a roomful of blues -- Phone zombies -- Watch your back -- She quit me again -- She's too much -- Have you heard -- We'd have a love sublime -- Carcinoma blues -- Too much boogie -- Let the sleeping dog lie -- I can't wait." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "In a roomful of blues /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "In a roomful of blues /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1402233216> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1402233216#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "audio disc"@sv ;
+            bf:code "sd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/sd> ] ;
+    bf:copyrightDate "℗2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 CD"@sv ] ;
+    bf:identifiedBy [ a bf:Ean ;
+            rdf:value "0014551499824" ],
+        [ a bf:AudioIssueNumber ;
+            bf:assigner [ a bf:Organization ;
+                    rdfs:label "Alligator Records" ] ;
+            rdf:value "ALCD 4998" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1402233216" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCYWrJBRpFWxQBytryjHPV3> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "audio"@sv ;
+            bf:code "s" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/s> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/accmat> ;
+            rdfs:label "Häfte med information."@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Chicago, IL : $b Alligator Records, $c [2020]" ;
+            bflc:simpleAgent "Alligator Records," ;
+            bflc:simpleDate "[2020]" ;
+            bflc:simplePlace "Chicago, IL :" ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ilu> ] ;
+    bf:publicationStatement "Chicago, IL : Alligator Records, [2020]" ;
+    bf:responsibilityStatement "Roomful of Blues." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "In a roomful of blues /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "In a roomful of blues /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+

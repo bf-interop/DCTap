@@ -1,0 +1,664 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/pn> a bf:DescriptionConventions ;
+    bf:code "pn" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
+    rdfs:label "adult"@en ;
+    bf:code "adu" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+
+<https://id.oclc.org/worldcat/entity/1449916656#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "CUV" ] ;
+    bf:changeDate "20251011040657.2" ;
+    bf:creationDate "20240726" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "IBZ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "KSU" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "CDS" ],
+        [ a bf:Organization ;
+            bf:code "OCLCF" ],
+        [ a bf:Organization ;
+            bf:code "CUV" ],
+        [ a bf:Organization ;
+            bf:code "WAU" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a CUV $b eng $c CUV $d CUV $d WAU $d OCLCF $d CDS $d KSU $d OCLCL $d IBZ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1449916656> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "CUV" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJcc7jmXBRYBvPHhJyTGpP> a bf:Person ;
+    rdfs:label "Ellison, Megan," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJd8g8Q843kkF3VGQD7JXd> a bf:Person ;
+    rdfs:label "Wilde, Olivia," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJdcwcx3KkWvkCh6MGmTpP> a bf:Person ;
+    rdfs:label "Adams, Amy," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfh73gBw9qfbhdqVggkDq> a bf:Person ;
+    rdfs:label "Phoenix, Joaquin," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJgHbQRM7MJfHTfyvtHKVC> a bf:Person ;
+    rdfs:label "Johansson, Scarlett, 1984-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhGWjDRjbdVgXymDxd84q> a bf:Person ;
+    rdfs:label "Pallett, Owen, 1979-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhX8j9R43f4rcTPtdxJjC> a bf:Person ;
+    rdfs:label "Mara, Rooney," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJjT4v7Dtqx9GKPFRpwgrq> a bf:Person ;
+    rdfs:label "Zumbrunnen, Eric," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJqk67GV8WymM7JwTbrg8C> a bf:Person ;
+    rdfs:label "Hoytema, Hoyte van, 1971-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJrRhvbQdF9PQFGJxTvvHC> a bf:Person ;
+    rdfs:label "Pratt, Chris, 1979-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJxRD6x9MxvFbgPTTvDDv3> a bf:Person ;
+    rdfs:label "Jonze, Spike," .
+
+<https://id.oclc.org/worldcat/entity/E39PBJyhhk8yg4rydWyd3W9xDq> a bf:Person ;
+    rdfs:label "Landay, Vincent," .
+
+<https://id.oclc.org/worldcat/entity/E39PCG7DWWqKJM7Yyc3t6G3dBd> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PN1997.2" ;
+            bf:itemPortion ".H475 2013" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "791.43/72" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20230216" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E33mBhDCffccvhb8YbWWgdM7cc> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Annapurna Pictures, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7Jmr63mpDgfQjRvm6kgCF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7Jmr63mpDgfQjRvm6kgCF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Johansson, Scarlett, $d 1984- $e voice actor. $1 https://id.oclc.org/worldcat/entity/E39PBJgHbQRM7MJfHTfyvtHKVC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJgHbQRM7MJfHTfyvtHKVC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "voice actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Storm, Casey, $e costume designer. $1 https://id.oclc.org/worldcat/entity/E39PCjvmHGtbpcHyjBt6rKDdHC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjvmHGtbpcHyjBt6rKDdHC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "costume designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pallett, Owen, $d 1979- $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39PBJhGWjDRjbdVgXymDxd84q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhGWjDRjbdVgXymDxd84q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Zumbrunnen, Eric, $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PBJjT4v7Dtqx9GKPFRpwgrq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJjT4v7Dtqx9GKPFRpwgrq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Phoenix, Joaquin, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJfh73gBw9qfbhdqVggkDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJfh73gBw9qfbhdqVggkDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hoytema, Hoyte van, $d 1971- $e director of photography. $1 https://id.oclc.org/worldcat/entity/E39PBJqk67GV8WymM7JwTbrg8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJqk67GV8WymM7JwTbrg8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jonze, Spike, $e screenwriter, $e film director, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJxRD6x9MxvFbgPTTvDDv3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJxRD6x9MxvFbgPTTvDDv3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Pratt, Chris, $d 1979- $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJrRhvbQdF9PQFGJxTvvHC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJrRhvbQdF9PQFGJxTvvHC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wilde, Olivia, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJd8g8Q843kkF3VGQD7JXd" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJd8g8Q843kkF3VGQD7JXd> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ellison, Megan, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJcc7jmXBRYBvPHhJyTGpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJcc7jmXBRYBvPHhJyTGpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Barrett, K. K., $e production designer. $1 https://id.oclc.org/worldcat/entity/E39PCjvwxxGtkPwH6t9Bpmd9fy" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjvwxxGtkPwH6t9Bpmd9fy> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production designer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Landay, Vincent, $e film producer. $1 https://id.oclc.org/worldcat/entity/E39PBJyhhk8yg4rydWyd3W9xDq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJyhhk8yg4rydWyd3W9xDq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Adams, Amy, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJdcwcx3KkWvkCh6MGmTpP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJdcwcx3KkWvkCh6MGmTpP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Buchanan, Jeff, $e editor of moving image work. $1 https://id.oclc.org/worldcat/entity/E39PCjGHBHWmyp96Q43Rdb8t8C" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjGHBHWmyp96Q43Rdb8t8C> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Arcade Fire (Musical group), $e composer (expression) $1 https://id.oclc.org/worldcat/entity/E39QQPVp7PHxPHDKT3M86K4fkt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7PHxPHDKT3M86K4fkt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Mara, Rooney, $e actor. $1 https://id.oclc.org/worldcat/entity/E39PBJhX8j9R43f4rcTPtdxJjC" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhX8j9R43f4rcTPtdxJjC> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "actor." ] ] ;
+    bf:duration "PT2H6M"^^xsd:duration ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "Her (Motion picture : 2013)" ;
+            bflc:marcKey "130 0  $a Her (Motion picture : 2013)" ;
+            bf:title [ a bf:Title ;
+                    bflc:nonSortNum "0" ;
+                    bf:mainTitle "Her (Motion picture : 2013)" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Romance films." ;
+            bflc:marcKey "655  7 $a Romance films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866521" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Webcast" ;
+            bflc:marcKey "655  2 $a Webcast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "DNLM" ] ;
+                    rdf:value "D057405" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ;
+            bflc:marcKey "655  7 $a Fiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710264" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Drama" ;
+            bflc:marcKey "655  7 $a Drama $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423879" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de fiction." ;
+            bflc:marcKey "655  7 $a Films de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000003" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Romance films" ;
+            bflc:marcKey "655  7 $a Romance films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710332" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Internet videos." ;
+            bflc:marcKey "655  7 $a Internet videos. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866317" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films d'amour." ;
+            bflc:marcKey "655  7 $a Films d'amour. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000116" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films." ;
+            bflc:marcKey "655  7 $a Fiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866231" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ;
+            bflc:marcKey "655  7 $a Feature films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866229" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Internet videos" ;
+            bflc:marcKey "655  7 $a Internet videos $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01750214" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films" ;
+            bflc:marcKey "655  7 $a Feature films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710384" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Motion pictures"@en ;
+            bflc:marcKey "380    $a Motion pictures $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Vidéos sur Internet." ;
+            bflc:marcKey "655  7 $a Vidéos sur Internet. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000001568" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1449916656> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:language [ a bf:Language ;
+            bf:code "spa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/spa> ],
+        [ a bf:Language ;
+            bf:code "ger" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ger> ],
+        [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "por" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/por> ],
+        [ a bf:Language ;
+            bf:code "ita" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ita> ],
+        [ a bf:Language ;
+            bf:code "fre" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/fre> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "MPAA rating: R"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Music, Arcade Fire ; additional music, Owen Pallett ; costume designer, Casey Storm ; editor, Eric Zumbrunnen, Jeff Buchanan ; production designer, K.K. Barrett ; director of photography, Hoyte Van Hoytema"@en ;
+            bflc:marcKey "508    $a Music, Arcade Fire ; additional music, Owen Pallett ; costume designer, Casey Storm ; editor, Eric Zumbrunnen, Jeff Buchanan ; production designer, K.K. Barrett ; director of photography, Hoyte Van Hoytema" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Joaquin Phoenix, Amy Adams, Scarlett Johansson, Chris Pratt, Rooney Mara, Olivia Wilde"@en ;
+            bflc:marcKey "511 1  $a Joaquin Phoenix, Amy Adams, Scarlett Johansson, Chris Pratt, Rooney Mara, Olivia Wilde" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/award> ;
+            rdfs:label "Academy Awards 2013: Best writing, Original screenplay (Spike Jonze)" ] ;
+    bf:originDate "2013"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Authors Drama." ;
+            bflc:marcKey "650  0 $a Authors $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Authors" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2049100" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Man-woman relationships Drama." ;
+            bflc:marcKey "650  0 $a Man-woman relationships $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Man-woman relationships" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca3173806" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Artificial intelligence Drama." ;
+            bflc:marcKey "650  0 $a Artificial intelligence $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Artificial intelligence" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2035754" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Human-computer interaction Drama." ;
+            bflc:marcKey "650  0 $a Human-computer interaction $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Human-computer interaction" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2320976" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Operating systems (Computers)" ;
+            bflc:marcKey "650  7 $a Operating systems (Computers) $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01046280" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Operating systems (Computers) Drama." ;
+            bflc:marcKey "650  0 $a Operating systems (Computers) $v Drama." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Operating systems (Computers)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2096572" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Drama." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5155826" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Authors" ;
+            bflc:marcKey "650  7 $a Authors $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00821688" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Artificial intelligence" ;
+            bflc:marcKey "650  7 $a Artificial intelligence $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00817247" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Man-woman relationships" ;
+            bflc:marcKey "650  7 $a Man-woman relationships $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01007080" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Human-computer interaction" ;
+            bflc:marcKey "650  7 $a Human-computer interaction $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00963494" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"From the unique perspective of Oscar®-nominated filmmaker Spike Jonze (Being John Malkovich, Adaptation) comes an original love story that explores the evolving nature -- and the risks -- of intimacy in the modern world. Set in the Los Angeles of the slight future, HER follows Theodore Twombly (Joaquin Phoenix), a complex, soulful man who makes his living writing touching, personal letters for other people. Heartbroken after the end of a long relationship, he becomes intrigued with a new, advanced operating system, which promises to be an intuitive entity in its own right, individual to each user. Upon initiating it, he is delighted to meet \"Samantha\" (Scarlett Johansson), a bright, female voice, who is insightful, sensitive and surprisingly funny. As her needs and desires grow, in tandem with his own, their friendship deepens into an eventual and unconventional love for each other. Breaking the paradigm once again, writer/director Spike Jonze has created a thought-provoking love story that reflects the impact of ever-evolving technology on our personal lives\"-- From Swank Digital Campus"@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Her /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Her /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjGHBHWmyp96Q43Rdb8t8C> a bf:Person ;
+    rdfs:label "Buchanan, Jeff," .
+
+<https://id.oclc.org/worldcat/entity/E39PCjvmHGtbpcHyjBt6rKDdHC> a bf:Person ;
+    rdfs:label "Storm, Casey," .
+
+<https://id.oclc.org/worldcat/entity/E39PCjvwxxGtkPwH6t9Bpmd9fy> a bf:Person ;
+    rdfs:label "Barrett, K. K.," .
+
+<https://id.oclc.org/worldcat/entity/E39QH7Jmr63mpDgfQjRvm6kgCF> a bf:Organization ;
+    rdfs:label "Annapurna Pictures," .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7PHxPHDKT3M86K4fkt> a bf:Organization ;
+    rdfs:label "Arcade Fire (Musical group)," .
+
+<https://id.oclc.org/worldcat/entity/1449916656> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1449916656#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Swank Motion Pictures"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "MPEG-4"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Swank Motion Pictures"@en ] ] ;
+    bf:duration "020553" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (1 video file (126 min.))"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1449916656" ],
+        [ a bf:OclcNumber ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "1004395460" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCG7DWWqKJM7Yyc3t6G3dBd> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Swank Digital Campus"@en ] ;
+            bflc:marcKey "856 40 $3 Swank Digital Campus $u https://www.swank.com/digital-campus" ;
+            bf:electronicLocator <http://www.swank.com/digital-campus> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Online resource; title from title screen (Swank Digital Campus, viewed July 26, 2024)"@en ],
+        [ a bf:Note,
+                oclcbf:AccessibilityNote ;
+            rdfs:label "Closed captioning in English"@en ;
+            oclcbf:displayConstant [ a oclcbf:DisplayConstant ;
+                    rdfs:label "Accessibility features" ;
+                    bf:code "1" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color"@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Swank Digital Campus"@en ] ;
+            bflc:marcKey "856 40 $3 Swank Digital Campus $u https://www.swank.com/digital-campus/details/24477 $7 1" ;
+            bf:electronicLocator <http://www.swank.com/digital-campus/details/24477> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note ;
+            rdfs:label "Originally released as a motion picture in 2013"@en ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States"@en ;
+            bflc:marcKey "257    $a United States $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a [Los Angeles, Calif.] $b Annapurna Pictures $c [2013]" ;
+            bflc:simpleAgent "Annapurna Pictures" ;
+            bflc:simpleDate "[2013]" ;
+            bflc:simplePlace "[Los Angeles, Calif.]" ;
+            bf:date "2013"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/cau> ] ;
+    bf:publicationStatement "[Los Angeles, Calif.] Annapurna Pictures [2013]" ;
+    bf:responsibilityStatement "an Annapurna Pictures production ; written and directed by Spike Jonze ; produced by Megan Ellison, Spike Jonze, Vincent Landay" ;
+    bf:soundCharacteristic [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Swank Motion Pictures"@en ] ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ] ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Her /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Her /" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

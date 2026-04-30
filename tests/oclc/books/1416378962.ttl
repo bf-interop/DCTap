@@ -1,0 +1,260 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    bf:code "aut" .
+
+<https://id.oclc.org/worldcat/entity/1416378962#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20240502160719.2" ;
+    bf:creationDate "20240102" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1416378962> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1416378962#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@sv ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Aldrich, Matthew $c (Writer on Arabic language) $4 aut" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Aldrich, Matthew (Writer on Arabic language)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Conversation and phrase books." ;
+            bflc:marcKey "655  7 $a Conversation and phrase books. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1416378962> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:code "ara" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/ara> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/otx> ;
+            bf:language [ a bf:Language ;
+                    bf:code "ara" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/ara> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Text in English and Arabic."@sv ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Spoken Arabic." ;
+            bflc:marcKey "650  0 $a Arabic language $x Spoken Arabic." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025150" ] ] [ a bf:Topic ;
+                        rdfs:label "Spoken Arabic." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Spoken Arabic." ;
+            bflc:marcKey "650  7 $a Arabic language $x Spoken Arabic. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ] [ a bf:Topic ;
+                        rdfs:label "Spoken Arabic." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Dialects." ;
+            bflc:marcKey "650  0 $a Arabic language $x Dialects." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025157" ] ] [ a bf:Topic ;
+                        rdfs:label "Dialects." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025157" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Dialects Study and teaching." ;
+            bflc:marcKey "650  0 $a Arabic language $x Dialects $x Study and teaching." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025157" ] ] [ a bf:Topic ;
+                        rdfs:label "Dialects" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2025157" ] ] [ a bf:Topic ;
+                        rdfs:label "Study and teaching." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5542170" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Arabic language." ;
+            bflc:marcKey "650  7 $a Arabic language. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Dialects." ;
+            bflc:marcKey "650  7 $a Arabic language $x Dialects. $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ] [ a bf:Topic ;
+                        rdfs:label "Dialects." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Arabic language Conversation and phrase books English." ;
+            bflc:marcKey "650  0 $a Arabic language $v Conversation and phrase books $x English." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Arabic language" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8106149" ] ] [ a bf:Topic ;
+                        rdfs:label "English." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8106149" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Conversation and phrase books" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca8106149" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "If you're learning Arabic, you've probably started with Modern Standard Arabic (MSA). Or perhaps a dialect? You might be learning both MSA and a dialect (or two!) in tandem. And you're certainly aware that there are many more dialects out there. It may seem daunting. But just how similar and different are they from one another? If you're curious, this book is for you. Arabic vs. Arabic: A Dialect Sampler lets you explore the vocabulary, pronunciation, and grammar of 15 varieties of Arabic (14 dialects and MSA) through tables with notes and free, downloadable accompanying audio. You can go through the tables in order or skip around the book to see what catches your attention. The book really is meant to be a sampler platter to give you a taste of each dialect and better understanding of just how varied the varied the various varieties of Arabic are. The layout encourages the self-discovery method of learning. While the notes under many tables identify points of interest, you are encouraged to find patterns, exceptions, innovative features of dialects, and universals by studying the tables and listening to the audio tracks."@sv ] ;
+    bf:title [ a bf:VariantTitle,
+                <http://id.loc.gov/vocabulary/vartitletype/por> ;
+            bflc:marcKey "246 10 $a Dialect sampler" ;
+            bf:mainTitle "Dialect sampler" ],
+        [ a bf:Title ;
+            rdfs:label "Arabic vs. Arabic :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Arabic vs. Arabic :" ] .
+
+<https://id.oclc.org/worldcat/entity/1416378962> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1416378962#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@sv ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:copyrightDate "©2018"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "26 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "viii, 157 pages"@sv ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "0998641189" ],
+        [ a bf:Isbn ;
+            rdf:value "9780998641188" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1416378962" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1416378962#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@sv ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "illustrations"@sv ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b Lingualism, $c [2018]" ;
+            bflc:simpleAgent "Lingualism," ;
+            bflc:simpleDate "[2018]" ;
+            bf:date "2018"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxk> ] ;
+    bf:publicationStatement "Lingualism, [2018]" ;
+    bf:responsibilityStatement "Matthew Aldrich." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Arabic vs. Arabic : a dialect sampler /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Arabic vs. Arabic :" ;
+            bf:subtitle "a dialect sampler /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

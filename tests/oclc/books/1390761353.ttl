@@ -1,0 +1,183 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal"@en ;
+    bf:code "7" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations"@en ;
+    bf:code "ill" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/t> a bf:Status ;
+    rdfs:label "transcribed" .
+
+<http://id.loc.gov/vocabulary/mstatus/tr> a bf:Status ;
+    rdfs:label "traced" .
+
+<https://id.oclc.org/worldcat/entity/1390761353#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20251011194834.8" ;
+    bf:creationDate "20230512" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1390761353> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/1390761353#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ],
+        [ a bf:Content ;
+            rdfs:label "still image"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Adam Matthew Digital (Firm), $e digitiser. $1 https://id.oclc.org/worldcat/entity/E39QH7JmpTQQYj3r8637XdYwdF" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmpTQQYj3r8637XdYwdF> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "digitiser." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1390761353> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "1900-1930." ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Series ;
+                    bflc:marcKey "490 1  $a African American Communities." ;
+                    bf:status <http://id.loc.gov/vocabulary/mstatus/t>,
+                        <http://id.loc.gov/vocabulary/mstatus/tr> ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "African American Communities." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Series ;
+                    rdfs:label "African American Communities." ;
+                    bflc:marcKey "830  0 $a African American Communities." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "African American Communities." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/series> ] ;
+    bf:subject [ a bflc:Uncontrolled,
+                bf:Topic ;
+            rdfs:label "Family and Daily Life" ;
+            bflc:marcKey "653  0 $a Family and Daily Life" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Portraits [series 2, folder 55] :" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Portraits [series 2, folder 55] :" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmpTQQYj3r8637XdYwdF> a bf:Organization ;
+    rdfs:label "Adam Matthew Digital (Firm)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca7442705" ] .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<https://id.oclc.org/worldcat/entity/1390761353> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1390761353#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource."@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1390761353" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1390761353#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/orig> ;
+            rdfs:label "Portraits 1900-1930."@en ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Reproduction of:"@en ] ;
+            bflc:marcKey "534    $p Reproduction of: $t Portraits $c 1900-1930." ],
+        [ a bf:Note ;
+            rdfs:label "Please note that some of the metadata for this document has been drawn from the catalogue of the Atlanta History Center."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Description based on online resource (viewed on May 12, 2023)."@en ],
+        [ a bf:Note ;
+            rdfs:label "AMDigital Reference: VIS 32, Series 2, Folder 55."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "Collection: an American Communities" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://www.aac.amdigital.co.uk/Documents/Details/ahc_VIS_0032_0002_0055 $y African American Communities $x Provider: Adam Matthew $x Collection: an American Communities $x purchased $x eLoaderURL $x fa4 $x faZzE-AMD00113849zZ" ;
+            bf:electronicLocator <http://www.aac.amdigital.co.uk/Documents/Details/ahc_VIS_0032_0002_0055> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Adam Matthew"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "African American Communities"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Marlborough, Wiltshire : $b Adam Matthew Digital, $c 2015." ;
+            bflc:simpleAgent "Adam Matthew Digital," ;
+            bflc:simpleDate "2015." ;
+            bflc:simplePlace "Marlborough, Wiltshire :" ;
+            bf:date "2015"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/enk> ] ;
+    bf:publicationStatement "Marlborough, Wiltshire : Adam Matthew Digital, 2015." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Portraits [series 2, folder 55] : Photograph 1900-1930." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Portraits [series 2, folder 55] :" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

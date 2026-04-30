@@ -1,0 +1,247 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/frequencies/irr> a bf:Frequency ;
+    rdfs:label "irregular"@en ;
+    bf:code "irr" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    bf:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mgovtpubtype/i> a bflc:GovernmentPubType ;
+    rdfs:label "international Intergovernmental"@en ;
+    bf:code "i" .
+
+<http://id.loc.gov/vocabulary/millus/ilm> a bf:Illustration ;
+    rdfs:label "illuminations"@en ;
+    bf:code "ilm" .
+
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical"@en ;
+    bf:code "periodical" .
+
+<http://id.loc.gov/vocabulary/mstatus/incorrect> a bf:Status ;
+    rdfs:label "incorrect"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dnlm> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/continuationof> a bf:Relationship ;
+    rdfs:label "continuation of"@en .
+
+<https://id.oclc.org/worldcat/entity/1506482982#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "NLM" ] ;
+    bf:changeDate "20250313021516.3" ;
+    bf:creationDate "20230203" ;
+    bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a NLM $b eng $c NLM" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+            rdfs:label "0 - successive"@en ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1506482982> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "NLM" ] .
+
+<https://id.oclc.org/worldcat/entity/1506482982#work> a bf:Serial,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType <http://id.loc.gov/vocabulary/mgovtpubtype/i> ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:classification [ a bf:ClassificationNlm ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            bf:classificationPortion "W1" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text"@en ;
+            bf:code "txt" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/txt> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a International Agency for Research on Cancer, $e issuing body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "International Agency for Research on Cancer," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "issuing body." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a IARC Working Group on the Identification of Carcinogenic Hazards to Humans, $e sponsoring body." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "IARC Working Group on the Identification of Carcinogenic Hazards to Humans," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "sponsoring body." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Periodical." ;
+            bflc:marcKey "655  2 $a Periodical." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1506482982> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/incorrect> ;
+            rdf:value "1017-1606" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ilm> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource <https://id.oclc.org/worldcat/entity/19175507#work> ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/continuationof> ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "Carcinogens." ;
+            bflc:marcKey "650 12 $a Carcinogens." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Neoplasms chemically induced." ;
+            bflc:marcKey "650 12 $a Neoplasms $x chemically induced." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Neoplasms" ] [ a bf:Topic ;
+                        rdfs:label "chemically induced." ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "IARC monographs on the identification of carcinogenic hazards to humans /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "IARC monographs on the identification of carcinogenic hazards to humans /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a International Agency for Research on Cancer monographs on the identification of carcinogenic hazards to humans" ;
+            bf:mainTitle "International Agency for Research on Cancer monographs on the identification of carcinogenic hazards to humans" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $a IARC monographs" ;
+            bf:mainTitle "IARC monographs" ] .
+
+<https://id.oclc.org/worldcat/entity/19175507#work> a bf:Work ;
+    bf:hasInstance [ a bf:Instance ;
+            bf:identifiedBy [ a bf:OclcNumber ;
+                    rdf:value "19175507" ],
+                [ a bf:Lccn ;
+                    rdf:value "   90640249" ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "IARC monographs on the evaluation of carcinogenic risks to humans" ] ] ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "1017-1606" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "IARC monographs on the evaluation of carcinogenic risks to humans" ] .
+
+<http://id.loc.gov/vocabulary/mstatus/current> a bf:Status ;
+    rdfs:label "current"@en .
+
+<https://id.oclc.org/worldcat/entity/1506482982> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1506482982#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@en ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Irregular"@en ;
+            bflc:marcKey "310    $a Irregular" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ],
+        <http://id.loc.gov/vocabulary/frequencies/irr> ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2025227912" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1506482982" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    bf:code "DNLM" ] ;
+            rdf:value "9918646076906676" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1506482982#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "serial"@en ;
+            bf:code "serl" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/serl> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://www.ncbi.nlm.nih.gov/books/NBK294452/" ;
+            bf:electronicLocator <http://www.ncbi.nlm.nih.gov/books/NBK294452> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/number> ;
+            rdfs:label "Began with Volume 124 (2020)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/addphys> ;
+            rdfs:label "Also issued in print."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/orig> ;
+            rdfs:label "Online"@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Description based on: Volume 124 (2020); title from journal homepage (publisher's website, viewed February 12, 2025)."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Latest issue consulted: Volume 134 (2024) (viewed February 12, 2025)."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:marcKey "856 40 $u https://publications.iarc.fr/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans" ;
+            bf:electronicLocator <http://publications.iarc.fr/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/issuing> ;
+            rdfs:label "\"This publication represents the views and expert opinions of an IARC Working Group on the Identification of Carcinogenic Hazards to Humans.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Lyon, France : $b International Agency for Research on Cancer, World Health Organization, $c [2020]-" ;
+            bflc:simpleAgent "International Agency for Research on Cancer, World Health Organization," ;
+            bflc:simpleDate "[2020]-" ;
+            bflc:simplePlace "Lyon, France :" ;
+            bf:date "2020/.."^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/fr> ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/current> ] ;
+    bf:publicationStatement "Lyon, France : International Agency for Research on Cancer, World Health Organization, [2020]-" ;
+    bf:responsibilityStatement "International Agency for Research on Cancer, World Health Organization." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "IARC monographs on the identification of carcinogenic hazards to humans /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "IARC monographs on the identification of carcinogenic hazards to humans /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/mesh> a bf:Source .
+

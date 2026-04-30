@@ -1,0 +1,181 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/saogf> a bf:Source ;
+    bf:code "saogf" .
+
+<http://id.loc.gov/vocabulary/languages/swe> a bf:Language ;
+    bf:code "swe" .
+
+<http://id.loc.gov/vocabulary/maudience/pad> a bf:IntendedAudience ;
+    rdfs:label "pre-adolescent"@en ;
+    bf:code "pad" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.kb.se/term/sao/1960-talet> a bf:Temporal ;
+    rdfs:label "1960-talet" ;
+    bflc:marcKey "648  7 $a 1960-talet $0 https://id.kb.se/term/sao/1960-talet $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Beat%20generation> a bf:Topic ;
+    rdfs:label "Beat generation." ;
+    bflc:marcKey "650  7 $a Beat generation. $0 https://id.kb.se/term/sao/Beat%20generation $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/sao/Reseskildringar> a bf:Topic ;
+    rdfs:label "Reseskildringar." ;
+    bflc:marcKey "650  7 $a Reseskildringar. $0 https://id.kb.se/term/sao/Reseskildringar $2 sao" ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> .
+
+<https://id.kb.se/term/saogf/Tv-program> a bf:GenreForm ;
+    rdfs:label "Tv-program." ;
+    bflc:marcKey "655  7 $a Tv-program. $0 https://id.kb.se/term/saogf/Tv-program $2 saogf" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/saogf> .
+
+<https://id.oclc.org/worldcat/entity/1410015356#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "S3O" ] ;
+    bf:changeDate "20251215152144.5" ;
+    bf:creationDate "20231120" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/swe> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a S3O $b swe $c S3O $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1410015356> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "S3O" ] .
+
+<https://id.oclc.org/worldcat/entity/1410015356#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:Classification ;
+            bf:classificationPortion "Nqa.07" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:Classification ;
+            bf:classificationPortion "Geqz Kesey, Ken" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/kssb/8> ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "306.10973" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23/eng/20240417" ] ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@sv ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026723>,
+        <https://id.kb.se/term/saogf/Tv-program> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1410015356> ;
+    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/pad> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                oclcbf:IntendedAudienceNote ;
+            rdfs:label "Vuxövergripande."@sv ] ;
+    bf:subject [ a bf:Place,
+                madsrdf:Geographic ;
+            rdfs:label "Förenta staterna." ;
+            bflc:marcKey "651  7 $a Förenta staterna. $0 https://id.kb.se/term/sao/F%C3%B6renta%20staterna $2 sao" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/sao> ;
+            skos:relatedMatch <https://id.kb.se/term/sao/F%C3%B6renta%20staterna> ],
+        <https://id.kb.se/term/sao/1960-talet>,
+        <https://id.kb.se/term/sao/Beat%20generation>,
+        <https://id.kb.se/term/sao/Reseskildringar> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Författaren Ken Kesey bestämde sig sommaren 1964 för att tillsammans med vänner köra tvärs över USA till världsutställningen i New York. För att transportera sig köpte man en gammal skolbuss från 30-talet som byggdes om och målades psykedeliskt av kultfiguren Neal Cassady, som även blev resans chaufför. Neal ingick i en löst sammanhängande grupp av medresenärer som kallade sig \"The Merry Pranksters\". På resan från Kalifornien till New York skulle man propagera för användandet av droger typ marijuana och LSD. Allt filmades på 16 mm färgfilm. Det blev en äventyrlig tripp med många möten längs resan - bland annat med beatnikförfattarna Jack Kerouac och Allen Ginsberg samt psykologen och drog- entusiasten Timothy Leary."@sv ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Magic Trip." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Magic Trip." ] ;
+    bf:validDate "20120525/20150414" .
+
+<http://id.loc.gov/vocabulary/classSchemes/kssb/8> a bf:Source ;
+    bf:code "kssb/8" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language .
+
+<https://id.oclc.org/worldcat/entity/1410015356> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1410015356#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@sv ;
+            bf:code "cr" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:duration "014257" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 onlineresurs ( 1 tim. 42 min.)"@sv ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1410015356" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1410015356#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video",
+                "dator"@sv ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $b A&E IndieFilms, $c 2011" ;
+            bflc:simpleAgent "A&E IndieFilms," ;
+            bflc:simpleDate "2011" ;
+            bf:date "2011"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "A&E IndieFilms, 2011" ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "Programbild"@sv ] ;
+            bflc:marcKey "856 42 $3 Programbild $u https://assets.ur.se/id/169142/images/1_ml.jpg" ;
+            bf:electronicLocator <http://assets.ur.se/id/169142/images/1_ml.jpg> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "digipic"@sv ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Magic Trip." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Magic Trip." ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/sao> a bf:Source ;
+    bf:code "sao" .
+

@@ -1,0 +1,230 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/authorities/classification/G3824.P5> a bf:GeographicCoverage ;
+    bflc:marcKey "052    $a 3824 $b P5" ;
+    bf:code "3824.P5" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026058> a bf:GenreForm ;
+    rdfs:label "Atlases"@en .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    bf:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<https://id.oclc.org/worldcat/entity/1479461877#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250201203836.3" ;
+    bf:creationDate "20241216" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d PAU $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1479461877> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1479461877#work> a bf:Cartography,
+        bf:Monograph,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "G1264.P5" ;
+            bf:itemPortion "S65 1921" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "cartographic image"@en ;
+            bf:code "cri" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/cri> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Smith, Elvino V., $d 1870-1932, $e compiler. $1 https://id.oclc.org/worldcat/entity/E39PCjMqDVBqTFpVH3w6Y8dXq3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjMqDVBqTFpVH3w6Y8dXq3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "compiler." ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Atlases." ;
+            bflc:marcKey "655  7 $a Atlases. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866050" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "atlases." ;
+            bflc:marcKey "655  7 $a atlases. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300028053" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Atlas." ;
+            bflc:marcKey "655  7 $a Atlas. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000196" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026058> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-pa" ;
+            bf:code "n-us-pa" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-pa> ],
+        <http://id.loc.gov/authorities/classification/G3824.P5> ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1479461877> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bflc:Uncontrolled,
+                        bf:Work ;
+                    bflc:marcKey "740 02 $a Map of Philadelphia, Camden and Vicinity : compiled from city plans and personal surveys." ;
+                    bf:title [ a bf:Title ;
+                            bflc:nonSortNum "0" ;
+                            bf:mainTitle "Map of Philadelphia, Camden and Vicinity : compiled from city plans and personal surveys." ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/part> ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scales differ." ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale"@en ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Geographic ;
+            rdfs:label "Philadelphia (Pa.) Maps." ;
+            bflc:marcKey "651  0 $a Philadelphia (Pa.) $v Maps." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Geographic ;
+                        rdfs:label "Philadelphia (Pa.)" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230596" ] ] [ a bf:GenreForm ;
+                        rdfs:label "Maps." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca4933824" ] ] ) ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Philadelphia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Philadelphia /" ],
+        [ a bf:VariantTitle ;
+            bflc:marcKey "246 1  $i Map index title: $a Map of Philadelphia : $b compiled from city plans and personal surveys" ;
+            bf:mainTitle "Map of Philadelphia :" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Map index title:"@en ] ;
+            bf:subtitle "compiled from city plans and personal surveys" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjMqDVBqTFpVH3w6Y8dXq3> a bf:Person ;
+    rdfs:label "Smith, Elvino V., 1870-1932," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca48881" ] .
+
+<https://id.oclc.org/worldcat/entity/1479461877> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1479461877#adminMetadata> ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "volume"@en ;
+            bf:code "nc" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/nc> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:dimensions "76 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 atlas (8, that is, 17 leaves) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1479461877" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1479461877#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Maps numbered plate 1-8."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes index."@en ],
+        [ a bf:Note ;
+            rdfs:label "Title from cover."@en ],
+        [ a bf:Note ;
+            rdfs:label "Index map states scale: 1 in = 4000 feet.  Plate 5 stated scale: 1 in = 1000 feet."@en ],
+        [ a bf:Note ;
+            rdfs:label "Plate 5 is a map of the Philadelphia, Camden vicinity, copyrighted 1921 by Elvino V. Smith. Other maps are copyrighted 1919."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "9 color maps mounted on canvas ;"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Phila, PA. : $b Elvino V. Smith, C.E., $c [1921]" ;
+            bflc:simpleAgent "Elvino V. Smith, C.E.," ;
+            bflc:simpleDate "[1921]" ;
+            bflc:simplePlace "Phila, PA. :" ;
+            bf:date "1921"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/pau> ] ;
+    bf:publicationStatement "Phila, PA. : Elvino V. Smith, C.E., [1921]" ;
+    bf:responsibilityStatement "published by Elvino V. Smith." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Philadelphia /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Philadelphia /" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

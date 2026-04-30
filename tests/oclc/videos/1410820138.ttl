@@ -1,0 +1,541 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/classification/G4014.N5> a bf:Place .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules"@en ;
+    bf:code "aacr" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/amim> a bf:DescriptionConventions ;
+    bf:code "amim" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/relationship/datasource> a bf:Relationship ;
+    rdfs:label "data source"@en .
+
+<http://id.loc.gov/vocabulary/relationship/partof> a bf:Relationship ;
+    rdfs:label "part of"@en .
+
+<https://id.oclc.org/worldcat/entity/1410820138#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:changeDate "20251011183844.7" ;
+    bf:creationDate "20230818" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr>,
+        <http://id.loc.gov/vocabulary/descriptionConventions/amim> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCO" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a DLC $b eng $c DLC $d OCLCO $d OCLCQ $d OCLCL $d OCLCO" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1410820138> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "DLC" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<https://id.oclc.org/worldcat/entity/1410820138#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:capture [ a bf:Capture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "capture"@en ] ;
+            bf:place <http://id.loc.gov/authorities/classification/G4014.N5> ],
+        [ a bf:Capture ;
+            rdfs:label "Filmed in New Orleans, Louisiana."@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "364.34" ;
+            bf:edition "full" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3fjq8dkCFMDtpqcHD7dTmTr9T> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brown, William P. $q (William Paul), $e consultant. $1 https://id.oclc.org/worldcat/entity/E39PCjFcwHPCRJMJwwGHYFh4dP" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjFcwHPCRJMJwwGHYFh4dP> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Matthews, Robert A. $q (Robert Archibald), $d 1903-1961, $e consultant. $1 https://id.oclc.org/worldcat/entity/E39PCjx4BXj79WhrpfR6bCYr4q" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjx4BXj79WhrpfR6bCYr4q> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ziller, Robert, $d 1914-2010, $e cinematographer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ziller, Robert, 1914-2010," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15546704" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cinematographer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Louisiana Association for Mental Health, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqhpkPjt6cBRCJQqVxt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqhpkPjt6cBRCJQqVxt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hildreth, Harold M., $d 1906-1965, $e contributor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hildreth, Harold M., 1906-1965," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15557092" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "contributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Daly, James, $d 1918-1978, $e narrator. $1 https://id.oclc.org/worldcat/entity/E39PBJwtrkpVkmvb4FbfcCVBfq" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJwtrkpVkmvb4FbfcCVBfq> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "narrator." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a George C. Stoney Associates, $e production company. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqFGQKF9CBVd44Jp8Rg" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqFGQKF9CBVd44Jp8Rg> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cutrera, Lucien, $d 1916-1969, $e onscreen participant." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cutrera, Lucien, 1916-1969," ;
+                    bf:identifiedBy [ a bf:Local ;
+                            bf:assigner [ a bf:Organization ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "oca15546362" ] ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "onscreen participant." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cummins, Sylvia K., $e film editor." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cummins, Sylvia K.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film editor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Rowland, Loyd W., $d 1902-1981, $e contributor. $1 https://id.oclc.org/worldcat/entity/E39PCjwYhf8kJVrgTYYYqHtBj3" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjwYhf8kJVrgTYYYqHtBj3> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "contributor." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a National Institute of Mental Health (U.S.), $e production company. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7WprwHm3Gy3WBGb4kt" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QQPVp7WprwHm3Gy3WBGb4kt> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Stoney, George C., $e screenwriter, $e film director." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Stoney, George C.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film director." ],
+                [ a bf:Role ;
+                    rdfs:label "screenwriter," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Du Art Film Laboratories, $e film distributor. $1 https://id.oclc.org/worldcat/entity/E39QH7JmqJBMH6v3ktPrFKrCGR" ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39QH7JmqJBMH6v3ktPrFKrCGR> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film distributor." ] ] ;
+    bf:duration "PT32M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Courts métrages." ;
+            bflc:marcKey "655  7 $a Courts métrages. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000005" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Short films." ;
+            bflc:marcKey "655  7 $a Short films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866548" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Instructional films." ;
+            bflc:marcKey "655  7 $a Instructional films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866313" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films de formation." ;
+            bflc:marcKey "655  7 $a Films de formation. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000110" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Sponsored films." ;
+            bflc:marcKey "655  7 $a Sponsored films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866577" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us-la" ;
+            bf:code "n-us-la" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us-la> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1410820138> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Planned by Loyd W. Rowland, Ph.D. ; photographed by Robert Ziller ; editor, Sylvia Cummins Betts ; sound, Walter James, Jr., Albert Kraus ; production assistant, Katherine Stoney ; camera assistant, Peter R. Norman ; chief electrician, Alton D. Reed ; principal psychiatric advisor, Robert A. Matthews, M.D. ; principal police advisor, Capt. William P. Brown ; representing the National Institute of Mental Health, Harold M. Hildreth, Ph.D."@en ;
+            bflc:marcKey "508    $a Planned by Loyd W. Rowland, Ph.D. ; photographed by Robert Ziller ; editor, Sylvia Cummins Betts ; sound, Walter James, Jr., Albert Kraus ; production assistant, Katherine Stoney ; camera assistant, Peter R. Norman ; chief electrician, Alton D. Reed ; principal psychiatric advisor, Robert A. Matthews, M.D. ; principal police advisor, Capt. William P. Brown ; representing the National Institute of Mental Health, Harold M. Hildreth, Ph.D." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Narrator: James Daly."@en ;
+            bflc:marcKey "511 0  $a Narrator: James Daly." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Featuring: New Orleans Police Department Sergeant Lucien Cutrera."@en ;
+            bflc:marcKey "511 0  $a Featuring: New Orleans Police Department Sergeant Lucien Cutrera." ] ;
+    bf:originDate "1960"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Lccn ;
+                                    rdf:value " 2303155" ] ;
+                            bf:note [ a bf:Note ;
+                                    rdfs:label "MAVIS" ] ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "Booked for safekeeping" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Booked for safekeeping" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/datasource> ],
+        [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:title [ a bf:Title ;
+                                    bf:mainTitle "MacDonald (J. Fred and Leslie W.) Collection (Library of Congress)" ] ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "MacDonald (J. Fred and Leslie W.) Collection (Library of Congress)" ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/partof> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police services for the mentally ill Louisiana New Orleans." ;
+            bflc:marcKey "650  0 $a Police services for the mentally ill $z Louisiana $z New Orleans." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police services for the mentally ill" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2149422" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiana" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] [ a bf:Geographic ;
+                        rdfs:label "New Orleans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police training Louisiana New Orleans." ;
+            bflc:marcKey "650  0 $a Police training $z Louisiana $z New Orleans." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police training" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2153608" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiana" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] [ a bf:Geographic ;
+                        rdfs:label "New Orleans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Policiers Formation Louisiane La Nouvelle-Orléans." ;
+            bflc:marcKey "650  6 $a Policiers $x Formation $z Louisiane $z La Nouvelle-Orléans." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Policiers" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0058618" ] ] [ a bf:Topic ;
+                        rdfs:label "Formation" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0058618" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiane" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] [ a bf:Geographic ;
+                        rdfs:label "La Nouvelle-Orléans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police Services aux personnes vivant avec un trouble de santé mentale Louisiane La Nouvelle-Orléans." ;
+            bflc:marcKey "650  6 $a Police $x Services aux personnes vivant avec un trouble de santé mentale $z Louisiane $z La Nouvelle-Orléans." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0165235" ] ] [ a bf:Topic ;
+                        rdfs:label "Services aux personnes vivant avec un trouble de santé mentale" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0165235" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiane" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] [ a bf:Geographic ;
+                        rdfs:label "La Nouvelle-Orléans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police Travail social Louisiane La Nouvelle-Orléans." ;
+            bflc:marcKey "650  6 $a Police $x Travail social $z Louisiane $z La Nouvelle-Orléans." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0029888" ] ] [ a bf:Topic ;
+                        rdfs:label "Travail social" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0029888" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiane" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] [ a bf:Geographic ;
+                        rdfs:label "La Nouvelle-Orléans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0465228" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Police social work Louisiana New Orleans." ;
+            bflc:marcKey "650  0 $a Police social work $z Louisiana $z New Orleans." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Police social work" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2153581" ] ] [ a bf:Geographic ;
+                        rdfs:label "Louisiana" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] [ a bf:Geographic ;
+                        rdfs:label "New Orleans." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca241365" ] ] ) ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Training film for police officers explaining how to recognize and handle people with mental disturbances as first responders in psychiatric emergencies. Using dramatized scenes featuring New Orleans, Louisiana, police officers and nonprofessional actors, the film illustrates some humane and safe methods for handling people with mental disturbances who are anxious, confused, and possibly violent. The film keeps the needs of both police officers and people with mental disturbances in mind and stresses the basic points of proper handling of excited persons: calmness, candor, honesty, psychological deterrence when possible, and gradual release from restraint."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Booked for safekeeping /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Booked for safekeeping /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJwtrkpVkmvb4FbfcCVBfq> a bf:Person ;
+    rdfs:label "Daly, James, 1918-1978," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca1760098" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjFcwHPCRJMJwwGHYFh4dP> a bf:Person ;
+    rdfs:label "Brown, William P. (William Paul)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5695717" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjwYhf8kJVrgTYYYqHtBj3> a bf:Person ;
+    rdfs:label "Rowland, Loyd W., 1902-1981," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca3917129" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCjx4BXj79WhrpfR6bCYr4q> a bf:Person ;
+    rdfs:label "Matthews, Robert A. (Robert Archibald), 1903-1961," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca9225447" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqFGQKF9CBVd44Jp8Rg> a bf:Organization ;
+    rdfs:label "George C. Stoney Associates," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca733067" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqJBMH6v3ktPrFKrCGR> a bf:Organization ;
+    rdfs:label "Du Art Film Laboratories," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca5324778" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QH7JmqhpkPjt6cBRCJQqVxt> a bf:Organization ;
+    rdfs:label "Louisiana Association for Mental Health," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca733068" ] .
+
+<https://id.oclc.org/worldcat/entity/E39QQPVp7WprwHm3Gy3WBGb4kt> a bf:Organization ;
+    rdfs:label "National Institute of Mental Health (U.S.)," ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "oca275261" ] .
+
+<https://id.oclc.org/worldcat/entity/1410820138> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1410820138#adminMetadata> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 video file (digital) (32 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "  2023600371" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1410820138" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1410820138#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Parts of summary from the National Film Preservation Foundation WWW site and Selected mental health films."@en ],
+        [ a bf:Note ;
+            rdfs:label "Sources used: National Film Preservation Foundation WWW site, viewed August 16, 2023; Selected mental health films, 1967, p. 17, viewed online August 18, 2023 via Media History Digital Library; St. Bernard voice (Arabi, Louisiana), September 30, 1960, p. 2, viewed August 18, 2023 via Newspapers.com; Daily world (Opelousas, Louisiana), March 14, 1961, p. 2, viewed August 18, 2023 via Newspapers.com."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sd., b&w."@en ],
+        [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/ElectronicLocator> ;
+            bflc:appliesTo [ a bflc:AppliesTo ;
+                    rdfs:label "digital viewing copy"@en ] ;
+            bflc:marcKey "856 41 $3 digital viewing copy $d ntscrm $f 02303155 $u https://hdl.loc.gov/loc.mbrsmi/ntscrm.02303155" ;
+            bf:electronicLocator <http://hdl.loc.gov/loc.mbrsmi/ntscrm.02303155> ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "1" ] ] ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "United States."@en ;
+            bflc:marcKey "257    $a United States. $2 naf" ;
+            bf:source [ a bf:Source ;
+                    bf:code "naf" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a United States : $b DuArt Films, $c 1960." ;
+            bflc:simpleAgent "DuArt Films," ;
+            bflc:simpleDate "1960." ;
+            bflc:simplePlace "United States :" ;
+            bf:date "1960"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xxu> ] ;
+    bf:publicationStatement "United States : DuArt Films, 1960." ;
+    bf:responsibilityStatement "produced [sponsored] by the Louisiana Association for Mental Health and the National Institute of Mental Health ; a Stoney Associates production ; written and directed by George Stoney." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Booked for safekeeping /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Booked for safekeeping /" ] .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+

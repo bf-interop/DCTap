@@ -1,0 +1,765 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026723> a bf:GenreForm ;
+    rdfs:label "Video recordings"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description"@en ;
+    bf:code "isbd" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source ;
+    bf:code "rdacarrier" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source ;
+    bf:code "rdacontent" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source ;
+    bf:code "rdamedia" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/msoundcontent/sound> a bf:SoundContent ;
+    rdfs:label "sound"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<http://id.loc.gov/vocabulary/mtechnique/live> a bflc:MovingImageTechnique ;
+    rdfs:label "live action"@en ;
+    bf:code "live" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source ;
+    bf:code "aat" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<https://id.oclc.org/worldcat/entity/1452249635#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20260201050439.2" ;
+    bf:creationDate "20240813" ;
+    bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCO" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCO $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1452249635> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1452249635#work> a bf:Monograph,
+        bf:MovingImage,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bflc:movingImageTechnique <http://id.loc.gov/vocabulary/mtechnique/live> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "two-dimensional moving image"@en ;
+            bf:code "tdi" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/contentTypes/tdi> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Cromwell, Rasheed Ali, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Cromwell, Rasheed Ali," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Artemis Rising Foundation, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Artemis Rising Foundation," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a André, Marie Lourdes, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "André, Marie Lourdes," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Abele, Wendy, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Abele, Wendy," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Vivenzio, James, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Vivenzio, James," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Independent Television Service, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Independent Television Service," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hurt-Milner, Stacey, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hurt-Milner, Stacey," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Corporation for Public Broadcasting." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Corporation for Public Broadcasting." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Brown, Natalie Bullock, $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Brown, Natalie Bullock," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Nuwer, Hank, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Nuwer, Hank," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Winters, Bill, $d 1975- $e director of photography. $1 https://id.oclc.org/worldcat/entity/E39PCjFc9HVhqV3DVP6ccK4pfq." ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjFc9HVhqV3DVP6ccK4pfq.> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "director of photography." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Champion, Robert, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Champion, Robert," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hotep, Lasana O., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hotep, Lasana O.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Burch, Jo Hannah, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Burch, Jo Hannah," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McClanahan, Diane, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "McClanahan, Diane," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Greene, Denise A., $e film producer." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Greene, Denise A.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "film producer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Coiscou, Karl, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Coiscou, Karl," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Smith, Debbie, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Smith, Debbie," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Guobadia, Michelle, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Guobadia, Michelle," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Kimbrough, Walter M., $d 1967- $e interviewee. $1 https://id.oclc.org/worldcat/entity/E39PCjGvFYCDJthmWckYgkBC6X." ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PCjGvFYCDJthmWckYgkBC6X.> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jones, Ricky L., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jones, Ricky L.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Arbuckle-Muhammad, Loreal, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Arbuckle-Muhammad, Loreal," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Patton, Stacey, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Patton, Stacey," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Salas, Jessica Lee, $e editor of moving image work." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Salas, Jessica Lee," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "editor of moving image work." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hanes, Wendell, $e composer (expression)" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hanes, Wendell," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "composer (expression)" ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Virginia Public Media." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Virginia Public Media." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Williams, Anthony M., $e interviewee. $0 http://id.loc.gov/authorities/names/no2025118232" ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Williams, Anthony M.," ;
+                    skos:relatedMatch <http://id.loc.gov/authorities/names/no2025118232> ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Saafir, Karim, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Saafir, Karim," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Baldwin, Kelvin J., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Baldwin, Kelvin J.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McClanahan, Brent, $c Jr., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "McClanahan, Brent, Jr.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Champion, Pamela, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Champion, Pamela," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Ross, Lawrence C., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Ross, Lawrence C.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Prinstein, Mitchell J., $d 1970- $e interviewee. $1 https://id.oclc.org/worldcat/entity/E39PBJtRKYjwMyDDfqxwhyHwG3." ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJtRKYjwMyDDfqxwhyHwG3.> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Joseph, Yvel, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Joseph, Yvel," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Black Public Media, $e production company." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Black Public Media," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production company." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hurt, Byron, $d 1970- $e film director, $e screenwriter, $e interviewer. $1 https://id.oclc.org/worldcat/entity/E39PBJhRP4FbJqg7bbCK6kRHYP." ;
+            bf:agent <https://id.oclc.org/worldcat/entity/E39PBJhRP4FbJqg7bbCK6kRHYP.> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "screenwriter," ],
+                [ a bf:Role ;
+                    rdfs:label "film director," ],
+                [ a bf:Role ;
+                    rdfs:label "interviewer." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a High, Nikki, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "High, Nikki," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Abele, Jack, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Abele, Jack," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Katz, Jackson, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Katz, Jackson," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Wynter, Stephen, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Wynter, Stephen," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Hill, Marc Lamont, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Hill, Marc Lamont," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a McClanahan, Brent, $c Sr., $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "McClanahan, Brent, Sr.," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a God Bless the Child Productions, $e production company, $e presenter." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "God Bless the Child Productions," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "presenter." ],
+                [ a bf:Role ;
+                    rdfs:label "production company," ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Madden, Mary, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Madden, Mary," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "710 2  $a Media Education Foundation, $e publisher." ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Media Education Foundation," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "publisher." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Sangodele-Ayoka, Maurice, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Sangodele-Ayoka, Maurice," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Strong-Fargas, Patricia, $e interviewee." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Strong-Fargas, Patricia," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "interviewee." ] ] ;
+    bf:duration "PT1H42M"^^xsd:duration ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films" ;
+            bflc:marcKey "655  7 $a Nonfiction films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710269" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Nonfiction films." ;
+            bflc:marcKey "655  7 $a Nonfiction films. $2 lcgft" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "oca8866403" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Films autres que de fiction." ;
+            bflc:marcKey "655  7 $a Films autres que de fiction. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000105" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films." ;
+            bflc:marcKey "655  0 $a Documentary films." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films" ;
+            bflc:marcKey "655  7 $a Documentary films $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01710390" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentary films"@en ;
+            bflc:marcKey "380    $a Documentary films $2 lcgft" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/lcgft> ],
+        [ a bf:GenreForm ;
+            rdfs:label "documentary film." ;
+            bflc:marcKey "655  7 $a documentary film. $2 aat" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CStmoGRI" ] ;
+                    rdf:value "aatgf300375156" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
+        [ a bf:GenreForm ;
+            rdfs:label "Documentaires." ;
+            bflc:marcKey "655  7 $a Documentaires. $2 rvmgf" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "CaQQLa" ] ;
+                    rdf:value "RVMGF-000000017" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026723> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            bflc:marcKey "043    $a n-us---" ;
+            bf:code "n-us---" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/geographicAreas/n-us> ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1452249635> ;
+    bf:language [ a bf:Language ;
+            bf:code "eng" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang> ;
+            rdfs:label "Includes English subtitles."@en ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/lang>,
+                <http://id.loc.gov/vocabulary/resourceComponents/sub> ;
+            bf:language [ a bf:Language ;
+                    bf:code "eng" ;
+                    skos:closeMatch <http://id.loc.gov/vocabulary/languages/eng> ] ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/credits> ;
+            rdfs:label "Editor, Jessica Lee Salas ; director of photography, Bill Winters ; music, Wendell Yohannes Hanes."@en ;
+            bflc:marcKey "508    $a Editor, Jessica Lee Salas ; director of photography, Bill Winters ; music, Wendell Yohannes Hanes." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/participants> ;
+            rdfs:label "Speakers: Byron Hurt, Patricia Strong-Fargas, Nikki High, Debbie Smith, Pamela Champion, Robert Champion, Rasheed Ali Cromwell, Lasana Hotep, Marie Lourdes André, James Vivenzio, Dr. Jackson Katz, Hank Nuwer, Jack Abele, Wendy Abele, Dr. Ricky Jones, Dr. Mary Madden, Loreal Arbuckle-Muhammad, Karim Saafir, Michelle Guobadia, Stacey Hurt-Milner, Jo Hannah Burch, Dr. Mitch Prinstein, Maurice Sangodele-Ayoka, Dr. Walter Kimbrough, Dr. Marc Lamont Hill, Brent McClanahan, Jr., Brent McClanahan, Diane McClanahan, Lawrence Ross, Dr. Stacey Patton, Karl Coiscou, Kelvin J. Baldwin, Stephen Wynter, Anthony M. Williams, Yvel Joseph."@en ;
+            bflc:marcKey "511 0  $a Speakers: Byron Hurt, Patricia Strong-Fargas, Nikki High, Debbie Smith, Pamela Champion, Robert Champion, Rasheed Ali Cromwell, Lasana Hotep, Marie Lourdes André, James Vivenzio, Dr. Jackson Katz, Hank Nuwer, Jack Abele, Wendy Abele, Dr. Ricky Jones, Dr. Mary Madden, Loreal Arbuckle-Muhammad, Karim Saafir, Michelle Guobadia, Stacey Hurt-Milner, Jo Hannah Burch, Dr. Mitch Prinstein, Maurice Sangodele-Ayoka, Dr. Walter Kimbrough, Dr. Marc Lamont Hill, Brent McClanahan, Jr., Brent McClanahan, Diane McClanahan, Lawrence Ross, Dr. Stacey Patton, Karl Coiscou, Kelvin J. Baldwin, Stephen Wynter, Anthony M. Williams, Yvel Joseph." ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Initiations dans les écoles, universités, etc. États-Unis." ;
+            bflc:marcKey "650  6 $a Initiations dans les écoles, universités, etc. $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Initiations dans les écoles, universités, etc." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0003225" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0407727" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "College students Conduct of life" ;
+            bflc:marcKey "650  7 $a College students $x Conduct of life $2 fast" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "College students" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00867990" ] ] [ a bf:Topic ;
+                        rdfs:label "Conduct of life" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "fst00867990" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Hazing United States.Streaming not allowed without a separate license." ;
+            bflc:marcKey "650  0 $a Hazing $z United States.Streaming not allowed without a separate license." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Hazing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059861" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States.Streaming not allowed without a separate license." ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Greek letter societies United States." ;
+            bflc:marcKey "650  0 $a Greek letter societies $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Greek letter societies" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6648349" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca6648349" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "College students United States Conduct of life." ;
+            bflc:marcKey "650  0 $a College students $z United States $x Conduct of life." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "College students" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2543364" ] ] [ a bf:Topic ;
+                        rdfs:label "Conduct of life." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca5095507" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2543364" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Hazing United States." ;
+            bflc:marcKey "650  0 $a Hazing $z United States." ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Hazing" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca2059861" ] ] [ a bf:Geographic ;
+                        rdfs:label "United States." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "OCoLC" ] ;
+                                rdf:value "oca230407" ] ] ) ],
+        [ a bf:Topic ;
+            rdfs:label "Greek letter societies" ;
+            bflc:marcKey "650  7 $a Greek letter societies $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00947430" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic ;
+            rdfs:label "Hazing" ;
+            bflc:marcKey "650  7 $a Hazing $2 fast" ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst00952574" ] ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Étudiants États-Unis Morale pratique." ;
+            bflc:marcKey "650  6 $a Étudiants $z États-Unis $x Morale pratique." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Étudiants" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0119196" ] ] [ a bf:Topic ;
+                        rdfs:label "Morale pratique." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0379092" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "201-0119196" ] ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject,
+                madsrdf:Topic ;
+            rdfs:label "Associations désignées par des lettres grecques États-Unis." ;
+            bflc:marcKey "650  6 $a Associations désignées par des lettres grecques $z États-Unis." ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+            madsrdf:componentList ( [ a bf:Topic ;
+                        rdfs:label "Associations désignées par des lettres grecques" ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000277637" ] ] [ a bf:Geographic ;
+                        rdfs:label "États-Unis." ;
+                        bf:identifiedBy [ a bf:Local ;
+                                bf:assigner [ a bf:Organization ;
+                                        bf:code "CaQQLa" ] ;
+                                rdf:value "000277637" ] ] ) ],
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Hazing, from award-winning filmmaker Byron Hurt, offers a powerful, deeply personal look inside the culture of hazing in fraternities and sororities, sports teams, marching bands, the military, and beyond. Hurt, who belongs to a fraternity himself, talks to members of Black and historically white Greek-letter organizations and other groups that practice hazing, and gives voice to survivors of severe initiation rituals and the families of young people who died from being hazed. Expertly weaving these moving first-hand testimonies with insights from violence-prevention experts and campus professional staff, the film provides a nuanced and empathetic portrait of a culture that often confers a sense of belonging even as it too often leads to violence, sexual degradation, binge drinking, institutional coverups, and debased notions of manhood. Hazing is an extraordinary teaching tool for educators and advocates working to reform hazing culture and combat violence--especially those interested in bystander-based violence prevention and larger institutional, social, and cultural issues involving race, gender, identity, alienation, and belonging.\"--Container."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Hazing /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Hazing /" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PBJhRP4FbJqg7bbCK6kRHYP.> a bf:Person ;
+    rdfs:label "Hurt, Byron, 1970-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtRKYjwMyDDfqxwhyHwG3.> a bf:Person ;
+    rdfs:label "Prinstein, Mitchell J., 1970-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "United States" ;
+    bflc:marcKey "651  7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq" ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            rdf:value "fst01204155" ] ;
+    bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<https://id.oclc.org/worldcat/entity/E39PCjFc9HVhqV3DVP6ccK4pfq.> a bf:Person ;
+    rdfs:label "Winters, Bill, 1975-" .
+
+<https://id.oclc.org/worldcat/entity/E39PCjGvFYCDJthmWckYgkBC6X.> a bf:Person ;
+    rdfs:label "Kimbrough, Walter M., 1967-" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> a bf:Source ;
+    bf:code "rvmgf" .
+
+<http://id.loc.gov/vocabulary/mencformat/dvdv> a bf:EncodingFormat ;
+    rdfs:label "DVD video"@en .
+
+<http://id.loc.gov/vocabulary/mplayback/ste> a bf:PlaybackChannels ;
+    rdfs:label "stereo"@en .
+
+<http://id.loc.gov/vocabulary/mrecmedium/opt> a bf:RecordingMedium ;
+    rdfs:label "optical"@en .
+
+<https://id.oclc.org/worldcat/entity/1452249635> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1452249635#adminMetadata> ;
+    bf:aspectRatio [ a bf:AspectRatio ;
+            rdf:value "16:9" ] ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "videodisc"@en ;
+            bf:code "vd" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/vd> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:copyrightDate "©2022"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:digitalCharacteristic [ a bf:FileType ;
+            rdfs:label "video file"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdaft" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mfiletype/video> ],
+        [ a bf:EncodingFormat ;
+            rdfs:label "DVD"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mencformat/dvdv> ],
+        [ a bf:RegionalEncoding ;
+            rdfs:label "all regions"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdare" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mregencoding/all> ],
+        <http://id.loc.gov/vocabulary/mencformat/dvdv> ;
+    bf:dimensions "4 3/4 in." ;
+    bf:editionStatement "[Revised ed.]." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc (102 min.) :"@en ] ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1452249635" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1452249635#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "video"@en ;
+            bf:code "v" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/v> ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/physical> ;
+            rdfs:label "sound, color ;"@en ],
+        [ a bf:Note ;
+            rdfs:label "Originally produced in 2022. \"Upon investigation, we discovered that the original DVD contained footage that did not meet our quality and accuracy standards.\"--Letter from Media Education Foundation, dated 06/20/2023."@en ],
+        [ a bf:Note,
+                oclcbf:SystemDetailsNote ;
+            rdfs:label "DVD-R, NTSC, all regions, Dolby Digital 2.0, aspect ratio 16:9."@en ],
+        [ a bf:Note,
+                oclcbf:UsePolicy ;
+            rdfs:label "Includes public performance rights for University of Pennsylvania only. D."@en ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "stamping."@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdapm" ] ] ;
+    bf:projectionCharacteristic [ a bf:PresentationFormat ;
+            rdfs:label "videodisc"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "264  1 $a Northampton, Massachusetts : $b Media Education Foundation, $c [2023]" ;
+            bflc:simpleAgent "Media Education Foundation," ;
+            bflc:simpleDate "[2023]" ;
+            bflc:simplePlace "Northampton, Massachusetts :" ;
+            bf:date "2023"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/mau> ] ;
+    bf:publicationStatement "Northampton, Massachusetts : Media Education Foundation, [2023]" ;
+    bf:responsibilityStatement "God Bless the Child Productions presents ; a co-production of ITVS and Black Public Media ; in association with Virginia Public Media ; in association with Artemis Rising Foundation ; funding provided by the Corporation for Public Broadcasting (CPB) ; a Byron Hurt film ; produced by Natalie Bullock Brown, Denise A. Greene ; directed and written by Byron Hurt." ;
+    bf:soundCharacteristic [ a bf:PlaybackChannels ;
+            rdfs:label "stereo"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdacpc" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mplayback/ste> ],
+        [ a bf:PlaybackCharacteristic ;
+            rdfs:label "Dolby Digital 2.0"@en ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mspecplayback/dolbydig2> ],
+        [ a bf:RecordingMedium ;
+            rdfs:label "optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdarm" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrecmedium/opt> ],
+        [ a bf:RecordingMethod ;
+            rdfs:label "digital"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdatr" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mrectype/digital> ],
+        <http://id.loc.gov/vocabulary/mplayback/ste>,
+        <http://id.loc.gov/vocabulary/mrecmedium/opt> ;
+    bf:soundContent <http://id.loc.gov/vocabulary/msoundcontent/sound> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Hazing /" ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Hazing /" ] ;
+    bf:videoCharacteristic [ a bf:VideoFormat ;
+            rdfs:label "laser optical"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdavf" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mvidformat/laser> ],
+        [ a bf:BroadcastStandard ;
+            rdfs:label "NTSC"@en ;
+            bf:source [ a bf:Source ;
+                    bf:code "rdabs" ] ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mbroadstd/ntsc> ] ;
+    oclcbf:pmDimensions [ a oclcbf:PmDimensions ;
+            rdfs:label "4 3/4 in." ] .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/rvm> a bf:Source .
+
+<http://id.loc.gov/authorities/subjects> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+

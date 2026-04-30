@@ -1,0 +1,96 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/menclvl/3> a bflc:EncodingLevel ;
+    rdfs:label "abbreviated"@en ;
+    bf:code "3" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "changed"@en .
+
+<https://id.oclc.org/worldcat/entity/1424817499#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/3> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "PAU" ] ;
+    bf:changeDate "20250801195826.1" ;
+    bf:creationDate "20240301" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Unknown"@en ;
+            bf:code "u" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a PAU $b eng $c PAU $d OCLCQ $d OCLCL" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1424817499> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "PAU" ] .
+
+<https://id.oclc.org/worldcat/entity/1424817499#work> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner [ a bf:Organization ;
+                    bf:code "OCoLC" ] ;
+            bf:classificationPortion "798/.6" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22/eng/20240417" ] ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3CrqRGjk4XTbY7VMXyWmCbjbJ> ] ;
+    bf:contribution [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Heike Bean; Sarah Blanchard." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Heike Bean; Sarah Blanchard." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1424817499> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Carriage Driving : a logical approach through dressage training." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Carriage Driving : a logical approach through dressage training." ] .
+
+<https://id.oclc.org/worldcat/entity/1424817499> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1424817499#adminMetadata> ;
+    bf:identifiedBy [ a bf:OclcNumber ;
+            rdf:value "1424817499" ],
+        [ a bf:Isbn ;
+            rdf:value "9780876058985" ],
+        [ a bf:Isbn ;
+            rdf:value "0876058985" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/1424817499#work> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "unmediated"@en ;
+            bf:code "n" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/n> ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a New York $b Howell Book House; Macmillan Publishing Company $c 1992." ;
+            bflc:simpleAgent "Howell Book House; Macmillan Publishing Company" ;
+            bflc:simpleDate "1992." ;
+            bflc:simplePlace "New York" ;
+            bf:date "2022"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:publicationStatement "New York Howell Book House; Macmillan Publishing Company 1992." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Carriage Driving : a logical approach through dressage training." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Carriage Driving : a logical approach through dressage training." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+

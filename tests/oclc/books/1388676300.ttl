@@ -1,0 +1,178 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix oclcbf: <http://id.oclc.org/worldcat/bf-extension/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.loc.gov/vocabulary/mcolor/mix> a bf:ColorContent ;
+    rdfs:label "mixed color"@en .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full"@en ;
+    bf:code "f" .
+
+<http://id.loc.gov/vocabulary/mstatus/n> a bf:Status ;
+    rdfs:label "new"@en .
+
+<http://id.loc.gov/vocabulary/mstatus/uba> a bf:Status ;
+    rdfs:label "used by assigner" ;
+    bf:code "uba" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization .
+
+<http://id.loc.gov/vocabulary/relationship/otherphysicalformat> a bf:Relationship ;
+    rdfs:label "other physical format"@en .
+
+<https://id.oclc.org/worldcat/entity/1388676300#adminMetadata> a bf:AdminMetadata,
+        oclcbf:Record ;
+    bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+    bf:assigner [ a bf:Organization ;
+            bf:code "STF" ] ;
+    bf:changeDate "20250830024351.5" ;
+    bf:creationDate "20230627" ;
+    bf:descriptionConventions [ a bf:DescriptionConventions ;
+            rdfs:label "Non-ISBD"@en ;
+            bf:code "blank" ] ;
+    bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:descriptionModifier [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ],
+        [ a bf:Organization ;
+            bf:code "OCLCL" ],
+        [ a bf:Organization ;
+            bf:code "OCLCQ" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/internal> ;
+            rdfs:label "040    $a STF $b eng $c STF $d OCLCL $d OCLCQ $d OCLCL $d OCLCQ" ] ;
+    bf:status <http://id.loc.gov/vocabulary/mstatus/n> ;
+    oclcbf:mainEntity <https://id.oclc.org/worldcat/entity/1388676300> ;
+    oclcbf:transcriber [ a bf:Organization ;
+            bf:code "STF" ] .
+
+<https://id.oclc.org/worldcat/entity/E39PCFQwkJjbv7q6Hhf6QgKBKd> a bf:Monograph,
+        bf:Text,
+        bf:Work,
+        <https://id.oclc.org/worldcat/ontology/Work> ;
+    bflc:governmentPubType [ a bflc:GovernmentPubType ;
+            rdfs:label ""@en ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "TK5101 .C29824 2002eb" ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/uba> ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "621.38419" ;
+            bf:edition "full" ;
+            skos:relatedMatch <https://id.oclc.org/worldcat/ddc/E3JBvJqRX37jjxBhVDqqWdbkxk> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jedlicka, Russ." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jedlicka, Russ." ] ],
+        [ a bf:Contribution ;
+            bflc:marcKey "700 1  $a Jedlica, Russ." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Jedlica, Russ." ] ],
+        [ a bf:PrimaryContribution ;
+            bflc:marcKey "100 1  $a Carden, Frank." ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Carden, Frank." ] ] ;
+    bf:hasInstance <https://id.oclc.org/worldcat/entity/1388676300> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:relation [ a bf:Relation ;
+            bf:associatedResource [ a bf:Work ;
+                    bf:hasInstance [ a bf:Instance ;
+                            bf:identifiedBy [ a bf:Isbn ;
+                                    rdf:value "9781580532570" ] ] ] ;
+            bf:relationship <http://id.loc.gov/vocabulary/relationship/otherphysicalformat> ] ;
+    bf:subject [ a bf:Topic ;
+            bf:code "TEC041000" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ],
+        [ a bf:Topic ;
+            rdfs:label "Telecommunication systems." ;
+            bflc:marcKey "650  4 $a Telecommunication systems." ],
+        [ a bf:Topic ;
+            bf:code "TEC009030" ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/agricola> ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This newly revised edition clearly presents introductory and advanced concepts in telemetry systems, with an emphasis on digital communications. The book helps you perform link analysis for the design of a communications link, create a FM/FM preemphasis schedule systematically to develop an algorithmic code to perform this function, and design PCM/FM telemetry systems to meet a specific BER and bit rate."@en ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Telemetry Systems Engineering.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Telemetry Systems Engineering.." ] .
+
+<http://id.loc.gov/vocabulary/classSchemes/agricola> a bf:Source ;
+    bf:code "agricola" .
+
+<https://id.oclc.org/worldcat/entity/1388676300> a bf:Instance ;
+    bf:adminMetadata <https://id.oclc.org/worldcat/entity/1388676300#adminMetadata> ;
+    bf:carrier [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ],
+        [ a bf:Carrier ;
+            rdfs:label "online resource"@en ;
+            bf:code "cr" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/carriers/cr> ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mix> ;
+    bf:editionStatement "2nd ed." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource 628 p"@en ] ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "158053550X" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(electronic bk.)" ;
+            rdf:value "9781580535502" ],
+        [ a bf:Isbn ;
+            bf:qualifier "(print)" ;
+            rdf:value "9781580532570" ],
+        [ a bf:Isbn ;
+            rdf:value "1580532578" ],
+        [ a bf:OclcNumber ;
+            rdf:value "1388676300" ] ;
+    bf:instanceOf <https://id.oclc.org/worldcat/entity/E39PCFQwkJjbv7q6Hhf6QgKBKd> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "single unit"@en ;
+            bf:code "mono" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/issuance/mono> ] ;
+    bf:media [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ],
+        [ a bf:Media ;
+            rdfs:label "computer"@en ;
+            bf:code "c" ;
+            skos:closeMatch <http://id.loc.gov/vocabulary/mediaTypes/c> ] ;
+    bf:note [ a bf:Note,
+                <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+            rdfs:label "eLoaderURL" ;
+            bflc:marcKey "856 40 $z Available to Stanford-affiliated users. $u https://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781580535502 $y Artech House Ebooks $x Provider: Artech House $x eLoaderURL $x ar4 $x arEBL227595" ;
+            bf:electronicLocator <http://stanford-artech-patron.eb20.com/AccessTitle/ISBN/9781580535502> ;
+            bf:note [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/PublicNote> ;
+                    rdfs:label "Available to Stanford-affiliated users."@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/NonPublicNote> ;
+                    rdfs:label "Provider: Artech House"@en ],
+                [ a bf:Note,
+                        <https://id.oclc.org/worldcat/bf-extension/DisplayNote> ;
+                    rdfs:label "Artech House Ebooks"@en ] ;
+            bf:relation [ a bf:Relation ;
+                    bf:code "0" ] ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bflc:marcKey "260    $a Norwood : $b Artech House, $c 2002." ;
+            bflc:simpleAgent "Artech House," ;
+            bflc:simpleDate "2002." ;
+            bflc:simplePlace "Norwood :" ;
+            bf:date "2002"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/xx> ] ;
+    bf:publicationStatement "Norwood : Artech House, 2002." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Telemetry Systems Engineering.." ;
+            bflc:nonSortNum "0" ;
+            bf:mainTitle "Telemetry Systems Engineering.." ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    bf:code "eng" .
+
