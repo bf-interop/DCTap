@@ -1,3 +1,6 @@
-shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note
-big:AdminMetadata	Admin Metadata	bf:AdminMetadata	bf:creationDate	Date Cataloged or Updated/Changed		true	Violation 	literal	false	
-big:AdminMetadata	Admin Metadata	bf:AdminMetadata	bf:assigner	Cataloging institution		true	Violation 	IRI; bnode	false	
+shapeID	shapeLabel	target	propertyID	propertyLabel	valueShape	mandatory	severity	valueNodeType	repeatable	note	sh:or
+big:AdminMetadata	Admin Metadata	bf:AdminMetadata	bf:creationDate ; bf:date	Date Cataloged or Updated/Changed		true	Violation	literal	false		
+big:AdminMetadata	Admin Metadata	bf:AdminMetadata	bf:assigner ; bf:agent	Cataloging institution	big:Agent	true	Violation	IRI ; bnode	false		
+big:AdminMetadata	Admin Metadata	bf:AdminMetadata	bf:derivedFrom	Source metadata		true	Warning	IRI ; bnode	TRUE		
+											
+big:Agent	Agent	bf:Agent ; bf:Person ; bf:Family ; bf:Organization ; bf:Jurisdiction ; bf:Meeting	rdfs:label ; bf:code	Agent Label		true	Warning	literal	true		

@@ -1,0 +1,11 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+<https://nlm-psb.alma.exlibrisgroup.combf/works/9719069173806676?env=sandbox> a bf:Work , bf:Monograph , bf:Text .
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+	rdfs:label "English" .
+<https://nlm-psb.alma.exlibrisgroup.combf/works/9719069173806676?env=sandbox> bf:language <http://id.loc.gov/vocabulary/languages/eng> .
+_:f27556d097691c78474c72a18c0cd118 a rdfs:label
